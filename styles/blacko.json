@@ -5,7 +5,7 @@
 		"color": {
 			"palette": [
 				{
-					"slug": "Darko",
+					"slug": "darko",
 					"color": "#222",
 					"name": "Darko"
 				},
@@ -28,6 +28,16 @@
 					"slug": "gray-very-light",
 					"color": "#e3e3e3",
 					"name": "Gray very light"
+				},
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
 				}
 			]
 		}

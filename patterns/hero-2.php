@@ -1,6 +1,7 @@
 <?php
+// phpcs:ignore
 /**
- * Title: Hero start.
+ * Title: Hero start 2.
  * Slug: icecubo/hero-2
  * Categories: icecubo-hero
  */

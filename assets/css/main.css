@@ -8,6 +8,6 @@
 }
 
 :where(.page-template-page-sidebar-right, .page-template-page-sidebar-left) .sidebar {
-    background: var(--wp--preset--color--darko-transit);
+    background: var(--wp--preset--color--white-ice);
     padding: 2rem;
 }

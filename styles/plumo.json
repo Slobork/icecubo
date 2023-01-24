@@ -1,0 +1,156 @@
+{
+	"version": 2,
+	"title": "Plumooo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "darko",
+					"color": "#1c1a20",
+					"name": "Darko"
+				},
+				{
+					"slug": "primary",
+					"color": "#8a1f81",
+					"name": "Plumo"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "primiryish",
+					"color": "#e28eda",
+					"name": "Plumish"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#463f53",
+					"name": "Darko transit"
+				},
+				{
+					"slug": "plumo-transit",
+					"color": "#8e518a",
+					"name": "Plumo transit"
+				},
+				{
+					"slug": "plumo-mat",
+					"color": "#886986",
+					"name": "Plumo mat"
+				},
+				{
+					"slug": "plumish-light",
+					"color": "#ffc6ff",
+					"name": "Plumish light"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#71386d",
+					"name": "Primary dark"
+				},
+				{
+					"slug": "primary-light",
+					"color": "#ffeffd",
+					"name": "Primary light"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#c5c5c5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#e3e3e3",
+					"name": "Gray very light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				},
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#a95aa3",
+						"#f5f5dc"
+					],
+					"slug": "native-cubo",
+					"name": "Native Cubo"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "darko-to-white-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--white) 100%)",
+					"name": "Darko to white linear gradual"
+				},
+				{
+					"slug": "darko-to-white-linear-corner-sharp",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "Darko to white linear corner sharp"
+				},
+				{
+					"slug": "darko-to-beige-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--beige) 100%)",
+					"name": "Darko to beige linear gradual"
+				},
+				{
+					"slug": "darko-to-beige-linear-corner-sharp",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--beige) 50%)",
+					"name": "Darko to beige linear corner sharp"
+				},
+				{
+					"slug": "darko-to-primary-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "Darko to primary linear gradual"
+				},
+				{
+					"slug": "darko-to-primary-linear-corner-transit",
+					"gradient": "linear-gradient(-30deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--primary) 39%,var(--wp--preset--color--primary-transit) 48%,var(--wp--preset--color--darko-transit) 58%,var(--wp--preset--color--darko) 62%)",
+					"name": "Darko to primary linear corner transit"
+				},
+				{
+					"slug": "darko-to-primary-linear-corner-sharp",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--primary) 50%)",
+					"name": "Darko to primary linear corner sharp"
+				},
+				{
+					"slug": "primary-to-white-linear-corner-sharp",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "Primary to white linear corner sharp"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--primiryish)"
+					}
+				}
+			}
+		}
+	}
+}

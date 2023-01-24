@@ -5,7 +5,14 @@
 .is-style-icecubo-shadow-button .wp-block-button__link:visited {
 	box-shadow: var(--wp--custom--button-shadow);
 }
-
 .is-style-icecubo-shadow-button .wp-block-button__link:active {
 	box-shadow: var(--wp--custom--button-highlight);
+}
+
+.is-style-icecubo-lightcolor-button .wp-block-button__link {
+	color: var(--wp--preset--color--primary-light);
+	border-color: var(--wp--preset--color--primary-light);
+}
+.is-style-icecubo-lightcolor-button .wp-block-button__link:hover {
+	color: var(--wp--preset--color--primary);
 }

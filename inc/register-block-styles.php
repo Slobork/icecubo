@@ -35,6 +35,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/button',
+            array(
+                'name'  => 'icecubo-lightcolor-button',
+                'label' => __('Light color', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/paragraph',
             array(
                 'name'  => 'icecubo-shadow-p',

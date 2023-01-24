@@ -1,4 +1,5 @@
 <?php
+// phpcs:ignore
 /**
  * Title: Query of posts.
  * Slug: icecubo/query
