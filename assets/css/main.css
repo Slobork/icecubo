@@ -1,0 +1,13 @@
+.page-template-page-boxed { background: var(--wp--preset--color--darko-transit) }
+.page-template-page-boxed main {
+    width: 78%;
+    margin: 0 auto;
+    padding: 1px 0;
+	border-radius: 4px;
+	background: white;
+}
+
+:where(.page-template-page-sidebar-right, .page-template-page-sidebar-left) .sidebar {
+    background: var(--wp--preset--color--darko-transit);
+    padding: 2rem;
+}

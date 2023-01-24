@@ -1,0 +1,57 @@
+{
+	"version": 2,
+	"title": "Blackooo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "Darko",
+					"color": "#222",
+					"name": "Darko"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#7c7c7c",
+					"name": "Foreground"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#c5c5c5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#e3e3e3",
+					"name": "Gray very light"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--darko-transit)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--darko-down)"
+					}
+				},
+				"typography": {
+					"textDecoration": "underline"
+				}
+			},
+			"button": {
+				"color": {
+					"text": "white"
+				}
+			}
+		}
+	}
+}

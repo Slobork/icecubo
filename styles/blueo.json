@@ -1,0 +1,99 @@
+{
+	"version": 2,
+	"title": "Bluooo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "darko",
+					"color": "#222",
+					"name": "Darko"
+				},
+				{
+					"slug": "blueo",
+					"color": "#0093c7",
+					"name": "Blueo"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "blueish",
+					"color": "#00afff",
+					"name": "Blueish"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#2f434a",
+					"name": "Darko transit"
+				},
+				{
+					"slug": "blueo-transit",
+					"color": "#2b7d9b",
+					"name": "Blueo transit"
+				},
+				{
+					"slug": "blueo-mat",
+					"color": "#12536a",
+					"name": "Blueo mat"
+				},
+				{
+					"slug": "blueish-light",
+					"color": "#55C7FB",
+					"name": "Blueish light"
+				},
+				{
+					"slug": "blueo-dark",
+					"color": "#004057",
+					"name": "Blueo dark"
+				},
+				{
+					"slug": "blueo-light",
+					"color": "#DEF6FF",
+					"name": "Blueo light"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#c5c5c5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#e3e3e3",
+					"name": "Gray very light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--blueo)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--blueish-light)"
+					}
+				}
+			},
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--blueo-light)"
+				}
+			}
+		}
+	}
+}

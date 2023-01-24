@@ -1,0 +1,11 @@
+/* Button with shadow */
+.is-style-icecubo-shadow-button .wp-block-button__link,
+.is-style-icecubo-shadow-button .wp-block-button__link:hover,
+.is-style-icecubo-shadow-button .wp-block-button__link:focus,
+.is-style-icecubo-shadow-button .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
+}
+
+.is-style-icecubo-shadow-button .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
+}

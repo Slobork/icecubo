@@ -1,0 +1,99 @@
+{
+	"version": 2,
+	"title": "Redooo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "darko",
+					"color": "#222",
+					"name": "Darko"
+				},
+				{
+					"slug": "redo",
+					"color": "#D5374D",
+					"name": "Redo"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "redish",
+					"color": "#f7576d",
+					"name": "Redish"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#433032",
+					"name": "Darko transit"
+				},
+				{
+					"slug": "redo-transit",
+					"color": "#AE4654",
+					"name": "Redo transit"
+				},
+				{
+					"slug": "redo-mat",
+					"color": "#66353C",
+					"name": "Redo mat"
+				},
+				{
+					"slug": "redish-light",
+					"color": "#feb1b4",
+					"name": "Redish light"
+				},
+				{
+					"slug": "redo-dark",
+					"color": "#840517",
+					"name": "Redo dark"
+				},
+				{
+					"slug": "redo-light",
+					"color": "#fff5f7",
+					"name": "Redo light"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#c5c5c5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#e3e3e3",
+					"name": "Gray very light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--redo)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--redish)"
+					}
+				}
+			},
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--redo-light)"
+				}
+			}
+		}
+	}
+}
