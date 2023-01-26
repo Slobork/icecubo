@@ -265,8 +265,24 @@
 						"#739bd0",
 						"#ffffff"
 					],
-					"slug": "ice-cubo",
-					"name": "Ice Cubo"
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#739bd0",
+						"#0b0f14"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#8a91ed",
+						"#f1eeeb"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
 				}
 			],
 			"gradients": [
