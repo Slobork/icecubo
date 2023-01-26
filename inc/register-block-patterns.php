@@ -59,28 +59,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
             array( 'label' => esc_html__('Jace - Site Headers', 'jace') )
         );
         */
-    }
-    add_action('init', 'icecubo_register_block_pattern_category', 9);
-}
-
-
-if (! function_exists('icecubo_register_block_patterns') ) {
-
-    /**
-     * Register block patterns.
-     *
-     * @return void
-     */
-    // phpcs:ignore
-    function icecubo_register_block_patterns() 
-    {
 
         register_block_pattern_category(
             'icecubo-hero',
             array( 'label' => esc_html__('IceCubo - Hero', 'icecubo') )
         );
-
     }
-    add_action('init', 'icecubo_register_block_patterns', 9);
-
+    add_action('init', 'icecubo_register_block_pattern_category', 9);
 }
