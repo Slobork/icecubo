@@ -18,52 +18,36 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
     // phpcs:ignore
     function icecubo_register_block_pattern_category() {
 
-        /*
         register_block_pattern_category(
-            'jace-images',
-            array( 'label' => esc_html__('Jace - Images', 'jace') )
+            'icecubo-footer',
+            array( 'label' => esc_html__('IceCubo - Footer', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'jace-woo',
-            array( 'label' => esc_html__('Jace - WooCommerce', 'jace') )
+            'icecubo-header',
+            array( 'label' => esc_html__('IceCubo - Header', 'icecubo') )
         );
-
-        register_block_pattern_category(
-            'jace-post-header',
-            array( 'label' => esc_html__('Jace - Post and page headers', 'jace') )
-        );
-
-        register_block_pattern_category(
-            'jace-pages',
-            array( 'label' => esc_html__('Jace - Pages', 'jace') )
-        );
-
-        register_block_pattern_category(
-            'jace-sections',
-            array( 'label' => esc_html__('Jace - Page Sections', 'jace') )
-        );
-
-        register_block_pattern_category(
-            'jace-blog',
-            array( 'label' => esc_html__('Jace - Blog layouts', 'jace') )
-        );
-
-        register_block_pattern_category(
-            'jace-site-footer',
-            array( 'label' => esc_html__('Jace - Site Footers', 'jace') )
-        );
-
-        register_block_pattern_category(
-            'jace-site-header',
-            array( 'label' => esc_html__('Jace - Site Headers', 'jace') )
-        );
-        */
 
         register_block_pattern_category(
             'icecubo-hero',
             array( 'label' => esc_html__('IceCubo - Hero', 'icecubo') )
         );
+
+        register_block_pattern_category(
+            'icecubo-page',
+            array( 'label' => esc_html__('IceCubo - Page', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-section',
+            array( 'label' => esc_html__('IceCubo - Section', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query',
+            array( 'label' => esc_html__('IceCubo - Query', 'icecubo') )
+        );
+
     }
     add_action('init', 'icecubo_register_block_pattern_category', 9);
 }
