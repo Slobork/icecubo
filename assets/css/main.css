@@ -11,3 +11,5 @@
     background: var(--wp--preset--color--white-ice);
     padding: 2rem;
 }
+
+footer a:hover {opacity: .6;}
