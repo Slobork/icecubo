@@ -204,24 +204,34 @@
 					"name": "Gray friend light"
 				},
 				{
+					"slug": "gray-dark",
+					"color": "#505050",
+					"name": "Gray dark"
+				},
+				{
 					"slug": "gray-light",
-					"color": "#c5c5c5",
+					"color": "#a5a5a5",
 					"name": "Gray light"
 				},
 				{
 					"slug": "gray-very-light",
-					"color": "#e3e3e3",
+					"color": "#c5c5c5",
 					"name": "Gray very light"
 				},
 				{
-					"slug": "primaryish-light",
-					"color": "#B5BAF8",
-					"name": "Iceo glow light"
+					"slug": "gray-min",
+					"color": "#e3e3e3",
+					"name": "Gray min"
 				},
 				{
 					"slug": "primaryish",
 					"color": "#8a91ed",
 					"name": "Iceo glow"
+				},
+				{
+					"slug": "primaryish-light",
+					"color": "#B5BAF8",
+					"name": "Iceo glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -592,7 +602,7 @@
 		"blocks": {
 			"core/code": {
 				"color": {
-					"background": "var(--wp--preset--color--gray-light)",
+					"background": "var(--wp--preset--color--gray-very-light)",
 					"text": "var(--wp--preset--color--darko)"
 				},
 				"typography": {
