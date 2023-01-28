@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic.
+ * Title: Basic: Logo - nav.
  * Slug: icecubo/header-basic
  * Categories: icecubo-header
  */

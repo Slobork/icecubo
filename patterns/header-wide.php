@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Full width layout.
- * Slug: icecubo/header-fullwidth
+ * Title: Wide layout.
+ * Slug: icecubo/header-wide
  * Categories: icecubo-header
  */
 ?>
