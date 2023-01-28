@@ -6,7 +6,7 @@
 			"palette": [
 				{
 					"slug": "darko",
-					"color": "#1c1a20",
+					"color": "#1A0D19",
 					"name": "Darko"
 				},
 				{
@@ -20,59 +20,231 @@
 					"name": "Darko down"
 				},
 				{
-					"slug": "primiryish",
-					"color": "#e28eda",
-					"name": "Plumish"
+					"slug": "primary-light",
+					"color": "#CB6AC3",
+					"name": "Plumo light"
 				},
 				{
 					"slug": "darko-transit",
-					"color": "#463f53",
+					"color": "#3B2A39",
 					"name": "Darko transit"
 				},
 				{
-					"slug": "plumo-transit",
-					"color": "#8e518a",
-					"name": "Plumo transit"
-				},
-				{
-					"slug": "plumo-mat",
-					"color": "#886986",
-					"name": "Plumo mat"
-				},
-				{
-					"slug": "plumish-light",
-					"color": "#ffc6ff",
-					"name": "Plumish light"
-				},
-				{
 					"slug": "primary-dark",
-					"color": "#71386d",
-					"name": "Primary dark"
+					"color": "#510A49",
+					"name": "Plumo dark"
+				},
+
+				{
+					"slug": "shade-1",
+					"color": "#7c1b74",
+					"name": "Shade 1"
 				},
 				{
-					"slug": "primary-light",
-					"color": "#ffeffd",
-					"name": "Primary light"
+					"slug": "shade-2",
+					"color": "#6e1867",
+					"name": "Shade 2"
+				},
+				{
+					"slug": "shade-3",
+					"color": "#60155a",
+					"name": "Shade 3"
+				},
+				{
+					"slug": "shade-4",
+					"color": "#52124d",
+					"name": "Shade 4"
+				},
+				{
+					"slug": "shade-5",
+					"color": "#450f40",
+					"name": "Shade 5"
+				},
+				{
+					"slug": "shade-6",
+					"color": "#370c33",
+					"name": "Shade 6"
+				},
+
+				{
+					"slug": "tint-1",
+					"color": "#95358d",
+					"name": "Tint 1"
+				},
+				{
+					"slug": "tint-2",
+					"color": "#a14b9a",
+					"name": "Tint 2"
+				},
+				{
+					"slug": "tint-3",
+					"color": "#ad62a6",
+					"name": "Tint 3"
+				},
+				{
+					"slug": "tint-4",
+					"color": "#b878b3",
+					"name": "Tint 4"
+				},
+				{
+					"slug": "tint-5",
+					"color": "#c48fc0",
+					"name": "Tint 5"
+				},
+				{
+					"slug": "tint-6",
+					"color": "#d0a5cc",
+					"name": "Tint 6"
+				},
+
+				{
+					"slug": "generic-1",
+					"color": "#c72f74",
+					"name": "Generic 1"
+				},
+				{
+					"slug": "generic-2",
+					"color": "#ef5962",
+					"name": "Generic 2"
+				},
+				{
+					"slug": "generic-3",
+					"color": "#ff8d53",
+					"name": "Generic 3"
+				},
+				{
+					"slug": "generic-4",
+					"color": "#ffc353",
+					"name": "Generic 4"
+				},
+				{
+					"slug": "generic-5",
+					"color": "#f9f871",
+					"name": "Generic 5"
+				},
+				{
+					"slug": "generic-6",
+					"color": "#FBFBB6",
+					"name": "Generic 6"
+				},
+
+				{
+					"slug": "matching-1",
+					"color": "#5553b5",
+					"name": "Matching 1"
+				},
+				{
+					"slug": "matching-2",
+					"color": "#0076ce",
+					"name": "Matching 2"
+				},
+				{
+					"slug": "matching-3",
+					"color": "#0091ca",
+					"name": "Matching 3"
+				},
+				{
+					"slug": "matching-4",
+					"color": "#00a5b1",
+					"name": "Matching 4"
+				},
+				{
+					"slug": "matching-5",
+					"color": "#0fb691",
+					"name": "Matching 5"
+				},
+				{
+					"slug": "matching-6",
+					"color": "#099676",
+					"name": "Matching 6"
+				},
+
+				{
+					"slug": "highlight-1",
+					"color": "#cf9bc6",
+					"name": "Highlight 1"
+				},
+				{
+					"slug": "highlight-2",
+					"color": "#efefdc",
+					"name": "Highlight 2"
+				},
+				{
+					"slug": "highlight-3",
+					"color": "#ae6dab",
+					"name": "Highlight 3"
+				},
+				{
+					"slug": "friend-dark",
+					"color": "#00523e",
+					"name": "Friend dark"
+				},
+				{
+					"slug": "friend",
+					"color": "#1f8a28",
+					"name": "Friend"
+				},
+				{
+					"slug": "friend-light",
+					"color": "#6cbaa1",
+					"name": "Friend light"
+				},
+
+				{
+					"slug": "gray-friend-dark",
+					"color": "#51424e",
+					"name": "Gray friend dark"
+				},
+				{
+					"slug": "gray-friend-light",
+					"color": "#b7a6b4",
+					"name": "Gray friend light"
+				},
+				{
+					"slug": "gray-dark",
+					"color": "#505050",
+					"name": "Gray dark"
 				},
 				{
 					"slug": "gray-light",
-					"color": "#c5c5c5",
+					"color": "#a5a5a5",
 					"name": "Gray light"
 				},
 				{
 					"slug": "gray-very-light",
-					"color": "#e3e3e3",
+					"color": "#c5c5c5",
 					"name": "Gray very light"
 				},
 				{
-					"slug": "beige",
-					"color": "#f5f5dc",
-					"name": "Beige"
+					"slug": "gray-min",
+					"color": "#e3e3e3",
+					"name": "Gray min"
+				},
+
+				{
+					"slug": "primaryish",
+					"color": "#F43AF4",
+					"name": "Plumo glow"
 				},
 				{
-					"slug": "beige-light",
-					"color": "#f1f1e6",
-					"name": "Beige light"
+					"slug": "primaryish-light",
+					"color": "#ffa9ff",
+					"name": "Plumo glow light"
+				},
+				{
+					"slug": "tint-very-light-3",
+					"color": "#dbbbd9",
+					"name": "Tint very light 3"
+				},
+				{
+					"slug": "tint-very-light-2",
+					"color": "#e7d2e5",
+					"name": "Tint very light 2"
+				},
+				{
+					"slug": "tint-very-light-1",
+					"color": "#f3e8f2",
+					"name": "Tint very light 1"
 				},
 				{
 					"slug": "white-ice",
@@ -83,16 +255,42 @@
 					"slug": "white",
 					"color": "#ffffff",
 					"name": "White"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
 				}
 			],
 			"duotone": [
 				{
 					"colors": [
-						"#a95aa3",
-						"#f5f5dc"
+						"#8a1f81",
+						"#ffffff"
 					],
-					"slug": "native-cubo",
-					"name": "Native Cubo"
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#8a1f81",
+						"#1A0D19"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#F43AF4",
+						"#f1eeeb"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
 				}
 			],
 			"gradients": [
@@ -102,19 +300,19 @@
 					"name": "Darko to white linear gradual"
 				},
 				{
-					"slug": "darko-to-white-linear-corner-sharp",
+					"slug": "darko-to-white-linear-sharp-corner",
 					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--white) 50%)",
-					"name": "Darko to white linear corner sharp"
+					"name": "Darko to white linear sharp corner"
 				},
 				{
-					"slug": "darko-to-beige-linear-gradual",
-					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--beige) 100%)",
-					"name": "Darko to beige linear gradual"
+					"slug": "darko-to-whiteice-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--white-ice) 100%)",
+					"name": "Darko to white ice linear gradual"
 				},
 				{
-					"slug": "darko-to-beige-linear-corner-sharp",
-					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--beige) 50%)",
-					"name": "Darko to beige linear corner sharp"
+					"slug": "darko-to-whiteice-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--white-ice) 50%)",
+					"name": "Darko to white ice linear sharp corner"
 				},
 				{
 					"slug": "darko-to-primary-linear-gradual",
@@ -122,19 +320,49 @@
 					"name": "Darko to primary linear gradual"
 				},
 				{
-					"slug": "darko-to-primary-linear-corner-transit",
-					"gradient": "linear-gradient(-30deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--primary) 39%,var(--wp--preset--color--primary-transit) 48%,var(--wp--preset--color--darko-transit) 58%,var(--wp--preset--color--darko) 62%)",
-					"name": "Darko to primary linear corner transit"
+					"slug": "darko-to-primary-linear-transit-corner",
+					"gradient": "linear-gradient(-30deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--primary) 39%,var(--wp--preset--color--shade-2) 48%,var(--wp--preset--color--darko-transit) 58%,var(--wp--preset--color--darko) 62%)",
+					"name": "Darko to primary linear transit corner"
 				},
 				{
-					"slug": "darko-to-primary-linear-corner-sharp",
+					"slug": "darko-to-primary-linear-sharp-corner",
 					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--primary) 50%)",
-					"name": "Darko to primary linear corner sharp"
+					"name": "Darko to primary linear sharp corner"
 				},
 				{
-					"slug": "primary-to-white-linear-corner-sharp",
+					"slug": "primary-to-white-linear-sharp-corner",
 					"gradient": "linear-gradient(155deg,var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white) 50%)",
-					"name": "Primary to white linear corner sharp"
+					"name": "Primary to white linear sharp corner"
+				},
+				{
+					"slug": "primary-to-whiteice-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white-ice) 50%)",
+					"name": "Primary to white ice linear sharp corner"
+				},
+				{
+					"slug": "darko-to-primary-linear-gradual-aside",
+					"gradient": "linear-gradient(90deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "Darko to primary linear gradual aside"
+				},
+				{
+					"slug": "white-to-primary-radial-gradual",
+					"gradient": "radial-gradient(var(--wp--preset--color--white) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "White to primary radial gradual"
+				},
+				{
+					"slug": "white-to-primary-radial-sharp",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "White to primary radial sharp"
+				},
+				{
+					"slug": "darko-to-primary-radial-gradual",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
+					"name": "Darko to primary radial gradual"
+				},
+				{
+					"slug": "darko-to-primary-radial-sharp",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 50%,var(--wp--preset--color--darko) 50%)",
+					"name": "Darko to primary radial sharp"
 				}
 			]
 		}
@@ -147,7 +375,7 @@
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--primiryish)"
+						"text": "var(--wp--preset--color--primaryish)"
 					}
 				}
 			}

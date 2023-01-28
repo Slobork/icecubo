@@ -6,7 +6,7 @@
  * Categories: icecubo-hero
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"top center","isDark":false,"align":"full"} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"top center","align":"full"} -->
 <div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-center"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"10px"} -->
 <div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
