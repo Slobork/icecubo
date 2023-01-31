@@ -7,10 +7,10 @@
  */
 ?>
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color"><!-- wp:group {"style":{"spacing":{"padding":{"top":"20px","bottom":"15px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:20px;padding-bottom:15px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"20px","bottom":"15px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:20px;padding-bottom:15px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

@@ -24,6 +24,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-general',
+            array( 'label' => esc_html__('IceCubo - General', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-header',
             array( 'label' => esc_html__('IceCubo - Header', 'icecubo') )
         );
@@ -39,8 +44,13 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-section',
-            array( 'label' => esc_html__('IceCubo - Section', 'icecubo') )
+            'icecubo-section-columns',
+            array( 'label' => esc_html__('IceCubo - Section (Columns)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-section-covers',
+            array( 'label' => esc_html__('IceCubo - Section (Covers)', 'icecubo') )
         );
 
         register_block_pattern_category(

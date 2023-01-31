@@ -1,18 +1,18 @@
 {
 	"version": 2,
-	"title": "Plumooo",
+	"title": "Blueberryooo",
 	"settings": {
 		"color": {
 			"palette": [
 				{
 					"slug": "darko",
-					"color": "#1A0D19",
+					"color": "#131a23",
 					"name": "Darko"
 				},
 				{
 					"slug": "primary",
-					"color": "#8a1f81",
-					"name": "Plumo"
+					"color": "#2c55a7",
+					"name": "Bluebo"
 				},
 				{
 					"slug": "darko-down",
@@ -21,100 +21,100 @@
 				},
 				{
 					"slug": "primary-light",
-					"color": "#CB6AC3",
-					"name": "Plumo light"
+					"color": "#4F86F7",
+					"name": "Bluebo light"
 				},
 				{
 					"slug": "darko-transit",
-					"color": "#3B2A39",
+					"color": "#2b3c50",
 					"name": "Darko transit"
 				},
 				{
 					"slug": "primary-dark",
-					"color": "#510A49",
-					"name": "Plumo dark"
+					"color": "#073082",
+					"name": "Bluebo dark"
 				},
 
 				{
 					"slug": "shade-1",
-					"color": "#7c1b74",
+					"color": "#274c96",
 					"name": "Shade 1"
 				},
 				{
 					"slug": "shade-2",
-					"color": "#6e1867",
+					"color": "#234485",
 					"name": "Shade 2"
 				},
 				{
 					"slug": "shade-3",
-					"color": "#60155a",
+					"color": "#1e3b74",
 					"name": "Shade 3"
 				},
 				{
 					"slug": "shade-4",
-					"color": "#52124d",
+					"color": "#1a3364",
 					"name": "Shade 4"
 				},
 				{
 					"slug": "shade-5",
-					"color": "#450f40",
+					"color": "#162a53",
 					"name": "Shade 5"
 				},
 				{
 					"slug": "shade-6",
-					"color": "#370c33",
+					"color": "#112242",
 					"name": "Shade 6"
 				},
 
 				{
 					"slug": "tint-1",
-					"color": "#95358d",
+					"color": "#4166af",
 					"name": "Tint 1"
 				},
 				{
 					"slug": "tint-2",
-					"color": "#a14b9a",
+					"color": "#5676b8",
 					"name": "Tint 2"
 				},
 				{
 					"slug": "tint-3",
-					"color": "#ad62a6",
+					"color": "#6b88c1",
 					"name": "Tint 3"
 				},
 				{
 					"slug": "tint-4",
-					"color": "#b878b3",
+					"color": "#8099ca",
 					"name": "Tint 4"
 				},
 				{
 					"slug": "tint-5",
-					"color": "#c48fc0",
+					"color": "#95aad3",
 					"name": "Tint 5"
 				},
 				{
 					"slug": "tint-6",
-					"color": "#d0a5cc",
+					"color": "#aabbdb",
 					"name": "Tint 6"
 				},
 
 				{
 					"slug": "generic-1",
-					"color": "#c72f74",
+					"color": "#a159ac",
 					"name": "Generic 1"
 				},
 				{
 					"slug": "generic-2",
-					"color": "#ef5962",
+					"color": "#ea6498",
 					"name": "Generic 2"
 				},
 				{
 					"slug": "generic-3",
-					"color": "#ff8d53",
+					"color": "#ff8978",
 					"name": "Generic 3"
 				},
 				{
 					"slug": "generic-4",
-					"color": "#ffc353",
+					"color": "#ffbf61",
 					"name": "Generic 4"
 				},
 				{
@@ -124,80 +124,80 @@
 				},
 				{
 					"slug": "generic-6",
-					"color": "#FBFBB6",
+					"color": "#D5F953",
 					"name": "Generic 6"
 				},
 
 				{
 					"slug": "matching-1",
-					"color": "#5553b5",
+					"color": "#5f5baa",
 					"name": "Matching 1"
 				},
 				{
 					"slug": "matching-2",
-					"color": "#0076ce",
+					"color": "#8262ab",
 					"name": "Matching 2"
 				},
 				{
 					"slug": "matching-3",
-					"color": "#0091ca",
+					"color": "#9e6aab",
 					"name": "Matching 3"
 				},
 				{
 					"slug": "matching-4",
-					"color": "#00a5b1",
+					"color": "#b575ab",
 					"name": "Matching 4"
 				},
 				{
 					"slug": "matching-5",
-					"color": "#0fb691",
+					"color": "#c981ab",
 					"name": "Matching 5"
 				},
 				{
 					"slug": "matching-6",
-					"color": "#099676",
+					"color": "#DC999C",
 					"name": "Matching 6"
 				},
 
 				{
 					"slug": "highlight-1",
-					"color": "#cf9bc6",
+					"color": "#74a6ff",
 					"name": "Highlight 1"
 				},
 				{
 					"slug": "highlight-2",
-					"color": "#efefdc",
+					"color": "#fee181",
 					"name": "Highlight 2"
 				},
 				{
 					"slug": "highlight-3",
-					"color": "#ae6dab",
+					"color": "#fff7d6",
 					"name": "Highlight 3"
 				},
 				{
 					"slug": "friend-dark",
-					"color": "#00523e",
+					"color": "#7C5301",
 					"name": "Friend dark"
 				},
 				{
 					"slug": "friend",
-					"color": "#1f8a28",
+					"color": "#a77e2c",
 					"name": "Friend"
 				},
 				{
 					"slug": "friend-light",
-					"color": "#6cbaa1",
+					"color": "#f7c04f",
 					"name": "Friend light"
 				},
 
 				{
 					"slug": "gray-friend-dark",
-					"color": "#51424e",
+					"color": "#444655",
 					"name": "Gray friend dark"
 				},
 				{
 					"slug": "gray-friend-light",
-					"color": "#b7a6b4",
+					"color": "#a8aabc",
 					"name": "Gray friend light"
 				},
 				{
@@ -223,27 +223,27 @@
 
 				{
 					"slug": "primaryish",
-					"color": "#F43AF4",
-					"name": "Plumo glow"
+					"color": "#2F6CE7",
+					"name": "Bluebo glow"
 				},
 				{
 					"slug": "primaryish-light",
-					"color": "#ffa9ff",
-					"name": "Plumo glow light"
+					"color": "#6697FB",
+					"name": "Bluebo glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
-					"color": "#dbbbd9",
+					"color": "#bfcce4",
 					"name": "Tint very light 3"
 				},
 				{
 					"slug": "tint-very-light-2",
-					"color": "#e7d2e5",
+					"color": "#d4dded",
 					"name": "Tint very light 2"
 				},
 				{
 					"slug": "tint-very-light-1",
-					"color": "#f3e8f2",
+					"color": "#e9eef6",
 					"name": "Tint very light 1"
 				},
 				{
@@ -270,7 +270,7 @@
 			"duotone": [
 				{
 					"colors": [
-						"#8a1f81",
+						"#2c55a7",
 						"#ffffff"
 					],
 					"slug": "ice-cubo-light",
@@ -278,8 +278,8 @@
 				},
 				{
 					"colors": [
-						"#8a1f81",
-						"#1A0D19"
+						"#2c55a7",
+						"#131a23"
 					],
 					"slug": "ice-cubo-dark",
 					"name": "Ice Cubo Dark"

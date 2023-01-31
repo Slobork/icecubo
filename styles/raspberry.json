@@ -1,0 +1,384 @@
+{
+	"version": 2,
+	"title": "Raspberryooo",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "darko",
+					"color": "#211519",
+					"name": "Darko"
+				},
+				{
+					"slug": "primary",
+					"color": "#a9124a",
+					"name": "Raspbo"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "primary-light",
+					"color": "#E30B5C",
+					"name": "Raspbo light"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#362128",
+					"name": "Darko transit"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#70052d",
+					"name": "Raspbo dark"
+				},
+
+				{
+					"slug": "shade-1",
+					"color": "#981042",
+					"name": "Shade 1"
+				},
+				{
+					"slug": "shade-2",
+					"color": "#870e3b",
+					"name": "Shade 2"
+				},
+				{
+					"slug": "shade-3",
+					"color": "#760c33",
+					"name": "Shade 3"
+				},
+				{
+					"slug": "shade-4",
+					"color": "#650a2c",
+					"name": "Shade 4"
+				},
+				{
+					"slug": "shade-5",
+					"color": "#540925",
+					"name": "Shade 5"
+				},
+				{
+					"slug": "shade-6",
+					"color": "#43071d",
+					"name": "Shade 6"
+				},
+
+				{
+					"slug": "tint-1",
+					"color": "#b1295c",
+					"name": "Tint 1"
+				},
+				{
+					"slug": "tint-2",
+					"color": "#ba416e",
+					"name": "Tint 2"
+				},
+				{
+					"slug": "tint-3",
+					"color": "#c25980",
+					"name": "Tint 3"
+				},
+				{
+					"slug": "tint-4",
+					"color": "#cb7092",
+					"name": "Tint 4"
+				},
+				{
+					"slug": "tint-5",
+					"color": "#d488a4",
+					"name": "Tint 5"
+				},
+				{
+					"slug": "tint-6",
+					"color": "#dca0b6",
+					"name": "Tint 6"
+				},
+
+				{
+					"slug": "generic-1",
+					"color": "#902a69",
+					"name": "Generic 1"
+				},
+				{
+					"slug": "generic-2",
+					"color": "#6d3c79",
+					"name": "Generic 2"
+				},
+				{
+					"slug": "generic-3",
+					"color": "#494679",
+					"name": "Generic 3"
+				},
+				{
+					"slug": "generic-4",
+					"color": "#31496b",
+					"name": "Generic 4"
+				},
+				{
+					"slug": "generic-5",
+					"color": "#2f4858",
+					"name": "Generic 5"
+				},
+				{
+					"slug": "generic-6",
+					"color": "#193D53",
+					"name": "Generic 6"
+				},
+
+				{
+					"slug": "matching-1",
+					"color": "#aa4224",
+					"name": "Matching 1"
+				},
+				{
+					"slug": "matching-2",
+					"color": "#966808",
+					"name": "Matching 2"
+				},
+				{
+					"slug": "matching-3",
+					"color": "#758526",
+					"name": "Matching 3"
+				},
+				{
+					"slug": "matching-4",
+					"color": "#489c5c",
+					"name": "Matching 4"
+				},
+				{
+					"slug": "matching-5",
+					"color": "#00ae9a",
+					"name": "Matching 5"
+				},
+				{
+					"slug": "matching-6",
+					"color": "#36C6B5",
+					"name": "Matching 6"
+				},
+
+				{
+					"slug": "highlight-1",
+					"color": "#ff6d9a",
+					"name": "Highlight 1"
+				},
+				{
+					"slug": "highlight-2",
+					"color": "#fee181",
+					"name": "Highlight 2"
+				},
+				{
+					"slug": "highlight-3",
+					"color": "#eee8a9",
+					"name": "Highlight 3"
+				},
+				{
+					"slug": "friend-dark",
+					"color": "#0d7b52",
+					"name": "Friend dark"
+				},
+				{
+					"slug": "friend",
+					"color": "#12a971",
+					"name": "Friend"
+				},
+				{
+					"slug": "friend-light",
+					"color": "#17d790",
+					"name": "Friend light"
+				},
+
+				{
+					"slug": "gray-friend-dark",
+					"color": "#574145",
+					"name": "Gray friend dark"
+				},
+				{
+					"slug": "gray-friend-light",
+					"color": "#bea5a9",
+					"name": "Gray friend light"
+				},
+				{
+					"slug": "gray-dark",
+					"color": "#505050",
+					"name": "Gray dark"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#a5a5a5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#c5c5c5",
+					"name": "Gray very light"
+				},
+				{
+					"slug": "gray-min",
+					"color": "#e3e3e3",
+					"name": "Gray min"
+				},
+
+				{
+					"slug": "primaryish",
+					"color": "#E10558",
+					"name": "Raspbo glow"
+				},
+				{
+					"slug": "primaryish-light",
+					"color": "#FB5694",
+					"name": "Raspbo glow light"
+				},
+				{
+					"slug": "tint-very-light-3",
+					"color": "#e5b7c8",
+					"name": "Tint very light 3"
+				},
+				{
+					"slug": "tint-very-light-2",
+					"color": "#edcfda",
+					"name": "Tint very light 2"
+				},
+				{
+					"slug": "tint-very-light-1",
+					"color": "#f6e7ec",
+					"name": "Tint very light 1"
+				},
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
+				},
+				{
+					"slug": "white",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#a9124a",
+						"#ffffff"
+					],
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#a9124a",
+						"#211519"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#E10558",
+						"#f1eeeb"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "darko-to-white-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--white) 100%)",
+					"name": "Darko to white linear gradual"
+				},
+				{
+					"slug": "darko-to-white-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "Darko to white linear sharp corner"
+				},
+				{
+					"slug": "darko-to-whiteice-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--white-ice) 100%)",
+					"name": "Darko to white ice linear gradual"
+				},
+				{
+					"slug": "darko-to-whiteice-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--white-ice) 50%)",
+					"name": "Darko to white ice linear sharp corner"
+				},
+				{
+					"slug": "darko-to-primary-linear-gradual",
+					"gradient": "linear-gradient(180deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "Darko to primary linear gradual"
+				},
+				{
+					"slug": "darko-to-primary-linear-transit-corner",
+					"gradient": "linear-gradient(-30deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--primary) 39%,var(--wp--preset--color--shade-2) 48%,var(--wp--preset--color--darko-transit) 58%,var(--wp--preset--color--darko) 62%)",
+					"name": "Darko to primary linear transit corner"
+				},
+				{
+					"slug": "darko-to-primary-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--darko) 50%,var(--wp--preset--color--primary) 50%)",
+					"name": "Darko to primary linear sharp corner"
+				},
+				{
+					"slug": "primary-to-white-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "Primary to white linear sharp corner"
+				},
+				{
+					"slug": "primary-to-whiteice-linear-sharp-corner",
+					"gradient": "linear-gradient(155deg,var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white-ice) 50%)",
+					"name": "Primary to white ice linear sharp corner"
+				},
+				{
+					"slug": "darko-to-primary-linear-gradual-aside",
+					"gradient": "linear-gradient(90deg,var(--wp--preset--color--darko) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "Darko to primary linear gradual aside"
+				},
+				{
+					"slug": "white-to-primary-radial-gradual",
+					"gradient": "radial-gradient(var(--wp--preset--color--white) 0%,var(--wp--preset--color--primary) 100%)",
+					"name": "White to primary radial gradual"
+				},
+				{
+					"slug": "white-to-primary-radial-sharp",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 50%,var(--wp--preset--color--white) 50%)",
+					"name": "White to primary radial sharp"
+				},
+				{
+					"slug": "darko-to-primary-radial-gradual",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
+					"name": "Darko to primary radial gradual"
+				},
+				{
+					"slug": "darko-to-primary-radial-sharp",
+					"gradient": "radial-gradient(var(--wp--preset--color--primary) 50%,var(--wp--preset--color--darko) 50%)",
+					"name": "Darko to primary radial sharp"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--primaryish)"
+					}
+				}
+			}
+		}
+	}
+}
