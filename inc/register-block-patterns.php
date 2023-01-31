@@ -19,6 +19,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
     function icecubo_register_block_pattern_category() {
 
         register_block_pattern_category(
+            'icecubo-general',
+            array( 'label' => esc_html__('IceCubo - General', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-footer',
             array( 'label' => esc_html__('IceCubo - Footer', 'icecubo') )
         );
