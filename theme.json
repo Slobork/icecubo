@@ -494,11 +494,11 @@
 					"textDecoration": "none"
 				},
 				"color": {
-					"text": "var(--wp--preset--color--primary-dark)"
+					"text": "var(--wp--preset--color--shade-4)"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--primaryish)"
+						"text": "var(--wp--preset--color--primary)"
 					}
 				}
 			},
