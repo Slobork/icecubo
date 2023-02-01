@@ -12,3 +12,5 @@
 }
 
 footer a:hover {opacity: .6;}
+
+body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
