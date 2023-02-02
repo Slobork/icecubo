@@ -386,13 +386,13 @@
 		"blocks": {
 			"core/post-author": {
 				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
+					"text": "var(--wp--preset--color--gray-very-light)",
 					"background": "var(--wp--preset--color--darko-down)"
 				}
 			},
 			"core/post-date": {
 				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
+					"text": "var(--wp--preset--color--gray-very-light)",
 					"background": "var(--wp--preset--color--darko-down)"
 				}
 			},
