@@ -494,7 +494,7 @@
 					"textDecoration": "none"
 				},
 				"color": {
-					"text": "var(--wp--preset--color--shade-4)"
+					"text": "var(--wp--preset--color--primary-dark)"
 				},
 				":hover": {
 					"color": {
