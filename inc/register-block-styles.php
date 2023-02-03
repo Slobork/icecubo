@@ -37,8 +37,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/button',
             array(
-                'name'  => 'icecubo-lightcolor-button',
-                'label' => __('Light color', 'icecubo'),
+                'name'  => 'icecubo-noborder-button',
+                'label' => __('No border', 'icecubo'),
             )
         );
 

@@ -1,21 +1,27 @@
-/* Button with shadow */
+/* Shadow for link hover */
 .wp-block-button__link:hover {
-	transition: .3s ease-out;
+    transition: .2s ease-out;
+    box-shadow: var(--wp--custom--button-shadow);
 }
-.is-style-fill .wp-block-button__link:hover { color: var(--wp--preset--color--primary-light); }
+.wp-block-button.has-dark-theme .wp-block-button__link:hover {
+    box-shadow: var(--wp--custom--button-shadow-dark);
+}
 
+/* Button with initial shadow */
 .is-style-icecubo-shadow-button .wp-block-button__link,
 .is-style-icecubo-shadow-button .wp-block-button__link:focus,
 .is-style-icecubo-shadow-button .wp-block-button__link:visited {
-	box-shadow: var(--wp--custom--button-shadow);
+    box-shadow: var(--wp--custom--button-shadow);
 }
-.is-style-icecubo-shadow-button .wp-block-button__link:hover { box-shadow: none; }
 
-.is-style-icecubo-lightcolor-button .wp-block-button__link {
-	color: var(--wp--preset--color--tint-6);
-	border-color: var(--wp--preset--color--tint-6);
+.wp-block-button.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link {
+    box-shadow: var(--wp--custom--button-shadow-dark);
 }
-.is-style-icecubo-lightcolor-button .wp-block-button__link:hover {
-	color: var(--wp--preset--color--primary-light);
-	border-color: var(--wp--preset--color--primary-light);
+
+.is-style-icecubo-shadow-button .wp-block-button__link:hover,
+.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link:hover {
+    box-shadow: none;
 }
+
+/* No border */
+.is-style-icecubo-noborder-button .wp-block-button__link { border-width: 0; }
