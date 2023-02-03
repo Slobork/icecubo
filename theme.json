@@ -466,6 +466,7 @@
 			"v-spacing-large": "2rem",
 			"text-shadow": "0 2px 8px rgba(0, 0, 0, 0.9)",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
+			"button-shadow-dark": "0 8px 8px 0 rgb(222 222 222 / 22%)",
 			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
 			"button-highlight": "0 0 0 #fff",
 			"button-border-color": "rgba(0, 0, 0, 0.05)",
