@@ -17,30 +17,38 @@ if (! function_exists('icecubo_register_block_styles') ) {
     // phpcs:ignore
     function icecubo_register_block_styles()
     {
-
-        register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-small-margin-list',
-                'label' => __('Small margin', 'icecubo'),
-            )
-        );
-
+        
         register_block_style(
             'core/button',
             array(
                 'name'  => 'icecubo-shadow-button',
                 'label' => __('Shadow', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/button',
+                )
+            );
+            
+            register_block_style(
+                'core/button',
             array(
                 'name'  => 'icecubo-noborder-button',
                 'label' => __('No border', 'icecubo'),
-            )
-        );
+                )
+            );
+
+            register_block_style(
+                'core/heading',
+                array(
+                    'name'  => 'icecubo-text-shadow-heading',
+                    'label' => __('Shadow', 'icecubo'),
+                )
+            );
+
+            register_block_style(
+                'core/list',
+                array(
+                    'name'  => 'icecubo-small-margin-list',
+                    'label' => __('Small margin', 'icecubo'),
+                )
+            );
 
         register_block_style(
             'core/paragraph',
@@ -69,6 +77,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
+            'core/heading',
             'core/list',
             'core/paragraph'
         );

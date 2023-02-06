@@ -464,7 +464,7 @@
 			"h-spacing": "2.375rem",
 			"v-spacing": "1.25rem",
 			"v-spacing-large": "2rem",
-			"text-shadow": "0 2px 8px rgba(0, 0, 0, 0.9)",
+			"heading-text-shadow": "1px 2px 0 gray",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
 			"button-shadow-dark": "0 8px 8px 0 rgb(222 222 222 / 22%)",
 			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
