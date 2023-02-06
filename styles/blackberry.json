@@ -367,11 +367,6 @@
 			"text": "var(--wp--preset--color--gray-light)"
 		},
 		"elements": {
-			"heading": {
-				"color": {
-					"text": "var(--wp--preset--color--tint-very-light-3)"
-				}
-			},
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--tint-2)"
