@@ -54,7 +54,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/paragraph',
             array(
                 'name'  => 'icecubo-shadow-p',
-                'label' => __('Shadow', 'icecubo'),
+                'label' => __('Shadow box', 'icecubo'),
             )
         );
 
