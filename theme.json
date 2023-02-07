@@ -732,6 +732,13 @@
 			"postTypes": [
 				"post"
 			]
+		},
+		{
+			"name": "no-post-header",
+			"title": "No post header (title)",
+			"postTypes": [
+				"post", "page"
+			]
 		}
 	],
 	"version": 2
