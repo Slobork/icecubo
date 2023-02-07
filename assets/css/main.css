@@ -1,19 +1,32 @@
-.page-template-page-boxed main {
-    width: 78%;
-    margin: 0 auto;
-    padding: 1px 0;
-    border-radius: 4px;
-    background: white;
+
+/* Featured images on blog/archive pages */
+body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
+
+/* Footer */
+footer { margin-top: 0 !important; }
+footer a:hover {opacity: .6;}
+
+/* All page templates except the boxed */
+body:not(.page-template-page-boxed) main {
+    margin-top: 0 !important;
+    padding: 1rem 0 4rem;
 }
 
+/* Boxed page template */
+.page-template-page-boxed main {
+    width: 78%;
+    margin: 4rem auto;
+    padding: 1px 0;
+    border-radius: 4px;
+    background: var(--wp--preset--color--darko-down);
+    color: var(--wp--preset--color--gray-light);
+}
+
+/* Page templates with a sidebar */
 :where(.page-template-page-sidebar-right, .page-template-page-sidebar-left) .sidebar {
     background: var(--wp--preset--color--white-ice);
     padding: 2rem;
 }
-
-footer a:hover {opacity: .6;}
-
-body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
 /* Qoute */
 .wp-block-quote.is-style-default:not(.has-text-align-center) > * {
