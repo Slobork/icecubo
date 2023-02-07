@@ -1,14 +1,14 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Full width layout.
- * Slug: icecubo/header-fullwidth
+ * Title: Basic: Logo - nav (Wide layout).
+ * Slug: icecubo/header-basic-wide
  * Categories: icecubo-header
  */
 ?>
 <!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"30px","top":"30px"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide" style="padding-top:30px;padding-bottom:30px"><!-- wp:group {"layout":{"type":"flex"}} -->
+<div class="wp-block-group alignfull"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"60px","top":"50px"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide" style="padding-top:50px;padding-bottom:60px"><!-- wp:group {"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":64} /-->
 
 <!-- wp:group -->
