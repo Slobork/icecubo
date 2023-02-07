@@ -28,6 +28,13 @@ body:not(.page-template-page-boxed) main {
     padding: 2rem;
 }
 
+/* Post author - center items, usefull when avatar is used */
+.wp-block-post-author { align-items: center; }
+.wp-block-post-author .wp-block-post-author__avatar img {
+    vertical-align: middle;
+    padding: 4px 0;
+}
+
 /* Qoute */
 .wp-block-quote.is-style-default:not(.has-text-align-center) > * {
     margin-left: 4rem;
