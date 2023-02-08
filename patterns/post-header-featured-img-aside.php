@@ -18,14 +18,9 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"7px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:post-author {"showBio":false} /-->
+    <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
 
-<!-- wp:paragraph -->
-<p>·</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:post-date /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
+</div>
+<!-- /wp:column -->
+</div>
 <!-- /wp:columns -->
