@@ -10,14 +10,6 @@
 <div class="wp-block-group">
     <!-- wp:post-featured-image /-->
     <!-- wp:post-title {"level":1} /-->
-    <!-- wp:group {"layout":{"type":"flex"},"style":{"spacing":{"blockGap":"5px"}}} -->
-    <div class="wp-block-group">
-        <!-- wp:post-date /-->
-        <!-- wp:paragraph -->
-        <p>·</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-author {"showAvatar":false} /-->
-    </div>
-    <!-- /wp:group -->
+    <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
 </div>
 <!-- /wp:group -->
