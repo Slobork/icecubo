@@ -735,9 +735,9 @@
 		},
 		{
 			"name": "no-post-header",
-			"title": "No post header (title)",
+			"title": "No post header (title + byline)",
 			"postTypes": [
-				"post", "page"
+				"post"
 			]
 		}
 	],
