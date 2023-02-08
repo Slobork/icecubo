@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Byline.
+ * Title: Byline basic.
  * Slug: icecubo/post-footer-basic
  * Categories: hidden
  * Inserter: false
