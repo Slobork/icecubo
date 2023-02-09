@@ -1,4 +1,11 @@
 
+pre { overflow: auto; }
+code {
+    background: var(--wp--preset--color--darko-down);
+    color: var(--wp--preset--color--gray-light);
+    padding: .25rem;
+}
+
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
