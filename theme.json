@@ -717,27 +717,8 @@
 	],
 	"customTemplates": [
 		{
-			"name": "page-sidebar-right",
-			"title": "Page - Sidebar Right"
-		},
-		{
-			"name": "page-sidebar-left",
-			"title": "Page - Sidebar Left"
-		},
-		{
-			"name": "page-boxed",
-			"title": "Page - Boxed"
-		},
-		{
-			"name": "single-no-featured-image",
-			"title": "Single without featured image",
-			"postTypes": [
-				"post"
-			]
-		},
-		{
-			"name": "no-post-header",
-			"title": "No post header (title + byline)",
+			"name": "single-no-post-header",
+			"title": "Single without post header",
 			"postTypes": [
 				"post"
 			]
