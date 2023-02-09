@@ -11,26 +11,19 @@ body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350p
 
 /* Footer */
 footer { margin-top: 0 !important; }
-footer a:hover {opacity: .6;}
+footer a:hover { opacity: .6; }
 
 /* All page templates except the boxed */
-body:not(.page-template-page-boxed) main {
+body:not([class*="template-boxed"]) main {
     margin-top: 0 !important;
     padding: 1rem 0 4rem;
 }
 
-/* Boxed page template */
-.page-template-page-boxed main {
-    width: 78%;
-    margin: 4rem auto;
-    padding: 1px 0;
-    border-radius: 4px;
-    background: var(--wp--preset--color--darko-down);
-    color: var(--wp--preset--color--gray-light);
-}
+/* Boxed page/post template */
+[class*="template-boxed"] main { width: 78%; }
 
 /* Page templates with a sidebar */
-:where(.page-template-page-sidebar-right, .page-template-page-sidebar-left) .sidebar {
+:where([class*="template-sidebar-right"], [class*="template-sidebar-left"]) .sidebar {
     background: var(--wp--preset--color--white-ice);
     padding: 2rem;
 }
