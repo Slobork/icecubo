@@ -701,16 +701,18 @@
 	"templateParts": [
 		{
 			"area": "header",
-			"name": "header"
+			"name": "header",
+			"title": "Header"
 		},
 		{
 			"name": "header-fullwidth",
-			"title": "Fullwidth header",
+			"title": "Header - fullwidth",
 			"area": "header"
 		},
 		{
 			"area": "footer",
-			"name": "footer"
+			"name": "footer",
+			"title": "Footer"
 		}
 	],
 	"customTemplates": [
