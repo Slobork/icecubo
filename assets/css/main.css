@@ -6,6 +6,11 @@ code {
     padding: .25rem;
 }
 
+/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
+.wp-block-navigation-item__content { width: max-content; }
+/* Menu item - on hover behavior */
+li.wp-block-navigation-item:not(.has-child) a:hover { box-shadow: 0 2px 0; }
+
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
@@ -13,8 +18,8 @@ body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350p
 footer { margin-top: 0 !important; }
 footer a:hover { opacity: .6; }
 
-/* All page templates except the boxed */
-body:not([class*="template-boxed"]) main {
+/* All page templates except the boxed & blank */
+body:not([class*="template-boxed"], [class*="template-blank"]) main {
     margin-top: 0 !important;
     padding: 1rem 0 4rem;
 }
