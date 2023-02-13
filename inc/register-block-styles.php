@@ -79,7 +79,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/button',
             'core/heading',
             'core/list',
-            'core/paragraph'
+            'core/paragraph',
+            'core/quote'
         );
 
         // Loop through each block and enqueue its styles.
@@ -95,6 +96,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
                 'path'   => get_theme_file_path("assets/css/blocks/{$slug}.css")
                 )
             );
+
         }
     }
         add_action('after_setup_theme', 'icecubo_enqueue_block_styles');
