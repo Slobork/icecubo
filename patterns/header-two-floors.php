@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"30px","top":"30px"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-bottom:30px"><!-- wp:group {"layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"30px","top":"50px"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group" style="padding-top:50px;padding-bottom:30px"><!-- wp:group {"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"shouldSyncIcon":false} /--></div>
 <!-- /wp:group -->
 

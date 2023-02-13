@@ -39,8 +39,8 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-page',
-            array( 'label' => esc_html__('IceCubo - Page', 'icecubo') )
+            'icecubo-post-header',
+            array( 'label' => esc_html__('IceCubo - Post header', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -51,11 +51,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-section-covers',
             array( 'label' => esc_html__('IceCubo - Section (Covers)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - Query', 'icecubo') )
         );
 
     }

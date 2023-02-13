@@ -19,14 +19,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
     {
 
         register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-small-margin-list',
-                'label' => __('Small margin', 'icecubo'),
-            )
-        );
-
-        register_block_style(
             'core/button',
             array(
                 'name'  => 'icecubo-shadow-button',
@@ -37,8 +29,24 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/button',
             array(
-                'name'  => 'icecubo-lightcolor-button',
-                'label' => __('Light color', 'icecubo'),
+                'name'  => 'icecubo-noborder-button',
+                'label' => __('No border', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-gray-text-shadow-heading',
+                'label' => __('Gray Shadow', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-small-margin-list',
+                'label' => __('Small margin', 'icecubo'),
             )
         );
 
@@ -46,7 +54,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/paragraph',
             array(
                 'name'  => 'icecubo-shadow-p',
-                'label' => __('Shadow', 'icecubo'),
+                'label' => __('Shadow box', 'icecubo'),
             )
         );
 
@@ -69,6 +77,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
+            'core/heading',
             'core/list',
             'core/paragraph'
         );
