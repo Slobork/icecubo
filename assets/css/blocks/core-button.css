@@ -23,5 +23,5 @@
     box-shadow: none;
 }
 
-/* No border */
-.is-style-icecubo-noborder-button .wp-block-button__link { border-width: 0; }
+/* No border - double the class to take the impact in the editor */
+.is-style-icecubo-noborder-button.is-style-icecubo-noborder-button .wp-block-button__link { border-width: 0; }
