@@ -30,6 +30,12 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button /--></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="https://via.placeholder.com/930x696.webp/999999/FFFFFF/?text=maxpressy.com" alt=""/></figure></div>
-<!-- /wp:media-text --></div></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="" alt=""/></figure></div>
+<!-- /wp:media-text --></div>
+
+<!-- wp:spacer {"height":"30px"} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+</div>
 <!-- /wp:cover -->
