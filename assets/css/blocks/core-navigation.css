@@ -1,0 +1,3 @@
+/* Menu item - on hover behavior */
+.wp-block-navigation.is-style-icecubo-nav-mark-hovers ul:not(.wp-block-navigation__submenu-container) > li.wp-block-navigation-link:hover { box-shadow: 0 2px 0; transition: box-shadow .25s ease;  }
+.wp-block-navigation.is-style-icecubo-nav-mark-hovers ul.wp-block-navigation__submenu-container > li.wp-block-navigation-link:hover { text-decoration: underline;}

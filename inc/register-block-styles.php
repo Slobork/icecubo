@@ -51,6 +51,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-mark-hovers',
+                'label' => __('Mark hovers', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation-link',
+            array(
+                'name'  => 'icecubo-nav-item-outline',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/paragraph',
             array(
                 'name'  => 'icecubo-shadow-p',
@@ -79,6 +95,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/button',
             'core/heading',
             'core/list',
+            'core/navigation',
+            'core/navigation-link',
             'core/paragraph',
             'core/quote'
         );
