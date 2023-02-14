@@ -30,7 +30,9 @@ if (! function_exists('icecubo_start') ) {
          * @see https://developer.wordpress.org/reference/functions/add_theme_support/#comment-5596
          */
         add_theme_support('wp-block-styles');
-        
+
+        add_editor_style(array('assets/css/editor-style.css'));
+
         // https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
         add_theme_support('custom-spacing');
         add_theme_support('appearance-tools');
