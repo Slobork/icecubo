@@ -18,7 +18,7 @@ if (! function_exists('icecubo_start') ) {
     function icecubo_start()
     {
         /**
-         * Theme supprt.
+         * Theme support.
          * 
          * These features are enabled by default in block themes from version 5.9:
          * 'post-thumbnails'
