@@ -33,10 +33,6 @@ if (! function_exists('icecubo_start') ) {
 
         add_editor_style(array('assets/css/editor-style.css'));
 
-        // https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
-        add_theme_support('custom-spacing');
-        add_theme_support('appearance-tools');
-
         // translation support
         load_theme_textdomain('icecubo', get_template_directory() . '/languages');
         
