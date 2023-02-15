@@ -570,7 +570,7 @@
 			"core/code": {
 				"color": {
 					"background": "var(--wp--preset--color--gray-very-light)",
-					"text": "var(--wp--preset--color--darko)"
+					"text": "var(--wp--preset--color--darko-down)"
 				},
 				"typography": {
 					"fontFamily": "monospace"
@@ -678,6 +678,13 @@
 						"left": ".75rem",
 						"right": ".75rem"
 					}
+				}
+			},
+			"core/table": {
+				"border": {
+					"width": "2px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--gray-very-light)"
 				}
 			},
 			"core/query-pagination": {
