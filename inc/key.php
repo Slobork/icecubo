@@ -39,17 +39,14 @@ if (! function_exists('icecubo_start') ) {
 
         // translation support
         load_theme_textdomain('icecubo', get_template_directory() . '/languages');
-
-         // enqueue
-         add_action('wp_enqueue_scripts', 'icecubo_scripts_and_styles');
-
+        
     }
     add_action('after_setup_theme', 'icecubo_start');
 }
 
 
 if (! function_exists('icecubo_scripts_and_styles') ) {
-
+    
     /**
      * Enqueue.
      *
@@ -58,7 +55,7 @@ if (! function_exists('icecubo_scripts_and_styles') ) {
     // phpcs:ignore
     function icecubo_scripts_and_styles()
     {
-
+        
         if (! is_admin() ) {
             wp_enqueue_style(
                 'icecubo-main',
@@ -68,6 +65,19 @@ if (! function_exists('icecubo_scripts_and_styles') ) {
                 'all'
             );
         }
-
+        
     }
+
+    add_action('wp_enqueue_scripts', 'icecubo_scripts_and_styles');
 }
+
+
+/**
+ * Replace the default [...] excerpt more with an elipsis.
+ */
+add_filter(
+    'excerpt_more',
+    function ( $more ) {
+        return '&hellip;';
+    }
+);
