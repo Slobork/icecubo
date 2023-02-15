@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Media and text as call to action placeholder.
+ * Title: Media and text as a call to action placeholder.
  * Slug: icecubo/hero-media-text-cta
  * Categories: icecubo-hero
  */
@@ -24,8 +24,9 @@
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large","textColor":"white"} -->
-<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile has-white-color has-text-color"><div class="wp-block-media-text__content"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile has-white-color has-text-color"><div class="wp-block-media-text__content">
+<!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
