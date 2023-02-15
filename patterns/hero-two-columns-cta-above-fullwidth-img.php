@@ -67,5 +67,11 @@
 
 <!-- wp:image -->
 <figure class="wp-block-image"><img alt=""/></figure>
-<!-- /wp:image --></div></div>
+<!-- /wp:image --></div>
+
+<!-- wp:spacer {"height":"10px"} -->
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+</div>
 <!-- /wp:cover -->
