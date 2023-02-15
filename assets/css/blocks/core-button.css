@@ -1,6 +1,5 @@
 /* Shadow for link hover */
 .wp-block-button__link:hover {
-    transition: .2s ease-out;
     box-shadow: var(--wp--custom--button-shadow);
 }
 .wp-block-button.has-dark-theme .wp-block-button__link:hover {
