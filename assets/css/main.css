@@ -1,9 +1,34 @@
 
+/* border-box all the things! @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Links and inputs transition */
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+    transition: all .2s ease-in-out;
+}
+
+/* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
-code {
+
+/* code tag used outside of the pre.wp-block-code wrapper */
+:not(.wp-block-code) > code {
     background: var(--wp--preset--color--darko-down);
     color: var(--wp--preset--color--gray-light);
-    padding: .25rem;
+    padding: 4px 8px;
 }
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
