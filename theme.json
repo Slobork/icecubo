@@ -414,47 +414,47 @@
 			"fontSizes":[
 				{
 					"slug": "extra-small",
-					"size": "clamp(.95rem, calc(.95rem + .157vw), 1.14rem)",
+					"size": "clamp(.884rem, calc(.884rem + .22vw), .97rem)",
 					"name": "Extra small"
 				},
 				{
 					"slug": "small",
-					"size": "clamp(1.197rem, calc(1.197rem + .198vw), 1.4364rem)",
+					"size": "clamp(1rem, calc(1rem + .278vw), 1.2rem)",
 					"name": "Small"
 				},
 				{
 					"slug": "medium",
-					"size": "clamp(1.26rem, calc(1.26rem + .25vw), 1.496rem)",
+					"size": "clamp(1.26rem, calc(1.26rem + .35vw), 1.512rem)",
 					"name": "Medium"
 				},
 				{
 					"slug": "large",
-					"size": "clamp(1.508rem, calc(1.508rem + .315vw), 1.8096rem)",
+					"size": "clamp(1.588rem, calc(1.588rem + .441vw), 1.905rem)",
 					"name": "Large"
 				},
 				{
 					"slug": "xl",
-					"size": "clamp(1.9rem, calc(1.9rem + .397vw), 2.28rem)",
+					"size": "clamp(2rem, calc(2rem + .556vw), 2.4rem)",
 					"name": "XL"
 				},
 				{
 					"slug": "xxl",
-					"size": "clamp(2.394rem, calc(2.394rem + .5vw), 2.8728rem)",
+					"size": "clamp(2.52rem, calc(2.52rem + .7vw), 3.025rem)",
 					"name": "XXL"
 				},
 				{
 					"slug": "xxxl",
-					"size": "clamp(3.017rem, calc(3.017rem + .63vw), 3.6204rem)",
+					"size": "clamp(3.176rem, calc(3.176rem + .882vw), 3.811rem)",
 					"name": "XXXL"
 				},
 				{
 					"slug": "xxxxl",
-					"size": "clamp(3.801rem, calc(3.801rem + .794vw), 4.5612rem)",
+					"size": "clamp(3.801rem, calc(3.801rem + 1.112vw), 4.802rem)",
 					"name": "XXXXL"
 				},
 				{
 					"slug": "xxxxxl",
-					"size": "clamp(4.79rem, calc(4.79rem + 1vw), 5.748rem)",
+					"size": "clamp(4.79rem, calc(4.79rem + 1.401vw), 6.05rem)",
 					"name": "XXXXXL"
 				}
 			]
