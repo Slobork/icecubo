@@ -21,6 +21,47 @@ textarea:focus,
     transition: all .2s ease-in-out;
 }
 
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]),
+select,
+textarea,
+.wp-block-search__input {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-size: var(--wp--preset--font-size--extra-small);
+    padding: calc(.667em + 2px);
+    width: 100%;
+}
+
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]):focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.wp-block-search__input:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+    width: auto;
+}
+
+input[type=button],
+input[type=email],
+input[type=search],
+input[type=submit],
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::placeholder {
+    font-size: var(--wp--preset--font-size--small);
+    opacity: 0.6;
+}
+
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
@@ -66,3 +107,56 @@ body:not([class*="template-boxed"], [class*="template-blank"]) main {
 /* Blog's pagination */
 .wp-block-query-pagination { justify-content: space-between; }
 .wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
+
+/* Woo buttons */
+.woocommerce a.button,
+.woocommerce button.single_add_to_cart_button,
+.woocommerce button[name=add-to-cart],
+.woocommerce button[type=submit]:not(.wp-block-search__button),
+.woocommerce input[name=submit],
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+
+.woocommerce #respond input#submit.alt.disabled,
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt:disabled[disabled],
+.woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+.woocommerce a.button.alt.disabled,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt:disabled[disabled],
+.woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce button.button.alt.disabled,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt:disabled[disabled],
+.woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce input.button.alt.disabled,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt:disabled[disabled],
+.woocommerce input.button.alt:disabled[disabled]:hover {
+    background: var(--wp--preset--color--darko-down);
+    color: var(--wp--preset--color--white-ice);
+    border-radius: 30px;
+    padding: .9rem 1.75rem;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    background: var(--wp--preset--color--darko);
+    color: var(--wp--preset--color--white-ice);
+}
