@@ -13,6 +13,7 @@
     box-shadow: var(--wp--custom--button-shadow);
 }
 
+/* Need to add a class has-dark-theme */
 .wp-block-button.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link {
     box-shadow: var(--wp--custom--button-shadow-dark);
 }
