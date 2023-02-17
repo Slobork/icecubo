@@ -1,5 +1,5 @@
 /* Nav item - outline */
-.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: 3px; padding: 8px 15px; }
+.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: 3px; padding: .5rem 1rem; }
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
