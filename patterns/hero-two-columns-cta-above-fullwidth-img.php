@@ -6,12 +6,9 @@
  * Categories: icecubo-hero
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","className":"is-light"} -->
-<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"70px"} -->
-<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"50px"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:100px;padding-bottom:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","className":"is-light"} -->
+<div class="wp-block-group alignfull is-light"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%"><!-- wp:heading {"textColor":"highlight-2"} -->
@@ -65,13 +62,8 @@
 <div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:image -->
-<figure class="wp-block-image"><img alt=""/></figure>
+<!-- wp:image {"align":"full"} -->
+<figure class="wp-block-image alignfull"><img alt=""/></figure>
 <!-- /wp:image --></div>
-
-<!-- wp:spacer {"height":"10px"} -->
-<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-</div>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->
