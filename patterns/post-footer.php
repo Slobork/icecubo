@@ -7,12 +7,12 @@
  * Inserter: false
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"0px"}}} -->
-<div class="wp-block-group">
+<!-- wp:group {"layout":{"type":"constrained"},"fontSize":"small","style":{"spacing":{"blockGap":"0px"}}} -->
+<div class="wp-block-group has-small-font-size">
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":"5px"}}} -->
     <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p>In:</p>
+        <p class="terms"><?php echo esc_html__('Categories:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"category"} /-->
     </div>
@@ -20,7 +20,7 @@
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":"5px"}}} -->
     <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p>Tags:</p>
+        <p class="terms"><?php echo esc_html__('Tags:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"post_tag"} /-->
     </div>
