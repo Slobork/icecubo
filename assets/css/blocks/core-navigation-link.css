@@ -1,1 +1,1 @@
-.wp-block-navigation ul li.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: 30px; padding: .5rem 1.5rem; }
+.wp-block-navigation ul li.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xl) }

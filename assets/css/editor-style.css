@@ -1,8 +1,20 @@
 /* Nav item - outline */
-.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: 30px; padding: .5rem 1.5rem; }
+.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xl) }
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
+
+/* Search box */
+.wp-block-search__no-button .wp-block-search__input,
+.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+.wp-block-search__button-outside .wp-block-search__input {
+    border-radius: var(--wp--custom--radius-large);
+}
+.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
+    border-color: inherit;
+    border-top-left-radius: var(--wp--custom--radius-large);
+    border-bottom-left-radius: var(--wp--custom--radius-large);
+}
 
 /* Preformatted text in the "Classic block" */
 .wp-block-freeform.block-library-rich-text__tinymce pre { color: inherit; }
