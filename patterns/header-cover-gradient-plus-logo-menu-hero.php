@@ -29,15 +29,15 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
-<p class="has-text-align-center has-white-color has-text-color has-large-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p class="has-text-align-center has-white-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starter just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"40px"} -->
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:media-text {"className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color"><figure class="wp-block-media-text__media"></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
+<!-- wp:media-text {"align":"","className":"has-media-on-the-right has-white-color has-text-color"} -->
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color"><figure class="wp-block-media-text__media"></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
 <h2 class="is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
