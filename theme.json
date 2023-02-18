@@ -681,13 +681,6 @@
 					}
 				}
 			},
-			"core/table": {
-				"border": {
-					"width": "2px",
-					"style": "solid",
-					"color": "var(--wp--preset--color--gray-very-light)"
-				}
-			},
 			"core/query-pagination": {
 				"color": {
 					"background": "var(--wp--preset--color--white-ice)"
@@ -707,6 +700,13 @@
 			"core/search": {
 				"border": {
 					"radius": "var(--wp--custom--radius-large)"
+				}
+			},
+			"core/table": {
+				"border": {
+					"width": "2px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--gray-very-light)"
 				}
 			}
 		}
