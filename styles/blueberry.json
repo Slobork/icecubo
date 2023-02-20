@@ -20,6 +20,11 @@
 					"name": "Darko down"
 				},
 				{
+					"slug": "darko-down-bottom",
+					"color": "#3c3c3c",
+					"name": "Darko down bottom"
+				},
+				{
 					"slug": "primary-light",
 					"color": "#4F86F7",
 					"name": "Bluebo light"
