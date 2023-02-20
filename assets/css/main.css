@@ -10,6 +10,13 @@ html {
     box-sizing: inherit;
 }
 
+/* break the long text */
+body * {
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
 /* Links and inputs transition */
 a,
 button,
