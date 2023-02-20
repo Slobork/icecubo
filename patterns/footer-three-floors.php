@@ -6,16 +6,16 @@
  * Categories: icecubo-footer
  */
 ?>
-<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"20px","bottom":"15px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:20px;padding-bottom:15px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"},"fontSize":"small"} -->
+<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"20px","bottom":"15px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:20px;padding-bottom:15px"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"extra-small"} -->
-<div class="wp-block-button has-custom-font-size is-style-outline has-extra-small-font-size"><a class="wp-block-button__link wp-element-button">Download now</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
+<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button">Download now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -83,8 +83,8 @@
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"25px","bottom":"20px"}},"border":{"top":{"color":"var:preset|color|gray-dark","width":"1px","style":"solid"}}},"className":"is-style-default","layout":{"type":"constrained"},"fontSize":"extra-small"} -->
-<div class="wp-block-group alignfull is-style-default has-extra-small-font-size" style="border-top-color:var(--wp--preset--color--gray-dark);border-top-style:solid;border-top-width:1px;padding-top:25px;padding-bottom:20px"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"25px","bottom":"20px"}},"border":{"top":{"color":"var:preset|color|gray-dark","width":"1px","style":"solid"}}},"className":"is-style-default","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-default" style="border-top-color:var(--wp--preset--color--gray-dark);border-top-style:solid;border-top-width:1px;padding-top:25px;padding-bottom:20px"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"horizontal"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
 <p>©</p>
