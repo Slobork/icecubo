@@ -37,8 +37,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-gray-text-shadow-heading',
-                'label' => __('Gray Shadow', 'icecubo'),
+                'name'  => 'icecubo-small-text-shadow-heading',
+                'label' => __('Small Shadow', 'icecubo'),
             )
         );
 
