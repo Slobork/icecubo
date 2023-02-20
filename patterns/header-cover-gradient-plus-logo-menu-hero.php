@@ -13,7 +13,7 @@
 <div class="wp-block-group"><!-- wp:site-logo {"shouldSyncIcon":false} /-->
 
 <!-- wp:group -->
-<div class="wp-block-group"><!-- wp:site-title {"level":0,"fontSize":"xl"} /--></div>
+<div class="wp-block-group"><!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-light"}}}},"fontSize":"xl"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
