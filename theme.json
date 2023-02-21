@@ -551,14 +551,15 @@
 			},
 			"button": {
 				"color": {
-					"background": "var(--wp--preset--color--darko-down)"
+					"background": "var(--wp--preset--color--darko-transit)",
+					"text": "var(--wp--preset--color--white-ice)"
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				},
 				"border": {
 					"radius": "var(--wp--custom--radius-large)",
-					"width": "3px",
+					"width": "2px",
 					"style": "solid",
 					"color": "var(--wp--preset--color--white-ice)"
 				},
