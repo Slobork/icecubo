@@ -17,8 +17,8 @@
         <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
         <!-- wp:post-excerpt {"showMoreOnNewLine":true, "moreText":"Continue reading →"} /-->
 
-        <!-- wp:group {"layout":{"type":"flex"}, "style":{"spacing":{"blockGap":"7px"},"fontSize":"small"}} -->
-        <div class="wp-block-group has-small-font-size">
+        <!-- wp:group {"layout":{"type":"flex"}, "style":{"spacing":{"blockGap":"7px"},"fontSize":"extra-small"}} -->
+        <div class="wp-block-group has-extra-small-font-size">
             <!-- wp:post-terms {"term":"category"} /-->
             <!-- wp:post-terms {"term": "post_tag"} /-->
         </div>
