@@ -29,7 +29,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
-<p class="has-text-align-center has-white-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starter just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
+<p class="has-text-align-center has-white-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"40px"} -->
