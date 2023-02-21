@@ -15,14 +15,9 @@
 					"name": "Blackberryo"
 				},
 				{
-					"slug": "darko-down",
-					"color": "#333",
-					"name": "Darko down"
-				},
-				{
-					"slug": "darko-down-bottom",
-					"color": "#3c3c3c",
-					"name": "Darko down bottom"
+					"slug": "darko-transit",
+					"color": "#221F2E",
+					"name": "Darko transit"
 				},
 				{
 					"slug": "primary-light",
@@ -30,14 +25,14 @@
 					"name": "Blackberryo light"
 				},
 				{
-					"slug": "darko-transit",
-					"color": "#221F2E",
-					"name": "Darko transit"
-				},
-				{
 					"slug": "primary-dark",
 					"color": "#2e2848",
 					"name": "Blackberryo dark"
+				},
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
 				},
 				{
 					"slug": "shade-1",
@@ -159,7 +154,6 @@
 					"color": "#50A700",
 					"name": "Matching 6"
 				},
-
 				{
 					"slug": "highlight-1",
 					"color": "#b198ff",
@@ -246,11 +240,6 @@
 					"name": "Tint very light 1"
 				},
 				{
-					"slug": "white-ice",
-					"color": "#f1eeeb",
-					"name": "White iceo"
-				},
-				{
 					"slug": "white",
 					"color": "#ffffff",
 					"name": "White"
@@ -264,6 +253,16 @@
 					"slug": "beige",
 					"color": "#f5f5dc",
 					"name": "Beige"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "darko-down-bottom",
+					"color": "#3c3c3c",
+					"name": "Darko down bottom"
 				}
 			],
 			"duotone": [

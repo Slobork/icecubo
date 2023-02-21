@@ -15,14 +15,9 @@
 					"name": "Avo"
 				},
 				{
-					"slug": "darko-down",
-					"color": "#333",
-					"name": "Darko down"
-				},
-				{
-					"slug": "darko-down-bottom",
-					"color": "#3c3c3c",
-					"name": "Darko down bottom"
+					"slug": "darko-transit",
+					"color": "#2c4237",
+					"name": "Darko transit"
 				},
 				{
 					"slug": "primary-light",
@@ -30,16 +25,15 @@
 					"name": "Avo light"
 				},
 				{
-					"slug": "darko-transit",
-					"color": "#2c4237",
-					"name": "Darko transit"
-				},
-				{
 					"slug": "primary-dark",
 					"color": "#045529",
 					"name": "Avo dark"
 				},
-
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
+				},
 				{
 					"slug": "shade-1",
 					"color": "#126b3b",
@@ -70,7 +64,6 @@
 					"color": "#082f1a",
 					"name": "Shade 6"
 				},
-
 				{
 					"slug": "tint-1",
 					"color": "#2c8454",
@@ -101,7 +94,6 @@
 					"color": "#a1c8b3",
 					"name": "Tint 6"
 				},
-
 				{
 					"slug": "generic-1",
 					"color": "#007056",
@@ -132,7 +124,6 @@
 					"color": "#17374C",
 					"name": "Generic 6"
 				},
-
 				{
 					"slug": "matching-1",
 					"color": "#008053",
@@ -163,7 +154,6 @@
 					"color": "#00c9db",
 					"name": "Matching 6"
 				},
-
 				{
 					"slug": "highlight-1",
 					"color": "#2e62cc",
@@ -194,7 +184,6 @@
 					"color": "#A7266C",
 					"name": "Friend light"
 				},
-
 				{
 					"slug": "gray-friend-dark",
 					"color": "#3b4a3f",
@@ -225,7 +214,6 @@
 					"color": "#e3e3e3",
 					"name": "Gray min"
 				},
-
 				{
 					"slug": "primaryish",
 					"color": "#09D868",
@@ -252,11 +240,6 @@
 					"name": "Tint very light 1"
 				},
 				{
-					"slug": "white-ice",
-					"color": "#f1eeeb",
-					"name": "White iceo"
-				},
-				{
 					"slug": "white",
 					"color": "#ffffff",
 					"name": "White"
@@ -270,6 +253,16 @@
 					"slug": "beige",
 					"color": "#f5f5dc",
 					"name": "Beige"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "darko-down-bottom",
+					"color": "#3c3c3c",
+					"name": "Darko down bottom"
 				}
 			],
 			"duotone": [
