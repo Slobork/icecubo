@@ -373,7 +373,7 @@
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--primaryish)"
+						"text": "var(--wp--preset--color--primary-light)"
 					}
 				}
 			}
