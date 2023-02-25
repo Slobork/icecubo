@@ -105,12 +105,12 @@ footer { margin-top: 0 !important; }
 footer a:hover { opacity: .6; }
 
 /**
- * Target the spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
+ * Spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
  * All page templates except the boxed, blank, notitle, notitle-noheader (those are styled on its template).
  *...Eliminates the white-space above the main tag when header or title are present.
  * So if bg is applied there's no white space. Top padding has to be 1px, if it's 0 white space appears.
  */
-body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) .wp-site-blocks > * + * {
+body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) main {
     margin-top: 0;
     padding: 1px 0 4rem;
 }
