@@ -112,7 +112,7 @@ footer a:hover { opacity: .6; }
  */
 body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) main {
     margin-top: 0;
-    padding: 1px 0 4rem;
+    padding: 1px 0 3rem;
 }
 
 /* Boxed page/post template */
