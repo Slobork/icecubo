@@ -43,14 +43,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-small-margin-list',
-                'label' => __('Small margin', 'icecubo'),
-            )
-        );
-
-        register_block_style(
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
@@ -94,7 +86,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $blocks = array(
             'core/button',
             'core/heading',
-            'core/list',
             'core/navigation',
             'core/navigation-link',
             'core/paragraph',
