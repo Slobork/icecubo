@@ -122,7 +122,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 /* Page templates with a sidebar */
 :where([class*="template-sidebar-right"], [class*="template-sidebar-left"]) .sidebar {
     background: var(--wp--preset--color--white-ice);
-    padding: 2rem;
 }
 
 /* Post author - center items, usefull when avatar is used */
