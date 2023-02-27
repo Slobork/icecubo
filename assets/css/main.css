@@ -100,10 +100,6 @@ pre { overflow: auto; }
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
-/* Footer */
-footer { margin-top: 0 !important; }
-footer a:hover { opacity: .6; }
-
 /**
  * Spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
  * All page templates except the boxed, blank, notitle, notitle-noheader (those are styled on its template).
@@ -114,6 +110,11 @@ body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-ali
     margin-top: 0;
     padding: 1px 0 3rem;
 }
+
+/* Footer - links */
+footer a:hover { opacity: .6; }
+/* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
+body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-top: 0; }
 
 /* Boxed page/post template */
 [class*="template-boxed"] main { width: 78%; }
