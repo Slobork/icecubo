@@ -3,8 +3,8 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "75%",
-			"wideSize": "87%"
+			"contentSize": "min(78%, 1175px)",
+			"wideSize": "min(87%, 1380px)"
 		},
 		"color": {
 			"defaultPalette": true,
