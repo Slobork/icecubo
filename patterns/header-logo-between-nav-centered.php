@@ -9,7 +9,6 @@
 <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"25px","bottom":"25px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
 <div class="wp-block-group alignwide" style="padding-top:25px;padding-bottom:25px">
 <!-- wp:navigation {"overlayBackgroundColor":"background","overlayTextColor":"foreground","className":"is-style-default-navigation","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal","flexWrap":"wrap"}} -->
-<!-- wp:navigation-link {"isTopLevelLink":true} /-->
 
 <!-- wp:navigation-link {"isTopLevelLink":true} /-->
 
@@ -21,6 +20,5 @@
 
 <!-- wp:navigation-link {"isTopLevelLink":true} /-->
 
-<!-- wp:navigation-link {"isTopLevelLink":true} /-->
 <!-- /wp:navigation --></div>
 <!-- /wp:group -->
