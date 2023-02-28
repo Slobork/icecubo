@@ -3,8 +3,8 @@
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
-			"contentSize": "min(78%, 1175px)",
-			"wideSize": "min(87%, 1380px)"
+			"contentSize": "min(85%, 1175px)",
+			"wideSize": "min(92%, 1380px)"
 		},
 		"color": {
 			"defaultPalette": true,
@@ -485,7 +485,7 @@
 		},
 		"color": {
 			"background": "white",
-			"text": "var(--wp--preset--color--darko-down-bottom)"
+			"text": "var(--wp--preset--color--darko)"
 		},
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--medium)",
