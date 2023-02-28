@@ -6,7 +6,7 @@
  * Categories: icecubo-post-header
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"10px"}}} -->
+<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":".5rem"}}} -->
 <div class="wp-block-group">
     <!-- wp:post-featured-image /-->
     <!-- wp:post-title {"level":1} /-->

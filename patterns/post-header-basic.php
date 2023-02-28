@@ -6,7 +6,7 @@
  * Categories: icecubo-post-header
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"10px"}}} -->
+<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":".75rem"}}} -->
 <div class="wp-block-group">
     <!-- wp:post-title {"level":1} /-->
     <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->

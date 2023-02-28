@@ -9,7 +9,7 @@
 ?>
 <!-- wp:group {"layout":{"type":"constrained"},"fontSize":"extra-small","style":{"spacing":{"blockGap":"0px"}}} -->
 <div class="wp-block-group has-extra-small-font-size">
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":"5px"}}} -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem"}}} -->
     <div class="wp-block-group">
         <!-- wp:paragraph -->
         <p class="terms"><?php echo esc_html__('Categories:', 'icecubo'); ?></p>
@@ -17,8 +17,8 @@
         <!-- wp:post-terms {"term":"category"} /-->
     </div>
     <!-- /wp:group -->
-    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":"5px","margin":{"top":"6px"}}}} -->
-    <div class="wp-block-group" style="margin-top:6px;">
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem","margin":{"top":".5rem"}}}} -->
+    <div class="wp-block-group" style="margin-top:.5rem;">
         <!-- wp:paragraph -->
         <p class="terms"><?php echo esc_html__('Tags:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
