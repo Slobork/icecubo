@@ -66,6 +66,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
+        register_block_style(
+            array(
+                'name'  => 'icecubo-small-text-shadow-title',
+                'label' => __('Small Shadow', 'icecubo'),
+                'core/post-title',
+            )
+        );
+
     }
     add_action('init', 'icecubo_register_block_styles');
 
@@ -89,6 +97,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/navigation',
             'core/navigation-link',
             'core/paragraph',
+            'core/post-title',
             'core/quote'
         );
 
