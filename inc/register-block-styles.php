@@ -67,10 +67,10 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/post-title',
             array(
                 'name'  => 'icecubo-small-text-shadow-title',
                 'label' => __('Small Shadow', 'icecubo'),
-                'core/post-title',
             )
         );
 
@@ -94,10 +94,10 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $blocks = array(
             'core/button',
             'core/heading',
+            'core/post-title',
             'core/navigation',
             'core/navigation-link',
             'core/paragraph',
-            'core/post-title',
             'core/quote'
         );
 
