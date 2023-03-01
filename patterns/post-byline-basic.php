@@ -7,7 +7,7 @@
  * Inserter: false
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":".25rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
 <div class="wp-block-group has-extra-small-font-size">
     <!-- wp:post-date /-->
     <!-- wp:paragraph -->

@@ -20,9 +20,13 @@
  * Requires at least:   6.1
  */
 
+define('ICECUBO_VERSION', wp_get_theme()->get('Version'));
 
-// Filters.
 require_once get_theme_file_path('inc/key.php');
 require_once get_theme_file_path('inc/register-block-patterns.php');
 require_once get_theme_file_path('inc/register-block-styles.php');
 
+// WooCommerce options.
+if (class_exists('WooCommerce')) {
+    include_once get_theme_file_path('inc/woocommerce.php');
+}

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Featue basic.
+ * Title: Features basic.
  * Slug: icecubo/feature-basic
  * Categories: icecubo-general
  */

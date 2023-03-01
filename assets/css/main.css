@@ -1,28 +1,120 @@
 
+/* border-box all the things! @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* break the long text */
+body * {
+    word-break: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Links and inputs transition */
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-element-button {
+    transition: all .2s ease-in-out;
+}
+
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]),
+select,
+textarea,
+.wp-block-search__input {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-size: var(--wp--preset--font-size--extra-small);
+    padding: calc(.667em + 2px);
+    width: 100%;
+}
+
+input:not([type="button"], [type="submit"], [type="checkbox"], [type="radio"], [type="file"]):focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.wp-block-search__input:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+    width: auto;
+}
+
+input[type=button],
+input[type=email],
+input[type=search],
+input[type=submit],
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::placeholder {
+    font-size: var(--wp--preset--font-size--small);
+    opacity: 0.6;
+}
+
+/* WP built-in highlighting mark */
+mark {padding: 1px 6px;}
+
+/* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
-code {
+
+/* code tag used outside of the pre.wp-block-code wrapper */
+:not(.wp-block-code) > code {
     background: var(--wp--preset--color--darko-down);
     color: var(--wp--preset--color--gray-light);
-    padding: .25rem;
+    padding: 4px 8px;
 }
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
-/* Menu item - on hover behavior */
-li.wp-block-navigation-item:not(.has-child) a:hover { box-shadow: 0 2px 0; }
+
+/* Search box */
+.wp-block-search__no-button .wp-block-search__input,
+.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+.wp-block-search__button-outside .wp-block-search__input {
+    border-radius: var(--wp--custom--radius-large);
+}
+.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
+    border-color: inherit;
+    border-top-left-radius: var(--wp--custom--radius-large);
+    border-bottom-left-radius: var(--wp--custom--radius-large);
+}
 
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
-/* Footer */
-footer { margin-top: 0 !important; }
-footer a:hover { opacity: .6; }
-
-/* All page templates except the boxed & blank */
-body:not([class*="template-boxed"], [class*="template-blank"]) main {
-    margin-top: 0 !important;
-    padding: 1rem 0 4rem;
+/**
+ * Spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
+ * All page templates except the boxed, blank, notitle, notitle-noheader (those are styled on its template).
+ *...Eliminates the white-space above the main tag when header or title are present.
+ * So if bg is applied there's no white space. Top padding has to be 1px, if it's 0 white space appears.
+ */
+body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) main {
+    margin-top: 0;
+    padding: 1px 0 3rem;
 }
+
+/* Footer - links */
+footer a:hover { opacity: .6; }
+/* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
+body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-top: 0; }
 
 /* Boxed page/post template */
 [class*="template-boxed"] main { width: 78%; }
@@ -30,7 +122,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) main {
 /* Page templates with a sidebar */
 :where([class*="template-sidebar-right"], [class*="template-sidebar-left"]) .sidebar {
     background: var(--wp--preset--color--white-ice);
-    padding: 2rem;
 }
 
 /* Post author - center items, usefull when avatar is used */
@@ -38,31 +129,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) main {
 .wp-block-post-author .wp-block-post-author__avatar img {
     vertical-align: middle;
     padding: 4px 0;
-}
-
-/* Qoute */
-.wp-block-quote.is-style-default:not(.has-text-align-center) > * {
-    margin-left: 4rem;
-}
-
-.wp-block-quote.is-style-default::before,
-.wp-block-quote.is-style-default.has-text-align-right p::before {
-    content: "\201C";
-    position: absolute;
-    font-size: 4rem;
-    line-height: 1;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 700;
-}
-
-.wp-block-quote.is-style-default.has-text-align-center::before,
-.wp-block-quote.is-style-default.has-text-align-right::before {
-    content: " ";
-}
-
-
-.wp-block-quote.is-style-default.has-text-align-right p::before {
-    margin-left: -4rem;
 }
 
 /* Blog's pagination */

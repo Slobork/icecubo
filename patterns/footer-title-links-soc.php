@@ -6,9 +6,9 @@
  * Categories: icecubo-footer
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"50px","bottom":"30px"}},"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}}},"backgroundColor":"darko","textColor":"gray-light","className":"is-style-default","layout":{"type":"constrained"},"fontSize":"extra-small"} -->
-<div class="wp-block-group alignfull is-style-default has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-extra-small-font-size" style="padding-top:50px;padding-bottom:30px"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"horizontal"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3em","bottom":"2em"}},"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}}},"backgroundColor":"darko","textColor":"gray-light","className":"is-style-default","layout":{"type":"constrained"},"fontSize":"small"} -->
+<div class="wp-block-group alignfull is-style-default has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-top:3em;padding-bottom:2em"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","orientation":"horizontal"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
 <p>©</p>
 <!-- /wp:paragraph -->

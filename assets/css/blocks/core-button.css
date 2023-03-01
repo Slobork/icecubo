@@ -1,6 +1,5 @@
 /* Shadow for link hover */
 .wp-block-button__link:hover {
-    transition: .2s ease-out;
     box-shadow: var(--wp--custom--button-shadow);
 }
 .wp-block-button.has-dark-theme .wp-block-button__link:hover {
@@ -14,6 +13,7 @@
     box-shadow: var(--wp--custom--button-shadow);
 }
 
+/* Need to add a class has-dark-theme */
 .wp-block-button.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link {
     box-shadow: var(--wp--custom--button-shadow-dark);
 }
@@ -23,5 +23,5 @@
     box-shadow: none;
 }
 
-/* No border */
-.is-style-icecubo-noborder-button .wp-block-button__link { border-width: 0; }
+/* No border - double the class to take the impact in the editor */
+.is-style-icecubo-noborder-button.is-style-icecubo-noborder-button .wp-block-button__link { border-width: 0; }

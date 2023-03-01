@@ -37,16 +37,24 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-gray-text-shadow-heading',
-                'label' => __('Gray Shadow', 'icecubo'),
+                'name'  => 'icecubo-small-text-shadow-heading',
+                'label' => __('Small Shadow', 'icecubo'),
             )
         );
 
         register_block_style(
-            'core/list',
+            'core/navigation',
             array(
-                'name'  => 'icecubo-small-margin-list',
-                'label' => __('Small margin', 'icecubo'),
+                'name'  => 'icecubo-nav-mark-hovers',
+                'label' => __('Mark hovers', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation-link',
+            array(
+                'name'  => 'icecubo-nav-item-outline',
+                'label' => __('Outline', 'icecubo'),
             )
         );
 
@@ -55,6 +63,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-shadow-p',
                 'label' => __('Shadow box', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-small-text-shadow-title',
+                'label' => __('Small Shadow', 'icecubo'),
             )
         );
 
@@ -78,8 +94,11 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $blocks = array(
             'core/button',
             'core/heading',
-            'core/list',
-            'core/paragraph'
+            'core/post-title',
+            'core/navigation',
+            'core/navigation-link',
+            'core/paragraph',
+            'core/quote'
         );
 
         // Loop through each block and enqueue its styles.
@@ -95,6 +114,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
                 'path'   => get_theme_file_path("assets/css/blocks/{$slug}.css")
                 )
             );
+
         }
     }
         add_action('after_setup_theme', 'icecubo_enqueue_block_styles');

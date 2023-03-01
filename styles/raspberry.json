@@ -15,9 +15,9 @@
 					"name": "Raspbo"
 				},
 				{
-					"slug": "darko-down",
-					"color": "#333",
-					"name": "Darko down"
+					"slug": "darko-transit",
+					"color": "#362128",
+					"name": "Darko transit"
 				},
 				{
 					"slug": "primary-light",
@@ -25,16 +25,15 @@
 					"name": "Raspbo light"
 				},
 				{
-					"slug": "darko-transit",
-					"color": "#362128",
-					"name": "Darko transit"
-				},
-				{
 					"slug": "primary-dark",
 					"color": "#70052d",
 					"name": "Raspbo dark"
 				},
-
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "White iceo"
+				},
 				{
 					"slug": "shade-1",
 					"color": "#981042",
@@ -65,7 +64,6 @@
 					"color": "#43071d",
 					"name": "Shade 6"
 				},
-
 				{
 					"slug": "tint-1",
 					"color": "#b1295c",
@@ -96,7 +94,6 @@
 					"color": "#dca0b6",
 					"name": "Tint 6"
 				},
-
 				{
 					"slug": "generic-1",
 					"color": "#902a69",
@@ -127,7 +124,6 @@
 					"color": "#193D53",
 					"name": "Generic 6"
 				},
-
 				{
 					"slug": "matching-1",
 					"color": "#aa4224",
@@ -158,7 +154,6 @@
 					"color": "#36C6B5",
 					"name": "Matching 6"
 				},
-
 				{
 					"slug": "highlight-1",
 					"color": "#ff6d9a",
@@ -189,7 +184,6 @@
 					"color": "#17d790",
 					"name": "Friend light"
 				},
-
 				{
 					"slug": "gray-friend-dark",
 					"color": "#574145",
@@ -220,7 +214,6 @@
 					"color": "#e3e3e3",
 					"name": "Gray min"
 				},
-
 				{
 					"slug": "primaryish",
 					"color": "#E10558",
@@ -247,11 +240,6 @@
 					"name": "Tint very light 1"
 				},
 				{
-					"slug": "white-ice",
-					"color": "#f1eeeb",
-					"name": "White iceo"
-				},
-				{
 					"slug": "white",
 					"color": "#ffffff",
 					"name": "White"
@@ -265,6 +253,16 @@
 					"slug": "beige",
 					"color": "#f5f5dc",
 					"name": "Beige"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "darko-down-bottom",
+					"color": "#3c3c3c",
+					"name": "Darko down bottom"
 				}
 			],
 			"duotone": [
