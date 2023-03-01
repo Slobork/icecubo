@@ -4,7 +4,7 @@
 		"appearanceTools": true,
 		"layout": {
 			"contentSize": "min(83%, 960px)",
-			"wideSize": "min(92%, 1200px)"
+			"wideSize": "min(93%, 1280px)"
 		},
 		"color": {
 			"defaultPalette": true,
