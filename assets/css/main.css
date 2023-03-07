@@ -1,5 +1,5 @@
 
-/* border-box all the things! @see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+/* border-box all the things! */
 html {
     box-sizing: border-box;
 }
