@@ -29,5 +29,5 @@ if (! function_exists('icecubo_woo_remove_breadcrumbs') ) {
         );
 
     }
-    add_action('init', 'icecubo_woo_remove_breadcrumbs', 9);
+    add_action('init', 'icecubo_woo_remove_breadcrumbs');
 }
