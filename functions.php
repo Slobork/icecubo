@@ -1,7 +1,7 @@
 <?php
 /**
  * Theme Name:         IceCubo
- * Description:        General WordPress theme
+ * Description:        IceCubo is a block-based theme for WordPress.
  *
  * PHP version  7.3.5
  *
