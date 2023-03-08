@@ -7,19 +7,19 @@
 }
 
 /* Button with initial shadow */
-.is-style-icecubo-shadow-button .wp-block-button__link,
-.is-style-icecubo-shadow-button .wp-block-button__link:focus,
-.is-style-icecubo-shadow-button .wp-block-button__link:visited {
+.is-style-icecubo-highlight-up-button .wp-block-button__link,
+.is-style-icecubo-highlight-up-button .wp-block-button__link:focus,
+.is-style-icecubo-highlight-up-button .wp-block-button__link:visited {
     box-shadow: var(--wp--custom--button-shadow);
 }
 
 /* Need to add a class has-dark-theme */
-.wp-block-button.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link {
+.wp-block-button.has-dark-theme.is-style-icecubo-highlight-up-button .wp-block-button__link {
     box-shadow: var(--wp--custom--button-shadow-dark);
 }
 
-.is-style-icecubo-shadow-button .wp-block-button__link:hover,
-.has-dark-theme.is-style-icecubo-shadow-button .wp-block-button__link:hover {
+.is-style-icecubo-highlight-up-button .wp-block-button__link:hover,
+.has-dark-theme.is-style-icecubo-highlight-up-button .wp-block-button__link:hover {
     box-shadow: none;
 }
 

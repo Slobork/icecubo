@@ -21,8 +21,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/button',
             array(
-                'name'  => 'icecubo-shadow-button',
-                'label' => __('Shadow', 'icecubo'),
+                'name'  => 'icecubo-highlight-up-button',
+                'label' => __('Highlight up', 'icecubo'),
             )
         );
 
@@ -37,8 +37,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-small-text-shadow-heading',
-                'label' => __('Small Shadow', 'icecubo'),
+                'name'  => 'icecubo-highlight-heading',
+                'label' => __('Highlight', 'icecubo'),
             )
         );
 
@@ -61,16 +61,16 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/paragraph',
             array(
-                'name'  => 'icecubo-shadow-p',
-                'label' => __('Shadow box', 'icecubo'),
+                'name'  => 'icecubo-highlight-p',
+                'label' => __('Highlight box', 'icecubo'),
             )
         );
 
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-small-text-shadow-title',
-                'label' => __('Small Shadow', 'icecubo'),
+                'name'  => 'icecubo-highlight-title',
+                'label' => __('Highlight', 'icecubo'),
             )
         );
 
