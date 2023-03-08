@@ -1,7 +1,7 @@
 <?php
 /**
  * Theme Name:         IceCubo
- * Description:        General WordPress theme
+ * Description:        IceCubo is a block-based theme for WordPress.
  *
  * PHP version  7.3.5
  *
@@ -14,7 +14,7 @@
  * Author URI:          https://maxpressy.com
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Version:             0.0.1
+ * Version:             1.0.0
  * Text Domain:         icecubo
  * Domain Path:         /languages
  * Requires at least:   6.1

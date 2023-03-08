@@ -11,16 +11,16 @@
 <div class="wp-block-group has-extra-small-font-size">
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem"}}} -->
     <div class="wp-block-group">
-        <!-- wp:paragraph -->
-        <p class="terms"><?php echo esc_html__('Categories:', 'icecubo'); ?></p>
+        <!-- wp:paragraph "fontSize":"small" -->
+        <p class="terms has-small-font-size"><?php echo esc_html__('Categories:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"category"} /-->
     </div>
     <!-- /wp:group -->
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem","margin":{"top":".5rem"}}}} -->
     <div class="wp-block-group" style="margin-top:.5rem;">
-        <!-- wp:paragraph -->
-        <p class="terms"><?php echo esc_html__('Tags:', 'icecubo'); ?></p>
+        <!-- wp:paragraph "fontSize":"small" -->
+        <p class="terms has-small-font-size"><?php echo esc_html__('Tags:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"post_tag"} /-->
     </div>

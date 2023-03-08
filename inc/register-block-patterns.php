@@ -4,7 +4,6 @@
  * Block patterns and its categories
  *
  * @package IceCubo
- * @since   0.0.1
  */
 
 

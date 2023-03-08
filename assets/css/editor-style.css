@@ -1,6 +1,10 @@
 /* Nav item - outline */
 .is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xl) }
 
+/* Post title/Heading shadow highlight */
+.is-style-icecubo-highlight-title { text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light); }
+.is-style-icecubo-highlight-heading { text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light); }
+
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 

@@ -64,7 +64,7 @@ if (! function_exists('icecubo_scripts_and_styles') ) {
             wp_enqueue_style('icecubo-main', get_template_directory_uri() . '/assets/css/main.css', array(), ICECUBO_VERSION, 'all');
 
             if (class_exists('WooCommerce')) {
-                //wp_enqueue_style('icecubo-woo', get_template_directory_uri() . '/assets/css/woo.css', array(), ICECUBO_VERSION, 'all');
+                wp_enqueue_style('icecubo-woo', get_template_directory_uri() . '/assets/css/woo.css', array(), ICECUBO_VERSION, 'all');
             }
         }
 

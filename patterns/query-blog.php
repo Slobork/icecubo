@@ -10,8 +10,8 @@
 <!-- wp:query {"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":1},"displayLayout":{"type":"list"},"layout":{"type":"default"}} -->
 <div class="wp-block-query">
     <!-- wp:post-template -->
-    <!-- wp:group {"style":{"padding":{"bottom":"2.5rem"}}} -->
-    <div class="wp-block-group" style="padding-bottom:2.5rem;">
+    <!-- wp:group {"style":{"padding":{"bottom":"1.5rem"}}} -->
+    <div class="wp-block-group" style="padding-bottom:1.5rem;">
         <!-- wp:post-title {"isLink":true} /-->
         <!-- wp:post-featured-image {"isLink":true} /-->
         <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
