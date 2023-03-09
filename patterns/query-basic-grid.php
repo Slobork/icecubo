@@ -15,7 +15,7 @@
     <div class="wp-block-group">
     <!-- wp:post-title {"isLink":true} /-->
     <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
-    <!-- wp:post-excerpt {"showMoreOnNewLine":true, "moreText":"Continue reading →"} /-->
+    <!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
     </div>
     <!-- /wp:group -->
     <!-- /wp:post-template -->
