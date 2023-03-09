@@ -134,3 +134,15 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 /* Blog's pagination */
 .wp-block-query-pagination { justify-content: space-between; }
 .wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
+
+/* text-decoration in links is imposrtant for accesibilita. However,
+ remove the text decoration from the links that are already highlighted */
+body.blog main h2 a,
+body.archive main h2 a,
+.wp-block-query-pagination a,
+.wp-block-post-terms a,
+.wp-block-post-navigation-link a,
+.remove-text-decor a,
+a.button {
+    text-decoration: none;
+}

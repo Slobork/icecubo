@@ -496,9 +496,6 @@
 			"link": {
 				"border": {},
 				"spacing": {},
-				"typography": {
-					"textDecoration": "none"
-				},
 				"color": {
 					"text": "var(--wp--preset--color--highlight-1)"
 				},

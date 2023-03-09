@@ -15,7 +15,7 @@
         <!-- wp:post-title {"isLink":true} /-->
         <!-- wp:post-featured-image {"isLink":true} /-->
         <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
-        <!-- wp:post-excerpt {"showMoreOnNewLine":true, "moreText":"Continue reading →"} /-->
+        <!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
 
         <!-- wp:group {"layout":{"type":"flex"}, "style":{"spacing":{"blockGap":".5rem"},"fontSize":"extra-small"}} -->
         <div class="wp-block-group has-extra-small-font-size">
