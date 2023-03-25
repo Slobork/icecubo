@@ -15,6 +15,11 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 = 1.0.0 =
 * Initial release
 
+= 1.0.1 =
+* Tagging correction for the theme submission
+* Changed the screenshot to comply with submission requirements
+
+
 == Copyright ==
 
 IceCubo WordPress Theme, (C) 2023 
