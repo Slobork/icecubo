@@ -12,12 +12,15 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release
+= 1.0.2 =
+* Corrected block syntax in a couple of patterns
 
 = 1.0.1 =
 * Tagging correction for the theme submission
 * Changed the screenshot to comply with submission requirements
+
+= 1.0.0 =
+* Initial release
 
 
 == Copyright ==
