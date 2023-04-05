@@ -135,7 +135,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 .wp-block-query-pagination { justify-content: space-between; }
 .wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
 
-/* text-decoration in links is imposrtant for accesibilita. However,
+/* text-decoration in links is important for accesibility. However,
  remove the text decoration from the links that are already highlighted */
 body.blog main h2 a,
 body.archive main h2 a,
