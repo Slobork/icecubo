@@ -741,11 +741,6 @@
 			"title": "Header"
 		},
 		{
-			"name": "header-fullwidth",
-			"title": "Header - fullwidth",
-			"area": "header"
-		},
-		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
