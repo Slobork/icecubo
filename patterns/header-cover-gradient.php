@@ -19,7 +19,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"wrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
+<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
