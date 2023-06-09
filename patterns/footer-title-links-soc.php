@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Title - links - social icons.
+ * Title: Site title - links - social icons.
  * Slug: icecubo/footer-logo-links-soc
  * Categories: icecubo-footer
  */
@@ -20,7 +20,7 @@
 <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Contact Us</a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"className":"has-icon-color has-icon-background-color is-style-default"} -->
+<!-- wp:social-links {"className":"has-icon-color has-icon-background-color is-style-default","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
 <!-- wp:social-link {"url":"#","service":"twitter"} /-->
