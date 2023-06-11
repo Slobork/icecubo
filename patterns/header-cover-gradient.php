@@ -6,10 +6,10 @@
  * Categories: icecubo-header
  */
 ?>
-<!-- wp:cover {"minHeight":300,"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full"} -->
-<div class="wp-block-cover alignfull is-light" style="min-height:300px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":".75rem","bottom":".75rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:.75rem;padding-bottom:.75rem"><!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex"}} -->
+<!-- wp:cover {"minHeight":100,"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light" style="min-height:100px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"2.25rem","bottom":"1.5rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:2.25rem;padding-bottom:1.5rem"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 
 <!-- wp:group -->
@@ -19,7 +19,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"wrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
+<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->

@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Site title - links - social icons.
- * Slug: icecubo/footer-logo-links-soc
+ * Title: Site title - nav - social icons.
+ * Slug: icecubo/footer-logo-nav-soc
  * Categories: icecubo-footer
  */
 ?>
@@ -16,9 +16,7 @@
 <!-- wp:site-title {"level":0} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph -->
-<p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Contact Us</a></p>
-<!-- /wp:paragraph -->
+<!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal","flexWrap":"wrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /-->
 
 <!-- wp:social-links {"className":"has-icon-color has-icon-background-color is-style-default","layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
