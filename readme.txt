@@ -12,6 +12,9 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.0.4 - 2023-06-11 =
+* Fix: Bring back margin-top to the template page-alike-notitle. It was accidentally deleted on previous update.
+
 = 1.0.3 - 2023-06-11 =
 * Fix: Block syntax missing attributes on the following templates: sidebar-left, sidebar-right, boxed, page-alike-notitle-noheader, page-alike-notitle
 * Add: footer pattern, structured as site title - nav - soc icons
