@@ -75,7 +75,12 @@ mark {padding: 1px 6px;}
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
-/* code tag used outside of the pre.wp-block-code wrapper */
+/*Code block */
+.wp-block-code code {
+    max-height: 70vh;
+}
+
+/* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
     background: var(--wp--preset--color--darko-down);
     color: var(--wp--preset--color--gray-light);
