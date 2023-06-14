@@ -475,8 +475,11 @@
 			"spacing-xl": "1.5rem",
 			"spacing-xxl": "1.75rem",
 			"spacing-xxxl": "2rem",
+			"spacing-xxxxl": "2.25rem",
+			"spacing-xxxxxl": "2.5rem",
 			"radius-small": "3px",
-			"radius-large": "30px"
+			"radius-middle": "30px",
+			"radius-large": "50px"
 		}
 	},
 	"styles": {
@@ -588,9 +591,9 @@
 				"spacing": {
 					"padding": {
 						"top": "var(--wp--custom--spacing-s)",
-						"right": "var(--wp--custom--spacing-xxl)",
+						"right": "1.75em",
 						"bottom": "var(--wp--custom--spacing-s)",
-						"left": "var(--wp--custom--spacing-xxl)"
+						"left": "1.75em"
 					}
 				}
 			}
@@ -630,7 +633,7 @@
 					"background": "var(--wp--preset--color--white-ice)"
 				},
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				},
 				"spacing": {
 					"padding": {
@@ -646,7 +649,7 @@
 					"background": "var(--wp--preset--color--white-ice)"
 				},
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				},
 				"spacing": {
 					"padding": {
@@ -677,7 +680,7 @@
 					"background": "var(--wp--preset--color--white-ice)"
 				},
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				},
 				"spacing": {
 					"padding": {
@@ -693,7 +696,7 @@
 					"background": "var(--wp--preset--color--white-ice)"
 				},
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				},
 				"spacing": {
 					"padding": {
@@ -709,7 +712,7 @@
 					"background": "var(--wp--preset--color--white-ice)"
 				},
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				},
 				"spacing": {
 					"padding": {
@@ -722,7 +725,7 @@
 			},
 			"core/search": {
 				"border": {
-					"radius": "var(--wp--custom--radius-large)"
+					"radius": "var(--wp--custom--radius-middle)"
 				}
 			},
 			"core/table": {

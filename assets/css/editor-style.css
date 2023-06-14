@@ -1,5 +1,5 @@
 /* Nav item - outline */
-.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xl) }
+.is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xxxl) }
 
 /* Post title/Heading shadow highlight */
 .is-style-icecubo-highlight-title { text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light); }
