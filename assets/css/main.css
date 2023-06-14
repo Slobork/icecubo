@@ -136,6 +136,9 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     padding: 4px 0;
 }
 
+/*If the last element in the post content is floating, it's necessary to clear the next elms*/
+.post-footer, .wp-block-comments, footer {clear: both;}
+
 /* Blog's pagination */
 .wp-block-query-pagination { justify-content: space-between; }
 .wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
