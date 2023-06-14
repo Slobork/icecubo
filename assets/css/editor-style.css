@@ -22,3 +22,9 @@
 
 /* Preformatted text in the "Classic block" */
 .wp-block-freeform.block-library-rich-text__tinymce pre { color: inherit; }
+
+/*Code block */
+.wp-block-code code {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
