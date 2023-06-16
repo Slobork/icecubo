@@ -38,6 +38,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-page',
+            array( 'label' => esc_html__('IceCubo - Page', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-post-header',
             array( 'label' => esc_html__('IceCubo - Post header', 'icecubo') )
         );
