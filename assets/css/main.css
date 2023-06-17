@@ -75,7 +75,12 @@ mark {padding: 1px 6px;}
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
-/* code tag used outside of the pre.wp-block-code wrapper */
+/*Code block */
+.wp-block-code code {
+    max-height: 70vh;
+}
+
+/* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
     background: var(--wp--preset--color--darko-down);
     color: var(--wp--preset--color--gray-light);
@@ -130,6 +135,9 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     vertical-align: middle;
     padding: 4px 0;
 }
+
+/*If the last element in the post content is floating, it's necessary to clear the next elms*/
+.post-footer, .wp-block-comments, footer {clear: both;}
 
 /* Blog's pagination */
 .wp-block-query-pagination { justify-content: space-between; }

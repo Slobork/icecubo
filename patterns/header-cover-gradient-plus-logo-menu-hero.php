@@ -17,7 +17,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
+<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -36,9 +36,9 @@
 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:media-text {"align":"","className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color"><figure class="wp-block-media-text__media"></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h2 class="is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
+<!-- wp:media-text {"align":"","mediaType":"image","className":"has-media-on-the-right has-white-color has-text-color"} -->
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt=""/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
+<h2 class="wp-block-heading is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -51,6 +51,7 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text -->
+
 </div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->

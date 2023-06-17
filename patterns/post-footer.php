@@ -8,7 +8,7 @@
  */
 ?>
 <!-- wp:group {"layout":{"type":"constrained"},"fontSize":"extra-small","style":{"spacing":{"blockGap":"0px"}}} -->
-<div class="wp-block-group has-extra-small-font-size">
+<div class="wp-block-group has-extra-small-font-size post-footer">
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem"}}} -->
     <div class="wp-block-group">
         <!-- wp:paragraph {"fontSize":"small"} -->

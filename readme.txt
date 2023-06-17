@@ -12,6 +12,16 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.0.6 - 2023-06-17 =
+* Add: Home page and basic About page as patterns
+* Add: home.html which will make the Home template as default for the Home page
+* Update: Added comments section to the "Single without post header" template
+* Update: screenshot with larger button and no all caps for h1 elements
+* Update: add image as a placeholder for the major Header-hero pattern
+* Update: various small css and patterns adjustments
+* Update: style.css - Add Update URI and additional tags
+* Update: theme.json - Set schema at v6.2
+
 = 1.0.5 - 2023-06-11 =
 * Fix: Block syntax on the template page-alike-notitle
 
