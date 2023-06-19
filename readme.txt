@@ -12,6 +12,10 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.0.9 - 2023-06-19 =
+* Made some additionlnal accessibility checks
+* Set additional tags in style.css
+
 = 1.0.8 - 2023-06-17 =
 * Fix: Remove from your style.css file: "Update URI". This feature is only for themes that are distributed outside the theme directory.
 
