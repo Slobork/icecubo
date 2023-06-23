@@ -2,12 +2,12 @@
 // phpcs:ignore
 /**
  * Title: Call to action box - Row
- * Slug: icecubo/box-cta-horizontal
+ * Slug: icecubo/box-cta-row
  * Categories: icecubo-boxes
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70","top":"var:preset|spacing|70"}}},"backgroundColor":"white-ice","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"left","inherit":null}}}}} -->
-<div class="wp-block-group has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"left","inherit":null}}}}} -->
+<div class="wp-block-group has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 

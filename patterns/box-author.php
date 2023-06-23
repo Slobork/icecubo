@@ -6,8 +6,8 @@
  * Categories: icecubo-boxes
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70","top":"var:preset|spacing|70"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
-<div class="wp-block-group has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:avatar {"isLink":true,"align":"center","style":{"border":{"radius":"50px"}}} /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
+<div class="wp-block-group has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:avatar {"isLink":true,"align":"center","style":{"border":{"radius":"50px"}}} /-->
 
 <!-- wp:paragraph {"fontSize":"large"} -->
 <p class="has-large-font-size">John Doe</p>

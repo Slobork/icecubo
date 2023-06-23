@@ -6,8 +6,8 @@
  * Categories: icecubo-boxes
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|80"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-ice-background-color has-background" style="padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-ice-background-color has-background" style="padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Lorem ipsum dolor</h3>
 <!-- /wp:heading -->
 

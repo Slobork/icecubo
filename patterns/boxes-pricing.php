@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|60","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60"}}},"backgroundColor":"white-ice","boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
-<div class="wp-block-column has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"boldblocks":{}} -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
+<div class="wp-block-column has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"boldblocks":{}} -->
 <p>Personal</p>
 <!-- /wp:paragraph -->
 
@@ -56,15 +56,15 @@
 <hr class="wp-block-separator has-text-color has-gray-dark-color has-alpha-channel-opacity has-gray-dark-background-color has-background is-style-wide" style="margin-top:5px;margin-bottom:5px"/>
 <!-- /wp:separator -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:button -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|large"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large)"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|60","bottom":"var:preset|spacing|70","left":"var:preset|spacing|60"}}},"backgroundColor":"white-ice","boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
-<div class="wp-block-column has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"boldblocks":{}} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
+<div class="wp-block-column has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"boldblocks":{}} -->
 <p>Professional</p>
 <!-- /wp:paragraph -->
 
@@ -112,8 +112,8 @@
 <hr class="wp-block-separator has-text-color has-gray-dark-color has-alpha-channel-opacity has-gray-dark-background-color has-background is-style-wide" style="margin-top:5px;margin-bottom:5px"/>
 <!-- /wp:separator -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|70"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--70)"><!-- wp:button -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|large"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large)"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
