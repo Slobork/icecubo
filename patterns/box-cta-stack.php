@@ -6,13 +6,13 @@
  * Categories: icecubo-boxes
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"center","inherit":null}}}}} -->
-<div class="wp-block-group has-white-ice-background-color has-background with-text-alignment" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">Call-to-Action</p>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment","layout":{"type":"constrained"}} -->
+<div class="wp-block-group with-text-alignment has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">Call-to-Action</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
