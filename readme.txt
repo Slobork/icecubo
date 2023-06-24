@@ -12,6 +12,12 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.1.0 - 2023-06-24 =
+* Update: Remove the Home template, it remains available as a pattern. This returns the regular posts index as a default for a Blog page.
+* New: Added some box-based patterns
+* New: Added fluid spacing as the default option to blocks
+* Update: Applied fluid spacing to some patterns
+
 = 1.0.9 - 2023-06-19 =
 * Made some additionlnal accessibility checks
 * Set additional tags in style.css

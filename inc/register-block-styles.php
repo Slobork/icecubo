@@ -74,6 +74,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
+        register_block_style(
+            'core/social-links',
+            array(
+                'name'  => 'icecubo-social-outline',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
     }
     add_action('init', 'icecubo_register_block_styles');
 
@@ -98,6 +106,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/navigation',
             'core/navigation-link',
             'core/paragraph',
+            'core/social-links',
             'core/quote'
         );
 

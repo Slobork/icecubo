@@ -373,6 +373,48 @@
 			]
 		},
 		"spacing": {
+			"spacingSizes": [
+				{
+					"name": "XX small",
+					"size": "clamp(.63rem, calc(.5rem + .5vw), .97rem)",
+					"slug": "xx-small"
+				},
+				{
+					"name": "X Small",
+					"size": "clamp(.794rem, calc(.63rem + .63vw), 1.26rem)",
+					"slug": "x-small"
+				},
+				{
+					"name": "Small",
+					"size": "clamp(1.26rem, calc(1rem + 1vw), 1.588rem)",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "clamp(1.588rem, calc(1.26rem + 1.26vw), 2.52rem)",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "clamp(2rem, calc(1.588rem + 1.588vw), 3.176rem)",
+					"slug": "large"
+				},
+				{
+					"name": "X Large",
+					"size": "clamp(2.52rem, calc(2rem + 2vw), 4.002rem)",
+					"slug": "x-large"
+				},
+				{
+					"name": "XX Large",
+					"size": "clamp(3.176rem, calc(2.52rem + 2.52vw), 5.042rem)",
+					"slug": "xx-large"
+				},
+				{
+					"name": "XXX Large",
+					"size": "clamp(4.002rem, calc(3.176rem + 3.176vw), 6.353rem)",
+					"slug": "xxx-large"
+				}
+			],
 			"units": [
 				"%",
 				"px",
