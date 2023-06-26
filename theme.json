@@ -372,6 +372,36 @@
 				}
 			]
 		},
+		"shadow": {
+			"defaultPresets": true,
+			"presets": [
+				{
+					"name": "Natural current color",
+					"slug": "natural-current",
+					"shadow": "6px 6px 9px currentColor"
+				},
+				{
+					"name": "Deep current color",
+					"slug": "deep-current",
+					"shadow": "12px 12px 50px currentColor"
+				},
+				{
+					"name": "Sharp current color",
+					"slug": "sharp-current",
+					"shadow": "6px 6px 0px currentColor"
+				},
+				{
+					"name": "Outlined current color",
+					"slug": "outlined-current",
+					"shadow": "6px 6px 0px -3px currentColor"
+				},
+				{
+					"name": "Crisp current color",
+					"slug": "crisp-current",
+					"shadow": "5px 5px currentColor"
+				}
+			]
+		},
 		"spacing": {
 			"spacingSizes": [
 				{
