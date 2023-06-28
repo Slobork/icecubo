@@ -17,27 +17,25 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} /--></div>
+<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"}}}} -->
+<!-- wp:page-list /-->
+<!-- /wp:navigation --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"1.25rem"} -->
+<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"highlight-2","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h1 class="has-text-align-center is-style-icecubo-gray-text-shadow-heading has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
+<h1 class="wp-block-heading has-text-align-center is-style-icecubo-gray-text-shadow-heading has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
 <p class="has-text-align-center has-white-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
-<!-- wp:media-text {"align":"","mediaType":"image","className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
+<!-- wp:media-text {"align":"","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"className":"has-media-on-the-right has-white-color has-text-color"} -->
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
 <h2 class="wp-block-heading is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
@@ -46,12 +44,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Start Now!</a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Start Now!</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
-<!-- /wp:media-text -->
-
-</div>
+<!-- /wp:media-text --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->

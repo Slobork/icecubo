@@ -35,8 +35,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"2rem"} -->
+<div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
@@ -69,8 +69,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"2rem"} -->
+<div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->

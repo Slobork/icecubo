@@ -18,8 +18,8 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|small","bottom":"var:preset|spacing|large","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
 
@@ -27,8 +27,8 @@
 <p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"1.5rem"} -->
+<div style="height:1.5rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
@@ -42,8 +42,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|small","bottom":"var:preset|spacing|large","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
 
@@ -51,8 +51,8 @@
 <p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"1.5rem"} -->
+<div style="height:1.5rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:paragraph -->
