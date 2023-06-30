@@ -6,8 +6,8 @@
  * Categories: icecubo-section-covers
  */
 ?>
-<!-- wp:cover {"overlayColor":"primary","isDark":false,"style":{"spacing":{"padding":{"bottom":"3rem"}}}} -->
-<div class="wp-block-cover is-light" style="padding-bottom:3rem"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0","padding":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"overlayColor":"primary","isDark":false,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}}} -->
+<div class="wp-block-cover is-light" style="padding-bottom:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0","padding":{"bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-bottom:0"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading -->

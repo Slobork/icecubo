@@ -6,9 +6,50 @@
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"3rem"}}}} -->
-<main class="wp-block-group" style="padding-bottom:3rem">
-    <!-- wp:pattern {"slug":"icecubo/header-cover-gradient-plus-logo-menu-hero"} /-->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"bottom":"5rem"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
+<div class="wp-block-group"><!-- wp:site-logo /-->
+
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-light"}}}},"fontSize":"xl"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:navigation {"ref":28299,"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"1.25rem"} -->
+<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"textAlign":"center","level":1,"textColor":"highlight-2","className":"is-style-icecubo-gray-text-shadow-heading"} -->
+<h1 class="wp-block-heading has-text-align-center is-style-icecubo-gray-text-shadow-heading has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
+<p class="has-text-align-center has-white-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:media-text {"align":"","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"className":"has-media-on-the-right has-white-color has-text-color"} -->
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
+<h2 class="wp-block-heading is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>It's the right time to start building Websites with blocks and predefined patterns.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Start Now!</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:media-text --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Lorem ipsum sit amet, consectetur a adipiscing</h2>
@@ -19,9 +60,9 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:media-text {"mediaId":28863,"mediaLink":"http://protester.local/icecubo-blue-484x396/","mediaType":"image"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image" class="wp-image-28863 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:media-text {"mediaType":"image"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 1</h3>
 <!-- /wp:heading -->
 
@@ -31,21 +72,21 @@
 <!-- /wp:media-text --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:media-text {"mediaPosition":"right","mediaId":28863,"mediaLink":"http://protester.local/icecubo-blue-484x396/","mediaType":"image"} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:media-text {"mediaPosition":"right","mediaType":"image"} -->
 <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile"><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 2</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Lorem ipsum sit amet, consectetur a adipiscing. Nulla vitae lorem a neque imperdiet sagittis vivamus enim velit.</p>
-<!-- /wp:paragraph --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image" class="wp-image-28863 size-full"/></figure></div>
+<!-- /wp:paragraph --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:media-text {"mediaId":28863,"mediaLink":"http://protester.local/icecubo-blue-484x396/","mediaType":"image"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image" class="wp-image-28863 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:media-text {"mediaType":"image"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 3</h3>
 <!-- /wp:heading -->
 
@@ -53,6 +94,4 @@
 <p>Lorem ipsum sit amet, consectetur a adipiscing. Nulla vitae lorem a neque imperdiet sagittis vivamus enim velit.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text --></div>
-<!-- /wp:group -->
-</main>
 <!-- /wp:group -->
