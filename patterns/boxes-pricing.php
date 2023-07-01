@@ -9,7 +9,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment"} -->
 <div class="wp-block-column with-text-alignment has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Professional</p>
+<p class="has-text-align-center">Basic</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"fontSize":"xl"} -->
@@ -69,7 +69,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"fontSize":"xl"} -->
-<p class="has-text-align-center has-xl-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">$39/yr.</p>
+<p class="has-text-align-center has-xl-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">$69/yr.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"1rem"}}},"fontSize":"small"} -->
