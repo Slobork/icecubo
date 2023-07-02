@@ -3,7 +3,7 @@
 /**
  * Title: Team with featured message on left.
  * Slug: icecubo/section-columns-team-message-left
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns {"verticalAlignment":"center"} -->

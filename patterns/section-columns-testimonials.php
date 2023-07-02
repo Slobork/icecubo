@@ -3,7 +3,7 @@
 /**
  * Title: Testimonials with featured message.
  * Slug: icecubo/section-columns-testimonials-featured-message
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

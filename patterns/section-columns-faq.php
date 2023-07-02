@@ -3,7 +3,7 @@
 /**
  * Title: FAQ.
  * Slug: icecubo/section-columns-faq
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:heading {"textAlign":"center"} -->

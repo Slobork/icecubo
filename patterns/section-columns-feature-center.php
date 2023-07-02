@@ -3,7 +3,7 @@
 /**
  * Title: Awesome feature.
  * Slug: icecubo/section-columns-awesome-feature
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

@@ -3,7 +3,7 @@
 /**
  * Title: Testimonials with featured message - sharp gradient applied.
  * Slug: icecubo/section-columns-testimonials-featured-message-gradient-sharp
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

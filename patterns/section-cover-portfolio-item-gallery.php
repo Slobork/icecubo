@@ -3,7 +3,7 @@
 /**
  * Title: Portfolio item with gallery.
  * Slug: icecubo/section-cover-portfolio-gallery
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"overlayColor":"primary","isDark":false,"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}}} -->

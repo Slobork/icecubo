@@ -3,7 +3,7 @@
 /**
  * Title: Collection with featured message on center.
  * Slug: icecubo/section-columns-collection-message-center
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

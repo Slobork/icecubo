@@ -3,7 +3,7 @@
 /**
  * Title: Features with message on center.
  * Slug: icecubo/section-columns-features-message-center
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

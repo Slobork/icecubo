@@ -3,7 +3,7 @@
 /**
  * Title: Awesome feature with sharp gradient applied.
  * Slug: icecubo/section-columns-awesome-feature-sharp
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

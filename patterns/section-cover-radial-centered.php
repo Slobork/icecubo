@@ -3,7 +3,7 @@
 /**
  * Title: Cover with radial gradient center (collection as placeholders).
  * Slug: icecubo/section-cover-radial-gradient-center
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"gradient":"white-to-primary-radial-sharp","isDark":false} -->

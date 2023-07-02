@@ -3,7 +3,7 @@
 /**
  * Title: Radial gradient and opacity applied (portfolio as placeholder).
  * Slug: icecubo/section-cover-porfolio-items-radial-gradient
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"dimRatio":60,"gradient":"darko-to-primary-radial-gradual","isDark":false,"className":"is-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}}} -->

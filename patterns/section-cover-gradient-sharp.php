@@ -3,7 +3,7 @@
 /**
  * Title: Cover with sharp gradient (testimonials as placeholders).
  * Slug: icecubo/section-cover-gradient-sharp
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"gradient":"primary-to-white-linear-sharp-corner","isDark":false} -->
