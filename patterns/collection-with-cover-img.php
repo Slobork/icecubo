@@ -3,7 +3,7 @@
 /**
  * Title: Standard features CTA summary in columns with cover background.
  * Slug: icecubo/collection-basic
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:columns -->

@@ -3,7 +3,7 @@
 /**
  * Title: Call to action box - Stack
  * Slug: icecubo/box-cta-stack
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment","layout":{"type":"constrained"}} -->

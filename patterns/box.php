@@ -3,7 +3,7 @@
 /**
  * Title: Gruop box leading with a heading
  * Slug: icecubo/box-in-group
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"}} -->

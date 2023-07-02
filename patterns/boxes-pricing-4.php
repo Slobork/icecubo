@@ -3,7 +3,7 @@
 /**
  * Title: Pricing boxes 4
  * Slug: icecubo/boxes-pricing-4
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:columns -->

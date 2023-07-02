@@ -3,7 +3,7 @@
 /**
  * Title: Boxes leading with a subtitle placeholder
  * Slug: icecubo/boxes-with-heading-sub
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:columns -->

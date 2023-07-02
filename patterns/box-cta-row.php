@@ -3,7 +3,7 @@
 /**
  * Title: Call to action box - Row
  * Slug: icecubo/box-cta-row
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"boldblocks":{"withTextAlignment":{"textAlignment":{"sm":{"inherit":"lg"},"md":{"inherit":"lg"},"lg":{"value":"left","inherit":null}}}}} -->

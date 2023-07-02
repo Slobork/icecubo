@@ -3,7 +3,7 @@
 /**
  * Title: Author box
  * Slug: icecubo/box-author
- * Categories: icecubo-boxes
+ * Categories: icecubo-box
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment","layout":{"type":"constrained"}} -->
