@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Collection in column with image.
+ * Title: Standard features CTA summary in columns.
  * Slug: icecubo/collection-with-image
  * Categories: icecubo-general
  */

@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Collection with cover background.
- * Slug: icecubo/Collection-basic
- * Categories: icecubo-general
+ * Title: Standard features CTA summary in columns with cover background.
+ * Slug: icecubo/collection-basic
+ * Categories: icecubo-boxes
  */
 ?>
 <!-- wp:columns -->

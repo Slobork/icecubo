@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Team in columns.
+ * Title: Team members in columns.
  * Slug: icecubo/team-basic
  * Categories: icecubo-general
  */

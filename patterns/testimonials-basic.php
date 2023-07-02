@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Testimonials in columns.
+ * Title: Testimonials basic outline in columns.
  * Slug: icecubo/testimonials-basic
  * Categories: icecubo-general
  */
