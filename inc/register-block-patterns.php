@@ -24,7 +24,7 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-footer',
-            array( 'label' => esc_html__('IceCubo - Footer', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Footers', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -34,37 +34,27 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-header',
-            array( 'label' => esc_html__('IceCubo - Header', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Headers', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-hero',
-            array( 'label' => esc_html__('IceCubo - Hero', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Heroes', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-page',
-            array( 'label' => esc_html__('IceCubo - Page', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Pages', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-post-header',
-            array( 'label' => esc_html__('IceCubo - Post header', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Post headers', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-section',
             array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-section-columns',
-            array( 'label' => esc_html__('IceCubo - Section (Columns)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-section-covers',
-            array( 'label' => esc_html__('IceCubo - Section (Covers)', 'icecubo') )
         );
 
     }
