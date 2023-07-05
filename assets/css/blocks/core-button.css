@@ -18,6 +18,7 @@
     box-shadow: var(--wp--custom--button-shadow-dark);
 }
 
+/* Highlight style */
 .is-style-icecubo-highlight-up-button .wp-block-button__link:hover,
 .has-dark-theme.is-style-icecubo-highlight-up-button .wp-block-button__link:hover {
     box-shadow: none;
