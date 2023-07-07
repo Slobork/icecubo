@@ -67,6 +67,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/post-template',
+            array(
+                'name'  => 'icecubo-boxed-post-template',
+                'label' => __('Boxed', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/post-title',
             array(
                 'name'  => 'icecubo-highlight-title',
@@ -106,6 +114,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/navigation',
             'core/navigation-link',
             'core/paragraph',
+            'core/post-template',
             'core/social-links',
             'core/quote'
         );
