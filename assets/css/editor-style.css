@@ -1,3 +1,13 @@
+:where(h1,h2,h3,h4,h5,h6) {margin-top: 3.5rem;}
+h1 {margin-top: 2.75rem;}
+h2 {margin-top: 4.5rem;}
+body .is-layout-constrained >:where(h1,h2,h3,h4,h5,h6) {margin-top: 3.5rem;}
+body .is-layout-constrained > h1 {margin-top: 2.75rem;}
+body .is-layout-constrained > h2 {margin-top: 4.5rem;}
+body .is-layout-flow >:where(h1,h2,h3,h4,h5,h6) {margin-top: 3.5rem;}
+body .is-layout-flow > h1 {margin-top: 2.75rem;}
+body .is-layout-flow > h2 {margin-top: 4.5rem;}
+
 /* Nav item - outline */
 .is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xxxl) }
 
