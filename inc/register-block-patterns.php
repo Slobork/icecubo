@@ -57,6 +57,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
             array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
         );
 
+        register_block_pattern_category(
+            'icecubo-query',
+            array( 'label' => esc_html__('IceCubo - Query', 'icecubo') )
+        );
+
     }
     add_action('init', 'icecubo_register_block_pattern_category', 9);
 }
