@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Team with featured message on center.
+ * Title: Columns - Team with featured message on center.
  * Slug: icecubo/section-columns-team-message-center
  * Categories: icecubo-section
  */

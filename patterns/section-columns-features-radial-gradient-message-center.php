@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Features with message on center.
+ * Title: Columns - Features with message on center.
  * Slug: icecubo/section-columns-features-message-center
  * Categories: icecubo-section
  */

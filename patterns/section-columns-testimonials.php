@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Testimonials with featured message.
+ * Title: Columns - Testimonials with featured message.
  * Slug: icecubo/section-columns-testimonials-featured-message
  * Categories: icecubo-section
  */

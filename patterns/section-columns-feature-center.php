@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Awesome feature.
+ * Title: Columns - Awesome feature.
  * Slug: icecubo/section-columns-awesome-feature
  * Categories: icecubo-section
  */

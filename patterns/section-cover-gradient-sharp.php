@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with sharp gradient (testimonials as placeholders).
+ * Title: Cover - with sharp splitted background (testimonials as placeholders).
  * Slug: icecubo/section-cover-gradient-sharp
  * Categories: icecubo-section
  */

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with radial gradient center (collection as placeholders).
+ * Title: Cover - with a narrowed background (collection as placeholders).
  * Slug: icecubo/section-cover-radial-gradient-center
  * Categories: icecubo-section
  */

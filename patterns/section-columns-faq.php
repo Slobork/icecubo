@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: FAQ.
+ * Title: Columns - FAQ.
  * Slug: icecubo/section-columns-faq
  * Categories: icecubo-section
  */

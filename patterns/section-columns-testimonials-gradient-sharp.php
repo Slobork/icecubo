@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Testimonials with featured message - sharp gradient applied.
+ * Title: Columns - Testimonials with featured message - sharp splitted background.
  * Slug: icecubo/section-columns-testimonials-featured-message-gradient-sharp
  * Categories: icecubo-section
  */

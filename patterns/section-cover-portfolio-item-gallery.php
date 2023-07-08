@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Portfolio item with gallery.
+ * Title: Cover - with portfolio item and gallery.
  * Slug: icecubo/section-cover-portfolio-gallery
  * Categories: icecubo-section
  */

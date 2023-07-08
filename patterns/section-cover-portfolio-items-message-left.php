@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Radial gradient and opacity applied (portfolio as placeholder).
+ * Title: Cover - with focus background and opacity applied (portfolio as placeholder).
  * Slug: icecubo/section-cover-porfolio-items-radial-gradient
  * Categories: icecubo-section
  */

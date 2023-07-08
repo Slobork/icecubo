@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Collection with featured message on center.
+ * Title: Columns - Collection with featured message on center.
  * Slug: icecubo/section-columns-collection-message-center
  * Categories: icecubo-section
  */
