@@ -1,0 +1,2 @@
+.is-style-icecubo-image-tiny-frame {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}
+.is-style-icecubo-image-curly-frame {border: 1px solid currentColor; overflow: hidden; box-shadow: 0 4px 10px 0 var(--wp--preset--color--gray-light); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
