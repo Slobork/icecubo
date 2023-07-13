@@ -405,6 +405,11 @@
 		"spacing": {
 			"spacingSizes": [
 				{
+					"name": "XXX small",
+					"size": "clamp(.5rem, calc(.397rem + .397vw), .7rem)",
+					"slug": "xxx-small"
+				},
+				{
 					"name": "XX small",
 					"size": "clamp(.63rem, calc(.5rem + .5vw), .97rem)",
 					"slug": "xx-small"
