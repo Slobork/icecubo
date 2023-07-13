@@ -69,6 +69,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
                 'name'  => 'icecubo-to-light-color',
                 'label' => __('Transit to light color', 'icecubo'),
             )
@@ -157,6 +165,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/paragraph',
             array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
                 'name'  => 'icecubo-to-light-color',
                 'label' => __('Transit to light color', 'icecubo'),
             )
@@ -199,6 +215,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-mix-colors',
                 'label' => __('Mix colors', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
             )
         );
 
