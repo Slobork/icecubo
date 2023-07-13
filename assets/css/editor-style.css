@@ -21,16 +21,19 @@ body .is-layout-flow > h2 {margin-top: 4.5rem;}
 .is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
 .is-style-icecubo-to-light-color {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light)); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
 
-.is-style-icecubo-image-tiny-frame {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}
-.is-style-icecubo-image-curly-frame {border: 1px solid currentColor; overflow: hidden; box-shadow: 0 4px 10px 0 var(--wp--preset--color--gray-light); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
-.is-style-icecubo-media-text-tiny-frame img {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}
-.is-style-icecubo-media-text-curly-frame img {border: 1px solid currentColor; overflow: hidden; box-shadow: 0 4px 10px 0 rgba( 0, 0, 0, 0.3 ); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
-
 /* Paragraph */
 .is-style-icecubo-highlight-p {box-shadow: var(--wp--custom--button-shadow); padding: 1.5rem;}
 [class*="is-style-icecubo-tearbox-"] {box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content;}
 .is-style-icecubo-tearbox-left-p {border-top-left-radius: 0;}
 .is-style-icecubo-tearbox-right-p {border-top-right-radius: 0;}
+
+/* Image and media-text */
+.is-style-icecubo-image-tiny-frame {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}
+.is-style-icecubo-image-curly-frame {border: 1px solid currentColor; overflow: hidden; box-shadow: 0 4px 10px 0 var(--wp--preset--color--gray-light); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
+.is-style-icecubo-media-text-tiny-frame img {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}
+.is-style-icecubo-media-text-curly-frame img {border: 1px solid currentColor; overflow: hidden; box-shadow: 0 4px 10px 0 rgba( 0, 0, 0, 0.3 ); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}
+.is-style-icecubo-image-spaced-frame img {padding: var(--wp--preset--spacing--xxx-small); border: 10px solid transparent; background: conic-gradient(from 90deg at 1px 1px,transparent 25%,var(--wp--preset--color--gray-dark) 0);}
+.is-style-icecubo-image-spaced-cutted-frame img {padding: var(--wp--preset--spacing--xxx-small); border: 10px solid transparent; background: conic-gradient(from 90deg at 1px 1px,transparent 25%,var(--wp--preset--color--gray-dark) 0); clip-path: polygon( 0 0 ,33% 0 ,50% calc(2*var(--wp--preset--spacing--xxx-small)) ,66% 0, 100% 0 ,100% 33% ,calc(100% - 2*var(--wp--preset--spacing--xxx-small)) 50%,100% 66%, 100% 100%,66% 100%,50% calc(100% - 2*var(--wp--preset--spacing--xxx-small)),33% 100%, 0 100%,0 66% ,calc(2*var(--wp--preset--spacing--xxx-small)) 50% ,0 33% );}
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
