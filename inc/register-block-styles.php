@@ -99,6 +99,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-spaced-frame',
+                'label' => __('Spaced frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-spaced-cutted-frame',
+                'label' => __('Spaced & cutted frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
@@ -119,6 +135,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-media-text-curly-frame',
                 'label' => __('Curly frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-spaced-frame',
+                'label' => __('Spaced frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-spaced-cutted-frame',
+                'label' => __('Spaced & cutted frame', 'icecubo'),
             )
         );
 
