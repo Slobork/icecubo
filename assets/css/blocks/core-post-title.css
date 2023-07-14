@@ -1,4 +1,6 @@
-.is-style-icecubo-highlight-title {text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-1-title {text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-2-title {text-shadow: var(--wp--custom--text-shadow-small-2) var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-3-title {text-shadow: .1em .1em 0 var(--wp--preset--color--gray-light);}
 .is-style-icecubo-underline-overline {display: flex; flex-direction: column;}
 .is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
 .is-style-icecubo-aside-lines {display: flex; align-items: center;}

@@ -37,8 +37,16 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-highlight-heading',
-                'label' => __('Highlight', 'icecubo'),
+                'name'  => 'icecubo-accent-2-heading',
+                'label' => __('Accent small 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-3-heading',
+                'label' => __('Accent huge', 'icecubo'),
             )
         );
 
@@ -221,8 +229,24 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-highlight-title',
-                'label' => __('Highlight', 'icecubo'),
+                'name'  => 'icecubo-accent-1-title',
+                'label' => __('Accent small 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-2-title',
+                'label' => __('Accent small 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-3-title',
+                'label' => __('Accent huge', 'icecubo'),
             )
         );
 
@@ -293,6 +317,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
+            'core/cover',
+            'core/group',
             'core/heading',
             'core/image',
             'core/navigation',
