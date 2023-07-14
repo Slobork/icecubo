@@ -69,7 +69,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-accent-1-heading',
+                'name'  => 'icecubo-accent-text-small-1',
                 'label' => __('Accent small 1', 'icecubo'),
             )
         );
@@ -77,7 +77,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-accent-2-heading',
+                'name'  => 'icecubo-accent-text-small-2',
                 'label' => __('Accent small 2', 'icecubo'),
             )
         );
@@ -85,8 +85,16 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-accent-3-heading',
-                'label' => __('Accent huge', 'icecubo'),
+                'name'  => 'icecubo-accent-text-huge-1',
+                'label' => __('Accent huge 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-text-huge-2',
+                'label' => __('Accent huge 2', 'icecubo'),
             )
         );
 
@@ -269,7 +277,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-accent-1-title',
+                'name'  => 'icecubo-accent-text-small-1',
                 'label' => __('Accent small 1', 'icecubo'),
             )
         );
@@ -277,7 +285,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-accent-2-title',
+                'name'  => 'icecubo-accent-text-small-2',
                 'label' => __('Accent small 2', 'icecubo'),
             )
         );
@@ -285,8 +293,16 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-accent-3-title',
-                'label' => __('Accent huge', 'icecubo'),
+                'name'  => 'icecubo-accent-text-huge-1',
+                'label' => __('Accent huge 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-text-huge-2',
+                'label' => __('Accent huge 2', 'icecubo'),
             )
         );
 
