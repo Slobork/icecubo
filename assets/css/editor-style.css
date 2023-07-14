@@ -40,6 +40,10 @@ body .is-layout-flow > h2 {margin-top: 4.5rem;}
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 
+/* Cover/Group */
+.is-style-icecubo-rotate-left {transform: rotate(-13deg);}
+.is-style-icecubo-rotate-right {transform: rotate(13deg);}
+
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
 .wp-block-search__button-inside .wp-block-search__inside-wrapper,

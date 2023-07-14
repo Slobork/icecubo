@@ -35,6 +35,46 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/cover',
+            array(
+                'name'  => 'icecubo-rotate-left',
+                'label' => __('Rotate left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/cover',
+            array(
+                'name'  => 'icecubo-rotate-right',
+                'label' => __('Rotate right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/group',
+            array(
+                'name'  => 'icecubo-rotate-left',
+                'label' => __('Rotate left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/group',
+            array(
+                'name'  => 'icecubo-rotate-right',
+                'label' => __('Rotate right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-1-heading',
+                'label' => __('Accent small 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/heading',
             array(
                 'name'  => 'icecubo-accent-2-heading',
