@@ -542,6 +542,7 @@
 		},
 		"custom": {
 			"text-shadow-small": "1px 2px 1px",
+			"text-shadow-small-2": "1px 1px 2px",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
 			"button-shadow-dark": "0 8px 8px 0 rgb(222 222 222 / 22%)",
 			"spacing-xxs": ".25rem",
