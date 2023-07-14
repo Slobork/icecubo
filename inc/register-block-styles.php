@@ -85,8 +85,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/image',
             array(
-                'name'  => 'icecubo-image-tiny-frame',
-                'label' => __('Tiny frame', 'icecubo'),
+                'name'  => 'icecubo-image-solid-frame',
+                'label' => __('Solid frame', 'icecubo'),
             )
         );
 
@@ -125,8 +125,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/media-text',
             array(
-                'name'  => 'icecubo-media-text-tiny-frame',
-                'label' => __('Tiny frame', 'icecubo'),
+                'name'  => 'icecubo-media-text-solid-frame',
+                'label' => __('Solid frame', 'icecubo'),
             )
         );
 
