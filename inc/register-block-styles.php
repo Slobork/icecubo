@@ -171,6 +171,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-check-list',
+                'label' => __('Checks', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-plus-list',
+                'label' => __('Plus', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list-item',
+            array(
+                'name'  => 'icecubo-cancel-list',
+                'label' => __('Cancel list', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
@@ -377,6 +401,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/group',
             'core/heading',
             'core/image',
+            'core/list',
             'core/navigation',
             'core/navigation-link',
             'core/media-text',
