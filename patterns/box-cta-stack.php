@@ -6,8 +6,8 @@
  * Categories: icecubo-box
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment","layout":{"type":"constrained"}} -->
-<div class="wp-block-group with-text-alignment has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","className":"with-text-alignment","layout":{"type":"constrained"}} -->
+<div class="wp-block-group with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Call-to-Action</p>
 <!-- /wp:paragraph -->
 

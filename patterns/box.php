@@ -1,13 +1,17 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Gruop box leading with a heading
+ * Title: Basic gruop box
  * Slug: icecubo/box-in-group
  * Categories: icecubo-box
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-ice-background-color has-background" style="padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:heading {"level":3} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","top":"var:preset|spacing|x-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph -->
+<p>SUBTITLE</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Lorem ipsum dolor</h3>
 <!-- /wp:heading -->
 

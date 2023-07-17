@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment"} -->
-<div class="wp-block-column with-text-alignment has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","className":"with-text-alignment"} -->
+<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
 <p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><strong>$39</strong> <sub>per month</sub></p>
 <!-- /wp:paragraph -->
 
@@ -26,8 +26,8 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list -->
-<ul><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default"} -->
+<ul class="is-style-default"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -49,8 +49,8 @@
 <!-- /wp:list --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","className":"with-text-alignment"} -->
-<div class="wp-block-column with-text-alignment has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","className":"with-text-alignment"} -->
+<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
 <p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><strong>$69</strong> <sub>per month</sub></p>
 <!-- /wp:paragraph -->
 
