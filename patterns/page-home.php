@@ -6,8 +6,8 @@
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"bottom":"5rem"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"bottom":"5rem"},"margin":{"bottom":"var:preset|spacing|xxx-large"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="margin-bottom:var(--wp--preset--spacing--xxx-large);padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
@@ -17,15 +17,15 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"ref":28299,"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
+<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"1.25rem"} -->
 <div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"textAlign":"center","level":1,"textColor":"highlight-2","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h1 class="wp-block-heading has-text-align-center is-style-icecubo-gray-text-shadow-heading has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
+<!-- wp:heading {"className":"has-text-align-center has-highlight-2-color has-text-color"} -->
+<h2 class="wp-block-heading has-text-align-center has-highlight-2-color has-text-color">IceCubo WordPress Theme</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
@@ -33,8 +33,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:media-text {"align":"","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h2 class="wp-block-heading is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3"} -->
+<h2 class="wp-block-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

@@ -6,7 +6,7 @@
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:media-text {"mediaType":"image"} -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}}} -->
 <div class="wp-block-media-text alignwide is-stacked-on-mobile"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Our Values</h3>
 <!-- /wp:heading -->

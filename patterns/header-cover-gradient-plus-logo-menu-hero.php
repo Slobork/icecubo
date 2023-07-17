@@ -23,9 +23,9 @@
 <!-- wp:spacer {"height":"1.25rem"} -->
 <div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
-
-<!-- wp:heading {"textAlign":"center","level":1,"textColor":"highlight-2","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h1 class="wp-block-heading has-text-align-center is-style-icecubo-gray-text-shadow-heading has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
+ 
+<!-- wp:heading {"textAlign":"center","level":1,"textColor":"highlight-2"} -->
+<h1 class="wp-block-heading has-text-align-center has-highlight-2-color has-text-color">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
@@ -33,8 +33,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:media-text {"align":"","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3","className":"is-style-icecubo-gray-text-shadow-heading"} -->
-<h2 class="wp-block-heading is-style-icecubo-gray-text-shadow-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri()) . '/assets/img/ice-cubes.png'; ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3"} -->
+<h2 class="wp-block-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
