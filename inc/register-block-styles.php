@@ -246,7 +246,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/paragraph',
             array(
                 'name'  => 'icecubo-highlight-p',
-                'label' => __('Highlight box', 'icecubo'),
+                'label' => __('Accent box', 'icecubo'),
             )
         );
 
