@@ -133,7 +133,15 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-to-light-color',
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
                 'label' => __('Transit to light color', 'icecubo'),
             )
         );
@@ -285,7 +293,15 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/paragraph',
             array(
-                'name'  => 'icecubo-to-light-color',
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
                 'label' => __('Transit to light color', 'icecubo'),
             )
         );
@@ -365,7 +381,15 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-to-light-color',
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
                 'label' => __('Transit to light color', 'icecubo'),
             )
         );

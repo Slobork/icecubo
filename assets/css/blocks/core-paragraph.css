@@ -2,6 +2,8 @@
 [class*="is-style-icecubo-tearbox-"] {box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content;}
 .is-style-icecubo-tearbox-left-p {border-top-left-radius: 0;}
 .is-style-icecubo-tearbox-right-p {border-top-right-radius: 0;}
-.is-style-icecubo-mix-colors {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
-.is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
-.is-style-icecubo-to-light-color {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light)); -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+[class*="is-style-icecubo-mix-colors"] {-webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+.is-style-icecubo-mix-colors {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-focus {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
+.is-style-icecubo-mix-colors-to-light {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
