@@ -1,4 +1,4 @@
-.is-style-icecubo-highlight-p {box-shadow: var(--wp--custom--button-shadow); padding: 1.5rem;}
+.is-style-icecubo-highlight-p {box-shadow: var(--wp--custom--button-shadow);}
 [class*="is-style-icecubo-tearbox-"] {box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content;}
 .is-style-icecubo-tearbox-left-p {border-top-left-radius: 0;}
 .is-style-icecubo-tearbox-right-p {border-top-right-radius: 0;}
