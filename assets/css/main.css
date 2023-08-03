@@ -106,6 +106,12 @@ body .is-layout-flow >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 
+/* If the inline image is added to the nav item, this makes it gapped from the text */
+.wp-block-navigation li a.wp-block-navigation-item__content {
+    align-items: center;
+    gap: .3em;
+}
+
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
 .wp-block-search__button-inside .wp-block-search__inside-wrapper,
