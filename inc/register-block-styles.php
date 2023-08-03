@@ -253,7 +253,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/navigation-submenu',
             array(
-                'name'  => 'icecubo-navigation-submenu-mega',
+                'name'  => 'icecubo-nav-submenu-mega',
                 'label' => __('Mega', 'icecubo'),
             )
         );
@@ -430,6 +430,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // conditionally load block files if the Pro plugin isn't active
         $conditional_blocks = ! function_exists('icecubo_pro_enqueue_block_styles')
             ? array(
+                'core/navigation',
                 'core/navigation-submenu'
             )
             : array();
@@ -442,7 +443,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/heading',
             'core/image',
             'core/list',
-            'core/navigation',
             'core/navigation-link',
             'core/media-text',
             'core/paragraph',
