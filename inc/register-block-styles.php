@@ -251,6 +251,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/navigation-submenu',
+            array(
+                'name'  => 'icecubo-navigation-submenu-mega',
+                'label' => __('Mega', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/paragraph',
             array(
                 'name'  => 'icecubo-highlight-p',
@@ -418,6 +426,14 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
     // phpcs:ignore
     function icecubo_enqueue_block_styles()
     {
+
+        // conditionally load block files if the Pro plugin isn't active
+        $conditional_blocks = ! function_exists('icecubo_pro_enqueue_block_styles')
+            ? array(
+                'core/navigation-submenu'
+            )
+            : array();
+
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
@@ -436,6 +452,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/social-links',
             'core/quote'
         );
+
+        $blocks = array_merge($blocks, $conditional_blocks);
 
         // Loop through each block and enqueue its styles.
         foreach ( $blocks as $block ) {
