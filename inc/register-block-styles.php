@@ -470,7 +470,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/navigation-link',
             'core/media-text',
             'core/paragraph',
-            'core/post-content',
             'core/post-template',
             'core/post-title',
             'core/social-links',
