@@ -112,6 +112,9 @@ body .is-layout-flow >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
     gap: .3em;
 }
 
+/* Submenu icon ˘ make sure it's centered */
+.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
+
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
 .wp-block-search__button-inside .wp-block-search__inside-wrapper,
