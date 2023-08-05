@@ -1,17 +1,17 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with sharp gradient (testimoials as placeholders).
+ * Title: Cover - with sharp splitted background (testimonials as placeholders).
  * Slug: icecubo/section-cover-gradient-sharp
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"gradient":"primary-to-white-linear-sharp-corner","isDark":false} -->
 <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-primary-to-white-linear-sharp-corner-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"60px","left":"30px"}}},"backgroundColor":"white"} -->
-<div class="wp-block-group has-white-background-color has-background" style="padding-top:30px;padding-right:30px;padding-bottom:60px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"backgroundColor":"white"} -->
+<div class="wp-block-group has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 
@@ -26,8 +26,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"40px","left":"30px"}}},"backgroundColor":"white"} -->
-<div class="wp-block-group has-white-background-color has-background" style="padding-top:30px;padding-right:30px;padding-bottom:40px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"backgroundColor":"white"} -->
+<div class="wp-block-group has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 
@@ -42,8 +42,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"40px","left":"30px"}}},"backgroundColor":"white"} -->
-<div class="wp-block-group has-white-background-color has-background" style="padding-top:30px;padding-right:30px;padding-bottom:40px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"backgroundColor":"white"} -->
+<div class="wp-block-group has-white-background-color has-background" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 

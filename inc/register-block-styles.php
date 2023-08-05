@@ -35,10 +35,202 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/cover',
+            array(
+                'name'  => 'icecubo-rotate-left',
+                'label' => __('Rotate left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/cover',
+            array(
+                'name'  => 'icecubo-rotate-right',
+                'label' => __('Rotate right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/group',
+            array(
+                'name'  => 'icecubo-rotate-left',
+                'label' => __('Rotate left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/group',
+            array(
+                'name'  => 'icecubo-rotate-right',
+                'label' => __('Rotate right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/heading',
             array(
-                'name'  => 'icecubo-highlight-heading',
-                'label' => __('Highlight', 'icecubo'),
+                'name'  => 'icecubo-accent-text-small-1',
+                'label' => __('Accent small 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-text-small-2',
+                'label' => __('Accent small 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-text-huge-1',
+                'label' => __('Accent huge 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-accent-text-huge-2',
+                'label' => __('Accent huge 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-underline-overline',
+                'label' => __('With underline/overline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-aside-lines',
+                'label' => __('With aside lines', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors',
+                'label' => __('Mix colors', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
+                'label' => __('Transit to light color', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-solid-frame',
+                'label' => __('Solid frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-curly-frame',
+                'label' => __('Curly frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-spaced-frame',
+                'label' => __('Spaced frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-spaced-cutted-frame',
+                'label' => __('Spaced & cutted frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-check-list',
+                'label' => __('Checks', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-plus-list',
+                'label' => __('Plus', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list-item',
+            array(
+                'name'  => 'icecubo-cancel-list',
+                'label' => __('Cancel list', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-solid-frame',
+                'label' => __('Solid frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-curly-frame',
+                'label' => __('Curly frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-spaced-frame',
+                'label' => __('Spaced frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-spaced-cutted-frame',
+                'label' => __('Spaced & cutted frame', 'icecubo'),
             )
         );
 
@@ -46,7 +238,31 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
-                'label' => __('Mark hovers', 'icecubo'),
+                'label' => __('Hovers standard', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-top',
+                'label' => __('Hovers top', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-bottom',
+                'label' => __('Hovers bottom', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-2',
+                'label' => __('Hovers top + bottom', 'icecubo'),
             )
         );
 
@@ -59,18 +275,154 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/navigation-submenu',
+            array(
+                'name'  => 'icecubo-nav-submenu-mega',
+                'label' => __('Mega', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/paragraph',
             array(
                 'name'  => 'icecubo-highlight-p',
-                'label' => __('Highlight box', 'icecubo'),
+                'label' => __('Accent box', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-tearbox-left-p',
+                'label' => __('Tear box left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-tearbox-right-p',
+                'label' => __('Tear box right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors',
+                'label' => __('Mix colors', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
+                'label' => __('Transit to light color', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-template',
+            array(
+                'name'  => 'icecubo-boxed-post-template',
+                'label' => __('Boxed', 'icecubo'),
             )
         );
 
         register_block_style(
             'core/post-title',
             array(
-                'name'  => 'icecubo-highlight-title',
-                'label' => __('Highlight', 'icecubo'),
+                'name'  => 'icecubo-accent-text-small-1',
+                'label' => __('Accent small 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-text-small-2',
+                'label' => __('Accent small 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-text-huge-1',
+                'label' => __('Accent huge 1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-accent-text-huge-2',
+                'label' => __('Accent huge 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-underline-overline',
+                'label' => __('With underline/overline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-aside-lines',
+                'label' => __('With aside lines', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors',
+                'label' => __('Mix colors', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-light',
+                'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-focus',
+                'label' => __('Mix colors focused', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-to-light',
+                'label' => __('Transit to light color', 'icecubo'),
             )
         );
 
@@ -98,17 +450,33 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
     // phpcs:ignore
     function icecubo_enqueue_block_styles()
     {
+
+        // conditionally load block files if the Pro plugin isn't active
+        $conditional_blocks = ! function_exists('icecubo_pro_enqueue_block_styles')
+            ? array(
+                'core/navigation',
+                'core/navigation-submenu'
+            )
+            : array();
+
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
+            'core/cover',
+            'core/group',
             'core/heading',
-            'core/post-title',
-            'core/navigation',
+            'core/image',
+            'core/list',
             'core/navigation-link',
+            'core/media-text',
             'core/paragraph',
+            'core/post-template',
+            'core/post-title',
             'core/social-links',
             'core/quote'
         );
+
+        $blocks = array_merge($blocks, $conditional_blocks);
 
         // Loop through each block and enqueue its styles.
         foreach ( $blocks as $block ) {

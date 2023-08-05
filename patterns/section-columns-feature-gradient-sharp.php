@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Awesome feature with sharp gradient applied.
+ * Title: Columns - Awesome feature with sharp splitted background.
  * Slug: icecubo/section-columns-awesome-feature-sharp
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

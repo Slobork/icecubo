@@ -75,6 +75,22 @@ mark {padding: 1px 6px;}
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
+/**
+ * Set margin for h elements here instead in theme.json so it can be overwritten in block elements through UI.
+ * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow' declarations
+   and to overwrite it, it has to be a target as well.
+ * Otherwise, through theme.jason !important would be used, but the problem is that then it cannot be overwritten in UI.
+ */
+h1 {margin-top: 2.75rem;}
+h2 {margin-top: 4.5rem;}
+:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
+body .is-layout-constrained > h1 {margin-top: 2.75rem;}
+body .is-layout-constrained > h2 {margin-top: 4.5rem;}
+body .is-layout-constrained >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
+body .is-layout-flow > h1 {margin-top: 2.75rem;}
+body .is-layout-flow > h2 {margin-top: 4.5rem;}
+body .is-layout-flow >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
+
 /*Code block */
 .wp-block-code code {
     max-height: 70vh;
@@ -89,6 +105,15 @@ pre { overflow: auto; }
 
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
+
+/* If the inline image is added to the nav item, this makes it gapped from the text */
+.wp-block-navigation li a.wp-block-navigation-item__content {
+    align-items: center;
+    gap: .3em;
+}
+
+/* Submenu icon ˘ make sure it's centered */
+.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
 
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
@@ -123,11 +148,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 
 /* Boxed page/post template */
 [class*="template-boxed"] main { width: 78%; }
-
-/* Page templates with a sidebar */
-:where([class*="template-sidebar-right"], [class*="template-sidebar-left"]) .sidebar {
-    background: var(--wp--preset--color--white-ice);
-}
 
 /* Post author - center items, usefull when avatar is used */
 .wp-block-post-author { align-items: center; }

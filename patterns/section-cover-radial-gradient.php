@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with radial gradient (collection as placeholders).
+ * Title: Cover - with focus background (collection as placeholders).
  * Slug: icecubo/section-cover-radial-gradient
- * Categories: icecubo-section-covers
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:cover {"gradient":"darko-to-primary-radial-gradual","isDark":false} -->

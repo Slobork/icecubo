@@ -1,15 +1,15 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Testimonials in columns.
+ * Title: Testimonials basic outline in columns.
  * Slug: icecubo/testimonials-basic
  * Categories: icecubo-general
  */
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"50px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:50px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 
@@ -24,8 +24,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"50px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:50px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 
@@ -40,8 +40,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"50px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:50px;padding-left:30px"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"68px"}}} -->
 <p class="has-text-align-center" style="font-size:68px">“</p>
 <!-- /wp:paragraph -->
 

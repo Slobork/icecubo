@@ -6,18 +6,18 @@
  * Categories: icecubo-hero
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-radial-gradual","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:3rem;padding-bottom:3rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","className":"is-light","layout":{"type":"constrained"}} -->
+<!-- wp:cover {"gradient":"darko-to-primary-radial-gradual","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|xx-large"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--xx-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","className":"is-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-light"><!-- wp:heading {"textAlign":"center","textColor":"highlight-2"} -->
-<h2 class="has-text-align-center has-highlight-2-color has-text-color"></h2>
+<h2 class="wp-block-heading has-text-align-center has-highlight-2-color has-text-color"></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"white","fontSize":"large"} -->
 <p class="has-text-align-center has-white-color has-text-color has-large-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:spacer {"height":"60px"} -->
-<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"3rem"} -->
+<div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:columns -->

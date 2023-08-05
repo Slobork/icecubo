@@ -1,15 +1,15 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Team with featured message on center.
+ * Title: Columns - Team with featured message on center.
  * Slug: icecubo/section-columns-team-message-center
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">John Doe</p>
 <!-- /wp:paragraph -->
 
@@ -30,12 +30,12 @@
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"2.5rem"} -->
+<div style="height:2.5rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Jane Doe</p>
 <!-- /wp:paragraph -->
 
@@ -66,8 +66,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Richard Doe</p>
 <!-- /wp:paragraph -->
 
@@ -88,12 +88,12 @@
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"40px"} -->
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:spacer {"height":"2.5rem"} -->
+<div style="height:2.5rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"10px","left":"30px"}}}} -->
-<div class="wp-block-group" style="padding-top:30px;padding-right:30px;padding-bottom:10px;padding-left:30px"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Johnny Doe</p>
 <!-- /wp:paragraph -->
 

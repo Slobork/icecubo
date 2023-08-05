@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Collection with featured message on left.
+ * Title: Columns - Collection with featured message on left.
  * Slug: icecubo/section-columns-collection-message-left
- * Categories: icecubo-section-columns
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:columns -->

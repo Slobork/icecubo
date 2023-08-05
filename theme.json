@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
@@ -372,8 +372,43 @@
 				}
 			]
 		},
+		"shadow": {
+			"defaultPresets": true,
+			"presets": [
+				{
+					"name": "Natural current color",
+					"slug": "natural-current",
+					"shadow": "6px 6px 9px currentColor"
+				},
+				{
+					"name": "Deep current color",
+					"slug": "deep-current",
+					"shadow": "12px 12px 50px currentColor"
+				},
+				{
+					"name": "Sharp current color",
+					"slug": "sharp-current",
+					"shadow": "6px 6px 0px currentColor"
+				},
+				{
+					"name": "Outlined current color",
+					"slug": "outlined-current",
+					"shadow": "6px 6px 0px -3px currentColor"
+				},
+				{
+					"name": "Crisp current color",
+					"slug": "crisp-current",
+					"shadow": "5px 5px currentColor"
+				}
+			]
+		},
 		"spacing": {
 			"spacingSizes": [
+				{
+					"name": "XXX small",
+					"size": "clamp(.5rem, calc(.397rem + .397vw), .7rem)",
+					"slug": "xxx-small"
+				},
 				{
 					"name": "XX small",
 					"size": "clamp(.63rem, calc(.5rem + .5vw), .97rem)",
@@ -507,6 +542,7 @@
 		},
 		"custom": {
 			"text-shadow-small": "1px 2px 1px",
+			"text-shadow-small-2": "1px 1px 2px",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
 			"button-shadow-dark": "0 8px 8px 0 rgb(222 222 222 / 22%)",
 			"spacing-xxs": ".25rem",
@@ -553,32 +589,17 @@
 			"heading": {
 				"typography": {
 					"lineHeight": "1.25"
-				},
-				"spacing": {
-					"margin": {
-						"top": "3.5rem !important"
-					}
 				}
 			},
 			"h1": {
 				"typography": {
 					"lineHeight": "1.5",
 					"fontSize": "var(--wp--preset--font-size--xxxl)"
-				},
-				"spacing": {
-					"margin": {
-						"top": "2.75rem !important"
-					}
 				}
 			},
 			"h2": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--xxl)"
-				},
-				"spacing": {
-					"margin": {
-						"top": "4.5rem !important"
-					}
 				}
 			},
 			"h3": {
