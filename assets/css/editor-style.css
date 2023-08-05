@@ -14,17 +14,25 @@ body .is-layout-flow > h2 {margin-top: 4.5rem;}
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 
+/* If the inline image is added to the nav item, this makes it gapped from the text - Still, doesn't reflect in the Editor */
+.wp-block-navigation li a.wp-block-navigation-item__content {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
 /* Mega menu - Create columns */
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item {display: inline-block !important;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item .wp-block-navigation-item {display: block !important;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {display: none !important;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {display: inline !important;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container {display: grid; grid-column-gap: 2em;}
-.is-style-icecubo-navigation-submenu-mega > .wp-block-navigation__submenu-container {grid-template-columns: repeat(2, 1fr);}
-.is-style-icecubo-navigation-submenu-mega.mm3 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(3, 1fr);}
-.is-style-icecubo-navigation-submenu-mega.mm4 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(4, 1fr);}
-.is-style-icecubo-navigation-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item {display: inline-block !important;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item .wp-block-navigation-item {display: block !important;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {display: none !important;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {display: inline !important;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {display: grid; grid-column-gap: 2em;}
+.is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {grid-template-columns: repeat(2, 1fr);}
+.is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(3, 1fr);}
+.is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(4, 1fr);}
+.is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
+
 
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
