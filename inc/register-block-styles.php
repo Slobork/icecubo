@@ -238,7 +238,31 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
-                'label' => __('Mark hovers', 'icecubo'),
+                'label' => __('Hovers standard', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-top',
+                'label' => __('Hovers top', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-bottom',
+                'label' => __('Hovers bottom', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/navigation',
+            array(
+                'name'  => 'icecubo-nav-hovers-2',
+                'label' => __('Hovers top + bottom', 'icecubo'),
             )
         );
 
