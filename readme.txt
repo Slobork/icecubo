@@ -12,6 +12,9 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.1.2 - 2023-08-09 =
+Fix: Heading's spacing. Moved its styling to theme.json, but the downside is that it cannot be overwritten from UI.
+
 = 1.1.1 - 2023-08-09 =
 * Fix: Rename "page-alike*" templates. It started to produce "No found" error. This is probably due to the WordPress naming conventions. These template names finish with "alike-page", now.
 * Add: Various block styles for: paragraphs, headings, group, list, etc.
