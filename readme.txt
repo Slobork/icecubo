@@ -1,7 +1,7 @@
 === IceCubo ===
 Contributors: MaxPressy
 Requires at least: 6.1
-Tested up to: 6.2
+Tested up to: 6.3
 Requires PHP: 7.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,6 +11,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 IceCubo is a block-based theme for WordPress. Fundamentally may be used as a starter theme and be built upon with block libraries or page builders. However, as a stand-alone solution, it comes with pre-built design patterns that you can utilize to make pages quickly. Basically, easily assemble most of the presentational Websites like business, corporate, portfolio, or other kinds of sites. IceCubo is fully responsive, cross-browser compatible, translation ready & SEO friendly. It is also compatible with Woocommerce, so it can serve as a base even for e-commerce sites. Though it's lightweight, still, it comes with several pre-designed styles, which enables quick switching between different color schemes.
 
 == Changelog ==
+
+= 1.1.1 - 2023-08-09 =
+* Fix: Rename "page-alike*" templates. It started to produce "No found" error. This is probably due to the WordPress naming conventions. These template names finish with "alike-page", now.
+* Add: Various block styles for: paragraphs, headings, group, list, etc.
+* Update: Varios small styling tweaks
 
 = 1.1.0 - 2023-06-24 =
 * Update: Remove the Home template, it remains available as a pattern. This returns the regular posts index as a default for a Blog page.
