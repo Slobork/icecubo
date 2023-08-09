@@ -75,22 +75,6 @@ mark {padding: 1px 6px;}
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
-/**
- * Set margin for h elements here instead in theme.json so it can be overwritten in block elements through UI.
- * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow' declarations
-   and to overwrite it, it has to be a target as well.
- * Otherwise, through theme.jason !important would be used, but the problem is that then it cannot be overwritten in UI.
- */
-h1 {margin-top: 2.75rem;}
-h2 {margin-top: 4.5rem;}
-:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-body .is-layout-constrained > h1 {margin-top: 2.75rem;}
-body .is-layout-constrained > h2 {margin-top: 4.5rem;}
-body .is-layout-constrained >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-body .is-layout-flow > h1 {margin-top: 2.75rem;}
-body .is-layout-flow > h2 {margin-top: 4.5rem;}
-body .is-layout-flow >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-
 /*Code block */
 .wp-block-code code {
     max-height: 70vh;
