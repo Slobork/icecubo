@@ -22,7 +22,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/button',
             array(
                 'name'  => 'icecubo-highlight-up-button',
-                'label' => __('Highlight up', 'icecubo'),
+                'label' => __('Accent up', 'icecubo'),
             )
         );
 
