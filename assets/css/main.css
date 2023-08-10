@@ -114,17 +114,6 @@ pre { overflow: auto; }
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
 
-/**
- * Spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
- * All page templates except the boxed, blank, notitle, notitle-noheader (those are styled on its template).
- *...Eliminates the white-space above the main tag when header or title are present.
- * So if bg is applied there's no white space. Top padding has to be 1px, if it's 0 white space appears.
- */
-body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) main {
-    margin-top: 0;
-    padding: 1px 0 3rem;
-}
-
 /* Footer - links */
 footer a:hover { opacity: .6; }
 /* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
