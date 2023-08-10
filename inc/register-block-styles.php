@@ -174,7 +174,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/image',
             array(
                 'name'  => 'icecubo-image-spaced-cutted-frame',
-                'label' => __('Spaced & cutted frame', 'icecubo'),
+                'label' => __('Spaced & cut frame', 'icecubo'),
             )
         );
 
@@ -230,7 +230,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/media-text',
             array(
                 'name'  => 'icecubo-media-text-spaced-cutted-frame',
-                'label' => __('Spaced & cutted frame', 'icecubo'),
+                'label' => __('Spaced & cut frame', 'icecubo'),
             )
         );
 
