@@ -13,8 +13,11 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 == Changelog ==
 
 = 1.1.3 - 2023-08-17 =
-Fix: After the recent update, some templates were left with no padding at the bottom on the "main" tag
-Update: Set headings with fluid spacing and target adequate classes. Now, !important is removed so that it can be overwritten from the UI
+* Fix: After the recent update, some templates were left with no padding at the bottom on the "main" tag
+* Add: new pattern, Author box - 2 columns
+* Update: Set headings with fluid spacing and target adequate classes. Now, !important is removed so that it can be overwritten from the UI
+* Update: Rename a button style - "Highlight up" to "Accent up"
+* Update: Small styling tweaks
 
 = 1.1.2 - 2023-08-09 =
 Fix: Headings' spacing. Moved its styling to theme.json, but the downside is that it cannot be overwritten from UI.
