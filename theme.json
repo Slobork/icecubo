@@ -592,7 +592,7 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "3.5rem !important"
+						"top": "var(--wp--preset--spacing--large)"
 					}
 				}
 			},
@@ -603,7 +603,7 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "2.75rem !important"
+						"top": "var(--wp--preset--spacing--x-large)"
 					}
 				}
 			},
@@ -613,7 +613,7 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "4.5rem !important"
+						"top": "var(--wp--preset--spacing--x-large)"
 					}
 				}
 			},

@@ -75,11 +75,6 @@ mark {padding: 1px 6px;}
 /* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
 pre { overflow: auto; }
 
-/*Code block */
-.wp-block-code code {
-    max-height: 70vh;
-}
-
 /* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
     background: var(--wp--preset--color--darko-down);
@@ -111,19 +106,22 @@ pre { overflow: auto; }
     border-bottom-left-radius: var(--wp--custom--radius-large);
 }
 
+/**
+ * When h element is the first in the group,
+ * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
+ * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' declarations
+   and to overwrite it, it has to be a target as well.
+ * Otherwise, through theme.jason !important would be used, but the problem is that then it cannot be overwritten in UI.
+ * Alternatively, for the post titles, it could be done in templates, on each post-title block,
+ * but it wouldn't impact the in-content h1 when it's he first element in a group block.
+ */
+ :where(body main > .is-layout-flow) > h1:first-child:first-child,
+ :where(body main > .is-layout-constrained) > h1:first-child:first-child {margin-top: var(--wp--preset--spacing--medium);}
+ :where(body .is-layout-flow) > :where(h1, h2,h3,h4,h5,h6):first-child:first-child, 
+ :where(body .is-layout-constrained) > :where(h1, h2,h3,h4,h5,h6):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
-
-/**
- * Spacing of the 'main' tag, removing the spacing applied by WP at ".wp-site-blocks > * + *".
- * All page templates except the boxed, blank, notitle, notitle-noheader (those are styled on its template).
- *...Eliminates the white-space above the main tag when header or title are present.
- * So if bg is applied there's no white space. Top padding has to be 1px, if it's 0 white space appears.
- */
-body:not([class*="template-boxed"], [class*="template-blank"], [class*="page-alike-notitle-noheader"], [class*="page-alike-notitle"]) main {
-    margin-top: 0;
-    padding: 1px 0 3rem;
-}
 
 /* Footer - links */
 footer a:hover { opacity: .6; }
@@ -143,6 +141,11 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 /*If the last element in the post content is floating, it's necessary to clear the next elms*/
 .post-footer, .wp-block-comments, footer {clear: both;}
 
+/*Code block */
+.wp-block-code code {
+    max-height: 70vh;
+}
+
 /* Blog's pagination */
 .wp-block-query-pagination { justify-content: space-between; }
 .wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
@@ -151,6 +154,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  remove the text decoration from the links that are already highlighted */
 body.blog main h2 a,
 body.archive main h2 a,
+body.search main h2 a,
 .wp-block-query-pagination a,
 .wp-block-post-terms a,
 .wp-block-post-navigation-link a,

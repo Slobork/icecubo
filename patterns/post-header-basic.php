@@ -6,8 +6,8 @@
  * Categories: icecubo-post-header
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"blockGap":".75rem"}}} -->
-<div class="wp-block-group">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px","bottom":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:1px;padding-bottom:var(--wp--preset--spacing--large)">
     <!-- wp:post-title {"level":1} /-->
     <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
     <!-- wp:post-featured-image /-->

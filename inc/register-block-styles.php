@@ -22,7 +22,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/button',
             array(
                 'name'  => 'icecubo-highlight-up-button',
-                'label' => __('Highlight up', 'icecubo'),
+                'label' => __('Accent up', 'icecubo'),
             )
         );
 
@@ -102,7 +102,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/heading',
             array(
                 'name'  => 'icecubo-underline-overline',
-                'label' => __('With underline/overline', 'icecubo'),
+                'label' => __('Underline/overline', 'icecubo'),
             )
         );
 
@@ -110,7 +110,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/heading',
             array(
                 'name'  => 'icecubo-aside-lines',
-                'label' => __('With aside lines', 'icecubo'),
+                'label' => __('Aside lines', 'icecubo'),
             )
         );
 
@@ -174,7 +174,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/image',
             array(
                 'name'  => 'icecubo-image-spaced-cutted-frame',
-                'label' => __('Spaced & cutted frame', 'icecubo'),
+                'label' => __('Spaced & cut frame', 'icecubo'),
             )
         );
 
@@ -230,7 +230,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/media-text',
             array(
                 'name'  => 'icecubo-media-text-spaced-cutted-frame',
-                'label' => __('Spaced & cutted frame', 'icecubo'),
+                'label' => __('Spaced & cut frame', 'icecubo'),
             )
         );
 
@@ -382,7 +382,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/post-title',
             array(
                 'name'  => 'icecubo-underline-overline',
-                'label' => __('With underline/overline', 'icecubo'),
+                'label' => __('Underline/overline', 'icecubo'),
             )
         );
 
@@ -390,7 +390,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/post-title',
             array(
                 'name'  => 'icecubo-aside-lines',
-                'label' => __('With aside lines', 'icecubo'),
+                'label' => __('Aside lines', 'icecubo'),
             )
         );
 
