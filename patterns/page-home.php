@@ -4,6 +4,7 @@
  * Title: Home page.
  * Slug: icecubo/page-home
  * Categories: icecubo-page
+ * Template Types: front-page, page
  */
 ?>
 <!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"bottom":"5rem"},"margin":{"bottom":"var:preset|spacing|xxx-large"}}}} -->
