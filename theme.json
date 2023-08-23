@@ -684,6 +684,9 @@
 					}
 				}
 			},
+			"core/navigation": {
+				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}"
+			},
 			"core/paragraph": {
 				"spacing": {
 					"margin": {
