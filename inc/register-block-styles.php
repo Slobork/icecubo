@@ -278,7 +278,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             'core/navigation-submenu',
             array(
                 'name'  => 'icecubo-nav-submenu-mega',
-                'label' => __('Mega', 'icecubo'),
+                'label' => __('Multi', 'icecubo'),
             )
         );
 

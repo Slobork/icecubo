@@ -1,15 +1,21 @@
 <?php
 // phpcs:ignore
 /**
- * Title: List posts with prominent image, wrapped in a group block. Pagination included.
- * Slug: icecubo/query-blog-prominent-img
+ * Title: Category posts wrapped in a group.
+ * Slug: icecubo/query-wrapped-taxonomy
  * Categories: icecubo-query
  * Inserter: true
  */
 ?>
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:query {"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":10},"layout":{"type":"default"}} -->
-<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-default"} -->
+<p class="is-style-default">TECHNOLOGY</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3","taxQuery":{"category":[1]}},"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:post-featured-image {"isLink":true,"style":{"spacing":{"margin":{"top":"0","right":"0","bottom":"0","left":"0"}},"border":{"width":"0px","style":"none","radius":{"topLeft":"3px","topRight":"3px"}}}} /-->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}},"border":{"radius":{"bottomLeft":"3px","bottomRight":"3px"}}},"backgroundColor":"white-ice"} -->
@@ -25,24 +31,8 @@
 <!-- wp:post-author {"showAvatar":false} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":".5rem"},"fontSize":"extra-small"},"className":"has-extra-small-font-size","layout":{"type":"flex"}} -->
-<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-terms {"term":"category"} /-->
-
-<!-- wp:post-terms {"term":"post_tag"} /--></div>
-<!-- /wp:group --></div>
+<!-- wp:post-excerpt {"showMoreOnNewLine":false} /--></div>
 <!-- /wp:group -->
-<!-- /wp:post-template -->
-
-<!-- wp:group {"layout":{"inherit":false}} -->
-<div class="wp-block-group"><!-- wp:query-pagination -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-numbers /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination --></div>
-<!-- /wp:group --></div>
+<!-- /wp:post-template --></div>
 <!-- /wp:query --></div>
 <!-- /wp:group -->
