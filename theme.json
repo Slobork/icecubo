@@ -388,6 +388,7 @@
 			]
 		},
 		"typography": {
+			"writingMode": true,
 			"fontFamilies": [
 				{
 					"name": "sans-serif (Helvetica Neue, Helvetica, Arial)",
