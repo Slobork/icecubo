@@ -123,6 +123,16 @@ if (! function_exists('icecubo_gradients_list') ) {
                 'gradient' => 'radial-gradient(var(--wp--preset--color--primary) 0%,transparent 100%)',
                 'name'     => __('Primary to transparent gradual', 'icecubo')
             ),
+            array(
+                'slug'     => 'shade-2-to-primaryish-to-shade-4-diagonal',
+                'gradient' => 'linear-gradient(135deg,var(--wp--preset--color--shade-2) 0%,var(--wp--preset--color--primaryish) 50%,var(--wp--preset--color--shade-4) 100%)',
+                'name'     => __('Diagonal 3 colors shading with glow in the middle', 'icecubo')
+            ),
+            array(
+                'slug'     => 'matching-colors-diagonal',
+                'gradient' => 'linear-gradient(135deg,var(--wp--preset--color--matching-1) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--matching-5) 100%)',
+                'name'     => __('Diagonal with 3 matching colors', 'icecubo')
+            ),
             /**
              * There's an issue when a var() is used inside the gradient:
              * https://github.com/WordPress/gutenberg/issues/28254
