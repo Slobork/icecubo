@@ -658,7 +658,7 @@
 			"core/post-excerpt": {
 				"spacing": {
 					"margin": {
-						"bottom": "var(--wp--custom--spacing-xxxl) !important"
+						"bottom": "var(--wp--custom--spacing-xxxl)"
 					}
 				}
 			},
