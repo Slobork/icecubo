@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - FAQ with details block - Tip: Duplicate the column with preferred style ad delete other columns
+ * Title: Columns - FAQ with details block - Tip: Duplicate the column with preferred style and delete other columns
  * Slug: icecubo/section-columns-faq-details
  * Categories: icecubo-section
  */
