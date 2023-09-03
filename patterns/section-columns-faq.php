@@ -12,53 +12,53 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<div class="wp-block-column"><!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"boldblocks":{}} -->
-<p><em>Lorem ipsum dolor sit amet?</em></p>
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"0px"}}}} -->
+<p style="margin-bottom:0px"><em>Lorem ipsum dolor sit amet?</em></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small","boldblocks":{}} -->
+<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"fontSize":"small"} -->
 <p class="has-small-font-size" style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
