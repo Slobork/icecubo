@@ -115,10 +115,8 @@ pre { overflow: auto; }
  * Alternatively, for the post titles, it could be done in templates, on each post-title block,
  * but it wouldn't impact the in-content h1 when it's he first element in a group block.
  */
- :where(body main > .is-layout-flow) > h1:first-child:first-child,
- :where(body main > .is-layout-constrained) > h1:first-child:first-child {margin-top: var(--wp--preset--spacing--medium);}
- :where(body .is-layout-flow) > :where(h1, h2,h3,h4,h5,h6):first-child:first-child, 
- :where(body .is-layout-constrained) > :where(h1, h2,h3,h4,h5,h6):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+ :where(body .is-layout-flow,body .is-layout-constrained) > h1:first-child:first-child {margin-top: var(--wp--preset--spacing--medium);}
+ :where(body .is-layout-flow,body .is-layout-constrained) > :where(h2,h3,h4,h5,h6):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
 /* Featured images on blog/archive pages */
 body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
