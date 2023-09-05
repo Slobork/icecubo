@@ -12,6 +12,15 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.1.5 - 2023-09-05 =
+* Update: Background gradients
+* Update: Styling of the blog layout, spacing correction
+* Update: Spacing correction for the "Single no post header" template
+* Fix: The way the images are called from the patterns, so it's compatible from the child themes
+* Add: "Details" block styles
+* Add: FAQ pattern based on the details block
+* Small styling adjustments across patterns and overall
+
 = 1.1.4 - 2023-08-17 =
 Fix: Remove the top padding from the "main" tag on the templates: "notitle-alike-page" and "notitle-noheader-alike-page"
 
