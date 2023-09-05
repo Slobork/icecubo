@@ -59,6 +59,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/details',
+            array(
+                'name'  => 'icecubo-details-square',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/details',
+            array(
+                'name'  => 'icecubo-details-oval',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/group',
             array(
                 'name'  => 'icecubo-rotate-right',
@@ -463,6 +479,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $blocks = array(
             'core/button',
             'core/cover',
+            'core/details',
             'core/group',
             'core/heading',
             'core/image',
