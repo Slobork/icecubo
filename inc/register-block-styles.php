@@ -355,6 +355,126 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/post-author',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-date',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-navigation-link',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-author',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-date',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-navigation-link',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-author',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-date',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-navigation-link',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/post-template',
             array(
                 'name'  => 'icecubo-boxed-post-template',
