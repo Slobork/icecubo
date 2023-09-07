@@ -160,3 +160,33 @@ body.search main h2 a,
 a.button {
     text-decoration: none;
 }
+
+/**
+ * Post meta styling
+ * - Instead of setting each css file for the post-author, post-date, terms, navigation-link, pagination,
+ *   style it here
+ */
+.is-style-icecubo-outline-post-meta {
+    border: 1px solid currentColor;
+    border-radius: var(--wp--custom--radius-middle);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+ }
+ .is-style-icecubo-oval-post-meta {
+    background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-middle);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+}
+.is-style-icecubo-square-post-meta {
+    background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-small);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+}
+.is-style-icecubo-outline-post-meta.wp-block-query-pagination,
+.is-style-icecubo-oval-post-meta.wp-block-query-pagination,
+.is-style-icecubo-square-post-meta.wp-block-query-pagination {
+    padding-left: var(--wp--custom--spacing-xl);
+    padding-right: var(--wp--custom--spacing-xl);
+}
