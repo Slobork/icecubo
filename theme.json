@@ -627,38 +627,6 @@
 					}
 				}
 			},
-			"core/post-author": {
-				"color": {
-					"background": "var(--wp--preset--color--white-ice)"
-				},
-				"border": {
-					"radius": "var(--wp--custom--radius-middle)"
-				},
-				"spacing": {
-					"padding": {
-						"top": "0",
-						"bottom": "0",
-						"left": "var(--wp--custom--spacing-s)",
-						"right": "var(--wp--custom--spacing-s)"
-					}
-				}
-			},
-			"core/post-date": {
-				"color": {
-					"background": "var(--wp--preset--color--white-ice)"
-				},
-				"border": {
-					"radius": "var(--wp--custom--radius-middle)"
-				},
-				"spacing": {
-					"padding": {
-						"top": "0",
-						"bottom": "0",
-						"left": "var(--wp--custom--spacing-s)",
-						"right": "var(--wp--custom--spacing-s)"
-					}
-				}
-			},
 			"core/post-excerpt": {
 				"spacing": {
 					"margin": {
@@ -674,51 +642,11 @@
 					"color": "var(--wp--preset--color--white-ice)"
 				}
 			},
-			"core/post-navigation-link": {
-				"color": {
-					"background": "var(--wp--preset--color--white-ice)"
-				},
-				"border": {
-					"radius": "var(--wp--custom--radius-middle)"
-				},
-				"spacing": {
-					"padding": {
-						"top": "0",
-						"bottom": "0",
-						"left": "var(--wp--custom--spacing-s)",
-						"right": "var(--wp--custom--spacing-s)"
-					}
-				}
-			},
-			"core/post-terms": {
-				"color": {
-					"background": "var(--wp--preset--color--white-ice)"
-				},
-				"border": {
-					"radius": "var(--wp--custom--radius-middle)"
-				},
-				"spacing": {
-					"padding": {
-						"top": "0",
-						"bottom": "0",
-						"left": "var(--wp--custom--spacing-s)",
-						"right": "var(--wp--custom--spacing-s)"
-					}
-				}
-			},
 			"core/query-pagination": {
-				"color": {
-					"background": "var(--wp--preset--color--white-ice)"
-				},
-				"border": {
-					"radius": "var(--wp--custom--radius-middle)"
-				},
 				"spacing": {
 					"padding": {
 						"top": "var(--wp--custom--spacing)",
-						"bottom": "0",
-						"left": "var(--wp--custom--spacing-xl)",
-						"right": "var(--wp--custom--spacing-xl)"
+						"bottom": "0"
 					}
 				}
 			},
