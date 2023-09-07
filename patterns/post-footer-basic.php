@@ -14,7 +14,7 @@
         <!-- wp:paragraph {"fontSize":"small"} -->
         <p class="terms has-small-font-size"><?php echo esc_html__('Categories:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"category","className":"is-style-icecubo-oval-post-meta"} /-->
+        <!-- wp:post-terms {"term":"category","backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-meta"} /-->
     </div>
     <!-- /wp:group -->
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"},"style":{"spacing":{"blockGap":".25rem","margin":{"top":".5rem"}}}} -->
@@ -22,7 +22,7 @@
         <!-- wp:paragraph {"fontSize":"small"} -->
         <p class="terms has-small-font-size"><?php echo esc_html__('Tags:', 'icecubo'); ?></p>
         <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"post_tag","className":"is-style-icecubo-oval-post-meta"} /-->
+        <!-- wp:post-terms {"term":"post_tag","backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-meta"} /-->
     </div>
     <!-- /wp:group -->
 </div>

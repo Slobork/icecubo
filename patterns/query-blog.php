@@ -19,8 +19,8 @@
 
         <!-- wp:group {"layout":{"type":"flex"}, "style":{"spacing":{"blockGap":".5rem"},"fontSize":"extra-small"}} -->
         <div class="wp-block-group has-extra-small-font-size">
-            <!-- wp:post-terms {"term":"category"} /-->
-            <!-- wp:post-terms {"term": "post_tag"} /-->
+            <!-- wp:post-terms {"term":"category","className":"is-style-icecubo-oval-post-meta"} /-->
+            <!-- wp:post-terms {"term": "post_tag","className":"is-style-icecubo-oval-post-meta"} /-->
         </div>
         <!-- /wp:group -->
     </div>
@@ -29,13 +29,14 @@
 
     <!-- wp:group {"layout":{"inherit":false}} -->
     <div class="wp-block-group">
-        <!-- wp:query-pagination -->
+        <!-- wp:query-pagination {"className":"is-style-icecubo-oval-post-meta"} -->
         <!-- wp:query-pagination-previous /-->
 
         <!-- wp:query-pagination-numbers /-->
 
         <!-- wp:query-pagination-next /-->
         <!-- /wp:query-pagination -->
+
     </div>
     <!-- /wp:group -->
 </div>
