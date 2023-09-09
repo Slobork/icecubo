@@ -357,40 +357,8 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-author',
             array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/post-date',
-            array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/post-navigation-link',
-            array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/post-terms',
-            array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
             )
         );
 
@@ -403,42 +371,10 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
-            'core/post-date',
-            array(
-                'name'  => 'icecubo-outline-post-meta',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/post-navigation-link',
-            array(
-                'name'  => 'icecubo-outline-post-meta',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/post-terms',
-            array(
-                'name'  => 'icecubo-outline-post-meta',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-outline-post-meta',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
             'core/post-author',
             array(
-                'name'  => 'icecubo-square-post-meta',
-                'label' => __('Square', 'icecubo'),
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
             )
         );
 
@@ -451,10 +387,42 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/post-date',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-date',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/post-navigation-link',
             array(
                 'name'  => 'icecubo-square-post-meta',
                 'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-navigation-link',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-navigation-link',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
             )
         );
 
@@ -467,10 +435,90 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-each-square-post-meta',
+                'label' => __('Each Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-each-outline-post-meta',
+                'label' => __('Each Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-terms',
+            array(
+                'name'  => 'icecubo-each-oval-post-meta',
+                'label' => __('Each Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/query-pagination',
             array(
                 'name'  => 'icecubo-square-post-meta',
                 'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-square-post-meta',
+                'label' => __('Each Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-outline-post-meta',
+                'label' => __('Each Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-oval-post-meta',
+                'label' => __('Each Oval', 'icecubo'),
             )
         );
 
