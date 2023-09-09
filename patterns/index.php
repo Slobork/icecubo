@@ -1,10 +1,11 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with Blog title for index page.
+ * Title: Query with Blog title for the index page.
  * Slug: icecubo/index
  * Categories: hidden
  * Inserter: false
+ * Template Types: front-page, home
  */
 ?>
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
