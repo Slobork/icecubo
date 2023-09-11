@@ -94,6 +94,10 @@ pre { overflow: auto; }
 /* Submenu icon ˘ make sure it's centered */
 .wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
 
+/* Mobile menu overlay - make it a bit tighten */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {padding-top: .5rem;}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {margin-top: .75rem;}
+
 /* Search box */
 .wp-block-search__no-button .wp-block-search__input,
 .wp-block-search__button-inside .wp-block-search__inside-wrapper,
