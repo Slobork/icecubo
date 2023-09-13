@@ -35,6 +35,38 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/comment-content',
+            array(
+                'name'  => 'icecubo-comment-content-bubble',
+                'label' => __('Bubble', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/comment-reply-link',
+            array(
+                'name'  => 'icecubo-comment-reply-button-square',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/comment-reply-link',
+            array(
+                'name'  => 'icecubo-comment-reply-button-outline',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/comment-reply-link',
+            array(
+                'name'  => 'icecubo-comment-reply-button-oval',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/cover',
             array(
                 'name'  => 'icecubo-rotate-left',
@@ -646,6 +678,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
+            'core/comment-content',
+            'core/comment-reply-link',
             'core/cover',
             'core/details',
             'core/group',
