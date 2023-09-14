@@ -1,4 +1,5 @@
 [class*="is-style-icecubo-comment-reply-button-"] {float: left; padding: var(--wp--custom--spacing-xxs) var(--wp--preset--spacing--x-small);}
+[class*="is-style-icecubo-comment-reply-button-"]:not(.noice) {float: right;}
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
 .is-style-icecubo-comment-reply-button-square {background: var(--wp--preset--color--white-ice); border-radius: var(--wp--custom--radius-small);}
 .is-style-icecubo-comment-reply-button-oval {background: var(--wp--preset--color--white-ice); border-radius: var(--wp--custom--radius-middle);}
