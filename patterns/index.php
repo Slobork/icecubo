@@ -15,6 +15,6 @@
     <!-- wp:heading {"level":1} --><h1 class="wp-block-heading"><?php esc_html_e('The latest posts', 'icecubo');?></h1><!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
-    <!-- wp:pattern {"slug":"icecubo/query-blog"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-beneath-title"} /-->
 </main>
 <!-- /wp:group -->
