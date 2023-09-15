@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with cover featured image.
+ * Title: Query with featured image as a cover of each post.
  * Slug: icecubo/index-cover-featured-img
  * Categories: hidden
  * Inserter: false
