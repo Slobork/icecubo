@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with Blog title and featured image aside.
+ * Title: Query with featured image aside.
  * Slug: icecubo/query-featured-img-aside
  * Categories: hidden
  * Inserter: false

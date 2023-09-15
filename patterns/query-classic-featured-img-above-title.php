@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: List posts with prominent image, wrapped in a group block. Pagination included.
+ * Title: List posts with prominent image, wrapped in a group block.
  * Slug: icecubo/query-classic-featured-img-above-title
  * Categories: icecubo-query
  * Inserter: true
