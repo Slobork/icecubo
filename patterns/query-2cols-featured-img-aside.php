@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Query in two columns title/meta and featured image aside.
- * Slug: icecubo/query-featured-img-aside
+ * Slug: icecubo/query-featured-img-aside-2columns
  * Categories: hidden
  * Inserter: false
  */
