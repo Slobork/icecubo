@@ -59,7 +59,7 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - Query', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Posts', 'icecubo') )
         );
 
     }
