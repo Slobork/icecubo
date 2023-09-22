@@ -18,7 +18,7 @@
 <div class="wp-block-column" style="flex-basis:70%">
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:0;padding-bottom:var(--wp--preset--spacing--x-large)">
-    <!-- wp:pattern {"slug":"icecubo/query-featured-img-aside"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-aside"} /-->
 </main>
 <!-- /wp:group -->
 </div>

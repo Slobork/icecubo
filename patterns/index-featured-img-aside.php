@@ -14,6 +14,6 @@
 <h1 class="wp-block-heading"><?php esc_html_e('The latest posts', 'icecubo');?></h1>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
-    <!-- wp:pattern {"slug":"icecubo/query-featured-img-aside"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-aside"} /-->
 </main>
 <!-- /wp:group -->

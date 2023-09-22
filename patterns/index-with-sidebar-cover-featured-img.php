@@ -16,7 +16,7 @@
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"70%"} -->
 <div class="wp-block-column" style="flex-basis:70%">
-        <!-- wp:pattern {"slug":"icecubo/query-cover-featured-img"} /-->
+        <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-cover"} /-->
 </div>
 <!-- /wp:column -->
 
