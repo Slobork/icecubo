@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with Blog title for the index page.
+ * Title: Classic Blog - post's title first.
  * Slug: icecubo/index
  * Categories: hidden
  * Inserter: false

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with sidebar.
+ * Title: Blog page with sidebar.
  * Slug: icecubo/index-with-sidebar
  * Categories: hidden
  * Inserter: false

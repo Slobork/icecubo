@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Query with sidebar - Blog title and featured image aside.
+ * Title: Blog with sidebar - featured image aside.
  * Slug: icecubo/index-with-sidebar-featured-img-aside
  * Categories: hiiden
  * Inserter: false
