@@ -8,7 +8,7 @@
  * Template Types: front-page, home
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px"}}}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:1px"><!-- wp:heading {"level":1} -->
 <h1 class="wp-block-heading"><?php echo esc_html__('The latest posts', 'icecubo'); ?></h1>
 <!-- /wp:heading -->
