@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Classic query of posts (Featured image first).
- * Slug: icecubo/query-classic-featured-img-above-title
+ * Slug: icecubo/query-classic-featured-img-top
  * Categories: icecubo-query
  * Inserter: true
  */
