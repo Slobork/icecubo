@@ -671,7 +671,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $conditional_blocks = ! function_exists('icecubo_pro_enqueue_block_styles')
             ? array(
                 'core/navigation',
-                'core/navigation-submenu'
+                'core/navigation-submenu',
+                'core/media-text'
             )
             : array();
 
@@ -687,7 +688,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/image',
             'core/list',
             'core/navigation-link',
-            'core/media-text',
             'core/paragraph',
             'core/post-template',
             'core/post-title',
