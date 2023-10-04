@@ -3,7 +3,7 @@
 /**
  * Title: Category posts wrapped in a group. Featured image as a cover.
  * Slug: icecubo/query-wrapped-taxonomy-cover
- * Categories: icecubo-query
+ * Categories: icecubo-taxonomy
  * Inserter: true
  */
 ?>

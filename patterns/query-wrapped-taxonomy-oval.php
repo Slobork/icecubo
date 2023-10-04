@@ -3,7 +3,7 @@
 /**
  * Title: Category posts wrapped in a group. Oval post wrap.
  * Slug: icecubo/query-wrapped-taxonomy-oval
- * Categories: icecubo-query
+ * Categories: icecubo-taxonomy
  * Inserter: true
  */
 ?>
