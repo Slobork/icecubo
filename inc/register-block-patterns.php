@@ -53,8 +53,13 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-taxonomy',
-            array( 'label' => esc_html__('IceCubo - Posts taxonomy', 'icecubo') )
+            'icecubo-query-section',
+            array( 'label' => esc_html__('IceCubo - Posts section', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query-split',
+            array( 'label' => esc_html__('IceCubo - Posts split', 'icecubo') )
         );
 
         register_block_pattern_category(
