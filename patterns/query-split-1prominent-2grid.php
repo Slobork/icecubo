@@ -3,7 +3,7 @@
 /**
  * Title: Offset split posts: 1st prominent post. 2nd grid of posts.
  * Slug: icecubo/query-split-1prominent-2grid
- * Categories: icecubo-query
+ * Categories: icecubo-query-split
  * Inserter: true
  */
 ?>

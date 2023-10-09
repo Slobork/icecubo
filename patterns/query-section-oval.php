@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Category posts wrapped in a group. Oval post wrap.
- * Slug: icecubo/query-wrapped-taxonomy-oval
- * Categories: icecubo-taxonomy
+ * Slug: icecubo/query-query-section-oval
+ * Categories: icecubo-query-section
  * Inserter: true
  */
 ?>
@@ -14,7 +14,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3","taxQuery":{"category":[1]}},"align":"wide","layout":{"type":"default"}} -->
+<!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3"},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xx-large"}},"border":{"radius":"40px"}},"backgroundColor":"white-ice","className":"is-style-default"} -->
 <div class="wp-block-group is-style-default has-white-ice-background-color has-background" style="border-radius:40px;margin-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:post-title {"isLink":true} /-->

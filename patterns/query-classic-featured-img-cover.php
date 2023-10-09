@@ -9,19 +9,19 @@
 ?>
 <!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":true}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-default","layout":{"type":"default","columnCount":3}} -->
-<!-- wp:cover {"useFeaturedImage":true,"hasParallax":true,"dimRatio":0,"isDark":false,"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover is-light has-parallax"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","verticalAlignment":"space-between"}} -->
+<!-- wp:cover {"useFeaturedImage":true,"hasParallax":true,"dimRatio":60,"overlayColor":"darko","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover has-parallax"><span aria-hidden="true" class="wp-block-cover__background has-darko-background-color has-background-dim-60 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","verticalAlignment":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":".25rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
-<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-date {"className":"is-style-icecubo-oval-post-meta"} /-->
+<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-date {"textColor":"darko","className":"is-style-icecubo-oval-post-meta"} /-->
 
 <!-- wp:paragraph -->
 <p>·</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-author {"showAvatar":false,"showBio":false,"className":"is-style-icecubo-oval-post-meta"} /--></div>
+<!-- wp:post-author {"showAvatar":false,"showBio":false,"textColor":"darko","className":"is-style-icecubo-oval-post-meta"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:post-excerpt {"showMoreOnNewLine":false} /--></div>

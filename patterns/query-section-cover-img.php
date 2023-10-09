@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Category posts wrapped in a group. Featured image as a cover.
- * Slug: icecubo/query-wrapped-taxonomy-cover
- * Categories: icecubo-taxonomy
+ * Slug: icecubo/query-query-section-cover-img
+ * Categories: icecubo-query-section
  * Inserter: true
  */
 ?>
@@ -14,7 +14,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3","taxQuery":{"category":[1]}},"align":"wide","layout":{"type":"default"}} -->
+<!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3"},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide"><!-- wp:post-template {"className":"is-style-default","layout":{"type":"grid","columnCount":3}} -->
 <!-- wp:cover {"useFeaturedImage":true,"hasParallax":true,"dimRatio":0,"isDark":false,"layout":{"type":"default"}} -->
 <div class="wp-block-cover is-light has-parallax"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","verticalAlignment":"space-between"}} -->
