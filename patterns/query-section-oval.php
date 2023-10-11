@@ -1,17 +1,17 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Category posts wrapped in a group. Oval post wrap.
- * Slug: icecubo/query-query-section-oval
+ * Title: Posts wrapped in a group. Oval post wrap.
+ * Slug: icecubo/query-section-oval
  * Categories: icecubo-query-section
  * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-default"} -->
-<p class="is-style-default">TECHNOLOGY</p>
-<!-- /wp:paragraph --></div>
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:heading {"className":"is-style-icecubo-underline-overline"} -->
+<h2 class="wp-block-heading is-style-icecubo-underline-overline">TECHNOLOGY</h2>
+<!-- /wp:heading --></div>
 <!-- /wp:group -->
 
 <!-- wp:query {"queryId":0,"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":"3"},"align":"wide","layout":{"type":"default"}} -->

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Category posts wrapped in a group.
+ * Title: Posts wrapped in a group.
  * Slug: icecubo/query-section-basic
  * Categories: icecubo-query-section
  * Inserter: true
