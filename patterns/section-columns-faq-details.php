@@ -12,25 +12,25 @@
 
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-default"} -->
+<div class="wp-block-column"><!-- wp:details {"className":"noice is-style-default"} -->
 <details class="wp-block-details noice is-style-default"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-default"} -->
+<!-- wp:details {"className":"noice is-style-default"} -->
 <details class="wp-block-details noice is-style-default"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-default"} -->
+<!-- wp:details {"className":"noice is-style-default"} -->
 <details class="wp-block-details noice is-style-default"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-default"} -->
+<!-- wp:details {"className":"noice is-style-default"} -->
 <details class="wp-block-details noice is-style-default"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
@@ -38,52 +38,52 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"is-style-icecubo-details-square noice"} -->
-<details class="wp-block-details is-style-icecubo-details-square noice"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<div class="wp-block-column"><!-- wp:details {"className":"is-style-icecubo-details-square"} -->
+<details class="wp-block-details is-style-icecubo-details-square"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"is-style-icecubo-details-square noice"} -->
-<details class="wp-block-details is-style-icecubo-details-square noice"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-square"} -->
+<details class="wp-block-details is-style-icecubo-details-square"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"is-style-icecubo-details-square noice"} -->
-<details class="wp-block-details is-style-icecubo-details-square noice"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-square"} -->
+<details class="wp-block-details is-style-icecubo-details-square"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"is-style-icecubo-details-square noice"} -->
-<details class="wp-block-details is-style-icecubo-details-square noice"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-square"} -->
+<details class="wp-block-details is-style-icecubo-details-square"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-icecubo-details-oval"} -->
-<details class="wp-block-details noice is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<div class="wp-block-column"><!-- wp:details {"className":"is-style-icecubo-details-oval"} -->
+<details class="wp-block-details is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-icecubo-details-oval"} -->
-<details class="wp-block-details noice is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-oval"} -->
+<details class="wp-block-details is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-icecubo-details-oval"} -->
-<details class="wp-block-details noice is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-oval"} -->
+<details class="wp-block-details is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details -->
 
-<!-- wp:details {"summary":"Lorem ipsum dolor sit amet?","className":"noice is-style-icecubo-details-oval"} -->
-<details class="wp-block-details noice is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
+<!-- wp:details {"className":"is-style-icecubo-details-oval"} -->
+<details class="wp-block-details is-style-icecubo-details-oval"><summary>Lorem ipsum dolor sit amet?</summary><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0.5rem"}}}} -->
 <p style="margin-top:0.5rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph --></details>
 <!-- /wp:details --></div>
