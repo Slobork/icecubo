@@ -20,7 +20,7 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#739bd0",
+					"color": "#5276a4",
 					"name": "Iceo"
 				},
 				{
@@ -508,11 +508,11 @@
 				"border": {},
 				"spacing": {},
 				"color": {
-					"text": "var(--wp--preset--color--highlight-1)"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--primary)"
+						"text": "var(--wp--preset--color--primary-dark)"
 					}
 				}
 			},
