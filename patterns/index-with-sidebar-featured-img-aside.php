@@ -3,7 +3,7 @@
 /**
  * Title: Blog with sidebar - featured image aside.
  * Slug: icecubo/index-with-sidebar-featured-img-aside
- * Categories: hiiden
+ * Categories: hidden
  * Inserter: false
  * Template Types: front-page, home
  */
