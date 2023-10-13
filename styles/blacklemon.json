@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#fff700",
-					"name": "Lemo"
+					"name": "Blemo primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#FFFC8B",
-					"name": "Lemo light"
+					"name": "Blemo light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#CDC800",
-					"name": "Lemo dark"
+					"name": "Blemo dark"
 				},
 				{
 					"slug": "white-ice",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#FF9B00",
-					"name": "Lemo glow"
+					"name": "Blemo glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#F9C779",
-					"name": "Lemo glow light"
+					"name": "Blemo glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
