@@ -6,7 +6,7 @@
 .is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
 .is-style-icecubo-aside-lines {display: flex; align-items: center;}
 .is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 20px; flex: 1 0 20px;}
-[class*="is-style-icecubo-mix-colors"] {-webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+[class*="is-style-icecubo-mix-colors"] {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
 .is-style-icecubo-mix-colors {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
 .is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
 .is-style-icecubo-mix-colors-focus {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
