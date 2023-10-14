@@ -8,9 +8,9 @@
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--large)"><!-- wp:heading {"backgroundColor":"white-ice","className":"is-style-icecubo-underline-overline"} -->
-<h2 class="wp-block-heading is-style-icecubo-underline-overline has-white-ice-background-color has-background">TECHNOLOGY</h2>
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"},"padding":{"top":"0px","bottom":"0px"}},"border":{"radius":"40px"}},"backgroundColor":"white-ice","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide has-white-ice-background-color has-background" style="border-radius:40px;margin-bottom:var(--wp--preset--spacing--large);padding-top:0px;padding-bottom:0px"><!-- wp:heading {"className":"is-style-icecubo-underline-overline"} -->
+<h2 class="wp-block-heading is-style-icecubo-underline-overline">TECHNOLOGY</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 

@@ -9,8 +9,8 @@
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-default"} -->
-<p class="is-style-default">TECHNOLOGY</p>
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"className":"is-style-icecubo-mix-colors","fontSize":"xl"} -->
+<p class="is-style-icecubo-mix-colors has-xl-font-size">TECHNOLOGY</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
