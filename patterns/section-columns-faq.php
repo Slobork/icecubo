@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Frequently asked questions</h2>
+<h2 class="wp-block-heading has-text-align-center">Frequently Asked Questions</h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->

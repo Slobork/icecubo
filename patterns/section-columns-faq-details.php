@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}}} -->
-<h2 class="wp-block-heading has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--large)">Frequently asked questions</h2>
+<h2 class="wp-block-heading has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--large)">Frequently Asked Questions</h2>
 <!-- /wp:heading -->
 
 <!-- wp:columns -->

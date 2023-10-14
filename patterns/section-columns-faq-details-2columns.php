@@ -9,7 +9,7 @@
 <!-- wp:columns {"verticalAlignment":null} -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Frequently asked questions</h2>
+<h2 class="wp-block-heading has-text-align-center">Frequently Asked Questions</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
