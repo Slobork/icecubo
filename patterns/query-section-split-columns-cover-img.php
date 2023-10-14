@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Posts splitted in 2 columns, wrapped in a group. Featured image as a cover.
- * Slug: icecubo/query-section-splitted-cover-img
+ * Slug: icecubo/query-section-split-columns-cover-img
  * Categories: icecubo-query-section
  * Inserter: true
  */
