@@ -7,7 +7,7 @@
  */
 ?>
 <!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
@@ -17,7 +17,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
@@ -27,7 +27,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
