@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Basic group boxes as columns.
- * Slug: icecubo/boxes-with-heading-sub
+ * Slug: icecubo/boxes-with-sub-heading
  * Categories: icecubo-box
  */
 ?>

@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Basic group boxes as columns colorized.
- * Slug: icecubo/boxes-with-heading-sub-colorized
+ * Slug: icecubo/boxes-with-sub-heading-colorized
  * Categories: icecubo-box
  */
 ?>
