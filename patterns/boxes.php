@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic gruop boxes as columns.
+ * Title: Basic group boxes as columns.
  * Slug: icecubo/boxes-with-heading-sub
  * Categories: icecubo-box
  */

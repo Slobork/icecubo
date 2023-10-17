@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic gruop boxes as columns with cover background.
+ * Title: Basic group boxes as columns with cover background.
  * Slug: icecubo/collection-basic
  * Categories: icecubo-box
  */

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Gruop boxes in columns, with cover - applyied background color + rotate 1.
+ * Title: Group boxes in columns, with cover - applyied background color + rotate 1.
  * Slug: icecubo/boxes-with-cover-bg-colorized-rotate-1
  * Categories: icecubo-box
  */

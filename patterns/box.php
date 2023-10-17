@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic gruop box
+ * Title: Basic group box
  * Slug: icecubo/box-in-group
  * Categories: icecubo-box
  */
