@@ -6,10 +6,10 @@
  * Categories: icecubo-section
  */
 ?>
-<!-- wp:cover {"dimRatio":60,"gradient":"darko-to-primary-radial-gradual","isDark":false,"className":"is-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}}}} -->
-<div class="wp-block-cover is-light" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-darko-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<!-- wp:cover {"dimRatio":60,"gradient":"darko-to-primary-radial-gradual","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","className":"is-light"} -->
+<div class="wp-block-cover is-light has-white-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-darko-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
 <div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"40%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><<!-- wp:heading {"level":2} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:heading -->
 <h2 class="wp-block-heading">Projects</h2>
 <!-- /wp:heading -->
 
