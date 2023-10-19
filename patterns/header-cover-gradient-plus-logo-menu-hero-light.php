@@ -42,7 +42,9 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"matching-6","textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} /--></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"matching-6","textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-matching-6-background-color has-text-color has-background has-link-color wp-element-button">Start now!</a></div>
+<!-- /wp:button --></div>
 <!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group --></div></div>
