@@ -43,7 +43,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
 <div class="wp-block-buttons"><!-- wp:button /--></div>
-<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="" alt=""/></figure></div>
+<!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
