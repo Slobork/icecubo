@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Media and text as a call to action with heading and left aligned.
+ * Title: Media and text as a call to action with heading and left aligned. Background gradient from the top.
  * Slug: icecubo/hero-media-text-cta-left-aligned
  * Categories: icecubo-hero
  */

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Media and text as a call to action placeholder.
+ * Title: Media and text as a call to action placeholder. Focused background.
  * Slug: icecubo/hero-media-text-cta
  * Categories: icecubo-hero
  */
