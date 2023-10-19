@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Features basic outline in columns.
- * Slug: icecubo/feature-basic
+ * Slug: icecubo/features-basic
  * Categories: icecubo-general
  */
 ?>
