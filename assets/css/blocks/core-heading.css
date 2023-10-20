@@ -11,3 +11,5 @@
 .is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
 .is-style-icecubo-mix-colors-focus {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
 .is-style-icecubo-mix-colors-to-light {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
+.is-style-icecubo-asterisk-over:before { content: ''; height: 3rem; background: currentColor; clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z'); display: block;}
+.is-style-icecubo-star-over:before { content: '\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}
