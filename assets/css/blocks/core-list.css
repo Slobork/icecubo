@@ -1,7 +1,10 @@
-ul.is-style-icecubo-check-list, ul.is-style-icecubo-plus-list {list-style-type: none; padding: var(--wp--preset--spacing--xx-small);}
+ul.is-style-icecubo-check-list, ul.is-style-icecubo-plus-list {list-style-type: none; padding: 0;}
 ul.is-style-icecubo-check-list li, ul.is-style-icecubo-plus-list li {position: relative; list-style-type: none; padding-left: 1.2em; margin-bottom: .1rem;}
 ul.is-style-icecubo-check-list li::before, ul.is-style-icecubo-plus-list li::before {display: block; position: absolute; left: 0; top: 3%;}
 ul.is-style-icecubo-check-list li::before {content: '✓';}
 ul.is-style-icecubo-plus-list li::before {content: '+';}
+ul.is-style-icecubo-fill-list li::marker {color: var(--wp--preset--color--primary);}
 ul.is-style-icecubo-check-list li.is-style-icecubo-cancel-list::before { content: '+'; transform: rotate(45deg);}
 ul.is-style-icecubo-plus-list li.is-style-icecubo-cancel-list::before { content: '-'; left: 3px;}
+ul.is-style-default li.is-style-icecubo-cancel-list::marker {color: var(--wp--preset--color--gray-very-light);}
+ul.is-style-icecubo-fill-list li.is-style-icecubo-cancel-list::marker {color: var(--wp--preset--color--gray-very-light);}
