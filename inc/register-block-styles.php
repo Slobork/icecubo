@@ -165,6 +165,23 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
+                'name'  => 'icecubo-asterisk-over',
+                'label' => __('Asterisk', 'icecubo'),
+            )
+        );
+
+        // From the Twenty Twenty Four theme
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-star-over',
+                'label' => __('Star', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
                 'name'  => 'icecubo-mix-colors',
                 'label' => __('Mix colors', 'icecubo'),
             )
@@ -231,6 +248,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-check-list',
                 'label' => __('Checks', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/list',
+            array(
+                'name'  => 'icecubo-fill-list',
+                'label' => __('Fill', 'icecubo'),
             )
         );
 
@@ -507,54 +532,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-square-post-meta',
-                'label' => __('Square', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-outline-post-meta',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-oval-post-meta',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-each-square-post-meta',
-                'label' => __('Each Square', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-each-outline-post-meta',
-                'label' => __('Each Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/query-pagination',
-            array(
-                'name'  => 'icecubo-each-oval-post-meta',
-                'label' => __('Each Oval', 'icecubo'),
-            )
-        );
-
-        register_block_style(
             'core/post-title',
             array(
                 'name'  => 'icecubo-accent-text-small-1',
@@ -605,6 +582,23 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
+                'name'  => 'icecubo-asterisk-over',
+                'label' => __('Asterisk', 'icecubo'),
+            )
+        );
+
+        // From the Twenty Twenty Four theme
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-star-over',
+                'label' => __('Star', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
                 'name'  => 'icecubo-mix-colors',
                 'label' => __('Mix colors', 'icecubo'),
             )
@@ -631,6 +625,54 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-mix-colors-to-light',
                 'label' => __('Transit to light color', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-square-post-meta',
+                'label' => __('Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-outline-post-meta',
+                'label' => __('Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-oval-post-meta',
+                'label' => __('Oval', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-square-post-meta',
+                'label' => __('Each Square', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-outline-post-meta',
+                'label' => __('Each Outline', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query-pagination',
+            array(
+                'name'  => 'icecubo-each-oval-post-meta',
+                'label' => __('Each Oval', 'icecubo'),
             )
         );
 
