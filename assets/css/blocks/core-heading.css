@@ -4,6 +4,7 @@
 .is-style-icecubo-accent-text-huge-2 {text-shadow: 5px 5px 0 var(--wp--preset--color--gray-very-light);}
 .is-style-icecubo-underline-overline {display: flex; flex-direction: column; line-height: 1.75;}
 .is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
+.is-style-icecubo-underline-color-primary::after {content: ""; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}
 .is-style-icecubo-aside-lines {display: flex; align-items: center;}
 .is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 20px; flex: 1 0 20px;}
 [class*="is-style-icecubo-mix-colors"] {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}

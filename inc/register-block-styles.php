@@ -149,6 +149,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
+                'name'  => 'icecubo-underline-color-primary',
+                'label' => __('Underline colored', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
                 'name'  => 'icecubo-underline-overline',
                 'label' => __('Underline/overline', 'icecubo'),
             )
@@ -560,6 +568,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-accent-text-huge-2',
                 'label' => __('Accent huge 2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-underline-color-primary',
+                'label' => __('Underline colored', 'icecubo'),
             )
         );
 
