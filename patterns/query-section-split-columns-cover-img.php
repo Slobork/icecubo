@@ -76,12 +76,16 @@
 <!-- /wp:group --></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->
-<!-- /wp:post-template -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:spacer {"height":"10%"} -->
+<div style="height:10%" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
 
 <!-- wp:paragraph {"align":"right"} -->
 <p class="has-text-align-right">→See more from <a href="#">TECHNOLOGY</a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:query --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group --></div>
