@@ -25,7 +25,7 @@
 <!-- wp:post-author {"textAlign":"center","showAvatar":false,"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-meta"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:post-featured-image {"isLink":true,"style":{"border":{"width":"4px"}}} /-->
+<!-- wp:post-featured-image {"isLink":true,"height":"120px","style":{"border":{"width":"4px"}}} /-->
 
 <!-- wp:post-excerpt {"showMoreOnNewLine":false,"excerptLength":20} /-->
 
