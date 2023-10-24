@@ -54,12 +54,12 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-query-section',
-            array( 'label' => esc_html__('IceCubo - Posts section', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Posts: Section', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-query-split',
-            array( 'label' => esc_html__('IceCubo - Posts split', 'icecubo') )
+            'icecubo-query-magazine-intro',
+            array( 'label' => esc_html__('IceCubo - Posts: Magazine intro', 'icecubo') )
         );
 
         register_block_pattern_category(
