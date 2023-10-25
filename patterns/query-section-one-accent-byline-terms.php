@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Posts wrapped in a group. Accent byline and terms.
- * Slug: icecubo/query-section-accent-byline-terms
- * Categories: icecubo-query-section
+ * Slug: icecubo/query-section-one-accent-byline-terms
+ * Categories: icecubo-query-section-one
  * Inserter: true
  */
 ?>
