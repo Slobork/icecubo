@@ -53,13 +53,18 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-query-section',
-            array( 'label' => esc_html__('IceCubo - Posts: Section', 'icecubo') )
+            'icecubo-query-magazine-intro',
+            array( 'label' => esc_html__('IceCubo - Posts: Magazine intro', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-query-magazine-intro',
-            array( 'label' => esc_html__('IceCubo - Posts: Magazine intro', 'icecubo') )
+            'icecubo-query-section-one',
+            array( 'label' => esc_html__('IceCubo - Posts: Section (one)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query-section-columns',
+            array( 'label' => esc_html__('IceCubo - Posts: Section (columns)', 'icecubo') )
         );
 
         register_block_pattern_category(
