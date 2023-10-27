@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Blog page with sidebar.
- * Slug: icecubo/index-with-sidebar
+ * Slug: icecubo/page-modal-blog-with-sidebar
  * Categories: hidden
  * Inserter: false
  * Template Types: front-page, home

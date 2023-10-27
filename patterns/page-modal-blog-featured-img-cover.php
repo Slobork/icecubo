@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Blog with featured image as a cover of each post.
- * Slug: icecubo/index-cover-featured-img
+ * Slug: icecubo/page-modal-blog-featured-img-cover
  * Categories: hidden
  * Inserter: false
  * Template Types: front-page, home

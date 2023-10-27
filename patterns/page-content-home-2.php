@@ -1,10 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Home page 2.
- * Slug: icecubo/page-home-2
+ * Title: Content for the Front page (2).
+ * Slug: icecubo/page-content-home-2
  * Categories: icecubo-page
- * Template Types: front-page, page
  */
 ?>
 <!-- wp:pattern {"slug":"icecubo/header-cover-gradient-plus-logo-menu-hero-light"} /-->
