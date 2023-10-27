@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Home page 1.
- * Slug: icecubo/page-editor-home-1
+ * Slug: icecubo/page-template-home-1
  * Categories: hidden
  * Inserter: false
  * Template Types: front-page, page
