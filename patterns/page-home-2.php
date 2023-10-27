@@ -11,7 +11,7 @@
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
-<h2 class="wp-block-heading has-text-align-center">Lorem <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-matching-6-color">ipsum dolor sit amet</mark>, consectetur adipiscing elit, sed do eiusmod <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-matching-6-color">tempor</mark></h2>
+<h2 class="wp-block-heading has-text-align-center">Lorem <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-classy-3-color">ipsum dolor sit amet</mark>, consectetur adipiscing elit, sed do eiusmod <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-classy-3-color">tempor</mark></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->

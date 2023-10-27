@@ -9,8 +9,8 @@
 <!-- wp:cover {"dimRatio":30,"gradient":"primary-to-transparent-gradual-radial","isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"border":{"radius":"20px"}},"className":"is-light"} -->
 <div class="wp-block-cover alignwide is-light" style="border-radius:20px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim has-background-gradient has-primary-to-transparent-gradual-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center","width":"55%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|matching-6"}}}},"textColor":"matching-6"} -->
-<h2 class="wp-block-heading has-matching-6-color has-text-color has-link-color">Our clients are thriving with us!</h2>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%"><!-- wp:heading {"textColor":"classy-3"} -->
+<h2 class="wp-block-heading has-classy-3-color has-text-color">Our clients are thriving with us!</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-small"}}}} -->
