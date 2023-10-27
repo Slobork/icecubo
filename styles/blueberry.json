@@ -155,19 +155,19 @@
 					"name": "Matching 6"
 				},
 				{
-					"slug": "highlight-1",
-					"color": "#74a6ff",
-					"name": "Highlight 1"
+					"slug": "classy-1",
+					"color": "#a02d43",
+					"name": "Classy"
 				},
 				{
-					"slug": "highlight-2",
-					"color": "#fee181",
-					"name": "Highlight 2"
+					"slug": "classy-2",
+					"color": "#dc6473",
+					"name": "Classy light"
 				},
 				{
-					"slug": "highlight-3",
-					"color": "#fff7d6",
-					"name": "Highlight 3"
+					"slug": "classy-3",
+					"color": "#9B0823",
+					"name": "Classy polish"
 				},
 				{
 					"slug": "friend-dark",
@@ -240,11 +240,6 @@
 					"name": "Tint very light 1"
 				},
 				{
-					"slug": "white",
-					"color": "#ffffff",
-					"name": "White"
-				},
-				{
 					"slug": "beige-light",
 					"color": "#f1f1e6",
 					"name": "Beige light"
@@ -263,6 +258,21 @@
 					"slug": "darko-down-bottom",
 					"color": "#3c3c3c",
 					"name": "Darko down bottom"
+				},
+				{
+					"slug": "highlight-1",
+					"color": "#74a6ff",
+					"name": "Highlight 1"
+				},
+				{
+					"slug": "highlight-2",
+					"color": "#fee181",
+					"name": "Highlight 2"
+				},
+				{
+					"slug": "highlight-3",
+					"color": "#fff7d6",
+					"name": "Highlight 3"
 				}
 			],
 			"duotone": [
