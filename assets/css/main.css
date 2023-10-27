@@ -118,7 +118,7 @@ pre { overflow: auto; }
  * Otherwise, through theme.jason !important would be used, but the problem is that then it cannot be overwritten in UI.
  * Alternatively, for the post titles, it could be done in templates, on each post-title block,
  * but it wouldn't impact the in-content h1 when it's the first element in a group block.
- * -- With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the #main will give the psacing
+ * -- With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
  */
  :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
