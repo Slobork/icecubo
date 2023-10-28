@@ -166,7 +166,7 @@ a.button {
 }
 
 /**
- * Post meta styling
+ * Post byline styling
  * - Instead of setting each css file for the post-author, post-date, terms, navigation-link, pagination,
  *   style it here
  */
@@ -199,7 +199,7 @@ a.button {
 }
 
 /**
- * As addition to post meta, each term styling
+ * As addition to post byline, each term styling
  */
 .is-style-icecubo-each-square-post-byline a {
     background: var(--wp--preset--color--white-ice);

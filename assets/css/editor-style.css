@@ -62,7 +62,7 @@
 }
 
 /**
- * Post meta styling
+ * Post byline styling
  */
 .is-style-icecubo-outline-post-byline {
     border: 1px solid currentColor;
@@ -93,7 +93,7 @@
 }
 
 /**
- * As addition to post meta, each term styling
+ * As addition to post byline, each term styling
  */
 .is-style-icecubo-each-square-post-byline a {
     background: var(--wp--preset--color--white-ice);
