@@ -10,6 +10,6 @@
 <div class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--small)">
     <!-- wp:post-featured-image /-->
     <!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}}} /-->
-    <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
+    <!-- wp:pattern {"slug":"icecubo/post-byline-oval"} /-->
 </div>
 <!-- /wp:group -->
