@@ -12,9 +12,9 @@
 <div class="wp-block-group alignwide" style="margin-top:0;padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"textColor":"white-ice"} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
-<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-date {"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-meta"} /-->
+<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-date {"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-byline"} /-->
 
-<!-- wp:post-author {"showAvatar":false,"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-meta"} /--></div>
+<!-- wp:post-author {"showAvatar":false,"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-byline"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div></div>

@@ -422,7 +422,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-author',
             array(
-                'name'  => 'icecubo-square-post-meta',
+                'name'  => 'icecubo-square-post-byline',
                 'label' => __('Square', 'icecubo'),
             )
         );
@@ -430,7 +430,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-author',
             array(
-                'name'  => 'icecubo-outline-post-meta',
+                'name'  => 'icecubo-outline-post-byline',
                 'label' => __('Outline', 'icecubo'),
             )
         );
@@ -438,7 +438,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-author',
             array(
-                'name'  => 'icecubo-oval-post-meta',
+                'name'  => 'icecubo-oval-post-byline',
                 'label' => __('Oval', 'icecubo'),
             )
         );
@@ -446,7 +446,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-date',
             array(
-                'name'  => 'icecubo-square-post-meta',
+                'name'  => 'icecubo-square-post-byline',
                 'label' => __('Square', 'icecubo'),
             )
         );
@@ -454,7 +454,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-date',
             array(
-                'name'  => 'icecubo-outline-post-meta',
+                'name'  => 'icecubo-outline-post-byline',
                 'label' => __('Outline', 'icecubo'),
             )
         );
@@ -462,7 +462,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-date',
             array(
-                'name'  => 'icecubo-oval-post-meta',
+                'name'  => 'icecubo-oval-post-byline',
                 'label' => __('Oval', 'icecubo'),
             )
         );
@@ -470,7 +470,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-navigation-link',
             array(
-                'name'  => 'icecubo-square-post-meta',
+                'name'  => 'icecubo-square-post-byline',
                 'label' => __('Square', 'icecubo'),
             )
         );
@@ -478,7 +478,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-navigation-link',
             array(
-                'name'  => 'icecubo-oval-post-meta',
+                'name'  => 'icecubo-oval-post-byline',
                 'label' => __('Oval', 'icecubo'),
             )
         );
@@ -486,7 +486,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-navigation-link',
             array(
-                'name'  => 'icecubo-outline-post-meta',
+                'name'  => 'icecubo-outline-post-byline',
                 'label' => __('Outline', 'icecubo'),
             )
         );
@@ -494,7 +494,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-square-post-meta',
+                'name'  => 'icecubo-square-post-byline',
                 'label' => __('Square', 'icecubo'),
             )
         );
@@ -502,7 +502,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-outline-post-meta',
+                'name'  => 'icecubo-outline-post-byline',
                 'label' => __('Outline', 'icecubo'),
             )
         );
@@ -510,7 +510,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-oval-post-meta',
+                'name'  => 'icecubo-oval-post-byline',
                 'label' => __('Oval', 'icecubo'),
             )
         );
@@ -518,7 +518,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-each-square-post-meta',
+                'name'  => 'icecubo-each-square-post-byline',
                 'label' => __('Each Square', 'icecubo'),
             )
         );
@@ -526,7 +526,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-each-outline-post-meta',
+                'name'  => 'icecubo-each-outline-post-byline',
                 'label' => __('Each Outline', 'icecubo'),
             )
         );
@@ -534,7 +534,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-terms',
             array(
-                'name'  => 'icecubo-each-oval-post-meta',
+                'name'  => 'icecubo-each-oval-post-byline',
                 'label' => __('Each Oval', 'icecubo'),
             )
         );
@@ -647,7 +647,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-square-post-meta',
+                'name'  => 'icecubo-square-post-byline',
                 'label' => __('Square', 'icecubo'),
             )
         );
@@ -655,7 +655,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-outline-post-meta',
+                'name'  => 'icecubo-outline-post-byline',
                 'label' => __('Outline', 'icecubo'),
             )
         );
@@ -663,7 +663,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-oval-post-meta',
+                'name'  => 'icecubo-oval-post-byline',
                 'label' => __('Oval', 'icecubo'),
             )
         );
@@ -671,7 +671,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-each-square-post-meta',
+                'name'  => 'icecubo-each-square-post-byline',
                 'label' => __('Each Square', 'icecubo'),
             )
         );
@@ -679,7 +679,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-each-outline-post-meta',
+                'name'  => 'icecubo-each-outline-post-byline',
                 'label' => __('Each Outline', 'icecubo'),
             )
         );
@@ -687,7 +687,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/query-pagination',
             array(
-                'name'  => 'icecubo-each-oval-post-meta',
+                'name'  => 'icecubo-each-oval-post-byline',
                 'label' => __('Each Oval', 'icecubo'),
             )
         );

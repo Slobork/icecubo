@@ -22,7 +22,7 @@
     <!-- wp:group {"layout":{"inherit":false}} -->
     <div class="wp-block-group">
 
-    <!-- wp:query-pagination {"className":"is-style-icecubo-oval-post-meta"} -->
+    <!-- wp:query-pagination {"className":"is-style-icecubo-oval-post-byline"} -->
     <!-- wp:query-pagination-previous /-->
 
     <!-- wp:query-pagination-numbers /-->
