@@ -13,7 +13,7 @@
     <!-- wp:group {"layout":{"inherit":false}} -->
     <div class="wp-block-group">
     <!-- wp:post-title {"isLink":true} /-->
-    <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
+    <!-- wp:pattern {"slug":"icecubo/post-byline-oval"} /-->
     <!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
     </div>
     <!-- /wp:group -->
