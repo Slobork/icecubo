@@ -252,6 +252,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-sink-frame-left',
+                'label' => __('Sink left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-sink-frame-right',
+                'label' => __('Sink right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/list',
             array(
                 'name'  => 'icecubo-check-list',
@@ -286,6 +302,14 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/media-text',
             array(
+                'name'  => 'icecubo-media-text-round',
+                'label' => __('Rounded', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
                 'name'  => 'icecubo-media-text-solid-frame',
                 'label' => __('Solid frame', 'icecubo'),
             )
@@ -312,6 +336,22 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-media-text-spaced-cutted-frame',
                 'label' => __('Spaced & cut frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-sink-frame-left',
+                'label' => __('Sink left', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-sink-frame-right',
+                'label' => __('Sink right', 'icecubo'),
             )
         );
 
