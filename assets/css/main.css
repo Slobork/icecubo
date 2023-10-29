@@ -122,9 +122,6 @@ pre { overflow: auto; }
  */
  :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
-/* Featured images on blog/archive pages */
-body:where(.blog, .archive) .wp-block-post-featured-image img { max-height: 350px; }
-
 /* Footer - links */
 footer a:hover { opacity: .6; }
 /* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
