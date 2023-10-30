@@ -656,7 +656,7 @@
 			"core/post-featured-image": {
 				"border": {
 					"radius": "var(--wp--custom--radius-small)",
-					"width": "var(--wp--custom--spacing-xs)",
+					"width": "5px",
 					"style": "solid",
 					"color": "var(--wp--preset--color--white-ice)"
 				}
