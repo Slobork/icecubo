@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Classic query of posts (Title first).
+ * Title: Query of posts (Title first).
  * Slug: icecubo/query-classic-featured-img-beneath-title
  * Categories: icecubo-query
  * Inserter: true
@@ -12,7 +12,7 @@
 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xx-large"}}},"className":"is-style-default"} -->
 <div class="wp-block-group is-style-default" style="margin-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:post-title {"isLink":true} /-->
 
-<!-- wp:post-featured-image {"isLink":true} /-->
+<!-- wp:post-featured-image {"isLink":true,"height":"350px","style":{"border":{"width":"5px"}}} /-->
 <!-- wp:pattern {"slug":"icecubo/post-byline-oval"} /-->
 <!-- wp:post-excerpt {"showMoreOnNewLine":false} /-->
 <!-- wp:pattern {"slug":"icecubo/post-footer-oval"} /-->
