@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic - Featured image at bottom.
+ * Title: Common header group - Featured image at bottom.
  * Slug: icecubo/post-header-basic
  * Categories: icecubo-post-header
  */
