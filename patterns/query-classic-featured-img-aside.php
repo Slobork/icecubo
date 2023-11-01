@@ -9,11 +9,11 @@
 ?>
 <!-- wp:query {"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":10},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default","columnCount":3}} -->
-<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xx-large"}}},"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
-<div class="wp-block-group is-style-default" style="margin-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4","width":"","height":"350px","style":{"layout":{"selfStretch":"fit","flexSize":null},"border":{"width":"4px"}}} /-->
+<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xx-large"}}},"className":"is-style-default mob-force-flexwrap","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top"}} -->
+<div class="wp-block-group is-style-default mob-force-flexwrap" style="margin-bottom:var(--wp--preset--spacing--xx-large)"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/4","width":"","height":"350px","style":{"layout":{"selfStretch":"fit","flexSize":null},"border":{"width":"4px"}}} /-->
 
-<!-- wp:group {"style":{"dimensions":{"minHeight":"350px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left","verticalAlignment":"space-between"}} -->
-<div class="wp-block-group" style="min-height:350px"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<!-- wp:group {"style":{"dimensions":{"minHeight":"350px"}},"className":"mob-minheight-no","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","verticalAlignment":"space-between"}} -->
+<div class="wp-block-group mob-minheight-no" style="min-height:350px"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"0"}}}} /-->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":".25rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
