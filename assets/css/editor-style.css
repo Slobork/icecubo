@@ -25,7 +25,7 @@
 }
 
 /* Mega menu - Create columns */
-@media (min-width: 600px)
+@media (min-width: 601px)
 {
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item {display: inline-block !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > .wp-block-navigation-item .wp-block-navigation-item {display: block !important;}
