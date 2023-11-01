@@ -230,3 +230,8 @@ a.button {
 .is-style-icecubo-each-outline-post-byline.wp-block-query-pagination .wp-block-query-pagination-numbers a {
     padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);
 }
+
+@media (max-width: 601px) {
+    .mob-force-flexwrap {flex-wrap: wrap !important;}
+    .mob-minheight-no {min-height: unset !important;}
+}
