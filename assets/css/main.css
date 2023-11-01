@@ -231,7 +231,12 @@ a.button {
     padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);
 }
 
-@media (max-width: 601px) {
+/**
+ * Small screens
+ * Only Media-Text block has a different breakpoint,
+ * that's an issue @see https://github.com/WordPress/gutenberg/issues/37350
+ */
+@media (max-width: 599px) {
     .mob-force-flexwrap {flex-wrap: wrap !important;}
     .mob-minheight-no {min-height: unset !important;}
 }

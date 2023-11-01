@@ -1,6 +1,6 @@
 .is-style-icecubo-rotate-left {transform: rotate(-4deg);}
 .is-style-icecubo-rotate-right {transform: rotate(4deg);}
-@media (min-width: 601px) {
+@media (min-width: 600px) {
     .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
     .is-style-icecubo-rotate-right {transform: rotate(13deg);}
 }
