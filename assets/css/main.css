@@ -72,7 +72,7 @@ textarea {
 /* WP built-in highlighting mark */
 mark {padding: 1px 6px;}
 
-/* Eliminate the horizontal scrollbar when a long text in preformatted tag is used */
+/* Eliminate the horizontal scrollbar when a long text in the preformatted tag is used */
 pre { overflow: auto; }
 
 /* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
@@ -82,84 +82,73 @@ pre { overflow: auto; }
     padding: 4px 8px;
 }
 
-/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
-.wp-block-navigation-item__content { width: max-content; }
-
-/* If the inline image is added to the nav item, this makes it gapped from the text */
-.wp-block-navigation li a.wp-block-navigation-item__content {
-    align-items: center;
-    gap: .3em;
-}
-
-/* Submenu icon ˘ make sure it's centered */
-.wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
-
-/* Mobile menu overlay - make it a bit tighten */
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {padding-top: .5rem;}
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {margin-top: .75rem;}
-
-/* Search box */
-.wp-block-search__no-button .wp-block-search__input,
-.wp-block-search__button-inside .wp-block-search__inside-wrapper,
-.wp-block-search__button-outside .wp-block-search__input {
-    border-radius: var(--wp--custom--radius-large);
-}
-.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
-    border-color: inherit;
-    border-top-left-radius: var(--wp--custom--radius-large);
-    border-bottom-left-radius: var(--wp--custom--radius-large);
-}
-
 /**
  * When h element is the first in the group,
  * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
- * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' declarations
+ * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' property
    and to overwrite it, it has to be a target as well.
- * Otherwise, through theme.jason !important would be used, but the problem is that then it cannot be overwritten in UI.
- * Alternatively, for the post titles, it could be done in templates, on each post-title block,
+ * Otherwise, through theme.jason !important would be used, but the problem is then it cannot be overwritten in UI.
+ * - Alternatively, for the post titles, it could be done in templates, on each post-title block,
  * but it wouldn't impact the in-content h1 when it's the first element in a group block.
- * -- With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
+ * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
  */
- :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+:where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+
+/**
+ * text-decoration in links is important for accessibility. However,
+ * remove the text decoration from the links that are already highlighted
+ */
+ body.blog main h2 a,
+ body.archive main h2 a,
+ body.search main h2 a,
+ .wp-block-query-pagination a,
+ .wp-block-post-terms a,
+ .wp-block-post-navigation-link a,
+ .remove-text-decor a,
+ a.button {
+     text-decoration: none;
+}
+
+/* Boxed page/post template */
+[class*="template-boxed"] main { width: 78%; }
 
 /* Footer - links */
 footer a:hover { opacity: .6; }
 /* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
 body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-top: 0; }
 
-/* Boxed page/post template */
-[class*="template-boxed"] main { width: 78%; }
-
-/* Post author - center items, usefull when avatar is used */
-.wp-block-post-author { align-items: center; }
-.wp-block-post-author .wp-block-post-author__avatar img {
-    vertical-align: middle;
-    padding: 4px 0;
-}
-
-/*If the last element in the post content is floating, it's necessary to clear the next elms*/
+/* If the last element in the post content is floating, it's necessary to clear the next elm */
 .post-footer, .wp-block-comments, footer {clear: both;}
 
-/*Code block */
-.wp-block-code code {
-    max-height: 70vh;
+/**
+ * Blocks
+ */
+
+/**
+ * Search box - button (icon).
+ * This code, except the 'max-width' is already avaliable in the editor (default by WP).
+ * 'max-width' removes the value set by WP which doesn't give equal space around the icon.
+ */
+.wp-block-search.wp-block-search__button-only .wp-block-search__button {
+    align-items: center;
+    border-radius: initial;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    border-radius: var(--wp--custom--radius-large);
+    max-width: none;
 }
 
-/* Blog's pagination */
-.wp-block-query-pagination { justify-content: space-between; }
-.wp-block-query-pagination-numbers .page-numbers { margin: 0 .5rem; }
-
-/* text-decoration in links is important for accessibility. However,
- remove the text decoration from the links that are already highlighted */
-body.blog main h2 a,
-body.archive main h2 a,
-body.search main h2 a,
-.wp-block-query-pagination a,
-.wp-block-post-terms a,
-.wp-block-post-navigation-link a,
-.remove-text-decor a,
-a.button {
-    text-decoration: none;
+/**
+ * Group/cover block.
+ * Almost every page has a group block, so target block variation styling
+ * from here instead separately from group and cover css files.
+ */
+.is-style-icecubo-rotate-left {transform: rotate(-4deg);}
+.is-style-icecubo-rotate-right {transform: rotate(4deg);}
+@media (min-width: 600px) {
+    .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
+    .is-style-icecubo-rotate-right {transform: rotate(13deg);}
 }
 
 /**
@@ -231,12 +220,9 @@ a.button {
     padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);
 }
 
-/**
- * Small screens
- * Only Media-Text block has a different breakpoint,
- * that's an issue @see https://github.com/WordPress/gutenberg/issues/37350
- */
+/* Small screens */
 @media (max-width: 599px) {
+    /* Force behavior on mobile */
     .mob-force-flexwrap {flex-wrap: wrap !important;}
     .mob-minheight-no {min-height: unset !important;}
 }
