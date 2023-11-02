@@ -1,5 +1,22 @@
+/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words (also in the mega-menu). This resolves it */
+.wp-block-navigation-item__content { width: max-content; }
+
+/* If the inline image is added to the nav item, this makes it gapped from the text */
+.wp-block-navigation li a.wp-block-navigation-item__content {
+    align-items: center;
+    gap: .3em;
+}
+
+/* Submenu icon ˘ make sure it's centered */
+.wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
+
+/* Mobile menu overlay - make it a bit tighten */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {padding-top: .5rem;}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {margin-top: .75rem;}
+
 /* Menu item - on hover Standard behavior */
 .wp-block-navigation.is-style-icecubo-nav-mark-hovers ul:not(.wp-block-navigation__submenu-container) > li.wp-block-navigation-item:hover { box-shadow: 0 2px 0; transition: box-shadow .2s ease-in-out; }
+/* Sub menu items hover marking */
 .wp-block-navigation.is-style-icecubo-nav-mark-hovers ul.wp-block-navigation__submenu-container > li.wp-block-navigation-item > a:hover { text-decoration: underline; }
 
 /* Hover: border styling on a:before */
