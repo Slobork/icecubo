@@ -8,8 +8,8 @@
 ?>
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column {"width":"33.33%"} -->
-<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading -->
-<h2 class="wp-block-heading">PRICING</h2>
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
+<h2 class="wp-block-heading" style="margin-top:0">PRICING</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
