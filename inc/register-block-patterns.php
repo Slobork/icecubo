@@ -53,12 +53,12 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-query-section-one',
+            'icecubo-query-division-one',
             array( 'label' => esc_html__('IceCubo - Posts: Division (one)', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-query-section-columns',
+            'icecubo-query-division-columns',
             array( 'label' => esc_html__('IceCubo - Posts: Division (columns)', 'icecubo') )
         );
 
