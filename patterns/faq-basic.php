@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - FAQ.
- * Slug: icecubo/section-columns-faq
- * Categories: icecubo-section
+ * Title: Basic FAQ in columns.
+ * Slug: icecubo/faq-basic
+ * Categories: icecubo-faq
  */
 ?>
 <!-- wp:heading {"textAlign":"center"} -->

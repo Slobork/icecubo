@@ -2,14 +2,14 @@
 // phpcs:ignore
 /**
  * Title: Columns - FAQ with details block - Large title on the left
- * Slug: icecubo/section-columns-faq-details-2columns-2
- * Categories: icecubo-section
+ * Slug: icecubo/faq-details-2columns-left-title-intro
+ * Categories: icecubo-faq
  */
 ?>
 <!-- wp:columns {"verticalAlignment":null} -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading">Frequently Asked Questions</h2>
+<div class="wp-block-column"><!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}}} -->
+<h2 class="wp-block-heading" style="margin-top:0">Frequently Asked Questions</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

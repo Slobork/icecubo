@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Columns - FAQ with details block - Large vertical title on the left
- * Slug: icecubo/section-columns-faq-details-2columns
- * Categories: icecubo-section
+ * Slug: icecubo/faq-details-2columns-left-title-vertical
+ * Categories: icecubo-faq
  */
 ?>
 <!-- wp:columns {"verticalAlignment":null} -->

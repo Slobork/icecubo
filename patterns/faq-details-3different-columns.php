@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Columns - FAQ with details block - Tip: Duplicate the column with preferred style and delete other columns
- * Slug: icecubo/section-columns-faq-details
- * Categories: icecubo-section
+ * Slug: icecubo/faq-details-3different-columns.php
+ * Categories: icecubo-faq
  */
 ?>
 <!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}}} -->
