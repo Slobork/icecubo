@@ -23,6 +23,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-faq',
+            array( 'label' => esc_html__('IceCubo - FAQ', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-footer',
             array( 'label' => esc_html__('IceCubo - Footers', 'icecubo') )
         );
