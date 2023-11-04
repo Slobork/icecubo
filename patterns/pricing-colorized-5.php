@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Pricing boxes 4
- * Slug: icecubo/pricing-4
+ * Title: Pricing boxes colorized 5
+ * Slug: icecubo/pricing-colorized-5
  * Categories: icecubo-pricing
  */
 ?>
