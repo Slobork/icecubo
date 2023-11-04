@@ -13,9 +13,9 @@
 <main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--x-large)">
     <!-- wp:pattern {"slug":"icecubo/query-magazine-intro-noofsset-1img-top-2img-aside-exp"} /-->
     <!-- wp:pattern {"slug":"icecubo/box-cta-row"} /-->
-    <!-- wp:pattern {"slug":"icecubo/query-section-one-img-top"} /-->
-    <!-- wp:pattern {"slug":"icecubo/query-section-one-img-top"} /-->
-    <!-- wp:pattern {"slug":"icecubo/query-section-one-img-top"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-division-one-img-top"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-division-one-img-top"} /-->
+    <!-- wp:pattern {"slug":"icecubo/query-division-one-img-top"} /-->
 </main>
 <!-- /wp:group -->
 <!-- wp:template-part {"slug":"footer","theme":"icecubo","tagName":"footer"} /-->
