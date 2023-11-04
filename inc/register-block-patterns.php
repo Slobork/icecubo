@@ -28,11 +28,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-general',
-            array( 'label' => esc_html__('IceCubo - General', 'icecubo') )
-        );
-
-        register_block_pattern_category(
             'icecubo-header',
             array( 'label' => esc_html__('IceCubo - Headers', 'icecubo') )
         );
@@ -59,17 +54,27 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-query-section-one',
-            array( 'label' => esc_html__('IceCubo - Posts: Section (one)', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Posts: Division (one)', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-query-section-columns',
-            array( 'label' => esc_html__('IceCubo - Posts: Section (columns)', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - Posts: Division (columns)', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-post-header',
             array( 'label' => esc_html__('IceCubo - Post headers', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-pricing',
+            array( 'label' => esc_html__('IceCubo - Pricing', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-general',
+            array( 'label' => esc_html__('IceCubo - Sections (basic)', 'icecubo') )
         );
 
         register_block_pattern_category(
