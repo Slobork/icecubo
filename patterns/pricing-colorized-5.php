@@ -8,8 +8,8 @@
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","className":"with-text-alignment"} -->
-<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","right":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"},"margin":{"bottom":"var:preset|spacing|x-large"}}},"backgroundColor":"highlight-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-highlight-2-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--x-large);padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","right":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"},"margin":{"bottom":"var:preset|spacing|x-large"}},"dimensions":{"minHeight":"230px"}},"backgroundColor":"highlight-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-highlight-2-background-color has-background" style="min-height:230px;margin-bottom:var(--wp--preset--spacing--x-large);padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
 <p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><strong>$39</strong> <sub>per month</sub></p>
 <!-- /wp:paragraph -->
 
@@ -72,8 +72,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","className":"with-text-alignment"} -->
-<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","right":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"},"margin":{"bottom":"var:preset|spacing|x-large"}}},"backgroundColor":"highlight-2","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-highlight-2-background-color has-background" style="margin-bottom:var(--wp--preset--spacing--x-large);padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
+<div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","right":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|x-small"},"margin":{"bottom":"var:preset|spacing|x-large"}},"dimensions":{"minHeight":"230px"}},"backgroundColor":"highlight-2","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-highlight-2-background-color has-background" style="min-height:230px;margin-bottom:var(--wp--preset--spacing--x-large);padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} -->
 <p style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px"><strong>$69</strong> <sub>per month</sub></p>
 <!-- /wp:paragraph -->
 
@@ -82,7 +82,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}},"fontSize":"small"} -->
-<p class="has-small-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">When you need to start smoothly with essential features</p>
+<p class="has-small-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">When you need to start smoothly with advanced features</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
