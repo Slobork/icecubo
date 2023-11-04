@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Two queries in columns - Featured image aside.
- * Slug: icecubo/query-section-columns-img-aside
- * Categories: icecubo-query-section-columns
+ * Slug: icecubo/query-division-columns-img-aside
+ * Categories: icecubo-query-division-columns
  * Inserter: true
  */
 ?>

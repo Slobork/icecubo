@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Posts wrapped in a group - Featured image aside.
- * Slug: icecubo/query-section-one-img-aside
- * Categories: icecubo-query-section-one
+ * Slug: icecubo/query-division-one-img-aside
+ * Categories: icecubo-query-division-one
  * Inserter: true
  */
 ?>

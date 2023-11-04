@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Posts wrapped in a group. Oval post wrap.
- * Slug: icecubo/query-section-one-oval
- * Categories: icecubo-query-section-one
+ * Slug: icecubo/query-division-one-oval
+ * Categories: icecubo-query-division-one
  * Inserter: true
  */
 ?>
