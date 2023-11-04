@@ -58,8 +58,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"white-to-primary-radial-gradual","contentPosition":"center center","isDark":false,"style":{"color":{}}} -->
-<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-white-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"gray-friend-dark","fontSize":"xxl"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"dimRatio":80,"gradient":"white-to-primary-radial-gradual","contentPosition":"center center","style":{"color":[],"border":{"radius":"10px","width":"4px"}},"borderColor":"white-ice"} -->
+<div class="wp-block-cover has-border-color has-white-ice-border-color" style="border-width:4px;border-radius:10px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim has-background-gradient has-white-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"gray-friend-dark","fontSize":"xxl"} -->
 <p class="has-text-align-center has-gray-friend-dark-color has-text-color has-xxl-font-size">Meat Our team!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
