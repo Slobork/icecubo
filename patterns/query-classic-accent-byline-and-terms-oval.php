@@ -30,19 +30,7 @@
 <!-- /wp:group -->
 <!-- /wp:post-template -->
 
-<!-- wp:group {"layout":{"inherit":false}} -->
-<div class="wp-block-group"><!-- wp:query-pagination {"className":"is-style-icecubo-oval-post-byline"} -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-numbers /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination --></div>
-<!-- /wp:group -->
-
-<!-- wp:query-no-results -->
-<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
-<p></p>
-<!-- /wp:paragraph -->
-<!-- /wp:query-no-results --></div>
+<!-- wp:pattern {"slug":"icecubo/query-part-pagination-oval"} /-->
+<!-- wp:pattern {"slug":"icecubo/query-part-no-results"} /-->
+</div>
 <!-- /wp:query -->
