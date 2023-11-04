@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Pricing boxes 3
- * Slug: icecubo/boxes-pricing-3
- * Categories: icecubo-box
+ * Slug: icecubo/pricing-3
+ * Categories: icecubo-pricing
  */
 ?>
 <!-- wp:columns -->

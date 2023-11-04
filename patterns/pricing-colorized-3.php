@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Pricing boxes colorized 3
- * Slug: icecubo/boxes-pricing-colorized-3
- * Categories: icecubo-box
+ * Slug: icecubo/pricing-colorized-3
+ * Categories: icecubo-pricing
  */
 ?>
 <!-- wp:columns -->
