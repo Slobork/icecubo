@@ -56,6 +56,13 @@
 /* Code block */
 .wp-block-code code { overflow-y: scroll; }
 
+/* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
+:not(.wp-block-code) > code {
+    background: var(--wp--preset--color--gray-very-light);
+    color: var(--wp--preset--color--darko-down);
+    padding: 3px 8px;
+}
+
 /**
  * Group/cover block.
  * Almost every page has a group block, so target block variation styling

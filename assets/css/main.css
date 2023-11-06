@@ -77,9 +77,9 @@ pre { overflow: auto; }
 
 /* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
-    background: var(--wp--preset--color--darko-down);
-    color: var(--wp--preset--color--gray-light);
-    padding: 4px 8px;
+    background: var(--wp--preset--color--gray-very-light);
+    color: var(--wp--preset--color--darko-down);
+    padding: 3px 8px;
 }
 
 /**
