@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: IceCubo 1.0\n"
 "Report-Msgid-Bugs-To: https://foxnet-themes.fi/contact/\n"
-"POT-Creation-Date: 2023-02-13 18:48+0100\n"
+"POT-Creation-Date: 2023-11-07 11:21+0100\n"
 "PO-Revision-Date: 2017-05-26 21:49+0200\n"
 "Last-Translator: Sloba <sloooba@yahoo.com>\n"
 "Language-Team: maxPressy\n"
@@ -25,36 +25,64 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: assets\n"
 
-#: inc/register-block-patterns.php:23
-msgid "IceCubo - Footer"
+#: inc/register-block-patterns.php:22
+msgid "IceCubo - Boxes"
 msgstr ""
 
-#: inc/register-block-patterns.php:28
-msgid "IceCubo - General"
+#: inc/register-block-patterns.php:27
+msgid "IceCubo - FAQ"
 msgstr ""
 
-#: inc/register-block-patterns.php:33
-msgid "IceCubo - Header"
+#: inc/register-block-patterns.php:32
+msgid "IceCubo - Footers"
 msgstr ""
 
-#: inc/register-block-patterns.php:38
-msgid "IceCubo - Hero"
+#: inc/register-block-patterns.php:37
+msgid "IceCubo - Headers"
 msgstr ""
 
-#: inc/register-block-patterns.php:43
-msgid "IceCubo - Post header"
+#: inc/register-block-patterns.php:42
+msgid "IceCubo - Heroes"
 msgstr ""
 
-#: inc/register-block-patterns.php:48
-msgid "IceCubo - Section (Columns)"
+#: inc/register-block-patterns.php:47
+msgid "IceCubo - Pages"
 msgstr ""
 
-#: inc/register-block-patterns.php:53
-msgid "IceCubo - Section (Covers)"
+#: inc/register-block-patterns.php:52
+msgid "IceCubo - Posts"
+msgstr ""
+
+#: inc/register-block-patterns.php:57
+msgid "IceCubo - Posts: Magazine intro"
+msgstr ""
+
+#: inc/register-block-patterns.php:62
+msgid "IceCubo - Posts: Division (one)"
+msgstr ""
+
+#: inc/register-block-patterns.php:67
+msgid "IceCubo - Posts: Division (columns)"
+msgstr ""
+
+#: inc/register-block-patterns.php:72
+msgid "IceCubo - Post headers"
+msgstr ""
+
+#: inc/register-block-patterns.php:77
+msgid "IceCubo - Pricing"
+msgstr ""
+
+#: inc/register-block-patterns.php:82
+msgid "IceCubo - Sections (basic)"
+msgstr ""
+
+#: inc/register-block-patterns.php:87
+msgid "IceCubo - Sections"
 msgstr ""
 
 #: inc/register-block-styles.php:25
-msgid "Shadow"
+msgid "Accent up"
 msgstr ""
 
 #: inc/register-block-styles.php:33
@@ -62,26 +90,332 @@ msgid "No border"
 msgstr ""
 
 #: inc/register-block-styles.php:41
-msgid "Gray Shadow"
+msgid "Bubble"
 msgstr ""
 
 #: inc/register-block-styles.php:49
-msgid "Small margin"
+#: inc/register-block-styles.php:97
+#: inc/register-block-styles.php:466
+#: inc/register-block-styles.php:490
+#: inc/register-block-styles.php:514
+#: inc/register-block-styles.php:538
+#: inc/register-block-styles.php:691
+msgid "Square"
 msgstr ""
 
 #: inc/register-block-styles.php:57
-msgid "Shadow box"
+#: inc/register-block-styles.php:394
+#: inc/register-block-styles.php:474
+#: inc/register-block-styles.php:498
+#: inc/register-block-styles.php:530
+#: inc/register-block-styles.php:546
+#: inc/register-block-styles.php:699
+#: inc/register-block-styles.php:739
+msgid "Outline"
+msgstr ""
+
+#: inc/register-block-styles.php:65
+#: inc/register-block-styles.php:105
+#: inc/register-block-styles.php:482
+#: inc/register-block-styles.php:506
+#: inc/register-block-styles.php:522
+#: inc/register-block-styles.php:554
+#: inc/register-block-styles.php:707
+msgid "Oval"
+msgstr ""
+
+#: inc/register-block-styles.php:73
+#: inc/register-block-styles.php:89
+msgid "Rotate left"
+msgstr ""
+
+#: inc/register-block-styles.php:81
+#: inc/register-block-styles.php:113
+msgid "Rotate right"
+msgstr ""
+
+#: inc/register-block-styles.php:121
+#: inc/register-block-styles.php:586
+msgid "Accent small 1"
+msgstr ""
+
+#: inc/register-block-styles.php:129
+#: inc/register-block-styles.php:594
+msgid "Accent small 2"
+msgstr ""
+
+#: inc/register-block-styles.php:137
+#: inc/register-block-styles.php:602
+msgid "Accent huge 1"
+msgstr ""
+
+#: inc/register-block-styles.php:145
+#: inc/register-block-styles.php:610
+msgid "Accent huge 2"
+msgstr ""
+
+#: inc/register-block-styles.php:153
+#: inc/register-block-styles.php:618
+msgid "Underline colored"
+msgstr ""
+
+#: inc/register-block-styles.php:161
+#: inc/register-block-styles.php:626
+msgid "Underline/overline"
+msgstr ""
+
+#: inc/register-block-styles.php:169
+#: inc/register-block-styles.php:634
+msgid "Aside lines"
+msgstr ""
+
+#: inc/register-block-styles.php:177
+#: inc/register-block-styles.php:642
+msgid "Asterisk"
+msgstr ""
+
+#: inc/register-block-styles.php:186
+#: inc/register-block-styles.php:651
+msgid "Star"
+msgstr ""
+
+#: inc/register-block-styles.php:194
+#: inc/register-block-styles.php:434
+#: inc/register-block-styles.php:659
+msgid "Mix colors"
+msgstr ""
+
+#: inc/register-block-styles.php:202
+#: inc/register-block-styles.php:442
+#: inc/register-block-styles.php:667
+msgid "Mix colors light"
+msgstr ""
+
+#: inc/register-block-styles.php:210
+#: inc/register-block-styles.php:450
+#: inc/register-block-styles.php:675
+msgid "Mix colors focused"
+msgstr ""
+
+#: inc/register-block-styles.php:218
+#: inc/register-block-styles.php:458
+#: inc/register-block-styles.php:683
+msgid "Transit to light color"
+msgstr ""
+
+#: inc/register-block-styles.php:226
+#: inc/register-block-styles.php:314
+msgid "Solid frame"
+msgstr ""
+
+#: inc/register-block-styles.php:234
+#: inc/register-block-styles.php:322
+msgid "Curly frame"
+msgstr ""
+
+#: inc/register-block-styles.php:242
+#: inc/register-block-styles.php:330
+msgid "Spaced frame"
+msgstr ""
+
+#: inc/register-block-styles.php:250
+#: inc/register-block-styles.php:338
+msgid "Spaced & cut frame"
+msgstr ""
+
+#: inc/register-block-styles.php:258
+#: inc/register-block-styles.php:346
+msgid "Sink left"
+msgstr ""
+
+#: inc/register-block-styles.php:266
+#: inc/register-block-styles.php:354
+msgid "Sink right"
+msgstr ""
+
+#: inc/register-block-styles.php:274
+msgid "Checks"
+msgstr ""
+
+#: inc/register-block-styles.php:282
+msgid "Fill"
+msgstr ""
+
+#: inc/register-block-styles.php:290
+msgid "Plus"
+msgstr ""
+
+#: inc/register-block-styles.php:298
+msgid "Cancel list"
+msgstr ""
+
+#: inc/register-block-styles.php:306
+msgid "Rounded"
+msgstr ""
+
+#: inc/register-block-styles.php:362
+msgid "Hovers standard"
+msgstr ""
+
+#: inc/register-block-styles.php:370
+msgid "Hovers top"
+msgstr ""
+
+#: inc/register-block-styles.php:378
+msgid "Hovers bottom"
+msgstr ""
+
+#: inc/register-block-styles.php:386
+msgid "Hovers top + bottom"
+msgstr ""
+
+#: inc/register-block-styles.php:402
+msgid "Multi"
+msgstr ""
+
+#: inc/register-block-styles.php:410
+msgid "Accent box"
+msgstr ""
+
+#: inc/register-block-styles.php:418
+msgid "Tear box left"
+msgstr ""
+
+#: inc/register-block-styles.php:426
+msgid "Tear box right"
+msgstr ""
+
+#: inc/register-block-styles.php:562
+#: inc/register-block-styles.php:715
+msgid "Each Square"
+msgstr ""
+
+#: inc/register-block-styles.php:570
+#: inc/register-block-styles.php:723
+msgid "Each Outline"
+msgstr ""
+
+#: inc/register-block-styles.php:578
+#: inc/register-block-styles.php:731
+msgid "Each Oval"
+msgstr ""
+
+#: inc/theme-json-updater.php:24
+msgid "Darko to white gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:29
+msgid "Darko to white ice gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:34
+msgid "Darko to transparent gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:39
+msgid "Darko to primary gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:44
+#: inc/theme-json-updater.php:124
+msgid "Primary to transparent gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:49
+msgid "Primary to darko gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:54
+msgid "Darko to white sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:59
+msgid "Darko to white ice sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:64
+msgid "Darko to transparent sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:69
+msgid "Darko to primary sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:74
+msgid "Primary to white sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:79
+msgid "Primary to white ice sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:84
+msgid "Primary to transparent sharp diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:89
+msgid "Darko to primary transit diagonal"
+msgstr ""
+
+#: inc/theme-json-updater.php:94
+msgid "Darko to primary gradual aside"
+msgstr ""
+
+#: inc/theme-json-updater.php:99
+msgid "White to primary radial gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:104
+msgid "White to primary radial sharp"
+msgstr ""
+
+#: inc/theme-json-updater.php:109
+msgid "Darko to primary radial gradually"
+msgstr ""
+
+#: inc/theme-json-updater.php:114
+msgid "Darko to primary radial sharp"
+msgstr ""
+
+#: inc/theme-json-updater.php:119
+msgid "Primary to transparent rushly"
+msgstr ""
+
+#: inc/theme-json-updater.php:129
+msgid "Diagonal 3 colors shading with glow in the middle"
+msgstr ""
+
+#: inc/theme-json-updater.php:134
+msgid "Diagonal with 3 matching colors"
+msgstr ""
+
+#: inc/theme-json-updater.php:144
+msgid "Adjust color to transparent"
 msgstr ""
 
 #: patterns/404.php:15
 msgid "Page not found, error 404"
 msgstr ""
 
-#: patterns/404.php:18
+#: patterns/404.php:20
 msgid ""
 "Oops, the page you are looking for does not exist or is no "
 "longer available. Please use the search form below to find "
 "your way out from here."
+msgstr ""
+
+#: patterns/index.php:14
+#: patterns/page-modal-blog-featured-img-cover.php:17
+#: patterns/page-modal-blog-with-sidebar.php:17
+msgid "The latest posts"
+msgstr ""
+
+#: patterns/post-footer-inner-content.php:13
+msgid "Categories:"
+msgstr ""
+
+#: patterns/post-footer-inner-content.php:21
+msgid "Tags:"
 msgstr ""
 
 #, fuzzy
