@@ -8,9 +8,9 @@
 ?>
 <!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"white-to-primary-radial-gradual","contentPosition":"center center","isDark":false,"style":{"color":{}}} -->
-<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-white-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"gray-friend-dark","fontSize":"xxl"} -->
-<p class="has-text-align-center has-gray-friend-dark-color has-text-color has-xxl-font-size">Meat Our team!</p>
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"matching-colors-diagonal","contentPosition":"center center","style":{"color":[],"border":{"radius":"50px"}}} -->
+<div class="wp-block-cover" style="border-radius:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-matching-colors-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"xxl"} -->
+<p class="has-text-align-center has-xxl-font-size">Meat Our team!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->

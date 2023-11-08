@@ -28,7 +28,7 @@
 
     <!-- wp:comment-content /-->
 
-    <!-- wp:comment-reply-link {"fontSize":"small"} /--></div>
+    <!-- wp:comment-reply-link {"className":"is-style-icecubo-comment-reply-button-oval","fontSize":"small"} /--></div>
     <!-- /wp:column --></div>
     <!-- /wp:columns -->
     <!-- /wp:comment-template -->

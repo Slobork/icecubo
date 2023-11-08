@@ -8,11 +8,11 @@
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":".25rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
-<div class="wp-block-group has-extra-small-font-size">
-    <!-- wp:post-date /-->
-    <!-- wp:paragraph -->
-    <p>·</p>
-    <!-- /wp:paragraph -->
-    <!-- wp:post-author {"showAvatar":false} /-->
-</div>
+<div class="wp-block-group has-extra-small-font-size"><!-- wp:post-date /-->
+
+<!-- wp:paragraph -->
+<p>·</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-author {"showAvatar":false} /--></div>
 <!-- /wp:group -->

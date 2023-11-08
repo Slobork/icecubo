@@ -23,13 +23,13 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-footer',
-            array( 'label' => esc_html__('IceCubo - Footers', 'icecubo') )
+            'icecubo-faq',
+            array( 'label' => esc_html__('IceCubo - FAQ', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-general',
-            array( 'label' => esc_html__('IceCubo - General', 'icecubo') )
+            'icecubo-footer',
+            array( 'label' => esc_html__('IceCubo - Footers', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -48,18 +48,43 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-query',
+            array( 'label' => esc_html__('IceCubo - Posts', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query-magazine-intro',
+            array( 'label' => esc_html__('IceCubo - Posts: Magazine intro', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query-division-one',
+            array( 'label' => esc_html__('IceCubo - Posts: Division (one)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query-division-columns',
+            array( 'label' => esc_html__('IceCubo - Posts: Division (columns)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-post-header',
             array( 'label' => esc_html__('IceCubo - Post headers', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-section',
-            array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
+            'icecubo-pricing',
+            array( 'label' => esc_html__('IceCubo - Pricing', 'icecubo') )
         );
 
         register_block_pattern_category(
-            'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - Query', 'icecubo') )
+            'icecubo-general',
+            array( 'label' => esc_html__('IceCubo - Sections (basic)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-section',
+            array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
         );
 
     }

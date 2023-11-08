@@ -1,7 +1,7 @@
 === IceCubo ===
 Contributors: MaxPressy
 Requires at least: 6.1
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 7.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,6 +11,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 IceCubo is a block-based theme for WordPress. Fundamentally may be used as a starter theme and be built upon with block libraries or page builders. However, as a stand-alone solution, it comes with pre-built design patterns that you can utilize to make pages quickly. Basically, easily assemble most of the presentational Websites like business, corporate, portfolio, or other kinds of sites. IceCubo is fully responsive, cross-browser compatible, translation ready & SEO friendly. It is also compatible with Woocommerce, so it can serve as a base even for e-commerce sites. Though it's lightweight, still, it comes with several pre-designed styles, which enables quick switching between different color schemes.
 
 == Changelog ==
+
+= 1.1.6 - 2023-11-08 =
+* Update exisitng patterns
+* Add new patterns (pages, posts, magazine)
+* New block styles for images, list, heading and post titles
+* Changed the Background color of the "boxed" template to be more theme related
+* Changed some pattern group names for the better classification
 
 = 1.1.5 - 2023-09-05 =
 * Update: Background gradients

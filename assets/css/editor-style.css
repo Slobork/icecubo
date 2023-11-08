@@ -1,17 +1,22 @@
-:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-h1 {margin-top: 2.75rem;}
-h2 {margin-top: 4.5rem;}
-body .is-layout-constrained >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-body .is-layout-constrained > h1 {margin-top: 2.75rem;}
-body .is-layout-constrained > h2 {margin-top: 4.5rem;}
-body .is-layout-flow >:where(h3,h4,h5,h6) {margin-top: 3.5rem;}
-body .is-layout-flow > h1 {margin-top: 2.75rem;}
-body .is-layout-flow > h2 {margin-top: 4.5rem;}
+/**
+ * When h element is the first in the group,
+ * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
+ * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' property
+   and to overwrite it, it has to be a target as well.
+ * Otherwise, through theme.jason !important would be used, but the problem is then it cannot be overwritten in UI.
+ * - Alternatively, for the post titles, it could be done in templates, on each post-title block,
+ * but it wouldn't impact the in-content h1 when it's the first element in a group block.
+ * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
+ :where(body .is-layout-flow,body .is-layout-constrained) > h1:first-child:first-child:first-child {margin-top: var(--wp--preset--spacing--medium);}
+ :where(body .is-layout-flow,body .is-layout-constrained) > :where(h2,h3,h4,h5,h6):first-child:first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+ */
+:where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+
 
 /* Nav item - outline */
 .is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xxxl) }
 
-/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words. This resolves it */
+/* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words (also in the mega-menu). This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 
 /* If the inline image is added to the nav item, this makes it gapped from the text - Still, doesn't reflect in the Editor */
@@ -29,31 +34,101 @@ body .is-layout-flow > h2 {margin-top: 4.5rem;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {display: none !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {display: inline !important;}
-    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {display: grid; grid-column-gap: 2em;}
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {display: grid !important; grid-column-gap: 2em;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {grid-template-columns: repeat(2, 1fr);}
     .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(3, 1fr);}
     .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(4, 1fr);}
     .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
 }
 
+/* Search box - border-radius is set for all buttons, but inside the editor it isn't picking the radius on the search box */
+.wp-block-search .wp-block-search__button { border-radius: var(--wp--custom--radius-large); }
 
-/* Search box */
-.wp-block-search__no-button .wp-block-search__input,
-.wp-block-search__button-inside .wp-block-search__inside-wrapper,
-.wp-block-search__button-outside .wp-block-search__input {
-    border-radius: var(--wp--custom--radius-large);
-}
-.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input {
-    border-color: inherit;
-    border-top-left-radius: var(--wp--custom--radius-large);
-    border-bottom-left-radius: var(--wp--custom--radius-large);
-}
+/**
+ * Search box - button (icon).
+ * 'max-width' removes the value set by WP which doesn't give equal space around the icon.
+ */
+.wp-block-search.wp-block-search__button-only .wp-block-search__button { max-width: none; }
 
 /* Preformatted text in the "Classic block" */
 .wp-block-freeform.block-library-rich-text__tinymce pre { color: inherit; }
 
 /* Code block */
-.wp-block-code code {
-    max-height: 70vh;
-    overflow-y: scroll;
+.wp-block-code code { overflow-y: scroll; }
+
+/* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
+:not(.wp-block-code) > code {
+    background: var(--wp--preset--color--gray-very-light);
+    color: var(--wp--preset--color--darko-down);
+    padding: 3px 8px;
 }
+
+/**
+ * Group/cover block.
+ * Almost every page has a group block, so target block variation styling
+ * from here instead separately from group and cover css files.
+ */
+ .is-style-icecubo-rotate-left {transform: rotate(-4deg);}
+ .is-style-icecubo-rotate-right {transform: rotate(4deg);}
+ @media (min-width: 600px) {
+     .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
+     .is-style-icecubo-rotate-right {transform: rotate(13deg);}
+ }
+
+/**
+ * Post byline styling
+ */
+.is-style-icecubo-outline-post-byline {
+    border: 1px solid currentColor;
+    border-radius: var(--wp--custom--radius-middle);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+}
+
+.is-style-icecubo-oval-post-byline {
+     background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-middle);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+}
+
+.is-style-icecubo-square-post-byline {
+    background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-small);
+    padding-left: var(--wp--custom--spacing-s);
+    padding-right: var(--wp--custom--spacing-s);
+}
+
+.is-style-icecubo-outline-post-byline.wp-block-query-pagination,
+.is-style-icecubo-oval-post-byline.wp-block-query-pagination,
+.is-style-icecubo-square-post-byline.wp-block-query-pagination {
+    padding-left: var(--wp--custom--spacing-xl);
+    padding-right: var(--wp--custom--spacing-xl);
+}
+
+/**
+ * As addition to post byline, each term styling
+ */
+.is-style-icecubo-each-square-post-byline a {
+    background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-small);
+}
+
+.is-style-icecubo-each-oval-post-byline a {
+    background: var(--wp--preset--color--white-ice);
+    border-radius: var(--wp--custom--radius-middle);
+}
+
+.is-style-icecubo-each-outline-post-byline a {
+    border: 1px solid currentColor;
+    border-radius: var(--wp--custom--radius-middle);
+}
+
+.is-style-icecubo-each-square-post-byline a,
+.is-style-icecubo-each-oval-post-byline a,
+    .is-style-icecubo-each-outline-post-byline a {
+    padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xs);
+}
+
+/* Comment reply button - isn't picking the removal of the text decoartion from the css file */
+[class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}

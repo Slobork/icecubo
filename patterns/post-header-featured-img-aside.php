@@ -20,7 +20,7 @@
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
 <!-- /wp:separator -->
 
-    <!-- wp:pattern {"slug":"icecubo/post-byline-basic"} /-->
+    <!-- wp:pattern {"slug":"icecubo/post-byline-oval"} /-->
 
 </div>
 <!-- /wp:column -->

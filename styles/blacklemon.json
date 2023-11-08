@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#fff700",
-					"name": "Lemo"
+					"name": "Blemo primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#FFFC8B",
-					"name": "Lemo light"
+					"name": "Blemo light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#CDC800",
-					"name": "Lemo dark"
+					"name": "Blemo dark"
 				},
 				{
 					"slug": "white-ice",
@@ -155,19 +155,19 @@
 					"name": "Matching 6"
 				},
 				{
-					"slug": "highlight-1",
-					"color": "#99925c",
-					"name": "Highlight 1"
+					"slug": "classy-1",
+					"color": "#00bcb5",
+					"name": "Classy"
 				},
 				{
-					"slug": "highlight-2",
-					"color": "#fefedf",
-					"name": "Highlight 2"
+					"slug": "classy-2",
+					"color": "#00f7ed",
+					"name": "Classy light"
 				},
 				{
-					"slug": "highlight-3",
-					"color": "#d5cabd",
-					"name": "Highlight 3"
+					"slug": "classy-3",
+					"color": "#C3F4EB",
+					"name": "Classy polish"
 				},
 				{
 					"slug": "friend-dark",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#FF9B00",
-					"name": "Lemo glow"
+					"name": "Blemo glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#F9C779",
-					"name": "Lemo glow light"
+					"name": "Blemo glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -238,11 +238,6 @@
 					"slug": "tint-very-light-1",
 					"color": "#fffee5",
 					"name": "Tint very light 1"
-				},
-				{
-					"slug": "white",
-					"color": "#ffffff",
-					"name": "White"
 				},
 				{
 					"slug": "beige-light",
@@ -263,6 +258,21 @@
 					"slug": "darko-down-bottom",
 					"color": "#3c3c3c",
 					"name": "Darko down bottom"
+				},
+				{
+					"slug": "highlight-1",
+					"color": "#99925c",
+					"name": "Highlight 1"
+				},
+				{
+					"slug": "highlight-2",
+					"color": "#fefedf",
+					"name": "Highlight 2"
+				},
+				{
+					"slug": "highlight-3",
+					"color": "#d5cabd",
+					"name": "Highlight 3"
 				}
 			],
 			"duotone": [
@@ -277,7 +287,7 @@
 				{
 					"colors": [
 						"#fff700",
-						"#222222"
+						"#505050"
 					],
 					"slug": "ice-cubo-dark",
 					"name": "Ice Cubo Dark"

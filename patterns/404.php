@@ -9,8 +9,8 @@
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
-    <!-- wp:group {"style":{"spacing":{"padding":{"top":"1px"}}}} -->
-    <div class="wp-block-group" style="padding-top:1px">
+    <!-- wp:group -->
+    <div class="wp-block-group">
         <!-- wp:heading {"level":1} -->
         <h1><?php echo esc_html__('Page not found, error 404', 'icecubo'); ?></h1>
         <!-- /wp:heading -->
