@@ -29,8 +29,8 @@
 <p class="is-style-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"highlight-1"} /--></div>
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}}} /--></div>
 <!-- /wp:buttons --></div><figure class="wp-block-media-text__media"><img src="" alt=""/></figure></div>
 <!-- /wp:media-text --></div>
 <!-- /wp:group --></div></div>
