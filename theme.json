@@ -644,6 +644,9 @@
 			"core/details": {
 				"css": "&:not(.noice) p {border-left: 1px solid; padding-left: 1.5rem; margin-left: .25em;}"
 			},
+			"core/image": {
+				"css": " {margin: .5rem 0 1rem}"
+			},
 			"core/navigation": {
 				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}"
 			},
