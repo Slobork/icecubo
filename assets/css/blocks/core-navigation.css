@@ -10,9 +10,15 @@
 /* Submenu icon ˘ make sure it's centered */
 .wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
 
-/* Mobile menu overlay - make it a bit tighten */
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {padding-top: .5rem;}
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item.has-child.open-on-hover-click.wp-block-navigation-submenu {margin-top: .75rem;}
+/* Mobile menu modal overlay - make the submenu on vertical ends tighten */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Mobile menu modal overlay - give some spacing */
+.has-modal-open .wp-block-navigation__responsive-container {padding: 18px 5px;}
+.has-modal-open .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {line-height: 2.3;}
 
 /* Menu item - on hover Standard behavior */
 .wp-block-navigation.is-style-icecubo-nav-mark-hovers ul:not(.wp-block-navigation__submenu-container) > li.wp-block-navigation-item:hover { box-shadow: 0 2px 0; transition: box-shadow .2s ease-in-out; }
