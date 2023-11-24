@@ -4,7 +4,6 @@
  * Title: Posts wrapped in a group. Accent byline and terms.
  * Slug: icecubo/query-division-one-accent-byline-terms
  * Categories: icecubo-query-division-one
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->

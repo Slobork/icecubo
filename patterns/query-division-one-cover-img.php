@@ -4,7 +4,6 @@
  * Title: Posts splitted in 2 columns, wrapped in a group. Featured image as a cover.
  * Slug: icecubo/query-division-one-cover-img
  * Categories: icecubo-query-division-one
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->
