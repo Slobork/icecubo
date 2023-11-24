@@ -4,7 +4,7 @@
  * Title: Posts with separator. High featured image aside in its column.
  * Slug: icecubo/query-classic-with-separator-featured-img-aside-in-column
  * Categories: icecubo-query
- * Inserter: true
+ * Block Types: core/query
  */
 ?>
 <!-- wp:query {"query":{"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":10},"layout":{"type":"default"}} -->
