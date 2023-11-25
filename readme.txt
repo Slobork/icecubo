@@ -12,6 +12,14 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.1.8 - 2023-11-25 =
+* Featured image included on the templates with a sidebar
+* Comments section included in other templates outside of those related to posts (You still have to enable them from the UI while editing a page)
+* Add tagName to header and footer patterns
+* IceCubo patterns for the header/footer template parts and query block are accessible from the WP built-in toolbar "Replace" option, now
+* Spacing on the Title for the index (default blog) page adjusted to align with other templates
+* Small internal file structure changes
+
 = 1.1.7 - 2023-11-13 =
 * Fix styling on some patterns (e.g. missing background, padding adjustment, color)
 * Change margin for the image block

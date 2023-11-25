@@ -4,7 +4,6 @@
  * Title: No offset, two columns: 1st with image at the top, 2nd image aside.
  * Slug: icecubo/query-magazine-intro-noofsset-1img-top-2img-aside
  * Categories: icecubo-query-magazine-intro
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"default"}} -->

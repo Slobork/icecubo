@@ -4,7 +4,7 @@
  * Title: Featured image aside. Stretch terms to bottom.
  * Slug: icecubo/query-classic-featured-img-aside
  * Categories: icecubo-query
- * Inserter: true
+ * Block Types: core/query
  */
 ?>
 <!-- wp:query {"query":{"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":10},"layout":{"type":"default"}} -->

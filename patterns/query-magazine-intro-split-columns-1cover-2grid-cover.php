@@ -4,7 +4,6 @@
  * Title: Offset split posts: 1st cover posts in the prominent column. 2nd grid as cover posts.
  * Slug: icecubo/query-magazine-intro-split-columns-1cover-2grid-cover
  * Categories: icecubo-query-magazine-intro
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"default"}} -->

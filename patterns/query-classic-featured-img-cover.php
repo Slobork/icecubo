@@ -4,7 +4,7 @@
  * Title: Posts with featured image as a cover.
  * Slug: icecubo/query-classic-featured-img-cover
  * Categories: icecubo-query
- * Inserter: true
+ * Block Types: core/query
  */
 ?>
 <!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->

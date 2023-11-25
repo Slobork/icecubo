@@ -4,7 +4,6 @@
  * Title: Offset split posts: 1st cover post. 2nd grid of posts with image first.
  * Slug: icecubo/query-magazine-intro-split-1cover-2grid-img-top
  * Categories: icecubo-query-magazine-intro
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"blockGap":"1px"}},"layout":{"type":"default"}} -->

@@ -4,10 +4,11 @@
  * Title: Logo - nav - social icons.
  * Slug: icecubo/header-logo-nav-soc
  * Categories: icecubo-header
+ * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<!-- wp:group {"tagName":"header","align":"full","className":"is-style-default","layout":{"type":"constrained"}} -->
+<header class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /--></div>
 <!-- /wp:group -->
@@ -21,5 +22,5 @@
 
 <!-- wp:social-link {"url":"#","service":"linkedin"} /--></ul>
 <!-- /wp:social-links --></div>
-<!-- /wp:group --></div>
+<!-- /wp:group --></header>
 <!-- /wp:group -->

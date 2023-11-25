@@ -5,7 +5,6 @@
  * Description: 1st column - 2 items, 0 offset; 2nd column - 3 items, 2 offset.
  * Slug: icecubo/query-magazine-intro-split-columns-1img-top-2featured-img-aside
  * Categories: icecubo-query-magazine-intro
- * Inserter: true
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"default"}} -->
