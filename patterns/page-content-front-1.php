@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Content for the Front page (1).
- * Slug: icecubo/page-content-home-1
+ * Slug: icecubo/page-content-front-1
  * Categories: icecubo-page
  */
 ?>
