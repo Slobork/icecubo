@@ -13,6 +13,7 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 == Changelog ==
 
 = 1.1.8 - 2023-11-25 =
+* Spacing adjustments for the mob menu modal overlay
 * Featured image included on the templates with a sidebar
 * Comments section included in other templates outside of those related to posts (You still have to enable them from the UI while editing a page)
 * Add tagName to header and footer patterns
