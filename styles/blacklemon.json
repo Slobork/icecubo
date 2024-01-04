@@ -321,26 +321,21 @@
 			}
 		},
 		"blocks": {
-			"core/post-author": {
+			"core/post-template": {
 				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-date": {
-				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-navigation-link": {
-				"color": {
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-terms": {
-				"color": {
-					"background": "var(--wp--preset--color--gray-dark)"
+					"text": "var(--wp--preset--color--darko-down-bottom)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--matching-2)"
+						},
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--matching-3)"
+							}
+						}
+					}
 				}
 			},
 			"core/query-pagination": {

@@ -311,7 +311,7 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--tint-2)"
+					"text": "var(--wp--preset--color--tint-1)"
 				},
 				":hover": {
 					"color": {
@@ -321,36 +321,9 @@
 			}
 		},
 		"blocks": {
-			"core/post-author": {
+			"core/post-template": {
 				"color": {
-					"text": "var(--wp--preset--color--gray-very-light)",
-					"background": "var(--wp--preset--color--darko-down)"
-				}
-			},
-			"core/post-date": {
-				"color": {
-					"text": "var(--wp--preset--color--gray-very-light)",
-					"background": "var(--wp--preset--color--darko-down)"
-				}
-			},
-			"core/post-navigation-link": {
-				"color": {
-					"background": "inherit"
-				},
-				"border": {
-					"width": "1px",
-					"style": "solid",
-					"color": "var(--wp--preset--color--tint-2)"
-				}
-			},
-			"core/post-terms": {
-				"color": {
-					"background": "inherit"
-				},
-				"border": {
-					"width": "1px",
-					"style": "solid",
-					"color": "var(--wp--preset--color--shade-5)"
+					"text": "var(--wp--preset--color--darko-down-bottom)"
 				}
 			},
 			"core/query-pagination": {
