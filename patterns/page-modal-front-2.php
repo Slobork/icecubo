@@ -13,4 +13,4 @@
     <!-- wp:pattern {"slug":"icecubo/page-content-front-2"} /-->
 </main>
 <!-- /wp:group -->
-<!-- wp:template-part {"slug":"footer","theme":"icecubo","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
