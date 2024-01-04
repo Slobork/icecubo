@@ -104,6 +104,11 @@ if (! function_exists('icecubo_gradients_list') ) {
                 "name"     => __("White to primary radial sharp", 'icecubo')
             ),
             array(
+                "slug"     => "transparent-to-primary-radial-sharp",
+                "gradient" => "radial-gradient(var(--wp--preset--color--primary) 50%,transparent 50%)",
+                "name"     => __("Transparent to primary radial sharp", 'icecubo')
+            ),
+            array(
                 "slug"     => "darko-to-primary-radial-gradual",
                 "gradient" => "radial-gradient(var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
                 "name"     => __("Darko to primary radial gradually", 'icecubo')
