@@ -6,8 +6,8 @@
  * Categories: icecubo-hero
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|x-large"}}}} -->
-<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--xxx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","className":"is-light"} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--xxx-large);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","className":"is-light"} -->
 <div class="wp-block-group alignfull is-light"><!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->

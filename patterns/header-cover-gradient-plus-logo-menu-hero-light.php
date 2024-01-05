@@ -18,12 +18,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
+<!-- wp:navigation {"ref":28299,"className":"is-style-icecubo-nav-mark-hovers","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
 <!-- /wp:group -->
-
-<!-- wp:spacer {"height":"1.25rem"} -->
-<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
 
 <!-- wp:heading {"textAlign":"center","level":1,"textColor":"classy-3","className":"is-style-default"} -->
 <h1 class="wp-block-heading has-text-align-center is-style-default has-classy-3-color has-text-color">IceCubo WordPress Theme</h1>
@@ -33,8 +29,8 @@
 <p class="has-text-align-center has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large"} -->
-<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile"><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"classy-3"} -->
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-large"}}}} -->
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xx-large)"><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"classy-3"} -->
 <h2 class="wp-block-heading has-classy-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
