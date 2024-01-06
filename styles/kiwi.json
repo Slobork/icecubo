@@ -1,6 +1,32 @@
 {
 	"settings": {
 		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#a48052",
+						"#ffffff"
+					],
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#a48052",
+						"#505050"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#ede68a",
+						"#ebeef1"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
+				}
+			],
 			"palette": [
 				{
 					"color": "#14100b",
@@ -9,7 +35,7 @@
 				},
 				{
 					"color": "#a48052",
-					"name": "Iceo primary",
+					"name": "Primary",
 					"slug": "primary"
 				},
 				{
@@ -19,17 +45,17 @@
 				},
 				{
 					"color": "#fcdcb1",
-					"name": "Iceo light",
+					"name": "Primary light",
 					"slug": "primary-light"
 				},
 				{
 					"color": "#773e10",
-					"name": "Iceo dark",
+					"name": "Primary dark",
 					"slug": "primary-dark"
 				},
 				{
 					"color": "#ebeef1",
-					"name": "White iceo",
+					"name": "Icy",
 					"slug": "white-ice"
 				},
 				{
@@ -214,12 +240,12 @@
 				},
 				{
 					"color": "#ede68a",
-					"name": "Iceo glow",
+					"name": "Glow",
 					"slug": "primaryish"
 				},
 				{
 					"color": "#f8f4b5",
-					"name": "Iceo glow light",
+					"name": "Glow light",
 					"slug": "primaryish-light"
 				},
 				{
@@ -238,12 +264,12 @@
 					"slug": "tint-very-light-1"
 				},
 				{
-					"color": "#e6e6f1",
+					"color": "#f1f1e6",
 					"name": "Beige light",
 					"slug": "beige-light"
 				},
 				{
-					"color": "#dcdcf5",
+					"color": "#f5f5dc",
 					"name": "Beige",
 					"slug": "beige"
 				},

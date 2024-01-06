@@ -4,7 +4,7 @@
 			"duotone": [
 				{
 					"colors": [
-						"#6455a7",
+						"#a75558",
 						"#ffffff"
 					],
 					"name": "Ice Cubo Light",
@@ -12,7 +12,7 @@
 				},
 				{
 					"colors": [
-						"#2e2848",
+						"#EA3D76",
 						"#505050"
 					],
 					"name": "Ice Cubo Dark",
@@ -21,7 +21,7 @@
 				{
 					"colors": [
 						"#CF2412",
-						"#f1eeeb"
+						"#ebf1ed"
 					],
 					"name": "Ice Cubo Iceish",
 					"slug": "ice-cubo-iceish"
@@ -35,7 +35,7 @@
 				},
 				{
 					"color": "#a75558",
-					"name": "Blaberryo primary",
+					"name": "Primary",
 					"slug": "primary"
 				},
 				{
@@ -45,17 +45,17 @@
 				},
 				{
 					"color": "#b49d9d",
-					"name": "Blaberryo light",
+					"name": "Primary ight",
 					"slug": "primary-light"
 				},
 				{
 					"color": "#482829",
-					"name": "Blaberryo dark",
+					"name": "Primary dark",
 					"slug": "primary-dark"
 				},
 				{
 					"color": "#ebf1ed",
-					"name": "White iceo",
+					"name": "Icy",
 					"slug": "white-ice"
 				},
 				{
@@ -179,17 +179,17 @@
 					"slug": "matching-6"
 				},
 				{
-					"color": "#16C3DA",
+					"color": "#bfa5a5",
 					"name": "Classy",
 					"slug": "classy-1"
 				},
 				{
-					"color": "#8ABACF",
+					"color": "#eedfe2",
 					"name": "Classy light",
 					"slug": "classy-2"
 				},
 				{
-					"color": "#A4D8F2",
+					"color": "#EAB7BB",
 					"name": "Classy polish",
 					"slug": "classy-3"
 				},
@@ -239,13 +239,13 @@
 					"slug": "gray-min"
 				},
 				{
-					"color": "#28cf12",
-					"name": "Blaberryo glow",
+					"color": "#EA3D76",
+					"name": "Glow",
 					"slug": "primaryish"
 				},
 				{
-					"color": "#5bf047",
-					"name": "Blaberryo glow light",
+					"color": "#FD85AD",
+					"name": "Glow light",
 					"slug": "primaryish-light"
 				},
 				{
@@ -264,12 +264,12 @@
 					"slug": "tint-very-light-1"
 				},
 				{
-					"color": "#e6f1ef",
+					"color": "#f1f1e6",
 					"name": "Beige light",
 					"slug": "beige-light"
 				},
 				{
-					"color": "#dcf5f0",
+					"color": "#f5f5dc",
 					"name": "Beige",
 					"slug": "beige"
 				},
