@@ -1,32 +1,10 @@
 {
+
+	"title": "Blackcherry",
+	"version": 2,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
 		"color": {
-			"duotone": [
-				{
-					"colors": [
-						"#a75558",
-						"#ffffff"
-					],
-					"name": "Ice Cubo Light",
-					"slug": "ice-cubo-light"
-				},
-				{
-					"colors": [
-						"#a75558",
-						"#505050"
-					],
-					"name": "Ice Cubo Dark",
-					"slug": "ice-cubo-dark"
-				},
-				{
-					"colors": [
-						"#ebf1ed",
-						"#ebf1ed"
-					],
-					"name": "Ice Cubo Iceish",
-					"slug": "ice-cubo-iceish"
-				}
-			],
 			"palette": [
 				{
 					"color": "#181111",
@@ -298,6 +276,32 @@
 					"name": "Highlight 3",
 					"slug": "highlight-3"
 				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#a75558",
+						"#ffffff"
+					],
+					"name": "Ice Cubo Light",
+					"slug": "ice-cubo-light"
+				},
+				{
+					"colors": [
+						"#a75558",
+						"#505050"
+					],
+					"name": "Ice Cubo Dark",
+					"slug": "ice-cubo-dark"
+				},
+				{
+					"colors": [
+						"#ebf1ed",
+						"#ebf1ed"
+					],
+					"name": "Ice Cubo Iceish",
+					"slug": "ice-cubo-iceish"
+				}
 			]
 		}
 	},
@@ -335,8 +339,5 @@
 				}
 			}
 		}
-	},
-	"title": "Blackcherry",
-	"version": 2,
-	"$schema": "https://schemas.wp.org/trunk/theme.json"
+	}
 }

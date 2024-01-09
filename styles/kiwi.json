@@ -1,32 +1,9 @@
 {
+	"title": "Kiwi",
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
 	"settings": {
 		"color": {
-			"duotone": [
-				{
-					"colors": [
-						"#a48052",
-						"#ffffff"
-					],
-					"slug": "ice-cubo-light",
-					"name": "Ice Cubo Light"
-				},
-				{
-					"colors": [
-						"#a48052",
-						"#505050"
-					],
-					"slug": "ice-cubo-dark",
-					"name": "Ice Cubo Dark"
-				},
-				{
-					"colors": [
-						"#ede68a",
-						"#ebeef1"
-					],
-					"slug": "ice-cubo-iceish",
-					"name": "Ice Cubo Iceish"
-				}
-			],
 			"palette": [
 				{
 					"color": "#14100b",
@@ -298,10 +275,33 @@
 					"name": "Highlight 3",
 					"slug": "highlight-3"
 				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#a48052",
+						"#ffffff"
+					],
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#a48052",
+						"#505050"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#ede68a",
+						"#ebeef1"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
+				}
 			]
 		}
-	},
-	"title": "Kiwi",
-	"version": 2,
-	"$schema": "https://schemas.wp.org/wp/6.4/theme.json"
+	}
 }
