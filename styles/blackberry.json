@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#6455a7",
-					"name": "Blaberryo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#a29db4",
-					"name": "Blaberryo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#2e2848",
-					"name": "Blaberryo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#CF2412",
-					"name": "Blaberryo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#F05847",
-					"name": "Blaberryo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",

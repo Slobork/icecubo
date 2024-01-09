@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#2c55a7",
-					"name": "Bluebo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#4F86F7",
-					"name": "Bluebo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#073082",
-					"name": "Bluebo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#2F6CE7",
-					"name": "Bluebo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#6697FB",
-					"name": "Bluebo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",

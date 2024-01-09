@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#8a1f81",
-					"name": "Plumo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#CB6AC3",
-					"name": "Plumo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#510A49",
-					"name": "Plumo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#F43AF4",
-					"name": "Plumo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#ffa9ff",
-					"name": "Plumo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",

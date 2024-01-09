@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#a9124a",
-					"name": "Raspbo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,12 +22,12 @@
 				{
 					"slug": "primary-light",
 					"color": "#E30B5C",
-					"name": "Raspbo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#70052d",
-					"name": "Raspbo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#E10558",
-					"name": "Raspbo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#FB5694",
-					"name": "Raspbo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",

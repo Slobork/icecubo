@@ -21,7 +21,7 @@
 				{
 					"slug": "primary",
 					"color": "#5276a4",
-					"name": "Iceo primary"
+					"name": "primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -31,17 +31,17 @@
 				{
 					"slug": "primary-light",
 					"color": "#b1d1fc",
-					"name": "Iceo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#104977",
-					"name": "Iceo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
 					"color": "#f1eeeb",
-					"name": "White iceo"
+					"name": "Icy"
 				},
 				{
 					"slug": "shade-1",
@@ -226,12 +226,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#8a91ed",
-					"name": "Iceo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#B5BAF8",
-					"name": "Iceo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
