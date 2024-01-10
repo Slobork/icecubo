@@ -311,11 +311,11 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--tint-very-light-3)"
+					"text": "var(--wp--preset--color--shade-4)"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--tint-very-light-1)"
+						"text": "var(--wp--preset--color--shade-2)"
 					}
 				}
 			}
