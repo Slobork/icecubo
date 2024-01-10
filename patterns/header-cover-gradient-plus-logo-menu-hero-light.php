@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with gradient with menu and hero sections (Light background).
+ * Title: Cover with gradient with menu and hero sections (Start with light background).
  * Slug: icecubo/header-cover-gradient-plus-logo-menu-hero-light
  * Categories: icecubo-header
  * Block Types: core/template-part/header

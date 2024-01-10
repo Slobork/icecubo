@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with gradient (Light background).
+ * Title: Cover with gradient (Start with light background).
  * Slug: icecubo/header-cover-gradient-light
  * Categories: icecubo-header
  * Block Types: core/template-part/header
