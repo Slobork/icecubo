@@ -157,17 +157,17 @@
 					"slug": "matching-6"
 				},
 				{
-					"color": "#bfa5a5",
+					"color": "#EA89D0",
 					"name": "Classy",
 					"slug": "classy-1"
 				},
 				{
-					"color": "#eedfe2",
+					"color": "#FFCEF0",
 					"name": "Classy light",
 					"slug": "classy-2"
 				},
 				{
-					"color": "#EAB7BB",
+					"color": "#ffb6e4",
 					"name": "Classy polish",
 					"slug": "classy-3"
 				},
@@ -262,17 +262,17 @@
 					"slug": "darko-down-bottom"
 				},
 				{
-					"color": "#ff9b98",
+					"color": "#d16d6a",
 					"name": "Highlight 1",
 					"slug": "highlight-1"
 				},
 				{
-					"color": "#f0ddcc",
+					"color": "#FAECBC",
 					"name": "Highlight 2",
 					"slug": "highlight-2"
 				},
 				{
-					"color": "#d6d5c4",
+					"color": "#E4DCC4",
 					"name": "Highlight 3",
 					"slug": "highlight-3"
 				}
