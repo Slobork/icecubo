@@ -266,12 +266,12 @@
 				},
 				{
 					"slug": "highlight-2",
-					"color": "#fefedf",
+					"color": "#EAEA8F",
 					"name": "Highlight 2"
 				},
 				{
 					"slug": "highlight-3",
-					"color": "#d5cabd",
+					"color": "#F2F2AF",
 					"name": "Highlight 3"
 				}
 			],
