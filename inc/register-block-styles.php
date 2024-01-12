@@ -292,6 +292,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-all',
+                'label' => __('Angular frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-diagonal-1',
+                'label' => __('Angular D1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-diagonal-2',
+                'label' => __('Angular D2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/list',
             array(
                 'name'  => 'icecubo-check-list',
@@ -850,7 +874,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/social-links',
             'core/quote'
             /**
-             * Because they share he same css classes,
+             * Because they share the same css classes,
              * load the css for the folowing elements in
              * the main.css instead in the individual file
              *
