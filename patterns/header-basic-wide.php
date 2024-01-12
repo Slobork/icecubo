@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic spread: Logo - nav (Wide layout).
+ * Title: Spread elements: Logo - nav.
  * Slug: icecubo/header-basic-wide
  * Categories: icecubo-header
  * Block Types: core/template-part/header
