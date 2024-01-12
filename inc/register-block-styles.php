@@ -404,6 +404,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-all',
+                'label' => __('Angular frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-diagonal-1',
+                'label' => __('Angular D1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-diagonal-2',
+                'label' => __('Angular D2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
