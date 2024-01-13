@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic group boxes as columns with cover background.
- * Slug: icecubo/collection-basic
+ * Title: Basic group boxes as columns with cover background (Optionally add a cover image).
+ * Slug: icecubo/collection-basic 
  * Categories: icecubo-box
  */
 ?>
@@ -14,7 +14,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+<p class="has-text-align-center">Tip: You can add an image to the parent cover block or remove its opacity.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
@@ -32,7 +32,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+<p class="has-text-align-center">Tip: You can add an image to the parent cover block or remove its opacity.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
@@ -50,7 +50,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+<p class="has-text-align-center">Tip: You can add an image to the parent cover block or remove its opacity.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
