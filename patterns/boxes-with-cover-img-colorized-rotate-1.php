@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Group boxes in columns, with cover - applyied background color + rotate 1.
+ * Title: Group boxes in columns, with cover - applied background color (optionally add a cover image) + rotate 1.
  * Slug: icecubo/boxes-with-cover-bg-colorized-rotate-1
  * Categories: icecubo-box
  */
@@ -14,7 +14,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+<p class="has-text-align-center">Tip: You can add an image to the parent cover block and reduce its opacity option.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
@@ -40,7 +40,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+<p class="has-text-align-center">Tip: You can add an image to the parent cover block and reduce its opacity option.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
