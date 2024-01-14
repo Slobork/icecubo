@@ -121,7 +121,7 @@
 
 <!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}}},"backgroundColor":"generic-6","textColor":"darko-down-bottom","className":"with-text-alignment"} -->
 <div class="wp-block-column with-text-alignment has-darko-down-bottom-color has-generic-6-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Heavy</p>
+<p class="has-text-align-center has-large-font-size">Professional</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0px","right":"0px","bottom":"2rem","left":"0px"}}},"fontSize":"xl"} -->
