@@ -6,8 +6,8 @@
  * Categories: icecubo-section
  */
 ?>
-<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"0"}}}} -->
-<div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+<!-- wp:columns {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}},"spacing":{"blockGap":{"left":"0"}}},"backgroundColor":"primary-light","textColor":"darko-down"} -->
+<div class="wp-block-columns alignwide has-darko-down-color has-primary-light-background-color has-text-color has-background has-link-color"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 <div class="wp-block-column"><!-- wp:spacer {"height":"3rem"} -->
 <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
