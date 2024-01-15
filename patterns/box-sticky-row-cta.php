@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:group {"align":"full","style":{"position":{"type":"sticky","top":"0px"},"elements":{"link":{"color":{"text":"var:preset|color|darko-down-bottom"}}},"spacing":{"padding":{"top":"0","bottom":"0"}}},"backgroundColor":"white-ice","textColor":"darko-down-bottom","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-bottom:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"className":"is-style-default with-text-alignment mob-force-flexwrap","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group is-style-default with-text-alignment mob-force-flexwrap" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:paragraph -->
+<div class="wp-block-group alignfull has-darko-down-bottom-color has-white-ice-background-color has-text-color has-background has-link-color" style="padding-top:0;padding-bottom:0"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}}},"className":"is-style-default with-text-alignment mob-force-flexwrap","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group is-style-default with-text-alignment mob-force-flexwrap" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
