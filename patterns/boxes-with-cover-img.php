@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Boxes with images set as columns with cover background (Optionally add a cover image).
- * Slug: icecubo/collection-basic
+ * Slug: icecubo/boxes-collection-basic
  * Categories: icecubo-box
  */
 ?>
