@@ -1,3 +1,11 @@
+<?php
+// phpcs:ignore
+/**
+ * Title: Boxes with small gap and arrow link. Set as columns with cover background (Optionally add a cover image).
+ * Slug: icecubo/boxes-with-small-gap-arrow-link
+ * Categories: icecubo-box
+ */
+?>
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"3px"}}}} -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
