@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with gradient.
+ * Title: Transit background from dark to primary color.
  * Slug: icecubo/header-cover-gradient
  * Categories: icecubo-header
  * Block Types: core/template-part/header
