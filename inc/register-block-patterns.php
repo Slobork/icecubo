@@ -18,6 +18,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
     function icecubo_register_block_pattern_category() {
 
         register_block_pattern_category(
+            'icecubo-404',
+            array( 'label' => esc_html__('IceCubo - 404', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-box',
             array( 'label' => esc_html__('IceCubo - Boxes', 'icecubo') )
         );
