@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Media and text as a call to action placeholder. Diagonal matching transit cover background.
- * Slug: icecubo/hero-meadia-text-cta-wrap-cover-gradient-diagonal-matching
+ * Title: Media and text as a call to action placeholder. Diagonal shading transit cover background.
+ * Slug: icecubo/hero-meadia-text-cta-wrap-cover-gradient-diagonal-shading
  * Categories: icecubo-hero
  */
 ?>
