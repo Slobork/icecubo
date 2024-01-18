@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover with gradient with menu and hero section.
- * Slug: icecubo/header-cover-gradient-plus-logo-menu-hero
+ * Title: Header with hero section. Cover background transit gradually from dark to primary color.
+ * Slug: icecubo/header-hero-gradient-gradual-dark-primary
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
