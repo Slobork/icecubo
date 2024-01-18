@@ -1,12 +1,12 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Content for the Front page (2).
+ * Title: Layout front page (2).
  * Slug: icecubo/page-content-front-2
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:pattern {"slug":"icecubo/header-cover-gradient-plus-logo-menu-hero-light"} /-->
+<!-- wp:pattern {"slug":"icecubo/header-hero-gradient-rushly-primary-transparent"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
