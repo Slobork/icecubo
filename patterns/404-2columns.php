@@ -6,6 +6,8 @@
  * Categories: icecubo-404
  */
 ?>
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}}} -->
 <div class="wp-block-column"><!-- wp:paragraph {"fontSize":"small"} -->
@@ -26,6 +28,8 @@
 <p>Oops, the page you are looking for does not exist or is no longer available. Please use the search form below to find your way out from here.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:search {"showLabel":false,"width":80,"widthUnit":"%","buttonText":"Search"} /--></div>
+<!-- wp:search {"showLabel":false,"placeholder":"Search...","width":80,"widthUnit":"%","buttonText":"Search"} /--></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
