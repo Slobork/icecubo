@@ -18,7 +18,6 @@
 <!-- wp:paragraph -->
 <p><?php echo esc_html__('Oops, the page you are looking for does not exist or is no longer available. Please use the search form below to find your way out from here.', 'icecubo'); ?></p>
 <!-- /wp:paragraph -->
-<!-- wp:search {"width":80,"widthUnit":"%","showLabel":false,"buttonText":"Search"} /-->
-
+<!-- wp:search {"showLabel":false,"placeholder":"Search...","width":75,"widthUnit":"%","buttonText":"Search","align":"center"} /-->
 </div>
 <!-- /wp:group -->
