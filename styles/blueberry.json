@@ -216,12 +216,12 @@
 				},
 				{
 					"slug": "primaryish",
-					"color": "#2F6CE7",
+					"color": "#00B9FF",
 					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
-					"color": "#6697FB",
+					"color": "#6FD5FA",
 					"name": "Glow light"
 				},
 				{
@@ -294,7 +294,7 @@
 				},
 				{
 					"colors": [
-						"#2F6CE7",
+						"#00B9FF",
 						"#f1eeeb"
 					],
 					"slug": "ice-cubo-iceish",
