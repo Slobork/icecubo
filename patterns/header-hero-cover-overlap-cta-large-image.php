@@ -1,14 +1,14 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Header with hero. Call to action after the large image. Overlapping cover background.
+ * Title: Header with hero. Call to action with large image. Overlapping cover background.
  * Slug: icecubo/header-hero-cover-overlap-cta-large-image
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"dimRatio":60,"gradient":"primary-light-transparent-sharp-stack","contentPosition":"center center","tagName":"header","align":"full","style":{"spacing":{"padding":{"bottom":"5rem"}},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"textColor":"darko-down","layout":{"type":"constrained"}} -->
-<header class="wp-block-cover alignfull has-darko-down-color has-text-color has-link-color" style="padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-primary-light-transparent-sharp-stack-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:cover {"dimRatio":60,"gradient":"primary-light-transparent-sharp-stack","contentPosition":"center center","tagName":"header","align":"full","style":{"spacing":{"padding":{"bottom":"6rem"}},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"textColor":"darko-down","layout":{"type":"constrained"}} -->
+<header class="wp-block-cover alignfull has-darko-down-color has-text-color has-link-color" style="padding-bottom:6rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-primary-light-transparent-sharp-stack-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 
@@ -28,13 +28,17 @@
 <p class="has-text-align-center">Note: Overlapping Point Depends on the Content Height. Still, the Overlapping Point Can Be Trimmed by Adjusting the Padding on the Wrapper Cover Block.</p>
 <!-- /wp:paragraph -->
 
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--medium)"><!-- wp:button {"backgroundColor":"classy-3","textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"className":"is-style-fill"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-classy-3-background-color has-text-color has-background has-link-color wp-element-button">Start Now!</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"textColor":"primary","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-link-color wp-element-button">Learn more</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
 <!-- wp:image -->
 <figure class="wp-block-image"><img alt=""/></figure>
-<!-- /wp:image -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"classy-3","textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"className":"is-style-fill"} -->
-<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-classy-3-background-color has-text-color has-background has-link-color wp-element-button">Start Now!</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div></header>
+<!-- /wp:image --></div></header>
 <!-- /wp:cover -->
