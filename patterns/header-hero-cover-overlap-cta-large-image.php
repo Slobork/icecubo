@@ -33,12 +33,12 @@
 <div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-classy-3-background-color has-text-color has-background has-link-color wp-element-button">Start Now!</a></div>
 <!-- /wp:button -->
 
-<!-- wp:button {"textColor":"primary","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-primary-color has-text-color has-link-color wp-element-button">Learn more</a></div>
+<!-- wp:button {"textColor":"classy-1","style":{"elements":{"link":{"color":{"text":"var:preset|color|classy-1"}}}},"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-classy-1-color has-text-color has-link-color wp-element-button">Learn more</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:image -->
-<figure class="wp-block-image"><img alt=""/></figure>
+<!-- wp:image {"aspectRatio":"16/9","scale":"cover"} -->
+<figure class="wp-block-image"><img alt="" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image --></div></header>
 <!-- /wp:cover -->
