@@ -7,8 +7,8 @@
  */
 ?>
 <!-- wp:cover {"dimRatio":50,"gradient":"shade-2-to-primaryish-to-shade-4-diagonal","isDark":false,"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"textColor":"darko-down","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull is-light has-darko-down-color has-text-color has-link-color" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-shade-2-to-primaryish-to-shade-4-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"textColor":"classy-3"} -->
-<h1 class="wp-block-heading has-text-align-center has-classy-3-color has-text-color">IceCubo WordPress Theme</h1>
+<div class="wp-block-cover alignfull is-light has-darko-down-color has-text-color has-link-color" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-shade-2-to-primaryish-to-shade-4-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center""textColor":"classy-3"} -->
+<h2 class="wp-block-heading has-text-align-center has-classy-3-color has-text-color">IceCubo WordPress Theme</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}}} -->
