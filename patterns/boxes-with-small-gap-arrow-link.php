@@ -9,8 +9,8 @@
 <!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"3px"}}}} -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
-<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor</p>
+<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size" style="margin-top:var(--wp--preset--spacing--small)">Lorem ipsum dolor</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","aspectRatio":"3/2","scale":"cover","className":"is-style-rounded"} -->
@@ -31,8 +31,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
-<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Lorem ipsum dolor</p>
+<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|small"}}},"fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size" style="margin-top:var(--wp--preset--spacing--small)">Lorem ipsum dolor</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","aspectRatio":"3/2","scale":"cover","className":"is-style-rounded"} -->
