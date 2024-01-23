@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic group box with border minimal
+ * Title: Summary box
  * Slug: icecubo/box-summary
  * Categories: icecubo-box
  */
