@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Features basic outline in columns.
- * Slug: icecubo/features-basic
- * Categories: icecubo-general
+ * Title: Features outline in columns.
+ * Slug: icecubo/basic-features-1st
+ * Categories: icecubo-basic-features
  */
 ?>
 <!-- wp:columns -->

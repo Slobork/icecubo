@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Features with image in columns with background for each cover block.
- * Slug: icecubo/features-bg-image-basic
- * Categories: icecubo-general
+ * Slug: icecubo/basic-features-bg-image
+ * Categories: icecubo-basic-features
  */
 ?>
 <!-- wp:columns -->
