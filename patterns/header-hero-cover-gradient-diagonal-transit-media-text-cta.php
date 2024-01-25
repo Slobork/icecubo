@@ -22,7 +22,7 @@
 <!-- /wp:group -->
 
 <!-- wp:media-text {"align":"wide","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-large"}}},"className":"has-media-on-the-right has-white-color has-text-color"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xx-large)"><figure class="wp-block-media-text__media"><img src="http://protester.local/wp-content/themes/icecubo/assets/img/ice-cubes.png" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"0"}}},"textColor":"highlight-3"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color" style="margin-top:var(--wp--preset--spacing--xx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"bottom":"0"}}},"textColor":"highlight-3"} -->
 <h1 class="wp-block-heading has-highlight-3-color has-text-color" style="margin-bottom:0">It's a Block Time!</h1>
 <!-- /wp:heading -->
 
