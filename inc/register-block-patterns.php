@@ -23,6 +23,16 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-basic-features',
+            array( 'label' => esc_html__('IceCubo - Basic (Features)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-basic-testimonials',
+            array( 'label' => esc_html__('IceCubo - Basic (Testimonials)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-box',
             array( 'label' => esc_html__('IceCubo - Boxes', 'icecubo') )
         );
