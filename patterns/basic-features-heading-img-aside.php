@@ -9,8 +9,8 @@
 <!-- wp:columns {"align":"wide"} -->
 <div class="wp-block-columns alignwide"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"70px","aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover;width:70px"/></figure>
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
+<figure class="wp-block-image is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -27,8 +27,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"70px","aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover;width:70px"/></figure>
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
+<figure class="wp-block-image is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -45,8 +45,8 @@
 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"70px","aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
-<figure class="wp-block-image is-resized is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover;width:70px"/></figure>
+<div class="wp-block-group"><!-- wp:image {"aspectRatio":"1","scale":"cover","className":"is-style-rounded"} -->
+<figure class="wp-block-image is-style-rounded"><img alt="" style="aspect-ratio:1;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
