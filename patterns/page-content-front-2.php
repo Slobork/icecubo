@@ -26,4 +26,4 @@
 <!-- /wp:group -->
 
 <!-- wp:pattern {"slug":"icecubo/section-cover-numbers"} /-->
-<!-- wp:pattern {"slug":"icecubo/testimonials-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/basictestimonials-1st"} /-->
