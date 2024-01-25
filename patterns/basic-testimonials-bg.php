@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Testimonials with image placeholder, in columns with group background.
- * Slug: icecubo/testimonials-bg-basic
- * Categories: icecubo-general
+ * Slug: icecubo/basic-testimonials-bg
+ * Categories: icecubo-basic-testimonials
  */
 ?>
 <!-- wp:columns -->
