@@ -10,7 +10,7 @@
 <div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--xxx-large);padding-bottom:3rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-primary-transparent-sharp-stack-gradient-background"></span><div class="wp-block-cover__inner-container">
 <!-- wp:group {"lock":{"remove":true,"move":true},"style":{"position":{"type":""}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
-<!-- wp:pattern {"slug":"icecubo/features-bg-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/basic-features-bg"} /-->
 </div>
 <!-- /wp:group -->
 
