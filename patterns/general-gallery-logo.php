@@ -3,7 +3,7 @@
 /**
  * Title: Stack group with gallery and logo placeholder. Add as many companies as you wish, in a row.
  * Slug: icecubo/basic-galerry-logo
- * Categories: icecubo-general
+ * Categories: icecubo-basic-general
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->

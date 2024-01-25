@@ -3,7 +3,7 @@
 /**
  * Title: Team members in columns.
  * Slug: icecubo/team-basic
- * Categories: icecubo-general
+ * Categories: icecubo-basic-general
  */
 ?>
 <!-- wp:columns -->

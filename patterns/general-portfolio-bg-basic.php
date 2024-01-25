@@ -3,7 +3,7 @@
 /**
  * Title: Portfolio in columns with background for each cover block.
  * Slug: icecubo/portfolio-bg-basic
- * Categories: icecubo-general
+ * Categories: icecubo-basic-general
  */
 ?>
 <!-- wp:columns -->
