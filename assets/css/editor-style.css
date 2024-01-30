@@ -122,6 +122,16 @@
      .is-style-icecubo-rotate-right {transform: rotate(13deg);}
  }
 
+ /**
+ * For IceCubo Decorative Backgrounds
+ * ...These declarations have to be here, the Editor isn't picking it from the Pro's cover.css
+ */
+[class*="ice-cover-decor"] {
+    position: absolute;
+    bottom: -10vh;
+    width: 100%;
+}
+
 /**
  * Post byline styling
  */
