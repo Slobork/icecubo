@@ -27,8 +27,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-buttons" style="margin-top:0;margin-bottom:0"><!-- wp:button {"backgroundColor":"transparent","style":{"border":{"radius":"50%"},"spacing":{"padding":{"left":"10px","right":"10px","top":"3px","bottom":"3px"}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-transparent-background-color has-background wp-element-button" href="#" style="border-radius:50%;padding-top:3px;padding-right:10px;padding-bottom:3px;padding-left:10px">→</a></div>
+<div class="wp-block-buttons" style="margin-top:0;margin-bottom:0"><!-- wp:button {"backgroundColor":"primaryish","style":{"border":{"radius":"50%"},"spacing":{"padding":{"left":"10px","right":"10px","top":"3px","bottom":"3px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-primaryish-background-color has-background wp-element-button" href="#" style="border-radius:50%;padding-top:3px;padding-right:10px;padding-bottom:3px;padding-left:10px">→</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>
