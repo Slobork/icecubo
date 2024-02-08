@@ -17,11 +17,7 @@
     <!-- /wp:group -->
 
     <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+    <!-- wp:pattern {"slug":"icecubo/comments"} /-->
 
-    <!-- wp:group {"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group">
-        <!-- wp:pattern {"slug":"icecubo/comments"} /-->
-    </div>
-    <!-- /wp:group -->
 </main>
 <!-- /wp:group -->
