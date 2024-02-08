@@ -30,8 +30,8 @@
 <p class="has-primary-color has-text-color has-link-color">Read More</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px","bottom":"4px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:1px;padding-right:12px;padding-bottom:4px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3px","bottom":"6px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:3px;padding-right:12px;padding-bottom:6px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
 <p class="has-base-color has-text-color has-link-color">→</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -62,8 +62,8 @@
 <p class="has-primary-color has-text-color has-link-color">Read More</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px","bottom":"4px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:1px;padding-right:12px;padding-bottom:4px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3px","bottom":"6px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:3px;padding-right:12px;padding-bottom:6px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
 <p class="has-base-color has-text-color has-link-color">→</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
@@ -94,8 +94,8 @@
 <p class="has-primary-color has-text-color has-link-color">Read More</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1px","bottom":"4px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:1px;padding-right:12px;padding-bottom:4px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3px","bottom":"6px","right":"12px","left":"12px"}},"border":{"radius":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"primaryish","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-white-color has-primaryish-background-color has-text-color has-background has-link-color" style="border-radius:50%;padding-top:3px;padding-right:12px;padding-bottom:6px;padding-left:12px"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
 <p class="has-base-color has-text-color has-link-color">→</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
