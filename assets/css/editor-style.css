@@ -44,7 +44,7 @@
 /**
  * Add a class to the last block to eliminate the template's space at bottom.
  * Needs to be done manually in the UI
- */.ice-cut-template-space-bottom.ice-cut-template-space-bottom {margin-bottom: -2.5rem !important;}
+ */.ice-cut-template-space-bottom.ice-cut-template-space-bottom {margin-bottom: -3.5rem !important;}
 
 /**
  * Blocks
