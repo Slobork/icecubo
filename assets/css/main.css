@@ -132,7 +132,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 
 /**
  * @Since 1.1.9
- * Moving here form an individual .css file for the paragraphs, headings and post-title,
+ * Moving here from an individual .css file for the paragraphs, headings and post-title,
  * coz it's using the same css classes
  * and it's hard to imagine the page without the paragraphs, headings and/or post-title
  */
