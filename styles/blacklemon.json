@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#fff700",
-					"name": "Blemo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,17 +22,17 @@
 				{
 					"slug": "primary-light",
 					"color": "#FFFC8B",
-					"name": "Blemo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
-					"color": "#CDC800",
-					"name": "Blemo dark"
+					"color": "#605F22",
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
 					"color": "#f1eeeb",
-					"name": "White iceo"
+					"name": "Icy"
 				},
 				{
 					"slug": "shade-1",
@@ -126,47 +126,47 @@
 				},
 				{
 					"slug": "matching-1",
-					"color": "#aee407",
+					"color": "#007760",
 					"name": "Matching 1"
 				},
 				{
 					"slug": "matching-2",
-					"color": "#54cc2a",
+					"color": "#0CA15E",
 					"name": "Matching 2"
 				},
 				{
 					"slug": "matching-3",
-					"color": "#00b141",
+					"color": "#7AB967",
 					"name": "Matching 3"
 				},
 				{
 					"slug": "matching-4",
-					"color": "#009553",
+					"color": "#B9BC79",
 					"name": "Matching 4"
 				},
 				{
 					"slug": "matching-5",
-					"color": "#007760",
+					"color": "#E0CBB5",
 					"name": "Matching 5"
 				},
 				{
 					"slug": "matching-6",
-					"color": "#064A4A",
+					"color": "#FBD8D8",
 					"name": "Matching 6"
 				},
 				{
 					"slug": "classy-1",
-					"color": "#00bcb5",
+					"color": "#ad3d3d",
 					"name": "Classy"
 				},
 				{
 					"slug": "classy-2",
-					"color": "#00f7ed",
+					"color": "#dd2b2b",
 					"name": "Classy light"
 				},
 				{
 					"slug": "classy-3",
-					"color": "#C3F4EB",
+					"color": "#f9e5e5",
 					"name": "Classy polish"
 				},
 				{
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#FF9B00",
-					"name": "Blemo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#F9C779",
-					"name": "Blemo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -266,12 +266,12 @@
 				},
 				{
 					"slug": "highlight-2",
-					"color": "#fefedf",
+					"color": "#EAEA8F",
 					"name": "Highlight 2"
 				},
 				{
 					"slug": "highlight-3",
-					"color": "#d5cabd",
+					"color": "#F2F2AF",
 					"name": "Highlight 3"
 				}
 			],
@@ -311,36 +311,31 @@
 		"elements": {
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--tint-very-light-3)"
+					"text": "var(--wp--preset--color--shade-4)"
 				},
 				":hover": {
 					"color": {
-						"text": "var(--wp--preset--color--tint-very-light-1)"
+						"text": "var(--wp--preset--color--shade-2)"
 					}
 				}
 			}
 		},
 		"blocks": {
-			"core/post-author": {
+			"core/post-template": {
 				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-date": {
-				"color": {
-					"text": "var(--wp--preset--color--gray-min)",
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-navigation-link": {
-				"color": {
-					"background": "var(--wp--preset--color--gray-dark)"
-				}
-			},
-			"core/post-terms": {
-				"color": {
-					"background": "var(--wp--preset--color--gray-dark)"
+					"text": "var(--wp--preset--color--darko-down-bottom)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--matching-2)"
+						},
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--matching-3)"
+							}
+						}
+					}
 				}
 			},
 			"core/query-pagination": {

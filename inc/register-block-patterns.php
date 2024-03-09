@@ -18,6 +18,26 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
     function icecubo_register_block_pattern_category() {
 
         register_block_pattern_category(
+            'icecubo-404',
+            array( 'label' => esc_html__('IceCubo - 404', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-basic-general',
+            array( 'label' => esc_html__('IceCubo - Basic (General)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-basic-features',
+            array( 'label' => esc_html__('IceCubo - Basic (Features)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-basic-testimonials',
+            array( 'label' => esc_html__('IceCubo - Basic (Testimonials)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-box',
             array( 'label' => esc_html__('IceCubo - Boxes', 'icecubo') )
         );
@@ -75,11 +95,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-pricing',
             array( 'label' => esc_html__('IceCubo - Pricing', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-general',
-            array( 'label' => esc_html__('IceCubo - Sections (basic)', 'icecubo') )
         );
 
         register_block_pattern_category(

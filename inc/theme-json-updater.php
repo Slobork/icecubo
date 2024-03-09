@@ -104,6 +104,11 @@ if (! function_exists('icecubo_gradients_list') ) {
                 "name"     => __("White to primary radial sharp", 'icecubo')
             ),
             array(
+                "slug"     => "transparent-to-primary-radial-sharp",
+                "gradient" => "radial-gradient(var(--wp--preset--color--primary) 50%,transparent 50%)",
+                "name"     => __("Transparent to primary radial sharp", 'icecubo')
+            ),
+            array(
                 "slug"     => "darko-to-primary-radial-gradual",
                 "gradient" => "radial-gradient(var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
                 "name"     => __("Darko to primary radial gradually", 'icecubo')
@@ -133,11 +138,26 @@ if (! function_exists('icecubo_gradients_list') ) {
                 'gradient' => 'linear-gradient(135deg,var(--wp--preset--color--matching-1) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--matching-5) 100%)',
                 'name'     => __('Diagonal with 3 matching colors', 'icecubo')
             ),
+            array(
+                'slug'     => 'darko-transparent-sharp-stack',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--darko) 70%,rgba(135,135,135,0) 70%)',
+                'name'     => __('Darko to transparent (sharp vertical stack)', 'icecubo')
+            ),
+            array(
+                'slug'     => 'primary-transparent-sharp-stack',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--primary) 70%,rgba(135,135,135,0) 70%)',
+                'name'     => __('Primary to transparent (sharp vertical stack)', 'icecubo')
+            ),
+            array(
+                'slug'     => 'primary-light-transparent-sharp-stack',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--primary-light) 70%,rgba(135,135,135,0) 70%)',
+                'name'     => __('Primary light to transparent (sharp vertical stack)', 'icecubo')
+            ),
             /**
              * There's an issue when a var() is used inside the gradient:
              * https://github.com/WordPress/gutenberg/issues/28254
              * So, lets offer one gradient that is reflected in the color slider.
-             **/
+             */
             array(
                 'slug'     => 'adjustable-color-radial',
                 'gradient' => 'radial-gradient(#888 0%,transparent 100%)',

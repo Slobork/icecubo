@@ -8,7 +8,7 @@
  * Template Types: front-page, home
  */
 ?>
-<!-- wp:template-part {"slug":"header","theme":"icecubo","tagName":"header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|x-large"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large)">
@@ -21,4 +21,4 @@
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"icecubo","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

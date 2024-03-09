@@ -41,6 +41,58 @@
     .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
 }
 
+/**
+ * Add a class to the last block to eliminate the template's space at bottom.
+ * Needs to be done manually in the UI
+ */.ice-cut-template-space-bottom.ice-cut-template-space-bottom {margin-bottom: -3.5rem !important;}
+
+/**
+ * Blocks
+ */
+
+/**
+ * @Since 1.1.9
+ * Moving here form an individual .css file for the paragraphs, headings and post-title,
+ * coz it's using the same css classes
+ * and it's hard to imagine the page without the paragraphs, headings and/or post-title
+ */
+/* Headings & Post title */
+.is-style-icecubo-accent-text-small-1 {text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-text-small-2 {text-shadow: var(--wp--custom--text-shadow-small-2) var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-text-huge-1 {text-shadow: .1em .1em 0 var(--wp--preset--color--gray-light);}
+.is-style-icecubo-accent-text-huge-2 {text-shadow: 5px 5px 0 var(--wp--preset--color--gray-very-light);}
+.is-style-icecubo-underline-overline {display: flex; flex-direction: column; line-height: 1.75;}
+.is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
+.is-style-icecubo-underline-color-primary::after {content: ""; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}
+.is-style-icecubo-aside-lines {display: flex; align-items: center;}
+.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 20px; flex: 1 0 20px;}
+.is-style-icecubo-asterisk-over:before { content: ''; height: 3rem; background: currentColor; clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z'); display: block;}
+.is-style-icecubo-star-over:before { content: '\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}
+
+/* Paragraph */
+.is-style-icecubo-highlight-p {box-shadow: var(--wp--custom--button-shadow);}
+[class*="is-style-icecubo-tearbox-"] {box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content;}
+.is-style-icecubo-tearbox-left-p {border-top-left-radius: 0;}
+.is-style-icecubo-tearbox-right-p {border-top-right-radius: 0;}
+
+/* All mix colors - Headings, Post title, paragraph */
+[class*="is-style-icecubo-mix-colors"] {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+.is-style-icecubo-mix-colors {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-glow   {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--primaryish) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-glow-2 {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--primaryish-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-glow-3 {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--highlight-2) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.is-style-icecubo-mix-colors-focus {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
+.is-style-icecubo-mix-colors-to-light {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
+
+/* Marking a chunk of text with a UI highlighter and adding a following class */
+[class*="ice-mark"] mark {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+.ice-mark-mix mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.ice-mark-mix-light mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
+.ice-mark-to-light mark {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
+.ice-mark-focus mark {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
+.ice-mark-pick mark {background: radial-gradient(currentColor, var(--wp--preset--color--darko) 75%)}
+
 /* Search box - border-radius is set for all buttons, but inside the editor it isn't picking the radius on the search box */
 .wp-block-search .wp-block-search__button { border-radius: var(--wp--custom--radius-large); }
 
@@ -74,6 +126,16 @@
      .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
      .is-style-icecubo-rotate-right {transform: rotate(13deg);}
  }
+
+ /**
+ * For IceCubo Decorative Backgrounds
+ * ...These declarations have to be here, the Editor isn't picking it from the Pro's cover.css
+ */
+[class*="ice-cover-decor"] {
+    position: absolute;
+    bottom: -10vh;
+    width: 100%;
+}
 
 /**
  * Post byline styling

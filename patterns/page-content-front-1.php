@@ -1,15 +1,15 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Content for the Front page (1).
+ * Title: Layout front page (1).
  * Slug: icecubo/page-content-front-1
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:pattern {"slug":"icecubo/header-cover-gradient-plus-logo-menu-hero"} /-->
+<!-- wp:pattern {"slug":"icecubo/header-hero-gradient-gradual-dark-primary"} /-->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"8rem"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-bottom:8rem"><!-- wp:heading {"textAlign":"center","className":"is-style-icecubo-mix-colors-focus","fontSize":"xxxl"} -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"5rem","bottom":"8rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:5rem;margin-bottom:8rem"><!-- wp:heading {"textAlign":"center","className":"is-style-icecubo-mix-colors-focus","fontSize":"xxxl"} -->
 <h2 class="wp-block-heading has-text-align-center is-style-icecubo-mix-colors-focus has-xxxl-font-size">Lorem ipsum sit amet, consectetur a adipiscing</h2>
 <!-- /wp:heading -->
 

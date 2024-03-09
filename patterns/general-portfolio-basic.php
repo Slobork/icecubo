@@ -3,7 +3,7 @@
 /**
  * Title: Portfolio in columns.
  * Slug: icecubo/portfolio-basic
- * Categories: icecubo-general
+ * Categories: icecubo-basic-general
  */
 ?>
 <!-- wp:columns -->

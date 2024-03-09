@@ -7,8 +7,8 @@
  * Inserter: false
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"blockGap":".25rem"}},"layout":{"type":"flex"},"fontSize":"extra-small"} -->
-<div class="wp-block-group has-extra-small-font-size">
+<!-- wp:group {"style":{"spacing":{"blockGap":".25rem"},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"textColor":"darko-down","layout":{"type":"flex"},"fontSize":"extra-small"} -->
+<div class="wp-block-group has-darko-down-color has-text-color has-link-color has-extra-small-font-size">
     <!-- wp:post-date {"backgroundColor":"white-ice","className":"is-style-icecubo-oval-post-byline"} /-->
     <!-- wp:paragraph -->
     <p>·</p>

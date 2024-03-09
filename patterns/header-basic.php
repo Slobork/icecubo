@@ -1,10 +1,10 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic spread: Logo - nav.
+ * Title: Spread elements: Logo - nav.
  * Slug: icecubo/header-basic
- * Categories: icecubo-header
- * Block Types: core/template-part/header
+ * Categories: hidden
+ * Inserter:false
  */
 ?>
 <!-- wp:group {"tagName":"header","align":"full","layout":{"inherit":"true","type":"constrained"}} -->

@@ -206,6 +206,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/heading',
             array(
+                'name'  => 'icecubo-mix-colors-glow',
+                'label' => __('Mix colors glow', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-2',
+                'label' => __('Mix colors glow light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-3',
+                'label' => __('Mix colors glow highlight', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/heading',
+            array(
                 'name'  => 'icecubo-mix-colors-focus',
                 'label' => __('Mix colors focused', 'icecubo'),
             )
@@ -264,6 +288,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-image-sink-frame-right',
                 'label' => __('Sink right', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-all',
+                'label' => __('Angular frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-diagonal-1',
+                'label' => __('Angular D1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/image',
+            array(
+                'name'  => 'icecubo-image-angular-diagonal-2',
+                'label' => __('Angular D2', 'icecubo'),
             )
         );
 
@@ -356,6 +404,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-all',
+                'label' => __('Angular frame', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-diagonal-1',
+                'label' => __('Angular D1', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/media-text',
+            array(
+                'name'  => 'icecubo-media-text-angular-diagonal-2',
+                'label' => __('Angular D2', 'icecubo'),
+            )
+        );
+
+        register_block_style(
             'core/navigation',
             array(
                 'name'  => 'icecubo-nav-mark-hovers',
@@ -440,6 +512,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-mix-colors-light',
                 'label' => __('Mix colors light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-glow',
+                'label' => __('Mix colors glow', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-2',
+                'label' => __('Mix colors glow light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/paragraph',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-3',
+                'label' => __('Mix colors glow highlight', 'icecubo'),
             )
         );
 
@@ -671,6 +767,30 @@ if (! function_exists('icecubo_register_block_styles') ) {
         register_block_style(
             'core/post-title',
             array(
+                'name'  => 'icecubo-mix-colors-glow',
+                'label' => __('Mix colors glow', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-2',
+                'label' => __('Mix colors glow light', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
+                'name'  => 'icecubo-mix-colors-glow-3',
+                'label' => __('Mix colors glow highlight', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/post-title',
+            array(
                 'name'  => 'icecubo-mix-colors-focus',
                 'label' => __('Mix colors focused', 'icecubo'),
             )
@@ -772,14 +892,22 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/comment-content',
             'core/comment-reply-link',
             'core/details',
-            'core/heading',
             'core/image',
             'core/list',
             'core/navigation-link',
-            'core/paragraph',
-            'core/post-title',
             'core/social-links',
             'core/quote'
+            /**
+             * Because they share the same css classes,
+             * load the css for the folowing elements in
+             * the main.css instead in the individual file
+             *
+             * @Since 1.1.9
+             *
+             * 'core/heading',
+             * 'core/paragraph',
+             * 'core/post-title',
+             */
         );
 
         $blocks = array_merge($blocks, $conditional_blocks);

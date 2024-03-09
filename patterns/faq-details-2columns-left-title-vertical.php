@@ -8,9 +8,10 @@
 ?>
 <!-- wp:columns {"verticalAlignment":null} -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading {"style":{"typography":{"writingMode":"vertical-rl","fontSize":"9rem"}}} -->
-<h2 class="wp-block-heading" style="font-size:9rem;writing-mode:vertical-rl">FAQ</h2>
-<!-- /wp:heading --></div>
+<div class="wp-block-column"><!-- wp:heading {"textAlign":"right","style":{"typography":{"writingMode":"vertical-rl","fontSize":"9rem"}}} -->
+<h2 class="wp-block-heading has-text-align-right" style="font-size:9rem;writing-mode:vertical-rl">FAQ</h2>
+<!-- /wp:heading -->
+</div>
 <!-- /wp:column -->
 
 <!-- wp:column -->

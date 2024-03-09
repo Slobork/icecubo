@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#2c55a7",
-					"name": "Bluebo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,17 +22,17 @@
 				{
 					"slug": "primary-light",
 					"color": "#4F86F7",
-					"name": "Bluebo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#073082",
-					"name": "Bluebo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
 					"color": "#f1eeeb",
-					"name": "White iceo"
+					"name": "Icy"
 				},
 				{
 					"slug": "shade-1",
@@ -146,12 +146,12 @@
 				},
 				{
 					"slug": "matching-5",
-					"color": "#c981ab",
+					"color": "#BE5D96",
 					"name": "Matching 5"
 				},
 				{
 					"slug": "matching-6",
-					"color": "#DC999C",
+					"color": "#9B2C6C",
 					"name": "Matching 6"
 				},
 				{
@@ -161,12 +161,12 @@
 				},
 				{
 					"slug": "classy-2",
-					"color": "#dc6473",
+					"color": "#C45A66",
 					"name": "Classy light"
 				},
 				{
 					"slug": "classy-3",
-					"color": "#9B0823",
+					"color": "#B53E53",
 					"name": "Classy polish"
 				},
 				{
@@ -216,13 +216,13 @@
 				},
 				{
 					"slug": "primaryish",
-					"color": "#2F6CE7",
-					"name": "Bluebo glow"
+					"color": "#00B9FF",
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
-					"color": "#6697FB",
-					"name": "Bluebo glow light"
+					"color": "#6FD5FA",
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -261,7 +261,7 @@
 				},
 				{
 					"slug": "highlight-1",
-					"color": "#74a6ff",
+					"color": "#5585d9",
 					"name": "Highlight 1"
 				},
 				{
@@ -271,7 +271,7 @@
 				},
 				{
 					"slug": "highlight-3",
-					"color": "#fff7d6",
+					"color": "#F4E7B4",
 					"name": "Highlight 3"
 				}
 			],
@@ -294,7 +294,7 @@
 				},
 				{
 					"colors": [
-						"#F43AF4",
+						"#00B9FF",
 						"#f1eeeb"
 					],
 					"slug": "ice-cubo-iceish",

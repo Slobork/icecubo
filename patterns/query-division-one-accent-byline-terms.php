@@ -8,8 +8,8 @@
 ?>
 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xxx-large)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"spacing":{"margin":{"right":"0","left":"0","bottom":"var:preset|spacing|large"}}},"backgroundColor":"primary","textColor":"white-ice","className":"is-style-icecubo-tearbox-left-p"} -->
-<p class="is-style-icecubo-tearbox-left-p has-white-ice-color has-primary-background-color has-text-color has-background" style="margin-right:0;margin-bottom:var(--wp--preset--spacing--large);margin-left:0">TECHNOLOGY</p>
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"style":{"spacing":{"margin":{"right":"0","left":"0","bottom":"var:preset|spacing|large"}}},"backgroundColor":"primary","textColor":"darko","className":"is-style-icecubo-tearbox-left-p"} -->
+<p class="is-style-icecubo-tearbox-left-p has-darko-color has-primary-background-color has-text-color has-background" style="margin-right:0;margin-bottom:var(--wp--preset--spacing--large);margin-left:0">TECHNOLOGY</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

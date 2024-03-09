@@ -9,8 +9,11 @@
 ?>
 <!-- wp:comments -->
 <div class="wp-block-comments">
-    <!-- wp:comments-title /-->
 
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group comments-group">
+
+    <!-- wp:comments-title {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}}} /-->
     <!-- wp:comment-template -->
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column {"width":"65px"} -->
@@ -42,5 +45,9 @@
     <!-- /wp:comments-pagination -->
 
     <!-- wp:post-comments-form /-->
+    
+</div>
+<!-- /wp:group -->
+
 </div>
 <!-- /wp:comments -->

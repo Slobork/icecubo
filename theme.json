@@ -21,7 +21,7 @@
 				{
 					"slug": "primary",
 					"color": "#5276a4",
-					"name": "Iceo primary"
+					"name": "primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -31,17 +31,17 @@
 				{
 					"slug": "primary-light",
 					"color": "#b1d1fc",
-					"name": "Iceo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#104977",
-					"name": "Iceo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
 					"color": "#f1eeeb",
-					"name": "White iceo"
+					"name": "Icy"
 				},
 				{
 					"slug": "shade-1",
@@ -226,12 +226,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#8a91ed",
-					"name": "Iceo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#B5BAF8",
-					"name": "Iceo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -500,20 +500,28 @@
 			"radius-large": "50px",
 			"gradient-radial-focus-20-primary-light": "radial-gradient(var(--wp--preset--color--primary-light) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-primary-light": "radial-gradient(var(--wp--preset--color--primary-light) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-primary-light": "radial-gradient(var(--wp--preset--color--primary-light) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-primary": "radial-gradient(var(--wp--preset--color--primary) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-primary": "radial-gradient(var(--wp--preset--color--primary) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-primary": "radial-gradient(var(--wp--preset--color--primary) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-matching-1": "radial-gradient(var(--wp--preset--color--matching-1) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-matching-1": "radial-gradient(var(--wp--preset--color--matching-1) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-matching-1": "radial-gradient(var(--wp--preset--color--matching-1) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-matching-3": "radial-gradient(var(--wp--preset--color--matching-3) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-matching-3": "radial-gradient(var(--wp--preset--color--matching-3) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-matching-3": "radial-gradient(var(--wp--preset--color--matching-3) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-matching-6": "radial-gradient(var(--wp--preset--color--matching-6) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-matching-6": "radial-gradient(var(--wp--preset--color--matching-6) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-matching-6": "radial-gradient(var(--wp--preset--color--matching-6) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-generic-1": "radial-gradient(var(--wp--preset--color--generic-1) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-generic-1": "radial-gradient(var(--wp--preset--color--generic-1) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-generic-1": "radial-gradient(var(--wp--preset--color--generic-1) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-generic-3": "radial-gradient(var(--wp--preset--color--generic-3) 0%,rgba(0,0,0,0) 20%)",
 			"gradient-radial-focus-40-generic-3": "radial-gradient(var(--wp--preset--color--generic-3) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-generic-3": "radial-gradient(var(--wp--preset--color--generic-3) 0%,rgba(0,0,0,0) 70%)",
 			"gradient-radial-focus-20-generic-6": "radial-gradient(var(--wp--preset--color--generic-6) 0%,rgba(0,0,0,0) 20%)",
-			"gradient-radial-focus-40-generic-6": "radial-gradient(var(--wp--preset--color--generic-6) 0%,rgba(0,0,0,0) 40%)"
+			"gradient-radial-focus-40-generic-6": "radial-gradient(var(--wp--preset--color--generic-6) 0%,rgba(0,0,0,0) 40%)",
+			"gradient-radial-focus-70-generic-6": "radial-gradient(var(--wp--preset--color--generic-6) 0%,rgba(0,0,0,0) 70%)"
 		}
 	},
 	"styles": {
@@ -646,6 +654,13 @@
 			},
 			"core/image": {
 				"css": " {margin: .5rem 0 1rem}"
+			},
+			"core/list": {
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--xxx-small)"
+					}
+				}
 			},
 			"core/navigation": {
 				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}"

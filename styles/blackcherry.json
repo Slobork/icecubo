@@ -1,0 +1,343 @@
+{
+
+	"title": "Black Cherry",
+	"version": 2,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#181111",
+					"name": "Darko",
+					"slug": "darko"
+				},
+				{
+					"color": "#a75558",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#2e1f1f",
+					"name": "Darko transit",
+					"slug": "darko-transit"
+				},
+				{
+					"color": "#b49d9d",
+					"name": "Primary ight",
+					"slug": "primary-light"
+				},
+				{
+					"color": "#482829",
+					"name": "Primary dark",
+					"slug": "primary-dark"
+				},
+				{
+					"color": "#f1eeeb",
+					"name": "Icy",
+					"slug": "white-ice"
+				},
+				{
+					"color": "#964c4e",
+					"name": "Shade 1",
+					"slug": "shade-1"
+				},
+				{
+					"color": "#854446",
+					"name": "Shade 2",
+					"slug": "shade-2"
+				},
+				{
+					"color": "#743b3c",
+					"name": "Shade 3",
+					"slug": "shade-3"
+				},
+				{
+					"color": "#643335",
+					"name": "Shade 4",
+					"slug": "shade-4"
+				},
+				{
+					"color": "#532a2b",
+					"name": "Shade 5",
+					"slug": "shade-5"
+				},
+				{
+					"color": "#422223",
+					"name": "Shade 6",
+					"slug": "shade-6"
+				},
+				{
+					"color": "#af6668",
+					"name": "Tint 1",
+					"slug": "tint-1"
+				},
+				{
+					"color": "#b87677",
+					"name": "Tint 2",
+					"slug": "tint-2"
+				},
+				{
+					"color": "#c1888a",
+					"name": "Tint 3",
+					"slug": "tint-3"
+				},
+				{
+					"color": "#ca999b",
+					"name": "Tint 4",
+					"slug": "tint-4"
+				},
+				{
+					"color": "#d3aaab",
+					"name": "Tint 5",
+					"slug": "tint-5"
+				},
+				{
+					"color": "#dbbbbc",
+					"name": "Tint 6",
+					"slug": "tint-6"
+				},
+				{
+					"color": "#b8b85a",
+					"name": "Generic 1",
+					"slug": "generic-1"
+				},
+				{
+					"color": "#acf36a",
+					"name": "Generic 2",
+					"slug": "generic-2"
+				},
+				{
+					"color": "#72ff72",
+					"name": "Generic 3",
+					"slug": "generic-3"
+				},
+				{
+					"color": "#60ffa0",
+					"name": "Generic 4",
+					"slug": "generic-4"
+				},
+				{
+					"color": "#71f9dc",
+					"name": "Generic 5",
+					"slug": "generic-5"
+				},
+				{
+					"color": "#7af4ff",
+					"name": "Generic 6",
+					"slug": "generic-6"
+				},
+				{
+					"color": "#b7383c",
+					"name": "Matching 1",
+					"slug": "matching-1"
+				},
+				{
+					"color": "#de566a",
+					"name": "Matching 2",
+					"slug": "matching-2"
+				},
+				{
+					"color": "#e9696d",
+					"name": "Matching 3",
+					"slug": "matching-3"
+				},
+				{
+					"color": "#de85a0",
+					"name": "Matching 4",
+					"slug": "matching-4"
+				},
+				{
+					"color": "#f6afa1",
+					"name": "Matching 5",
+					"slug": "matching-5"
+				},
+				{
+					"color": "#ffe1c7",
+					"name": "Matching 6",
+					"slug": "matching-6"
+				},
+				{
+					"color": "#EA89D0",
+					"name": "Classy",
+					"slug": "classy-1"
+				},
+				{
+					"color": "#FFCEF0",
+					"name": "Classy light",
+					"slug": "classy-2"
+				},
+				{
+					"color": "#ffb6e4",
+					"name": "Classy polish",
+					"slug": "classy-3"
+				},
+				{
+					"color": "#3b716f",
+					"name": "Friend dark",
+					"slug": "friend-dark"
+				},
+				{
+					"color": "#55a7a4",
+					"name": "Friend",
+					"slug": "friend"
+				},
+				{
+					"color": "#75e4e0",
+					"name": "Friend light",
+					"slug": "friend-light"
+				},
+				{
+					"color": "#544545",
+					"name": "Gray friend dark",
+					"slug": "gray-friend-dark"
+				},
+				{
+					"color": "#bbaaa9",
+					"name": "Gray friend light",
+					"slug": "gray-friend-light"
+				},
+				{
+					"color": "#505050",
+					"name": "Gray dark",
+					"slug": "gray-dark"
+				},
+				{
+					"color": "#a5a5a5",
+					"name": "Gray light",
+					"slug": "gray-light"
+				},
+				{
+					"color": "#c5c5c5",
+					"name": "Gray very light",
+					"slug": "gray-very-light"
+				},
+				{
+					"color": "#f3f3f3",
+					"name": "Gray min",
+					"slug": "gray-min"
+				},
+				{
+					"color": "#EA3D76",
+					"name": "Glow",
+					"slug": "primaryish"
+				},
+				{
+					"color": "#FD85AD",
+					"name": "Glow light",
+					"slug": "primaryish-light"
+				},
+				{
+					"color": "#e4cccc",
+					"name": "Tint very light 3",
+					"slug": "tint-very-light-3"
+				},
+				{
+					"color": "#edddde",
+					"name": "Tint very light 2",
+					"slug": "tint-very-light-2"
+				},
+				{
+					"color": "#f6eeef",
+					"name": "Tint very light 1",
+					"slug": "tint-very-light-1"
+				},
+				{
+					"color": "#f1f1e6",
+					"name": "Beige light",
+					"slug": "beige-light"
+				},
+				{
+					"color": "#f5f5dc",
+					"name": "Beige",
+					"slug": "beige"
+				},
+				{
+					"color": "#333333",
+					"name": "Darko down",
+					"slug": "darko-down"
+				},
+				{
+					"color": "#3c3c3c",
+					"name": "Darko down bottom",
+					"slug": "darko-down-bottom"
+				},
+				{
+					"color": "#d16d6a",
+					"name": "Highlight 1",
+					"slug": "highlight-1"
+				},
+				{
+					"color": "#FAECBC",
+					"name": "Highlight 2",
+					"slug": "highlight-2"
+				},
+				{
+					"color": "#E4DCC4",
+					"name": "Highlight 3",
+					"slug": "highlight-3"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#a75558",
+						"#ffffff"
+					],
+					"name": "Ice Cubo Light",
+					"slug": "ice-cubo-light"
+				},
+				{
+					"colors": [
+						"#a75558",
+						"#505050"
+					],
+					"name": "Ice Cubo Dark",
+					"slug": "ice-cubo-dark"
+				},
+				{
+					"colors": [
+						"#ebf1ed",
+						"#ebf1ed"
+					],
+					"name": "Ice Cubo Iceish",
+					"slug": "ice-cubo-iceish"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/post-template": {
+				"color": {
+					"text": "var(--wp--preset--color--darko-down-bottom)"
+				}
+			},
+			"core/query-pagination": {
+				"border": {
+					"color": "var(--wp--preset--color--tint-2)",
+					"style": "solid",
+					"width": "1px"
+				},
+				"color": {
+					"background": "inherit"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--darko)",
+			"text": "var(--wp--preset--color--gray-light)"
+		},
+		"elements": {
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--primary)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--tint-1)"
+				}
+			}
+		}
+	}
+}

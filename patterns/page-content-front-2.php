@@ -1,12 +1,12 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Content for the Front page (2).
+ * Title: Layout front page (2).
  * Slug: icecubo/page-content-front-2
  * Categories: icecubo-page
  */
 ?>
-<!-- wp:pattern {"slug":"icecubo/header-cover-gradient-plus-logo-menu-hero-light"} /-->
+<!-- wp:pattern {"slug":"icecubo/header-hero-gradient-rushly-primary-transparent"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
@@ -20,10 +20,10 @@
 
 <!-- wp:group {"style":{"border":{"bottom":{"width":"1px"},"top":{"width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"},"margin":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="border-top-width:1px;border-bottom-width:1px;margin-top:var(--wp--preset--spacing--xx-large);margin-bottom:var(--wp--preset--spacing--xx-large);padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)">
-<!-- wp:pattern {"slug":"icecubo/features-basic"} /-->
-<!-- wp:pattern {"slug":"icecubo/features-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/basic-features-1st"} /-->
+<!-- wp:pattern {"slug":"icecubo/basic-features-1st"} /-->
 </div>
 <!-- /wp:group -->
 
 <!-- wp:pattern {"slug":"icecubo/section-cover-numbers"} /-->
-<!-- wp:pattern {"slug":"icecubo/testimonials-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/basictestimonials-1st"} /-->

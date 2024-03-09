@@ -8,8 +8,8 @@
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"primary-to-white-linear-sharp-corner","contentPosition":"bottom right","isDark":false} -->
-<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-right"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-primary-to-white-linear-sharp-corner-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","backgroundColor":"white-ice","textColor":"gray-friend-dark","fontSize":"xl"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"primary-to-transparent-linear-sharp-corner","contentPosition":"bottom right","isDark":false} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-bottom-right"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-primary-to-transparent-linear-sharp-corner-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","backgroundColor":"white-ice","textColor":"gray-friend-dark","fontSize":"xl"} -->
 <p class="has-text-align-center has-gray-friend-dark-color has-white-ice-background-color has-text-color has-background has-xl-font-size">Our customers love us!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>

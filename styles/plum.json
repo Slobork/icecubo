@@ -12,7 +12,7 @@
 				{
 					"slug": "primary",
 					"color": "#8a1f81",
-					"name": "Plumo primary"
+					"name": "Primary"
 				},
 				{
 					"slug": "darko-transit",
@@ -22,17 +22,17 @@
 				{
 					"slug": "primary-light",
 					"color": "#CB6AC3",
-					"name": "Plumo light"
+					"name": "Primary light"
 				},
 				{
 					"slug": "primary-dark",
 					"color": "#510A49",
-					"name": "Plumo dark"
+					"name": "Primary dark"
 				},
 				{
 					"slug": "white-ice",
 					"color": "#f1eeeb",
-					"name": "White iceo"
+					"name": "Icy"
 				},
 				{
 					"slug": "shade-1",
@@ -131,27 +131,27 @@
 				},
 				{
 					"slug": "matching-2",
-					"color": "#0076ce",
+					"color": "#4B38D9",
 					"name": "Matching 2"
 				},
 				{
 					"slug": "matching-3",
-					"color": "#0091ca",
+					"color": "#5700C9",
 					"name": "Matching 3"
 				},
 				{
 					"slug": "matching-4",
-					"color": "#00a5b1",
+					"color": "#8200B0",
 					"name": "Matching 4"
 				},
 				{
 					"slug": "matching-5",
-					"color": "#0fb691",
+					"color": "#A000B0",
 					"name": "Matching 5"
 				},
 				{
 					"slug": "matching-6",
-					"color": "#099676",
+					"color": "#870B7C",
 					"name": "Matching 6"
 				},
 				{
@@ -217,12 +217,12 @@
 				{
 					"slug": "primaryish",
 					"color": "#F43AF4",
-					"name": "Plumo glow"
+					"name": "Glow"
 				},
 				{
 					"slug": "primaryish-light",
 					"color": "#ffa9ff",
-					"name": "Plumo glow light"
+					"name": "Glow light"
 				},
 				{
 					"slug": "tint-very-light-3",
@@ -261,7 +261,7 @@
 				},
 				{
 					"slug": "highlight-1",
-					"color": "#0063be",
+					"color": "#BF0048",
 					"name": "Highlight 1"
 				},
 				{
