@@ -20,7 +20,7 @@
 <!-- wp:group {"lock":{"remove":true,"move":true},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:cover {"minHeight":100,"gradient":"white-to-primary-radial-gradual","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}},"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}}},"textColor":"primary-dark","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignwide has-primary-dark-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--xx-large);padding-bottom:var(--wp--preset--spacing--xx-large);min-height:100px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-white-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<h2 class="wp-block-heading has-text-align-center" style="margin-top:0">Note: Overlapping Point Depends on the Content Height. Still, the Overlapping Point Can Be Trimmed by Adjusting the Padding on the Wrapper Cover Block.</h2>
+<h2 class="wp-block-heading has-text-align-center" style="margin-top:0">Note: Background's Overlapping Point Depends on the Content Height. Still, the Overlapping Point Can Be Trimmed by Adjusting the Padding on the Wrapper Cover Block.</h2>
 <!-- /wp:heading --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group --></div></div>
