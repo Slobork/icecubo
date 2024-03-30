@@ -66,6 +66,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
+        // With Cover styles we do not load the css file, instead styling done in the main.css
         register_block_style(
             'core/cover',
             array(
