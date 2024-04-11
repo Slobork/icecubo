@@ -86,7 +86,7 @@
 .is-style-icecubo-mix-colors-to-light {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
 
 /* Marking a chunk of text with a UI highlighter and adding a following class */
-[class*="ice-mark"] mark {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
+[class*="ice-mark"] mark {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; text-shadow: none !important;}
 .ice-mark-mix mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
 .ice-mark-mix-light mark {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
 .ice-mark-to-light mark {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
