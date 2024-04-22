@@ -187,6 +187,8 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     border-radius: var(--wp--custom--radius-large);
     max-width: none;
 }
+/*...Also the padding for the search button is necessary */
+.wp-block-search__button {padding: .75em 1.75em}
 
 /**
  * Group/cover block.
