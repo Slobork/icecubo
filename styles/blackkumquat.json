@@ -306,11 +306,6 @@
 	},
 	"styles": {
 		"blocks": {
-			"core/post-template": {
-				"color": {
-					"text": "var(--wp--preset--color--darko-down-bottom)"
-				}
-			},
 			"core/query-pagination": {
 				"border": {
 					"color": "var(--wp--preset--color--tint-2)",
