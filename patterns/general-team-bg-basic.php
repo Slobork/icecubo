@@ -24,7 +24,7 @@
 <!-- wp:social-links {"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links"><!-- wp:social-link {"service":"linkedin"} /-->
 
-<!-- wp:social-link {"service":"twitter"} /-->
+<!-- wp:social-link {"service":"x"} /-->
 
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div></div>
@@ -48,7 +48,7 @@
 <!-- wp:social-links {"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links"><!-- wp:social-link {"service":"linkedin"} /-->
 
-<!-- wp:social-link {"service":"twitter"} /-->
+<!-- wp:social-link {"service":"x"} /-->
 
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div></div>
@@ -72,7 +72,7 @@
 <!-- wp:social-links {"layout":{"type":"flex","justifyContent":"center"}} -->
 <ul class="wp-block-social-links"><!-- wp:social-link {"service":"linkedin"} /-->
 
-<!-- wp:social-link {"service":"twitter"} /-->
+<!-- wp:social-link {"service":"x"} /-->
 
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div></div>

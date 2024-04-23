@@ -99,7 +99,7 @@
 <!-- wp:social-links {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"className":"has-icon-color has-icon-background-color is-style-default"} -->
 <ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
-<!-- wp:social-link {"url":"#","service":"twitter"} /-->
+<!-- wp:social-link {"url":"#","service":"x"} /-->
 
 <!-- wp:social-link {"url":"#","service":"linkedin"} /--></ul>
 <!-- /wp:social-links --></div>

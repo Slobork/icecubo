@@ -22,6 +22,6 @@
 
 <!-- wp:social-link {"url":"#","service":"linkedin"} /-->
 
-<!-- wp:social-link {"url":"#","service":"twitter"} /--></ul>
+<!-- wp:social-link {"url":"#","service":"x"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group -->

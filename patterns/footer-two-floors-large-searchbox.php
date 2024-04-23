@@ -34,7 +34,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><a href="#">Twitter</a></p>
+<p><a href="#">X</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>

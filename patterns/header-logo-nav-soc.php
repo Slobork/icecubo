@@ -18,7 +18,7 @@
 <!-- wp:social-links {"className":"is-style-default"} -->
 <ul class="wp-block-social-links is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
-<!-- wp:social-link {"url":"#","service":"twitter"} /-->
+<!-- wp:social-link {"url":"#","service":"x"} /-->
 
 <!-- wp:social-link {"url":"#","service":"linkedin"} /--></ul>
 <!-- /wp:social-links --></div>
