@@ -8,8 +8,8 @@
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
-<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-column"><!-- wp:cover {"dimRatio":80,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
+<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">John Doe</p>
 <!-- /wp:paragraph -->
 
@@ -32,8 +32,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
-<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-column"><!-- wp:cover {"dimRatio":80,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
+<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Jane Doe</p>
 <!-- /wp:paragraph -->
 
@@ -56,8 +56,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"dimRatio":50,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
-<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+<div class="wp-block-column"><!-- wp:cover {"dimRatio":80,"overlayColor":"white-ice","minHeight":250,"isDark":false,"align":"center","textColor":"darko-down-bottom"} -->
+<div class="wp-block-cover aligncenter is-light has-darko-down-bottom-color has-text-color" style="min-height:250px"><span aria-hidden="true" class="wp-block-cover__background has-white-ice-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">Richard Doe</p>
 <!-- /wp:paragraph -->
 
