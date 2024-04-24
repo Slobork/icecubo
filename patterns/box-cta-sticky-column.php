@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Sticky column - with a call to action
- * Slug: icecubo/box-sticky-column
+ * Slug: icecubo/box-cta-sticky-column
  * Categories: icecubo-box
  */
 ?>
@@ -25,8 +25,8 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"width":"35%","style":{"spacing":{"padding":{"right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","top":"var:preset|spacing|medium"}}},"backgroundColor":"white-ice","className":"is-style-default"} -->
-<div class="wp-block-column is-style-default has-white-ice-background-color has-background" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);flex-basis:35%"><!-- wp:paragraph {"className":"is-style-default"} -->
+<!-- wp:column {"width":"35%","style":{"spacing":{"padding":{"right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","top":"var:preset|spacing|medium"}},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"backgroundColor":"white-ice","textColor":"darko-down","className":"is-style-default"} -->
+<div class="wp-block-column is-style-default has-darko-down-color has-white-ice-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium);flex-basis:35%"><!-- wp:paragraph {"className":"is-style-default"} -->
 <p class="is-style-default">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
