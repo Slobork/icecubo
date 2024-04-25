@@ -728,6 +728,20 @@
 			"postTypes": [
 				"post"
 			]
+		},
+		{
+			"name": "page-notitle",
+			"title": "Page without a title",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-notitle-noheader",
+			"title": "Page without a title and site header",
+			"postTypes": [
+				"page"
+			]
 		}
 	]
 }
