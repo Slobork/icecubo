@@ -3,7 +3,7 @@
 /**
  * Title: Team members in columns with background for each cover block.
  * Slug: icecubo/team-bg-basic
- * Categories: icecubo-basic-general
+ * Categories: icecubo-team
  */
 ?>
 <!-- wp:columns -->

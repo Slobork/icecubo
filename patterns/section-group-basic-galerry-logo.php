@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Stack group with gallery and logo placeholder. Add as many companies as you wish, in a row.
- * Slug: icecubo/basic-galerry-logo
- * Categories: icecubo-basic-general
+ * Slug: icecubo/section-group-basic-galerry-logo
+ * Categories: icecubo-section
  */
 ?>
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->

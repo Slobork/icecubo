@@ -3,7 +3,7 @@
 /**
  * Title: Numbers in columns (with backgroud applied).
  * Slug: icecubo/numbers-bg-basic
- * Categories: icecubo-basic-general
+ * Categories: icecubo-numbers
  */
 ?>
 <!-- wp:columns {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}}},"textColor":"primary-dark"} -->

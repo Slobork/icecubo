@@ -3,7 +3,7 @@
 /**
  * Title: Numbers in columns.
  * Slug: icecubo/numbers-basic
- * Categories: icecubo-basic-general
+ * Categories: icecubo-numbers
  */
 ?>
 <!-- wp:columns -->
