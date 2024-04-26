@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Testimonials with featured message.
- * Slug: icecubo/section-columns-testimonials-featured-message
- * Categories: icecubo-section
+ * Title: Testimonials with a cover message aside.
+ * Slug: icecubo/testimonials-cover-message-aside
+ * Categories: icecubo-testimonials
  */
 ?>
 <!-- wp:columns -->

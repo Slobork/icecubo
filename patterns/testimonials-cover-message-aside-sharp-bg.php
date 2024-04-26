@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Testimonials with featured message - sharp splitted background.
- * Slug: icecubo/section-columns-testimonials-featured-message-gradient-sharp
- * Categories: icecubo-section
+ * Title: Testimonials with a cover message aside, sharp splitted background.
+ * Slug: icecubo/testimonials-cover-message-aside-sharp-bg
+ * Categories: icecubo-testimonials
  */
 ?>
 <!-- wp:columns -->

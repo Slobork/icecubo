@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Testimonials in columns with image aside.
- * Slug: icecubo/basic-testimonials-aside-image
- * Categories: icecubo-basic-testimonials
+ * Slug: icecubo/testimonials-aside-image
+ * Categories: icecubo-testimonials
  */
 ?>
 <!-- wp:columns -->

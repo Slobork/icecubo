@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Testimonials in columns with image at bottom and quote at top (Minimal bordered).
- * Slug: icecubo/basic-testimonials-bottom-image-bordered-qoute-top
- * Categories: icecubo-basic-testimonials
+ * Slug: icecubo/testimonials-bottom-image-bordered-qoute-top
+ * Categories: icecubo-testimonials
  */
 ?>
 <!-- wp:columns -->
