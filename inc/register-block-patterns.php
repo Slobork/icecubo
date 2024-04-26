@@ -28,11 +28,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-basic-testimonials',
-            array( 'label' => esc_html__('IceCubo - Basic (Testimonials)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
             'icecubo-box',
             array( 'label' => esc_html__('IceCubo - Boxes', 'icecubo') )
         );
@@ -110,6 +105,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-team',
             array( 'label' => esc_html__('IceCubo - Team', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-testimonials',
+            array( 'label' => esc_html__('IceCubo - Testimonials', 'icecubo') )
         );
 
     }
