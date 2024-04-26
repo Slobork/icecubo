@@ -23,11 +23,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-basic-general',
-            array( 'label' => esc_html__('IceCubo - Basic (General)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
             'icecubo-basic-features',
             array( 'label' => esc_html__('IceCubo - Basic (Features)', 'icecubo') )
         );
@@ -63,6 +58,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-numbers',
+            array( 'label' => esc_html__('IceCubo - Numbers', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-page',
             array( 'label' => esc_html__('IceCubo - Pages', 'icecubo') )
         );
@@ -88,6 +88,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-portfolio',
+            array( 'label' => esc_html__('IceCubo - Portfolio', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-post-header',
             array( 'label' => esc_html__('IceCubo - Post headers', 'icecubo') )
         );
@@ -100,6 +105,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-section',
             array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-team',
+            array( 'label' => esc_html__('IceCubo - Team', 'icecubo') )
         );
 
     }
