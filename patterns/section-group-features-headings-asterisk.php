@@ -15,8 +15,8 @@
 <p class="has-text-align-center">Lorem ipsum sit amet, consectetur a adipiscing. Nulla vitae lorem a neque imperdiet sagittis vivamus enim velit.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:pattern {"slug":"icecubo/basic-features-headings-asterisk"} /-->
-<!-- wp:pattern {"slug":"icecubo/basic-features-headings-asterisk"} /-->
+<!-- wp:pattern {"slug":"icecubo/features-basic-headings-asterisk"} /-->
+<!-- wp:pattern {"slug":"icecubo/features-basic-headings-asterisk"} /-->
 
 </div>
 <!-- /wp:group -->
