@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Features in columns with background.
- * Slug: icecubo/basic-features-bg
- * Categories: icecubo-basic-features
+ * Slug: icecubo/features-basic-bg
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}}},"textColor":"primary-dark"} -->

@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Wide align columns block for features with headings and asterisk.
- * Slug: icecubo/basic-features-headings-asterisk
- * Categories: icecubo-basic-features
+ * Slug: icecubo/features-basic-headings-asterisk
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"}}}} -->

@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Features in columns with heading and image aside.
- * Slug: icecubo/basic-features-heading-img-aside
- * Categories: icecubo-basic-features
+ * Slug: icecubo/features-basic-heading-img-aside
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns {"align":"wide"} -->

@@ -2,8 +2,8 @@
 // phpcs:ignore
 /**
  * Title: Features in columns with heading and image centrally aligned (Minimal bordered).
- * Slug: icecubo/basic-features-heading-img-central-bordered
- * Categories: icecubo-basic-features
+ * Slug: icecubo/features-basic-heading-img-central-bordered
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns {"align":"wide"} -->
