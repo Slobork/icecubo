@@ -1,14 +1,24 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Team with featured message on center.
- * Slug: icecubo/section-columns-team-message-center
- * Categories: icecubo-section
+ * Title: Columns - Team with a cover message on left.
+ * Slug: icecubo/team-cover-message-left
+ * Categories: icecubo-team
  */
 ?>
 <!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"matching-colors-diagonal","contentPosition":"center center","style":{"color":[],"border":{"radius":"50px"}}} -->
+<div class="wp-block-cover" style="border-radius:50px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-matching-colors-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"xxl"} -->
+<p class="has-text-align-center has-xxl-font-size">Meet Our team!</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">John Doe</p>
 <!-- /wp:paragraph -->
@@ -44,7 +54,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><strong><strong>Lead developer</strong></strong></p>
+<p class="has-text-align-center"><strong><strong>Developer</strong></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -57,18 +67,10 @@
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"dimRatio":80,"gradient":"white-to-primary-radial-gradual","contentPosition":"center center","style":{"color":[],"border":{"radius":"10px","width":"4px"}},"borderColor":"white-ice"} -->
-<div class="wp-block-cover has-border-color has-white-ice-border-color" style="border-width:4px;border-radius:10px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim has-background-gradient has-white-to-primary-radial-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"gray-friend-dark","fontSize":"xxl"} -->
-<p class="has-text-align-center has-gray-friend-dark-color has-text-color has-xxl-font-size">Meat Our team!</p>
-<!-- /wp:paragraph --></div></div>
-<!-- /wp:cover --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">Richard Doe</p>
+<p class="has-text-align-center has-large-font-size">Rich Doe</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","className":"is-style-rounded"} -->
@@ -76,7 +78,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><strong>Marketing manager</strong></p>
+<p class="has-text-align-center"><strong>Manager</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:social-links {"layout":{"type":"flex","justifyContent":"center"}} -->
@@ -113,5 +115,7 @@
 <!-- wp:social-link {"service":"facebook"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->

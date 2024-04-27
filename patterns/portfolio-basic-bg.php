@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Portfolio in columns with background for each cover block.
- * Slug: icecubo/portfolio-bg-basic
+ * Slug: icecubo/portfolio-basic-bg
  * Categories: icecubo-portfolio
  */
 ?>
