@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Numbers in columns (with backgroud applied).
- * Slug: icecubo/numbers-bg-basic
+ * Slug: icecubo/numbers-basic-bg
  * Categories: icecubo-numbers
  */
 ?>
