@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover - with focus background and opacity applied (portfolio as placeholder).
- * Slug: icecubo/section-cover-porfolio-items-radial-gradient
- * Categories: icecubo-section
+ * Title: Create a portfolio with a cover background and opacity applied.
+ * Slug: icecubo/portfolio-cover-bg-radial-gradient
+ * Categories: icecubo-portfolio
  */
 ?>
 <!-- wp:cover {"dimRatio":60,"gradient":"darko-to-primary-radial-gradual","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","right":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","className":"is-light"} -->

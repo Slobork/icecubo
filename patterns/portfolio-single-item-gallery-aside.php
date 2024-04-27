@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Cover - with portfolio item and gallery.
- * Slug: icecubo/section-cover-portfolio-gallery
- * Categories: icecubo-section
+ * Title: Single portfolio item and a gallery placeholder aside.
+ * Slug: icecubo/portfolio-single-item-gallery-aside
+ * Categories: icecubo-portfolio
  */
 ?>
 <!-- wp:cover {"overlayColor":"primary","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}}} -->
