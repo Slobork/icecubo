@@ -27,7 +27,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<p class="has-text-align-center" style="margin-top:0">Happy clients</p>
+<p class="has-text-align-center" style="margin-top:0">Happy Clients</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"1.5rem"} -->
@@ -51,7 +51,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<p class="has-text-align-center" style="margin-top:0">Active users</p>
+<p class="has-text-align-center" style="margin-top:0">Active Users</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"1.5rem"} -->
