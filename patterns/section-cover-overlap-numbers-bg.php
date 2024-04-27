@@ -16,7 +16,7 @@
 
 <!-- wp:group {"lock":{"remove":true,"move":true},"style":{"position":{"type":""},"spacing":{"margin":{"top":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--medium)">
-<!-- wp:pattern {"slug":"icecubo/numbers-bg-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/numbers-basic-bg"} /-->
 </div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover -->

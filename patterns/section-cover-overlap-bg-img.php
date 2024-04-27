@@ -13,7 +13,7 @@
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"xl"} -->
 <p class="has-text-align-center has-xl-font-size">Replace the Cover Background Image. Tip: Use the transparent (PNG) image.</p>
 <!-- /wp:paragraph -->
-<!-- wp:pattern {"slug":"icecubo/numbers-bg-basic"} /-->
+<!-- wp:pattern {"slug":"icecubo/numbers-basic-bg"} /-->
 </div>
 <!-- /wp:group -->
 
