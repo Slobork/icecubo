@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Awesome feature.
- * Slug: icecubo/section-columns-awesome-feature
- * Categories: icecubo-section
+ * Title: Columns - Awesome feature cover mesage on the left.
+ * Slug: icecubo/features-columns-awesome-feature-left
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns -->

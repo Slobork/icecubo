@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Awesome feature with sharp splitted background.
- * Slug: icecubo/section-columns-awesome-feature-sharp
- * Categories: icecubo-section
+ * Title: Columns - Awesome feature cover message with sharp splitted background.
+ * Slug: icecubo/features-columns-awesome-feature-sharp-bg
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns -->

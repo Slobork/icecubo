@@ -1,16 +1,16 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Collection with featured message on left.
- * Slug: icecubo/section-columns-collection-message-left
- * Categories: icecubo-section
+ * Title: Collection with a cover message on the left.
+ * Slug: icecubo/features-columns-collection-message-left
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"gradient":"transparent-to-primary-radial-sharp","contentPosition":"center center","isDark":false} -->
 <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-transparent-to-primary-radial-sharp-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"white-ice","fontSize":"xxl"} -->
-<p class="has-text-align-center has-white-ice-color has-text-color has-xxl-font-size">Start exploring</p>
+<p class="has-text-align-center has-white-ice-color has-text-color has-xxl-font-size">Top features!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->

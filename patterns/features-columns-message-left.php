@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Features with message on left.
- * Slug: icecubo/section-columns-features-message-left
- * Categories: icecubo-section
+ * Title: Columns - Features with a cover message on the left.
+ * Slug: icecubo/features-columns-message-left
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns -->

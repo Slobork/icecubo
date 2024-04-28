@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Collection with featured message on center.
- * Slug: icecubo/section-columns-collection-message-center
- * Categories: icecubo-section
+ * Title: Collection with a cover message on the center.
+ * Slug: icecubo/features-columns-collection-message-center
+ * Categories: icecubo-features
  */
 ?>
 <!-- wp:columns -->
@@ -28,7 +28,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"gradient":"transparent-to-primary-radial-sharp","contentPosition":"center center","isDark":false} -->
 <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-transparent-to-primary-radial-sharp-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","textColor":"white-ice","fontSize":"large"} -->
-<p class="has-text-align-center has-white-ice-color has-text-color has-large-font-size">Start exploring!</p>
+<p class="has-text-align-center has-white-ice-color has-text-color has-large-font-size">Top features!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
