@@ -59,12 +59,12 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-page',
-            array( 'label' => esc_html__('IceCubo - Pages', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 2. Pages', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - Posts', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 3. Posts', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -99,7 +99,7 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-section',
-            array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 1. Sections', 'icecubo') )
         );
 
         register_block_pattern_category(
