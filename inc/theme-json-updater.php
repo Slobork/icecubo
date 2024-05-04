@@ -39,14 +39,19 @@ if (! function_exists('icecubo_gradients_list') ) {
                 "name"     => __("Darko to primary gradually", 'icecubo')
             ),
             array(
+                "slug"     => "primary-to-darko-gradual",
+                "gradient" => "linear-gradient(180deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
+                "name"     => __("Primary to darko gradually", 'icecubo')
+            ),
+            array(
                 "slug"     => "primary-to-transparent-linear-gradual",
                 "gradient" => "linear-gradient(180deg,var(--wp--preset--color--primary) 0%,transparent 100%)",
                 "name"     => __("Primary to transparent gradually", 'icecubo')
             ),
             array(
-                "slug"     => "primary-to-darko-gradual",
-                "gradient" => "linear-gradient(180deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
-                "name"     => __("Primary to darko gradually", 'icecubo')
+                "slug"     => "transparent-to-primary-linear-gradual",
+                "gradient" => "linear-gradient(180deg,transparent 0%, var(--wp--preset--color--primary) 100%)",
+                "name"     => __("Transparent to primary gradually", 'neda')
             ),
             array(
                 "slug"     => "darko-to-white-linear-sharp-corner",
@@ -94,6 +99,11 @@ if (! function_exists('icecubo_gradients_list') ) {
                 "name"     => __("Darko to primary gradual aside", 'icecubo')
             ),
             array(
+                "slug"     => "primary-to-darko-linear-gradual-aside",
+                "gradient" => "linear-gradient(90deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--darko) 100%)",
+                "name"     => __("Primary to darko gradual aside", 'icecubo')
+            ),
+            array(
                 "slug"     => "white-to-primary-radial-gradual",
                 "gradient" => "radial-gradient(var(--wp--preset--color--white) 0%,var(--wp--preset--color--primary) 100%)",
                 "name"     => __("White to primary radial gradually", 'icecubo')
@@ -126,7 +136,22 @@ if (! function_exists('icecubo_gradients_list') ) {
             array(
                 'slug'     => 'primary-to-transparent-gradual-radial',
                 'gradient' => 'radial-gradient(var(--wp--preset--color--primary) 0%,transparent 100%)',
-                'name'     => __('Primary to transparent gradually', 'icecubo')
+                'name'     => __('Primary to transparent gradually', 'neda')
+            ),
+            array(
+                'slug'     => 'primary-to-transparent-radial-66-break',
+                'gradient' => 'radial-gradient(var(--wp--preset--color--primary) 0%,rgba(0,0,0,0) 66%)',
+                'name'     => __('Primary to transparent focus', 'neda')
+            ),
+            array(
+                'slug'     => 'classy-to-transparent-radial-66-break',
+                'gradient' => 'radial-gradient(var(--wp--preset--color--classy-3) 0%,rgba(0,0,0,0) 66%)',
+                'name'     => __('Classy to transparent focus', 'neda')
+            ),
+            array(
+                'slug'     => 'matching-to-transparent-radial-66-break',
+                'gradient' => 'radial-gradient(var(--wp--preset--color--matching-6) 0%,rgba(0,0,0,0) 66%)',
+                'name'     => __('Matching to transparent focus', 'neda')
             ),
             array(
                 'slug'     => 'shade-2-to-primaryish-to-shade-4-diagonal',
