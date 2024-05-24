@@ -23,7 +23,7 @@
 				},
 				{
 					"color": "#b49d9d",
-					"name": "Primary ight",
+					"name": "Primary light",
 					"slug": "primary-light"
 				},
 				{
@@ -296,8 +296,8 @@
 				},
 				{
 					"colors": [
-						"#ebf1ed",
-						"#ebf1ed"
+						"#EA3D76",
+						"#f1eeeb"
 					],
 					"name": "Ice Cubo Iceish",
 					"slug": "ice-cubo-iceish"
