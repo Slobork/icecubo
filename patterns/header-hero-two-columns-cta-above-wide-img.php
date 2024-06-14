@@ -44,29 +44,36 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:paragraph -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%">
+<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 <p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><strong>Nunc egestas</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><strong>Nunc egestas</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":".25rem"}}}} -->
-<p style="margin-top:.25rem">Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p><strong>Nunc egestas</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph -->
+<p><strong>Nunc egestas</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nullam tincidunt adipiscing enim. Morbi nec metus.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
