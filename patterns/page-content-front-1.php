@@ -18,8 +18,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:media-text {"mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
-<div class="wp-block-media-text is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 1</h3>
 <!-- /wp:heading -->
 
@@ -28,8 +28,8 @@
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:media-text -->
 
-<!-- wp:media-text {"mediaPosition":"right","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
-<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
+<!-- wp:media-text {"align":"wide","mediaPosition":"right","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
+<div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 2</h3>
 <!-- /wp:heading -->
 
@@ -38,8 +38,8 @@
 <!-- /wp:paragraph --></div><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure></div>
 <!-- /wp:media-text -->
 
-<!-- wp:media-text {"mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
-<div class="wp-block-media-text is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
+<!-- wp:media-text {"align":"wide","mediaType":"image","style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large"}}}} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xxx-large);margin-bottom:var(--wp--preset--spacing--xxx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"level":3} -->
 <h3 class="wp-block-heading">Project 3</h3>
 <!-- /wp:heading -->
 
