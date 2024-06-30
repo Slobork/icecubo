@@ -7,8 +7,8 @@
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"dimRatio":60,"gradient":"primary-light-transparent-sharp-stack","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"bottom":"6rem"}},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"textColor":"darko-down","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull has-darko-down-color has-text-color has-link-color" style="padding-bottom:6rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-primary-light-transparent-sharp-stack-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:cover {"dimRatio":60,"gradient":"primary-light-transparent-sharp-stack","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"bottom":"6rem","top":"var:preset|spacing|small"}},"elements":{"link":{"color":{"text":"var:preset|color|darko-down"}}}},"textColor":"darko-down","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull has-darko-down-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:6rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-primary-light-transparent-sharp-stack-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 
