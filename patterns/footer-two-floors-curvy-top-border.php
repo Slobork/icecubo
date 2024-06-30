@@ -7,8 +7,8 @@
  * Block Types: core/template-part/footer
  */
 ?>
-<!-- wp:group {"tagName":"footer","align":"wide","style":{"border":{"radius":"120px","top":{"color":"var:preset|color|friend-dark","width":"5px"},"right":{},"bottom":{},"left":{}},"spacing":{"padding":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group alignwide" style="border-radius:120px;border-top-color:var(--wp--preset--color--friend-dark);border-top-width:5px;padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns -->
+<!-- wp:group {"align":"wide","style":{"border":{"radius":"120px","top":{"color":"var:preset|color|friend-dark","width":"5px"},"right":{},"bottom":{},"left":{}},"spacing":{"padding":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="border-radius:120px;border-top-color:var(--wp--preset--color--friend-dark);border-top-width:5px;padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:group {"style":{"dimensions":{"minHeight":""},"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":50,"shouldSyncIcon":true,"style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
@@ -92,5 +92,5 @@
 <div class="wp-block-group has-small-font-size" style="border-top-color:var(--wp--preset--color--friend-dark);border-top-width:2px;padding-top:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph -->
 <p><a href="#">About Us</a> - <a href="#">Contact Us</a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></footer>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

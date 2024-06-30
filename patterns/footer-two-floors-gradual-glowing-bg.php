@@ -7,8 +7,8 @@
  * Block Types: core/template-part/footer
  */
 ?>
-<!-- wp:cover {"dimRatio":50,"gradient":"primary-to-transparent-rushly-radial","isDark":false,"tagName":"footer","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-cover alignwide is-light" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-primary-to-transparent-rushly-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
+<!-- wp:cover {"dimRatio":50,"gradient":"primary-to-transparent-rushly-radial","isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-primary-to-transparent-rushly-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:separator {"backgroundColor":"primary-dark","className":"is-style-wide"} -->
 <hr class="wp-block-separator has-text-color has-primary-dark-color has-alpha-channel-opacity has-primary-dark-background-color has-background is-style-wide"/>
 <!-- /wp:separator -->
@@ -99,5 +99,5 @@
 Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div></footer>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->
