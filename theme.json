@@ -711,6 +711,11 @@
 			"title": "Header"
 		},
 		{
+			"area": "header",
+			"name": "header-hero-gradient-gradual-dark-primary",
+			"title": "Header With A Hero Section (Front-page default)"
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
