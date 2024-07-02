@@ -1,13 +1,11 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Layout front page (2).
- * Slug: icecubo/page-content-front-2
- * Categories: icecubo-page
+ * Title: Basic Layout used on the front page (2). Features and testimonials sections.
+ * Slug: icecubo/page-front-2-section
+ * Categories: icecubo-section
  */
 ?>
-<!-- wp:pattern {"slug":"icecubo/header-hero-gradient-rushly-primary-transparent"} /-->
-
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
 <h2 class="wp-block-heading has-text-align-center">Lorem <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-classy-3-color">ipsum dolor sit amet</mark>, consectetur adipiscing elit, sed do eiusmod <mark style="background-color:rgba(0, 0, 0, 0)" class="has-inline-color has-classy-3-color">tempor</mark></h2>
