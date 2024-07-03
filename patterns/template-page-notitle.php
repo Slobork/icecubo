@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Content for the page template without a title.
+ * Title: Content part for the page template without a title.
  * Slug: icecubo/template-page-notitle
  * Categories: hidden
  * Inserter:false
