@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Main part of the page, for the page and alike-page templates.
- * Slug: icecubo/page-main
+ * Slug: icecubo/template-page-main
  * Categories: hidden
  * Inserter: false
  */
