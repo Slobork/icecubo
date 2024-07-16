@@ -5,7 +5,7 @@
  * Slug: icecubo/page-modal-magazine-1
  * Categories: hidden
  * Inserter: false
- * Template Types: home
+ * Template Types: index
  */
 ?>
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->

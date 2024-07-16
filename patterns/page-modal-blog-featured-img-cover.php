@@ -5,7 +5,7 @@
  * Slug: icecubo/page-modal-blog-featured-img-cover
  * Categories: hidden
  * Inserter: false
- * Template Types: home
+ * Template Types: index
  */
 ?>
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
