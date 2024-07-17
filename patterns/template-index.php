@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Classic Blog - post's title first.
- * Slug: icecubo/index
+ * Slug: icecubo/template-index
  * Categories: hidden
  * Inserter: false
  */
