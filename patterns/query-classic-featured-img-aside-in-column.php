@@ -7,7 +7,7 @@
  * Block Types: core/query
  */
 ?>
-<!-- wp:query {"query":{"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":true,"perPage":10},"layout":{"type":"default"}} -->
+<!-- wp:query {"query":{"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","type":"constrained","inherit":false,"perPage":10},"layout":{"type":"default"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"is-style-default","layout":{"type":"default","columnCount":3}} -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
