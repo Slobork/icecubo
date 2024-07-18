@@ -26,8 +26,8 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|darko-down-bottom"}}}},"textColor":"darko-down-bottom","className":"is-style-default"} -->
-<ul class="is-style-default has-darko-down-bottom-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark","className":"is-style-default"} -->
+<ul class="is-style-default has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -68,8 +68,8 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|darko-down-bottom"}}}},"textColor":"darko-down-bottom","className":"is-style-default"} -->
-<ul class="is-style-default has-darko-down-bottom-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark","className":"is-style-default"} -->
+<ul class="is-style-default has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -110,8 +110,8 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|darko-down-bottom"}}}},"textColor":"darko-down-bottom"} -->
-<ul class="has-darko-down-bottom-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark"} -->
+<ul class="has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 

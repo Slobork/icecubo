@@ -23,21 +23,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-basic-general',
-            array( 'label' => esc_html__('IceCubo - Basic (General)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-basic-features',
-            array( 'label' => esc_html__('IceCubo - Basic (Features)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-basic-testimonials',
-            array( 'label' => esc_html__('IceCubo - Basic (Testimonials)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
             'icecubo-box',
             array( 'label' => esc_html__('IceCubo - Boxes', 'icecubo') )
         );
@@ -45,6 +30,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-faq',
             array( 'label' => esc_html__('IceCubo - FAQ', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-features',
+            array( 'label' => esc_html__('IceCubo - Features', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -63,13 +53,18 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-numbers',
+            array( 'label' => esc_html__('IceCubo - Numbers', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-page',
-            array( 'label' => esc_html__('IceCubo - Pages', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 2. Pages', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - Posts', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 3. Posts', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -88,6 +83,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-portfolio',
+            array( 'label' => esc_html__('IceCubo - Portfolio', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-post-header',
             array( 'label' => esc_html__('IceCubo - Post headers', 'icecubo') )
         );
@@ -99,7 +99,17 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-section',
-            array( 'label' => esc_html__('IceCubo - Sections', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 1. Sections', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-team',
+            array( 'label' => esc_html__('IceCubo - Team', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-testimonials',
+            array( 'label' => esc_html__('IceCubo - Testimonials', 'icecubo') )
         );
 
     }

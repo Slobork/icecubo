@@ -7,8 +7,8 @@
  * Block Types: core/template-part/footer
  */
 ?>
-<!-- wp:group {"tagName":"footer","align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}},"spacing":{"padding":{"right":"0","left":"0"}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"},"fontSize":"small"} -->
-<footer class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-right:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}},"spacing":{"padding":{"right":"0","left":"0"}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"},"fontSize":"small"} -->
+<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-right:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:paragraph -->
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
@@ -99,10 +99,10 @@
 <!-- wp:social-links {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"className":"has-icon-color has-icon-background-color is-style-default"} -->
 <ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
-<!-- wp:social-link {"url":"#","service":"twitter"} /-->
+<!-- wp:social-link {"url":"#","service":"x"} /-->
 
 <!-- wp:social-link {"url":"#","service":"linkedin"} /--></ul>
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></footer>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

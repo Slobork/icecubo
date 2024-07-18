@@ -7,9 +7,9 @@
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"tagName":"header","align":"full","style":{"spacing":{"padding":{"bottom":"5rem"}}}} -->
-<header class="wp-block-cover alignfull is-light" style="padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"bottom":"5rem","top":"var:preset|spacing|small"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 
@@ -44,5 +44,5 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text --></div>
-<!-- /wp:group --></div></header>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->

@@ -663,7 +663,7 @@
 				}
 			},
 			"core/navigation": {
-				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}"
+				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}& .wp-element-button {color:inherit; background: transparent; border-color: inherit}"
 			},
 			"core/post-author": {
 				"css": "{align-items: center;}& .wp-block-post-author__avatar img {vertical-align: middle; padding: 4px 0; border-radius: 50%;}& .wp-block-post-author__avatar {margin-right: 0;}"
@@ -709,6 +709,11 @@
 			"area": "header",
 			"name": "header",
 			"title": "Header"
+		},
+		{
+			"area": "header",
+			"name": "header-hero-gradient-gradual-dark-primary",
+			"title": "Header With A Hero Section (Front-page default)"
 		},
 		{
 			"area": "footer",

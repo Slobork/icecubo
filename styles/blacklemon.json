@@ -322,9 +322,6 @@
 		},
 		"blocks": {
 			"core/post-template": {
-				"color": {
-					"text": "var(--wp--preset--color--darko-down-bottom)"
-				},
 				"elements": {
 					"link": {
 						"color": {

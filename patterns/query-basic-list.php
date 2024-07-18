@@ -24,5 +24,6 @@
 <!-- wp:query-pagination-previous /-->
 <!-- wp:query-pagination-next /-->
 <!-- /wp:query-pagination -->
+<!-- wp:pattern {"slug":"icecubo/query-part-no-results"} /-->
 </div>
 <!-- /wp:query -->

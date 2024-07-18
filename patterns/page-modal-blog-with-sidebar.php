@@ -5,7 +5,7 @@
  * Slug: icecubo/page-modal-blog-with-sidebar
  * Categories: hidden
  * Inserter: false
- * Template Types: front-page, home
+ * Template Types: index
  */
 ?>
 <!-- wp:template-part {"slug":"header","tagName":"header"} /-->
