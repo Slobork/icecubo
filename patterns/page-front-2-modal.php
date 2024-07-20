@@ -5,7 +5,7 @@
  * Slug: icecubo/page-front-2-modal
  * Categories: hidden
  * Inserter: false
- * Template Types: front-page, page
+ * Template Types: front-page
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Header"},"tagName":"header","align":"full","layout":{"type":"default"}} -->
