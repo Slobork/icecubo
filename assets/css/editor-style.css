@@ -34,11 +34,16 @@
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {display: none !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {display: inline !important;}
-    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {display: grid !important; grid-column-gap: 2em;}
-    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {grid-template-columns: repeat(2, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(3, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(4, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > ul.wp-block-page-list {display: grid !important; grid-column-gap: 2em;}
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(2, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(3, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(4, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(5, 1fr);}
 }
 
 /**
