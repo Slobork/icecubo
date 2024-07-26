@@ -130,6 +130,11 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  * Blocks
  */
 
+/*
+ * Logo - remove any background effects on hover (they are actually added on links, but logo is a link as well)
+ */
+ .wp-block-site-logo a:hover, .wp-block-site-title a:hover {background: transparent !important;}
+
 /**
  * @Since 1.1.9
  * Moving here from an individual .css file for the paragraphs, headings and post-title,
