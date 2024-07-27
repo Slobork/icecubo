@@ -98,14 +98,15 @@ pre { overflow: auto; }
  * text-decoration in links is important for accessibility. However,
  * remove the text decoration from the links that are already highlighted
  */
- body.blog main h2 a,
- body.archive main h2 a,
- body.search main h2 a,
- .wp-block-query-pagination a,
- .wp-block-post-terms a,
- .wp-block-post-navigation-link a,
- .remove-text-decor a,
- a.button {
+body.blog main h2 a,
+body.archive main h2 a,
+body.search main h2 a,
+.wp-block-query .wp-block-post-title a,
+.wp-block-query-pagination a,
+.wp-block-post-terms a,
+.wp-block-post-navigation-link a,
+.remove-text-decor a,
+a.button {
      text-decoration: none;
 }
 
