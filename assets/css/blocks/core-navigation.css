@@ -21,7 +21,7 @@
 .has-modal-open .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {line-height: 2.3;}
 
 /*On hover, push the sub-menu's item a bit from the left*/
-.wp-block-navigation li.wp-block-navigation-item ul a:hover {transform: translateX(3px);}
+.wp-block-navigation li.wp-block-navigation-item ul a:hover > span.wp-block-navigation-item__label {transform: translateX(2px); transition: transform .2s ease-in-out;}
 
 /* Menu item - on hover Standard behavior */
 .wp-block-navigation.is-style-icecubo-nav-mark-hovers ul:not(.wp-block-navigation__submenu-container) > li.wp-block-navigation-item:not(.has-child):hover { box-shadow: 0 2px 0; transition: box-shadow .2s ease-in-out; }
