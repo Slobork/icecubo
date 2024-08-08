@@ -293,6 +293,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     /* Force behavior on mobile */
     .mob-force-flexwrap {flex-wrap: wrap !important;}
     .mob-force-flexdir-columns {flex-direction: column !important;}
+    .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
 }
