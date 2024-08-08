@@ -200,3 +200,13 @@
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
+
+/* Small screens */
+@media (max-width: 599px) {
+    /* Force behavior on mobile */
+    .mob-force-flexwrap {flex-wrap: wrap !important;}
+    .mob-force-flexdir-columns {flex-direction: column !important;}
+    .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
+    .mob-minheight-no {min-height: unset !important;}
+    .mob-display-out { display: none !important;}
+}
