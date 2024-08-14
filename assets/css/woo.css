@@ -1,3 +1,6 @@
+/* Space before the footer */
+.woocommerce-page main {padding-bottom: 3.5rem;}
+
 /* Woo buttons */
 .woocommerce a.button,
 .woocommerce button.single_add_to_cart_button,
