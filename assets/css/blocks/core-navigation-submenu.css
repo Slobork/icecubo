@@ -1,3 +1,6 @@
+/* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
+.wp-block-navigation__submenu-container {z-index: 99 !important;}
+
 /* Mega Menu - Columns */
 @media (min-width: 600px)
 {
