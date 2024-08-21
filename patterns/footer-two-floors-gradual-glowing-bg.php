@@ -7,13 +7,13 @@
  * Block Types: core/template-part/footer
  */
 ?>
-<!-- wp:cover {"dimRatio":50,"gradient":"primary-to-transparent-rushly-radial","isDark":false,"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignwide is-light" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-primary-to-transparent-rushly-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:separator {"backgroundColor":"primary-dark","className":"is-style-wide"} -->
+<!-- wp:cover {"dimRatio":50,"gradient":"primary-to-transparent-rushly-radial","isDark":false,"metadata":{"categories":["icecubo-footer"],"patternName":"icecubo/footer-2floors-gradual-glowing-bg","name":"Two floors - Gradual glowing backgroud and horizontal lines at the top."},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignwide is-light" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-primary-to-transparent-rushly-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"hero-contrast-2"} -->
+<div class="wp-block-group has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:separator {"className":"is-style-wide","backgroundColor":"primary-dark"} -->
 <hr class="wp-block-separator has-text-color has-primary-dark-color has-alpha-channel-opacity has-primary-dark-background-color has-background is-style-wide"/>
 <!-- /wp:separator -->
 
-<!-- wp:separator {"backgroundColor":"primary-dark","className":"is-style-wide"} -->
+<!-- wp:separator {"className":"is-style-wide","backgroundColor":"primary-dark"} -->
 <hr class="wp-block-separator has-text-color has-primary-dark-color has-alpha-channel-opacity has-primary-dark-background-color has-background is-style-wide"/>
 <!-- /wp:separator -->
 
@@ -27,7 +27,7 @@
 <p style="line-height:1.6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"size":"has-normal-icon-size","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-small","left":"var:preset|spacing|xxx-small"}}},"className":"is-style-logos-only","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<!-- wp:social-links {"size":"has-normal-icon-size","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-small","left":"var:preset|spacing|xxx-small"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <ul class="wp-block-social-links has-normal-icon-size is-style-logos-only"><!-- wp:social-link {"url":"#","service":"facebook"} /-->
 
 <!-- wp:social-link {"url":"#","service":"x"} /-->
@@ -38,11 +38,11 @@
 
 <!-- wp:column {"width":"30%"} -->
 <div class="wp-block-column" style="flex-basis:30%"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textDecoration":"underline"}},"className":"has-medium-font-size","fontSize":"medium"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-medium-font-size","style":{"typography":{"textDecoration":"underline"}},"fontSize":"medium"} -->
 <p class="has-medium-font-size" style="text-decoration:underline">Services</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"},"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-small-font-size"><!-- wp:paragraph -->
 <p><a href="#">Web design</a></p>
 <!-- /wp:paragraph -->
@@ -64,11 +64,11 @@
 
 <!-- wp:column {"width":"30%"} -->
 <div class="wp-block-column" style="flex-basis:30%"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textDecoration":"underline"}},"className":"has-medium-font-size","fontSize":"medium"} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"has-medium-font-size","style":{"typography":{"textDecoration":"underline"}},"fontSize":"medium"} -->
 <p class="has-medium-font-size" style="text-decoration:underline">Privacy</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","orientation":"vertical"},"fontSize":"small"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"fontSize":"small","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-small-font-size"><!-- wp:paragraph -->
 <p><a href="#">Privacy Policy</a></p>
 <!-- /wp:paragraph -->

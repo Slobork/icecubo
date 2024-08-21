@@ -20,14 +20,14 @@
 <p class="has-small-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">When you need to start smoothly with essential features</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","width":100,"style":{"border":{"radius":"6px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-highlight-1-background-color has-background wp-element-button" style="border-radius:6px">Buy now</a></div>
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark","className":"is-style-default"} -->
-<ul class="is-style-default has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -62,14 +62,14 @@
 <p class="has-small-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">All from the hobby plan plus advanced features for freelancers</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","width":100,"style":{"border":{"radius":"6px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-highlight-1-background-color has-background wp-element-button" style="border-radius:6px">Buy now</a></div>
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark","className":"is-style-default"} -->
-<ul class="is-style-default has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -104,14 +104,14 @@
 <p class="has-small-font-size" style="margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px">Great for those who need the professional features</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","width":100,"style":{"border":{"radius":"6px"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-highlight-1-background-color has-background wp-element-button" style="border-radius:6px">Buy now</a></div>
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"style":{"elements":{"link":{"color":{"text":"var:preset|color|gray-dark"}}}},"textColor":"gray-dark"} -->
-<ul class="has-gray-dark-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
