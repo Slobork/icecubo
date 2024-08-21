@@ -26,8 +26,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-dark","textColor":"hero-contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast"}}}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-hero-contrast-color has-primary-dark-background-color has-text-color has-background has-link-color wp-element-button"></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"primary-dark","textColor":"handle-contrast","style":{"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast"}}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-handle-contrast-color has-primary-dark-background-color has-text-color has-background has-link-color wp-element-button"></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div></div>
 <!-- /wp:media-text --></div>

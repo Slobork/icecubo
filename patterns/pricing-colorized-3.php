@@ -21,13 +21,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"handle-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-handle-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
-<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-2"}}}},"textColor":"handle-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-handle-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -63,13 +63,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"handle-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-handle-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
-<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-2"}}}},"textColor":"handle-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-handle-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 
@@ -105,13 +105,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"hero-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-3"}}}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-hero-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--x-large)"><!-- wp:button {"backgroundColor":"highlight-1","textColor":"handle-contrast-3","width":100,"style":{"border":{"radius":"6px"},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-3"}}}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-handle-contrast-3-color has-highlight-1-background-color has-text-color has-background has-link-color wp-element-button" style="border-radius:6px">Buy now</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|hero-contrast-2"}}}},"textColor":"hero-contrast-2"} -->
-<ul class="wp-block-list is-style-default has-hero-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
+<!-- wp:list {"className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-2"}}}},"textColor":"handle-contrast-2"} -->
+<ul class="wp-block-list is-style-default has-handle-contrast-2-color has-text-color has-link-color"><!-- wp:list-item -->
 <li>Feature item #</li>
 <!-- /wp:list-item -->
 

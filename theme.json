@@ -282,6 +282,21 @@
 					"slug": "highlight-3",
 					"color": "#eee8a9",
 					"name": "Highlight 3"
+				},
+				{
+					"color": "#fefefe",
+					"name": "For contrast always light",
+					"slug": "handle-contrast"
+				},
+				{
+					"color": "#323232",
+					"name": "For contrast light/dark",
+					"slug": "handle-contrast-2"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "For contrast - mainly buttons",
+					"slug": "handle-contrast-3"
 				}
 			],
 			"duotone": [
