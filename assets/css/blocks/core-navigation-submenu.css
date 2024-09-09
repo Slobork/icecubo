@@ -4,6 +4,7 @@
 /* Mega Menu - Columns */
 @media (min-width: 600px)
 {
+    ul.is-style-b2-nav-submenu-mega {padding: 20px !important;}
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li li {display: block !important;}
