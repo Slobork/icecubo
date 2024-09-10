@@ -278,18 +278,23 @@
 				},
 				{
 					"color": "#fefefe",
-					"name": "For contrast always light",
+					"name": "For contrast - always light",
 					"slug": "handle-contrast"
 				},
 				{
 					"color": "#fdfdfd",
-					"name": "For contrast light/dark",
+					"name": "For contrast - oposite the design skin (light/dark)",
 					"slug": "handle-contrast-2"
 				},
 				{
 					"color": "#262626",
 					"name": "For contrast - mainly buttons",
 					"slug": "handle-contrast-3"
+				},
+				{
+					"color": "var(--wp--preset--color--darko)",
+					"name": "For contrast - mimic design skin background",
+					"slug": "handle-contrast-4"
 				}
 			],
 			"duotone": [
