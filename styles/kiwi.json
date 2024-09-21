@@ -151,7 +151,7 @@
 					"slug": "matching-5"
 				},
 				{
-					"color": "#098e40",
+					"color": "#0b7e3b",
 					"name": "Matching 6",
 					"slug": "matching-6"
 				},
@@ -294,6 +294,11 @@
 					"color": "var(--wp--preset--color--white)",
 					"name": "For contrast - mimic desing skin background",
 					"slug": "handle-contrast-4"
+				},
+				{
+					"color": "#ffeed7",
+					"name": "For contrast - primary",
+					"slug": "handle-contrast-5"
 				}
 			],
 			"duotone": [

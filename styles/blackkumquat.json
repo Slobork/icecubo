@@ -294,6 +294,11 @@
 					"color": "var(--wp--preset--color--darko)",
 					"name": "For contrast - mimic design skin background",
 					"slug": "handle-contrast-4"
+				},
+				{
+					"color": "#5D4410",
+					"name": "For contrast - primary",
+					"slug": "handle-contrast-5"
 				}
 			],
 			"duotone": [
