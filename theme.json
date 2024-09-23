@@ -1,9 +1,10 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"version": 3,
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
+			"allowEditing": true,
 			"contentSize": "min(83%, 960px)",
 			"wideSize": "min(93%, 1280px)"
 		},
@@ -367,6 +368,8 @@
 			]
 		},
 		"spacing": {
+			"customSpacingSize": true,
+			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
 					"name": "XXX small",
@@ -424,6 +427,8 @@
 			]
 		},
 		"typography": {
+			"customFontSize": true,
+			"defaultFontSizes": false,
 			"writingMode": true,
 			"fontFamilies": [
 				{
