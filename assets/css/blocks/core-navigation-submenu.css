@@ -1,6 +1,15 @@
 /* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
 .wp-block-navigation__submenu-container {z-index: 99 !important;}
 
+/* Spacing for the sub-menu items*/
+.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link {
+    display: inline-block;
+    padding: 0 1em;
+}
+.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {
+    padding: .45em .25em
+}
+
 /* Mega Menu - Columns */
 @media (min-width: 600px)
 {
