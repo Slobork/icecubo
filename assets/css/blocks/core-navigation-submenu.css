@@ -1,19 +1,18 @@
-/* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
-.wp-block-navigation__submenu-container {z-index: 99 !important;}
+.wp-block-navigation ul.wp-block-navigation__submenu-container  {
+    padding: .35em;
+    /* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
+    z-index: 99 !important;
+    border-radius: 20px;
+}
 
 /* Spacing for the sub-menu items*/
-.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link {
-    display: inline-block;
-    padding: 0 1em;
-}
 .wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {
-    padding: .45em .25em
+    padding: 0.35em 1em
 }
 
 /* Mega Menu - Columns */
 @media (min-width: 600px)
 {
-    ul.is-style-b2-nav-submenu-mega {padding: 20px !important;}
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li li {display: block !important;}
