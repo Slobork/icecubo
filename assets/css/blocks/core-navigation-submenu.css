@@ -6,9 +6,7 @@
 }
 
 /* Spacing for the sub-menu items*/
-.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {
-    padding: 0.35em 1em
-}
+.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {padding: .35em 1em}
 
 /* Mega Menu - Columns */
 @media (min-width: 600px)
