@@ -29,8 +29,8 @@
 <p class="has-text-align-center has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-large"}}}} -->
-<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--xx-large)"><div class="wp-block-media-text__content"><!-- wp:heading -->
+<!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-large"}}}} -->
+<div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--x-large)"><div class="wp-block-media-text__content"><!-- wp:heading -->
 <h2 class="wp-block-heading">It's a Block Time!</h2>
 <!-- /wp:heading -->
 

@@ -29,8 +29,8 @@
 <p class="has-text-align-center has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:media-text {"align":"","mediaType":"image","className":"has-media-on-the-right has-white-color has-text-color","style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-large"}},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast"}}}},"textColor":"handle-contrast"} -->
-<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color has-handle-contrast-color has-link-color" style="margin-top:var(--wp--preset--spacing--xx-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3"} -->
+<!-- wp:media-text {"align":"","mediaType":"image","className":"has-media-on-the-right has-white-color has-text-color","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-large"}},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast"}}}},"textColor":"handle-contrast"} -->
+<div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color has-handle-contrast-color has-link-color" style="margin-top:var(--wp--preset--spacing--x-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3"} -->
 <h2 class="wp-block-heading has-highlight-3-color has-text-color">It's a Block Time!</h2>
 <!-- /wp:heading -->
 
