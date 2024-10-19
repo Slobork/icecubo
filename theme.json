@@ -556,7 +556,7 @@
 	},
 	"styles": {
 		"spacing": {
-			"blockGap": "var(--wp--custom--spacing-xxl)"
+			"blockGap": "var(--wp--preset--spacing--medium)"
 		},
 		"color": {
 			"background": "white",
