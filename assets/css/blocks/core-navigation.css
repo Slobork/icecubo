@@ -46,3 +46,32 @@
 .wp-block-navigation.is-style-icecubo-nav-hovers-top    ul.is-style-icecubo-nav-submenu-mega li.wp-block-navigation-item:not(.wp-block-navigation-link) > a:hover { box-shadow: 0 -2px 0; transition: box-shadow .2s ease-in-out; }
 .wp-block-navigation.is-style-icecubo-nav-hovers-bottom ul.is-style-icecubo-nav-submenu-mega li.wp-block-navigation-item:not(.wp-block-navigation-link) > a:hover,
 .wp-block-navigation.is-style-icecubo-nav-hovers-2      ul.is-style-icecubo-nav-submenu-mega li.wp-block-navigation-item:not(.wp-block-navigation-link) > a:hover { box-shadow: 0 2px 0; transition: box-shadow .2s ease-in-out; }
+
+/*On buttons's hover in the nav set a shadow*/
+nav .wp-block-search__button.wp-element-button:hover,
+nav .wp-block-button__link:hover {
+    box-shadow: var(--wp--custom--button-shadow-small);
+    transition: all .2s ease-in-out;
+}
+
+/*Buttons in the nav (search, +)*/
+nav .wp-block-buttons > .wp-block-button .wp-element-button {
+    padding: .25em 1em;
+}
+nav .wp-block-search__button {
+    padding: .25em 1em;
+    margin: auto;
+    font-size: 1rem;
+}
+nav .wp-block-search__button svg {
+    margin: 7px -2px;
+    min-height: unset;
+    min-width: unset;
+}
+
+/*On buttons's hover in the nav set a shadow*/
+nav .wp-block-search__button.wp-element-button:hover,
+nav .wp-block-button__link:hover {
+    box-shadow: var(--wp--custom--button-shadow-small);
+    transition: all .2s ease-in-out;
+}
