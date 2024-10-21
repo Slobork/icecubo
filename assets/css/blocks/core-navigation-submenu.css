@@ -1,4 +1,4 @@
-.wp-block-navigation ul.wp-block-navigation__submenu-container  {
+.wp-block-navigation ul.wp-block-navigation__submenu-container {
     padding: .35em;
     /* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
     z-index: 99 !important;
