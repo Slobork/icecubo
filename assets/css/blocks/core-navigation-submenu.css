@@ -1,3 +1,14 @@
+/* Sub-menu on the large screens, i.e. the modal isn't open */
+.wp-block-navigation .wp-block-navigation__responsive-container:not(.has-modal-open) .has-child >.wp-block-navigation__submenu-container {
+    padding: .35em;
+    border-radius: 20px;
+    /* Give the submenu large z-inex - it was overlapped by the woo's "Sale" tag on its shop page and category page */
+    z-index: 99;
+}
+
+/* Spacing for the sub-menu items*/
+.wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {padding: .35em 1em}
+
 /* Mega Menu - Columns */
 @media (min-width: 600px)
 {

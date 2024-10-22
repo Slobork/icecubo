@@ -5,7 +5,7 @@
  * Slug: icecubo/page-modal-front-1
  * Categories: hidden
  * Inserter: false
- * Template Types: front-page, page
+ * Template Types: front-page
  */
 ?>
 <!-- wp:template-part {"slug":"header-hero-gradient-gradual-dark-primary","tagName":"header"} /-->

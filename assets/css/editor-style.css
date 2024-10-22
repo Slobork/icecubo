@@ -7,8 +7,10 @@
  * - Alternatively, for the post titles, it could be done in templates, on each post-title block,
  * but it wouldn't impact the in-content h1 when it's the first element in a group block.
  * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
- :where(body .is-layout-flow,body .is-layout-constrained) > h1:first-child:first-child:first-child {margin-top: var(--wp--preset--spacing--medium);}
- :where(body .is-layout-flow,body .is-layout-constrained) > :where(h2,h3,h4,h5,h6):first-child:first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
+ *
+ * - This potentially could be utilized, along the used declaration, to target the larger heading scope, 
+ * but the problem is that it's impacting the Headings in the Header-Hero sections and is making a large space there.
+ * :where(.is-layout-flow > *,.is-layout-constrained > *) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title) {margin-top: var(--wp--preset--spacing--x-large);}
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
@@ -34,11 +36,16 @@
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {display: none !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {visibility: visible !important; opacity: 1 !important; width: max-content !important; height: auto !important; position: relative !important; left: 0 !important; border: 0 !important;}
     .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container .wp-block-navigation-item > .wp-block-navigation__submenu-container {display: inline !important;}
-    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {display: grid !important; grid-column-gap: 2em;}
-    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container {grid-template-columns: repeat(2, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(3, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(4, 1fr);}
-    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container {grid-template-columns: repeat(5, 1fr);}
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > ul.wp-block-page-list {display: grid !important; grid-column-gap: 2em;}
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(2, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm3 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(3, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm4 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(4, 1fr);}
+    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container,
+    .is-style-icecubo-nav-submenu-mega.mm5 > .wp-block-navigation__submenu-container > ul.wp-block-page-list {grid-template-columns: repeat(5, 1fr);}
 }
 
 /**
@@ -65,7 +72,7 @@
 .is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
 .is-style-icecubo-underline-color-primary::after {content: ""; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}
 .is-style-icecubo-aside-lines {display: flex; align-items: center;}
-.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 20px; flex: 1 0 20px;}
+.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 15px; flex: 1 0 20px;}
 .is-style-icecubo-asterisk-over:before { content: ''; height: 3rem; background: currentColor; clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z'); display: block;}
 .is-style-icecubo-star-over:before { content: '\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}
 
@@ -195,3 +202,13 @@
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
+
+/* Small screens */
+@media (max-width: 599px) {
+    /* Force behavior on mobile */
+    .mob-force-flexwrap {flex-wrap: wrap !important;}
+    .mob-force-flexdir-columns {flex-direction: column !important;}
+    .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
+    .mob-minheight-no {min-height: unset !important;}
+    .mob-display-out { display: none !important;}
+}

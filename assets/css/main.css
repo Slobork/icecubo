@@ -91,6 +91,10 @@ pre { overflow: auto; }
  * - Alternatively, for the post titles, it could be done in templates, on each post-title block,
  * but it wouldn't impact the in-content h1 when it's the first element in a group block.
  * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
+ *
+ * - This potentially could be utilized, along the used declaration, to target the larger heading scope, 
+ * but the problem is that it's impacting the Headings in the Header-Hero sections and is making a large space there.
+ * :where(.is-layout-flow > *,.is-layout-constrained > *) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title) {margin-top: var(--wp--preset--spacing--x-large);}
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
@@ -98,14 +102,15 @@ pre { overflow: auto; }
  * text-decoration in links is important for accessibility. However,
  * remove the text decoration from the links that are already highlighted
  */
- body.blog main h2 a,
- body.archive main h2 a,
- body.search main h2 a,
- .wp-block-query-pagination a,
- .wp-block-post-terms a,
- .wp-block-post-navigation-link a,
- .remove-text-decor a,
- a.button {
+body.blog main h2 a,
+body.archive main h2 a,
+body.search main h2 a,
+.wp-block-query .wp-block-post-title a,
+.wp-block-query-pagination a,
+.wp-block-post-terms a,
+.wp-block-post-navigation-link a,
+.remove-text-decor a,
+a.button {
      text-decoration: none;
 }
 
@@ -130,6 +135,11 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  * Blocks
  */
 
+/*
+ * Logo - remove any background effects on hover (they are actually added on links, but logo is a link as well)
+ */
+ .wp-block-site-logo a:hover, .wp-block-site-title a:hover {background: transparent !important;}
+
 /**
  * @Since 1.1.9
  * Moving here from an individual .css file for the paragraphs, headings and post-title,
@@ -145,7 +155,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 .is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
 .is-style-icecubo-underline-color-primary::after {content: ""; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}
 .is-style-icecubo-aside-lines {display: flex; align-items: center;}
-.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 20px; flex: 1 0 20px;}
+.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 15px; flex: 1 0 20px;}
 .is-style-icecubo-asterisk-over:before { content: ''; height: 3rem; background: currentColor; clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z'); display: block;}
 .is-style-icecubo-star-over:before { content: '\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}
 
@@ -287,6 +297,7 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     /* Force behavior on mobile */
     .mob-force-flexwrap {flex-wrap: wrap !important;}
     .mob-force-flexdir-columns {flex-direction: column !important;}
+    .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
 }

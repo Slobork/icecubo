@@ -18,7 +18,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|large"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"spacing":{"padding":{"top":"5px","bottom":"5px","left":"var:preset|spacing|xx-small","right":"var:preset|spacing|xx-small"}},"typography":{"fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}}},"backgroundColor":"primaryish-light","textColor":"primary-dark","className":"is-style-icecubo-tearbox-left-p","fontSize":"small"} -->
 <p class="is-style-icecubo-tearbox-left-p has-primary-dark-color has-primaryish-light-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-top:5px;padding-right:var(--wp--preset--spacing--xx-small);padding-bottom:5px;padding-left:var(--wp--preset--spacing--xx-small);font-style:normal;font-weight:700">Built with IceCubo</p>
 <!-- /wp:paragraph -->

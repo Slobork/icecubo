@@ -273,6 +273,31 @@
 					"slug": "highlight-3",
 					"color": "#F2F2AF",
 					"name": "Highlight 3"
+				},
+				{
+					"color": "#fefefe",
+					"name": "For contrast - always light",
+					"slug": "handle-contrast"
+				},
+				{
+					"color": "#fdfdfd",
+					"name": "For contrast - oposite the design skin (light/dark)",
+					"slug": "handle-contrast-2"
+				},
+				{
+					"color": "#262626",
+					"name": "For contrast - mainly buttons",
+					"slug": "handle-contrast-3"
+				},
+				{
+					"color": "var(--wp--preset--color--darko)",
+					"name": "For contrast - mimic design skin background",
+					"slug": "handle-contrast-4"
+				},
+				{
+					"color": "#4A4800",
+					"name": "For contrast - primary",
+					"slug": "handle-contrast-5"
 				}
 			],
 			"duotone": [

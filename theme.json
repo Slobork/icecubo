@@ -1,9 +1,10 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+	"version": 3,
 	"settings": {
 		"appearanceTools": true,
 		"layout": {
+			"allowEditing": true,
 			"contentSize": "min(83%, 960px)",
 			"wideSize": "min(93%, 1280px)"
 		},
@@ -282,6 +283,31 @@
 					"slug": "highlight-3",
 					"color": "#eee8a9",
 					"name": "Highlight 3"
+				},
+				{
+					"color": "#fefefe",
+					"name": "For contrast - always light",
+					"slug": "handle-contrast"
+				},
+				{
+					"color": "#323232",
+					"name": "For contrast - oposite the desing skin (light/dark)",
+					"slug": "handle-contrast-2"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "For contrast - mainly buttons",
+					"slug": "handle-contrast-3"
+				},
+				{
+					"color": "var(--wp--preset--color--white)",
+					"name": "For contrast - mimic desing skin background",
+					"slug": "handle-contrast-4"
+				},
+				{
+					"color": "#CEE6FF",
+					"name": "For contrast - primary",
+					"slug": "handle-contrast-5"
 				}
 			],
 			"duotone": [
@@ -342,6 +368,8 @@
 			]
 		},
 		"spacing": {
+			"customSpacingSize": true,
+			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
 					"name": "XXX small",
@@ -399,6 +427,8 @@
 			]
 		},
 		"typography": {
+			"customFontSize": true,
+			"defaultFontSizes": false,
 			"writingMode": true,
 			"fontFamilies": [
 				{
@@ -485,6 +515,10 @@
 			"text-shadow-small-2": "1px 1px 2px",
 			"button-shadow": "0 8px 8px 0 rgba(0, 0, 0, 0.2)",
 			"button-shadow-dark": "0 8px 8px 0 rgb(222 222 222 / 22%)",
+			"button-shadow-light": "0 8px 8px 0 rgba(0, 0, 0, 0.1)",
+			"button-shadow-small": "0 5px 4px 0 rgba(0, 0, 0, 0.2)",
+			"button-shadow-light-small": "0 5px 4px 0 rgba(0, 0, 0, 0.1)",
+			"button-shadow-dark-small": "0 5px 4px 0 rgb(222 222 222 / 22%)",
 			"spacing-xxs": ".25rem",
 			"spacing-xs": ".5rem",
 			"spacing-s": ".75rem",
@@ -526,7 +560,7 @@
 	},
 	"styles": {
 		"spacing": {
-			"blockGap": "var(--wp--custom--spacing-xxl)"
+			"blockGap": "var(--wp--preset--spacing--medium)"
 		},
 		"color": {
 			"background": "white",
@@ -653,7 +687,7 @@
 				"css": "&:not(.noice) p {border-left: 1px solid; padding-left: 1.5rem; margin-left: .25em;}"
 			},
 			"core/image": {
-				"css": " {margin: .5rem 0 1rem}"
+				"css": " {margin: 1.5rem 0 1rem}"
 			},
 			"core/list": {
 				"spacing": {
