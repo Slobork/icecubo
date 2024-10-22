@@ -12,6 +12,16 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 
 == Changelog ==
 
+= 1.2.1 - 2024-10-23 =
+* Improved: Color contrast for some Style skins
+* Improved: Styling of the sub-menu on the mouse hover
+* Improved: Styling of multi-column sub-menu in the Editor
+* Improved: Removed shadowing on the Logo with a mouse hover
+* Improved: Change overall blockGap to fluid spacing
+* Additional small CSS improvements
+* Added some colors to the palette for the contrast purpose
+* Added some styling classes
+
 = 1.2.0 - 2024-07-18 =
 * Add: Front Page template. IMPORTANT: Upgrading to this version requires a new Front Page adjustment (See docs page)
 * Update: Various styling adjustments over the patterns and general css
