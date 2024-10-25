@@ -38,7 +38,7 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:image {"aspectRatio":"16/9","scale":"cover"} -->
-<figure class="wp-block-image"><img alt="" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<!-- wp:image {"width":"900px","aspectRatio":"4/3","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image" style="aspect-ratio:4/3;object-fit:cover;width:900px"/></figure>
 <!-- /wp:image --></div></div>
 <!-- /wp:cover -->
