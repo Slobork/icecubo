@@ -107,9 +107,6 @@
  */
 .wp-block-search.wp-block-search__button-only .wp-block-search__button { max-width: none; }
 
-/*...Also the padding for the search button is necessary */
-.wp-block-search__button {padding: .75em 1.75em}
-
 /* Preformatted text in the "Classic block" */
 .wp-block-freeform.block-library-rich-text__tinymce pre { color: inherit; }
 
