@@ -3,7 +3,7 @@
 /**
  * Title: Header with hero. Call to action after the list items. Cover with diagonal transit background.
  * Slug: icecubo/header-hero-cover-gradient-diagonal-transit-media-text-cta
- * Categories: icecubo-header
+ * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
  */
 ?>

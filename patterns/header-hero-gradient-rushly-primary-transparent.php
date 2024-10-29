@@ -3,11 +3,11 @@
 /**
  * Title: Header with hero section. Background light glow from primary color to transparent.
  * Slug: icecubo/header-hero-gradient-rushly-primary-transparent
- * Categories: icecubo-header
+ * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"dimRatio":60,"gradient":"primary-to-transparent-rushly-radial","contentPosition":"center center","isDark":false,"metadata":{"categories":["icecubo-header"],"patternName":"icecubo/header-hero-gradient-rushly-primary-transparent","name":"Header with hero section. Background light glow from primary color to transparent."},"align":"full","style":{"spacing":{"padding":{"bottom":"5rem","top":"var:preset|spacing|xxx-small"}},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-2"}},"heading":{"color":{"text":"var:preset|color|classy-3"}}}},"textColor":"handle-contrast-2"} -->
+<!-- wp:cover {"dimRatio":60,"gradient":"primary-to-transparent-rushly-radial","contentPosition":"center center","isDark":false,"metadata":{"categories":["icecubo-headerhero"],"patternName":"icecubo/header-hero-gradient-rushly-primary-transparent","name":"Header with hero section. Background light glow from primary color to transparent."},"align":"full","style":{"spacing":{"padding":{"bottom":"5rem","top":"var:preset|spacing|xxx-small"}},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast-2"}},"heading":{"color":{"text":"var:preset|color|classy-3"}}}},"textColor":"handle-contrast-2"} -->
 <div class="wp-block-cover alignfull is-light has-handle-contrast-2-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:5rem"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-primary-to-transparent-rushly-radial-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
