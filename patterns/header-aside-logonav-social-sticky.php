@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Sticky header. One side: Logo/nav - Other side: Social icons.
- * Slug: icecubo/header-aside-logonav-soc-sticky
+ * Slug: icecubo/header-aside-logonav-social-sticky
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
