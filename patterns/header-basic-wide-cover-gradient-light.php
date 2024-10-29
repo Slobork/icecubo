@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Glowing background transit to transparent.
- * Slug: icecubo/header-cover-gradient-light
+ * Title: Spread elements: Logo - nav. Glowing background transit to transparent.
+ * Slug: icecubo/header-basic-wide-cover-gradient-light
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */

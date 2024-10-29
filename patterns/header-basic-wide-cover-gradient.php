@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Spread elements: Logo - nav. Transit background from dark to primary color.
- * Slug: icecubo/header-cover-gradient
+ * Slug: icecubo/header-basic-wide-cover-gradient
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
