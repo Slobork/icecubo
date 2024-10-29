@@ -48,6 +48,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-headerhero',
+            array( 'label' => esc_html__('IceCubo - Header-Heros', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-hero',
             array( 'label' => esc_html__('IceCubo - Heroes', 'icecubo') )
         );
