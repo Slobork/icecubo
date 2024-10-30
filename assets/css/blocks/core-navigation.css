@@ -68,10 +68,3 @@ nav .wp-block-search__button svg {
     min-height: unset;
     min-width: unset;
 }
-
-/*On buttons's hover in the nav set a shadow*/
-nav .wp-block-search__button.wp-element-button:hover,
-nav .wp-block-button__link:hover {
-    box-shadow: var(--wp--custom--button-shadow-small);
-    transition: all .2s ease-in-out;
-}
