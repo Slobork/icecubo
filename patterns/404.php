@@ -11,7 +11,7 @@
     <!-- wp:group -->
     <div class="wp-block-group">
         <!-- wp:heading {"level":1} -->
-        <h1><?php echo esc_html__('Page Not Found, Error 404', 'icecubo'); ?></h1>
+        <h1><?php echo esc_html__('Page Not Found - Error 404', 'icecubo'); ?></h1>
         <!-- /wp:heading -->
     </div>
     <!-- /wp:group -->
