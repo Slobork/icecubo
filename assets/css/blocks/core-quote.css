@@ -17,7 +17,6 @@
     content: " ";
 }
 
-
 .wp-block-quote.has-text-align-right p::before {
     margin-left: -4rem;
 }
