@@ -13,6 +13,6 @@
 <!-- /wp:group -->
 <!-- wp:group {"metadata":{"name":"Main"},"tagName":"main","align":"wide","style":{"spacing":{"padding":{"bottom":"3.5rem"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group alignwide" style="padding-bottom:3.5rem">
-    <!-- wp:pattern {"slug":"icecubo/page-front-1-section"} /-->
+    <!-- wp:pattern {"slug":"icecubo/page-front-1-main"} /-->
 </main>
 <!-- /wp:group -->

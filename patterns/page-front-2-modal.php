@@ -16,7 +16,7 @@
 
 <!-- wp:group {"metadata":{"name":"Main"},"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-large)">
-    <!-- wp:pattern {"slug":"icecubo/page-front-2-section"} /-->
+    <!-- wp:pattern {"slug":"icecubo/page-front-2-main"} /-->
 </main>
 <!-- /wp:group -->
 <!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
