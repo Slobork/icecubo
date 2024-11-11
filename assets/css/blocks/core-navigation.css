@@ -56,10 +56,10 @@ nav .wp-block-button__link:hover {
 
 /*Buttons in the nav (search, +)*/
 nav .wp-block-buttons > .wp-block-button .wp-element-button {
-    padding: .25em 1em;
+    padding: .35em 1em;
 }
 nav .wp-block-search__button {
-    padding: .25em 1em;
+    padding: .35em 1em;
     margin: auto;
     font-size: 1rem;
 }
