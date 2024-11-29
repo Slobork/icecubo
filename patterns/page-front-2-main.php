@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Basic Layout used on the front page (2). Features and testimonials sections.
- * Slug: icecubo/page-front-2-section
+ * Slug: icecubo/page-front-2-main
  * Categories: icecubo-section
  */
 ?>

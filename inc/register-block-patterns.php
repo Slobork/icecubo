@@ -18,6 +18,21 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
     function icecubo_register_block_pattern_category() {
 
         register_block_pattern_category(
+            'icecubo-section',
+            array( 'label' => esc_html__('IceCubo - 1. Sections', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-page',
+            array( 'label' => esc_html__('IceCubo - 2. Pages', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-query',
+            array( 'label' => esc_html__('IceCubo - 3. Posts', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-404',
             array( 'label' => esc_html__('IceCubo - 404', 'icecubo') )
         );
@@ -48,6 +63,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-headerhero',
+            array( 'label' => esc_html__('IceCubo - Header-Heros', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-hero',
             array( 'label' => esc_html__('IceCubo - Heroes', 'icecubo') )
         );
@@ -55,16 +75,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-numbers',
             array( 'label' => esc_html__('IceCubo - Numbers', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-page',
-            array( 'label' => esc_html__('IceCubo - 2. Pages', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-query',
-            array( 'label' => esc_html__('IceCubo - 3. Posts', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -95,11 +105,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-pricing',
             array( 'label' => esc_html__('IceCubo - Pricing', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-section',
-            array( 'label' => esc_html__('IceCubo - 1. Sections', 'icecubo') )
         );
 
         register_block_pattern_category(

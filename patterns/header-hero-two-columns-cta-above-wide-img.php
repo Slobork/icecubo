@@ -3,12 +3,12 @@
 /**
  * Title: Two columns CTA above wide image as placeholder.
  * Slug: icecubo/header-hero-two-columns-cta-above-wide-img
- * Categories: icecubo-header
+ * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:cover {"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 

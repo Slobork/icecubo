@@ -9,7 +9,8 @@
  * - With :not(.wp-block-post-title) omit the actual title of the page coz the padding on the 'main' tag will give the spacing
  *
  * - This potentially could be utilized, along the used declaration, to target the larger heading scope, 
- * but the problem is that it's impacting the Headings in the Header-Hero sections and is making a large space there.
+ * but the problem is that it's impacting the Headings in the Header-Hero sections and is making a large space there,
+ * also it is overriding the block spacing when it's set on the group and Heading element is inside that group.
  * :where(.is-layout-flow > *,.is-layout-constrained > *) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title) {margin-top: var(--wp--preset--spacing--x-large);}
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
@@ -106,9 +107,6 @@
  * 'max-width' removes the value set by WP which doesn't give equal space around the icon.
  */
 .wp-block-search.wp-block-search__button-only .wp-block-search__button { max-width: none; }
-
-/*...Also the padding for the search button is necessary */
-.wp-block-search__button {padding: .75em 1.75em}
 
 /* Preformatted text in the "Classic block" */
 .wp-block-freeform.block-library-rich-text__tinymce pre { color: inherit; }

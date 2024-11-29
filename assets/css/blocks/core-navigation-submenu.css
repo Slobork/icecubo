@@ -6,6 +6,10 @@
     z-index: 99;
 }
 
+/*Border radius for the nav items in the sub-menu*/
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {border-radius: inherit}
+.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {border-radius: inherit}
+
 /* Spacing for the sub-menu items*/
 .wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {padding: .35em 1em}
 
@@ -23,4 +27,7 @@
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm3 {grid-template-columns: repeat(3, 1fr);}
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm4 {grid-template-columns: repeat(4, 1fr);}
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm5 {grid-template-columns: repeat(5, 1fr);}
+
+    /*Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it*/
+    .wp-block-navigation .wp-block-navigation-item.has-child:hover > .wp-block-navigation__submenu-container.is-style-icecubo-nav-submenu-mega {overflow: auto;}
 }

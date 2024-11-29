@@ -56,10 +56,10 @@ nav .wp-block-button__link:hover {
 
 /*Buttons in the nav (search, +)*/
 nav .wp-block-buttons > .wp-block-button .wp-element-button {
-    padding: .25em 1em;
+    padding: .35em 1em;
 }
 nav .wp-block-search__button {
-    padding: .25em 1em;
+    padding: .35em 1em;
     margin: auto;
     font-size: 1rem;
 }
@@ -67,11 +67,4 @@ nav .wp-block-search__button svg {
     margin: 7px -2px;
     min-height: unset;
     min-width: unset;
-}
-
-/*On buttons's hover in the nav set a shadow*/
-nav .wp-block-search__button.wp-element-button:hover,
-nav .wp-block-button__link:hover {
-    box-shadow: var(--wp--custom--button-shadow-small);
-    transition: all .2s ease-in-out;
 }
