@@ -1,6 +1,7 @@
 {
-	"version": 2,
 	"title": "Black Lemon",
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
 		"color": {
 			"palette": [
@@ -326,25 +327,43 @@
 					"name": "Ice Cubo Iceish"
 				}
 			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "sans-serif (Helvetica Neue, Helvetica, Arial)",
+					"slug": "helvetica-arial",
+					"fontFamily": "\"Helvetica Neue\",Helvetica,Arial,sans-serif"
+				},
+				{
+					"name": "sans-serif (Geneva, Tahoma, Verdana)",
+					"slug": "geneva-tahoma-verdana",
+					"fontFamily": "Geneva,Tahoma,Verdana,sans-serif"
+				},
+				{
+					"name": "sans-serif system (BlinkMacSystemFont, Roboto, Segoe UI, Ubuntu)",
+					"slug": "system",
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif"
+				},
+				{
+					"name": "serif (Cambria, Georgia)",
+					"slug": "cambria-georgia",
+					"fontFamily": "Cambria,Georgia,serif"
+				},
+				{
+					"name": "serif (Hoefler Text, Baskerville Old Face, Garamond, Times New Roman",
+					"slug": "hoefler-times-new-roman",
+					"fontFamily": "\"Hoefler Text\",\"Baskerville Old Face\",Garamond,\"Times New Roman\",serif"
+				},
+				{
+					"name": "monospace (Courier New - Courier)",
+					"slug": "monospace",
+					"fontFamily": "\"Courier New\",Courier,monospace"
+				}
+			]
 		}
 	},
 	"styles": {
-		"color": {
-			"background": "var(--wp--preset--color--darko)",
-			"text": "var(--wp--preset--color--gray-light)"
-		},
-		"elements": {
-			"link": {
-				"color": {
-					"text": "var(--wp--preset--color--shade-4)"
-				},
-				":hover": {
-					"color": {
-						"text": "var(--wp--preset--color--shade-2)"
-					}
-				}
-			}
-		},
 		"blocks": {
 			"core/post-template": {
 				"elements": {
@@ -363,6 +382,22 @@
 			"core/query-pagination": {
 				"color": {
 					"background": "var(--wp--preset--color--gray-dark)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--darko)",
+			"text": "var(--wp--preset--color--gray-light)"
+		},
+		"elements": {
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--shade-2)"
+					}
+				},
+				"color": {
+					"text": "var(--wp--preset--color--shade-4)"
 				}
 			}
 		}
