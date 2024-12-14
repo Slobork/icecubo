@@ -717,6 +717,21 @@
 					"color": "var(--wp--preset--color--white-ice)"
 				}
 			},
+			"core/pullquote": {
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--xx-large)",
+						"left": "0",
+						"right": "0",
+						"bottom": "var(--wp--preset--spacing--xx-large)"
+					}
+				}
+			},
+			"core/site-tagline": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			},
 			"core/query-pagination": {
 				"spacing": {
 					"padding": {
