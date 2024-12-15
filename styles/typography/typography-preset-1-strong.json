@@ -2,7 +2,7 @@
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"title": "Sans Strong",
-	"slug": "typography-preset-1",
+	"slug": "typography-preset-1-strong",
 	"settings": {
 		"typography": {
 			"fontFamilies": [

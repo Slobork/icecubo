@@ -2,7 +2,7 @@
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"title": "Serif Strong",
-	"slug": "typography-preset-3s",
+	"slug": "typography-preset-3-strong",
 	"settings": {
 		"typography": {
 			"fontFamilies": [

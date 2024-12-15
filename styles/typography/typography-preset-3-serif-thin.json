@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "Serif Strong",
-	"slug": "typography-preset-3t",
+	"title": "Serif Thin",
+	"slug": "typography-preset-3-thin",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
