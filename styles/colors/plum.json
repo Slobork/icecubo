@@ -1,0 +1,332 @@
+{
+	"title": "Plum",
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "darko",
+					"color": "#1A0D19",
+					"name": "Darko"
+				},
+				{
+					"slug": "primary",
+					"color": "#8a1f81",
+					"name": "Primary"
+				},
+				{
+					"slug": "darko-transit",
+					"color": "#3B2A39",
+					"name": "Darko transit"
+				},
+				{
+					"slug": "primary-light",
+					"color": "#CB6AC3",
+					"name": "Primary light"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#510A49",
+					"name": "Primary dark"
+				},
+				{
+					"slug": "white-ice",
+					"color": "#f1eeeb",
+					"name": "Icy"
+				},
+				{
+					"slug": "shade-1",
+					"color": "#7c1b74",
+					"name": "Shade 1"
+				},
+				{
+					"slug": "shade-2",
+					"color": "#6e1867",
+					"name": "Shade 2"
+				},
+				{
+					"slug": "shade-3",
+					"color": "#60155a",
+					"name": "Shade 3"
+				},
+				{
+					"slug": "shade-4",
+					"color": "#52124d",
+					"name": "Shade 4"
+				},
+				{
+					"slug": "shade-5",
+					"color": "#450f40",
+					"name": "Shade 5"
+				},
+				{
+					"slug": "shade-6",
+					"color": "#370c33",
+					"name": "Shade 6"
+				},
+				{
+					"slug": "tint-1",
+					"color": "#95358d",
+					"name": "Tint 1"
+				},
+				{
+					"slug": "tint-2",
+					"color": "#a14b9a",
+					"name": "Tint 2"
+				},
+				{
+					"slug": "tint-3",
+					"color": "#ad62a6",
+					"name": "Tint 3"
+				},
+				{
+					"slug": "tint-4",
+					"color": "#b878b3",
+					"name": "Tint 4"
+				},
+				{
+					"slug": "tint-5",
+					"color": "#c48fc0",
+					"name": "Tint 5"
+				},
+				{
+					"slug": "tint-6",
+					"color": "#d0a5cc",
+					"name": "Tint 6"
+				},
+				{
+					"slug": "generic-1",
+					"color": "#c72f74",
+					"name": "Generic 1"
+				},
+				{
+					"slug": "generic-2",
+					"color": "#ef5962",
+					"name": "Generic 2"
+				},
+				{
+					"slug": "generic-3",
+					"color": "#ff8d53",
+					"name": "Generic 3"
+				},
+				{
+					"slug": "generic-4",
+					"color": "#ffc353",
+					"name": "Generic 4"
+				},
+				{
+					"slug": "generic-5",
+					"color": "#f9f871",
+					"name": "Generic 5"
+				},
+				{
+					"slug": "generic-6",
+					"color": "#FBFBB6",
+					"name": "Generic 6"
+				},
+				{
+					"slug": "matching-1",
+					"color": "#5553b5",
+					"name": "Matching 1"
+				},
+				{
+					"slug": "matching-2",
+					"color": "#4B38D9",
+					"name": "Matching 2"
+				},
+				{
+					"slug": "matching-3",
+					"color": "#5700C9",
+					"name": "Matching 3"
+				},
+				{
+					"slug": "matching-4",
+					"color": "#8200B0",
+					"name": "Matching 4"
+				},
+				{
+					"slug": "matching-5",
+					"color": "#A000B0",
+					"name": "Matching 5"
+				},
+				{
+					"slug": "matching-6",
+					"color": "#870B7C",
+					"name": "Matching 6"
+				},
+				{
+					"slug": "classy-1",
+					"color": "#873900",
+					"name": "Classy"
+				},
+				{
+					"slug": "classy-2",
+					"color": "#c36a1d",
+					"name": "Classy light"
+				},
+				{
+					"slug": "classy-3",
+					"color": "#6F3D1A",
+					"name": "Classy polish"
+				},
+				{
+					"slug": "friend-dark",
+					"color": "#00523e",
+					"name": "Friend dark"
+				},
+				{
+					"slug": "friend",
+					"color": "#1f8a28",
+					"name": "Friend"
+				},
+				{
+					"slug": "friend-light",
+					"color": "#6cbaa1",
+					"name": "Friend light"
+				},
+				{
+					"slug": "gray-friend-dark",
+					"color": "#51424e",
+					"name": "Gray friend dark"
+				},
+				{
+					"slug": "gray-friend-light",
+					"color": "#b7a6b4",
+					"name": "Gray friend light"
+				},
+				{
+					"slug": "gray-dark",
+					"color": "#505050",
+					"name": "Gray dark"
+				},
+				{
+					"slug": "gray-light",
+					"color": "#a5a5a5",
+					"name": "Gray light"
+				},
+				{
+					"slug": "gray-very-light",
+					"color": "#c5c5c5",
+					"name": "Gray very light"
+				},
+				{
+					"slug": "gray-min",
+					"color": "#e3e3e3",
+					"name": "Gray min"
+				},
+				{
+					"slug": "primaryish",
+					"color": "#F43AF4",
+					"name": "Glow"
+				},
+				{
+					"slug": "primaryish-light",
+					"color": "#ffa9ff",
+					"name": "Glow light"
+				},
+				{
+					"slug": "tint-very-light-3",
+					"color": "#dbbbd9",
+					"name": "Tint very light 3"
+				},
+				{
+					"slug": "tint-very-light-2",
+					"color": "#e7d2e5",
+					"name": "Tint very light 2"
+				},
+				{
+					"slug": "tint-very-light-1",
+					"color": "#f3e8f2",
+					"name": "Tint very light 1"
+				},
+				{
+					"slug": "beige-light",
+					"color": "#f1f1e6",
+					"name": "Beige light"
+				},
+				{
+					"slug": "beige",
+					"color": "#f5f5dc",
+					"name": "Beige"
+				},
+				{
+					"slug": "darko-down",
+					"color": "#333",
+					"name": "Darko down"
+				},
+				{
+					"slug": "darko-down-bottom",
+					"color": "#3c3c3c",
+					"name": "Darko down bottom"
+				},
+				{
+					"slug": "highlight-1",
+					"color": "#BF0048",
+					"name": "Highlight 1"
+				},
+				{
+					"slug": "highlight-2",
+					"color": "#fee181",
+					"name": "Highlight 2"
+				},
+				{
+					"slug": "highlight-3",
+					"color": "#eee8a9",
+					"name": "Highlight 3"
+				},
+				{
+					"color": "#fefefe",
+					"name": "For contrast - always light",
+					"slug": "handle-contrast"
+				},
+				{
+					"color": "#323232",
+					"name": "For contrast - oposite the design skin (light/dark)",
+					"slug": "handle-contrast-2"
+				},
+				{
+					"color": "#F1F1F1",
+					"name": "For contrast - mainly buttons",
+					"slug": "handle-contrast-3"
+				},
+				{
+					"color": "var(--wp--preset--color--white)",
+					"name": "For contrast - mimic desing skin background",
+					"slug": "handle-contrast-4"
+				},
+				{
+					"color": "#FFC7F7",
+					"name": "For contrast - primary",
+					"slug": "handle-contrast-5"
+				}
+			],
+			"duotone": [
+				{
+					"colors": [
+						"#8a1f81",
+						"#ffffff"
+					],
+					"slug": "ice-cubo-light",
+					"name": "Ice Cubo Light"
+				},
+				{
+					"colors": [
+						"#8a1f81",
+						"#505050"
+					],
+					"slug": "ice-cubo-dark",
+					"name": "Ice Cubo Dark"
+				},
+				{
+					"colors": [
+						"#F43AF4",
+						"#f1eeeb"
+					],
+					"slug": "ice-cubo-iceish",
+					"name": "Ice Cubo Iceish"
+				}
+			]
+		}
+	}
+}
