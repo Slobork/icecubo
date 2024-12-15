@@ -641,7 +641,8 @@
 					"text": "var(--wp--preset--color--white-ice)"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontWeight": "400"
 				},
 				"border": {
 					"radius": "var(--wp--custom--radius-large)",
