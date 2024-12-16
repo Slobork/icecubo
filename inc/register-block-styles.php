@@ -18,21 +18,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
     function icecubo_register_block_styles()
     {
 
-        register_block_style(
-            'core/button',
-            array(
-                'name'  => 'icecubo-highlight-up-button',
-                'label' => __('Accent up', 'icecubo'),
-            )
-        );
 
-        register_block_style(
-            'core/button',
-            array(
-                'name'  => 'icecubo-noborder-button',
-                'label' => __('No border', 'icecubo'),
-            )
-        );
 
         register_block_style(
             'core/comment-content',
