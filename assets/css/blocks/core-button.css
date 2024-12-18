@@ -1,9 +1,5 @@
 /* Shadow for link hover, except when it's accented i.e. 'highlight-up-button' */
-.wp-block-button:not([class*="icecubo-highlight-up-button"]) .wp-block-button__link:hover {
-    box-shadow: var(--wp--custom--button-shadow);
-}
-/* For the dark tthemes, add a class 'has-dark-theme' to the button */
-.wp-block-button.has-dark-theme:not([class*="icecubo-highlight-up-button"]) .wp-block-button__link:hover,
-.wp-block-button.has-dark-theme.is-style-icecubo-highlight-up-button .wp-block-button__link {
-    box-shadow: var(--wp--custom--button-shadow-dark);
-}
+.wp-block-button:not([class*="icecubo-highlight-up-button"]) .wp-block-button__link:hover {box-shadow: var(--wp--custom--button-shadow)}
+
+/* For the dark themes, add a class 'is-dark' to the button */
+.wp-block-button.is-dark:not([class*="icecubo-highlight-up-button"]) .wp-block-button__link:hover {box-shadow: var(--wp--custom--button-shadow-dark)}
