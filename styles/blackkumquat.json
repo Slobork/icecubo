@@ -365,6 +365,13 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/button": {
+				"variations": {
+					"icecubo-highlight-up-button": {
+						"css": "box-shadow: var(--wp--custom--button-shadow-dark) &:hover {box-shadow: none}"
+					}
+				}
+			},
 			"core/query-pagination": {
 				"border": {
 					"color": "var(--wp--preset--color--tint-2)",
