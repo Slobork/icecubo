@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Underline colored",
+	"slug": "icecubo-underline-color-primary",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "&::after{content: ''; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}"
+	}
+}

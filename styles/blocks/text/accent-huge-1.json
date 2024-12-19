@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Accent huge 1",
+	"slug": "icecubo-accent-text-huge-1",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "text-shadow: .1em .1em 0 var(--wp--preset--color--gray-light)"
+	}
+}

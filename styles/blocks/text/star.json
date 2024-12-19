@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Star",
+	"slug": "icecubo-star",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "&::before{content: '\\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}"
+	}
+}

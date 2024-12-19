@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Underline/overline",
+	"slug": "icecubo-underline-overline",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "display: flex; flex-direction: column; line-height: 1.75; &::before{content: ''; width: 10vh; border-top: 1px solid;} &::after{content: ''; width: 10vh; border-top: 1px solid;}"
+	}
+}

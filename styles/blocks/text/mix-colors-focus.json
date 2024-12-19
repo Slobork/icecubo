@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Mix colors focus",
+	"slug": "icecubo-mix-colors-focus",
+	"blockTypes": ["core/paragraph", "core/heading", "core/post-title"],
+	"styles": {
+		"css": "background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);"
+	}
+}
