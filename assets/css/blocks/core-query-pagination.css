@@ -1,0 +1,9 @@
+/* Increase the padding for the pagination. In the json files it's set as "spacing-s" coz there're other properties targeted, override it here */
+.is-style-icecubo-square-post-byline.wp-block-query-pagination,
+.is-style-icecubo-oval-post-byline.wp-block-query-pagination,
+.is-style-icecubo-outline-post-byline.wp-block-query-pagination {
+    padding-top: var(--wp--custom--spacing-s);
+    padding-left: var(--wp--custom--spacing-xl);
+    padding-right: var(--wp--custom--spacing-xl);
+    padding-bottom: var(--wp--custom--spacing-s);
+}

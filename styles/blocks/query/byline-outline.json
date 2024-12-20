@@ -1,0 +1,21 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Outline",
+	"slug": "icecubo-outline-post-byline",
+	"blockTypes": ["core/post-author", "core/post-date", "core/post-navigation-link", "core/post-terms", "core/query-pagination" ],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"left": "var(--wp--custom--spacing-s)",
+				"right": "var(--wp--custom--spacing-s)"
+			}
+		},
+		"border": {
+			"width": "1px",
+			"color": "currentColor",
+			"style": "solid",
+			"radius": "var(--wp--custom--radius-middle)"
+		}
+	}
+}
