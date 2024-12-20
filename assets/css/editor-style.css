@@ -108,61 +108,6 @@
     width: 100%;
 }
 
-/**
- * Post byline styling
- */
-.is-style-icecubo-outline-post-byline {
-    border: 1px solid currentColor;
-    border-radius: var(--wp--custom--radius-middle);
-    padding-left: var(--wp--custom--spacing-s);
-    padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-oval-post-byline {
-     background: var(--wp--preset--color--white-ice);
-    border-radius: var(--wp--custom--radius-middle);
-    padding-left: var(--wp--custom--spacing-s);
-    padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-square-post-byline {
-    background: var(--wp--preset--color--white-ice);
-    border-radius: var(--wp--custom--radius-small);
-    padding-left: var(--wp--custom--spacing-s);
-    padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-outline-post-byline.wp-block-query-pagination,
-.is-style-icecubo-oval-post-byline.wp-block-query-pagination,
-.is-style-icecubo-square-post-byline.wp-block-query-pagination {
-    padding-left: var(--wp--custom--spacing-xl);
-    padding-right: var(--wp--custom--spacing-xl);
-}
-
-/**
- * As addition to post byline, each term styling
- */
-.is-style-icecubo-each-square-post-byline a {
-    background: var(--wp--preset--color--white-ice);
-    border-radius: var(--wp--custom--radius-small);
-}
-
-.is-style-icecubo-each-oval-post-byline a {
-    background: var(--wp--preset--color--white-ice);
-    border-radius: var(--wp--custom--radius-middle);
-}
-
-.is-style-icecubo-each-outline-post-byline a {
-    border: 1px solid currentColor;
-    border-radius: var(--wp--custom--radius-middle);
-}
-
-.is-style-icecubo-each-square-post-byline a,
-.is-style-icecubo-each-oval-post-byline a,
-    .is-style-icecubo-each-outline-post-byline a {
-    padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xs);
-}
-
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
 
