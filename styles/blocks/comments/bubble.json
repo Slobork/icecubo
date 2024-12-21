@@ -1,0 +1,37 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Bubble",
+	"slug": "icecubo-comment-content-bubble",
+	"blockTypes": ["core/comment-content" ],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--custom--spacing-xxs)",
+				"left": "var(--wp--preset--spacing--x-small)",
+				"right": "var(--wp--preset--spacing--x-small)",
+				"bottom": "var(--wp--custom--spacing-xxs)"
+			},
+			"margin": {
+				"top": "var(--wp--preset--spacing--x-small)",
+				"left": "0",
+				"right": "0",
+				"bottom": "var(--wp--preset--spacing--x-small)"
+			}
+		},
+		"border": {
+			"radius": ".75em",
+			"top": {
+				"width": "1px",
+				"color": "currentColor",
+				"style": "solid"
+			},
+			"left": {
+				"width": "1px",
+				"color": "currentColor",
+				"style": "solid"
+			}
+		},
+		"css": "position: relative; border-bottom-left-radius: 20px; filter: drop-shadow(2px -6px 12px var(--wp--preset--color--gray-light)); &::before{content: ''; position: absolute; border-left-color: transparent; border-right-color: transparent; border-width: 0 .5em .55em; left: var(--wp--preset--spacing--small); top: -.55em; border-style: solid;}"
+	}
+}

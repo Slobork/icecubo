@@ -1,0 +1,24 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Oval",
+	"slug": "icecubo-comment-reply-button-oval",
+	"blockTypes": ["core/comment-reply-link" ],
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--white-ice)"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--custom--spacing-xxs)",
+				"left": "var(--wp--preset--spacing--x-small)",
+				"right": "var(--wp--preset--spacing--x-small)",
+				"bottom": "var(--wp--custom--spacing-xxs)"
+			}
+		},
+		"border": {
+			"radius": "var(--wp--custom--radius-middle)"
+		},
+		"css": "float: left; &.has-text-align-center {float: none} &.has-text-align-right {float: right} & a { text-decoration: none}"
+	}
+}
