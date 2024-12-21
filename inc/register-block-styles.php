@@ -18,40 +18,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
     function icecubo_register_block_styles()
     {
 
-
-
-        register_block_style(
-            'core/comment-content',
-            array(
-                'name'  => 'icecubo-comment-content-bubble',
-                'label' => __('Bubble', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/comment-reply-link',
-            array(
-                'name'  => 'icecubo-comment-reply-button-square',
-                'label' => __('Square', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/comment-reply-link',
-            array(
-                'name'  => 'icecubo-comment-reply-button-outline',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/comment-reply-link',
-            array(
-                'name'  => 'icecubo-comment-reply-button-oval',
-                'label' => __('Oval', 'icecubo'),
-            )
-        );
-
         // With Cover styles we do not load the css file, instead styling done in the main.css
         register_block_style(
             'core/cover',
@@ -74,22 +40,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
             array(
                 'name'  => 'icecubo-rotate-left',
                 'label' => __('Rotate left', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/details',
-            array(
-                'name'  => 'icecubo-details-square',
-                'label' => __('Square', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/details',
-            array(
-                'name'  => 'icecubo-details-oval',
-                'label' => __('Oval', 'icecubo'),
             )
         );
 
@@ -370,9 +320,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
-            'core/comment-content',
-            'core/comment-reply-link',
-            'core/details',
             'core/image',
             'core/list',
             'core/navigation-link',
