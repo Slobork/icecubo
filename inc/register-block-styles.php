@@ -52,186 +52,10 @@ if (! function_exists('icecubo_register_block_styles') ) {
         );
 
         register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-solid-frame',
-                'label' => __('Solid frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-curly-frame',
-                'label' => __('Curly frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-spaced-frame',
-                'label' => __('Spaced frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-spaced-cutted-frame',
-                'label' => __('Spaced & cut frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-sink-frame-left',
-                'label' => __('Sink left', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-sink-frame-right',
-                'label' => __('Sink right', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-angular-all',
-                'label' => __('Angular frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-angular-diagonal-1',
-                'label' => __('Angular D1', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/image',
-            array(
-                'name'  => 'icecubo-image-angular-diagonal-2',
-                'label' => __('Angular D2', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-check-list',
-                'label' => __('Checks', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-fill-list',
-                'label' => __('Fill', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/list',
-            array(
-                'name'  => 'icecubo-plus-list',
-                'label' => __('Plus', 'icecubo'),
-            )
-        );
-
-        register_block_style(
             'core/list-item',
             array(
                 'name'  => 'icecubo-cancel-list',
                 'label' => __('Cancel list', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-round',
-                'label' => __('Rounded', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-solid-frame',
-                'label' => __('Solid frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-curly-frame',
-                'label' => __('Curly frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-spaced-frame',
-                'label' => __('Spaced frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-spaced-cutted-frame',
-                'label' => __('Spaced & cut frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-sink-frame-left',
-                'label' => __('Sink left', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-sink-frame-right',
-                'label' => __('Sink right', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-angular-all',
-                'label' => __('Angular frame', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-angular-diagonal-1',
-                'label' => __('Angular D1', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/media-text',
-            array(
-                'name'  => 'icecubo-media-text-angular-diagonal-2',
-                'label' => __('Angular D2', 'icecubo'),
             )
         );
 
@@ -283,14 +107,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
-        register_block_style(
-            'core/social-links',
-            array(
-                'name'  => 'icecubo-social-outline',
-                'label' => __('Outline', 'icecubo'),
-            )
-        );
-
     }
     add_action('init', 'icecubo_register_block_styles');
 
@@ -313,17 +129,14 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             ? array(
                 'core/navigation',
                 'core/navigation-submenu',
-                'core/media-text'
+                //'core/media-text'
             )
             : array();
 
         // Add the block name (with namespace) for each style.
         $blocks = array(
             'core/button',
-            'core/image',
-            'core/list',
             'core/navigation-link',
-            'core/social-links',
             'core/query-pagination',
             'core/quote'
             /**
