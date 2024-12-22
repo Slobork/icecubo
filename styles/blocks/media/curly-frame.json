@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Curly frame",
+	"slug": "icecubo-media-curly-frame",
+	"blockTypes": ["core/image", "core/media-text"],
+	"styles": {
+		"css": "& img {border: 1px solid var(--wp--preset--color--gray-light); overflow: hidden; box-shadow: 0 4px 10px 0 var(--wp--preset--color--gray-light); border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;}"
+	}
+}

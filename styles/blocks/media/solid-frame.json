@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Solid frame",
+	"slug": "icecubo-media-solid-frame",
+	"blockTypes": ["core/image", "core/media-text"],
+	"styles": {
+		"css": "& img {box-shadow: 0 2px 1px 1px var(--wp--preset--color--gray-very-light); border-radius: var(--wp--custom--radius-small);}"
+	}
+}
