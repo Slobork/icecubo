@@ -1,5 +1,4 @@
-
-/*On hover, push the sub-menu's item a bit from the left*/
+/* On hover, push the sub-menu's item a bit from the left */
 .wp-block-navigation li.wp-block-navigation-item ul a:hover {transform: translateX(2px); transition: transform .2s ease-in-out;}
 
 /* Sub-menu on the large screens, i.e. the modal isn't open */
@@ -10,16 +9,17 @@
     z-index: 99;
 }
 
-/*Border radius for the nav items in the sub-menu*/
+/* Border radius for the nav items in the sub-menu */
 .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:first-child {border-radius: inherit}
 .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item:last-child {border-radius: inherit}
 
-/* Spacing for the sub-menu items*/
+/* Spacing for the sub-menu items */
 .wp-block-navigation__responsive-container:not(.has-modal-open) ul.wp-block-navigation-submenu .wp-block-navigation-item.wp-block-navigation-link a {padding: .35em 1em}
 
-/* Mega Menu - Columns */
+/* Mega Menu */ 
 @media (min-width: 600px)
 {
+    /* Columns */
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li {display: inline-block !important;}
     ul.is-style-icecubo-nav-submenu-mega > li li {display: block !important;}
@@ -32,6 +32,6 @@
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm4 {grid-template-columns: repeat(4, 1fr);}
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm5 {grid-template-columns: repeat(5, 1fr);}
 
-    /*Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it*/
+    /* Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it */
     .wp-block-navigation .wp-block-navigation-item.has-child:hover > .wp-block-navigation__submenu-container.is-style-icecubo-nav-submenu-mega {overflow: auto;}
 }
