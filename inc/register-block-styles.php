@@ -18,7 +18,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
     function icecubo_register_block_styles()
     {
 
-        // With Cover styles we do not load the css file, instead styling done in the main.css
+        // With Cover/Group styles we do not load the css file, instead styling done in the main.css
         register_block_style(
             'core/cover',
             array(
@@ -51,6 +51,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
+        /* Cancel for list registered here, while it's styled in each json file of available lists - styles/blocks/list */
         register_block_style(
             'core/list-item',
             array(
@@ -59,38 +60,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
-        register_block_style(
-            'core/navigation',
-            array(
-                'name'  => 'icecubo-nav-mark-hovers',
-                'label' => __('Hovers standard', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/navigation',
-            array(
-                'name'  => 'icecubo-nav-hovers-top',
-                'label' => __('Hovers top', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/navigation',
-            array(
-                'name'  => 'icecubo-nav-hovers-bottom',
-                'label' => __('Hovers bottom', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/navigation',
-            array(
-                'name'  => 'icecubo-nav-hovers-2',
-                'label' => __('Hovers top + bottom', 'icecubo'),
-            )
-        );
-
+        /* Nav link stays registered here, coz it didn't load when registered from the json file on the front-end site's side */
         register_block_style(
             'core/navigation-link',
             array(
