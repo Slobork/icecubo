@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Hover standard",
+	"slug": "icecubo-nav-mark-hovers",
+	"blockTypes": ["core/navigation" ],
+	"styles": {
+		"css": "& ul:not(.wp-block-navigation__submenu-container) > li.wp-block-navigation-item:not(.has-child):hover {box-shadow: 0 2px 0; transition: box-shadow .2s ease-in-out;} & ul.wp-block-navigation__submenu-container > li.wp-block-navigation-item > a:hover {text-decoration: underline}"
+	}
+}
