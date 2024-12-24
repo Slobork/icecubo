@@ -378,13 +378,16 @@
 						"text": "var(--wp--preset--color--primary)"
 					}
 				}
+			},
+			"button": {
+				"css": "&:hover {box-shadow: var(--wp--custom--button-shadow-dark) !important}"
 			}
 		},
 		"blocks": {
 			"core/button": {
 				"variations": {
 					"icecubo-highlight-up-button": {
-						"css": "box-shadow: var(--wp--custom--button-shadow-dark) &:hover {box-shadow: none}"
+						"css": "box-shadow: var(--wp--custom--button-shadow-dark) &:hover {box-shadow: none !important}"
 					}
 				}
 			},
