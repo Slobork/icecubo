@@ -5,6 +5,6 @@
 	"slug": "icecubo-highlight-up-button",
 	"blockTypes": ["core/button"],
 	"styles": {
-		"css": "{box-shadow: var(--wp--custom--button-shadow)} &:hover {box-shadow: none;}"
+		"css": "{box-shadow: var(--wp--custom--button-shadow)} &:hover {box-shadow: none !important}"
 	}
 }
