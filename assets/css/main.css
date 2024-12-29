@@ -169,11 +169,11 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  * Almost every page has a group block, so target block variation styling
  * from here instead separately from group and cover css files.
  */
-.is-style-icecubo-rotate-left {transform: rotate(-4deg);}
-.is-style-icecubo-rotate-right {transform: rotate(4deg);}
+.is-style-icecubo-rotate-left:not(.anim-rotate) {transform: rotate(-4deg);}
+.is-style-icecubo-rotate-right:not(.anim-rotate) {transform: rotate(4deg);}
 @media (min-width: 600px) {
-    .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
-    .is-style-icecubo-rotate-right {transform: rotate(13deg);}
+    .is-style-icecubo-rotate-left:not(.anim-rotate) {transform: rotate(-13deg);}
+    .is-style-icecubo-rotate-right:not(.anim-rotate) {transform: rotate(13deg);}
 }
 
 /* Small screens */
