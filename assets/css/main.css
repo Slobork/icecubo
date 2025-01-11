@@ -118,6 +118,10 @@ a.button {
 /* Boxed page/post template */
 [class*="template-boxed"] main { width: 78%; }
 
+/* Shade bar on links hover */
+body.blog .wp-block-post-title a:hover, body.archive .wp-block-post-title a:hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(75%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+.entry-content a:not(.wp-element-button):not(.wp-block-navigation-item__content):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+
 /* Footer - links */
 footer a:hover { opacity: .6; }
 /* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
@@ -184,4 +188,17 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
+}
+
+/* Remove the image/media style on hover */
+.ice-hover-remove-style img:hover {
+    background-size: 100%;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    filter: none;
+    clip-path: unset;
+    transition: all .7s ease;
 }
