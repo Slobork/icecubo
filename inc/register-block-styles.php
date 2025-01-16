@@ -99,7 +99,6 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             ? array(
                 'core/navigation',
                 'core/navigation-submenu',
-                //'core/media-text'
             )
             : array();
 
@@ -108,18 +107,10 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             'core/button',
             'core/navigation-link',
             'core/query-pagination',
-            'core/quote'
-            /**
-             * Because they share the same css classes,
-             * load the css for the folowing elements in
-             * the main.css instead in the individual file
-             *
-             * @Since 1.1.9
-             *
-             * 'core/heading',
-             * 'core/paragraph',
-             * 'core/post-title',
-             */
+            'core/quote',
+            // load files for the image and media-text blocks, though they do not have styles registered in this file
+            'core/image',
+            'core/media-text'
         );
 
         $blocks = array_merge($blocks, $conditional_blocks);
