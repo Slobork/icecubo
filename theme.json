@@ -698,7 +698,7 @@
 				}
 			},
 			"core/navigation": {
-				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}& .wp-element-button {color:inherit; background: transparent; border-color: inherit}"
+				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}& .wp-element-button {color:inherit; background: transparent; border-color: inherit}& ul li .nav-item-badge{position: absolute; padding: 2px 12px; top: 0; right: 0; font-size: .8em; line-height: 1.3; margin-top: -1.9rem; margin-right: -10px; border-radius: var(--wp--custom--radius-middle); transition: margin-right .5s ease-in-out; color: var(--wp--preset--color--highlight-2); background: var(--wp--preset--color--darko);}& ul li.is-style-icecubo-nav-item-outline .nav-item-badge{margin-top: -1rem;}& ul li.has-child li .nav-item-badge{margin-top: -.7rem;}"
 			},
 			"core/post-author": {
 				"css": "{align-items: center;}& .wp-block-post-author__avatar img {vertical-align: middle; padding: 4px 0; border-radius: 50%;}& .wp-block-post-author__avatar {margin-right: 0;}"
