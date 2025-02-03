@@ -99,14 +99,10 @@
  }
 
  /**
- * For IceCubo Decorative Backgrounds
- * ...These declarations have to be here, the Editor isn't picking it from the Pro's cover.css
- */
-[class*="ice-cover-decor"] {
-    position: absolute;
-    bottom: -10vh;
-    width: 100%;
-}
+  * For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible.
+  * ...It has to be here, the Editor isn't picking it from the cover.css
+  */
+ .ice-cover-decor {z-index: 1 !important;}
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
