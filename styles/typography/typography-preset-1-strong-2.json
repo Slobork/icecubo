@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "Sans Alt Thin",
-	"slug": "typography-preset-2-thin",
+	"title": "+ Strong Headings (Russo One)",
+	"slug": "typography-preset-2-strong",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
@@ -35,6 +35,20 @@
 					"name": "monospace (System - Courier New - Courier)",
 					"slug": "monospace",
 					"fontFamily": "\"Courier New\",Courier,monospace"
+				},
+				{
+					"fontFamily": "Abel",
+					"name": "Abel",
+					"slug": "abel",
+					"fontFace": [
+						{
+							"fontFamily": "Abel",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Abel/Abel-Regular.ttf" ]
+						}
+					]
 				},
 				{
 					"fontFamily": "Aldrich",
@@ -107,6 +121,20 @@
 					]
 				},
 				{
+					"fontFamily": "Chanticleer_Roman",
+					"name": "Chanticleer Roman",
+					"slug": "chanticleer-roman",
+					"fontFace": [
+						{
+							"fontFamily": "Chanticleer Roman",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Chanticleer_Roman/ChanticleerRomanNF-Regular.ttf" ]
+						}
+					]
+				},
+				{
 					"fontFamily": "Cookie",
 					"name": "Cookie",
 					"slug": "cookie",
@@ -131,6 +159,20 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [ "file:./assets/fonts/Crafty_Girls/CraftyGirls-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Fjord_One",
+					"name": "Fjord One",
+					"slug": "fjord-one",
+					"fontFace": [
+						{
+							"fontFamily": "Fjord One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Fjord_One/FjordOne-Regular.ttf" ]
 						}
 					]
 				},
@@ -177,6 +219,34 @@
 					]
 				},
 				{
+					"fontFamily": "Ledger",
+					"name": "Ledger",
+					"slug": "ledger",
+					"fontFace": [
+						{
+							"fontFamily": "Ledger",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Ledger/Ledger-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Liter",
+					"name": "Liter",
+					"slug": "liter",
+					"fontFace": [
+						{
+							"fontFamily": "Liter",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Liter/Liter-Regular.ttf" ]
+						}
+					]
+				},
+				{
 					"fontFamily": "Molle",
 					"name": "Molle",
 					"slug": "molle",
@@ -191,6 +261,34 @@
 					]
 				},
 				{
+					"fontFamily": "Novella",
+					"name": "Novella",
+					"slug": "novella",
+					"fontFace": [
+						{
+							"fontFamily": "Novella",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Novella/Novella-Regular.otf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Poiret_One",
+					"name": "Poiret One",
+					"slug": "poiret-one",
+					"fontFace": [
+						{
+							"fontFamily": "Poiret One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Poiret_One/PoiretOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
 					"fontFamily": "Prosto_One",
 					"name": "Prosto One",
 					"slug": "prosto-one",
@@ -201,6 +299,48 @@
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [ "file:./assets/fonts/Prosto_One/ProstoOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Quattrocento",
+					"name": "Quattrocento",
+					"slug": "quattrocento",
+					"fontFace": [
+						{
+							"fontFamily": "Quattrocento",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Quattrocento/Quattrocento-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Questrial",
+					"name": "Questrial",
+					"slug": "questrial",
+					"fontFace": [
+						{
+							"fontFamily": "Questrial",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Questrial/Questrial-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Righteous",
+					"name": "Righteous",
+					"slug": "righteous",
+					"fontFace": [
+						{
+							"fontFamily": "Righteous",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Righteous/Righteous-Regular.ttf" ]
 						}
 					]
 				},
@@ -250,19 +390,10 @@
 		}
 	},
 	"styles": {
-		"typography": {
-			"fontFamily": "var:preset|font-family|system",
-			"fontWeight": "200",
-			"lineHeight": "1.7"
-		},
 		"blocks": {
-			"core/post-title": {
+			"core/site-title": {
 				"typography": {
-					"fontWeight": "400"
-				}
-			},
-			"core/quote": {
-				"typography": {
+					"fontFamily": "var:preset|font-family|russo-one",
 					"fontWeight": "400"
 				}
 			}
@@ -270,7 +401,8 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontWeight": "200"
+					"fontFamily": "var:preset|font-family|russo-one",
+					"fontWeight": "400"
 				}
 			}
 		}

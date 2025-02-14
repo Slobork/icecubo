@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "+ Thin Headings",
-	"slug": "typography-preset-1-thin",
+	"title": "+ Headings (Chanticleer)",
+	"slug": "typography-preset-3-thin",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
@@ -386,21 +386,26 @@
 						}
 					]
 				}
+				
 			]
 		}
 	},
 	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|quattrocento"
+		},
 		"blocks": {
 			"core/site-title": {
 				"typography": {
-					"fontWeight": "600"
+					"fontFamily": "var:preset|font-family|chanticleer-roman"
 				}
 			}
 		},
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontWeight": "200"
+					"fontFamily": "var:preset|font-family|chanticleer-roman",
+					"letterSpacing": "1px"
 				}
 			}
 		}

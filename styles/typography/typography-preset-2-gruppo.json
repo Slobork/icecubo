@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "+ Thin Headings",
-	"slug": "typography-preset-1-thin",
+	"title": "Gruppo (Sans serif)",
+	"slug": "typography-preset-2-thin",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
@@ -390,17 +390,14 @@
 		}
 	},
 	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|gruppo",
+			"lineHeight": "1.6"
+		},
 		"blocks": {
 			"core/site-title": {
 				"typography": {
 					"fontWeight": "600"
-				}
-			}
-		},
-		"elements": {
-			"heading": {
-				"typography": {
-					"fontWeight": "200"
 				}
 			}
 		}

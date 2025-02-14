@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "+ Thin Headings",
-	"slug": "typography-preset-1-thin",
+	"title": "+ Strong Headings (Righteous)",
+	"slug": "typography-preset-1-strong",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
@@ -393,14 +393,18 @@
 		"blocks": {
 			"core/site-title": {
 				"typography": {
-					"fontWeight": "600"
+					"fontFamily": "var:preset|font-family|righteous",
+					"fontWeight": "400",
+					"letterSpacing": "0.5px"
 				}
 			}
 		},
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontWeight": "200"
+					"fontFamily": "var:preset|font-family|righteous",
+					"fontWeight": "400",
+					"letterSpacing": "0.5px"
 				}
 			}
 		}

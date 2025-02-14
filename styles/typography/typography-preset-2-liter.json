@@ -1,8 +1,8 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "+ Thin Headings",
-	"slug": "typography-preset-1-thin",
+	"title": "Liter font (Sans serif)",
+	"slug": "typography-preset-2",
 	"settings": {
 		"typography": {
 			"fontFamilies": [
@@ -390,19 +390,8 @@
 		}
 	},
 	"styles": {
-		"blocks": {
-			"core/site-title": {
-				"typography": {
-					"fontWeight": "600"
-				}
-			}
-		},
-		"elements": {
-			"heading": {
-				"typography": {
-					"fontWeight": "200"
-				}
-			}
+		"typography": {
+			"fontFamily": "var:preset|font-family|liter"
 		}
 	}
 }
