@@ -32,6 +32,9 @@
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm4 {grid-template-columns: repeat(4, 1fr);}
     ul.is-style-icecubo-nav-submenu-mega.wp-block-navigation-submenu.mm5 {grid-template-columns: repeat(5, 1fr);}
 
-    /* Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it */
-    .wp-block-navigation .wp-block-navigation-item.has-child:hover > .wp-block-navigation__submenu-container.is-style-icecubo-nav-submenu-mega {overflow: auto;}
+    /**
+     * Because of the border-radius applied above, sub-menu container can lose the angle visibility, this resolves it.
+     * Using "auto" on the "overflow" property won't work, it creates a horizontal scroll bar.
+     */
+    .wp-block-navigation .wp-block-navigation-item.has-child:hover > .wp-block-navigation__submenu-container.is-style-icecubo-nav-submenu-mega {overflow: hidden;}
 }
