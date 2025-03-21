@@ -1129,7 +1129,14 @@
 	"customTemplates": [
 		{
 			"name": "single-no-post-header",
-			"title": "Single without post header",
+			"title": "Single Post - Without post header",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "single-narrow",
+			"title": "Single Post - Narrow",
 			"postTypes": [
 				"post"
 			]
