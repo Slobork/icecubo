@@ -86,18 +86,6 @@
     padding: 3px 8px;
 }
 
-/**
- * Group/cover block.
- * Almost every page has a group block, so target block variation styling
- * from here instead separately from group and cover css files.
- */
- .is-style-icecubo-rotate-left {transform: rotate(-4deg);}
- .is-style-icecubo-rotate-right {transform: rotate(4deg);}
- @media (min-width: 600px) {
-     .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
-     .is-style-icecubo-rotate-right {transform: rotate(13deg);}
- }
-
  /**
   * For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible.
   * ...It has to be here, the Editor isn't picking it from the cover.css

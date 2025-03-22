@@ -18,39 +18,6 @@ if (! function_exists('icecubo_register_block_styles') ) {
     function icecubo_register_block_styles()
     {
 
-        // With Cover/Group styles we do not load the css file, instead styling done in the main.css
-        register_block_style(
-            'core/cover',
-            array(
-                'name'  => 'icecubo-rotate-left',
-                'label' => __('Rotate left', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/cover',
-            array(
-                'name'  => 'icecubo-rotate-right',
-                'label' => __('Rotate right', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/group',
-            array(
-                'name'  => 'icecubo-rotate-left',
-                'label' => __('Rotate left', 'icecubo'),
-            )
-        );
-
-        register_block_style(
-            'core/group',
-            array(
-                'name'  => 'icecubo-rotate-right',
-                'label' => __('Rotate right', 'icecubo'),
-            )
-        );
-
         /* Cancel for list registered here, while it's styled in each json file of available lists - styles/blocks/list */
         register_block_style(
             'core/list-item',
