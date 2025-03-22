@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Group boxes in columns, with cover - applied background color (optionally add a cover image) + rotate 1.
- * Slug: icecubo/boxes-with-cover-bg-colorized-rotate-1
+ * Title: Group boxes in columns.
+ * Slug: icecubo/boxes-with-cover-bg-colorized-1
  * Categories: icecubo-box
  */
 ?>
@@ -25,14 +25,14 @@
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"dimRatio":60,"gradient":"matching-colors-diagonal","contentPosition":"center center","className":"is-style-icecubo-rotate-left"} -->
-<div class="wp-block-cover is-style-icecubo-rotate-left"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-matching-colors-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"is-style-icecubo-mix-colors-focus","fontSize":"xl"} -->
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:cover {"dimRatio":60,"minHeight":200,"gradient":"matching-colors-diagonal","contentPosition":"center center"} -->
+<div class="wp-block-cover" style="min-height:200px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-60 has-background-dim has-background-gradient has-matching-colors-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"is-style-icecubo-mix-colors-focus","fontSize":"xl"} -->
 <p class="has-text-align-center is-style-icecubo-mix-colors-focus has-xl-font-size"><em>AMAZING FEATURES</em></p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:column -->
-
+ 
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:cover {"minHeight":500,"gradient":"matching-colors-diagonal","align":"center","style":{"color":[]}} -->
 <div class="wp-block-cover aligncenter" style="min-height:500px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-matching-colors-diagonal-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":3} -->
