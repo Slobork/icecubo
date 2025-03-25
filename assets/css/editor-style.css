@@ -86,10 +86,7 @@
     padding: 3px 8px;
 }
 
- /**
-  * For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible.
-  * ...It has to be here, the Editor isn't picking it from the cover.css
-  */
+ /* For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible. */
  .ice-cover-decor {z-index: 1 !important;}
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
