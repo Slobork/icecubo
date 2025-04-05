@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Outline",
+	"slug": "icecubo-social-outline",
+	"blockTypes": ["core/social-links" ],
+	"styles": {
+		"css": "&  .wp-block-social-link { border: .1em solid currentColor; }"
+	}
+}

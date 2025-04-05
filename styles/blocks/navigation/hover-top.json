@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Hover top",
+	"slug": "icecubo-nav-hovers-top",
+	"blockTypes": ["core/navigation" ],
+	"styles": {
+		"css": "& li.wp-block-navigation-item > a::before {content: ''; position: absolute; left: 0; right: 0; border: 2px solid transparent; bottom: 0; top: 0; transition: all .2s ease-in-out;} & li.is-style-icecubo-nav-item-outline > a::before {border-radius: var(--wp--custom--radius-large)} & li.wp-block-navigation-item.wp-block-navigation-link > a:hover::before, li.wp-block-navigation-item ul li.wp-block-navigation-item a:hover::before {border-top: 2px solid} & ul.is-style-icecubo-nav-submenu-mega li.wp-block-navigation-item:not(.wp-block-navigation-link) > a:hover {box-shadow: 0 -2px 0; transition: box-shadow .2s ease-in-out;}"
+	}
+}

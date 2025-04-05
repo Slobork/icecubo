@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Square",
+	"slug": "icecubo-details-square",
+	"blockTypes": ["core/details" ],
+	"styles": {
+		"css": "& summary { padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing); border: 1px solid; border-radius: var(--wp--custom--radius-small);}"
+	}
+}

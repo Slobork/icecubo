@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Aside lines",
+	"slug": "icecubo-aside-lines",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "display: flex; align-items: center; &::before{content: ''; border-top: 1px solid; margin: 0 15px; flex: 1 0 20px;} &::after{content: ''; border-top: 1px solid; margin: 0 15px; flex: 1 0 20px;}"
+	}
+}

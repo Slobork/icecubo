@@ -1,0 +1,23 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Outline",
+	"slug": "iicecubo-comment-reply-button-outline",
+	"blockTypes": ["core/comment-reply-link" ],
+	"styles": {
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--custom--spacing-xxs)",
+				"left": "var(--wp--preset--spacing--x-small)",
+				"right": "var(--wp--preset--spacing--x-small)",
+				"bottom": "var(--wp--custom--spacing-xxs)"
+			}
+		},
+		"border": {
+			"width": "1px",
+			"style": "solid",
+			"radius": "var(--wp--custom--radius-middle)"
+		},
+		"css": "float: left; &.has-text-align-center {float: none} &.has-text-align-right {float: right} & a { text-decoration: none}"
+	}
+}

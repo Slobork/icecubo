@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Bulge",
+	"slug": "icecubo-media-bulge",
+	"blockTypes": ["core/image", "core/media-text"],
+	"styles": {
+		"css": "& img {border-radius: 800px 800px 800px 800px / 120px 120px 70px 70px;}"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Each Outline",
+	"slug": "icecubo-each-outline-post-byline",
+	"blockTypes": ["core/post-terms", "core/query-pagination" ],
+	"styles": {
+		"css": "& a {border: 1px solid currentColor; border-radius: var(--wp--custom--radius-middle);} &.wp-block-post-terms a {font-weight: bold; padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xs);} &.wp-block-query-pagination > a {padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xl);} &.wp-block-query-pagination .wp-block-query-pagination-numbers a {padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);}"
+	}
+}

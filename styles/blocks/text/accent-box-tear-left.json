@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Tear box left",
+	"slug": "icecubo-tearbox-left-p",
+	"blockTypes": ["core/paragraph"],
+	"styles": {
+		"css": "box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content; border-top-left-radius: 0;"
+	}
+}

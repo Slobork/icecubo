@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Rounded",
+	"slug": "icecubo-media-rounded",
+	"blockTypes": ["core/media-text"],
+	"styles": {
+		"css": "& img {border-radius: 9999px}"
+	}
+}

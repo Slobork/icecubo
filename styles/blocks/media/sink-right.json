@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Sink frame right",
+	"slug": "icecubo-media-sink-frame-right",
+	"blockTypes": ["core/image", "core/media-text"],
+	"styles": {
+		"css": "& img {box-shadow: 10px 10px 0 var(--wp--preset--color--primary)}"
+	}
+}

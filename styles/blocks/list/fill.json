@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Fill",
+	"slug": "icecubo-fill-list",
+	"blockTypes": ["core/list" ],
+	"styles": {
+		"css": "& li::marker {color: var(--wp--preset--color--primary);} & li.is-style-icecubo-cancel-list::marker {color: var(--wp--preset--color--gray-very-light);}"
+	}
+}

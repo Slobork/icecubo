@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Annotate box",
+	"slug": "icecubo-accent-annotate",
+	"blockTypes": ["core/paragraph"],
+	"styles": {
+		"css": "width: fit-content",
+		"typography": {
+			"fontSize": "var:preset|font-size|small",
+			"lineHeight": "1.6",
+			"letterSpacing": "normal"
+		},
+		"border": {
+			"color": "currentColor",
+			"style": "solid",
+			"width": "1px",
+			"radius": "var(--wp--custom--radius-small)"
+		},
+		"spacing": {
+			"padding": {
+				"top": "var(--wp--custom--spacing-xxs)",
+				"right": "var(--wp--custom--spacing-xs)",
+				"bottom": "var(--wp--custom--spacing-xxs)",
+				"left": "var(--wp--custom--spacing-xs)"
+			}
+		},
+		"elements": {
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		}
+	}
+}

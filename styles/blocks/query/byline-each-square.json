@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Each Square",
+	"slug": "icecubo-each-square-post-byline",
+	"blockTypes": ["core/post-terms", "core/query-pagination" ],
+	"styles": {
+		"css": "& a {background: var(--wp--preset--color--white-ice); color: var(--wp--preset--color--darko-down-bottom); border-radius: var(--wp--custom--radius-small);} &.wp-block-post-terms a {font-weight: bold; padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xs);} &.wp-block-query-pagination > a {padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xl);} &.wp-block-query-pagination .wp-block-query-pagination-numbers a {padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);}"
+	}
+}

@@ -118,6 +118,9 @@ a.button {
 /* Boxed page/post template */
 [class*="template-boxed"] main { width: 78%; }
 
+/* Shade bar on links hover */
+a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+
 /* Footer - links */
 footer a:hover { opacity: .6; }
 /* Footer - eliminate the top margin, coz when 'main' tag has a background, white-space would be present */
@@ -136,45 +139,10 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  * Blocks
  */
 
-/*
+/**
  * Logo - remove any background effects on hover (they are actually added on links, but logo is a link as well)
  */
  .wp-block-site-logo a:hover, .wp-block-site-title a:hover {background: transparent !important;}
-
-/**
- * @Since 1.1.9
- * Moving here from an individual .css file for the paragraphs, headings and post-title,
- * coz it's using the same css classes
- * and it's hard to imagine the page without the paragraphs, headings and/or post-title
- */
-/* Headings & Post title */
-.is-style-icecubo-accent-text-small-1 {text-shadow: var(--wp--custom--text-shadow-small) var(--wp--preset--color--gray-light);}
-.is-style-icecubo-accent-text-small-2 {text-shadow: var(--wp--custom--text-shadow-small-2) var(--wp--preset--color--gray-light);}
-.is-style-icecubo-accent-text-huge-1 {text-shadow: .1em .1em 0 var(--wp--preset--color--gray-light);}
-.is-style-icecubo-accent-text-huge-2 {text-shadow: 5px 5px 0 var(--wp--preset--color--gray-very-light);}
-.is-style-icecubo-underline-overline {display: flex; flex-direction: column; line-height: 1.75;}
-.is-style-icecubo-underline-overline::before, .is-style-icecubo-underline-overline::after {content: ""; width: 10vh; border-top: 1px solid;}
-.is-style-icecubo-underline-color-primary::after {content: ""; display: block; border-bottom: 5px solid var(--wp--preset--color--primary); position: relative; top: 4px;}
-.is-style-icecubo-aside-lines {display: flex; align-items: center;}
-.is-style-icecubo-aside-lines::before, .is-style-icecubo-aside-lines::after {content: ''; border-top: 1px solid; margin: 0 15px; flex: 1 0 20px;}
-.is-style-icecubo-asterisk-over:before { content: ''; height: 3rem; background: currentColor; clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z'); display: block;}
-.is-style-icecubo-star-over:before { content: '\2605'; display: block; margin-bottom: var(--wp--custom--spacing-s);}
-
-/* Paragraph */
-.is-style-icecubo-highlight-p {box-shadow: var(--wp--custom--button-shadow);}
-[class*="is-style-icecubo-tearbox-"] {box-shadow: var(--wp--custom--button-shadow); border-radius: var(--wp--custom--radius-middle); margin: 2em auto 1em; width: fit-content;}
-.is-style-icecubo-tearbox-left-p {border-top-left-radius: 0;}
-.is-style-icecubo-tearbox-right-p {border-top-right-radius: 0;}
-
-/* All mix colors - Headings, Post title, paragraph */
-[class*="is-style-icecubo-mix-colors"] {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;}
-.is-style-icecubo-mix-colors {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--friend-dark) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
-.is-style-icecubo-mix-colors-light {background: linear-gradient(199deg, var(--wp--preset--color--shade-2) 40%, var(--wp--preset--color--friend-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
-.is-style-icecubo-mix-colors-glow   {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--primaryish) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
-.is-style-icecubo-mix-colors-glow-2 {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--primaryish-light) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
-.is-style-icecubo-mix-colors-glow-3 {background: linear-gradient(199deg, var(--wp--preset--color--shade-3) 40%, var(--wp--preset--color--highlight-2) 50%, var(--wp--preset--color--primary) 70%, var(--wp--preset--color--highlight-1) 100%);}
-.is-style-icecubo-mix-colors-focus {background: radial-gradient(var(--wp--preset--color--shade-1) 25%, var(--wp--preset--color--darko) 75%);}
-.is-style-icecubo-mix-colors-to-light {background: linear-gradient(to right, var(--wp--preset--color--primary), var(--wp--preset--color--primaryish-light));}
 
 /* Marking a chunk of text with a UI highlighter and adding a following class */
 [class*="ice-mark"] mark {background-clip: text !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;text-shadow: none !important;}
@@ -199,98 +167,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     max-width: none;
 }
 
-/**
- * Group/cover block.
- * Almost every page has a group block, so target block variation styling
- * from here instead separately from group and cover css files.
- */
-.is-style-icecubo-rotate-left {transform: rotate(-4deg);}
-.is-style-icecubo-rotate-right {transform: rotate(4deg);}
-@media (min-width: 600px) {
-    .is-style-icecubo-rotate-left {transform: rotate(-13deg);}
-    .is-style-icecubo-rotate-right {transform: rotate(13deg);}
-}
-
-/**
- * Post byline styling
- * - Instead of setting each css file for the post-author, post-date, terms, navigation-link, pagination,
- *   style it here
- */
-.is-style-icecubo-square-post-byline {
-     background: var(--wp--preset--color--white-ice);
-     color: var(--wp--preset--color--darko-down-bottom);
-     border-radius: var(--wp--custom--radius-small);
-     padding-left: var(--wp--custom--spacing-s);
-     padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-oval-post-byline {
-     background: var(--wp--preset--color--white-ice);
-     color: var(--wp--preset--color--darko-down-bottom);
-     border-radius: var(--wp--custom--radius-middle);
-     padding-left: var(--wp--custom--spacing-s);
-     padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-outline-post-byline {
-    border: 1px solid currentColor;
-    border-radius: var(--wp--custom--radius-middle);
-    padding-left: var(--wp--custom--spacing-s);
-    padding-right: var(--wp--custom--spacing-s);
-}
-
-.is-style-icecubo-square-post-byline.wp-block-query-pagination,
-.is-style-icecubo-oval-post-byline.wp-block-query-pagination,
-.is-style-icecubo-outline-post-byline.wp-block-query-pagination {
-    padding-left: var(--wp--custom--spacing-xl);
-    padding-right: var(--wp--custom--spacing-xl);
-}
-
-/**
- * As addition to post byline, each term styling
- */
-.is-style-icecubo-each-square-post-byline a {
-    background: var(--wp--preset--color--white-ice);
-    color: var(--wp--preset--color--darko-down-bottom);
-    border-radius: var(--wp--custom--radius-small);
-}
-
-.is-style-icecubo-each-oval-post-byline a {
-    background: var(--wp--preset--color--white-ice);
-    color: var(--wp--preset--color--darko-down-bottom);
-    border-radius: var(--wp--custom--radius-middle);
-}
-
-.is-style-icecubo-each-outline-post-byline a {
-    border: 1px solid currentColor;
-    border-radius: var(--wp--custom--radius-middle);
-}
-
-.is-style-icecubo-square-post-byline.wp-block-post-terms,
-.is-style-icecubo-oval-post-byline.wp-block-post-terms,
-.is-style-icecubo-each-square-post-byline.wp-block-post-terms a,
-.is-style-icecubo-each-oval-post-byline.wp-block-post-terms a {
-    font-weight: bold;
-}
-
-.is-style-icecubo-each-square-post-byline.wp-block-post-terms a,
-.is-style-icecubo-each-oval-post-byline.wp-block-post-terms a,
-.is-style-icecubo-each-outline-post-byline.wp-block-post-terms a {
-    padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xs);
-}
-
-.is-style-icecubo-each-square-post-byline.wp-block-query-pagination > a,
-.is-style-icecubo-each-oval-post-byline.wp-block-query-pagination > a,
-.is-style-icecubo-each-outline-post-byline.wp-block-query-pagination > a {
-    padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-xl);
-}
-
-.is-style-icecubo-each-square-post-byline.wp-block-query-pagination .wp-block-query-pagination-numbers a,
-.is-style-icecubo-each-oval-post-byline.wp-block-query-pagination .wp-block-query-pagination-numbers a,
-.is-style-icecubo-each-outline-post-byline.wp-block-query-pagination .wp-block-query-pagination-numbers a {
-    padding: var(--wp--custom--spacing-xxs) var(--wp--custom--spacing-s);
-}
-
 /* Small screens */
 @media (max-width: 599px) {
     /* Force behavior on mobile */
@@ -299,4 +175,23 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     .mob-force-flexdir-columns-rev {flex-direction: column-reverse !important;}
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
+    
+    
+    /* Narrow layouts */
+    .post-template-single-narrow, .post-template-alike-page-narrow {
+        --wp--style--global--wide-size: min(93%, 1240px);
+        --wp--style--global--content-size: min(83%, 660px);
+    }
+    .post-template-single-narrow .entry-content > *:not(.alignfull):not(.alignwide),
+    .post-template-alike-page-narrow .entry-content > *:not(.alignfull):not(.alignwide) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post-template-single-narrow .entry-content .alignwide,
+    .post-template-alike-page-narrow .entry-content .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

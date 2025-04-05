@@ -1,0 +1,414 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "+ Headings (Molle)",
+	"slug": "typography-preset-3-thin",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "sans-serif (System - Helvetica Neue, Helvetica, Arial)",
+					"slug": "helvetica-arial",
+					"fontFamily": "\"Helvetica Neue\",Helvetica,Arial,sans-serif"
+				},
+				{
+					"name": "sans-serif (System - Geneva, Tahoma, Verdana)",
+					"slug": "geneva-tahoma-verdana",
+					"fontFamily": "Geneva,Tahoma,Verdana,sans-serif"
+				},
+				{
+					"name": "sans-serif (System - BlinkMacSystemFont, Roboto, Segoe UI, Ubuntu)",
+					"slug": "system",
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,sans-serif"
+				},
+				{
+					"name": "serif (System - Cambria, Georgia)",
+					"slug": "cambria-georgia",
+					"fontFamily": "Cambria,Georgia,serif"
+				},
+				{
+					"name": "serif (System - Hoefler Text, Baskerville Old Face, Garamond, Times New Roman",
+					"slug": "hoefler-times-new-roman",
+					"fontFamily": "\"Hoefler Text\",\"Baskerville Old Face\",Garamond,\"Times New Roman\",serif"
+				},
+				{
+					"name": "monospace (System - Courier New - Courier)",
+					"slug": "monospace",
+					"fontFamily": "\"Courier New\",Courier,monospace"
+				},
+				{
+					"fontFamily": "Abel",
+					"name": "Abel",
+					"slug": "abel",
+					"fontFace": [
+						{
+							"fontFamily": "Abel",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Abel/Abel-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Aldrich",
+					"name": "Aldrich",
+					"slug": "aldrich",
+					"fontFace": [
+						{
+							"fontFamily": "Aldrich",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Aldrich/Aldrich-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Anta",
+					"name": "Anta",
+					"slug": "anta",
+					"fontFace": [
+						{
+							"fontFamily": "Anta",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Anta/Anta-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Bebas_Neue",
+					"name": "Bebas Neue",
+					"slug": "bebas-neue",
+					"fontFace": [
+						{
+							"fontFamily": "Bebas Neue",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Bruno_Ace",
+					"name": "Bruno Ace",
+					"slug": "bruno-ace",
+					"fontFace": [
+						{
+							"fontFamily": "Bruno Ace",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Bruno_Ace/BrunoAce-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Bruno_Ace_SC",
+					"name": "Bruno Ace SC",
+					"slug": "bruno-ace-sc",
+					"fontFace": [
+						{
+							"fontFamily": "Bruno Ace SC",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Chanticleer_Roman",
+					"name": "Chanticleer Roman",
+					"slug": "chanticleer-roman",
+					"fontFace": [
+						{
+							"fontFamily": "Chanticleer Roman",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Chanticleer_Roman/ChanticleerRomanNF-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Cookie",
+					"name": "Cookie",
+					"slug": "cookie",
+					"fontFace": [
+						{
+							"fontFamily": "Cookie",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Cookie/Cookie-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Crafty_Girls",
+					"name": "Crafty Girls",
+					"slug": "crafty-girls",
+					"fontFace": [
+						{
+							"fontFamily": "Crafty Girls",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Crafty_Girls/CraftyGirls-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Fjord_One",
+					"name": "Fjord One",
+					"slug": "fjord-one",
+					"fontFace": [
+						{
+							"fontFamily": "Fjord One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Fjord_One/FjordOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Gafata",
+					"name": "Gafata",
+					"slug": "gafata",
+					"fontFace": [
+						{
+							"fontFamily": "Gafata",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Gafata/Gafata-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Gruppo",
+					"name": "Gruppo",
+					"slug": "gruppo",
+					"fontFace": [
+						{
+							"fontFamily": "Gruppo",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Gruppo/Gruppo-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Indie_Flower",
+					"name": "Indie Flower",
+					"slug": "indie-flower",
+					"fontFace": [
+						{
+							"fontFamily": "Indie Flower",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Indie_Flower/IndieFlower-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Ledger",
+					"name": "Ledger",
+					"slug": "ledger",
+					"fontFace": [
+						{
+							"fontFamily": "Ledger",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Ledger/Ledger-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Liter",
+					"name": "Liter",
+					"slug": "liter",
+					"fontFace": [
+						{
+							"fontFamily": "Liter",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Liter/Liter-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Molle",
+					"name": "Molle",
+					"slug": "molle",
+					"fontFace": [
+						{
+							"fontFamily": "Molle",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Molle/Molle-Italic.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Novella",
+					"name": "Novella",
+					"slug": "novella",
+					"fontFace": [
+						{
+							"fontFamily": "Novella",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Novella/Novella-Regular.otf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Poiret_One",
+					"name": "Poiret One",
+					"slug": "poiret-one",
+					"fontFace": [
+						{
+							"fontFamily": "Poiret One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Poiret_One/PoiretOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Prosto_One",
+					"name": "Prosto One",
+					"slug": "prosto-one",
+					"fontFace": [
+						{
+							"fontFamily": "Prosto One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Prosto_One/ProstoOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Quattrocento",
+					"name": "Quattrocento",
+					"slug": "quattrocento",
+					"fontFace": [
+						{
+							"fontFamily": "Quattrocento",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Quattrocento/Quattrocento-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Questrial",
+					"name": "Questrial",
+					"slug": "questrial",
+					"fontFace": [
+						{
+							"fontFamily": "Questrial",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Questrial/Questrial-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Righteous",
+					"name": "Righteous",
+					"slug": "righteous",
+					"fontFace": [
+						{
+							"fontFamily": "Righteous",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Righteous/Righteous-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Russo_One",
+					"name": "Russo One",
+					"slug": "russo-one",
+					"fontFace": [
+						{
+							"fontFamily": "Russo One",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Russo_One/RussoOne-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Vast_Shadow",
+					"name": "Vast Shadow",
+					"slug": "vast-shadow",
+					"fontFace": [
+						{
+							"fontFamily": "Vast Shadow",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Vast_Shadow/VastShadow-Regular.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "Wallpoet",
+					"name": "Wallpoet",
+					"slug": "wallpoet",
+					"fontFace": [
+						{
+							"fontFamily": "Wallpoet",
+							"fontWeight": "normal",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Wallpoet/Wallpoet-Regular.ttf" ]
+						}
+					]
+				}
+				
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|quattrocento"
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|molle",
+					"fontWeight": "400"
+				}
+			}
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|molle",
+					"fontWeight": "400"
+				}
+			}
+		}
+	}
+}
