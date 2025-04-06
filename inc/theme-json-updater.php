@@ -51,7 +51,7 @@ if (! function_exists('icecubo_gradients_list') ) {
             array(
                 "slug"     => "transparent-to-primary-linear-gradual",
                 "gradient" => "linear-gradient(180deg,transparent 0%, var(--wp--preset--color--primary) 100%)",
-                "name"     => __("Transparent to primary gradually", 'neda')
+                "name"     => __("Transparent to primary gradually", 'icecubo')
             ),
             array(
                 "slug"     => "darko-to-white-linear-sharp-corner",
@@ -136,22 +136,22 @@ if (! function_exists('icecubo_gradients_list') ) {
             array(
                 'slug'     => 'primary-to-transparent-gradual-radial',
                 'gradient' => 'radial-gradient(var(--wp--preset--color--primary) 0%,transparent 100%)',
-                'name'     => __('Primary to transparent gradually', 'neda')
+                'name'     => __('Primary to transparent gradually', 'icecubo')
             ),
             array(
                 'slug'     => 'primary-to-transparent-radial-66-break',
                 'gradient' => 'radial-gradient(var(--wp--preset--color--primary) 0%,rgba(0,0,0,0) 66%)',
-                'name'     => __('Primary to transparent focus', 'neda')
+                'name'     => __('Primary to transparent focus', 'icecubo')
             ),
             array(
                 'slug'     => 'classy-to-transparent-radial-66-break',
                 'gradient' => 'radial-gradient(var(--wp--preset--color--classy-3) 0%,rgba(0,0,0,0) 66%)',
-                'name'     => __('Classy to transparent focus', 'neda')
+                'name'     => __('Classy to transparent focus', 'icecubo')
             ),
             array(
                 'slug'     => 'matching-to-transparent-radial-66-break',
                 'gradient' => 'radial-gradient(var(--wp--preset--color--matching-6) 0%,rgba(0,0,0,0) 66%)',
-                'name'     => __('Matching to transparent focus', 'neda')
+                'name'     => __('Matching to transparent focus', 'icecubo')
             ),
             array(
                 'slug'     => 'shade-2-to-primaryish-to-shade-4-diagonal',
