@@ -176,7 +176,6 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
     
-    
     /* Narrow layouts */
     .post-template-single-narrow, .post-template-alike-page-narrow {
         --wp--style--global--wide-size: min(93%, 1240px);
