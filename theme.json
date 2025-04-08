@@ -919,7 +919,7 @@
 		"typography": {
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"fontFamily": "var(--wp--preset--font-family--questrial)",
-			"lineHeight": "1.75"
+			"lineHeight": "1.65"
 		},
 		"elements": {
 			"link": {
@@ -1045,6 +1045,11 @@
 					"margin": {
 						"top": "var(--wp--preset--spacing--xxx-small)"
 					}
+				}
+			},
+			"core/list-item": {
+				"typography": {
+					"lineHeight": "1.75"
 				}
 			},
 			"core/navigation": {
