@@ -21,13 +21,15 @@
 <!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}},"textColor":"highlight-2"} -->
+ <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}},"textColor":"highlight-2"} -->
 <h1 class="wp-block-heading has-text-align-center has-highlight-2-color has-text-color" style="margin-top:var(--wp--preset--spacing--medium)">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:media-text {"align":"","mediaType":"image","className":"has-media-on-the-right has-white-color has-text-color","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-large"}},"elements":{"link":{"color":{"text":"var:preset|color|handle-contrast"}}}},"textColor":"handle-contrast"} -->
 <div class="wp-block-media-text is-stacked-on-mobile has-media-on-the-right has-white-color has-text-color has-handle-contrast-color has-link-color" style="margin-top:var(--wp--preset--spacing--x-large)"><figure class="wp-block-media-text__media"><img src="<?php echo esc_url(get_theme_file_uri('/assets/img/ice-cubes.png')); ?>" alt="IceCubo placeholder image"/></figure><div class="wp-block-media-text__content"><!-- wp:heading {"textColor":"highlight-3"} -->

@@ -21,13 +21,15 @@
 <!-- wp:navigation {"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
 <h1 class="wp-block-heading has-text-align-center" style="margin-top:var(--wp--preset--spacing--medium)">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
 <p class="has-text-align-center has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!</p>
-<!-- /wp:paragraph -->
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
 
 <!-- wp:media-text {"align":"","mediaPosition":"right","mediaType":"image","mediaSizeSlug":"large","style":{"spacing":{"margin":{"top":"var:preset|spacing|x-large"}}}} -->
 <div class="wp-block-media-text has-media-on-the-right is-stacked-on-mobile" style="margin-top:var(--wp--preset--spacing--x-large)"><div class="wp-block-media-text__content"><!-- wp:heading -->
