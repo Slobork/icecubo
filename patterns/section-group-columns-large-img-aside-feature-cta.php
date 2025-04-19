@@ -22,8 +22,8 @@
 <p class="is-style-icecubo-mix-colors has-primary-dark-color has-primaryish-light-background-color has-text-color has-background has-link-color has-small-font-size" style="margin-right:0;margin-bottom:var(--wp--preset--spacing--xx-large);margin-left:0;padding-top:5px;padding-right:var(--wp--preset--spacing--medium);padding-bottom:5px;padding-left:var(--wp--preset--spacing--medium);font-style:normal;font-weight:700">Built with IceCubo</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:group {"className":"is-style-icecubo-rotate-right","style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"left":"var:preset|spacing|large"},"margin":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}},"dimensions":{"minHeight":""}},"layout":{"type":"constrained","justifyContent":"left"}} -->
-<div class="wp-block-group is-style-icecubo-rotate-right" style="margin-top:var(--wp--preset--spacing--xx-large);margin-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"className":"is-style-icecubo-mix-colors-glow"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"left":"var:preset|spacing|large"},"margin":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}},"dimensions":{"minHeight":""}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--xx-large);margin-bottom:var(--wp--preset--spacing--xx-large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"className":"is-style-icecubo-mix-colors-glow"} -->
 <h2 class="wp-block-heading is-style-icecubo-mix-colors-glow">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 <!-- /wp:heading -->
 
