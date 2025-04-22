@@ -84,7 +84,7 @@
 /* 
  * For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible.
  * The exception is the Cover block, where it stays visible, while it acts as a parent (background-cover).
- * If the Cover block is set with z-index 1, it would unnaturally cover adjacent content.
+ * If the Cover block is set with z-index > 1, it would cover adjacent content and wouldn't act as a bg.
  */
  .is-root-container > .ice-cover-decor, .wp-block:not(.wp-block-cover) .ice-cover-decor {z-index: 1 !important;}
 
