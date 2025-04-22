@@ -86,7 +86,7 @@
  * The exception is the Cover block, where it stays visible, while it acts as a parent (background-cover).
  * If the Cover block is set with z-index 1, it would unnaturally cover adjacent content.
  */
-.wp-block:not(.wp-block-cover) .ice-cover-decor {z-index: 1 !important;}
+ .is-root-container > .ice-cover-decor, .wp-block:not(.wp-block-cover) .ice-cover-decor {z-index: 1 !important;}
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
