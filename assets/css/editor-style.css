@@ -87,6 +87,8 @@
  * If the Cover block is set with z-index > 1, it would cover adjacent content and wouldn't act as a bg.
  */
  .is-root-container > .ice-cover-decor, .wp-block:not(.wp-block-cover) .ice-cover-decor {z-index: 1 !important;}
+ /* ...When selected, make other adjecent elements with larger z-index, so they can be selected. */
+ .wp-block .ice-cover-decor.is-selected ~ * {z-index: 99 !important;}
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}
