@@ -43,7 +43,7 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
-            'icecubo-page-parts',
+            'icecubo-page-contact',
             array( 'label' => esc_html__('IceCubo - 2.5 Pages (Contact)', 'icecubo') )
         );
 
