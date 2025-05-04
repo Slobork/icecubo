@@ -3,7 +3,7 @@
 /**
  * Title: Basic about page content.
  * Slug: icecubo/page-about
- * Categories: icecubo-page
+ * Categories: icecubo-page-about
  */
 ?>
 <!-- wp:media-text {"align":"wide","mediaType":"image","className":"alignwide"} -->

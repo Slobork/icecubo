@@ -3,7 +3,7 @@
 /**
  * Title: Project page content (2).
  * Slug: icecubo/page-content-project-2
- * Categories: icecubo-page
+ * Categories: icecubo-page-project
  */
 ?>
 <!-- wp:pattern {"slug":"icecubo/section-columns-project-info"} /-->
