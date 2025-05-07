@@ -1063,7 +1063,8 @@
 					"margin": {
 						"bottom": "var(--wp--custom--spacing-xxxl)"
 					}
-				}
+				},
+				"css": "&.ice-read-more-hover-spread a.wp-block-post-excerpt__more-link:hover {letter-spacing: 1px; transition: all .2s ease-in-out}"
 			},
 			"core/post-featured-image": {
 				"border": {
