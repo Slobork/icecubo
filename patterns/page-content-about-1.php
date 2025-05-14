@@ -1,8 +1,8 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic about page content.
- * Slug: icecubo/page-about
+ * Title: About page (1).
+ * Slug: icecubo/page-about-1
  * Categories: icecubo-page-about
  */
 ?>
