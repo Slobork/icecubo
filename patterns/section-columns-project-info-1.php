@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Columns - Project info.
+ * Title: Columns - Project info (1).
  * Slug: icecubo/section-columns-project-info-1
  * Categories: icecubo-section
  */
