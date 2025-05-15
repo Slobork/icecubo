@@ -6,7 +6,7 @@
  * Categories: icecubo-page-project
  */
 ?>
-<!-- wp:pattern {"slug":"icecubo/section-columns-project-info"} /-->
+<!-- wp:pattern {"slug":"icecubo/section-columns-project-info-1"} /-->
 
 <!-- wp:spacer {"height":"150px"} -->
 <div style="height:150px" aria-hidden="true" class="wp-block-spacer"></div>
