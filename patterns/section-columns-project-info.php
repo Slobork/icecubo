@@ -29,7 +29,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<p class="has-text-align-center" style="margin-top:0">State 1</p>
+<p class="has-text-align-center" style="margin-top:0">State 2</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -39,7 +39,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<p class="has-text-align-center" style="margin-top:0">State 1</p>
+<p class="has-text-align-center" style="margin-top:0">State 3</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
@@ -49,7 +49,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0"}}}} -->
-<p class="has-text-align-center" style="margin-top:0">State 1</p>
+<p class="has-text-align-center" style="margin-top:0">State 4</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
