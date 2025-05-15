@@ -13,8 +13,8 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:columns {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}},"spacing":{"blockGap":{"left":"var:preset|spacing|xxx-small"}}},"textColor":"primary-dark"} -->
-<div class="wp-block-columns has-primary-dark-color has-text-color has-link-color"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
-<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
+<div class="wp-block-columns has-primary-dark-color has-text-color has-link-color"><!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"border":{"radius":"20px"}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
+<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
 <p class="has-text-align-center has-xxxl-font-size" style="margin-bottom:0;line-height:1.3">99%</p>
 <!-- /wp:paragraph -->
 
@@ -23,8 +23,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
-<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"border":{"radius":"20px"}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
+<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
 <p class="has-text-align-center has-xxxl-font-size" style="margin-bottom:0;line-height:1.3">99%</p>
 <!-- /wp:paragraph -->
 
@@ -33,8 +33,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
-<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"border":{"radius":"20px"}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
+<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
 <p class="has-text-align-center has-xxxl-font-size" style="margin-bottom:0;line-height:1.3">99%</p>
 <!-- /wp:paragraph -->
 
@@ -43,8 +43,8 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
-<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
-<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"border":{"radius":"20px"}},"backgroundColor":"tint-very-light-2","textColor":"primary"} -->
+<div class="wp-block-column has-primary-color has-tint-very-light-2-background-color has-text-color has-background has-link-color" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"0"}},"typography":{"lineHeight":"1.3"}},"fontSize":"xxxl"} -->
 <p class="has-text-align-center has-xxxl-font-size" style="margin-bottom:0;line-height:1.3">99%</p>
 <!-- /wp:paragraph -->
 
