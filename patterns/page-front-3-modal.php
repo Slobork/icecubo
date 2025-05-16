@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Front page 3.
+ * Title: Basic layout front page (3). Header-Hero plus achievement in numbers, features partners logo, pricing, and testimonials sections.
  * Slug: icecubo/page-front-3-modal
  * Categories: hidden
  * Inserter: false

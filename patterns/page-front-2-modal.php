@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Front page 2.
+ * Title: Basic Layout front page (2). Header-Hero plus features and testimonials sections.
  * Slug: icecubo/page-front-2-modal
  * Categories: hidden
  * Inserter: false
