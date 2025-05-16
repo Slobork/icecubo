@@ -23,5 +23,5 @@
 </div>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"icecubo/section-cover-numbers"} /-->
+<!-- wp:pattern {"slug":"icecubo/numbers-in-cover-section"} /-->
 <!-- wp:pattern {"slug":"icecubo/testimonials-1st"} /-->
