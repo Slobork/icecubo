@@ -18,8 +18,8 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-icecubo-mix-colors","style":{"spacing":{"padding":{"top":"5px","bottom":"5px","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"right":"0","left":"0","bottom":"var:preset|spacing|xx-large"}},"typography":{"fontStyle":"normal","fontWeight":"700"},"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}}},"backgroundColor":"primaryish-light","textColor":"primary-dark","fontSize":"small"} -->
-<p class="is-style-icecubo-mix-colors has-primary-dark-color has-primaryish-light-background-color has-text-color has-background has-link-color has-small-font-size" style="margin-right:0;margin-bottom:var(--wp--preset--spacing--xx-large);margin-left:0;padding-top:5px;padding-right:var(--wp--preset--spacing--medium);padding-bottom:5px;padding-left:var(--wp--preset--spacing--medium);font-style:normal;font-weight:700">Built with IceCubo</p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-icecubo-mix-colors-glow-3","style":{"spacing":{"padding":{"top":"5px","bottom":"5px","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"right":"0","left":"0","bottom":"var:preset|spacing|xx-large"}},"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"small"} -->
+<p class="is-style-icecubo-mix-colors-glow-3 has-small-font-size" style="margin-right:0;margin-bottom:var(--wp--preset--spacing--xx-large);margin-left:0;padding-top:5px;padding-right:var(--wp--preset--spacing--medium);padding-bottom:5px;padding-left:var(--wp--preset--spacing--medium);font-style:normal;font-weight:700">Built with IceCubo</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"left":"var:preset|spacing|large"},"margin":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large"}},"dimensions":{"minHeight":""}},"layout":{"type":"constrained","justifyContent":"left"}} -->
