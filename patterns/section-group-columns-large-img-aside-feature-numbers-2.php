@@ -1,12 +1,12 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Present a features in a group. Columns with large sink styled image aside, numbers on the other side.
+ * Title: Present a feature. Columns wrapped with a group element. Large sink styled image aside, numbers on the other side.
  * Slug: icecubo/section-group-columns-large-img-aside-feature-numbers-2
  * Categories: icecubo-section
  */
 ?>
-<!-- wp:group {"metadata":{"categories":["icecubo-section"],"patternName":"icecubo/section-group-columns-large-img-aside-feature-numbers-2","name":"Present a features in a group. Columns with large sink styled image aside, numbers on the other side."},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"layout":{"inherit":true,"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"categories":["icecubo-section"],"patternName":"icecubo/section-group-columns-large-img-aside-feature-numbers-2","name":"Present a feature. Columns wrapped with a group element. Large sink styled image aside, numbers on the other side."},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-large","bottom":"var:preset|spacing|xxx-large","right":"var:preset|spacing|medium","left":"var:preset|spacing|medium"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--xxx-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--xxx-large);padding-left:var(--wp--preset--spacing--medium)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"},"margin":{"top":"0px","bottom":"0px"}}}} -->
 <div class="wp-block-columns alignwide" style="margin-top:0px;margin-bottom:0px"><!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"aspectRatio":"3/4","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-icecubo-image-sink-frame-left","style":{"color":[],"border":{"radius":{"topRight":"40px"},"right":{"color":"var:preset|color|primary-light","width":"10px"},"top":[],"bottom":[],"left":[]}}} -->
