@@ -10,7 +10,7 @@
 <div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0"><span aria-hidden="true" class="wp-block-cover__background has-primary-dark-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|medium"}}}} -->
 <div class="wp-block-columns" style="padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:column {"width":"40%"} -->
 <div class="wp-block-column" style="flex-basis:40%"><!-- wp:image {"aspectRatio":"9/16","scale":"cover","sizeSlug":"large","linkDestination":"none","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-<figure class="wp-block-image size-large" style="margin-top:0;margin-bottom:0"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-shaker.jpeg" alt="IceCubo Placeholder Image" style="aspect-ratio:9/16;object-fit:cover"/><figcaption class="wp-element-caption">Orange Iris</figcaption></figure>
+<figure class="wp-block-image size-large" style="margin-top:0;margin-bottom:0"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-shaker.jpeg" alt="IceCubo Placeholder Image" style="aspect-ratio:9/16;object-fit:cover"/><figcaption class="wp-element-caption">Orange Shaker</figcaption></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
