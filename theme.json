@@ -1038,14 +1038,15 @@
 				"css": "&:not(.noice) p {border-left: 1px solid; padding-left: 1.5rem; margin-left: .25em;}"
 			},
 			"core/image": {
-				"css": " {margin: 1.5rem 0 1rem}"
+				"css": " {margin: 1.5rem 0 1rem} & figcaption {color: inherit}"
 			},
 			"core/list": {
 				"spacing": {
 					"margin": {
 						"top": "var(--wp--preset--spacing--xxx-small)"
 					}
-				}
+				},
+				"css": "&.is-style-default .is-style-icecubo-cancel-list::marker {color: color-mix(in srgb, currentColor 25%, transparent)"
 			},
 			"core/list-item": {
 				"typography": {
