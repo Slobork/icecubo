@@ -297,8 +297,13 @@
 				},
 				{
 					"color": "#FFCFBA",
-					"name": "For contrast - primary",
+					"name": "For contrast - primary alike 1",
 					"slug": "handle-contrast-5"
+				},
+				{
+					"color": "#521900",
+					"name": "For contrast - primary alike 2",
+					"slug": "handle-contrast-6"
 				}
 			],
 			"duotone": [
