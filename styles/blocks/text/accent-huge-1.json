@@ -5,6 +5,6 @@
 	"slug": "icecubo-accent-text-huge-1",
 	"blockTypes": ["core/heading", "core/post-title"],
 	"styles": {
-		"css": "text-shadow: .1em .1em 0 var(--wp--preset--color--gray-light)"
+		"css": "text-shadow: .1em .1em 0 color-mix(in srgb, currentColor 30%, transparent)"
 	}
 }
