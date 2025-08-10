@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Testimonials in columns with image aside and quote block.
+ * Title: Testimonials in columns with image and stars on one side, and quote block on the other.
  * Slug: icecubo/testimonials-aside-image-quote-block
  * Categories: icecubo-testimonials
  */
