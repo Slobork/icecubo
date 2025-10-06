@@ -93,7 +93,3 @@
     .mob-minheight-no {min-height: unset !important;}
     .mob-display-out { display: none !important;}
 }
-
-@media (min-width: 600px) {
-    .large-screens-display-out { display: none !important;}
-}
