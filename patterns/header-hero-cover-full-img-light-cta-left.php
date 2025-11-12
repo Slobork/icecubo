@@ -9,7 +9,7 @@
 ?>
 <!-- wp:cover {"url":"<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-cubes.png","alt":"IceCubo Theme Placeholder Image","dimRatio":40,"overlayColor":"tint-very-light-2","isUserOverlayColor":true,"minHeight":80,"minHeightUnit":"vh","contentPosition":"center center","isDark":false,"align":"full","className":"is-style-default","style":{"color":{"duotone":"unset"}},"textColor":"primary-dark","layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull is-light is-style-default has-primary-dark-color has-text-color" style="min-height:80vh"><img class="wp-block-cover__image-background" alt="IceCubo Theme Placeholder Image" src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-cubes.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-tint-very-light-2-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex"}} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /-->
 
 <!-- wp:group -->
