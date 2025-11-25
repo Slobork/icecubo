@@ -18,7 +18,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"66.66%"} -->
-<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","top":"var:preset|spacing|x-large","right":"var:preset|spacing|xxx-small","left":"var:preset|spacing|xxx-small"},"blockGap":"var:preset|spacing|large"},"border":{"radius":"20px"}},"backgroundColor":"primary","textColor":"white-ice","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large","top":"var:preset|spacing|x-large","right":"var:preset|spacing|xxx-small","left":"var:preset|spacing|xxx-small"},"blockGap":"var:preset|spacing|large"},"border":{"radius":"20px"}},"backgroundColor":"primary","textColor":"white-ice","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-group has-white-ice-color has-primary-background-color has-text-color has-background" style="border-radius:20px;padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--xxx-small)"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
 <p class="has-text-align-center has-medium-font-size">Client name</p>
@@ -45,7 +45,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"small"} -->
-<p class="has-text-align-center has-small-font-size">22. 3. 2024.</p>
+<p class="has-text-align-center has-small-font-size">22. 9. 2025.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
