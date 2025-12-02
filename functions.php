@@ -23,6 +23,7 @@
 define('ICECUBO_VERSION', wp_get_theme()->get('Version'));
 
 require_once get_theme_file_path('inc/key.php');
+require_once get_theme_file_path('inc/settings-page.php');
 require_once get_theme_file_path('inc/register-block-patterns.php');
 require_once get_theme_file_path('inc/register-block-styles.php');
 require_once get_theme_file_path('inc/theme-json-updater.php');
