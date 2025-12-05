@@ -21,6 +21,7 @@ if ( ! function_exists( 'icecubo_activation_redirect' ) ) {
  * Redirect to the theme options page right after theme activation.
  */
 if ( ! function_exists( 'icecubo_redirect_after_activation' ) ) {
+
     function icecubo_redirect_after_activation() {
         if ( ! is_admin() ) {
             return;
@@ -44,20 +45,27 @@ if ( ! function_exists( 'icecubo_redirect_after_activation' ) ) {
     add_action( 'admin_init', 'icecubo_redirect_after_activation' );
 }
 
+/**
+ * Add theme options page to the admin menu.
+ */
+if ( ! function_exists( 'icecubo_theme_options' ) ) {
 
-function icecubo_theme_options() {
+    function icecubo_theme_options() {
 
-    add_theme_page(
-        'IceCubo Theme Options',
-        esc_html__('IceCubo Theme', 'icecubo'),
-        'manage_options',
-        'icecubo-theme-options',
-        'icecubo_theme_options_page'
-    );
+        add_theme_page(
+            'IceCubo Theme Options',
+            esc_html__('IceCubo Theme', 'icecubo'),
+            'manage_options',
+            'icecubo-theme-options',
+            'icecubo_theme_options_page'
+        );
 
-    add_action('admin_init', 'icecubo_register_settings');
+        add_action('admin_init', 'icecubo_register_settings');
+    }
+
+    add_action('admin_menu', 'icecubo_theme_options');
 }
-add_action('admin_menu', 'icecubo_theme_options');
+    
 
 
 function icecubo_register_settings() {
@@ -78,6 +86,25 @@ function icecubo_register_settings() {
     );
 }
 
+
+function section_one_callback() {
+    echo '<p>Settings for the first section.</p>';
+}
+
+
+function icecubo_theme_options_page() {
+    ?>
+    <div class="wrap">
+        <h1>IceCubo Theme Options</h1>
+        <form method="post" action="options.php">
+            <?php
+            settings_fields('icecubo-theme-options');
+            do_settings_sections('icecubo-theme-options');
+            ?>
+        </form>
+    </div>
+    <?php
+}
 
 /**
  * Render an info box with a background image.
@@ -112,24 +139,4 @@ function icecubo_info_background_callback() {
     }
 
     echo '</div>';
-}
-
-
-function section_one_callback() {
-    echo '<p>Settings for the first section.</p>';
-}
-
-
-function icecubo_theme_options_page() {
-    ?>
-    <div class="wrap">
-        <h1>IceCubo Theme Options</h1>
-        <form method="post" action="options.php">
-            <?php
-            settings_fields('icecubo-theme-options');
-            do_settings_sections('icecubo-theme-options');
-            ?>
-        </form>
-    </div>
-    <?php
 }
