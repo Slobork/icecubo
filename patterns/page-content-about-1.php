@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic about page content.
- * Slug: icecubo/page-about
- * Categories: icecubo-page
+ * Title: About page (1).
+ * Slug: icecubo/page-about-1
+ * Categories: icecubo-page-about
  */
 ?>
 <!-- wp:media-text {"align":"wide","mediaType":"image","className":"alignwide"} -->

@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Two floors - large searchbox and slanting links.
+ * Title: Two floors - large searchbox and links on side.
  * Slug: icecubo/footer-2floors-large-searchbox
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
@@ -18,8 +18,8 @@
 <!-- wp:search {"label":"Search","showLabel":false,"width":75,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"style":{"border":{"width":"1px"}}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":[]},"className":"is-style-icecubo-rotate-right","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top","orientation":"horizontal"}} -->
-<div class="wp-block-group is-style-icecubo-rotate-right"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<!-- wp:group {"style":{"spacing":[]},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","verticalAlignment":"top","orientation":"horizontal"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"textTransform":"uppercase","fontSize":"0.9rem","letterSpacing":"1px","fontStyle":"normal","fontWeight":"600"}}} -->
 <p class="has-text-align-left" style="font-size:0.9rem;font-style:normal;font-weight:600;letter-spacing:1px;text-transform:uppercase">Social</p>
 <!-- /wp:paragraph -->

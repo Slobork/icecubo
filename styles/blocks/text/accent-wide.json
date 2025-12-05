@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Accent wide",
+	"slug": "icecubo-accent-text-wide",
+	"blockTypes": ["core/heading", "core/post-title"],
+	"styles": {
+		"css": "text-shadow: 0 0 40px currentColor"
+	}
+}

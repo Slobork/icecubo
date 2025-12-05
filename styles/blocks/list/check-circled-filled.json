@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Check Circled Filled",
+	"slug": "icecubo-check-list-circled-filled",
+	"blockTypes": ["core/list" ],
+	"styles": {
+		"css": "list-style-type: none; padding-left: 1rem; & li {position: relative; list-style-type: none; padding-left: 1.2em; margin-bottom: .65rem;} & li::before{content: '✓'; display: block; position: absolute; left: 0; top: 0; padding: 0 .75rem; margin-left: -2.25rem; border-radius: 50%; background: var(--wp--preset--color--primary); color: var(--wp--preset--color--white-ice);} & li.is-style-icecubo-cancel-list::before { content: '+'; transform: rotate(45deg);padding: 0 .85rem;}"
+	}
+}

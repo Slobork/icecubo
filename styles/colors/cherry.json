@@ -111,12 +111,12 @@
 					"slug": "generic-3"
 				},
 				{
-					"color": "#334b76",
+					"color": "#475C83",
 					"name": "Generic 4",
 					"slug": "generic-4"
 				},
 				{
-					"color": "#2f4858",
+					"color": "#324957",
 					"name": "Generic 5",
 					"slug": "generic-5"
 				},
@@ -287,7 +287,7 @@
 				},
 				{
 					"color": "#F1F1F1",
-					"name": "For contrast - mainly buttons",
+					"name": "For contrast - similar to the desing skin background",
 					"slug": "handle-contrast-3"
 				},
 				{
@@ -297,8 +297,13 @@
 				},
 				{
 					"color": "#FFD0D9",
-					"name": "For contrast - primary",
+					"name": "For contrast - primary alike 1",
 					"slug": "handle-contrast-5"
+				},
+				{
+					"color": "#462123",
+					"name": "For contrast - primary alike 2",
+					"slug": "handle-contrast-6"
 				}
 			],
 			"duotone": [

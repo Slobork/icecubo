@@ -3,7 +3,7 @@
 /**
  * Title: Basic Layout front page (2). Header-Hero plus features and testimonials sections.
  * Slug: icecubo/page-front-2-incontent
- * Categories: icecubo-page
+ * Categories: icecubo-page-front
  */
 ?>
 <!-- wp:group {"metadata":{"name":"Header"},"tagName":"header","align":"full","layout":{"type":"default"}} -->

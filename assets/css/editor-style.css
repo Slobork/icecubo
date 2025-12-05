@@ -50,11 +50,6 @@
 }
 
 /**
- * Add a class to the last block to eliminate the template's space at bottom.
- * Needs to be done manually in the UI
- */.ice-cut-template-space-bottom.ice-cut-template-space-bottom {margin-bottom: -3.5rem !important;}
-
-/**
  * Blocks
  */
 
@@ -85,9 +80,6 @@
     color: var(--wp--preset--color--darko-down);
     padding: 3px 8px;
 }
-
- /* For Decorative Backgrounds - in the Editor z-index cannot be negative, otherwise it isn't visible. */
- .ice-cover-decor {z-index: 1 !important;}
 
 /* Comment reply button - isn't picking the removal of the text decoartion from the css file */
 [class*="is-style-icecubo-comment-reply-button-"] a { text-decoration: none;}

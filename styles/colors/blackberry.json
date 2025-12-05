@@ -27,7 +27,7 @@
 				},
 				{
 					"slug": "primary-dark",
-					"color": "#2e2848",
+					"color": "#473D73",
 					"name": "Primary dark"
 				},
 				{
@@ -287,7 +287,7 @@
 				},
 				{
 					"color": "#262626",
-					"name": "For contrast - mainly buttons",
+					"name": "For contrast - similar to the desing skin background",
 					"slug": "handle-contrast-3"
 				},
 				{
@@ -297,8 +297,13 @@
 				},
 				{
 					"color": "#423770",
-					"name": "For contrast - primary",
+					"name": "For contrast - primary alike 1",
 					"slug": "handle-contrast-5"
+				},
+				{
+					"color": "#c0bcd0",
+					"name": "For contrast - primary alike 2",
+					"slug": "handle-contrast-6"
 				}
 			],
 			"duotone": [
