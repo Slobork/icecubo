@@ -22,8 +22,8 @@
 <!-- /wp:group -->
 
  <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}},"textColor":"highlight-2"} -->
-<h1 class="wp-block-heading has-text-align-center has-highlight-2-color has-text-color" style="margin-top:var(--wp--preset--spacing--medium)">IceCubo WordPress Theme</h1>
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":1,"className":"is-style-icecubo-mix-colors-glow-3","style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}},"textColor":"highlight-2"} -->
+<h1 class="wp-block-heading has-text-align-center is-style-icecubo-mix-colors-glow-3 has-highlight-2-color has-text-color" style="margin-top:var(--wp--preset--spacing--medium)">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
