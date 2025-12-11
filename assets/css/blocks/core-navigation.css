@@ -18,7 +18,11 @@
 
 /* Mobile menu modal overlay - give some spacing */
 .has-modal-open .wp-block-navigation__responsive-container {padding: 18px 5px;}
-.has-modal-open .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {line-height: 2.3;}
+.has-modal-open .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item {line-height: 2;}
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child >.wp-block-navigation__submenu-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
 /* On buttons's hover in the nav set a shadow */
 nav .wp-block-search__button.wp-element-button:hover,
