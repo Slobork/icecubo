@@ -17,6 +17,14 @@ body * {
     hyphens: auto;
 }
 
+input[type="submit"]:not(.wp-element-button) {
+   font-size: var(--wp--preset--font-size--small);
+   background: var(--wp--preset--color--darko-transit);
+   color: white;
+   padding: calc(.667em + 1px);
+   border-radius: calc(var(--wp--custom--radius-small) + 2px);
+}
+
 /* Links and inputs transition */
 a,
 button,
