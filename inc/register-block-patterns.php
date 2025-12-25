@@ -24,7 +24,7 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-page-front',
-            array( 'label' => esc_html__('IceCubo - 2.1. Pages (Front page/Landing)', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 2.1. Pages (Landing)', 'icecubo') )
         );
 
         register_block_pattern_category(
