@@ -22,7 +22,8 @@ input[type="submit"]:not(.wp-element-button) {
    background: var(--wp--preset--color--darko-transit);
    color: white;
    padding: calc(.667em + 1px);
-   border-radius: calc(var(--wp--custom--radius-small) + 2px);
+   border: 0;
+   border-radius: calc(var(--wp--custom--radius-small) + 4px);
 }
 
 /* Links and inputs transition */
