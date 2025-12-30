@@ -196,6 +196,10 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Footer navigation - stack items vertically */
+    footer nav ul.wp-block-navigation__container {flex-direction: column;}
+
 }
 
 @media (min-width: 600px) {
