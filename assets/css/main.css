@@ -92,6 +92,15 @@ pre { overflow: auto; }
 }
 
 /**
+ * Gallery captions background 
+ * - Doing it here, coz in theme.json it's not working without !important
+ */
+.wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
+    background: linear-gradient(0deg, #000000b7, #0000004a);
+    padding: .75em;
+}
+
+/**
  * When h element is the first in the group,
  * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
  * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' property
