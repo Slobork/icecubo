@@ -17,6 +17,15 @@ body * {
     hyphens: auto;
 }
 
+input[type="submit"]:not(.wp-element-button) {
+   font-size: var(--wp--preset--font-size--small);
+   background: var(--wp--preset--color--darko-transit);
+   color: white;
+   padding: calc(.667em + 1px);
+   border: 0;
+   border-radius: calc(var(--wp--custom--radius-small) + 4px);
+}
+
 /* Links and inputs transition */
 a,
 button,
@@ -77,9 +86,18 @@ pre { overflow: auto; }
 
 /* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
-    background: var(--wp--preset--color--gray-very-light);
+    background: #e3e3e3;
     color: var(--wp--preset--color--darko-down);
     padding: 3px 8px;
+}
+
+/**
+ * Gallery captions background 
+ * - Doing it here, coz in theme.json it's not working without !important
+ */
+.wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
+    background: linear-gradient(0deg, color-mix(in srgb, var(--wp--preset--color--shade-6) 95%, transparent), #00000014);
+    padding: .75em;
 }
 
 /**
@@ -187,6 +205,10 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* Footer navigation - stack items vertically */
+    footer nav ul.wp-block-navigation__container {flex-direction: column;}
+
 }
 
 @media (min-width: 600px) {

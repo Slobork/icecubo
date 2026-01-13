@@ -132,8 +132,8 @@ function icecubo_info_background_callback() {
         echo '</div>';
     } else {
         echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px;">';
-        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Activate Ice Plugins', 'icecubo' ) . '</h3>';
-        echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional addons and templates.', 'icecubo' ) . '</p>';
+        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Install And Activate Icecubo Plugins', 'icecubo' ) . '</h3>';
+        echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional addons and templates. Once installed, Icecubo plugins will be available from the regular WP Plugins page.', 'icecubo' ) . '</p>';
         echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="plugins.php?page=icecubo-install-plugins&plugin_status=activate">Go to the Ice plugins →</a>';
         echo '</div>';
     }

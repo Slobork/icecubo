@@ -13,12 +13,12 @@ IceCubo is a block-based theme for WordPress. Fundamentally may be used as a sta
 == Changelog ==
 
 = 1.2.4 - 2025-12-07 =
-* Multiple css tweaks
+* Multiple CSS tweaks
 * Small patterns tweaking
 * Add some patterns
 * Some slugs of the nav styles are changed
-* Update color palettes with few contrasing colors
-* Update some colors from the palettes for better contrasing
+* Update color palettes with a few contrasting colors
+* Update some colors from the palettes for better contrast
 
 = 1.2.3 - 2025-04-05 =
 * Add font presets - It allows you to keep the existing color set, but to change among available font presets

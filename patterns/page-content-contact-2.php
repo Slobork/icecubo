@@ -47,7 +47,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>You should put a contact form beneath. First, you should install a plugin, for example "Contact form 7", then insert its shortcode. Also remove this paragraph.</p>
+<p>You should put a contact form below. First, you should install a plugin, for example, "Contact Form 7", then insert its shortcode. Also, remove this paragraph.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:shortcode /--></div>
