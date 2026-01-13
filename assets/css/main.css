@@ -97,7 +97,7 @@ pre { overflow: auto; }
  */
 .wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
     background: linear-gradient(0deg, color-mix(in srgb, var(--wp--preset--color--shade-6) 95%, transparent), #00000014);
-    padding: .75em; 
+    padding: .75em;
 }
 
 /**
