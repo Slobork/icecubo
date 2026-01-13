@@ -96,7 +96,7 @@ pre { overflow: auto; }
  * - Doing it here, coz in theme.json it's not working without !important
  */
 .wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
-    background: linear-gradient(0deg, #000000b7, #0000004a);
+    background: linear-gradient(0deg, color-mix(in srgb, var(--wp--preset--color--shade-6) 95%, transparent), #00000014);
     padding: .75em;
 }
 
