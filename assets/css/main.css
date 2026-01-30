@@ -117,6 +117,13 @@ pre { overflow: auto; }
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
+
+/**
+ * Small margin on the top of all elements inside the flow and constrained layouts.
+ * Overwrites the defalt which is medium
+ */
+:root :where(.is-layout-flow, .is-layout-constrained) > * {margin-block-start: var(--wp--preset--spacing--small)}
+
 /**
  * text-decoration in links is important for accessibility. However,
  * remove the text decoration from the links that are already highlighted
