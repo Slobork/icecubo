@@ -53,3 +53,9 @@
     background: var(--wp--preset--color--darko);
     color: var(--wp--preset--color--white-ice);
 }
+
+/* Woo product meta - make it column */
+.product_meta {
+    display: flex;
+    flex-direction: column;
+}
