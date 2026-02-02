@@ -136,6 +136,7 @@ body.search main h2 a,
 .wp-block-post-terms a,
 .wp-block-post-navigation-link a,
 .remove-text-decor a,
+.remove-link-decor a,
 a.button {
      text-decoration: none;
 }
