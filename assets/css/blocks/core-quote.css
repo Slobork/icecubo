@@ -20,3 +20,5 @@
 .wp-block-quote.has-text-align-right p::before {
     margin-left: -4rem;
 }
+
+.wp-block-quote.has-background { padding: var(--wp--preset--spacing--small); }
