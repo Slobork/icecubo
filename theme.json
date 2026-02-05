@@ -1019,7 +1019,7 @@
 			"core/code": {
 				"color": {
 					"background": "var(--wp--preset--color--gray-very-light)",
-					"text": "var(--wp--preset--color--darko-down-bottom)"
+					"text": "var(--wp--preset--color--darko-down)"
 				},
 				"typography": {
 					"fontFamily": "monospace"
