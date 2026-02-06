@@ -145,7 +145,7 @@ a.button {
 [class*="template-boxed"] main { width: 78%; }
 
 /* Shade bar on links hover */
-a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.wp-block-avatar__link):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
 
 /* Footer - links */
 footer a:hover { opacity: .6; }
