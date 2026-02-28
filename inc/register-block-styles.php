@@ -15,8 +15,7 @@ if (! function_exists('icecubo_register_block_styles') ) {
      * @return void
      */
     // phpcs:ignore
-    function icecubo_register_block_styles()
-    {
+    function icecubo_register_block_styles() {
 
         /* Cancel for list registered here, while it's styled in each json file of available lists - styles/blocks/list */
         register_block_style(
@@ -58,8 +57,7 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
      * @return void
      */
     // phpcs:ignore
-    function icecubo_enqueue_block_styles()
-    {
+    function icecubo_enqueue_block_styles() {
 
         // conditionally load block files if the Pro plugin isn't active
         $conditional_blocks = ! function_exists('icecubo_pro_enqueue_block_styles')
@@ -69,15 +67,12 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
             )
             : array();
 
-        // Add the block name (with namespace) for each style.
+        // Add the block name (with namespace) for each style
         $blocks = array(
             'core/button',
             'core/navigation-link',
             'core/query-pagination',
-            'core/quote',
-            // load files for the image and media-text blocks, though they do not have styles registered in this file
-            'core/image',
-            'core/media-text'
+            'core/quote'
         );
 
         $blocks = array_merge($blocks, $conditional_blocks);
