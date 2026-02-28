@@ -187,6 +187,9 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     max-width: none;
 }
 
+/* Image or media-text blocks - remove any background effects on hover */
+.ice-hover-remove-style img:hover{background-size: 100%; background: none; padding: 0; box-shadow: none; border: 0; border-radius: 0; filter: none; clip-path: unset; transition: all .7s ease;}
+
 /* Small screens */
 @media (max-width: 599px) {
     /* Force behavior on mobile */
