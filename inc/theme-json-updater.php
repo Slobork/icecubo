@@ -12,6 +12,7 @@ if (! function_exists('icecubo_gradients_list') ) {
     /**
      * List of gradients
      *
+     * Set it through a function (instead of the theme.json) to be able to merge it with the pro and child theme gradients.
      * @return array.
      */
     // phpcs:ignore
@@ -177,6 +178,51 @@ if (! function_exists('icecubo_gradients_list') ) {
                 'slug'     => 'radial-transparent-to-classy',
                 'gradient' => 'radial-gradient(transparent 20%, var(--wp--preset--color--classy-2) 100%)',
                 'name'     => __('Edgy classy', 'icecubo')
+            ),
+            array(
+                'slug'     => '123-shade-2-to-primaryish-to-shade-4-normal',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--shade-2) 0%,var(--wp--preset--color--primaryish) 50%,var(--wp--preset--color--shade-4) 100%)',
+                'name'     => __('Shading 3 colors with glow in the middle', 'icecubo')
+            ),
+            array(
+                'slug'     => 'shading-colors-normal',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--shade-1) 0%,var(--wp--preset--color--shade-3) 50%,var(--wp--preset--color--primaryish) 100%)',
+                'name'     => __('Shading with glow down', 'icecubo')
+            ),
+            array(
+                'slug'     => 'shading-colors-normal-2',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--shade-6) 0%,var(--wp--preset--color--shade-3) 50%,var(--wp--preset--color--primaryish) 100%)',
+                'name'     => __('Shading with glow down - 2', 'icecubo')
+            ),
+            array(
+                'slug'     => '123-matching-5-to-matching-3-matching-6-normal',
+                'gradient' => 'linear-gradient(-180deg,var(--wp--preset--color--matching-5) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--matching-6) 100%)',
+                'name'     => __('Matching 3 colors', 'icecubo')
+            ),
+            array(
+                'slug'     => 'matching-colors-normal',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--matching-1) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--matching-5) 100%)',
+                'name'     => __('Transit with 3 matching colors', 'icecubo')
+            ),
+            array(
+                'slug'     => 'matching-colors-normal-reverse',
+                'gradient' => 'linear-gradient(180deg,var(--wp--preset--color--matching-5) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--matching-1) 100%)',
+                'name'     => __('Transit with 3 matching colors - reverse', 'icecubo')
+            ),
+            array(
+                'slug'     => 'primary-to-123-2',
+                'gradient' => 'linear-gradient(135deg,var(--wp--preset--color--primary) 0%,var(--wp--preset--color--matching-3) 50%,var(--wp--preset--color--primaryish) 100%)',
+                'name'     => __('123-2', 'icecubo')
+            ),
+            array(
+                'slug'     => 'primary-to-123-3',
+                'gradient' => 'linear-gradient(135deg,var(--wp--preset--color--generic-1) 0%,var(--wp--preset--color--generic-3) 50%,var(--wp--preset--color--generic-5) 100%)',
+                'name'     => __('123-3', 'icecubo')
+            ),
+            array(
+                'slug'     => 'diagonal-generic-matching-mesh',
+                'gradient' => 'linear-gradient(-190deg,var(--wp--preset--color--generic-1) 0%,var(--wp--preset--color--matching-2) 20%,var(--wp--preset--color--matching-4) 40%,var(--wp--preset--color--matching-6) 60%,var(--wp--preset--color--matching-3) 80%,var(--wp--preset--color--generic-6) 100%)',
+                'name'     => __('Wavy Generic - Matching mesh', 'icecubo')
             ),
             /**
              * There's an issue when a var() is used inside the gradient:
