@@ -43,6 +43,62 @@ if (! function_exists('icecubo_register_block_styles') ) {
             )
         );
 
+        register_block_style(
+            'core/post-template',
+            array(
+                'name'  => 'icecubo-post-template-equal-row-items',
+                'label' => __('Equal row items', 'icecubo'),
+            )
+        );
+        
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-scale-up',
+                'label' => __('Hover - Image up', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-scale-down',
+                'label' => __('Hover - Image down', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-opacity',
+                'label' => __('Hover - Image opacity', 'icecubo'),
+            )
+        );
+
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-show-arrow',
+                'label' => __('Hover - Arrow over image', 'icecubo'),
+            )
+        );        
+
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-filter-invert',
+                'label' => __('Hover - image invert colors', 'icecubo'),
+            )
+        );        
+
+        register_block_style(
+            'core/query',
+            array(
+                'name'  => 'icecubo-query-hover-img-filter-sepia',
+                'label' => __('Hover - image sepia colors', 'icecubo'),
+            )
+        );
+
     }
     add_action('init', 'icecubo_register_block_styles');
 
@@ -71,6 +127,8 @@ if (! function_exists('icecubo_enqueue_block_styles') ) {
         $blocks = array(
             'core/button',
             'core/navigation-link',
+            'core/post-template',
+            'core/query',
             'core/query-pagination',
             'core/quote'
         );
