@@ -1,0 +1,10 @@
+/* With 'equal-row-items' the target is the group block with .is-layout-flex */
+.is-style-icecubo-post-template-equal-row-items li .wp-block-group.is-layout-flex,
+/* The following line is important for terms */
+.is-style-icecubo-post-template-equal-row-items li .wp-block-group.is-layout-flex > * {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.is-style-icecubo-post-template-equal-row-items li .wp-block-group.is-layout-flex .wp-block-post-terms__separator {display: none;}

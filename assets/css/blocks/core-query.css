@@ -1,0 +1,65 @@
+
+/* Query on items hover - transition effects on featured image */
+.wp-block-query[class*="is-style-icecubo-query-hover-img-scale"] .wp-block-post-featured-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ...Scale image up */
+.wp-block-query.is-style-icecubo-query-hover-img-scale-up .hentry.has-post-thumbnail:hover img {
+    transform: scale(1.05);
+    transition: all .5s ease-in-out;
+}
+
+/* ...Scale image down */
+.wp-block-query.is-style-icecubo-query-hover-img-scale-down .hentry.has-post-thumbnail:hover img {
+    transform: scale(.97);
+    transition: all .5s ease-in-out;
+}
+
+/* With img as a cover in parallax */
+.wp-block-query.is-style-icecubo-query-hover-img-scale-up .hentry:hover > .wp-block-cover.has-parallax {
+    background-position: bottom;
+    transition: all .8s ease-in-out;
+}
+.wp-block-query.is-style-icecubo-query-hover-img-scale-down .hentry:hover > .wp-block-cover.has-parallax {
+    background-position: top;
+    transition: all .8s ease-in-out;
+}
+
+/* Image reduced opacity */
+.wp-block-query.is-style-icecubo-query-hover-img-opacity .hentry.has-post-thumbnail:hover img {
+    opacity: .6;
+    transition: all .7s ease-in-out;
+}
+
+/* Image reduced opacity + arrow over it */
+.wp-block-query.is-style-icecubo-query-hover-img-show-arrow .hentry.has-post-thumbnail .wp-block-post-featured-image a:hover {opacity: .8;}
+.wp-block-query.is-style-icecubo-query-hover-img-show-arrow .hentry.has-post-thumbnail .wp-block-post-featured-image a:hover:before { opacity: 1;}
+
+.wp-block-query.is-style-icecubo-query-hover-img-show-arrow .hentry.has-post-thumbnail .wp-block-post-featured-image a:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "→";
+    font-size: 2.5em;
+    background-color: rgba(2,2,2,0.8);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    transition: all 500ms ease-in;
+    opacity: 0;
+}
+
+/* Image invert colors */
+.wp-block-query.is-style-icecubo-query-hover-img-filter-invert .hentry.has-post-thumbnail:hover img {
+    filter: invert(1);
+    transition: all .7s ease-in-out;
+}
+/* Image sepia colors */
+.wp-block-query.is-style-icecubo-query-hover-img-filter-sepia .hentry.has-post-thumbnail:hover img {
+    filter: sepia(1);
+    transition: all .7s ease-in-out;
+}
