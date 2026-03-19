@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Circled",
+	"slug": "icecubo-navigation-overlay-close-circled",
+	"blockTypes": ["core/navigation-overlay-close"],
+	"styles": {
+		"css": "{border: 2px solid; border-radius: 50%;}"
+	}
+}
