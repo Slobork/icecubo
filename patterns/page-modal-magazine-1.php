@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Magazine 1.
+ * Title: Magazine Style 1.
  * Slug: icecubo/page-modal-magazine-1
  * Categories: hidden
  * Inserter: false
