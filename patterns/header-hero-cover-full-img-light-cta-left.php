@@ -17,7 +17,7 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"overlayBackgroundColor":"primary-dark","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"blockstudio":{"attributes":{"navItemsHoverAnimation":{"value":"","label":"Disabled"},"navItemsHoverAttributes":"","navSubMenuAnimation":{"value":"ice-submenu-anim-pushUp","label":"Push Up"},"navSubmenuShader":true,"navModalStyle":{"value":"ice-modal-blur","label":"Blur"},"navModalButtonStyle":[{"value":"ice-modal-button-round","label":"Rounded"},{"value":"ice-modal-button-short","label":"Short top line"}],"navModalButtonBlurStyle":{"value":false,"label":false},"animInit":"","animTime":{"value":"","label":"Normal"},"animDelay":{"value":"","label":"Normal"},"animFillMode":{"value":"","label":"Inherit"},"animDirection":{"value":"","label":"Normal"},"animIteration":"","animRepeat":false,"screenSizeControl":"","customCss":""}}} /--></div>
+<!-- wp:navigation {"overlayBackgroundColor":"primary-dark","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushLeft ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:cover {"dimRatio":0,"isUserOverlayColor":true,"minHeight":80,"minHeightUnit":"vh","contentPosition":"center left","isDark":false,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-dark"}}},"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0"}}},"textColor":"primary-dark","layout":{"type":"constrained","contentSize":"700px","wideSize":"1100px"}} -->
@@ -26,8 +26,8 @@
 <h1 class="wp-block-heading is-style-icecubo-accent-text-small-1" style="text-transform:uppercase">IceCubo WordPress Theme</h1>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"is-style-default","style":{"typography":{"textTransform":"capitalize","letterSpacing":"2px"}},"fontSize":"xl","fontFamily":"sketch-pointup"} -->
-<p class="is-style-default has-sketch-pointup-font-family has-xl-font-size" style="letter-spacing:2px;text-transform:capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+<!-- wp:paragraph {"className":"is-style-default","style":{"typography":{"textTransform":"capitalize","letterSpacing":"2px"}},"fontSize":"xl"} -->
+<p class="is-style-default has-xl-font-size" style="letter-spacing:2px;text-transform:capitalize">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
