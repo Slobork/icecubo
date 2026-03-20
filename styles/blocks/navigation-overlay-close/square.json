@@ -5,6 +5,6 @@
 	"slug": "icecubo-navigation-overlay-close-square",
 	"blockTypes": ["core/navigation-overlay-close"],
 	"styles": {
-		"css": "{border: 2px solid; border-radius: 3px;}"
+		"css": "{border: 2px solid; border-radius: 3px; max-width: fit-content;}"
 	}
 }
