@@ -1136,6 +1136,36 @@
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
+		},
+		{
+		    "area": "navigation-overlay",
+            "name": "navigation-overlay-1",
+            "title": "Light with Submenus Hidden. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-2",
+			"title": "Dark with Submenus Hidden. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-3",
+			"title": "Gradient Shading With Left Alignment."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-pro-1",
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Pro)."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-pro-2",
+            "title": "Dark with Rotating Animation. Aligned Left (Pro)."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-pro-3",
+			"title": "Light with Fade Up Animation. Aligned Left (Pro)."
 		}
 	],
 	"customTemplates": [
