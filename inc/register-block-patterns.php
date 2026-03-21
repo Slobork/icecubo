@@ -44,12 +44,12 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
 
         register_block_pattern_category(
             'icecubo-page-contact',
-            array( 'label' => esc_html__('IceCubo - 2.5 Pages (Contact)', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 2.5. Pages (Contact)', 'icecubo') )
         );
 
         register_block_pattern_category(
             'icecubo-page-parts',
-            array( 'label' => esc_html__('IceCubo - 2.6 Pages (Parts)', 'icecubo') )
+            array( 'label' => esc_html__('IceCubo - 2.6. Pages (Parts)', 'icecubo') )
         );
 
         register_block_pattern_category(
@@ -95,6 +95,16 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-hero',
             array( 'label' => esc_html__('IceCubo - Heroes', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-navigation-overlay',
+            array( 'label' => esc_html__('IceCubo - Navigation Overlay', 'icecubo') )
+        );
+
+        register_block_pattern_category(
+            'icecubo-cover-shapes',
+            array( 'label' => esc_html__('IceCubo - Cover Shapes', 'icecubo') )
         );
 
         register_block_pattern_category(
