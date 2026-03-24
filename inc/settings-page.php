@@ -53,7 +53,7 @@ if ( ! function_exists( 'icecubo_theme_options' ) ) {
     function icecubo_theme_options() {
 
         add_theme_page(
-            'IceCubo Theme Options',
+            esc_html__('IceCubo Theme Options', 'icecubo'),
             esc_html__('IceCubo Theme', 'icecubo'),
             'manage_options',
             'icecubo-theme-options',
