@@ -66,6 +66,11 @@ if ( ! function_exists( 'icecubo_theme_options' ) ) {
     add_action('admin_menu', 'icecubo_theme_options');
 }
     
+// Check license key from the database
+function icecubo_check_license() {
+    $licenseKey = get_option("IceCubo_Pro-lic_Key", "");
+    return $licenseKey;
+}
 
 /**
  * Register settings, sections and fields for the theme options page.
@@ -91,7 +96,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             'section_one'
         );
 
-        if (class_exists('IceCubo_Pro')) {
+        if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
 
             // Section Animations settings
             add_settings_section(
@@ -159,42 +164,6 @@ function icecubo_sanitize_checkbox( $input ) {
  * Callbacks for the settings sections.
  */
 
-function icecubo_settings_section_one_callback() {
-    // empty for now, we don't need any text here since the info box has its own title and description. But we need this callback to register the section and display the info box field.
-    echo '';
-}
-
-function icecubo_settings_section_animations_callback() {
-    echo '<p>' .esc_html__('Settings for the animations section.', 'icecubo') . '</p>';
-}
-
-
-function icecubo_settings_animations_load_checkbox_callback() {
-    $animation = get_option('icecubo_animations_laod');
-    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" ' . checked($animation, 1, false) . '/>';
-}
-
-function icecubo_settings_section_templates_callback() {
-    echo '<p>Settings for the second section.</p>';
-}
-
-function icecubo_settings_template_checkbox_one_callback() {
-    $checkbox_two = get_option('icecubo_template_agency_checkbox_one');
-    echo '<input type="checkbox" name="icecubo_template_agency_checkbox_one" value="1" ' . checked($checkbox_two, 1, false) . '/>';
-}
-
-function icecubo_settings_template_checkbox_two_callback() {
-    $checkbox_three = get_option('icecubo_template_attorney_checkbox_two');
-    echo '<input type="checkbox" name="icecubo_template_attorney_checkbox_two" value="1" ' . checked($checkbox_three, 1, false) . '/>';
-}
-
-
-// Get license key from the database
-function icecubo_get_license() {
-    $licenseKey = get_option("IceCubo_Pro-lic_Key", "");
-    return $licenseKey;
-}
-
 function icecubo_settings_info_boxes_callback() {
     $img = get_theme_file_uri(). "/assets/img/ice-cubes.png";
     echo '<div id="ice-settings" style="color: white; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; background-image: url(' .esc_url($img) . '); width: fit-content; background-size: contain; background-position: center; padding: 60px 30px; border-radius:50%; margin-bottom:10px;">';
@@ -218,7 +187,7 @@ function icecubo_settings_info_boxes_callback() {
     } else {
         echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px;">';
         echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Install And Activate Icecubo Plugins', 'icecubo' ) . '</h3>';
-        if(icecubo_get_license() !='') {
+        if(icecubo_check_license() !='') {
             echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional addons and templates. Once installed, Icecubo plugins will be available from the regular WP Plugins page.', 'icecubo' ) . '</p>';
             echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="plugins.php?page=icecubo-install-plugins&plugin_status=activate">Go to the Ice plugins →</a>';
         } else {
@@ -229,6 +198,35 @@ function icecubo_settings_info_boxes_callback() {
     }
 
     echo '</div>';
+}
+
+function icecubo_settings_section_one_callback() {
+    // empty for now, we don't need any text here since the info box has its own title and description. But we need this callback to register the section and display the info box field.
+    echo '';
+}
+
+function icecubo_settings_section_animations_callback() {
+    echo '<p>' .esc_html__('Settings for the animations section.', 'icecubo') . '</p>';
+}
+
+
+function icecubo_settings_animations_load_checkbox_callback() {
+    $animation = get_option('icecubo_animations_laod');
+    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" ' . checked($animation, 1, false) . '/>';
+}
+
+function icecubo_settings_section_templates_callback() {
+    echo '<p>Settings for the second section.</p>';
+}
+
+function icecubo_settings_template_checkbox_one_callback() {
+    $option = get_option('icecubo_template_agency_checkbox_one');
+    echo '<input type="checkbox" name="icecubo_template_agency_checkbox_one" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_two_callback() {
+    $option = get_option('icecubo_template_attorney_checkbox_two');
+    echo '<input type="checkbox" name="icecubo_template_attorney_checkbox_two" value="1" ' . checked($option, 1, false) . '/>';
 }
 
 
@@ -245,7 +243,7 @@ function icecubo_theme_options_page_content() {
             do_settings_sections('icecubo-theme-options');
             
             // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
-            if (class_exists('IceCubo_Pro')) {
+            if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
                 submit_button();
             }
             ?>
