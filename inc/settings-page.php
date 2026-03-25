@@ -67,45 +67,127 @@ if ( ! function_exists( 'icecubo_theme_options' ) ) {
 }
     
 
+/**
+ * Register settings, sections and fields for the theme options page.
+ * 
+ */
+if ( ! function_exists( 'icecubo_register_settings' ) ) {
 
-function icecubo_register_settings() {
-    // First section settings - empty title for now, just to display the info box
-    add_settings_section(
-        'section_one',
-        '',
-        'section_one_callback',
-        'icecubo-theme-options'
-    );
-    // Info box field
-    add_settings_field(
-        'info_boxes',
-        esc_html__('Get started with IceCubo', 'icecubo'),
-        'icecubo_info_boxes_callback',
-        'icecubo-theme-options',
-        'section_one'
-    );
+    function icecubo_register_settings() {
+
+        // First section settings - empty title for now, just to display the info box
+        add_settings_section(
+            'section_one',
+            '',
+            'icecubo_settings_section_one_callback',
+            'icecubo-theme-options'
+        );
+
+        add_settings_field(
+            'info_boxes',
+            esc_html__('Get started with IceCubo', 'icecubo'),
+            'icecubo_settings_info_boxes_callback',
+            'icecubo-theme-options',
+            'section_one'
+        );
+
+        if (class_exists('IceCubo_Pro')) {
+
+            // Section Animations settings
+            add_settings_section(
+                'section_animations',
+                esc_html__('Animations Settings', 'icecubo'),
+                'icecubo_settings_section_animations_callback',
+                'icecubo-theme-options'
+            );
+
+            add_settings_field(
+                'animations_laod',
+                esc_html__('Load Animations', 'icecubo'),
+                'icecubo_settings_animations_load_checkbox_callback',
+                'icecubo-theme-options',
+                'section_animations'
+            );
+
+            // Section templates settings
+            add_settings_section(
+                'section_templates',
+                esc_html__('Section Templates Settings', 'icecubo'),
+                'icecubo_settings_section_templates_callback',
+                'icecubo-theme-options'
+            );
+
+            add_settings_field(
+                'template_agency',
+                esc_html__('Agency', 'icecubo'),
+                'icecubo_settings_template_checkbox_one_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_attorney',
+                esc_html__('Attorney', 'icecubo'),
+                'icecubo_settings_template_checkbox_two_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            register_setting('icecubo-theme-options', 'icecubo_animations_laod', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_attorney_checkbox_two', 'icecubo_sanitize_checkbox');
+
+        }
+
+    }
+    
+}
+
+/**
+ * Sanitize checkbox.
+ *
+ * @param mixed $input Input from checkbox.
+ *
+ * @return int
+ */
+function icecubo_sanitize_checkbox( $input ) {
+    return ( isset( $input ) && true == $input ) ? 1 : 0;
 }
 
 
-function section_one_callback() {
+/**
+ * Callbacks for the settings sections.
+ */
+
+function icecubo_settings_section_one_callback() {
     // empty for now, we don't need any text here since the info box has its own title and description. But we need this callback to register the section and display the info box field.
     echo '';
 }
 
-// Content of the theme options page
-function icecubo_theme_options_page_content() {
-    ?>
-    <div class="wrap">
-        <h1>IceCubo Theme Options</h1>
-        <form method="post" action="options.php">
-            <?php
-            settings_fields('icecubo-theme-options');
-            do_settings_sections('icecubo-theme-options');
-            ?>
-        </form>
-    </div>
-    <?php
+function icecubo_settings_section_animations_callback() {
+    echo '<p>' .esc_html__('Settings for the animations section.', 'icecubo') . '</p>';
 }
+
+
+function icecubo_settings_animations_load_checkbox_callback() {
+    $animation = get_option('icecubo_animations_laod');
+    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" ' . checked($animation, 1, false) . '/>';
+}
+
+function icecubo_settings_section_templates_callback() {
+    echo '<p>Settings for the second section.</p>';
+}
+
+function icecubo_settings_template_checkbox_one_callback() {
+    $checkbox_two = get_option('icecubo_template_agency_checkbox_one');
+    echo '<input type="checkbox" name="icecubo_template_agency_checkbox_one" value="1" ' . checked($checkbox_two, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_two_callback() {
+    $checkbox_three = get_option('icecubo_template_attorney_checkbox_two');
+    echo '<input type="checkbox" name="icecubo_template_attorney_checkbox_two" value="1" ' . checked($checkbox_three, 1, false) . '/>';
+}
+
 
 // Get license key from the database
 function icecubo_get_license() {
@@ -113,11 +195,7 @@ function icecubo_get_license() {
     return $licenseKey;
 }
 
-/**
- * Render an info box with a background image.
- * The callback is available when settings are registered.
- */
-function icecubo_info_boxes_callback() {
+function icecubo_settings_info_boxes_callback() {
     $img = get_theme_file_uri(). "/assets/img/ice-cubes.png";
     echo '<div id="ice-settings" style="color: white; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; background-image: url(' .esc_url($img) . '); width: fit-content; background-size: contain; background-position: center; padding: 60px 30px; border-radius:50%; margin-bottom:10px;">';
     
@@ -151,4 +229,27 @@ function icecubo_info_boxes_callback() {
     }
 
     echo '</div>';
+}
+
+
+/**
+ * Content of the theme options page
+ */ 
+function icecubo_theme_options_page_content() {
+    ?>
+    <div class="wrap">
+        <h1>IceCubo Theme Options</h1>
+        <form method="post" action="options.php">
+            <?php
+            settings_fields('icecubo-theme-options');
+            do_settings_sections('icecubo-theme-options');
+            
+            // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
+            if (class_exists('IceCubo_Pro')) {
+                submit_button();
+            }
+            ?>
+        </form>
+    </div>
+    <?php
 }
