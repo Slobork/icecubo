@@ -1135,17 +1135,17 @@
 		{
 			"area": "header",
             "name": "header-hero-pro-1",
-            "title": "Header: With A Hero Section - Animated Balloons as a Background Decor (Pro)."
+            "title": "Header: With A Hero Section - Animated Balloons as a Background Decor (Premium)."
 		},
 		{
 			"area": "header",
             "name": "header-template-agency-1",
-            "title": "Header: Agency 1 (Pro)."
+            "title": "Header: Agency 1 (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-1",
-			"title": "Footer: Three floors with a decor of balloons separated (Pro)"
+			"title": "Footer: Three floors with a decor of balloons separated (Premium)"
 		},
 		{
 			"area": "footer",
@@ -1175,17 +1175,17 @@
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-pro-1",
-            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Pro)."
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Premium)."
 		},
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-pro-2",
-            "title": "Dark with Rotating Animation. Aligned Left (Pro)."
+            "title": "Dark with Rotating Animation. Aligned Left (Premium)."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-pro-3",
-			"title": "Light with Fade Up Animation. Aligned Left (Pro)."
+			"title": "Light with Fade Up Animation. Aligned Left (Premium)."
 		}
 	],
 	"customTemplates": [
