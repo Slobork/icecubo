@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Spread elements: Logo - nav (Default for most templates).
+ * Title: Header: Spread elements: Logo - nav (Default for most templates).
  * Slug: icecubo/header-basic-wide
  * Categories: icecubo-header
  * Block Types: core/template-part/header
