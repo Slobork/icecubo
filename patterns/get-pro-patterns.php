@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Get IceCubo Pro version.
  * Slug: icecubo/get-pro-patterns
