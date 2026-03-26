@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Spread elements: Logo - nav. Glowing background transit to transparent.
  * Slug: icecubo/header-basic-wide-cover-gradient-light
