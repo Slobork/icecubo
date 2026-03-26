@@ -1140,7 +1140,12 @@
 		{
 			"area": "header",
             "name": "header-template-agency-1",
-            "title": "Header: Agency 1 (Premium)."
+            "title": "Header-Hero: Agency Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-agency-2",
+            "title": "Header-Hero: Agency Template 2 (Premium)."
 		},
 		{
 			"area": "footer",
