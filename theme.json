@@ -1129,6 +1129,11 @@
 		},
 		{
 			"area": "header",
+			"name": "header-aside-logonav-social-sticky",
+			"title": "Sticky Header. One side - Logo/nav, Other side - Social icons."
+		},
+		{
+			"area": "header",
 			"name": "header-aside-logonav-login-transit-bg",
 			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
 		},
