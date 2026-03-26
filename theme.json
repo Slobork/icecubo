@@ -1120,12 +1120,32 @@
 		{
 			"area": "header",
 			"name": "header",
-			"title": "Header"
+			"title": "Header: Spread elements: Logo - nav (Default for most templates)."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-logonav-buttons-transit-bg",
+			"title": "Header: One side: Logo/nav - Other side: Buttons. Transit background."
 		},
 		{
 			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
-			"title": "Header With A Hero Section (Front-page default)"
+			"title": "Header: With A Hero Section (Front-page default)"
+		},
+		{
+			"area": "header",
+            "name": "header-hero-pro-1",
+            "title": "Header: With A Hero Section - Animated Balloons as a Background Decor (Pro)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-agency-1",
+            "title": "Header: Agency 1 (Pro)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-1",
+			"title": "Footer: Three floors with a decor of balloons separated (Pro)"
 		},
 		{
 			"area": "footer",
