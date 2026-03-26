@@ -1129,13 +1129,33 @@
 		},
 		{
 			"area": "header",
+			"name": "header-aside-logonav-login-transit-bg",
+			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
+		},
+		{
+			"area": "header",
 			"name": "header-aside-logonav-social-sticky",
 			"title": "Sticky Header. One side - Logo/nav, Other side - Social icons."
 		},
 		{
 			"area": "header",
-			"name": "header-aside-logonav-login-transit-bg",
-			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
+			"name": "header-aside-logonav-social",
+			"title": "Header: One side - Logo/nav, Other side - Social icons."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-cover-gradient-light",
+			"title": "Header: Spread elements: Logo - nav. Glowing background transit to transparent."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-cover-gradient",
+			"title": "Header: Spread elements: Logo - nav. Transit background from dark to primary color."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-logo-nav-soc",
+			"title": "Header: Spread elements: Logo - nav - social icons."
 		},
 		{
 			"area": "header",
