@@ -1129,6 +1129,11 @@
 		},
 		{
 			"area": "header",
+			"name": "header-aside-logonav-login-transit-bg",
+			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
+		},
+		{
+			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
 			"title": "Header: With A Hero Section (Front-page default)"
 		},
