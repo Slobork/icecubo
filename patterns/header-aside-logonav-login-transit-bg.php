@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: One side: Logo/nav - Other side: Login link. Transit background.
  * Slug: icecubo/header-aside-logonav-login-transit-bg
