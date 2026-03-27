@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header With A Hero Section - Animated Balloons as a Background Decor. Clear Title and a Call To Action (Premium).
+ * Title: Header With A Hero Section - Light Background With Animated Balloons as a Decor.  Clear Title and a Call To Action. (Premium).
  * Slug: icecubo/header-hero-pro-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

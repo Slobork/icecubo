@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Header with hero section. Cover background transit gradually from dark to primary color.
+ * Title: Header With a Hero Section. Background transit gradually from dark to primary color. Mix colors on the title and a clear call to action.
  * Slug: icecubo/header-hero-gradient-gradual-dark-primary
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

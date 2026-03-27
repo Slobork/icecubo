@@ -1175,12 +1175,12 @@
 		{
 			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
-			"title": "Header: With A Hero Section (Front-page default)"
+			"title": "Header-Hero: Background transit gradually from dark to primary color (Front-page default)"
 		},
 		{
 			"area": "header",
             "name": "header-hero-pro-1",
-            "title": "Header: With A Hero Section - Animated Balloons as a Background Decor (Premium)."
+            "title": "Header-Hero: Light Background With Animated Balloons as a Decor (Premium)."
 		},
 		{
 			"area": "header",
