@@ -5,7 +5,7 @@ if (! defined('ABSPATH') ) {
 }
 /**
  * Title: Sticky Header. One side - Logo/nav, Other side - Social icons.
- * Slug: icecubo/header-aside-logonav-social-sticky
+ * Slug: icecubo/header-aside-sticky-logonav-social
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
