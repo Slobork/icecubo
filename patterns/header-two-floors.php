@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Two floors.
+ * Title: Header: Two floors - Logo and company info on the first, navigation on the second.
  * Slug: icecubo/header-2floors
  * Categories: icecubo-header
  * Block Types: core/template-part/header
