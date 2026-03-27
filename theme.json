@@ -1159,12 +1159,12 @@
 		},
 		{
 			"area": "header",
-			"name": "logo-between-nav-centered",
+			"name": "header-logo-between-nav-centered",
 			"title": "Header: Logo between nav links, centered."
 		},
 		{
 			"area": "header",
-			"name": "header-2floors",
+			"name": "header-two-floors",
 			"title": "Header: Two floors - Logo and company info on the first, navigation on the second."
 		},
 		{
