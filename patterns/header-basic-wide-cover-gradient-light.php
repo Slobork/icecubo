@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header: Spread elements: Logo - nav. Glowing background transit to transparent.
+ * Title: Header: Spread elements: Logo - nav. Light glowing background transit to transparent.
  * Slug: icecubo/header-basic-wide-cover-gradient-light
  * Categories: icecubo-header
  * Block Types: core/template-part/header
