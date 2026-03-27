@@ -2,7 +2,7 @@
 // phpcs:ignore
 /**
  * Title: Header: Logo between nav links, centered.
- * Slug: icecubo/logo-between-nav-centered
+ * Slug: icecubo/header-logo-between-nav-centered
  * Categories: icecubo-header
  * Block Types: core/template-part/header
  */
