@@ -1174,8 +1174,38 @@
 		},
 		{
 			"area": "header",
+			"name": "header-hero-cover-full-img-dark-cta-bottom",
+			"title": "Header-Hero: Full Background Image As A Cover (Dark Image, White Text Set). Call To Action Centered At The Bottom."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-full-img-light-cta-left",
+			"title": "Header-Hero: Background Image As A Cover (Light Image, Dark Text Set). Call To Action On The Left."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-gradient-diagonal-transit-media-text-cta",
+			"title": "Header-Hero: Call to action after the list items. Cover with diagonal transit background."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-overlap-cta-large-image",
+			"title": "Header-Hero: Call to action with large image. Overlapping cover background."
+		},
+		{
+			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
 			"title": "Header-Hero: Background transit gradually from dark to primary color (Front-page default)"
+		},
+		{
+			"area": "header",
+			"name": "header-hero-gradient-rushly-primary-transparent",
+			"title": "Header-Hero: Background light glow from primary color to transparent."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-two-columns-cta-above-wide-img",
+			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
 		},
 		{
 			"area": "header",
