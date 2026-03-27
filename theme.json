@@ -1295,7 +1295,32 @@
 		{
 			"area": "footer",
 			"name": "footer-pro-1",
-			"title": "Footer: Three floors with a decor of balloons separated (Premium)"
+			"title": "Footer (Premium): Three floors with a decor of balloons separated"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-2",
+			"title": "Footer (Premium): Three floors with a decorative shapes on the left"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-3",
+			"title": "Footer (Premium): Three floors with a circle decor at the bottom"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-4",
+			"title": "Footer (Premium): Three Floors With A Background Image"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-5",
+			"title": "Footer (Premium): Cover in 4:3 format with a background image symbolizing Growing With Arrow Up"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-6",
+			"title": "Footer (Premium): Three floors with a pink stained background image"
 		},
 		{
 			"area": "uncategorized",
