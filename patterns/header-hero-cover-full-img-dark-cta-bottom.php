@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Header With A Full Background Image As A Cover (Dark Image, White Text Set). Call To Action Centered At The Bottom.
+ * Title: Header With a Hero Section. Full Background Image As A Cover (Dark Image, White Text Set). Call To Action Centered At The Bottom.
  * Slug: icecubo/header-hero-cover-full-img-dark-cta-bottom
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

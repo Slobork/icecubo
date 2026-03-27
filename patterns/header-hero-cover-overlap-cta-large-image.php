@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Header with hero. Call to action with large image. Overlapping cover background.
+ * Title: Header With a Hero Section. Call to action with large image. Overlapping cover background.
  * Slug: icecubo/header-hero-cover-overlap-cta-large-image
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
