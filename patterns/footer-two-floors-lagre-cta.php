@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Two floors - Large CTA.
+ * Title: Footer: Two floors - Large CTA.
  * Slug: icecubo/footer-2floors-cta
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

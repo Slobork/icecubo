@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Two floors with a curvy border at the top.
+ * Title: Footer: Two floors with a curvy border at the top.
  * Slug: icecubo/footer-two-floors-curvy-top-border
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

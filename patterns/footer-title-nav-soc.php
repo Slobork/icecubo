@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Site title - nav - social icons.
+ * Title: Footer: Site title - nav - social icons.
  * Slug: icecubo/footer-logo-nav-soc
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

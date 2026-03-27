@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Three floors.
+ * Title: Footer: Three floors.
  * Slug: icecubo/footer-3floors
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

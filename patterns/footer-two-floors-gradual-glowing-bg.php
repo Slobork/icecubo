@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Two floors - Gradual glowing backgroud and horizontal lines at the top.
+ * Title: Footer: Two floors - Gradual glowing backgroud and horizontal lines at the top.
  * Slug: icecubo/footer-2floors-gradual-glowing-bg
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

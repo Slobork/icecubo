@@ -1,7 +1,7 @@
 <?php
 // phpcs:ignore
 /**
- * Title: Basic with nav menu.
+ * Title: Footer: Basic with nav menu.
  * Slug: icecubo/footer-basic-nav
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
