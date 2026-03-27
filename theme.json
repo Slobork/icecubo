@@ -1269,11 +1269,6 @@
 		},
 		{
 			"area": "footer",
-			"name": "footer-logo-nav-soc",
-			"title": "Footer: Logo - nav - social icons."
-		},
-		{
-			"area": "footer",
 			"name": "footer-two-floors-curvy-top-border",
 			"title": "Footer: Two floors with a curvy border at the top."
 		},
