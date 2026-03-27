@@ -1239,13 +1239,68 @@
 		},
 		{
 			"area": "footer",
-			"name": "footer-pro-1",
-			"title": "Footer: Three floors with a decor of balloons separated (Premium)"
+			"name": "footer",
+			"title": "Footer"
 		},
 		{
 			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
+			"name": "footer-basic-nav",
+			"title": "Footer: Basic with nav menu."
+		},
+		{
+			"area": "footer",
+			"name": "footer-basic-stack",
+			"title": "Footer: Stack: Logo - title - social icons. Large border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-basic-links",
+			"title": "Footer: Basic with links."
+		},
+		{
+			"area": "footer",
+			"name": "footer-3floors",
+			"title": "Footer: Three floors. First floor with logo and title, second floor with nav menu, third floor with social icons. Large border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-logo-links-soc",
+			"title": "Footer: Logo - links - social icons."
+		},
+		{
+			"area": "footer",
+			"name": "footer-logo-nav-soc",
+			"title": "Footer: Logo - nav - social icons."
+		},
+		{
+			"area": "footer",
+			"name": "footer-two-floors-curvy-top-border",
+			"title": "Footer: Two floors with a curvy border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-gradual-glowing-bg",
+			"title": "Footer: Two floors - Gradual glowing backgroud and horizontal lines at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-cta",
+			"title": "Footer: Two floors - Large CTA."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-large-searchbox",
+			"title": "Footer: Two floors - large searchbox and links on side."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors",
+			"title": "Footer: Two floors - Separated."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-1",
+			"title": "Footer: Three floors with a decor of balloons separated (Premium)"
 		},
 		{
 			"area": "uncategorized",
