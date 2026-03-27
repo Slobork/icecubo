@@ -1159,6 +1159,16 @@
 		},
 		{
 			"area": "header",
+			"name": "logo-between-nav-centered",
+			"title": "Header: Logo between nav links, centered."
+		},
+		{
+			"area": "header",
+			"name": "header-2floors",
+			"title": "Header: Two floors - Logo and company info on the first, navigation on the second."
+		},
+		{
+			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
 			"title": "Header: With A Hero Section (Front-page default)"
 		},
