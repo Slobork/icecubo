@@ -1,8 +1,12 @@
 <?php
+if (! defined('ABSPATH')) {
+    exit;
+}
 // phpcs:ignore
 /**
  * Title: Footer: Two floors - Separated.
- * Slug: icecubo/footer-2floors
+ * Slug: icecubo/footer-2floors-separated
+ * Description: Footer with two floors separated with a border. The upper floor contains the company information and resources of links, while the lower floor contains the logo, navigation, and social media icons.
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
  */
