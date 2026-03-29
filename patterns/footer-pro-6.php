@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Footer: ThThree floors with a pink stained background image (Premium).
+ * Title: Footer: Three floors with a pink stained background image (Premium).
  * Slug: icecubo/footer-pro-6
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
