@@ -137,10 +137,82 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'icecubo-theme-options',
                 'section_templates'
             );
+            add_settings_field(
+                'template_barber',
+                esc_html__('Barber', 'icecubo'),
+                'icecubo_settings_template_checkbox_three_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+            
+            add_settings_field(
+                'template_dentist',
+                esc_html__('Dentist', 'icecubo'),
+                'icecubo_settings_template_checkbox_four_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_gym',
+                esc_html__('Gym', 'icecubo'),
+                'icecubo_settings_template_checkbox_five_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_marketer',
+                esc_html__('Marketer', 'icecubo'),
+                'icecubo_settings_template_checkbox_six_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_marketing',
+                esc_html__('Marketing', 'icecubo'),
+                'icecubo_settings_template_checkbox_seven_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_marketing_suit',
+                esc_html__('Marketing Suit', 'icecubo'),
+                'icecubo_settings_template_checkbox_eight_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_seo',
+                esc_html__('SEO', 'icecubo'),
+                'icecubo_settings_template_checkbox_nine_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
+
+            add_settings_field(
+                'template_yoga',
+                esc_html__('Yoga', 'icecubo'),
+                'icecubo_settings_template_checkbox_ten_callback',
+                'icecubo-theme-options',
+                'section_templates'
+            );
 
             register_setting('icecubo-theme-options', 'icecubo_animations_laod', 'icecubo_sanitize_checkbox');
+
             register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
             register_setting('icecubo-theme-options', 'icecubo_template_attorney_checkbox_two', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_barber_checkbox_three', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_dentist_checkbox_four', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_gym_checkbox_five', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_marketer_checkbox_six', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_marketing_checkbox_seven', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_marketing_suit_checkbox_eight', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_seo_checkbox_nine', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_template_yoga_checkbox_ten', 'icecubo_sanitize_checkbox');
 
         }
 
@@ -227,6 +299,46 @@ function icecubo_settings_template_checkbox_one_callback() {
 function icecubo_settings_template_checkbox_two_callback() {
     $option = get_option('icecubo_template_attorney_checkbox_two');
     echo '<input type="checkbox" name="icecubo_template_attorney_checkbox_two" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_three_callback() {
+    $option = get_option('icecubo_template_barber_checkbox_three');
+    echo '<input type="checkbox" name="icecubo_template_barber_checkbox_three" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_four_callback() {
+    $option = get_option('icecubo_template_dentist_checkbox_four');
+    echo '<input type="checkbox" name="icecubo_template_dentist_checkbox_four" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_five_callback() {
+    $option = get_option('icecubo_template_gym_checkbox_five');
+    echo '<input type="checkbox" name="icecubo_template_gym_checkbox_five" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_six_callback() {
+    $option = get_option('icecubo_template_marketer_checkbox_six');
+    echo '<input type="checkbox" name="icecubo_template_marketer_checkbox_six" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_seven_callback() {
+    $option = get_option('icecubo_template_marketing_checkbox_seven');
+    echo '<input type="checkbox" name="icecubo_template_marketing_checkbox_seven" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_eight_callback() {
+    $option = get_option('icecubo_template_marketing_suit_checkbox_eight');
+    echo '<input type="checkbox" name="icecubo_template_marketing_suit_checkbox_eight" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_nine_callback() {
+    $option = get_option('icecubo_template_seo_checkbox_nine');
+    echo '<input type="checkbox" name="icecubo_template_seo_checkbox_nine" value="1" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_template_checkbox_ten_callback() {
+    $option = get_option('icecubo_template_yoga_checkbox_ten');
+    echo '<input type="checkbox" name="icecubo_template_yoga_checkbox_ten" value="1" ' . checked($option, 1, false) . '/>';
 }
 
 
