@@ -108,7 +108,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
 
             add_settings_field(
                 'animations_laod',
-                esc_html__('Load Animations', 'icecubo'),
+                esc_html__('Enable Animations', 'icecubo'),
                 'icecubo_settings_animations_load_checkbox_callback',
                 'icecubo-theme-options',
                 'section_animations'
@@ -117,7 +117,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             // Section templates settings
             add_settings_section(
                 'section_templates',
-                esc_html__('Section Templates Settings', 'icecubo'),
+                esc_html__('Design Templates', 'icecubo'),
                 'icecubo_settings_section_templates_callback',
                 'icecubo-theme-options'
             );
@@ -240,28 +240,28 @@ function icecubo_settings_info_boxes_callback() {
     $img = get_theme_file_uri(). "/assets/img/ice-cubes.png";
     echo '<div id="ice-settings" style="color: white; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; background-image: url(' .esc_url($img) . '); width: fit-content; background-size: contain; background-position: center; padding: 60px 30px; border-radius:50%; margin-bottom:10px;">';
     
-    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px;">';
+    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
     echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Documentation', 'icecubo' ) . '</h3>';
     echo '<p style="line-height: 1.75">' . esc_html__( 'See all Icecubo\'s features and how to implement them.', 'icecubo' ) . '</p>';
     echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo-documentation/" target="_blank">See documentation →</a>';
     echo '</div>';
-    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px;">';
+    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
     echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Start Editing', 'icecubo' ) . '</h3>';
     echo '<p style="line-height: 1.75">' . esc_html__( 'Start editing the front page and access other templates from the Editor.', 'icecubo' ) . '</p>';
     echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="site-editor.php">Go to the Editor →</a>';
     echo '</div>';
     if (! class_exists('IceCubo_Pro') ) {
-        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; border: 10px solid #a3a3ff;">';
+        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
         echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Buy Pro', 'icecubo' ) . '</h3>';
         echo '<p style="line-height: 1.75">' . esc_html__( 'With Pro version get advanced features and templates.', 'icecubo' ) . '</p>';
         echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get Pro Version →</a>';
         echo '</div>';
     } else {
-        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px;">';
-        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Install And Activate Icecubo Plugins', 'icecubo' ) . '</h3>';
+        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
+        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Adjust the settings', 'icecubo' ) . '</h3>';
         if(icecubo_check_license() !='') {
-            echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional addons and templates. Once installed, Icecubo plugins will be available from the regular WP Plugins page.', 'icecubo' ) . '</p>';
-            echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="plugins.php?page=icecubo-install-plugins&plugin_status=activate">Go to the Ice plugins →</a>';
+            echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional functionality and templates.', 'icecubo' ) . '</p>';
+            echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="#icecubo-animations-settings-sep">Use the Settings →</a>';
         } else {
             echo '<a style="font-size: 16px; line-height: 2.5; background: #a3a3ff; color: black; padding: 5px; border-radius: 3px; margin: 0 30px 0 10px;" href="admin.php?page=icecubo-licenses">Activate License first to access aaddons →</a>';
         }
@@ -278,17 +278,21 @@ function icecubo_settings_section_one_callback() {
 }
 
 function icecubo_settings_section_animations_callback() {
-    echo '<p>' .esc_html__('Settings for the animations section.', 'icecubo') . '</p>';
+    // alternative bordr-color for the separator may be: #0e0ed7
+    echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
+    echo '<p style="font-size: 18px;">' .esc_html__('You can enable or disable animations that come with the theme for the entire site.', 'icecubo') . '</p>';
 }
 
 
 function icecubo_settings_animations_load_checkbox_callback() {
     $animation = get_option('icecubo_animations_laod');
-    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" ' . checked($animation, 1, false) . '/>';
+    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" style="margin-bottom: 40px;" ' . checked($animation, 1, false) . '/>';
 }
 
 function icecubo_settings_section_templates_callback() {
-    echo '<p>Settings for the second section.</p>';
+    echo '<hr id="icecubo-templates-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
+    echo '<p style="font-size: 18px;">' .esc_html__('Select the design templates you want to use.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px;">' .esc_html__('Each template has its own set of patterns, sections and customization options.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_template_checkbox_one_callback() {
