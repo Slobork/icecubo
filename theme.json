@@ -435,6 +435,7 @@
 			"customFontSize": true,
 			"defaultFontSizes": false,
 			"writingMode": true,
+			"textIndent": true,
 			"fontFamilies": [
 				{
 					"name": "sans-serif (System - Helvetica Neue, Helvetica, Arial)",
