@@ -80,19 +80,22 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
 
     function icecubo_register_settings() {
 
+        $tab_start    = 'icecubo-theme-options-start';
+        $tab_settings = 'icecubo-theme-options-settings';
+
         // First section settings - empty title for now, just to display the info box
         add_settings_section(
             'section_one',
             '',
             'icecubo_settings_section_one_callback',
-            'icecubo-theme-options'
+            $tab_start
         );
 
         add_settings_field(
             'info_boxes',
             esc_html__('Get started with IceCubo', 'icecubo'),
             'icecubo_settings_info_boxes_callback',
-            'icecubo-theme-options',
+            $tab_start,
             'section_one'
         );
 
@@ -103,14 +106,14 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'section_animations',
                 esc_html__('Animations Settings', 'icecubo'),
                 'icecubo_settings_section_animations_callback',
-                'icecubo-theme-options'
+                $tab_settings
             );
 
             add_settings_field(
                 'animations_laod',
                 esc_html__('Enable Animations', 'icecubo'),
                 'icecubo_settings_animations_load_checkbox_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_animations'
             );
 
@@ -119,14 +122,14 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'section_templates',
                 esc_html__('Design Templates', 'icecubo'),
                 'icecubo_settings_section_templates_callback',
-                'icecubo-theme-options'
+                $tab_settings
             );
 
             add_settings_field(
                 'template_agency',
                 esc_html__('Agency', 'icecubo'),
                 'icecubo_settings_template_checkbox_one_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -134,14 +137,14 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_attorney',
                 esc_html__('Attorney', 'icecubo'),
                 'icecubo_settings_template_checkbox_two_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
             add_settings_field(
                 'template_barber',
                 esc_html__('Barber', 'icecubo'),
                 'icecubo_settings_template_checkbox_three_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
             
@@ -149,7 +152,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_dentist',
                 esc_html__('Dentist', 'icecubo'),
                 'icecubo_settings_template_checkbox_four_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -157,7 +160,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_gym',
                 esc_html__('Gym', 'icecubo'),
                 'icecubo_settings_template_checkbox_five_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -165,7 +168,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_marketer',
                 esc_html__('Marketer', 'icecubo'),
                 'icecubo_settings_template_checkbox_six_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -173,7 +176,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_marketing',
                 esc_html__('Marketing', 'icecubo'),
                 'icecubo_settings_template_checkbox_seven_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -181,7 +184,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_marketing_suit',
                 esc_html__('Marketing Suit', 'icecubo'),
                 'icecubo_settings_template_checkbox_eight_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -189,7 +192,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_seo',
                 esc_html__('SEO', 'icecubo'),
                 'icecubo_settings_template_checkbox_nine_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -197,7 +200,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'template_yoga',
                 esc_html__('Yoga', 'icecubo'),
                 'icecubo_settings_template_checkbox_ten_callback',
-                'icecubo-theme-options',
+                $tab_settings,
                 'section_templates'
             );
 
@@ -352,18 +355,73 @@ function icecubo_settings_template_checkbox_ten_callback() {
 function icecubo_theme_options_page_content() {
     ?>
     <div class="wrap">
-        <h1>IceCubo Theme Options</h1>
+        <h1><?php esc_html_e('IceCubo Theme Options', 'icecubo'); ?></h1>
+
+        <h2 class="nav-tab-wrapper">
+            <a href="#icecubo-tab-start" class="nav-tab icecubo-tab-control" data-tab="icecubo-tab-start"><?php esc_html_e('Start', 'icecubo'); ?></a>
+            <a href="#icecubo-tab-settings" class="nav-tab icecubo-tab-control" data-tab="icecubo-tab-settings"><?php esc_html_e('Settings', 'icecubo'); ?></a>
+            <a href="https://maxpressy.com/icecubo-documentation/" class="nav-tab" target="_blank"><?php esc_html_e('Documentation', 'icecubo'); ?></a>
+        </h2>
+
         <form method="post" action="options.php">
             <?php
             settings_fields('icecubo-theme-options');
-            do_settings_sections('icecubo-theme-options');
-            
-            // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
-            if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
-                submit_button();
-            }
             ?>
+
+            <div id="icecubo-tab-start" class="icecubo-tab-panel" style="display:none;">
+                <?php do_settings_sections('icecubo-theme-options-start'); ?>
+            </div>
+
+            <div id="icecubo-tab-settings" class="icecubo-tab-panel" style="display:none; margin-top:40px;">
+                <?php do_settings_sections('icecubo-theme-options-settings'); ?>
+            </div>
+
+            <div id="icecubo-submit-container" style="display:none;">
+                <?php
+                // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
+                if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
+                    submit_button();
+                }
+                ?>
+            </div>
         </form>
     </div>
+    <script type="text/javascript">
+    (function() {
+        const tabs = document.querySelectorAll('.icecubo-tab-control');
+        const panels = document.querySelectorAll('.icecubo-tab-panel');
+        const submitContainer = document.getElementById('icecubo-submit-container');
+
+        // Function to activate a tab
+        function activateTab(tabId) {
+            tabs.forEach(function(item) {
+                item.classList.remove('nav-tab-active');
+            });
+            panels.forEach(function(panel) {
+                panel.style.display = panel.id === tabId ? 'block' : 'none';
+            });
+            if (submitContainer) {
+                submitContainer.style.display = tabId === 'icecubo-tab-settings' ? 'block' : 'none';
+            }
+            const activeTab = document.querySelector('[data-tab="' + tabId + '"]');
+            if (activeTab) {
+                activeTab.classList.add('nav-tab-active');
+            }
+        }
+
+        // On page load, activate the current tab on the page save (reload) from localStorage or default (Start)
+        const savedTab = localStorage.getItem('icecubo_active_tab') || 'icecubo-tab-start';
+        activateTab(savedTab);
+
+        // Add event listeners to tabs
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function(event) {
+                event.preventDefault();
+                localStorage.setItem('icecubo_active_tab', tab.dataset.tab);
+                activateTab(tab.dataset.tab);
+            });
+        });
+    })();
+    </script>
     <?php
 }
