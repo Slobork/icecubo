@@ -1,0 +1,2 @@
+.nav-tab {border-top-left-radius: 20px;}
+.nav-tab:not(.nav-tab-active) {background-color: white;}
