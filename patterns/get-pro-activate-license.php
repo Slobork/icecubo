@@ -15,7 +15,7 @@ if (! defined('ABSPATH') ) {
 <p class="has-text-align-center has-white-ice-color has-text-color has-link-color has-large-font-size">Great you have activated the IceCubo Pro plugin, but still you have to activate its license to get more patterns!</p>
 <!-- /wp:paragraph -->
 <!-- wp:paragraph {"placeholder":"Write title…","style":{"typography":{"textAlign":"center"},"elements":{"link":{"color":{"text":"#006fff"}}}},"textColor":"white-ice","fontSize":"large"} -->
-<p class="has-text-align-center has-white-ice-color has-text-color has-link-color has-large-font-size">From the Admin dashboard go to the "Appearance" → "IceCubo License" page to activate your license.</p>
+<p class="has-text-align-center has-white-ice-color has-text-color has-link-color has-large-font-size">From the Admin dashboard go to the "Appearance" → "IceCubo Theme" page to activate your license.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
  
