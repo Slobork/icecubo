@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Two floors - large searchbox and links on side.
  * Slug: icecubo/footer-2floors-large-searchbox
