@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Placeholder with image placed centrally. Diagonal matching transit cover background.
  * Slug: icecubo/hero-central-img-wrap-cover-gradient-diagonal-matching

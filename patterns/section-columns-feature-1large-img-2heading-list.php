@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Large image along the heading, paragraph and list items.
  * Slug: icecubo/section-columns-feature-1large-img-2heading-list

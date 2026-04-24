@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Wide align columns block for features with headings and asterisk.
  * Slug: icecubo/features-basic-headings-asterisk

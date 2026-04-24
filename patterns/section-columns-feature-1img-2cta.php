@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Image on left, CTA on right.
  * Slug: icecubo/section-columns-feature-1img-2cta

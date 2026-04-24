@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts wrapped in a group - Featured image at top.
  * Slug: icecubo/query-division-one-img-top

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Magazine Style 1.
  * Slug: icecubo/page-modal-magazine-1

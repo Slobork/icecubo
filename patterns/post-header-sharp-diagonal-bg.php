@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Group with sharp diagonal background - primary color.
  * Slug: icecubo/post-header-group-sharp-diagonal-bg

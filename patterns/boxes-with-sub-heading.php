@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic group boxes as columns.
  * Slug: icecubo/boxes-with-sub-heading

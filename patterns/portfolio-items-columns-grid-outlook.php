@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Portfolio items in columns composing a grid outlook.
  * Slug: icecubo/portfolio-items-columns-grid-outlook

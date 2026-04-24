@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic Layout used on the front page (1). Project sections with a call to action at the end.
  * Slug: icecubo/page-front-1-main

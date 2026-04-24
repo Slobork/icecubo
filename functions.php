@@ -1,4 +1,8 @@
 <?php
+// phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Theme Name:         IceCubo
  * Description:        IceCubo is a block-based theme for WordPress.

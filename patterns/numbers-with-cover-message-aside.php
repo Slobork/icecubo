@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Numbers with a cover message aside
  * Slug: icecubo/numbers-with-cover-message-aside

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Three columns with images and buttons as placeholders.
  * Slug: icecubo/hero-three-columns-img-btn-cta

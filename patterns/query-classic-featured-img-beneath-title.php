@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Query of posts (Title first).
  * Slug: icecubo/query-classic-featured-img-beneath-title

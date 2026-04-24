@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic Layout front page (1). Header-Hero plus project sections with a call to action at the end.
  * Slug: icecubo/page-modal-front-1

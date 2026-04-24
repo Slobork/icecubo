@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover overlapping section - image grid (with wide layout).
  * Slug: icecubo/section-cover-overlap-img-grid

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header With a Hero Section. Background transit gradually from dark to primary color. Mix colors on the title and a clear call to action.
  * Slug: icecubo/header-hero-gradient-gradual-dark-primary

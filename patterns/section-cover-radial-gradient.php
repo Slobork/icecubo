@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - with focus background (collection as placeholders).
  * Slug: icecubo/section-cover-radial-gradient

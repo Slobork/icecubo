@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header: Two floors - Logo and company info on the first, navigation on the second.
  * Slug: icecubo/header-two-floors

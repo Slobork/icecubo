@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Stack: Logo - title - social icons. Large border at the top.
  * Slug: icecubo/footer-basic-stack

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Boxes with images set as columns with cover background (Optionally add a cover image).
  * Slug: icecubo/boxes-collection-basic

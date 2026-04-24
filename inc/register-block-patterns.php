@@ -1,5 +1,8 @@
 <?php
- // phpcs:ignore
+// phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Block patterns and its categories
  *

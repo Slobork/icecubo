@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Two floors - Large CTA.
  * Slug: icecubo/footer-2floors-cta

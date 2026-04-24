@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - Overlapping section, accent numbers.
  * Slug: icecubo/section-cover-overlap-numbers-bg

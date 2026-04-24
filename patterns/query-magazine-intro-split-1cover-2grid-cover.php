@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Offset split posts: 1st cover post. 2nd grid of cover posts.
  * Slug: icecubo/query-magazine-intro-split-1cover-2grid-cover

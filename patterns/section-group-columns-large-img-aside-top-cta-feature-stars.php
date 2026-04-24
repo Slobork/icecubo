@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Present a features in group. Columns with large image aside. CTA on the top and descriptions with star.
  * Slug: icecubo/section-group-columns-large-img-aside-top-cta-feature-stars

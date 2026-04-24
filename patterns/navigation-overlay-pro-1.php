@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left.
  * Slug: icecubo/navigation-overlay-pro-1

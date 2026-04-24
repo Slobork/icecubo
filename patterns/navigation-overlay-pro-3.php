@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Light with Fade Up Animation. Aligned Left.
  * Slug: icecubo/navigation-overlay-pro-3

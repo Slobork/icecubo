@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Basic with nav menu.
  * Slug: icecubo/footer-basic-nav

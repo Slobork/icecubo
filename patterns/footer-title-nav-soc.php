@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Site title - nav - social icons.
  * Slug: icecubo/footer-logo-nav-soc

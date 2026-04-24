@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - radial background, text and image aside in two columns.
  * Slug: icecubo/section-cover-radial-img-aside

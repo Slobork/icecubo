@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - FAQ with details block - Tip: Duplicate the column with preferred style and delete other columns
  * Slug: icecubo/faq-details-3different-columns

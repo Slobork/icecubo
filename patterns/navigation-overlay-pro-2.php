@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Dark with Rotating Animation. Aligned Left.
  * Slug: icecubo/navigation-overlay-pro-2

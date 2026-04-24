@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Media and text as a call to action placeholder. Focused background (Light).
  * Slug: icecubo/hero-media-text-cta-light

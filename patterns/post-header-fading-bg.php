@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Group with fading background.
  * Slug: icecubo/post-header-group-fading-bg-title-byline-featured-img

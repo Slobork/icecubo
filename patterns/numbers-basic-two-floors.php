@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Numbers in two floors
  * Slug: icecubo/numbers-basic-two-floors

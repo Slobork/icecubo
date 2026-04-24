@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Overlay with Light Background.
  * Slug: icecubo/navigation-overlay-1

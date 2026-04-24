@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Collection with a cover message on the left.
  * Slug: icecubo/features-columns-collection-message-left

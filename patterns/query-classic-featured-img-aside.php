@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Featured image aside. Stretch terms to bottom.
  * Slug: icecubo/query-classic-featured-img-aside

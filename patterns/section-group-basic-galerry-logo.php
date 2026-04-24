@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Stack group with gallery and logo placeholder. Add as many companies as you wish, in a row.
  * Slug: icecubo/section-group-basic-galerry-logo

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Gradient Shading Overlay With Left Alignment.
  * Slug: icecubo/navigation-overlay-3

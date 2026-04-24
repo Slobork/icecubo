@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header With a Hero Section. Full Background Image As A Cover (Dark Image, White Text Set). Call To Action Centered At The Bottom.
  * Slug: icecubo/header-hero-cover-full-img-dark-cta-bottom

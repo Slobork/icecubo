@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header With a Hero Section. Two columns CTA above wide image as placeholder.
  * Slug: icecubo/header-hero-two-columns-cta-above-wide-img

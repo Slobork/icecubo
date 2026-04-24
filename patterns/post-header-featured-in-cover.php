@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Featured image as a cover.
  * Slug: icecubo/post-header-featured-img-as-cover

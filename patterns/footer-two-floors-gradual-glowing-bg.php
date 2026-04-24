@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Footer: Two floors - Gradual glowing backgroud and horizontal lines at the top.
  * Slug: icecubo/footer-2floors-gradual-glowing-bg

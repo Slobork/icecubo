@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - List Of Services With A Booking Button.
  * Slug: icecubo/section-cover-services-list

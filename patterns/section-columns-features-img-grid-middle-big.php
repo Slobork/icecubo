@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Grid by alternating images, middle one lagre.
  * Slug: icecubo/section-columns-features-img-grid-middle-big

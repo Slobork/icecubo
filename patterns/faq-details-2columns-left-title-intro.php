@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - FAQ with details block - Large title on the left
  * Slug: icecubo/faq-details-2columns-left-title-intro

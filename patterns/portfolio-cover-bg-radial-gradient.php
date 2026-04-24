@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Create a portfolio with a cover background and opacity applied.
  * Slug: icecubo/portfolio-cover-bg-radial-gradient

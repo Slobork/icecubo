@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Covers - Alternate Background Color, Feature Inside With Image And Call To Action.
  * Slug: icecubo/section-cover-alternate-bg-columns-feature-inside

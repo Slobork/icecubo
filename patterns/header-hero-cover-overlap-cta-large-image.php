@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header With a Hero Section. Call to action with large image. Overlapping cover background.
  * Slug: icecubo/header-hero-cover-overlap-cta-large-image

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Portfolio items in a grid.
  * Slug: icecubo/portfolio-items-grid

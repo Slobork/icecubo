@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - Tall Image On One Side, Call To Action On the Other.
  * Slug: icecubo/section-cover-tall-img-cta-inside

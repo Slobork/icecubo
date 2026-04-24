@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Header: Logo between nav links, centered.
  * Slug: icecubo/header-logo-between-nav-centered

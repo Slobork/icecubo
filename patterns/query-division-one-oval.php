@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts wrapped in a group. Oval post wrap.
  * Slug: icecubo/query-division-one-oval

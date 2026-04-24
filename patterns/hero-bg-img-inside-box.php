@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Background cover image and a banner box.
  * Slug: icecubo/hero-bg-img-inside-box

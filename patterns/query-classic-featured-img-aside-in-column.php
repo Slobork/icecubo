@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts with separator. High featured image aside in its column.
  * Slug: icecubo/query-classic-with-separator-featured-img-aside-in-column

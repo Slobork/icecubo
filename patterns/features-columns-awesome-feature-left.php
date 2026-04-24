@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Awesome feature cover mesage on the left.
  * Slug: icecubo/features-columns-awesome-feature-left
