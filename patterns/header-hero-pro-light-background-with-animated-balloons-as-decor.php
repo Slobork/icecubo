@@ -4,8 +4,8 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header With A Hero Section - Curvy Background With Ellipse At The Bottom. Title, Call To Action, Image. (Premium).
- * Slug: icecubo/header-hero-pro-4
+ * Title: Header With A Hero Section - Light Background With Animated Balloons as a Decor.  Clear Title and a Call To Action. (Premium).
+ * Slug: icecubo/header-hero-pro-light-background-with-animated-balloons-as-decor
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
  */
@@ -20,7 +20,7 @@ if(!class_exists('IceCubo_Pro')) {
     <?php
     } else {
     ?>
-        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-4-content"} /-->
+        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-light-background-with-animated-balloons-as-decor--content"} /-->
     <?php
     }
 }

@@ -5,7 +5,7 @@ if (! defined('ABSPATH') ) {
 }
 /**
  * Title: Header With A Hero Section - Curvy Ending Background. Title, Call To Action, Image And Major Protruding Point. (Premium).
- * Slug: icecubo/header-hero-pro-3
+ * Slug: icecubo/header-hero-pro-curvy-ending-background-cta-image-major-protruding-point
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
  */
@@ -20,7 +20,7 @@ if(!class_exists('IceCubo_Pro')) {
     <?php
     } else {
     ?>
-        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-3-content"} /-->
+        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-curvy-ending-background-cta-image-major-protruding-point--content"} /-->
     <?php
     }
 }
