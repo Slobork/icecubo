@@ -1239,6 +1239,16 @@
             "title": "Header-Hero: Agency Template 2 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-attorney-1",
+            "title": "Header-Hero: Attorney Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-attorney-2",
+            "title": "Header-Hero: Attorney Template 2 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
