@@ -1249,6 +1249,21 @@
             "title": "Header-Hero: Attorney Template 2 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-barber-1",
+            "title": "Header-Hero: Barber Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-barber-2",
+            "title": "Header-Hero: Barber Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-barber-3",
+            "title": "Header-Hero: Barber Template 3 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
