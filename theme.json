@@ -1294,6 +1294,16 @@
             "title": "Header-Hero: Marketer Template 2 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-marketing-suit-1",
+            "title": "Header-Hero: Marketing Suit Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketing-suit-2",
+            "title": "Header-Hero: Marketing Suit Template 2 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
