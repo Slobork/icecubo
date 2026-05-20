@@ -1274,6 +1274,16 @@
             "title": "Header-Hero: Dentist Template 2 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-gym-1",
+            "title": "Header-Hero: Gym Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-gym-2",
+            "title": "Header-Hero: Gym Template 2 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
