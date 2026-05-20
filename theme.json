@@ -1264,6 +1264,16 @@
             "title": "Header-Hero: Barber Template 3 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-dentist-1",
+            "title": "Header-Hero: Dentist Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-dentist-2",
+            "title": "Header-Hero: Dentist Template 2 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
