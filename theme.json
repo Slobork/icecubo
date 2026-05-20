@@ -1324,6 +1324,16 @@
             "title": "Header-Hero: SEO Template 2 (Premium)."
 		},
 		{
+			"area": "header",
+            "name": "header-template-yoga-1",
+            "title": "Header-Hero: Yoga Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-yoga-2",
+            "title": "Header-Hero: Yoga Template 2 (Premium)."
+		},
+		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
