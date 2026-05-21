@@ -26,6 +26,11 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         );
 
         register_block_pattern_category(
+            'icecubo-page-parts',
+            array( 'label' => esc_html__('IceCubo - 1.2. Sections (Premium)', 'icecubo') )
+        );
+
+        register_block_pattern_category(
             'icecubo-page-front',
             array( 'label' => esc_html__('IceCubo - 2.1. Pages (Landing)', 'icecubo') )
         );
@@ -48,11 +53,6 @@ if (! function_exists('icecubo_register_block_pattern_category') ) {
         register_block_pattern_category(
             'icecubo-page-contact',
             array( 'label' => esc_html__('IceCubo - 2.5. Pages (Contact)', 'icecubo') )
-        );
-
-        register_block_pattern_category(
-            'icecubo-page-parts',
-            array( 'label' => esc_html__('IceCubo - 2.6. Pages (Parts)', 'icecubo') )
         );
 
         register_block_pattern_category(
