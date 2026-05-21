@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Present a features in group. Columns with large image aside. Numbers on the other side.
  * Slug: icecubo/section-group-columns-large-img-aside-feature-numbers

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Call to action box - Featured aside, in a gradient cover
  * Slug: icecubo/box-cta-cover-featured-aside

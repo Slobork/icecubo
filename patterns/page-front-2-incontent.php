@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic Layout front page (2). Header-Hero plus features and testimonials sections.
  * Slug: icecubo/page-front-2-incontent

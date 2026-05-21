@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Grid - Cover image on one side, call to action on the other side.
  * Slug: icecubo/section-grid-features-cover-cta

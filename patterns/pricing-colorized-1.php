@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Pricing boxes colorized 1
  * Slug: icecubo/pricing-colorized-1

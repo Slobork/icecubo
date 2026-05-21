@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Group boxes in columns, with cover - applied background color (Optionally add a cover image).
  * Slug: icecubo/boxes-with-cover-bg-colorized

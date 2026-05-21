@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Sticky row - with a call to action
  * Slug: icecubo/box-sticky-row

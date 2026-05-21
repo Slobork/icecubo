@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Common header group- Featured image at top.
  * Slug: icecubo/post-header-basic-reverse

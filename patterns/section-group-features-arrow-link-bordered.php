@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Features at the bottom of the group (Minimal bordered and arrow link).
  * Slug: icecubo/section-group-features-arrow-link-bordered

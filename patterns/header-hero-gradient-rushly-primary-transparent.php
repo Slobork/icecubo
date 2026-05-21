@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Header with hero section. Background light glow from primary color to transparent.
+ * Title: Header With a Hero Section. Background light glow from primary color to transparent.
  * Slug: icecubo/header-hero-gradient-rushly-primary-transparent
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

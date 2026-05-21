@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Cover image on the left side, call to action on the other side.
  * Slug: icecubo/section-columns-feature-1cover-2cta

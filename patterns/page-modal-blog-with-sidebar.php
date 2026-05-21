@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Blog page with sidebar.
  * Slug: icecubo/page-modal-blog-with-sidebar

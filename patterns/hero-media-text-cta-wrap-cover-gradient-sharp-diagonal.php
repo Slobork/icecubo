@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Media and text as a call to action placeholder. Sharp diagonal cover background.
  * Slug: icecubo/hero-media-text-cta-wrap-cover-gradient-sharp-diagonal

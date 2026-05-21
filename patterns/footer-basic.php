@@ -1,8 +1,11 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Basic links.
- * Slug: icecubo/footer-basic
+ * Title: Footer: Basic with links.
+ * Slug: icecubo/footer-basic-links
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
  */

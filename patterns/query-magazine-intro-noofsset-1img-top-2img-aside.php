@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: No offset, two columns: 1st with image at the top, 2nd image aside.
  * Slug: icecubo/query-magazine-intro-noofsset-1img-top-2img-aside

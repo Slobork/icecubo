@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Offset split posts: 1st prominent column with image the top. 2nd list with featured image aside.
  * Description: 1st column - 2 items, 0 offset; 2nd column - 3 items, 2 offset.

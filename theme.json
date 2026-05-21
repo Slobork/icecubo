@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
+  	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"settings": {
 		"appearanceTools": true,
@@ -435,6 +435,7 @@
 			"customFontSize": true,
 			"defaultFontSizes": false,
 			"writingMode": true,
+			"textIndent": true,
 			"fontFamilies": [
 				{
 					"name": "sans-serif (System - Helvetica Neue, Helvetica, Arial)",
@@ -1019,7 +1020,7 @@
 			"core/code": {
 				"color": {
 					"background": "var(--wp--preset--color--gray-very-light)",
-					"text": "var(--wp--preset--color--darko-down-bottom)"
+					"text": "var(--wp--preset--color--darko-down)"
 				},
 				"typography": {
 					"fontFamily": "monospace"
@@ -1059,7 +1060,7 @@
 				}
 			},
 			"core/navigation": {
-				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}& .wp-element-button {color:inherit; background: transparent; border-color: inherit}& ul li .nav-item-badge{position: absolute; padding: 2px 12px; top: 0; right: 0; font-size: .8em; line-height: 1.3; margin-top: -1.5rem; margin-right: -10px; border-radius: var(--wp--custom--radius-middle); transition: margin-right .5s ease-in-out; color: var(--wp--preset--color--highlight-2); background: var(--wp--preset--color--darko);}& ul li.is-style-icecubo-nav-item-outline .nav-item-badge{margin-top: -1rem;}& ul li.has-child li .nav-item-badge{margin-top: -.7rem;}"
+				"css": "&:not(.noice) > .wp-block-navigation-item.current-menu-item{box-shadow: 0 2px 0;}& .wp-element-button {color:inherit; background: transparent; border-color: inherit}"
 			},
 			"core/post-author": {
 				"css": "{align-items: center;}& .wp-block-post-author__avatar img {vertical-align: middle; padding: 4px 0; border-radius: 50%;}& .wp-block-post-author__avatar {margin-right: 0;}"
@@ -1070,7 +1071,7 @@
 						"bottom": "var(--wp--custom--spacing-xxxl)"
 					}
 				},
-				"css": "&.ice-read-more-hover-spread a.wp-block-post-excerpt__more-link:hover {letter-spacing: 1px; transition: all .2s ease-in-out}"
+				"css": "&:not(.noice) a.wp-block-post-excerpt__more-link:hover {letter-spacing: 1px; transition: all .2s ease-in-out}"
 			},
 			"core/post-featured-image": {
 				"border": {
@@ -1120,12 +1121,217 @@
 		{
 			"area": "header",
 			"name": "header",
-			"title": "Header"
+			"title": "Header: Spread elements: Logo - nav (Default for most templates)."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-logonav-buttons-transit-bg",
+			"title": "Header: One side: Logo/nav - Other side: Buttons. Transit background."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-logonav-login-transit-bg",
+			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-sticky-logonav-buttons",
+			"title": "Sticky Header. One side - Logo/nav, Other side - Buttons."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-sticky-logonav-social",
+			"title": "Sticky Header. One side - Logo/nav, Other side - Social icons."
+		},
+		{
+			"area": "header",
+			"name": "header-aside-logonav-social",
+			"title": "Header: One side - Logo/nav, Other side - Social icons."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-cover-gradient-light",
+			"title": "Header: Spread elements: Logo - nav. Light glowing background transit to transparent."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-cover-gradient",
+			"title": "Header: Spread elements: Logo - nav. Transit background from dark to primary color."
+		},
+		{
+			"area": "header",
+			"name": "header-basic-wide-logo-nav-soc",
+			"title": "Header: Spread elements: Logo - nav - social icons."
+		},
+		{
+			"area": "header",
+			"name": "header-logo-between-nav-centered",
+			"title": "Header: Logo between nav links, centered."
+		},
+		{
+			"area": "header",
+			"name": "header-two-floors",
+			"title": "Header: Two floors - Logo and company info on the first, navigation on the second."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-full-img-dark-cta-bottom",
+			"title": "Header-Hero: Full Background Image As A Cover (Dark Image, White Text Set). Call To Action Centered At The Bottom."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-full-img-light-cta-left",
+			"title": "Header-Hero: Background Image As A Cover (Light Image, Dark Text Set). Call To Action On The Left."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-gradient-diagonal-transit-media-text-cta",
+			"title": "Header-Hero: Call to action after the list items. Cover with diagonal transit background."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-overlap-cta-large-image",
+			"title": "Header-Hero: Call to action with large image. Overlapping cover background."
 		},
 		{
 			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
-			"title": "Header With A Hero Section (Front-page default)"
+			"title": "Header-Hero: Background transit gradually from dark to primary color (Front-page default)"
+		},
+		{
+			"area": "header",
+			"name": "header-hero-gradient-rushly-primary-transparent",
+			"title": "Header-Hero: Background light glow from primary color to transparent."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-two-columns-cta-above-wide-img",
+			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
+		},
+		{
+			"area": "header",
+			"name": "header-hero-cover-in-cover-glow-cta-on-left",
+			"title": "Header-Hero: Title And List Features With A Call To Action Along The Image."
+		},
+		{
+			"area": "header",
+            "name": "header-hero-pro-light-background-with-animated-balloons-as-decor",
+            "title": "Header-Hero: Light Background With Animated Balloons as a Decor (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-hero-pro-curvy-ending-background-cta-image-major-protruding-point",
+            "title": "Header-Hero: Curvy Ending Background. Title, Call To Action, Image And Major Protruding Point (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-hero-pro-curvy-background-with-ellipse-bottom-title-call-to-action-image",
+            "title": "Header-Hero: Curvy Background With Ellipse At The Bottom. Title, Call To Action, Image (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-agency-1",
+            "title": "Header-Hero: Agency Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-agency-2",
+            "title": "Header-Hero: Agency Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-attorney-1",
+            "title": "Header-Hero: Attorney Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-attorney-2",
+            "title": "Header-Hero: Attorney Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-barber-1",
+            "title": "Header-Hero: Barber Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-barber-2",
+            "title": "Header-Hero: Barber Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-barber-3",
+            "title": "Header-Hero: Barber Template 3 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-dentist-1",
+            "title": "Header-Hero: Dentist Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-dentist-2",
+            "title": "Header-Hero: Dentist Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-gym-1",
+            "title": "Header-Hero: Gym Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-gym-2",
+            "title": "Header-Hero: Gym Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketer-1",
+            "title": "Header-Hero: Marketer Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketer-2",
+            "title": "Header-Hero: Marketer Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketing-suit-1",
+            "title": "Header-Hero: Marketing Suit Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketing-suit-2",
+            "title": "Header-Hero: Marketing Suit Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketing-1",
+            "title": "Header-Hero: Marketing Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-marketing-2",
+            "title": "Header-Hero: Marketing Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-seo-1",
+            "title": "Header-Hero: SEO Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-seo-2",
+            "title": "Header-Hero: SEO Template 2 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-yoga-1",
+            "title": "Header-Hero: Yoga Template 1 (Premium)."
+		},
+		{
+			"area": "header",
+            "name": "header-template-yoga-2",
+            "title": "Header-Hero: Yoga Template 2 (Premium)."
 		},
 		{
 			"area": "footer",
@@ -1133,9 +1339,119 @@
 			"title": "Footer"
 		},
 		{
+			"area": "footer",
+			"name": "footer-basic-nav",
+			"title": "Footer: Basic with nav menu."
+		},
+		{
+			"area": "footer",
+			"name": "footer-basic-stack",
+			"title": "Footer: Stack: Logo - title - social icons. Large border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-basic-links",
+			"title": "Footer: Basic with links."
+		},
+		{
+			"area": "footer",
+			"name": "footer-3floors",
+			"title": "Footer: Three floors. First floor with logo and title, second floor with nav menu, third floor with social icons. Large border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-logo-links-soc",
+			"title": "Footer: Logo - links - social icons."
+		},
+		{
+			"area": "footer",
+			"name": "footer-two-floors-curvy-top-border",
+			"title": "Footer: Two floors with a curvy border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-gradual-glowing-bg",
+			"title": "Footer: Two floors - Gradual glowing backgroud and horizontal lines at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-cta",
+			"title": "Footer: Two floors - Large CTA."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-large-searchbox",
+			"title": "Footer: Two floors - large searchbox and links on side."
+		},
+		{
+			"area": "footer",
+			"name": "footer-2floors-separated",
+			"title": "Footer: Two floors - Separated."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-1",
+			"title": "Footer (Premium): Three floors with a decor of balloons separated"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-2",
+			"title": "Footer (Premium): Three floors with a decorative shapes on the left"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-3",
+			"title": "Footer (Premium): Three floors with a circle decor at the bottom"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-4",
+			"title": "Footer (Premium): Three Floors With A Background Image"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-5",
+			"title": "Footer (Premium): Cover in 4:3 format with a background image symbolizing Growing With Arrow Up"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-6",
+			"title": "Footer (Premium): Three floors with a pink stained background image"
+		},
+		{
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
+		},
+		{
+		    "area": "navigation-overlay",
+            "name": "navigation-overlay-1",
+            "title": "Light with Submenus Hidden. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-2",
+			"title": "Dark with Submenus Hidden. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-3",
+			"title": "Gradient Shading With Left Alignment."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-pro-1",
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Premium)."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-pro-2",
+            "title": "Dark with Rotating Animation. Aligned Left (Premium)."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-pro-3",
+			"title": "Light with Fade Up Animation. Aligned Left (Premium)."
 		}
 	],
 	"customTemplates": [

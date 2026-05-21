@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Portfolio in columns with background for each cover block.
  * Slug: icecubo/portfolio-basic-bg

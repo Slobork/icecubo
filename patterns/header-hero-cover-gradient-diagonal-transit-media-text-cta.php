@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Header with hero. Call to action after the list items. Cover with diagonal transit background.
+ * Title: Header With a Hero Section. Call to action after the list items. Cover with diagonal transit background.
  * Slug: icecubo/header-hero-cover-gradient-diagonal-transit-media-text-cta
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

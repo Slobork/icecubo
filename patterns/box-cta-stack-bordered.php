@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Call to action box - Stack (minimal border)
  * Slug: icecubo/box-cta-stack-bordered

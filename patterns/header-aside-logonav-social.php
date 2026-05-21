@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: One side: Logo/nav - Other side: Social icons.
+ * Title: Header: One side - Logo/nav, Other side - Social icons.
  * Slug: icecubo/header-aside-logonav-social
  * Categories: icecubo-header
  * Block Types: core/template-part/header

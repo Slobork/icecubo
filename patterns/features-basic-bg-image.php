@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Features with image in columns with background for each cover block.
  * Slug: icecubo/features-basic-bg-image

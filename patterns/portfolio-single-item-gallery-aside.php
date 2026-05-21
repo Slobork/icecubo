@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Single portfolio item and a gallery placeholder aside.
  * Slug: icecubo/portfolio-single-item-gallery-aside

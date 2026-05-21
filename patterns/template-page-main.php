@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Main part of the page, for the page and alike-page templates.
  * Slug: icecubo/template-page-main

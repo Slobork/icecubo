@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Numbers in a cover section with a heading aside.
  * Slug: icecubo/numbers-in-cover-section

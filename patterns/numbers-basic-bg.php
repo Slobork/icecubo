@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Numbers in columns (with backgroud applied).
  * Slug: icecubo/numbers-basic-bg

@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Spread elements: Logo - nav. Transit background from dark to primary color.
+ * Title: Header: Spread elements: Logo - nav. Transit background from dark to primary color.
  * Slug: icecubo/header-basic-wide-cover-gradient
  * Categories: icecubo-header
  * Block Types: core/template-part/header

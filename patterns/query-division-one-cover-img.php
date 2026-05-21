@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts splitted in 2 columns, wrapped in a group. Featured image as a cover.
  * Slug: icecubo/query-division-one-cover-img

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - Overlapping section, features at the top.
  * Slug: icecubo/section-cover-overlap-features-top

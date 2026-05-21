@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: One side: Logo/nav - Other side: Login link. Transit background.
+ * Title: Header: One side - Logo/nav, Other side - Login link. Transit background.
  * Slug: icecubo/header-aside-logonav-login-transit-bg
  * Categories: icecubo-header
  * Block Types: core/template-part/header
@@ -15,8 +18,8 @@
 <!-- wp:navigation {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph -->
-<p><a href="#">Login</a></p>
+<!-- wp:paragraph {"className":"is-style-icecubo-accent-annotate"} -->
+<p class="is-style-icecubo-accent-annotate"><a href="#">Login</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></header>
 <!-- /wp:group -->

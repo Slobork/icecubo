@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Boxes with minimal border and arrow link. Set as columns with cover, optionally add a cover image.
  * Slug: icecubo/boxes-with-arrow-link-bordered

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts with featured image as a cover.
  * Slug: icecubo/query-classic-featured-img-cover

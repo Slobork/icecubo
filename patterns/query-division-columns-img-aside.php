@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Two queries in columns - Featured image aside.
  * Slug: icecubo/query-division-columns-img-aside

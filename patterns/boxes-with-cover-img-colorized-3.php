@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Group boxes in columns 3.
  * Slug: icecubo/boxes-with-cover-bg-colorized-3

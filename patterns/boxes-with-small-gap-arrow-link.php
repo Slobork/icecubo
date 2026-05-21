@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Boxes with small gap and arrow link. Set as columns with cover background (Optionally add a cover image).
  * Slug: icecubo/boxes-with-small-gap-arrow-link

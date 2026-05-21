@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Testimonials with a cover message aside, sharp splitted background.
  * Slug: icecubo/testimonials-cover-message-aside-sharp-bg

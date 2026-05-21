@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Features with a cover message on the center.
  * Slug: icecubo/features-columns-message-center

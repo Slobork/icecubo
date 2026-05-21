@@ -117,6 +117,13 @@ pre { overflow: auto; }
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
+
+/**
+ * Small margin on the top of all elements inside the flow and constrained layouts.
+ * Overwrites the defalt which is medium
+ */
+:root :where(.is-layout-flow, .is-layout-constrained) > * {margin-block-start: var(--wp--preset--spacing--small)}
+
 /**
  * text-decoration in links is important for accessibility. However,
  * remove the text decoration from the links that are already highlighted
@@ -129,6 +136,7 @@ body.search main h2 a,
 .wp-block-post-terms a,
 .wp-block-post-navigation-link a,
 .remove-text-decor a,
+.remove-link-decor a,
 a.button {
      text-decoration: none;
 }
@@ -137,7 +145,7 @@ a.button {
 [class*="template-boxed"] main { width: 78%; }
 
 /* Shade bar on links hover */
-a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
+a:not(.wp-element-button):not(.wp-block-navigation-item__content):not(.wp-block-social-link-anchor):not(.wp-block-avatar__link):not(.noice):hover { background: -webkit-gradient(linear,left top,left bottom,color-stop(60%,transparent),color-stop(100%,var(--wp--preset--color--primary-dark)));}
 
 /* Footer - links */
 footer a:hover { opacity: .6; }
@@ -178,6 +186,9 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
     border-radius: var(--wp--custom--radius-large);
     max-width: none;
 }
+
+/* Image or media-text blocks - remove any background effects on hover */
+.ice-hover-remove-style img:hover{background-size: 100%; background: none; padding: 0; box-shadow: none; border: 0; border-radius: 0; filter: none; clip-path: unset; transition: all .7s ease;}
 
 /* Small screens */
 @media (max-width: 599px) {

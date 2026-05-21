@@ -1,4 +1,8 @@
 <?php
+// phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Theme Name:         IceCubo
  * Description:        IceCubo is a block-based theme for WordPress.
@@ -14,7 +18,7 @@
  * Author URI:          https://maxpressy.com
  * License:             GPL v2 or later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
- * Version:             1.2.4
+ * Version:             1.2.5
  * Text Domain:         icecubo
  * Domain Path:         /languages
  * Requires at least:   6.1
@@ -22,8 +26,10 @@
 
 define('ICECUBO_VERSION', wp_get_theme()->get('Version'));
 
+/**
+ * Include other PHP files with functions and features of the theme.
+ */
 require_once get_theme_file_path('inc/key.php');
-require_once get_theme_file_path('inc/settings-page.php');
 require_once get_theme_file_path('inc/register-block-patterns.php');
 require_once get_theme_file_path('inc/register-block-styles.php');
 require_once get_theme_file_path('inc/theme-json-updater.php');

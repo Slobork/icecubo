@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Call to action box - In a focused cover (2)
  * Slug: icecubo/box-cta-cover-focus-2

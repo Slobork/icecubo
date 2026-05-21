@@ -45,3 +45,9 @@ nav .wp-block-search__button svg {
     min-height: unset;
     min-width: unset;
 }
+
+/* Remove the spacing around the mob overlay */
+.has-modal-open .wp-block-navigation__responsive-container.disable-default-overlay { padding: 0;}
+
+/* Make the overlay fixed, i.e. without scrolling */
+.wp-block-navigation__overlay-container { overflow: hidden; }

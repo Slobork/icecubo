@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Project info (2).
  * Slug: icecubo/section-columns-project-info-2

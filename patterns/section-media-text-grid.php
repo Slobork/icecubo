@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Features grid with Media & Text.
  * Slug: icecubo/section-media-text-grid

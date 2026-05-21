@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts wrapped in a group. Accent byline and terms.
  * Slug: icecubo/query-division-one-accent-byline-terms

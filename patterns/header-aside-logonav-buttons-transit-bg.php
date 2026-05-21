@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: One side: Logo/nav - Other side: Buttons. Transit background.
+ * Title: Header: One side - Logo/nav, Other side - Buttons. Transit background.
  * Slug: icecubo/header-aside-logonav-buttons-transit-bg
  * Categories: icecubo-header
  * Block Types: core/template-part/header

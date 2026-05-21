@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Content part for the page template without a title and site header.
  * Slug: icecubo/template-page-notitle-noheader

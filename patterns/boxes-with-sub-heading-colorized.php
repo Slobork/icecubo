@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic group boxes as columns colorized.
  * Slug: icecubo/boxes-with-sub-heading-colorized

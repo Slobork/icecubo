@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Team members in columns with background for each cover block.
  * Slug: icecubo/team-bg-basic

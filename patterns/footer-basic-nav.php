@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Basic with nav menu.
+ * Title: Footer: Basic with nav menu.
  * Slug: icecubo/footer-basic-nav
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Boxes with minimal border and different arrow link. Duplicate the column you wish to use and delete the others.
  * Slug: icecubo/boxes-with-arrow-link-bordered-diff

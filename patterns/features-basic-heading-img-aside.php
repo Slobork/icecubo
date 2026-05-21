@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Features in columns with heading and image aside.
  * Slug: icecubo/features-basic-heading-img-aside

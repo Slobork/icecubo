@@ -1,8 +1,12 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Two floors - inner content.
  * Slug: icecubo/footer-2floors-inner
+ * Inserter: false
  * Categories: hidden
  */
 ?>

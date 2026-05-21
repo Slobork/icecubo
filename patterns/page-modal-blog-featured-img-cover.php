@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Blog with featured image as a cover of each post.
  * Slug: icecubo/page-modal-blog-featured-img-cover

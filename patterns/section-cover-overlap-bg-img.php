@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Cover - Overlapping section with opacity and backgroud image applied.
  * Slug: icecubo/section-cover-overlap-bg-img

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Basic group box with border minimal
  * Slug: icecubo/box-in-group-bordered

@@ -1,7 +1,10 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
- * Title: Site title - links - social icons.
+ * Title: Footer: Site title - links - social icons.
  * Slug: icecubo/footer-logo-links-soc
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer

@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Media and text as a call to action left aligned. Background from the top, transit gradual dark color to transparent.
  * Slug: icecubo/hero-media-text-cta-aligned-left-bg-gradual

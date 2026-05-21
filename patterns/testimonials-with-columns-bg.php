@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Testimonials with image placeholder, in columns with group background.
  * Slug: icecubo/testimonials-with-columns-bg

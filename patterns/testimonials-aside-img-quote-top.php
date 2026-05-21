@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Testimonials in columns with image aside and larger quote on top.
  * Slug: icecubo/testimonials-aside-image-quote-top

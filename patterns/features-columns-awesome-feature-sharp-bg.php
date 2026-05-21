@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Columns - Awesome feature cover message with sharp splitted background.
  * Slug: icecubo/features-columns-awesome-feature-sharp-bg

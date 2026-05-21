@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Placeholder with image placed centrally. Sharp overlap cover background.
  * Slug: icecubo/hero-cover-overlap-cta-large-image

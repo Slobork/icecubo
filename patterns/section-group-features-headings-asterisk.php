@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Features at the bottom of the group. Headings with asterisk as placeholder.
  * Slug: icecubo/section-group-features-headings-asterisk

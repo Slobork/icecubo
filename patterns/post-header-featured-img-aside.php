@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Featured image aside.
  * Slug: icecubo/post-header-two-columns-featured-img-aside

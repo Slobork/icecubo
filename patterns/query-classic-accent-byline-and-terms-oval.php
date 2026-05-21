@@ -1,5 +1,8 @@
 <?php
 // phpcs:ignore
+if (! defined('ABSPATH') ) {
+    exit;
+}
 /**
  * Title: Posts accenting byline and terms.
  * Slug: icecubo/query-classic-accent-byline-and-terms-oval
