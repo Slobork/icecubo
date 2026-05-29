@@ -69,7 +69,7 @@ if ( ! function_exists( 'icecubo_theme_options' ) ) {
 // Check license key from the database
 function icecubo_check_license() {
     
-    $is_licensed = IceCubo_Pro::getLicense();
+    $is_licensed = class_exists('IceCubo_Pro') ? IceCubo_Pro::getLicense() : false;
     return $is_licensed;
 }
 
@@ -100,7 +100,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
         );
 
         // If Pro version is active, register fields under the settings tab, otherwise display the message about buying Pro version.
-        if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
+        if (icecubo_check_license() != false) {
 
             // Section Animations settings
             add_settings_section(
