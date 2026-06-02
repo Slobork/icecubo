@@ -305,10 +305,6 @@ function icecubo_buy_pro_box() {
             // JavaScript will handle the click event and show the settings tab.
             $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="#icecubo-tab-settings" class="icecubo-tab-control" data-tab="icecubo-tab-settings">Use the Settings →</a>';
         } else {
-            /** 
-             * Output of this message is not displayed anywhere coz Freemius is preventing access to the settings for users
-             * who have not activated the license (with a License box prompt), but we will keep it here just in case.
-             */
             $output .= '<a style="font-size: 16px; line-height: 2.5; background: #a3a3ff; color: black; padding: 5px; border-radius: 3px; margin: 0 30px 0 10px;" href="admin.php?page=icecubo-licenses">Activate License first to access additional settings →</a>';
         }
         
