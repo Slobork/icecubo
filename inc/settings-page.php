@@ -233,7 +233,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
 
             add_settings_field(
                 'settings_info_top',
-                esc_html__('You have to upgrade to the Pro version (Pro addon) to access these settings.', 'icecubo'),
+                esc_html__('You have to activate the Pro version (Pro addon) to access these settings.', 'icecubo'),
                 'icecubo_settings_info_boxes_callback_top',
                 $tab_settings,
                 'section_settings'
@@ -305,7 +305,7 @@ function icecubo_buy_pro_box() {
             // JavaScript will handle the click event and show the settings tab.
             $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="#icecubo-tab-settings" class="icecubo-tab-control" data-tab="icecubo-tab-settings">Use the Settings →</a>';
         } else {
-            $output .= '<a style="font-size: 16px; line-height: 2.5; background: #a3a3ff; color: black; padding: 5px; border-radius: 3px; margin: 0 30px 0 10px;" href="admin.php?page=icecubo-licenses">Activate License first to access additional settings →</a>';
+            $output .= '<a style="font-size: 15px; line-height: 2.5; background: #a3a3ff; color: black; padding: 3px; border-radius: 3px; margin: 0 30px 0 0;" href="admin.php?page=icecubo-licenses">Activate License first to access additional settings →</a>';
         }
         
         $output .= '</div>';
