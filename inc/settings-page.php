@@ -430,7 +430,7 @@ function icecubo_theme_options_page_content() {
             <div id="icecubo-submit-container" style="display:none;">
                 <?php
                 // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
-                if (class_exists('IceCubo_Pro') && icecubo_check_license() !='') {
+                if (icecubo_check_license() != false) {
                     submit_button();
                 }
                 ?>
