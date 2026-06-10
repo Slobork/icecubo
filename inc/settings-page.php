@@ -291,9 +291,9 @@ function icecubo_buy_pro_box() {
     $output = '';
     if (! class_exists('IceCubo_Pro') ) {
         $output .= '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
-        $output .= '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Buy Pro', 'icecubo' ) . '</h3>';
+        $output .= '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Get Pro', 'icecubo' ) . '</h3>';
         $output .= '<p style="line-height: 1.75">' . esc_html__( 'With Pro addon get advanced features and templates.', 'icecubo' ) . '</p>';
-        $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="' . admin_url( 'themes.php?page=icecubo-theme-options-addons' ) . '" target="_self">Get IceCubo Companion →</a>';
+        $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
         $output .= '</div>';
     } else {
         $output .= '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
