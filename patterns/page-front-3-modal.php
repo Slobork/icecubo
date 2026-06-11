@@ -13,7 +13,7 @@ if (! defined('ABSPATH') ) {
 ?>
 <!-- wp:group {"metadata":{"name":"Header"},"tagName":"header","align":"full","layout":{"type":"default"}} -->
 <header class="wp-block-group alignfull">
-    <!-- wp:pattern {"slug":"icecubo/header-hero-two-columns-cta-above-wide-img"} /-->
+    <!-- wp:pattern {"slug":"icecubo/header-hero-cover-two-columns-cta-above-wide-img"} /-->
 </header>
 <!-- /wp:group -->
 

@@ -1195,6 +1195,11 @@
 		},
 		{
 			"area": "header",
+			"name": "header-hero-cover-two-columns-cta-above-wide-img",
+			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
+		},
+		{
+			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
 			"title": "Header-Hero: Background transit gradually from dark to primary color (Front-page default)"
 		},
@@ -1202,11 +1207,6 @@
 			"area": "header",
 			"name": "header-hero-gradient-rushly-primary-transparent",
 			"title": "Header-Hero: Background light glow from primary color to transparent."
-		},
-		{
-			"area": "header",
-			"name": "header-hero-two-columns-cta-above-wide-img",
-			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
 		},
 		{
 			"area": "header",
