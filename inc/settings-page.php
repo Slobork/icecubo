@@ -118,6 +118,44 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'section_animations'
             );
 
+            add_settings_field(
+                'animations_select',
+                esc_html__('Animation Select', 'icecubo'),
+                'icecubo_settings_animations_select_callback',
+                $tab_settings,
+                'section_animations'
+            );
+            add_settings_field(
+                'animations_select_time_speed',
+                esc_html__('Animation Speed', 'icecubo'),
+                'icecubo_settings_animations_select_time_speed_callback',
+                $tab_settings,
+                'section_animations'
+            );
+            add_settings_field(
+                'animations_select_time_delay',
+                esc_html__('Animation Delay', 'icecubo'),
+                'icecubo_settings_animations_select_time_delay_callback',
+                $tab_settings,
+                'section_animations'
+            );
+            add_settings_field(
+                'animation_repeat_checkbox',
+                esc_html__('Repeat Animation', 'icecubo'),
+                'icecubo_settings_animation_repeat_checkbox_callback',
+                $tab_settings,
+                'section_animations'
+            );
+            // Copy animations button - outputs an HTML button that copies animation-related values
+            add_settings_field(
+                'animations_copy_button',
+                esc_html__('Copy Animation', 'icecubo'),
+                'icecubo_settings_animations_copy_button_callback',
+                $tab_settings,
+                'section_animations'
+            );
+            
+
             // Section templates settings
             add_settings_section(
                 'section_templates',
@@ -206,6 +244,11 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             );
 
             register_setting('icecubo-theme-options', 'icecubo_animations_laod', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_animations_select', 'sanitize_text_field');
+            register_setting('icecubo-theme-options', 'icecubo_animations_select_time_speed', 'sanitize_text_field');
+            register_setting('icecubo-theme-options', 'icecubo_animations_select_time_delay', 'sanitize_text_field');
+            register_setting('icecubo-theme-options', 'icecubo_animation_repeat_checkbox', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_animations_copy_button', 'sanitize_text_field');
 
             register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
             register_setting('icecubo-theme-options', 'icecubo_template_attorney_checkbox_two', 'icecubo_sanitize_checkbox');
@@ -334,12 +377,97 @@ function icecubo_settings_section_animations_callback() {
     // alternative bordr-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     echo '<p style="font-size: 18px;">' .esc_html__('You can enable or disable animations that come with the theme for the entire site.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px;">' .esc_html__('You can generate animation classes for your content here. Just select the animation and its adjacent options, then click on the "Copy Animation Classes" button. You can paste it into any block from its "Additional classes" option.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_animations_load_checkbox_callback() {
     $animation = get_option('icecubo_animations_laod');
     echo '<input type="checkbox" name="icecubo_animations_laod" value="1" style="margin-bottom: 40px;" ' . checked($animation, 1, false) . '/>';
 }
+
+function icecubo_settings_animations_select_callback() {
+    $animations_select = get_option('icecubo_animations_select');
+    if ($animations_select === false) {
+        $animations_select = '';
+    }
+    echo '<select name="icecubo_animations_select">';
+    echo '<option value="" ' . selected($animations_select, '', false) . '>Select Animation</option>';
+    
+    echo '<option value="anim-bounce" ' . selected($animations_select, 'anim-bounce', false) . '>bounce</option>';
+    echo '<option value="anim-fadeIn" ' . selected($animations_select, 'anim-fadeIn', false) . '>fadeIn</option>';
+    echo '<option value="anim-fadeInUp" ' . selected($animations_select, 'anim-fadeInUp', false) . '>fadeInUp</option>';
+    echo '<option value="anim-blurOut" ' . selected($animations_select, 'anim-blurOut', false) . '>blurOut</option>';
+    echo '<option value="anim-pushUp" ' . selected($animations_select, 'anim-pushUp', false) . '>pushUp</option>';
+    echo '<option value="anim-pushDown" ' . selected($animations_select, 'anim-pushDown', false) . '>pushDown</option>';
+    echo '<option value="anim-pushLeft" ' . selected($animations_select, 'anim-pushLeft', false) . '>pushLeft</option>';
+    echo '<option value="anim-pushRight" ' . selected($animations_select, 'anim-pushRight', false) . '>pushRight</option>';
+    echo '<option value="anim-flipX" ' . selected($animations_select, 'anim-flipX', false) . '>flipX</option>';
+    echo '<option value="anim-flipY" ' . selected($animations_select, 'anim-flipY', false) . '>flipY</option>';
+    echo '<option value="anim-rotaterev-left" ' . selected($animations_select, 'anim-rotaterev-left', false) . '>rotaterev-left</option>';
+    echo '<option value="anim-rotaterev-right" ' . selected($animations_select, 'anim-rotaterev-right', false) . '>rotaterev-right</option>';
+    echo '<option value="anim-to-transform" ' . selected($animations_select, 'anim-to-transform', false) . '>to-transform</option>';
+    echo '<option value="anim-to-blob" ' . selected($animations_select, 'anim-to-blob', false) . '>to-blob</option>';
+    echo '<option value="anim-scale-in-center" ' . selected($animations_select, 'anim-scale-in-center', false) . '>scale-in-center</option>';
+    echo '<option value="anim-scale-in-hor-center" ' . selected($animations_select, 'anim-scale-in-hor-center', false) . '>scale-in-hor-center</option>';
+    echo '<option value="anim-scale-in-ver-center" ' . selected($animations_select, 'anim-scale-in-ver-center', false) . '>scale-in-ver-center</option>';
+    echo '<option value="anim-scale-in-top" ' . selected($animations_select, 'anim-scale-in-top', false) . '>scale-in-top</option>';
+    echo '<option value="anim-scale-in-tr" ' . selected($animations_select, 'anim-scale-in-tr', false) . '>scale-in-tr</option>';
+    echo '<option value="anim-scale-in-right" ' . selected($animations_select, 'anim-scale-in-right', false) . '>scale-in-right</option>';
+    echo '<option value="anim-scale-in-br" ' . selected($animations_select, 'anim-scale-in-br', false) . '>scale-in-br</option>';
+    echo '<option value="anim-scale-in-bottom" ' . selected($animations_select, 'anim-scale-in-bottom', false) . '>scale-in-bottom</option>';
+    echo '<option value="anim-scale-in-bl" ' . selected($animations_select, 'anim-scale-in-bl', false) . '>scale-in-bl</option>';
+    echo '<option value="anim-scale-in-left" ' . selected($animations_select, 'anim-scale-in-left', false) . '>scale-in-left</option>';
+    echo '<option value="anim-scale-in-tl" ' . selected($animations_select, 'anim-scale-in-tl', false) . '>scale-in-tl</option>';
+    echo '<option value="anim-slide-bg" ' . selected($animations_select, 'anim-slide-bg', false) . '>slide-bg</option>';
+    echo '<option value="animd-slide-ch" ' . selected($animations_select, 'animd-slide-ch', false) . '>slide-ch</option>';
+    echo '</select>';
+}
+
+function icecubo_settings_animations_select_time_speed_callback() {
+    $animations_select = get_option('icecubo_animations_select_time_speed');
+    if ($animations_select === false) {
+        $animations_select = '';
+    }
+    echo '<select name="icecubo_animations_select_time_speed">';
+    echo '<option value="" ' . selected($animations_select, '', false) . '>Normal</option>';
+    
+    echo '<option value="fastest" ' . selected($animations_select, 'fastest', false) . '>fastest</option>';
+    echo '<option value="fast" ' . selected($animations_select, 'fast', false) . '>fast</option>';
+    echo '<option value="slow" ' . selected($animations_select, 'slow', false) . '>slow</option>';
+    echo '<option value="slowest" ' . selected($animations_select, 'slowest', false) . '>slowest</option>';
+    echo '</select>';
+}
+
+function icecubo_settings_animations_select_time_delay_callback() {
+    $animations_select = get_option('icecubo_animations_select_time_delay');
+    if ($animations_select === false) {
+        $animations_select = '';
+    }
+    echo '<select name="icecubo_animations_select_time_delay">';
+    echo '<option value="" ' . selected($animations_select, '', false) . '>No Delay</option>';
+    
+    echo '<option value="del025" ' . selected($animations_select, 'del025', false) . '>Delay 250 ms</option>';
+    echo '<option value="del050" ' . selected($animations_select, 'del050', false) . '>Delay 500 ms</option>';
+    echo '<option value="del075" ' . selected($animations_select, 'del075', false) . '>Delay 750 ms</option>';
+    echo '<option value="del1" '   . selected($animations_select, 'del1', false)   . '>Delay 1s</option>';
+    echo '<option value="del2" '   . selected($animations_select, 'del2', false)   . '>Delay 2s</option>';
+    echo '<option value="del3" '   . selected($animations_select, 'del3', false)   . '>Delay 3s</option>';
+    echo '</select>';
+}
+
+
+function icecubo_settings_animation_repeat_checkbox_callback() {
+    $option = get_option('icecubo_animation_repeat_checkbox');
+
+    echo '<input type="checkbox" name="icecubo_animation_repeat_checkbox" value="animrep" ' . checked($option, 1, false) . '/>';
+}
+
+function icecubo_settings_animations_copy_button_callback() {
+    echo '<button type="button" id="icecubo-copy-animations-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Copy Animation Classes', 'icecubo') . '</button>';
+    echo '<p id="icecubo-copy-animations-message" style="display:none; color: #0000c4; margin-top: 10px;">' . esc_html__('Animation classes copied to clipboard!', 'icecubo') . '</p>';
+    echo '<p id="icecubo-copy-animations-message-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
+}
+
 
 function icecubo_settings_section_templates_callback() {
     echo '<hr id="icecubo-templates-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
@@ -475,6 +603,101 @@ function icecubo_theme_options_page_content() {
         });
     })();
     </script>
+
+    <?php // JavaScript for handling animation class copying ?>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const copyButton = document.getElementById('icecubo-copy-animations-button');
+        const messageElement = document.getElementById('icecubo-copy-animations-message');
+        const messageElementFalse = document.getElementById('icecubo-copy-animations-message-false');
+        //const animationsEnableCheckbox = document.querySelector('input[name="icecubo_animations_laod"]');
+        
+        if (copyButton) {
+            copyButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get values from animation fields
+                const animationSelect = document.querySelector('select[name="icecubo_animations_select"]');
+                const speedSelect = document.querySelector('select[name="icecubo_animations_select_time_speed"]');
+                const delaySelect = document.querySelector('select[name="icecubo_animations_select_time_delay"]');
+                const animRepeat  = document.querySelector('input[name="icecubo_animation_repeat_checkbox"]');
+
+                // Check if animation is selected
+                if (animationSelect.value === '') {
+                    messageElementFalse.textContent = 'Animation must be selected';
+                    messageElementFalse.style.display = 'block';
+                    setTimeout(function() {
+                        messageElementFalse.style.display = 'none';
+                    }, 3000);
+                    return;
+                } else {
+                    //messageElement.textContent = 'Animations classes copied to clipboard!';
+                    messageElement.style.display = 'block';
+                    setTimeout(function() {
+                        messageElement.style.display = 'none';
+                    }, 3000);
+                }
+        
+                // Collect the values and filter out empty ones
+                const classes = [];
+                if (animationSelect && animationSelect.value) {
+                    classes.push('ice-anim', animationSelect.value);
+                }
+                if (speedSelect && speedSelect.value) {
+                    classes.push(speedSelect.value);
+                }
+                if (delaySelect && delaySelect.value) {
+                    classes.push(delaySelect.value);
+                }
+                if (animRepeat && animRepeat.checked) {
+                    classes.push('animrep');
+                }
+                
+                // Join classes with space and copy to clipboard
+                const classString = classes.join(' ');
+                if (classString !== '') {
+                    navigator.clipboard.writeText(classString)
+                        .catch(err => {
+                            console.error('Error copying to clipboard:', err);
+                        });
+                }
+            });
+        }
+        
+        /*        
+        // Function to show/hide animation controls based on "Enable Animations" checkbox
+        function updateAnimationControlsVisibility() {
+            const enabled = animationsEnableCheckbox && animationsEnableCheckbox.checked;
+            const controls = [
+                document.querySelector('select[name="icecubo_animations_select"]'),
+                document.querySelector('select[name="icecubo_animations_select_time_speed"]'),
+                document.querySelector('select[name="icecubo_animations_select_time_delay"]'),
+                document.querySelector('input[name="icecubo_animation_repeat_checkbox"]'),
+                copyButton,
+                messageElement,
+                messageElementFalse
+            ];
+            controls.forEach(function(el) {
+                if (!el) return;
+                el.style.display = enabled ? '' : 'none';
+                // also hide parent label/container if exists for cleaner UI
+                if (el.parentElement && el.parentElement.classList) {
+                    // keep default display unless hiding
+                    el.parentElement.style.display = enabled ? '' : 'none';
+                }
+            });
+        }
+
+        // Initialize visibility on load
+        if (animationsEnableCheckbox) {
+            updateAnimationControlsVisibility();
+            animationsEnableCheckbox.addEventListener('change', updateAnimationControlsVisibility);
+        }
+        
+        */
+    });
+    </script>
+
     <?php
 }
 
