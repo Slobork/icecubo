@@ -154,6 +154,22 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 $tab_settings,
                 'section_animations'
             );
+
+            add_settings_field(
+                'animations_classes_generator_description',
+                esc_html__('Animation Generator Description', 'icecubo'),
+                'icecubo_settings_animations_classes_generator_description_callback',
+                $tab_settings,
+                'section_animations'
+            );
+
+            add_settings_field(
+                'animation_preview',
+                esc_html__('Animation Preview', 'icecubo'),
+                'icecubo_settings_animation_preview',
+                $tab_settings,
+                'section_animations'
+            );
             
 
             // Section templates settings
@@ -244,11 +260,19 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             );
 
             register_setting('icecubo-theme-options', 'icecubo_animations_laod', 'icecubo_sanitize_checkbox');
-            register_setting('icecubo-theme-options', 'icecubo_animations_select', 'sanitize_text_field');
-            register_setting('icecubo-theme-options', 'icecubo_animations_select_time_speed', 'sanitize_text_field');
-            register_setting('icecubo-theme-options', 'icecubo_animations_select_time_delay', 'sanitize_text_field');
-            register_setting('icecubo-theme-options', 'icecubo_animation_repeat_checkbox', 'icecubo_sanitize_checkbox');
-            register_setting('icecubo-theme-options', 'icecubo_animations_copy_button', 'sanitize_text_field');
+            
+            /**
+             * Not needed to save these options in the database, 
+             * coz their purpose is just to generate the classes for coping
+             * -------------------------------------------------------------
+             * 
+             * register_setting('icecubo-theme-options', 'icecubo_animations_select', 'sanitize_text_field');
+             * register_setting('icecubo-theme-options', 'icecubo_animations_select_time_speed', 'sanitize_text_field');
+             * register_setting('icecubo-theme-options', 'icecubo_animations_select_time_delay', 'sanitize_text_field');
+             * register_setting('icecubo-theme-options', 'icecubo_animation_repeat_checkbox', 'icecubo_sanitize_checkbox');
+             * register_setting('icecubo-theme-options', 'icecubo_animations_copy_button', 'sanitize_text_field');
+             */
+
 
             register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
             register_setting('icecubo-theme-options', 'icecubo_template_attorney_checkbox_two', 'icecubo_sanitize_checkbox');
@@ -377,7 +401,6 @@ function icecubo_settings_section_animations_callback() {
     // alternative bordr-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     echo '<p style="font-size: 18px;">' .esc_html__('You can enable or disable animations that come with the theme for the entire site.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px;">' .esc_html__('You can generate animation classes for your content here. Just select the animation and its adjacent options, then click on the "Copy Animation Classes" button. You can paste it into any block from its "Additional classes" option.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_animations_load_checkbox_callback() {
@@ -468,6 +491,17 @@ function icecubo_settings_animations_copy_button_callback() {
     echo '<p id="icecubo-copy-animations-message-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
 }
 
+function icecubo_settings_animations_classes_generator_description_callback() {
+    echo '<p style="font-size: 16px; margin-bottom: 15px; max-width: 600px;">' .esc_html__('You can generate animation classes for your content here. Just select the animation and its adjacent options, then click on the "Copy Animation Classes" button. You can paste it into any block from its "Additional classes" option.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-bottom: 35px; max-width: 600px;">' .esc_html__('Do not forget to save the changes beneath, once you enable the animations here!.', 'icecubo') . '</p>';
+}
+
+function icecubo_settings_animation_preview() {
+    echo '<div id="animation-preview-box" style="width: 400px; height: 400px; background: #0000c4; color: white;">' . esc_html__('This is the animation box example!', 'icecubo') . '</div>';
+    echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
+    echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
+
+}
 
 function icecubo_settings_section_templates_callback() {
     echo '<hr id="icecubo-templates-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
@@ -565,7 +599,7 @@ function icecubo_theme_options_page_content() {
             </div>
         </form>
     </div>
-    <?php // JavaScript for handling the tab navigation and showing the submit button only on the Settings tab: ?>
+    <?php // JavaScript for handling the theme options' tab navigation and showing the submit button only on the Settings tab: ?>
     <script type="text/javascript">
     (function() {
         const tabsControl = document.querySelectorAll('.icecubo-tab-control');
@@ -610,21 +644,28 @@ function icecubo_theme_options_page_content() {
         const copyButton = document.getElementById('icecubo-copy-animations-button');
         const messageElement = document.getElementById('icecubo-copy-animations-message');
         const messageElementFalse = document.getElementById('icecubo-copy-animations-message-false');
-        //const animationsEnableCheckbox = document.querySelector('input[name="icecubo_animations_laod"]');
-        
+        const messageElementFalse2 = document.getElementById('icecubo-animation-preview-false');
+        const animationsEnableCheckbox = document.querySelector('input[name="icecubo_animations_laod"]');
+   
+        // Get values from animation fields
+        const animationSelect = document.querySelector('select[name="icecubo_animations_select"]');
+        const speedSelect = document.querySelector('select[name="icecubo_animations_select_time_speed"]');
+        const delaySelect = document.querySelector('select[name="icecubo_animations_select_time_delay"]');
+        const animRepeat  = document.querySelector('input[name="icecubo_animation_repeat_checkbox"]');
+ 
+        // Preview vars
+        const animationPreviewBox = document.getElementById('animation-preview-box');
+        const animationPreviewButton = document.getElementById('icecubo-animation-preview-button');
+
+
+        // Copy anim classes
         if (copyButton) {
             copyButton.addEventListener('click', function(e) {
                 e.preventDefault();
                 
-                // Get values from animation fields
-                const animationSelect = document.querySelector('select[name="icecubo_animations_select"]');
-                const speedSelect = document.querySelector('select[name="icecubo_animations_select_time_speed"]');
-                const delaySelect = document.querySelector('select[name="icecubo_animations_select_time_delay"]');
-                const animRepeat  = document.querySelector('input[name="icecubo_animation_repeat_checkbox"]');
-
                 // Check if animation is selected
                 if (animationSelect.value === '') {
-                    messageElementFalse.textContent = 'Animation must be selected';
+                    //messageElementFalse.textContent = 'Animation must be selected';
                     messageElementFalse.style.display = 'block';
                     setTimeout(function() {
                         messageElementFalse.style.display = 'none';
@@ -664,27 +705,44 @@ function icecubo_theme_options_page_content() {
             });
         }
         
-        /*        
+
+        // Preview animation
+        if (animationPreviewButton) {
+            animationPreviewButton.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Check if animation is selected
+                if (animationSelect.value === '') {
+                    messageElementFalse2.style.display = 'block';
+                    setTimeout(function() {
+                        messageElementFalse2.style.display = 'none';
+                    }, 3000);
+                    return;
+                } else {
+                    animationPreviewBox.className = '';
+                    animationPreviewBox.classList.add(animationSelect.value);
+                }
+            });
+        }
+        
+        
         // Function to show/hide animation controls based on "Enable Animations" checkbox
         function updateAnimationControlsVisibility() {
             const enabled = animationsEnableCheckbox && animationsEnableCheckbox.checked;
-            const controls = [
-                document.querySelector('select[name="icecubo_animations_select"]'),
-                document.querySelector('select[name="icecubo_animations_select_time_speed"]'),
-                document.querySelector('select[name="icecubo_animations_select_time_delay"]'),
-                document.querySelector('input[name="icecubo_animation_repeat_checkbox"]'),
-                copyButton,
-                messageElement,
-                messageElementFalse
-            ];
-            controls.forEach(function(el) {
-                if (!el) return;
-                el.style.display = enabled ? '' : 'none';
-                // also hide parent label/container if exists for cleaner UI
-                if (el.parentElement && el.parentElement.classList) {
-                    // keep default display unless hiding
-                    el.parentElement.style.display = enabled ? '' : 'none';
+            const checkboxRow = animationsEnableCheckbox ? animationsEnableCheckbox.closest('tr') : null;
+            if (!checkboxRow) {
+                return;
+            }
+            const table = checkboxRow.closest('table');
+            if (!table) {
+                return;
+            }
+            const rows = table.querySelectorAll('tr');
+            rows.forEach(function(row) {
+                if (row === checkboxRow) {
+                    return;
                 }
+                row.style.display = enabled ? '' : 'none';
             });
         }
 
@@ -694,7 +752,7 @@ function icecubo_theme_options_page_content() {
             animationsEnableCheckbox.addEventListener('change', updateAnimationControlsVisibility);
         }
         
-        */
+
     });
     </script>
 
