@@ -119,6 +119,14 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             );
 
             add_settings_field(
+                'animations_classes_generator_description',
+                esc_html__('Animation Generator', 'icecubo'),
+                'icecubo_settings_animations_classes_generator_description_callback',
+                $tab_settings,
+                'section_animations'
+            );
+
+            add_settings_field(
                 'animations_select',
                 esc_html__('Animation Select', 'icecubo'),
                 'icecubo_settings_animations_select_callback',
@@ -151,14 +159,6 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'animations_copy_button',
                 esc_html__('Copy Animation', 'icecubo'),
                 'icecubo_settings_animations_copy_button_callback',
-                $tab_settings,
-                'section_animations'
-            );
-
-            add_settings_field(
-                'animations_classes_generator_description',
-                esc_html__('Animation Generator Description', 'icecubo'),
-                'icecubo_settings_animations_classes_generator_description_callback',
                 $tab_settings,
                 'section_animations'
             );
@@ -405,7 +405,13 @@ function icecubo_settings_section_animations_callback() {
 
 function icecubo_settings_animations_load_checkbox_callback() {
     $animation = get_option('icecubo_animations_laod');
-    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" style="margin-bottom: 40px;" ' . checked($animation, 1, false) . '/>';
+    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" style="margin-bottom: 10px;" ' . checked($animation, 1, false) . '/>';
+    echo '<p style="font-size: 16px; margin-bottom: 30px; max-width: 600px;">' .esc_html__('Do not forget to save the changes at the bottom of the page, once you enable the animations here!', 'icecubo') . '</p>';
+
+}
+
+function icecubo_settings_animations_classes_generator_description_callback() {
+    echo '<p style="font-size: 16px; max-width: 600px;">' .esc_html__('Beneath you can generate animation classes for your content. Just select the animation and its complementary options, then click on the "Copy Animation Classes" button. You can paste it into any WordPress block from its "Additional CSS classes" option.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_animations_select_callback() {
@@ -491,17 +497,12 @@ function icecubo_settings_animations_copy_button_callback() {
     echo '<p id="icecubo-copy-animations-message-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
 }
 
-function icecubo_settings_animations_classes_generator_description_callback() {
-    echo '<p style="font-size: 16px; margin-bottom: 15px; max-width: 600px;">' .esc_html__('You can generate animation classes for your content here. Just select the animation and its adjacent options, then click on the "Copy Animation Classes" button. You can paste it into any block from its "Additional classes" option.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px; margin-bottom: 35px; max-width: 600px;">' .esc_html__('Do not forget to save the changes beneath, once you enable the animations here!.', 'icecubo') . '</p>';
-}
-
 function icecubo_settings_animation_preview() {
     echo '<div id="animation-preview-box" style="position: relative; width: 320px; height: 220px; background: #14145b; color: white; border-radius: 50px;"><p style="position: absolute; top: 50%; transform: translate(50px, -50%);">' . esc_html__('This is the animation box example!', 'icecubo') . '</p></div>';
     echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
     echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
-    echo '<p style="margin-top: 10px; max-width: 600px;">' . esc_html__('With preview, complementary options like speed, delay and repeat are not applied.', 'icecubo') . '</p>';
-    echo '<p style="margin-top: 10px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch). See documentation.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('With preview, complementary options like speed, delay and repeat are not applied.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch). See documentation.', 'icecubo') . '</p>';
 
 }
 
