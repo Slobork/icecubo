@@ -442,7 +442,7 @@ function icecubo_settings_animations_select_callback() {
     echo '<option value="anim-scale-in-left" ' . selected($animations_select, 'anim-scale-in-left', false) . '>scale-in-left</option>';
     echo '<option value="anim-scale-in-tl" ' . selected($animations_select, 'anim-scale-in-tl', false) . '>scale-in-tl</option>';
     echo '<option value="anim-slide-bg" ' . selected($animations_select, 'anim-slide-bg', false) . '>slide-bg</option>';
-    echo '<option value="animd-slide-ch" ' . selected($animations_select, 'animd-slide-ch', false) . '>slide-ch</option>';
+    echo '<option value="anim-slide-ch" ' . selected($animations_select, 'anim-slide-ch', false) . '>slide-ch</option>';
     echo '</select>';
 }
 
@@ -497,9 +497,11 @@ function icecubo_settings_animations_classes_generator_description_callback() {
 }
 
 function icecubo_settings_animation_preview() {
-    echo '<div id="animation-preview-box" style="width: 400px; height: 400px; background: #0000c4; color: white;">' . esc_html__('This is the animation box example!', 'icecubo') . '</div>';
+    echo '<div id="animation-preview-box" style="position: relative; width: 320px; height: 220px; background: #14145b; color: white; border-radius: 50px;"><p style="position: absolute; top: 50%; transform: translate(50px, -50%);">' . esc_html__('This is the animation box example!', 'icecubo') . '</p></div>';
     echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
     echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
+    echo '<p style="margin-top: 10px; max-width: 600px;">' . esc_html__('With preview, complementary options like speed, delay and repeat are not applied.', 'icecubo') . '</p>';
+    echo '<p style="margin-top: 10px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch). See documentation.', 'icecubo') . '</p>';
 
 }
 
@@ -720,13 +722,18 @@ function icecubo_theme_options_page_content() {
                     return;
                 } else {
                     animationPreviewBox.className = '';
-                    animationPreviewBox.classList.add(animationSelect.value);
+                    const addedAnimClass = animationSelect.value;
+                    animationPreviewBox.classList.add(addedAnimClass);
+                    // Remove the added animation class after 1 second
+                    setTimeout(function() {
+                        animationPreviewBox.classList.remove(addedAnimClass);
+                    }, 1000);
                 }
             });
         }
         
         
-        // Function to show/hide animation controls based on "Enable Animations" checkbox
+        // Function to show/hide animation options based on "Enable Animations" checkbox
         function updateAnimationControlsVisibility() {
             const enabled = animationsEnableCheckbox && animationsEnableCheckbox.checked;
             const checkboxRow = animationsEnableCheckbox ? animationsEnableCheckbox.closest('tr') : null;
