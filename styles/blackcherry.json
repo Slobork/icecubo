@@ -1,5 +1,5 @@
 {
-	"title": "Black Cherry",
+	"title": "Manhattan",
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"settings": {
@@ -579,11 +579,20 @@
 		}
 	},
 	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|quattrocento"
+		},
 		"color": {
 			"background": "var(--wp--preset--color--darko)",
 			"text": "var(--wp--preset--color--gray-light)"
 		},
 		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|chanticleer-roman",
+					"letterSpacing": "1px"
+				}
+			},
 			"link": {
 				":hover": {
 					"color": {
@@ -599,6 +608,11 @@
 			}
 		},
 		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|chanticleer-roman"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"icecubo-highlight-up-button": {
