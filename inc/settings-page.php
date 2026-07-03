@@ -449,6 +449,8 @@ function icecubo_settings_animations_select_callback() {
     echo '<option value="anim-scale-in-tl" ' . selected($animations_select, 'anim-scale-in-tl', false) . '>scale-in-tl</option>';
     echo '<option value="anim-slide-bg" ' . selected($animations_select, 'anim-slide-bg', false) . '>slide-bg</option>';
     echo '<option value="anim-slide-ch" ' . selected($animations_select, 'anim-slide-ch', false) . '>slide-ch</option>';
+    echo '<option value="anim-text-accordion" ' . selected($animations_select, 'anim-text-accordion', false) . '>text-accordion</option>';
+    echo '<option value="anim-text-accordion-minus" ' . selected($animations_select, 'anim-text-accordion-minus', false) . '>text-accordion-minus</option>';
     echo '</select>';
 }
 
@@ -502,7 +504,7 @@ function icecubo_settings_animation_preview() {
     echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
     echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
     echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('With preview, complementary options like speed, delay and repeat are not applied.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch). See documentation.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch).', 'icecubo') . '</p>';
 
 }
 
