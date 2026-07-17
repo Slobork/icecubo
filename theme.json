@@ -1440,18 +1440,18 @@
 		},
 		{
 			"area": "navigation-overlay",
-            "name": "navigation-overlay-pro-1",
-            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Premium)."
+            "name": "navigation-overlay-4",
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left."
 		},
 		{
 			"area": "navigation-overlay",
-            "name": "navigation-overlay-pro-2",
-            "title": "Dark with Rotating Animation. Aligned Left (Premium)."
+            "name": "navigation-overlay-5",
+            "title": "Dark with Rotating Animation. Aligned Left."
 		},
 		{
 			"area": "navigation-overlay",
-			"name": "navigation-overlay-pro-3",
-			"title": "Light with Fade Up Animation. Aligned Left (Premium)."
+            "name": "navigation-overlay-6",
+            "title": "Light with Fade Up Animation. Aligned Left."
 		}
 	],
 	"customTemplates": [
