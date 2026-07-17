@@ -4,9 +4,9 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Light with Fade Up Animation. Aligned Left.
+ * Title: Light with Fade Up Animation. Aligned Left (This is just a placeholder for the potential premium version).
  * Slug: icecubo/navigation-overlay-pro-3
- * Categories: icecubo-navigation-overlay
+ * Categories: hidden
  * Block Types: core/template-part/navigation-overlay
  */
 ?>

@@ -4,9 +4,9 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left.
+ * Title: Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (This is just a placeholder for the potential premium version).
  * Slug: icecubo/navigation-overlay-pro-1
- * Categories: icecubo-navigation-overlay
+ * Categories: hidden
  * Block Types: core/template-part/navigation-overlay
  */
 ?>

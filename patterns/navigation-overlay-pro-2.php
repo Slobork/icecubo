@@ -4,9 +4,9 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Dark with Rotating Animation. Aligned Left.
+ * Title: Dark with Rotating Animation. Aligned Left (This is just a placeholder for the potential premium version).
  * Slug: icecubo/navigation-overlay-pro-2
- * Categories: icecubo-navigation-overlay
+ * Categories: hidden
  * Block Types: core/template-part/navigation-overlay
  */
 ?>
