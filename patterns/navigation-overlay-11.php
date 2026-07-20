@@ -15,7 +15,7 @@ if (! defined('ABSPATH') ) {
 <div class="wp-block-cover is-light has-custom-content-position is-position-top-right has-custom-css"><span aria-hidden="true" class="wp-block-cover__background has-background-dim has-background-gradient has-radial-transparent-to-classy-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
 <div class="wp-block-group"><!-- wp:navigation-overlay-close {"className":"ice-anim anim-scale-in-ver-center is-style-icecubo-navigation-overlay-close-circled"} /-->
 
-<!-- wp:navigation {"ref":33518,"showSubmenuIcon":false,"submenuVisibility":"always","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} /--></div>
+<!-- wp:navigation {"showSubmenuIcon":false,"submenuVisibility":"always","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} /--></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:cover --></div>
 <!-- /wp:group -->
