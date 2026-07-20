@@ -1452,6 +1452,36 @@
 			"area": "navigation-overlay",
             "name": "navigation-overlay-6",
             "title": "Light with Fade Up Animation. Aligned Left."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-7",
+            "title": "Light with Scaling Animation from the Top. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-8",
+			"title": "Dark with Scaling Animation from the Top. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-9",
+			"title": "Dark with Scaling Animation from the Top Right. Aligned right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-10",
+			"title": "Light with Scaling Animation from the Top Right. Aligned right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-11",
+			"title": "Mix Light Colors with Scaling Animation from the Top Left. Large Curved Left Edge. Aligned left."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-12",
+			"title": "Mix Matching and Primary Colors with Horizontal Scaling Animation. Large Curved Left Edge. Aligned left."
 		}
 	],
 	"customTemplates": [
