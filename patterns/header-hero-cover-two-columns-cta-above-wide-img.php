@@ -13,14 +13,14 @@ if (! defined('ABSPATH') ) {
 <!-- wp:cover {"tagName":"header","gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","metadata":{"categories":["icecubo-headerhero"],"patternName":"icecubo/header-hero-cover-two-columns-cta-above-wide-img","name":"Header"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <header class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--x-large)"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
-<div class="wp-block-group"><!-- wp:site-logo /-->
+<div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:site-title {"level":0,"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary-light"}}}},"fontSize":"xl"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
+<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium"}}},"className":"is-light","layout":{"type":"constrained"}} -->
