@@ -1126,27 +1126,27 @@
 		{
 			"area": "header",
 			"name": "header-aside-logonav-buttons-transit-bg",
-			"title": "Header: One side - Logo/nav, Other side - Buttons (Transit background)."
+			"title": "Header: One side Logo/nav, Other side Buttons (Transit background)."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-logonav-login-transit-bg",
-			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
+			"title": "Header: One side Logo/nav, Other side Login link. Transit background."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-sticky-logonav-buttons",
-			"title": "Sticky Header. One side - Logo/nav, Other side - Buttons."
+			"title": "Sticky Header. One side Logo/nav, Other side Buttons."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-sticky-logonav-social",
-			"title": "Sticky Header. One side - Logo/nav, Other side - Social icons."
+			"title": "Sticky Header. One side Logo/nav, Other side Social icons."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-logonav-social",
-			"title": "Header: One side - Logo/nav, Other side - Social icons."
+			"title": "Header: One side Logo/nav, Other side Social icons."
 		},
 		{
 			"area": "header",

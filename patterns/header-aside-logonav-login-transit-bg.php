@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header: One side - Logo/nav, Other side - Login link. Transit background.
+ * Title: Header: One side Logo/nav, Other side Login link. Transit background.
  * Slug: icecubo/header-aside-logonav-login-transit-bg
  * Categories: icecubo-header
  * Block Types: core/template-part/header
