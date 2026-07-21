@@ -10,8 +10,8 @@ if (! defined('ABSPATH') ) {
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"tagName":"header","overlayColor":"primary-dark","isUserOverlayColor":true,"minHeight":90,"minHeightUnit":"vh","contentPosition":"center center","metadata":{"categories":["icecubo-headerhero"],"patternName":"icecubo/prem-header-2","name":"Header"},"align":"full","style":{"spacing":{"padding":{"bottom":"8rem","top":"var:preset|spacing|xxx-small"}}}} -->
-<header class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:8rem;min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-primary-dark-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"overlayColor":"primary-dark","isUserOverlayColor":true,"minHeight":90,"minHeightUnit":"vh","contentPosition":"center center","align":"full","style":{"spacing":{"padding":{"bottom":"8rem","top":"var:preset|spacing|xxx-small"}}}} -->
+<div class="wp-block-cover alignfull" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:8rem;min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-primary-dark-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
@@ -63,5 +63,5 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:media-text -->
 </div></div>
 <!-- /wp:cover --></div>
-<!-- /wp:group --></div></header>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->
