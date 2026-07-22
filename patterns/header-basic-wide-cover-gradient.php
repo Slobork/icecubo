@@ -10,8 +10,8 @@ if (! defined('ABSPATH') ) {
  * Block Types: core/template-part/header
  */
 ?> 
-<!-- wp:cover {"metadata":{"name":"Header"},"tagName":"header","minHeight":100,"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|xx-small"}}}} -->
-<header class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--xx-small);min-height:100px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"minHeight":100,"gradient":"darko-to-primary-linear-gradual","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|xx-small"}}}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--xx-small);min-height:100px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-100 has-background-dim has-background-gradient has-darko-to-primary-linear-gradual-gradient-background"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
@@ -25,5 +25,5 @@ if (! defined('ABSPATH') ) {
 
 <!-- wp:navigation {"className":"is-style-icecubo-nav-hovers-standard ice-hover-transit-from-left ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div></header>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->

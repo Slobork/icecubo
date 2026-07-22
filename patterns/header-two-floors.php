@@ -10,8 +10,8 @@ if (! defined('ABSPATH') ) {
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Header"},"tagName":"header","align":"full","style":{"spacing":{"padding":{"bottom":"0","top":"var:preset|spacing|xxx-small"}},"elements":{"link":{"color":{"text":"var:preset|color|shade-6"}}}},"backgroundColor":"primary-light","textColor":"shade-6","className":"is-style-default","layout":{"type":"constrained"}} -->
-<header class="wp-block-group alignfull is-style-default has-shade-6-color has-primary-light-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small","top":"var:preset|spacing|x-small"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"0","top":"var:preset|spacing|xxx-small"}},"elements":{"link":{"color":{"text":"var:preset|color|shade-6"}}}},"backgroundColor":"primary-light","textColor":"shade-6","className":"is-style-default","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-default has-shade-6-color has-primary-light-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:0"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-small","top":"var:preset|spacing|x-small"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:site-logo /--></div>
 <!-- /wp:group -->
@@ -31,5 +31,5 @@ if (! defined('ABSPATH') ) {
 <div class="wp-block-group alignwide has-white-ice-background-color has-background" style="margin-top:0.25rem"><!-- wp:navigation {"ref":33518,"overlayBackgroundColor":"white-ice","overlayTextColor":"darko","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","orientation":"horizontal","flexWrap":"nowrap"}} /-->
 
 <!-- wp:search {"label":"Search","showLabel":false,"placeholder":"search...","buttonText":"Search","buttonPosition":"no-button","buttonUseIcon":true} /--></div>
-<!-- /wp:group --></header>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
