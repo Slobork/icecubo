@@ -1419,6 +1419,16 @@
 			"title": "Footer (Premium): Three floors with a pink stained background image"
 		},
 		{
+			"area": "footer",
+			"name": "footer-pro-template-1-1",
+			"title": "Footer: Two floors - dark background, with a horizontal line at the top"
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-1-2",
+			"title": "Footer: Three floors - dark background, a horizontal line at the top of the bottom floor"
+		},
+		{
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
