@@ -1439,6 +1439,86 @@
 			"title": "Footer: Three floors - dark shading background, an about us badge on the left side."
 		},
 		{
+			"area": "footer",
+			"name": "footer-pro-template-3-1",
+			"title": "Footer: Two floors - transit-dark background, border at the top with semi-balloons."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-3-2",
+			"title": "Footer: Three floors - transit-dark background, spear border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-4-1",
+			"title": "Footer: Two floors - highlight background color, double dotted separator at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-4-2",
+			"title": "Footer: Three floors - highlight background color, dotted separator at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-5-1",
+			"title": "Footer: Two floors - dark background, triple separator at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-5-2",
+			"title": "Footer: Three floors - dark background, zig-zag separator at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-6-1",
+			"title": "Footer: Two floors - matching background color, double separator line at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-6-2",
+			"title": "Footer: Three floors - matching background color, square background box at the right."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-7-1",
+			"title": "Footer: Two floors - generic background color, double separator line at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-7-2",
+			"title": "Footer: Three floors - generic background color, separator line at the top and a fading background balloon."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-8-1",
+			"title": "Footer: Two floors - transit dark background color, separator line at the top with a balloon in the middle."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-8-2",
+			"title": "Footer: Three floors - transit dark background color, about us balloon on the left side."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-9-1",
+			"title": "Footer: Two floors - matching background color, floating background balloon at the right."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-9-2",
+			"title": "Footer: Three floors - matching background color, floating background balloon at the right."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-10-1",
+			"title": "Footer: Two floors - matching background color, large border at the top."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-10-2",
+			"title": "Footer: Three floors - matching background color, large border at the top."
+		},
+		{
 			"area": "uncategorized",
 			"name": "sidebar",
 			"title": "Sidebar"
