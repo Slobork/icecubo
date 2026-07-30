@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Yoga (2): Header With A Hero Section (Premium).
+ * Title: Call To Action on the Left along the Image. Large Curvy Background Intersections.
  * Slug: icecubo/header-pro-template-10-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

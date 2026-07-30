@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Barber (1): Header With A Hero Section (Premium).
+ * Title: Square Image and a List of Features Aside with a Call To Action. Curvy Ending Background.
  * Slug: icecubo/header-pro-template-3-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

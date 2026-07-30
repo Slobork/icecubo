@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header With A Hero Section, Background Image, Title and Subtitle on the left-bottom (Premium).
+ * Title: Background Image, Title and Subtitle on the left-bottom (Premium).
  * Slug: icecubo/header-pro-template-1-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Marketing Suit (2): Header With A Hero Section (Premium).
+ * Title: Huge Title, Call To Action on the Left along the Image. Testimonial beneath.
  * Slug: icecubo/header-pro-template-8-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
@@ -20,7 +20,7 @@ if(!class_exists('IceCubo_Pro')) {
     <?php
     } else {
     ?>
-        <!-- wp:pattern {"slug":"icecubo/prem-header-template-marketing-suit-2"} /-->
+        <!-- wp:pattern {"slug":"icecubo/prem-header-template-marketing-2"} /-->
     <?php
     }
 }

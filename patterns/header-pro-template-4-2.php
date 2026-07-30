@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Dentist (2): Header With A Hero Section (Premium).
+ * Title: Call To Action and a Testimonial on top of the image. Curvy Background of the Wrapper Section.
  * Slug: icecubo/header-pro-template-4-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

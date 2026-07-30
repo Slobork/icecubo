@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Gym (1): Header With A Hero Section (Premium).
+ * Title: Background Image, Call To Action on the left along the Image.
  * Slug: icecubo/header-pro-template-5-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

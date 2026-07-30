@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Marketer (2): Header With A Hero Section (Premium).
+ * Title: Background Image, Large Call To Action left aligned.
  * Slug: icecubo/header-pro-template-6-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

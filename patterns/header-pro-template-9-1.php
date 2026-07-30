@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template SEO (1): Header With A Hero Section (Premium).
+ * Title: Large Title, Call To Action on the Left along the Image. Background glowing above and background balloons.
  * Slug: icecubo/header-pro-template-9-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

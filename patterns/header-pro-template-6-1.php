@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Marketer (1): Header With A Hero Section (Premium).
+ * Title: Image on the Right along the Call To Action. Decorative Background Square Shapes.
  * Slug: icecubo/header-pro-template-6-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

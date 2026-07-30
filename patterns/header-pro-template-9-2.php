@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template SEO (2): Header With A Hero Section (Premium).
+ * Title: Large Title, Call To Action on the Left along the Image. Large Curvy Background Intersection and background balloons.
  * Slug: icecubo/header-pro-template-9-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

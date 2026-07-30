@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Attorney (1): Header With A Hero Section, Background Image (Premium).
+ * Title:Background Image, Centered Call To Action.
  * Slug: icecubo/header-pro-template-2-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Barber (2): Header With A Hero Section (Premium).
+ * Title: Rounded Image and a List of Features Aside, Centered Call To Action. Curvy Background of the Wrapper Section.
  * Slug: icecubo/header-pro-template-3-2
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header

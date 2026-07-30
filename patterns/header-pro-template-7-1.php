@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Template Marketing (1): Header With A Hero Section (Premium).
+ * Title: Call To Action and a Testimonial above the Image. Curvy Ending Background of the Wrapper Section.
  * Slug: icecubo/header-pro-template-7-1
  * Categories: icecubo-headerhero
  * Block Types: core/template-part/header
@@ -20,7 +20,7 @@ if(!class_exists('IceCubo_Pro')) {
     <?php
     } else {
     ?>
-        <!-- wp:pattern {"slug":"icecubo/prem-header-template-marketing-1"} /-->
+        <!-- wp:pattern {"slug":"icecubo/prem-header-template-marketing-suit-1"} /-->
     <?php
     }
 }
