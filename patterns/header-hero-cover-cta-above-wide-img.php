@@ -24,21 +24,25 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:group -->
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium"}}},"className":"is-light","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-light" style="padding-top:var(--wp--preset--spacing--medium)"><!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:columns {"verticalAlignment":"center","align":"full"} -->
-<div class="wp-block-columns alignfull are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"65%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:65%"><!-- wp:heading {"textColor":"highlight-2"} -->
-<h2 class="wp-block-heading has-highlight-2-color has-text-color"></h2>
+<div class="wp-block-group alignfull is-light" style="padding-top:var(--wp--preset--spacing--medium)"><<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|xx-large"}}}} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"top","width":"65%","style":{"spacing":{"blockGap":"var:preset|spacing|xx-large"}}} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:65%"><!-- wp:heading {"className":"is-style-icecubo-accent-text-huge-2","textColor":"highlight-2","fontSize":"xxxxl"} -->
+<h2 class="wp-block-heading is-style-icecubo-accent-text-huge-2 has-highlight-2-color has-text-color has-xxxxl-font-size">IceCubo WordPress Theme<br></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"highlight-3"} -->
-<p class="has-highlight-3-color has-text-color"><strong>Lorem ipsum dolor sit amet</strong></p>
+<p class="has-highlight-3-color has-text-color"><strong>A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!<br></strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button /-->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Start now →</a></div>
+<!-- /wp:button -->
 
-<!-- wp:button /--></div>
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Learn more →</a></div>
+<!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph {"textColor":"white","fontSize":"extra-small"} -->
@@ -47,8 +51,7 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"35%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%">
-<!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:paragraph -->
 <p><strong>Nunc egestas</strong></p>
 <!-- /wp:paragraph -->
