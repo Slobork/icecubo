@@ -17,4 +17,4 @@ if (! defined('ABSPATH') ) {
     <!-- wp:pattern {"slug":"icecubo/page-front-3-main"} /-->
 </main>
 <!-- /wp:group -->
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer-2floors-primary-dark-bg-border-top","tagName":"footer"} /-->

@@ -19,3 +19,8 @@ if (! defined('ABSPATH') ) {
     <!-- wp:pattern {"slug":"icecubo/page-front-3-main"} /-->
 </main>
 <!-- /wp:group -->
+ <!-- wp:group {"tagName":"footer","metadata":{"name":"Footer"},"align":"full","style":{"spacing":{"margin":{"top":"var:preset|spacing|0","bottom":"var:preset|spacing|0"}}},"layout":{"type":"default"}} -->
+<footer class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--0);margin-bottom:var(--wp--preset--spacing--0)">
+    <!-- wp:pattern {"slug":"icecubo/footer-2floors-primary-dark-bg-border-top"} /-->
+</footer>
+<!-- /wp:group -->
