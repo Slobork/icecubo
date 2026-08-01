@@ -1380,6 +1380,11 @@
 		},
 		{
 			"area": "footer",
+			"name": "footer-2floors-primary-dark-bg-border-top",
+			"title": "Footer: Two floors - Primary dark background with a border at the top."
+		},
+		{
+			"area": "footer",
 			"name": "footer-2floors-separated",
 			"title": "Footer: Two floors - Separated."
 		},
