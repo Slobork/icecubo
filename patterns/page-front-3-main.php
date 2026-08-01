@@ -37,3 +37,6 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:spacer -->
 <!-- wp:pattern {"slug":"icecubo/testimonials-2nd"} /-->
 <!-- wp:pattern {"slug":"icecubo/testimonials-2nd"} /-->
+  <!-- wp:spacer {"height":"2em"} -->
+<div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
