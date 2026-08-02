@@ -20,12 +20,12 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}}} /--></div>
+<!-- wp:navigation {"ref":33518,"textColor":"white-ice","overlayBackgroundColor":"darko-transit","overlayTextColor":"white-ice","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium"}}},"className":"is-light","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-light" style="padding-top:var(--wp--preset--spacing--medium)"><<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|xx-large"}}}} -->
+<!-- wp:group {"align":"full","className":"is-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-light" style="padding-top:var(--wp--preset--spacing--medium)"><!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xxx-large"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--xxx-large)"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|xx-large","left":"var:preset|spacing|xx-large"}}}} -->
 <div class="wp-block-columns alignfull"><!-- wp:column {"verticalAlignment":"top","width":"65%","style":{"spacing":{"blockGap":"var:preset|spacing|xx-large"}}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:65%"><!-- wp:heading {"className":"is-style-icecubo-accent-text-huge-2","textColor":"highlight-2","fontSize":"xxxxl"} -->
 <h2 class="wp-block-heading is-style-icecubo-accent-text-huge-2 has-highlight-2-color has-text-color has-xxxxl-font-size">IceCubo WordPress Theme<br></h2>
@@ -35,8 +35,8 @@ if (! defined('ABSPATH') ) {
 <p class="has-highlight-3-color has-text-color"><strong>A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!<br></strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
+<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--medium)"><!-- wp:button -->
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Start now →</a></div>
 <!-- /wp:button -->
 
