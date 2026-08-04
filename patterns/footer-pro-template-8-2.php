@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Footer: Three floors - transit dark background color, about us balloon on the left side.
+ * Title: Footer: Three floors - transparent dark background color with a floating stain. About us balloon on the left side.
  * Slug: icecubo/footer-pro-template-8-2
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
