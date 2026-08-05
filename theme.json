@@ -1582,6 +1582,16 @@
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-12",
 			"title": "Mix Matching and Primary Colors with Horizontal Scaling Animation. Large Curved Left Edge. Aligned left."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-13",
+			"title": "Mix Matching and Complex Matching Gradient Colors. Top-right Scaling Animation. Large Curved Left Edge. Aligned left."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-14",
+			"title": "Gradient Background with Scaling Animation from the Top. Aligned center."
 		}
 	],
 	"customTemplates": [
