@@ -1526,32 +1526,32 @@
 		{
 		    "area": "navigation-overlay",
             "name": "navigation-overlay-1",
-            "title": "Light with Submenus Hidden. Curved at the Bottom Left. Aligned Right."
+            "title": "Light with Submenus Hidden. Aligned Left."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-2",
-			"title": "Dark with Submenus Hidden. Aligned Right."
+			"title": "Dark with Submenus Hidden. Border on the Left and Bottom. Aligned Right."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-3",
-			"title": "Gradient Shading With Left Alignment."
+			"title": "Gradient Shading Background. Menu Left Alignment with Closer Button on the Right."
 		},
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-4",
-            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left."
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Center."
 		},
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-5",
-            "title": "Dark with Rotating Animation. Aligned Left."
+            "title": "Dark with Rotating Animation. Menu Aligned Left with Closer Button on the Right."
 		},
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-6",
-            "title": "Light with Fade Up Animation. Aligned Left."
+            "title": "Light Background with Fade Up Animation. Aligned Right."
 		},
 		{
 			"area": "navigation-overlay",
@@ -1561,12 +1561,12 @@
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-8",
-			"title": "Dark with Scaling Animation from the Top. Aligned center."
+			"title": "Dark with Scaling Animation from the Top. Classy Transparent Focus. Aligned center."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-9",
-			"title": "Dark with Scaling Animation from the Top. Aligned center."
+			"title": "Dark with Scaling Animation from the Top. Primary Transparent Focus. Aligned center."
 		},
 		{
 			"area": "navigation-overlay",
@@ -1576,7 +1576,7 @@
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-11",
-			"title": "Mix Light Colors with Scaling Animation from the Top Left. Large Curved Left Edge. Aligned left."
+			"title": "Mix Light Colors with Scaling Animation from the Top Right. Large Curved Left Edge. Aligned right."
 		},
 		{
 			"area": "navigation-overlay",
@@ -1592,6 +1592,16 @@
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-14",
 			"title": "Gradient Background with Scaling Animation from the Top. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-15",
+			"title": "Generic color with Submenus Hidden. Curved at the Bottom Left. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-16",
+			"title": "Transit Matching Background. Curved Edge at the Bottom Right.Menu Aligned Center with Close Button at Right."
 		}
 	],
 	"customTemplates": [
