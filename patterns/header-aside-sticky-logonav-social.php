@@ -7,7 +7,6 @@ if (! defined('ABSPATH') ) {
  * Title: Sticky Header. One side Logo/nav, Other side Social icons.
  * Slug: icecubo/header-aside-sticky-logonav-social
  * Categories: icecubo-header
- * Block Types: core/template-part/header
  */
 ?>
 <!-- wp:group {"align":"full","style":{"position":{"type":"sticky","top":"0px"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
