@@ -11,15 +11,10 @@ if (! defined('ABSPATH') ) {
  * Template Types: front-page
  */
 ?>
-<!-- wp:group {"metadata":{"name":"Header"},"tagName":"header","align":"full","layout":{"type":"default"}} -->
-<header class="wp-block-group alignfull">
-    <!-- wp:pattern {"slug":"icecubo/header-hero-gradient-rushly-primary-transparent"} /-->
-</header>
-<!-- /wp:group -->
-
+<!-- wp:template-part {"slug":"header-hero-gradient-rushly-primary-transparent","tagName":"header"} /-->
 <!-- wp:group {"metadata":{"name":"Main"},"tagName":"main","style":{"spacing":{"padding":{"bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
 <main class="wp-block-group" style="padding-bottom:var(--wp--preset--spacing--x-large)">
     <!-- wp:pattern {"slug":"icecubo/page-front-2-main"} /-->
 </main>
 <!-- /wp:group -->
-<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
+<!-- wp:template-part {"slug":"footer-2floors-gradual-glowing-bg","tagName":"footer"} /-->

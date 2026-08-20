@@ -1126,27 +1126,17 @@
 		{
 			"area": "header",
 			"name": "header-aside-logonav-buttons-transit-bg",
-			"title": "Header: One side: Logo/nav - Other side: Buttons. Transit background."
+			"title": "Header: One side Logo/nav, Other side Buttons (Transit background)."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-logonav-login-transit-bg",
-			"title": "Header: One side - Logo/nav, Other side - Login link. Transit background."
-		},
-		{
-			"area": "header",
-			"name": "header-aside-sticky-logonav-buttons",
-			"title": "Sticky Header. One side - Logo/nav, Other side - Buttons."
-		},
-		{
-			"area": "header",
-			"name": "header-aside-sticky-logonav-social",
-			"title": "Sticky Header. One side - Logo/nav, Other side - Social icons."
+			"title": "Header: One side Logo/nav, Other side Login link. Transit background."
 		},
 		{
 			"area": "header",
 			"name": "header-aside-logonav-social",
-			"title": "Header: One side - Logo/nav, Other side - Social icons."
+			"title": "Header: One side Logo/nav, Other side Social icons."
 		},
 		{
 			"area": "header",
@@ -1195,6 +1185,11 @@
 		},
 		{
 			"area": "header",
+			"name": "header-hero-cover-cta-above-wide-img",
+			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
+		},
+		{
+			"area": "header",
 			"name": "header-hero-gradient-gradual-dark-primary",
 			"title": "Header-Hero: Background transit gradually from dark to primary color (Front-page default)"
 		},
@@ -1202,11 +1197,6 @@
 			"area": "header",
 			"name": "header-hero-gradient-rushly-primary-transparent",
 			"title": "Header-Hero: Background light glow from primary color to transparent."
-		},
-		{
-			"area": "header",
-			"name": "header-hero-two-columns-cta-above-wide-img",
-			"title": "Header-Hero: Two columns CTA above wide image as placeholder."
 		},
 		{
 			"area": "header",
@@ -1230,113 +1220,108 @@
 		},
 		{
 			"area": "header",
-            "name": "header-template-agency-1",
-            "title": "Header-Hero: Agency Template 1 (Premium)."
+            "name": "header-pro-template-1-1",
+            "title": "Header With A Hero Section - Background Image, Title and Subtitle on the left-bottom (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-agency-2",
-            "title": "Header-Hero: Agency Template 2 (Premium)."
+            "name": "header-pro-template-1-2",
+            "title": "Header With A Hero Section - Background Image As Parallax, Title and Subtitle centered (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-attorney-1",
-            "title": "Header-Hero: Attorney Template 1 (Premium)."
+            "name": "header-pro-template-2-1",
+            "title": "Header With a Hero Section - Background Image, Centered Call To Action (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-attorney-2",
-            "title": "Header-Hero: Attorney Template 2 (Premium)."
+            "name": "header-pro-template-2-2",
+            "title": "Header With a Hero Section - Background Image, Left Aligned Call To Action Encompassed in a Transparent Group (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-barber-1",
-            "title": "Header-Hero: Barber Template 1 (Premium)."
+            "name": "header-pro-template-3-1",
+            "title": "Header With a Hero Section - Square Image and a List of Features Aside with a Call To Action. Curvy Ending Background (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-barber-2",
-            "title": "Header-Hero: Barber Template 2 (Premium)."
+            "name": "header-pro-template-3-2",
+            "title": "Header With a Hero Section - Rounded Image and a List of Features Aside, Centered Call To Action. Curvy Background of the Wrapper Section (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-barber-3",
-            "title": "Header-Hero: Barber Template 3 (Premium)."
+            "name": "header-pro-template-4-1",
+            "title": "Header With a Hero Section - Background Image, Call To Action on left (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-dentist-1",
-            "title": "Header-Hero: Dentist Template 1 (Premium)."
+            "name": "header-pro-template-4-2",
+            "title": "Header With a Hero Section - Call To Action and a Testimonial on top of the image. Curvy Background of the Wrapper Section (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-dentist-2",
-            "title": "Header-Hero: Dentist Template 2 (Premium)."
+            "name": "header-pro-template-5-1",
+            "title": "Header With a Hero Section - Background Image, Call To Action on the left along the Image (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-gym-1",
-            "title": "Header-Hero: Gym Template 1 (Premium)."
+            "name": "header-pro-template-5-2",
+            "title": "Header With a Hero Section - Background Image plus SVG Sharp Shape Decor on the top, Call To Action on the left along the Image (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-gym-2",
-            "title": "Header-Hero: Gym Template 2 (Premium)."
+            "name": "header-pro-template-6-1",
+            "title": "Header With a Hero Section - Image on the Right along the Call To Action. Decorative Background Square Shapes (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketer-1",
-            "title": "Header-Hero: Marketer Template 1 (Premium)."
+            "name": "header-pro-template-6-2",
+            "title": "Header With a Hero Section - Background Image, Large Call To Action left aligned (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketer-2",
-            "title": "Header-Hero: Marketer Template 2 (Premium)."
+            "name": "header-pro-template-7-1",
+            "title": "Header With a Hero Section - Call To Action and a Testimonial above the Image. Curvy Ending Background of the Wrapper Section (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketing-suit-1",
-            "title": "Header-Hero: Marketing Suit Template 1 (Premium)."
+            "name": "header-pro-template-7-2",
+            "title": "Header With a Hero Section - Call To Action on top of the Testimonial and an Image. Curvy Ending Background of the Wrapper Section (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketing-suit-2",
-            "title": "Header-Hero: Marketing Suit Template 2 (Premium)."
+            "name": "header-pro-template-8-1",
+            "title": "Header With a Hero Section - Call To Action on the Left along the Image. Background glowing in the middle (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketing-1",
-            "title": "Header-Hero: Marketing Template 1 (Premium)."
+            "name": "header-pro-template-8-2",
+            "title": "Header With a Hero Section - Huge Title, Call To Action on the Left along the Image. Testimonial beneath (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-marketing-2",
-            "title": "Header-Hero: Marketing Template 2 (Premium)."
+            "name": "header-pro-template-9-1",
+            "title": "Header With a Hero Section - Large Title, Call To Action on the Left along the Image. Background glowing above and background balloons (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-seo-1",
-            "title": "Header-Hero: SEO Template 1 (Premium)."
+            "name": "header-pro-template-9-2",
+            "title": "Header With a Hero Section - Large Title, Call To Action on the Left along the Image. Large Curvy Background Intersection and background balloons (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-seo-2",
-            "title": "Header-Hero: SEO Template 2 (Premium)."
+            "name": "header-pro-template-10-1",
+            "title": "Header With a Hero Section - Large Title, Call To Action on the Left along the Rounded Image. Curvy Ending Background on the left bottom (Premium)."
 		},
 		{
 			"area": "header",
-            "name": "header-template-yoga-1",
-            "title": "Header-Hero: Yoga Template 1 (Premium)."
-		},
-		{
-			"area": "header",
-            "name": "header-template-yoga-2",
-            "title": "Header-Hero: Yoga Template 2 (Premium)."
+            "name": "header-pro-template-10-2",
+            "title": "Header With a Hero Section - Call To Action on the Left along the Image. Large Curvy Background Intersections (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer",
-			"title": "Footer"
+			"title": "Footer: Logo - navigation - social icons."
 		},
 		{
 			"area": "footer",
@@ -1385,38 +1370,143 @@
 		},
 		{
 			"area": "footer",
+			"name": "footer-2floors-primary-dark-bg-border-top",
+			"title": "Footer: Two floors - Primary dark background with a border at the top."
+		},
+		{
+			"area": "footer",
 			"name": "footer-2floors-separated",
 			"title": "Footer: Two floors - Separated."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-1",
-			"title": "Footer (Premium): Three floors with a decor of balloons separated"
+			"title": "Three floors with a decor of balloons separated (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-2",
-			"title": "Footer (Premium): Three floors with a decorative shapes on the left"
+			"title": "Three floors with a decorative shapes on the left (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-3",
-			"title": "Footer (Premium): Three floors with a circle decor at the bottom"
+			"title": "Three floors with a circle decor at the bottom (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-4",
-			"title": "Footer (Premium): Three Floors With A Background Image"
+			"title": "Three Floors With A Background Image (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-5",
-			"title": "Footer (Premium): Cover in 4:3 format with a background image symbolizing Growing With Arrow Up"
+			"title": "Cover in 4:3 format with a background image symbolizing Growing With Arrow Up (Premium)."
 		},
 		{
 			"area": "footer",
 			"name": "footer-pro-6",
-			"title": "Footer (Premium): Three floors with a pink stained background image"
+			"title": "Three floors with a pink stained background image (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-1-1",
+			"title": "Footer: Two floors - dark background, with a horizontal line at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-1-2",
+			"title": "Footer: Three floors - dark background, a horizontal line at the top of the bottom floor (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-2-1",
+			"title": "Footer: Two floors - dark shading background, with an about us badge on the left side (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-2-2",
+			"title": "Footer: Three floors - dark shading background, an about us badge on the left side (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-3-1",
+			"title": "Footer: Two floors - transit-dark background, border at the top with semi-balloons (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-3-2",
+			"title": "Footer: Three floors - transit-dark background, spear border at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-4-1",
+			"title": "Footer: Two floors - highlight background color, double dotted separator at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-4-2",
+			"title": "Footer: Three floors - highlight background color, dotted separator at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-5-1",
+			"title": "Footer: Two floors - dark background, triple separator at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-5-2",
+			"title": "Footer: Three floors - dark background, zig-zag separator at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-6-1",
+			"title": "Footer: Two floors - matching background color, double separator line at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-6-2",
+			"title": "Footer: Three floors - matching background color, square background box at the right (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-7-1",
+			"title": "Footer: Two floors - generic background color, double separator line at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-7-2",
+			"title": "Footer: Three floors - generic background color, separator line at the top and a fading background balloon (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-8-1",
+			"title": "Footer: Two floors - transit dark background color, separator line at the top with a balloon in the middle (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-8-2",
+			"title": "Footer: Three floors - transparent dark background color with a floating stain. About us balloon on the left side (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-9-1",
+			"title": "Footer: Two floors - matching background color, floating background balloon at the right (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-9-2",
+			"title": "Footer: Three floors - matching background color, floating background balloon at the right (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-10-1",
+			"title": "Footer: Two floors - matching background color, large border at the top (Premium)."
+		},
+		{
+			"area": "footer",
+			"name": "footer-pro-template-10-2",
+			"title": "Footer: Three floors - matching background color, large border at the top (Premium)."
 		},
 		{
 			"area": "uncategorized",
@@ -1426,32 +1516,82 @@
 		{
 		    "area": "navigation-overlay",
             "name": "navigation-overlay-1",
-            "title": "Light with Submenus Hidden. Aligned Right."
+            "title": "Light with Submenus Hidden. Aligned Left."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-2",
-			"title": "Dark with Submenus Hidden. Aligned Right."
+			"title": "Dark with Submenus Hidden. Border on the Left and Bottom. Aligned Right."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-3",
-			"title": "Gradient Shading With Left Alignment."
+			"title": "Gradient Shading Background. Menu Left Alignment with Closer Button on the Right."
 		},
 		{
 			"area": "navigation-overlay",
-            "name": "navigation-overlay-pro-1",
-            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Left (Premium)."
+            "name": "navigation-overlay-4",
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Center."
 		},
 		{
 			"area": "navigation-overlay",
-            "name": "navigation-overlay-pro-2",
-            "title": "Dark with Rotating Animation. Aligned Left (Premium)."
+            "name": "navigation-overlay-5",
+            "title": "Dark with Rotating Animation. Menu Aligned Left with Closer Button on the Right."
 		},
 		{
 			"area": "navigation-overlay",
-			"name": "navigation-overlay-pro-3",
-			"title": "Light with Fade Up Animation. Aligned Left (Premium)."
+            "name": "navigation-overlay-6",
+            "title": "Light Background with Fade Up Animation. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+            "name": "navigation-overlay-7",
+            "title": "Light with Scaling Animation from the Top. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-8",
+			"title": "Dark with Scaling Animation from the Top. Classy Transparent Focus. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-9",
+			"title": "Dark with Scaling Animation from the Top. Primary Transparent Focus. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-10",
+			"title": "Light with Scaling Animation from the Top Right. Aligned right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-11",
+			"title": "Mix Light Colors with Scaling Animation from the Top Right. Large Curved Left Edge. Aligned right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-12",
+			"title": "Mix Matching and Primary Colors with Horizontal Scaling Animation. Large Curved Left Edge. Aligned left."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-13",
+			"title": "Mix Matching and Complex Matching Gradient Colors. Top-right Scaling Animation. Large Curved Left Edge. Aligned left."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-14",
+			"title": "Gradient Background with Scaling Animation from the Top. Aligned center."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-15",
+			"title": "Generic Background Color with Submenus Hidden. Curved at the Bottom Left. Aligned Right."
+		},
+		{
+			"area": "navigation-overlay",
+			"name": "navigation-overlay-16",
+			"title": "Transit Matching Background. Curved Edge at the Bottom Right.Menu Aligned Center with Close Button at Right."
 		}
 	],
 	"customTemplates": [

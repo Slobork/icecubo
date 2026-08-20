@@ -20,7 +20,7 @@ if(!class_exists('IceCubo_Pro')) {
     <?php
     } else {
     ?>
-        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-light-background-with-animated-balloons-as-decor--content"} /-->
+        <!-- wp:pattern {"slug":"icecubo/prem-header-hero-light-background-with-animated-sharp-shapes-as-decor--content"} /-->
     <?php
     }
 }

@@ -10,17 +10,17 @@ if (! defined('ABSPATH') ) {
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:cover {"tagName":"header","url":"<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-straw.jpeg","alt":"IceCubo Theme Placeholder Image","dimRatio":20,"overlayColor":"primary","isUserOverlayColor":true,"minHeight":80,"minHeightUnit":"vh","contentPosition":"center center","sizeSlug":"large","metadata":{"categories":["icecubo-headerhero"],"patternName":"icecubo/header-hero-cover-full-img-dark-cta-bottom","name":"Header"},"align":"full","className":"is-style-default","style":{"color":{"duotone":"unset"},"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}},"textColor":"white","layout":{"type":"constrained"}} -->
-<header class="wp-block-cover alignfull is-style-default has-white-color has-text-color" style="padding-bottom:var(--wp--preset--spacing--large);min-height:80vh"><img class="wp-block-cover__image-background size-large" alt="IceCubo Theme Placeholder Image" src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-straw.jpeg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-20 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-straw.jpeg","alt":"IceCubo Theme Placeholder Image","dimRatio":20,"overlayColor":"primary","isUserOverlayColor":true,"minHeight":80,"minHeightUnit":"vh","contentPosition":"center center","sizeSlug":"large","align":"full","className":"is-style-default","style":{"color":{"duotone":"unset"},"spacing":{"padding":{"bottom":"var:preset|spacing|large"}}},"textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-style-default has-white-color has-text-color" style="padding-bottom:var(--wp--preset--spacing--large);min-height:80vh"><img class="wp-block-cover__image-background size-large" alt="IceCubo Theme Placeholder Image" src="<?php echo esc_url(get_theme_file_uri()); ?>/assets/img/ice-orange-straw.jpeg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-20 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
-<div class="wp-block-group"><!-- wp:site-logo /-->
+<div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
 
 <!-- wp:group -->
 <div class="wp-block-group"><!-- wp:site-title {"level":0,"fontSize":"xl"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"overlayBackgroundColor":"primary-dark","overlayTextColor":"white","className":"is-style-icecubo-nav-hovers-standard ice-sub-shade ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
+<!-- wp:navigation {"overlayBackgroundColor":"primary-dark","overlayTextColor":"white","className":"is-style-icecubo-nav-hovers-standard ice-submenu-shade ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:cover {"dimRatio":0,"isUserOverlayColor":true,"minHeight":80,"minHeightUnit":"vh","contentPosition":"bottom center","isDark":false,"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","layout":{"type":"constrained","contentSize":"900px","wideSize":"1200px"}} -->
@@ -39,5 +39,5 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>
-<!-- /wp:cover --></div></header>
+<!-- /wp:cover --></div></div>
 <!-- /wp:cover -->

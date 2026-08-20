@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"title": "+ Strong Headings (Prosto One)",
+	"title": "+ Strong Headings",
 	"slug": "typography-preset-3-thin",
 	"settings": {
 		"typography": {
@@ -393,20 +393,18 @@
 	"styles": {
 		"typography": {
 			"fontFamily": "var:preset|font-family|quattrocento"
-		},
+		}, 
 		"blocks": {
 			"core/site-title": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|prosto-one",
-					"fontWeight": "400"
+					"fontWeight": "1000"
 				}
 			}
 		},
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|prosto-one",
-					"fontWeight": "400"
+					"fontWeight": "1000"
 				}
 			}
 		}
