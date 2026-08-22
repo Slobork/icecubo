@@ -31,8 +31,8 @@ if (! defined('ABSPATH') ) {
 <h2 class="wp-block-heading is-style-icecubo-accent-text-huge-2 has-highlight-2-color has-text-color has-xxxxl-font-size">IceCubo WordPress Theme<br></h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"textColor":"highlight-3"} -->
-<p class="has-highlight-3-color has-text-color"><strong>A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!<br></strong></p>
+<!-- wp:paragraph {"textColor":"highlight-3","fontSize":"large"} -->
+<p class="has-highlight-3-color has-text-color has-large-font-size">A block-based WordPress theme. Use it as a starting point, just like adding ice to the glass, then pour it over to create thrilling Websites!<br></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"var:preset|spacing|medium"}}}} -->
@@ -45,8 +45,8 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
-<!-- wp:paragraph {"textColor":"white","fontSize":"extra-small"} -->
-<p class="has-white-color has-text-color has-extra-small-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+<!-- wp:paragraph {"textColor":"white","fontSize":"medium"} -->
+<p class="has-white-color has-text-color has-medium-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 
