@@ -15,7 +15,6 @@
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
-
 /* Nav item - outline */
 .is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xxxl) }
 
