@@ -1049,7 +1049,8 @@
 			"core/list": {
 				"spacing": {
 					"margin": {
-						"top": "var(--wp--preset--spacing--xxx-small)"
+						"top": "var(--wp--preset--spacing--xxx-small)",
+						"bottom": "var(--wp--preset--spacing--small)"
 					}
 				},
 				"css": "&.is-style-default .is-style-icecubo-cancel-list::marker {color: color-mix(in srgb, currentColor 25%, transparent)"
