@@ -92,15 +92,6 @@ pre { overflow: auto; }
 }
 
 /**
- * Gallery captions background 
- * - Doing it here, coz in theme.json it's not working without !important
- */
-.wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
-    background: color-mix(rgba(0, 0, 0, 0.75), var(--wp--preset--color--primary));
-    padding: .5em;
-}
-
-/**
  * When h element is the first in the group,
  * set the margin-top here instead in theme.json so it can be overwritten in block elements through UI.
  * This is coz by default WordPress is using 'body .is-layout-constrained >' or 'body .is-layout-flow >' property
@@ -193,6 +184,15 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
 
 /* Image or media-text blocks - remove any background effects on hover */
 .ice-hover-remove-style img:hover{background-size: 100%; background: none; padding: 0; box-shadow: none; border: 0; border-radius: 0; filter: none; clip-path: unset; transition: all .7s ease;}
+
+/**
+ * Gallery captions background 
+ * - Doing it here, coz in theme.json it's not working without !important
+ */
+.wp-block-gallery.wp-block-gallery .wp-block-image .wp-element-caption {
+    background: color-mix(rgba(0, 0, 0, 0.75), var(--wp--preset--color--primary));
+    padding: .5em;
+}
 
 /* Small screens */
 @media (max-width: 599px) {
