@@ -1,4 +1,3 @@
-
 /* code tag used outside of the pre.wp-block-code wrapper, i.e. most likely inline code */
 :not(.wp-block-code) > code {
     background: var(--wp--preset--color--gray-very-light);
