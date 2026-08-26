@@ -23,6 +23,16 @@
  */
 :where(body .is-layout-flow,body .is-layout-constrained) > :where(h1,h2,h3,h4,h5,h6):not(.wp-block-post-title):not(.wp-block-query-title):first-child:first-child {margin-top: var(--wp--preset--spacing--x-large);}
 
+/**
+ * Small margin on the top of all elements inside the flow and constrained layouts.
+ * Bypass the :first-child, that resolves the unwanted spacing inside the header and footer.
+ * Overwrites the defalt which is medium.
+ * Bypass the headings and list items, to gain their own spacing.
+ * Specify separately the headings margin.
+ */
+:root :where(.is-layout-flow, .is-layout-constrained) > :not(.wp-block-list):not(.wp-block-heading):not(:first-child) {margin-block-start: var(--wp--preset--spacing--small)}
+:root :where(.is-layout-flow, .is-layout-constrained) > .wp-block-heading {margin-block-start: var(--wp--preset--spacing--x-large)}
+
 /* Nav item - outline */
 .is-style-icecubo-nav-item-outline { border: 1px solid currentColor; border-radius: var(--wp--custom--radius-large); padding: var(--wp--custom--spacing-xs) var(--wp--custom--spacing-xxxl) }
 

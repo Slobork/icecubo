@@ -110,14 +110,13 @@ pre { overflow: auto; }
 
 /**
  * Small margin on the top of all elements inside the flow and constrained layouts.
- * Target the main tag to bypss the header and footer, coz it would make unwanted spacing inside.
- * ...For the same reason, bypass appling to the editor-style.css, coz it would make unwanted spacing there as well.
+ * Bypass the :first-child, that resolves the unwanted spacing inside the header and footer.
  * Overwrites the defalt which is medium.
  * Bypass the headings and list items, to gain their own spacing.
  * Specify separately the headings margin.
  */
-main :where(.is-layout-flow, .is-layout-constrained) > :not(.wp-block-list):not(.wp-block-heading) {margin-block-start: var(--wp--preset--spacing--small)}
-main :where(.is-layout-flow, .is-layout-constrained) > .wp-block-heading {margin-block-start: var(--wp--preset--spacing--x-large)}
+:root :where(.is-layout-flow, .is-layout-constrained) > :not(.wp-block-list):not(.wp-block-heading):not(:first-child) {margin-block-start: var(--wp--preset--spacing--small)}
+:root :where(.is-layout-flow, .is-layout-constrained) > .wp-block-heading {margin-block-start: var(--wp--preset--spacing--x-large)}
 
 /**
  * text-decoration in links is important for accessibility. However,
