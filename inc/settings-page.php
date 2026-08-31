@@ -426,14 +426,21 @@ function icecubo_settings_animations_select_callback() {
     echo '<option value="anim-fadeIn" ' . selected($animations_select, 'anim-fadeIn', false) . '>fadeIn</option>';
     echo '<option value="anim-fadeInUp" ' . selected($animations_select, 'anim-fadeInUp', false) . '>fadeInUp</option>';
     echo '<option value="anim-blurOut" ' . selected($animations_select, 'anim-blurOut', false) . '>blurOut</option>';
+    
     echo '<option value="anim-pushUp" ' . selected($animations_select, 'anim-pushUp', false) . '>pushUp</option>';
     echo '<option value="anim-pushDown" ' . selected($animations_select, 'anim-pushDown', false) . '>pushDown</option>';
     echo '<option value="anim-pushLeft" ' . selected($animations_select, 'anim-pushLeft', false) . '>pushLeft</option>';
     echo '<option value="anim-pushRight" ' . selected($animations_select, 'anim-pushRight', false) . '>pushRight</option>';
+    echo '<option value="anim-yankUp" ' . selected($animations_select, 'anim-yankUp', false) . '>yankUp</option>';
+    echo '<option value="anim-yankDown" ' . selected($animations_select, 'anim-yankDown', false) . '>yankDown</option>';
+    echo '<option value="anim-yankLeft" ' . selected($animations_select, 'anim-yankLeft', false) . '>yankLeft</option>';
+    echo '<option value="anim-yankRight" ' . selected($animations_select, 'anim-yankRight', false) . '>yankRight</option>';
     echo '<option value="anim-flipX" ' . selected($animations_select, 'anim-flipX', false) . '>flipX</option>';
     echo '<option value="anim-flipY" ' . selected($animations_select, 'anim-flipY', false) . '>flipY</option>';
-    echo '<option value="anim-rotaterev-left" ' . selected($animations_select, 'anim-rotaterev-left', false) . '>rotaterev-left</option>';
-    echo '<option value="anim-rotaterev-right" ' . selected($animations_select, 'anim-rotaterev-right', false) . '>rotaterev-right</option>';
+    echo '<option value="anim-flipXspin" ' . selected($animations_select, 'anim-flipXspin', false) . '>flipXspin</option>';
+    echo '<option value="anim-flipYspin" ' . selected($animations_select, 'anim-flipYspin', false) . '>flipYspin</option>';
+    echo '<option value="anim-rotateIn-left" ' . selected($animations_select, 'anim-rotateIn-left', false) . '>rotateIn-left</option>';
+    echo '<option value="anim-rotateIn-right" ' . selected($animations_select, 'anim-rotateIn-right', false) . '>rotateIn-right</option>';
     echo '<option value="anim-to-transform" ' . selected($animations_select, 'anim-to-transform', false) . '>to-transform</option>';
     echo '<option value="anim-to-blob" ' . selected($animations_select, 'anim-to-blob', false) . '>to-blob</option>';
     echo '<option value="anim-scale-in-center" ' . selected($animations_select, 'anim-scale-in-center', false) . '>scale-in-center</option>';
@@ -451,6 +458,10 @@ function icecubo_settings_animations_select_callback() {
     echo '<option value="anim-slide-ch" ' . selected($animations_select, 'anim-slide-ch', false) . '>slide-ch</option>';
     echo '<option value="anim-text-accordion" ' . selected($animations_select, 'anim-text-accordion', false) . '>text-accordion</option>';
     echo '<option value="anim-text-accordion-minus" ' . selected($animations_select, 'anim-text-accordion-minus', false) . '>text-accordion-minus</option>';
+    echo '<option value="anim-text-glow" ' . selected($animations_select, 'anim-text-glow', false) . '>text-glow</option>';
+    echo '<option value="anim-text-glowOff" ' . selected($animations_select, 'anim-text-glowOff', false) . '>text-glowOff</option>';
+    echo '<option value="anim-text-glowMatch" ' . selected($animations_select, 'anim-text-glowMatch', false) . '>text-glowMatch</option>';
+    echo '<option value="anim-text-glowMatchOff" ' . selected($animations_select, 'anim-text-glowMatchOff', false) . '>text-glowMatchOff</option>';
     echo '</select>';
 }
 
@@ -478,7 +489,7 @@ function icecubo_settings_animations_select_time_delay_callback() {
     echo '<option value="" ' . selected($animations_select, '', false) . '>No Delay</option>';
     
     echo '<option value="del025" ' . selected($animations_select, 'del025', false) . '>Delay 250 ms</option>';
-    echo '<option value="del050" ' . selected($animations_select, 'del050', false) . '>Delay 500 ms</option>';
+    echo '<option value="del05" '  . selected($animations_select, 'del05',  false) . '>Delay 500 ms</option>';
     echo '<option value="del075" ' . selected($animations_select, 'del075', false) . '>Delay 750 ms</option>';
     echo '<option value="del1" '   . selected($animations_select, 'del1', false)   . '>Delay 1s</option>';
     echo '<option value="del2" '   . selected($animations_select, 'del2', false)   . '>Delay 2s</option>';
@@ -503,8 +514,8 @@ function icecubo_settings_animation_preview() {
     echo '<div id="animation-preview-box" style="position: relative; width: 320px; height: 220px; background: #14145b; color: white; border-radius: 50px;"><p style="position: absolute; top: 50%; transform: translate(50px, -50%);">' . esc_html__('This is the animation box example!', 'icecubo') . '</p></div>';
     echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
     echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('With preview, complementary options like speed, delay and repeat are not applied.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch).', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('In this preview, complementary options (speed, delay and repeat) are not applied.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch, anim-text-glow, anim-text-glowOff, anim-text-glowMatch, anim-text-glowMatchOff).', 'icecubo') . '</p>';
 
 }
 
