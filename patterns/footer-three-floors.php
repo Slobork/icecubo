@@ -11,15 +11,21 @@ if (! defined('ABSPATH') ) {
  */
 ?>
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|tint-3"}}},"spacing":{"padding":{"right":"0","left":"0"}}},"backgroundColor":"darko","textColor":"gray-light","layout":{"type":"constrained"},"fontSize":"small"} -->
-<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-right:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:paragraph -->
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+<div class="wp-block-group alignfull has-gray-light-color has-darko-background-color has-text-color has-background has-link-color has-small-font-size" style="padding-right:0;padding-left:0"><!-- wp:group {"className":"is-style-default with-text-alignment mob-force-flexwrap","style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","orientation":"horizontal"}} -->
+<div class="wp-block-group is-style-default with-text-alignment mob-force-flexwrap" style="padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium)"><!-- wp:group {"style":{"spacing":{"blockGap":"5px"},"layout":{"selfStretch":"fixed","flexSize":"70%"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-text-subtitle","fontSize":"xl"} -->
+<p class="is-style-text-subtitle has-xl-font-size"><strong>Download Our Free Guide!</strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:buttons -->
+<!-- wp:paragraph -->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline","fontSize":"small"} -->
-<div class="wp-block-button has-custom-font-size is-style-outline has-small-font-size"><a class="wp-block-button__link wp-element-button">Download now</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-small-font-size has-custom-font-size wp-element-button">Download now!</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>

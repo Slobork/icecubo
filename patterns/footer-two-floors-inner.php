@@ -10,8 +10,8 @@ if (! defined('ABSPATH') ) {
  * Categories: hidden
  */
 ?>
-<!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small"}}}} -->
-<div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--x-small);padding-bottom:var(--wp--preset--spacing--x-small)"><!-- wp:column {"width":"60%"} -->
+<!-- wp:columns {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}}} -->
+<div class="wp-block-columns" style="padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"fontSize":"x-large"} -->
 <p class="has-x-large-font-size">About us</p>
 <!-- /wp:paragraph -->
