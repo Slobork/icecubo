@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Footer: Two floors - dark background, triple separator at the top.
+ * Title: Footer: Two floors - dark background, broken lines separator at the top.
  * Slug: icecubo/footer-pro-template-5-1
  * Categories: icecubo-footer
  * Block Types: core/template-part/footer
