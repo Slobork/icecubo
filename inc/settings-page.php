@@ -263,7 +263,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             
             /**
              * Not needed to save these options in the database, 
-             * coz their purpose is just to generate the classes for coping
+             * coz their purpose is just to generate the classes for copying
              * -------------------------------------------------------------
              * 
              * register_setting('icecubo-theme-options', 'icecubo_animations_select', 'sanitize_text_field');
@@ -415,85 +415,92 @@ function icecubo_settings_animations_classes_generator_description_callback() {
 }
 
 function icecubo_settings_animations_select_callback() {
-    $animations_select = get_option('icecubo_animations_select');
-    if ($animations_select === false) {
-        $animations_select = '';
-    }
+
+    /*
+     * This isn't saving to the database since it's only used for the on-screen classes generation.
+     * That's why it's not getting the option value from the database. In that case it would be:
+     * $animations_select = get_option('icecubo_animations_select');
+     * if ($animations_select === false) {
+     *   $animations_select = '';
+     * }
+     * ...and each option would have its value from the variable:
+     *   echo '<option value="anim-bounce" ' . selected($animations_select, 'anim-bounce', false) . '>bounce</option>';
+     */
+
+
     echo '<select name="icecubo_animations_select">';
-    echo '<option value="" ' . selected($animations_select, '', false) . '>Select Animation</option>';
+    echo '<option value="" ' . selected('', '', false) . '>Select Animation</option>';
     
-    echo '<option value="anim-bounce" ' . selected($animations_select, 'anim-bounce', false) . '>bounce</option>';
-    echo '<option value="anim-fadeIn" ' . selected($animations_select, 'anim-fadeIn', false) . '>fadeIn</option>';
-    echo '<option value="anim-fadeInUp" ' . selected($animations_select, 'anim-fadeInUp', false) . '>fadeInUp</option>';
-    echo '<option value="anim-blurOut" ' . selected($animations_select, 'anim-blurOut', false) . '>blurOut</option>';
+    echo '<option value="anim-bounce" ' . selected('', 'anim-bounce', false) . '>bounce</option>';
+    echo '<option value="anim-fadeIn" ' . selected('', 'anim-fadeIn', false) . '>fadeIn</option>';
+    echo '<option value="anim-fadeInUp" ' . selected('', 'anim-fadeInUp', false) . '>fadeInUp</option>';
+    echo '<option value="anim-blurOut" ' . selected('', 'anim-blurOut', false) . '>blurOut</option>';
     
-    echo '<option value="anim-pushUp" ' . selected($animations_select, 'anim-pushUp', false) . '>pushUp</option>';
-    echo '<option value="anim-pushDown" ' . selected($animations_select, 'anim-pushDown', false) . '>pushDown</option>';
-    echo '<option value="anim-pushLeft" ' . selected($animations_select, 'anim-pushLeft', false) . '>pushLeft</option>';
-    echo '<option value="anim-pushRight" ' . selected($animations_select, 'anim-pushRight', false) . '>pushRight</option>';
-    echo '<option value="anim-yankUp" ' . selected($animations_select, 'anim-yankUp', false) . '>yankUp</option>';
-    echo '<option value="anim-yankDown" ' . selected($animations_select, 'anim-yankDown', false) . '>yankDown</option>';
-    echo '<option value="anim-yankLeft" ' . selected($animations_select, 'anim-yankLeft', false) . '>yankLeft</option>';
-    echo '<option value="anim-yankRight" ' . selected($animations_select, 'anim-yankRight', false) . '>yankRight</option>';
-    echo '<option value="anim-flipX" ' . selected($animations_select, 'anim-flipX', false) . '>flipX</option>';
-    echo '<option value="anim-flipY" ' . selected($animations_select, 'anim-flipY', false) . '>flipY</option>';
-    echo '<option value="anim-flipXspin" ' . selected($animations_select, 'anim-flipXspin', false) . '>flipXspin</option>';
-    echo '<option value="anim-flipYspin" ' . selected($animations_select, 'anim-flipYspin', false) . '>flipYspin</option>';
-    echo '<option value="anim-rotateIn-left" ' . selected($animations_select, 'anim-rotateIn-left', false) . '>rotateIn-left</option>';
-    echo '<option value="anim-rotateIn-right" ' . selected($animations_select, 'anim-rotateIn-right', false) . '>rotateIn-right</option>';
-    echo '<option value="anim-to-transform" ' . selected($animations_select, 'anim-to-transform', false) . '>to-transform</option>';
-    echo '<option value="anim-to-blob" ' . selected($animations_select, 'anim-to-blob', false) . '>to-blob</option>';
-    echo '<option value="anim-scale-in-center" ' . selected($animations_select, 'anim-scale-in-center', false) . '>scale-in-center</option>';
-    echo '<option value="anim-scale-in-hor-center" ' . selected($animations_select, 'anim-scale-in-hor-center', false) . '>scale-in-hor-center</option>';
-    echo '<option value="anim-scale-in-ver-center" ' . selected($animations_select, 'anim-scale-in-ver-center', false) . '>scale-in-ver-center</option>';
-    echo '<option value="anim-scale-in-top" ' . selected($animations_select, 'anim-scale-in-top', false) . '>scale-in-top</option>';
-    echo '<option value="anim-scale-in-tr" ' . selected($animations_select, 'anim-scale-in-tr', false) . '>scale-in-tr</option>';
-    echo '<option value="anim-scale-in-right" ' . selected($animations_select, 'anim-scale-in-right', false) . '>scale-in-right</option>';
-    echo '<option value="anim-scale-in-br" ' . selected($animations_select, 'anim-scale-in-br', false) . '>scale-in-br</option>';
-    echo '<option value="anim-scale-in-bottom" ' . selected($animations_select, 'anim-scale-in-bottom', false) . '>scale-in-bottom</option>';
-    echo '<option value="anim-scale-in-bl" ' . selected($animations_select, 'anim-scale-in-bl', false) . '>scale-in-bl</option>';
-    echo '<option value="anim-scale-in-left" ' . selected($animations_select, 'anim-scale-in-left', false) . '>scale-in-left</option>';
-    echo '<option value="anim-scale-in-tl" ' . selected($animations_select, 'anim-scale-in-tl', false) . '>scale-in-tl</option>';
-    echo '<option value="anim-slide-bg" ' . selected($animations_select, 'anim-slide-bg', false) . '>slide-bg</option>';
-    echo '<option value="anim-slide-ch" ' . selected($animations_select, 'anim-slide-ch', false) . '>slide-ch</option>';
-    echo '<option value="anim-text-accordion" ' . selected($animations_select, 'anim-text-accordion', false) . '>text-accordion</option>';
-    echo '<option value="anim-text-accordion-minus" ' . selected($animations_select, 'anim-text-accordion-minus', false) . '>text-accordion-minus</option>';
-    echo '<option value="anim-text-glow" ' . selected($animations_select, 'anim-text-glow', false) . '>text-glow</option>';
-    echo '<option value="anim-text-glowOff" ' . selected($animations_select, 'anim-text-glowOff', false) . '>text-glowOff</option>';
-    echo '<option value="anim-text-glowMatch" ' . selected($animations_select, 'anim-text-glowMatch', false) . '>text-glowMatch</option>';
-    echo '<option value="anim-text-glowMatchOff" ' . selected($animations_select, 'anim-text-glowMatchOff', false) . '>text-glowMatchOff</option>';
+    echo '<option value="anim-pushUp" ' . selected('', 'anim-pushUp', false) . '>pushUp</option>';
+    echo '<option value="anim-pushDown" ' . selected('', 'anim-pushDown', false) . '>pushDown</option>';
+    echo '<option value="anim-pushLeft" ' . selected('', 'anim-pushLeft', false) . '>pushLeft</option>';
+    echo '<option value="anim-pushRight" ' . selected('', 'anim-pushRight', false) . '>pushRight</option>';
+    echo '<option value="anim-yankUp" ' . selected('', 'anim-yankUp', false) . '>yankUp</option>';
+    echo '<option value="anim-yankDown" ' . selected('', 'anim-yankDown', false) . '>yankDown</option>';
+    echo '<option value="anim-yankLeft" ' . selected('', 'anim-yankLeft', false) . '>yankLeft</option>';
+    echo '<option value="anim-yankRight" ' . selected('', 'anim-yankRight', false) . '>yankRight</option>';
+    echo '<option value="anim-flipX" ' . selected('', 'anim-flipX', false) . '>flipX</option>';
+    echo '<option value="anim-flipY" ' . selected('', 'anim-flipY', false) . '>flipY</option>';
+    echo '<option value="anim-flipXspin" ' . selected('', 'anim-flipXspin', false) . '>flipXspin</option>';
+    echo '<option value="anim-flipYspin" ' . selected('', 'anim-flipYspin', false) . '>flipYspin</option>';
+    echo '<option value="anim-rotateIn-left" ' . selected('', 'anim-rotateIn-left', false) . '>rotateIn-left</option>';
+    echo '<option value="anim-rotateIn-right" ' . selected('', 'anim-rotateIn-right', false) . '>rotateIn-right</option>';
+    echo '<option value="anim-to-transform" ' . selected('', 'anim-to-transform', false) . '>to-transform</option>';
+    echo '<option value="anim-to-blob" ' . selected('', 'anim-to-blob', false) . '>to-blob</option>';
+    echo '<option value="anim-scale-in-center" ' . selected('', 'anim-scale-in-center', false) . '>scale-in-center</option>';
+    echo '<option value="anim-scale-in-hor-center" ' . selected('', 'anim-scale-in-hor-center', false) . '>scale-in-hor-center</option>';
+    echo '<option value="anim-scale-in-ver-center" ' . selected('', 'anim-scale-in-ver-center', false) . '>scale-in-ver-center</option>';
+    echo '<option value="anim-scale-in-top" ' . selected('', 'anim-scale-in-top', false) . '>scale-in-top</option>';
+    echo '<option value="anim-scale-in-tr" ' . selected('', 'anim-scale-in-tr', false) . '>scale-in-tr</option>';
+    echo '<option value="anim-scale-in-right" ' . selected('', 'anim-scale-in-right', false) . '>scale-in-right</option>';
+    echo '<option value="anim-scale-in-br" ' . selected('', 'anim-scale-in-br', false) . '>scale-in-br</option>';
+    echo '<option value="anim-scale-in-bottom" ' . selected('', 'anim-scale-in-bottom', false) . '>scale-in-bottom</option>';
+    echo '<option value="anim-scale-in-bl" ' . selected('', 'anim-scale-in-bl', false) . '>scale-in-bl</option>';
+    echo '<option value="anim-scale-in-left" ' . selected('', 'anim-scale-in-left', false) . '>scale-in-left</option>';
+    echo '<option value="anim-scale-in-tl" ' . selected('', 'anim-scale-in-tl', false) . '>scale-in-tl</option>';
+    echo '<option value="anim-slide-bg" ' . selected('', 'anim-slide-bg', false) . '>slide-bg</option>';
+    echo '<option value="anim-slide-ch" ' . selected('', 'anim-slide-ch', false) . '>slide-ch</option>';
+    echo '<option value="anim-text-accordion" ' . selected('', 'anim-text-accordion', false) . '>text-accordion</option>';
+    echo '<option value="anim-text-accordion-minus" ' . selected('', 'anim-text-accordion-minus', false) . '>text-accordion-minus</option>';
+    echo '<option value="anim-text-glow" ' . selected('', 'anim-text-glow', false) . '>text-glow</option>';
+    echo '<option value="anim-text-glowOff" ' . selected('', 'anim-text-glowOff', false) . '>text-glowOff</option>';
+    echo '<option value="anim-text-glowMatch" ' . selected('', 'anim-text-glowMatch', false) . '>text-glowMatch</option>';
+    echo '<option value="anim-text-glowMatchOff" ' . selected('', 'anim-text-glowMatchOff', false) . '>text-glowMatchOff</option>';
     echo '</select>';
 }
 
 function icecubo_settings_animations_select_time_speed_callback() {
-    $animations_select = get_option('icecubo_animations_select_time_speed');
-    if ($animations_select === false) {
-        $animations_select = '';
-    }
+
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
     echo '<select name="icecubo_animations_select_time_speed">';
-    echo '<option value="" ' . selected($animations_select, '', false) . '>Normal</option>';
+    echo '<option value="" ' . selected('', '', false) . '>Normal</option>';
     
-    echo '<option value="fastest" ' . selected($animations_select, 'fastest', false) . '>fastest</option>';
-    echo '<option value="fast" ' . selected($animations_select, 'fast', false) . '>fast</option>';
-    echo '<option value="slow" ' . selected($animations_select, 'slow', false) . '>slow</option>';
-    echo '<option value="slowest" ' . selected($animations_select, 'slowest', false) . '>slowest</option>';
+    echo '<option value="fastest" ' . selected('', 'fastest', false) . '>fastest</option>';
+    echo '<option value="fast" ' . selected('', 'fast', false) . '>fast</option>';
+    echo '<option value="slow" ' . selected('', 'slow', false) . '>slow</option>';
+    echo '<option value="slowest" ' . selected('', 'slowest', false) . '>slowest</option>';
     echo '</select>';
 }
 
 function icecubo_settings_animations_select_time_delay_callback() {
-    $animations_select = get_option('icecubo_animations_select_time_delay');
-    if ($animations_select === false) {
-        $animations_select = '';
-    }
+
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
     echo '<select name="icecubo_animations_select_time_delay">';
-    echo '<option value="" ' . selected($animations_select, '', false) . '>No Delay</option>';
+    echo '<option value="" ' . selected('', '', false) . '>No Delay</option>';
     
-    echo '<option value="del025" ' . selected($animations_select, 'del025', false) . '>Delay 250 ms</option>';
-    echo '<option value="del05" '  . selected($animations_select, 'del05',  false) . '>Delay 500 ms</option>';
-    echo '<option value="del075" ' . selected($animations_select, 'del075', false) . '>Delay 750 ms</option>';
-    echo '<option value="del1" '   . selected($animations_select, 'del1', false)   . '>Delay 1s</option>';
-    echo '<option value="del2" '   . selected($animations_select, 'del2', false)   . '>Delay 2s</option>';
-    echo '<option value="del3" '   . selected($animations_select, 'del3', false)   . '>Delay 3s</option>';
+    echo '<option value="del025" ' . selected('', 'del025', false) . '>Delay 250 ms</option>';
+    echo '<option value="del05" '  . selected('', 'del05',  false) . '>Delay 500 ms</option>';
+    echo '<option value="del075" ' . selected('', 'del075', false) . '>Delay 750 ms</option>';
+    echo '<option value="del1" '   . selected('', 'del1', false)   . '>Delay 1s</option>';
+    echo '<option value="del2" '   . selected('', 'del2', false)   . '>Delay 2s</option>';
+    echo '<option value="del3" '   . selected('', 'del3', false)   . '>Delay 3s</option>';
     echo '</select>';
 }
 
