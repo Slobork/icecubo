@@ -154,7 +154,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 $tab_settings,
                 'section_animations'
             );
-            // Copy animations button - outputs an HTML button that copies animation-related values
+
             add_settings_field(
                 'animations_copy_button',
                 esc_html__('Copy Animation', 'icecubo'),
@@ -171,6 +171,79 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'section_animations'
             );
             
+            // Section Navigation settings
+            add_settings_section(
+                'section_navigation',
+                esc_html__('Menu Navigation Settings', 'icecubo'),
+                'icecubo_settings_section_navigation_callback',
+                $tab_settings
+            );
+            add_settings_field(
+                'navigation_class_1',
+                esc_html__('Navigation overlay button', 'icecubo'),
+                'icecubo_settings_navigation_select_class_1_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            add_settings_field(
+                'navigation_class_2',
+                esc_html__('Hover effect', 'icecubo'),
+                'icecubo_settings_navigation_select_class_2_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            add_settings_field(
+                'navigation_class_3',
+                esc_html__('Hover effect size', 'icecubo'),
+                'icecubo_settings_navigation_select_class_3_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            add_settings_field(
+                'navigation_class_4',
+                esc_html__('Hover effect speed', 'icecubo'),
+                'icecubo_settings_navigation_select_class_4_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            add_settings_field(
+                'navigation_class_5',
+                esc_html__('Submenu style', 'icecubo'),
+                'icecubo_settings_navigation_select_class_5_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            add_settings_field(
+                'navigation_class_6',
+                esc_html__('Submenu animation', 'icecubo'),
+                'icecubo_settings_navigation_select_class_6_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+            // Copy Navigation button - outputs an HTML button that copies navigation-related values
+            add_settings_field(
+                'navigation_copy_button',
+                esc_html__('Copy generated styles', 'icecubo'),
+                'icecubo_settings_navigation_copy_button_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+
+            add_settings_field(
+                'navigation_save_globally',
+                esc_html__('Add to all menus', 'icecubo'),
+                'icecubo_settings_navigation_apply_globally_callback',
+                $tab_settings,
+                'section_navigation'
+            );
+
+            add_settings_field(
+                'navigation_global_classes',
+                esc_html__('Added navigation classes', 'icecubo'),
+                'icecubo_settings_navigation_global_classes_callback',
+                $tab_settings,
+                'section_navigation'
+            );
 
             // Section templates settings
             add_settings_section(
@@ -195,6 +268,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 $tab_settings,
                 'section_templates'
             );
+
             add_settings_field(
                 'template_barber',
                 esc_html__('Barber', 'icecubo'),
@@ -271,8 +345,13 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
              * register_setting('icecubo-theme-options', 'icecubo_animations_select_time_delay', 'sanitize_text_field');
              * register_setting('icecubo-theme-options', 'icecubo_animation_repeat_checkbox', 'icecubo_sanitize_checkbox');
              * register_setting('icecubo-theme-options', 'icecubo_animations_copy_button', 'sanitize_text_field');
+             * 
+             * ...it's the same for the navigation classes, they are just for copying and not needed to be saved in the database,
+             * except the following two options, which are needed to save the global classes for the navigation block.
              */
 
+            register_setting('icecubo-theme-options', 'icecubo_navigation_apply_globally', 'icecubo_sanitize_checkbox');
+            register_setting('icecubo-theme-options', 'icecubo_navigation_global_classes', 'sanitize_text_field');
 
             register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
             register_setting('icecubo-theme-options', 'icecubo_template_attorney_checkbox_two', 'icecubo_sanitize_checkbox');
@@ -522,14 +601,126 @@ function icecubo_settings_animation_preview() {
     echo '<button type="button" id="icecubo-animation-preview-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Preview Animation', 'icecubo') . '</button>';
     echo '<p id="icecubo-animation-preview-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('Animation must be selected!', 'icecubo') . '</p>';
     echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('In this preview, complementary options (speed, delay and repeat) are not applied.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px; margin-top: 10px; margin-bottom: 40px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch, anim-text-glow, anim-text-glowOff, anim-text-glowMatch, anim-text-glowMatchOff).', 'icecubo') . '</p>';
+    echo '<p style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('Some animations cannot be previewed because they require specific CSS previously applied (anim-to-transform) or to be a direct text target (anim-slide-ch, anim-text-glow, anim-text-glowOff, anim-text-glowMatch, anim-text-glowMatchOff).', 'icecubo') . '</p>';
+
+}
+
+function icecubo_settings_section_navigation_callback() {
+    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
+    echo '<p style="font-size: 18px; margin-bottom: 3px;">' .esc_html__('You can generate navigation classes here, copy them and add them to each navigation block separately on the site.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 18px; margin-top: 3px;">' .esc_html__('Alternatively, from here, you can apply the classes globally to all navigation blocks at once.', 'icecubo') . '</p>';
+}
+
+function icecubo_settings_navigation_select_class_1_callback() {
+    
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_1">';
+    echo '<option value="" ' . selected('', '', false) . '>Default</option>';
+    
+    echo '<option value="ice-modal-button-round" ' . selected('', 'ice-modal-button-round', false) . '>Round</option>';
+    echo '<option value="ice-modal-button-square" ' . selected('', 'ice-modal-button-square', false) . '>Square</option>';
+    echo '</select>';
+}
+
+function icecubo_settings_navigation_select_class_2_callback() {
+        
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_2">';
+    echo '<option value="" ' . selected('', '', false) . '>None</option>';
+    
+    echo '<option value="ice-hover-transit-from-left" ' . selected('', 'ice-hover-transit-from-left', false) . '>Transit from left</option>';
+    echo '<option value="ice-hover-transit-from-right" ' . selected('', 'ice-hover-transit-from-right', false) . '>Transit from right</option>';
+    echo '<option value="ice-hover-transit-from-center" ' . selected('', 'ice-hover-transit-from-center', false) . '>Transit from center</option>';
+    echo '<option value="ice-hover-transit-pulse" ' . selected('', 'ice-hover-transit-pulse', false) . '>Pulse</option>';
+    echo '</select>';
+
+}
+
+function icecubo_settings_navigation_select_class_3_callback() {
+        
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_3">';
+    echo '<option value="" ' . selected('', '', false) . '>Default</option>';
+    
+    echo '<option value="ice-hov-huge" ' . selected('', 'ice-hov-huge', false) . '>Huge</option>';
+    echo '</select>';
+
+}
+
+function icecubo_settings_navigation_select_class_4_callback() {
+        
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_4">';
+    echo '<option value="" ' . selected('', '', false) . '>Default</option>';
+    
+    echo '<option value="ice-hov-slow" ' . selected('', 'ice-hov-slow', false) . '>Slow</option>';
+    echo '</select>';
+
+}
+
+function icecubo_settings_navigation_select_class_5_callback() {
+    
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_5">';
+    echo '<option value="" ' . selected('', '', false) . '>None</option>';
+    
+    echo '<option value="ice-submenu-shade" ' . selected('', 'ice-submenu-shade', false) . '>Shade 1</option>';
+    echo '<option value="ice-submenu-shade-2" ' . selected('', 'ice-submenu-shade-2', false) . '>Shade 2</option>';
+    echo '<option value="ice-submenu-shade-3" ' . selected('', 'ice-submenu-shade-3', false) . '>Shade 3</option>';
+    echo '</select>';
+}
+
+function icecubo_settings_navigation_select_class_6_callback() {
+        
+    // This isn't saving to the database since it's only used for the on-screen classes generation.
+
+    echo '<select name="icecubo_navigation_select_class_6">';
+    echo '<option value="" ' . selected('', '', false) . '>None</option>';
+    
+    echo '<option value="ice-submenu-anim-pushUp" ' . selected('', 'ice-submenu-anim-pushUp', false) . '>Push Up</option>';
+    echo '<option value="ice-submenu-anim-pushLeft" ' . selected('', 'ice-submenu-anim-pushLeft', false) . '>Push Left</option>';
+    echo '<option value="ice-submenu-anim-pushRight" ' . selected('', 'ice-submenu-anim-pushRight', false) . '>Push Right</option>';
+    echo '<option value="ice-submenu-anim-pushDown" ' . selected('', 'ice-submenu-anim-pushDown', false) . '>Push Down</option>';
+    echo '</select>';
+
+}
+
+function icecubo_settings_navigation_copy_button_callback() {
+    echo '<button type="button" id="icecubo-copy-navigation-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Copy Navigation Classes', 'icecubo') . '</button>';
+    echo '<p id="icecubo-copy-navigation-message" style="display:none; color: #0000c4; margin-top: 10px;">' . esc_html__('Navigation classes copied to clipboard!', 'icecubo') . '</p>';
+    echo '<p id="icecubo-copy-navigation-message-false" style="display:none; color: #cf0b0b; margin-top: 10px;">' . esc_html__('At least one navigation option must be selected!', 'icecubo') . '</p>';
+}
+
+function icecubo_settings_navigation_apply_globally_callback() {
+        
+    //$option = get_option('icecubo_navigation_apply_globally');
+    //echo '<input type="checkbox" name="icecubo_navigation_apply_globally" value="1" ' . checked($option, 1, false) . '/>';
+        
+    echo '<button type="button" id="icecubo-navigation-apply-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px; margin-right: 15px;">' . esc_html__('Apply Globally', 'icecubo') . '</button>';
+    echo '<button type="button" id="icecubo-navigation-reset-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Reset Global', 'icecubo') . '</button>';
+
+}
+
+function icecubo_settings_navigation_global_classes_callback() {
+        
+    $option = get_option('icecubo_navigation_global_classes');
+    echo '<input type="text" name="icecubo_navigation_global_classes" value="' . esc_attr($option) . '" readonly />';
+    echo '<p id="icecubo-navigation-global-apply-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Apply Globally", the current selections will be copied to this field. Those classes will be applied to all navigation blocks on the site. Just do not forget to save your changes at the end of the page!', 'icecubo') . '</p>';
+    echo '<p id="icecubo-navigation-copy-classes-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Copy Navigation Classes", the current selections will be copied to your clipboard and you can paste them to any navigation block individually. This can be done from the block\'s settings → Advanced tab → Additional CSS Classes.', 'icecubo') . '</p>';
 
 }
 
 function icecubo_settings_section_templates_callback() {
     echo '<hr id="icecubo-templates-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
-    echo '<p style="font-size: 18px;">' .esc_html__('Select the design templates you want to use.', 'icecubo') . '</p>';
-    echo '<p style="font-size: 16px;">' .esc_html__('Each template has its own set of patterns, sections and customization options.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 18px; margin-bottom: 3px;">' .esc_html__('Select the design templates you want to use.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 18px; margin-top: 3px; margin-bottom: 3px;">' .esc_html__('Each template has its own set of patterns, sections and customization options.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 18px; margin-top: 3px;">' .esc_html__('Enable them all or select individual ones to de-clutter the space inside the Editor, it\'s up to you.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_template_checkbox_one_callback() {
@@ -774,12 +965,122 @@ function icecubo_theme_options_page_content() {
             });
         }
 
-        // Initialize visibility on load
+        // Initialize fields visibility on load
         if (animationsEnableCheckbox) {
             updateAnimationControlsVisibility();
             animationsEnableCheckbox.addEventListener('change', updateAnimationControlsVisibility);
         }
+
+        const copyButtonNav = document.getElementById('icecubo-copy-navigation-button');
+        const messageElementNav = document.getElementById('icecubo-copy-navigation-message');
+        const messageElementNavFalse = document.getElementById('icecubo-copy-navigation-message-false');
         
+        // Get values from navigation fields
+        const navigationSelect1 = document.querySelector('select[name="icecubo_navigation_select_class_1"]');
+        const navigationSelect2 = document.querySelector('select[name="icecubo_navigation_select_class_2"]');
+        const navigationSelect3 = document.querySelector('select[name="icecubo_navigation_select_class_3"]');
+        const navigationSelect4 = document.querySelector('select[name="icecubo_navigation_select_class_4"]');
+        const navigationSelect5 = document.querySelector('select[name="icecubo_navigation_select_class_5"]');
+        const navigationSelect6 = document.querySelector('select[name="icecubo_navigation_select_class_6"]');
+        
+        const navigationApplyGloballyButton = document.getElementById('icecubo-navigation-apply-button');
+        const navigationApplyGloballyResetButton = document.getElementById('icecubo-navigation-reset-button');
+        const navigationGlobalClassesInput = document.querySelector('input[name="icecubo_navigation_global_classes"]');
+
+        // Copy navigation classes
+        if (copyButtonNav) {
+            copyButtonNav.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Check if navigation classes are selected
+                if (navigationSelect1.value === '' && navigationSelect2.value === '' && navigationSelect3.value === '' && navigationSelect4.value === '' && navigationSelect5.value === '' && navigationSelect6.value === '') {
+                    messageElementNavFalse.style.display = 'block';
+                    setTimeout(function() {
+                        messageElementNavFalse.style.display = 'none';
+                    }, 3000);
+                    return;
+                } else {
+                    messageElementNav.style.display = 'block';
+                    setTimeout(function() {
+                        messageElementNav.style.display = 'none';
+                    }, 3000);
+                }
+        
+                // Collect the values and filter out empty ones
+                const classes = [];
+                if (navigationSelect1 && navigationSelect1.value) {
+                    classes.push(navigationSelect1.value);
+                }
+                if (navigationSelect2 && navigationSelect2.value) {
+                    classes.push(navigationSelect2.value);
+                }
+                if (navigationSelect3 && navigationSelect3.value) {
+                    classes.push(navigationSelect3.value);
+                }
+                if (navigationSelect4 && navigationSelect4.value) {
+                    classes.push(navigationSelect4.value);
+                }
+                if (navigationSelect5 && navigationSelect5.value) {
+                    classes.push(navigationSelect5.value);
+                }
+                if (navigationSelect6 && navigationSelect6.value) {
+                    classes.push(navigationSelect6.value);
+                }
+                // Join classes with space and copy to clipboard
+                const classString = classes.join(' ');
+                if (classString !== '') {
+                    navigator.clipboard.writeText(classString)
+                        .catch(err => {
+                            console.error('Error copying to clipboard:', err);
+                        });
+                }
+            });
+        }
+
+        // Set the width of the global classes field to 100%, so all classes can be seen
+        if (navigationGlobalClassesInput) {
+            navigationGlobalClassesInput.style.width = '100%';
+        }
+
+        // Add the selected navigation classes to the global classes field on button click
+        if (navigationApplyGloballyButton && navigationGlobalClassesInput) {
+            navigationApplyGloballyButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const classes = [
+                    navigationSelect1,
+                    navigationSelect2,
+                    navigationSelect3,
+                    navigationSelect4,
+                    navigationSelect5,
+                    navigationSelect6
+                ]
+                    .filter(function(select) {
+                        return select && select.value;
+                    })
+                    .map(function(select) {
+                        return select.value;
+                    });
+
+                if (classes.length === 0) {
+                    messageElementNavFalse.style.display = 'block';
+                    setTimeout(function() {
+                        messageElementNavFalse.style.display = 'none';
+                    }, 3000);
+                    return;
+                }
+
+                // Join the selected classes with a space
+                navigationGlobalClassesInput.value = classes.join(' ');
+            });
+        }
+
+        // Clear the global classes field on reset button click
+        if (navigationApplyGloballyResetButton && navigationGlobalClassesInput) {
+            navigationApplyGloballyResetButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                navigationGlobalClassesInput.value = '';
+            });
+        }
 
     });
     </script>
