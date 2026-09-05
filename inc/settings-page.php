@@ -716,8 +716,8 @@ function icecubo_settings_navigation_global_classes_callback() {
         
     $option = get_option('icecubo_navigation_global_classes');
     echo '<input type="text" name="icecubo_navigation_global_classes" value="' . esc_attr($option) . '" readonly />';
-    echo '<p id="icecubo-navigation-global-apply-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Apply Globally", the current selections will be copied to this field. Those classes will be applied to all navigation blocks on the site. Just do not forget to save your changes at the end of the page!', 'icecubo') . '</p>';
-    echo '<p id="icecubo-navigation-copy-classes-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Copy Navigation Classes", the current selections will be copied to your clipboard and you can paste them to any navigation block individually. This can be done from the block\'s settings → Advanced tab → Additional CSS Classes.', 'icecubo') . '</p>';
+    echo '<p id="icecubo-navigation-global-apply-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Apply Globally", the current selections will be copied to this field. Those classes will be applied to all navigation blocks on the site. Just do not forget to save your changes at the end of the page! Be aware that it isn\'t replacing the existing classes, it is adding to them, so you can additionaly style each block individually after applying the global classes.', 'icecubo') . '</p>';
+    echo '<p id="icecubo-navigation-copy-classes-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Copy Navigation Classes", the current selections will be copied to your clipboard and you can paste those generated classes to any navigation block individually. This can be done from the navigation block\'s settings → Advanced tab → Additional CSS Classes.', 'icecubo') . '</p>';
 
 }
 
