@@ -21,7 +21,7 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:navigation {"overlayBackgroundColor":"primary-light","className":"is-style-icecubo-nav-hovers-standard ice-submenu-shade ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
+<!-- wp:navigation {"overlayBackgroundColor":"primary-light","className":"is-style-icecubo-nav-hovers-standard ice-submenu-shade-mild ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"margin":{"top":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"default"}} -->
