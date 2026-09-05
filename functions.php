@@ -21,7 +21,7 @@ if (! defined('ABSPATH') ) {
  * Version:             1.2.6
  * Text Domain:         icecubo
  * Domain Path:         /languages
- * Requires at least:   6.9
+ * Requires at least:   7.0
  */
 
 // Define theme version constant.

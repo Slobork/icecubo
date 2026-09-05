@@ -1,6 +1,6 @@
 === IceCubo ===
 Contributors: MaxPressy
-Requires at least: 6.9
+Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
 License: GPLv2 or later
@@ -165,7 +165,7 @@ Fix: Headings' spacing. Moved its styling to theme.json, but the downside is tha
 
 == Copyright ==
 
-IceCubo WordPress Theme, (C) 2023 
+IceCubo WordPress Theme, (C) 2026
 IceCubo is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
