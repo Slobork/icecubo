@@ -368,7 +368,22 @@
 				{
 					"name": "Crisp current color",
 					"slug": "crisp-current",
-					"shadow": "5px 5px currentColor"
+					"shadow": "6px 6px 0 currentColor"
+				},
+				{
+					"name": "Tiny current color",
+					"slug": "tiny-current",
+					"shadow": "1px 2px 4px currentColor"
+				},
+				{
+					"name": "Mild current color",
+					"slug": "mild-current",
+					"shadow": "2px 3px 5px currentColor"
+				},
+				{
+					"name": "Large current color",
+					"slug": "large-current",
+					"shadow": "4px 5px 3px 2px currentColor"
 				}
 			]
 		},
