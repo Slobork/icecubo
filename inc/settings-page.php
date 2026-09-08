@@ -94,10 +94,30 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
         add_settings_field(
             'info_boxes',
             esc_html__('Get started with IceCubo', 'icecubo'),
-            'icecubo_settings_info_boxes_callback',
+            'icecubo_settings_start_info_boxes_callback',
             $tab_start,
             'section_one'
         );
+
+        // Section breadcrumbs settings
+        add_settings_section(
+            'section_breadcrumbs',
+            esc_html__('Breadcrumbs Settings', 'icecubo'),
+            'icecubo_settings_section_breadcrumbs_callback',
+            $tab_settings
+        );
+
+        add_settings_field(
+            'breadcrumbs_enable',
+            esc_html__('Enable Breadcrumbs', 'icecubo'),
+            'icecubo_settings_breadcrumbs_enable_checkbox_callback',
+            $tab_settings,
+            'section_breadcrumbs'
+        );
+                    
+        // Register the setting for breadcrumbs enable/disable
+        register_setting('icecubo-theme-options', 'icecubo_breadcrumbs_enable', 'icecubo_sanitize_checkbox');
+
 
         // If Pro version is active, register fields under the settings tab, otherwise display the message about buying Pro version.
         if (icecubo_check_license() != false) {
@@ -333,7 +353,10 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
                 'section_templates'
             );
 
-            register_setting('icecubo-theme-options', 'icecubo_animations_laod', 'icecubo_sanitize_checkbox');
+
+            // Register the settings in the database for the checkboxes and other fields
+
+            register_setting('icecubo-theme-options', 'icecubo_animations_load', 'icecubo_sanitize_checkbox');
             
             /**
              * Not needed to save these options in the database, 
@@ -366,23 +389,13 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
 
         } else {
             /**
-             * If Pro version is not active, we still need to register the settings and sections 
-             * to display the info box and the message about buying Pro version,
-             * but we won't register any fields since there are no settings to save in the free version.
+             * If Pro version is not active
              */
             add_settings_section(
-                'section_settings',
-                '',
-                'icecubo_settings_section_one_callback',
+                'section_settings_more',
+                esc_html__('Additional Settings', 'icecubo'),
+                'icecubo_settings_section_additional_settings_callback',
                 $tab_settings
-            );
-
-            add_settings_field(
-                'settings_info_top',
-                esc_html__('You have to activate the Pro version (Pro addon) to access these settings.', 'icecubo'),
-                'icecubo_settings_info_boxes_callback_top',
-                $tab_settings,
-                'section_settings'
             );
             
         }
@@ -404,76 +417,87 @@ function icecubo_sanitize_checkbox( $input ) {
 
 
 /**
- * Callbacks for the settings sections.
+ * Callbacks for the options.
  */
 
-function icecubo_settings_info_boxes_callback() {
+function icecubo_settings_start_info_boxes_callback() {
     $img = get_theme_file_uri(). "/assets/img/ice-cubes.png";
-    echo '<div id="ice-settings" style="color: white; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; background-image: url(' .esc_url($img) . '); width: fit-content; background-size: contain; background-position: center; padding: 60px 30px; border-radius:50%; margin-bottom:10px;">';
-    
-    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
-    echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Documentation', 'icecubo' ) . '</h3>';
-    echo '<p style="line-height: 1.75">' . esc_html__( 'See all Icecubo\'s features and how to implement them.', 'icecubo' ) . '</p>';
-    echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo-documentation/" target="_blank">See documentation →</a>';
-    echo '</div>';
-    echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
-    echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Start Editing', 'icecubo' ) . '</h3>';
-    echo '<p style="line-height: 1.75">' . esc_html__( 'Start editing the front page and access other templates from the Editor.', 'icecubo' ) . '</p>';
-    echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="site-editor.php">Go to the Editor →</a>';
-    echo '</div>';
-    
-    // escaped in the function that generates the content of the box
-    echo icecubo_buy_pro_box();
-
-    echo '</div>';
-}
-
-/**
- * Set the content of the info box about buying Pro version in a function,
- * coz we need to display it in multiple places (top of the settings tab and in the start tab).
- */
-function icecubo_buy_pro_box() {
-
-    $output = '';
-    if (! class_exists('IceCubo_Pro') ) {
-        $output .= '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
-        $output .= '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Get Pro', 'icecubo' ) . '</h3>';
-        $output .= '<p style="line-height: 1.75">' . esc_html__( 'With Pro addon get advanced features and templates.', 'icecubo' ) . '</p>';
-        $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
-        $output .= '</div>';
-    } else {
-        $output .= '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
-        $output .= '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Adjust the settings', 'icecubo' ) . '</h3>';
-        if(icecubo_check_license() != false) {
-            $output .= '<p style="line-height: 1.75">' . esc_html__( 'Enable additional functionality and templates.', 'icecubo' ) . '</p>';
-
-            // in order to make the link to the Settings tab work, we need to add a class and a data attribute to the link. 
-            // JavaScript will handle the click event and show the settings tab.
-            $output .= '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="#icecubo-tab-settings" class="icecubo-tab-control" data-tab="icecubo-tab-settings">Use the Settings →</a>';
-        } else {
-            $output .= '<a style="font-size: 15px; line-height: 2.5; background: #a3a3ff; color: black; padding: 3px; border-radius: 3px; margin: 0 30px 0 0;" href="admin.php?page=icecubo-licenses">Activate License first to access additional settings →</a>';
-        }
+    echo '<div id="ice-settings-start-boxes" style="color: white; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px; background-image: url(' .esc_url($img) . '); width: fit-content; background-size: contain; background-position: center; padding: 60px 30px; border-radius:50%; margin-bottom:10px;">';
         
-        $output .= '</div>';
-    }
+        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
+        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Documentation', 'icecubo' ) . '</h3>';
+        echo '<p style="line-height: 1.75">' . esc_html__( 'See all Icecubo\'s features and how to implement them.', 'icecubo' ) . '</p>';
+        echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo-documentation/" target="_blank">See documentation →</a>';
+        echo '</div>';
+        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
+        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Adjust the settings', 'icecubo' ) . '</h3>';
+        echo '<p style="line-height: 1.75">' . esc_html__( 'Enable additional functionality and templates.', 'icecubo' ) . '</p>';
+        
+        // in order to make the link to the Settings tab work, we need to add a class and a data attribute to the link. 
+        // JavaScript will handle the click event and show the settings tab.
+        echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="#icecubo-tab-settings" class="icecubo-tab-control" data-tab="icecubo-tab-settings">Use the Settings →</a>';
+        echo '</div>';
+        echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px;">';
+        echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Start Editing', 'icecubo' ) . '</h3>';
+        echo '<p style="line-height: 1.75">' . esc_html__( 'Start editing the front page and access other templates from the Editor.', 'icecubo' ) . '</p>';
+        echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="site-editor.php">Go to the Editor →</a>';
+        echo '</div>';
 
-    $output .= '</div>';
+        if (! class_exists('IceCubo_Pro') ) {
+            echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
+            echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Get Pro', 'icecubo' ) . '</h3>';
+            echo '<p style="line-height: 1.75">' . esc_html__( 'With Pro addon get additional features and templates.', 'icecubo' ) . '</p>';
+            echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
+            echo '</div>';
+        } else {
+            if(icecubo_check_license() == false) {
+                echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
+                echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Activate License', 'icecubo' ) . '</h3>';
+                echo '<p style="line-height: 1.75">' . esc_html__( 'Activate your license first to access additional features.', 'icecubo' ) . '</p>';
+                echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="admin.php?page=icecubo-licenses">Activate License →</a>';
+                echo '</div>';
+            }
+        }
 
-    return $output;
+    echo '</div>';
 }
 
-function icecubo_settings_info_boxes_callback_top() {
-    /**
-     * Escaped in the function that generates the content of the box,
-     * since we need to return the content as a string to display it in multiple places (top of the settings tab and in the start tab).
-     */
-    echo icecubo_buy_pro_box();
-}
 
 function icecubo_settings_section_one_callback() {
     // Empty for now, we don't need any text here since the info box has its own title and description. 
     // But we need this callback to register the section and display the info box field.
     echo '';
+}
+
+function icecubo_settings_section_breadcrumbs_callback() {
+    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
+    echo '<p style="font-size: 18px;">' .esc_html__('You can enable or disable breadcrumbs navigation on pages throughout the entire site.', 'icecubo') . '</p>';
+}
+
+function icecubo_settings_breadcrumbs_enable_checkbox_callback() {
+    $breadcrumbs = get_option('icecubo_breadcrumbs_enable');
+    echo '<input type="checkbox" name="icecubo_breadcrumbs_enable" value="1" style="margin-bottom: 10px;" ' . checked($breadcrumbs, 1, false) . '/>';
+}
+
+function icecubo_settings_section_additional_settings_callback() {
+    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
+    
+        if (! class_exists('IceCubo_Pro') ) {
+        echo '<div style="margin-bottom: 2em; padding-bottom: 2em;">';
+        echo '<p style="font-size: 18px;">' . esc_html__( 'With Pro addon get additional features and templates.', 'icecubo' ) . '</p>';
+        echo '<a style="font-size: 18px; border: 2px solid #a3a3ff; border-radius: 4px; padding: 10px 20px;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
+        echo '</div>';
+
+        } else {
+            if(icecubo_check_license() == false) {
+                echo '<div style="margin-bottom: 2em; padding-bottom: 2em;">';
+                echo '<p style="font-size: 18px;">' . esc_html__( 'Activate your license first to access additional features, like animations, navigation options, and template designs.', 'icecubo' ) . '</p>';
+                echo '<a style="font-size: 18px; border: 2px solid #a3a3ff; border-radius: 4px; padding: 10px 20px;" href="admin.php?page=icecubo-licenses">Activate License →</a>';
+                echo '</div>';
+            }
+        }
 }
 
 function icecubo_settings_section_animations_callback() {
@@ -483,10 +507,9 @@ function icecubo_settings_section_animations_callback() {
 }
 
 function icecubo_settings_animations_load_checkbox_callback() {
-    $animation = get_option('icecubo_animations_laod');
-    echo '<input type="checkbox" name="icecubo_animations_laod" value="1" style="margin-bottom: 10px;" ' . checked($animation, 1, false) . '/>';
+    $animation = get_option('icecubo_animations_load');
+    echo '<input type="checkbox" name="icecubo_animations_load" value="1" style="margin-bottom: 10px;" ' . checked($animation, 1, false) . '/>';
     echo '<p style="font-size: 16px; margin-bottom: 30px; max-width: 600px;">' .esc_html__('Do not forget to save the changes at the bottom of the page, once you enable the animations here!', 'icecubo') . '</p>';
-
 }
 
 function icecubo_settings_animations_classes_generator_description_callback() {
@@ -809,12 +832,7 @@ function icecubo_theme_options_page_content() {
             </div>
 
             <div id="icecubo-submit-container" style="display:none;">
-                <?php
-                // Show submit button only if Pro version is active, since free version doesn't have any settings to save.
-                if (icecubo_check_license() != false) {
-                    submit_button();
-                }
-                ?>
+                <?php submit_button(); ?>
             </div>
         </form>
     </div>
