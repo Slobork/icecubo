@@ -15,8 +15,8 @@ if (! defined('ABSPATH') ) {
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--medium)">
     <!-- wp:pattern {"slug":"icecubo/breadcrumbs"} /-->    
-    <!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|xxx-small"}}}} -->
-    <h1 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--xxx-small)"><?php esc_html_e('The latest posts', 'icecubo');?></h1>
+    <!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-small"}}}} -->
+    <h1 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--xx-small)"><?php esc_html_e('The latest posts', 'icecubo');?></h1>
     <!-- /wp:heading --></div>
     <!-- /wp:group -->
     <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-beneath-title"} /-->

@@ -18,8 +18,8 @@ if (! defined('ABSPATH') ) {
     <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}}} -->
     <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--large)">
     <!-- wp:pattern {"slug":"icecubo/breadcrumbs"} /-->
-    <!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"0"}}}} -->
-    <h1 class="wp-block-heading" style="margin-top:0"><?php echo esc_html__('The latest posts', 'icecubo'); ?></h1>
+    <!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"var:preset|spacing|xx-small"}}}} -->
+    <h1 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--xx-small)"><?php esc_html_e('The latest posts', 'icecubo');?></h1>
     <!-- /wp:heading --></div>
     <!-- /wp:group -->
         <!-- wp:pattern {"slug":"icecubo/query-classic-featured-img-cover"} /-->
