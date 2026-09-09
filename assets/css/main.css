@@ -152,6 +152,8 @@ body:not([class*="template-boxed"], [class*="template-blank"]) footer { margin-t
  * Blocks
  */
 
+.wp-block-breadcrumbs.wp-block-breadcrumbs {margin-top: -.5rem;}
+
 /**
  * Logo - remove any background effects on hover (they are actually added on links, but logo is a link as well)
  */
