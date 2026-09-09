@@ -13,6 +13,7 @@ if (! defined('ABSPATH') ) {
 <div class="wp-block-group">
     <!-- wp:group -->
     <div class="wp-block-group">
+        <!-- wp:pattern {"slug":"icecubo/breadcrumbs"} /-->
         <!-- wp:heading {"level":1} -->
         <h1><?php echo esc_html__('Page Not Found - Error 404', 'icecubo'); ?></h1>
         <!-- /wp:heading -->
