@@ -472,7 +472,7 @@ function icecubo_settings_section_one_callback() {
 function icecubo_settings_section_breadcrumbs_callback() {
     // alternative bordr-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
-    echo '<p style="font-size: 18px; max-width: 800px;">' .esc_html__('You can enable or disable breadcrumbs navigation on pages throughout the site. It doesn\'t affect the pages that are oriented towards the custom design, i.e. Front page, notitle-alike-page, notitle-noheader-alike-page. If necessary, you can add the breadcrumbs block to each page individually when using these templates.', 'icecubo') . '</p>';
+    echo '<p style="font-size: 18px; max-width: 800px;">' .esc_html__('You can enable or disable breadcrumbs navigation on pages throughout the site. It is applied to templates for pages, posts, archive pages, etc. but doesn\'t affect the templates that are oriented towards the custom design, i.e. Front page, notitle-alike-page, notitle-noheader-alike-page. If necessary, you can add the breadcrumbs block to each page individually when using these templates.', 'icecubo') . '</p>';
 }
 
 function icecubo_settings_breadcrumbs_enable_checkbox_callback() {
