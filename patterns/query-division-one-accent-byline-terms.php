@@ -41,6 +41,6 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:query -->
 
 <!-- wp:paragraph {"align":"right"} -->
-<p class="has-text-align-right">→See more from <a href="#">TECHNOLOGY</a></p>
+<p class="has-text-align-right">See more from <a href="#">TECHNOLOGY</a> →</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->

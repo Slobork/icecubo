@@ -39,6 +39,6 @@ if (! defined('ABSPATH') ) {
 <!-- /wp:query -->
 
 <!-- wp:paragraph -->
-<p>→See more from <a href="#">TECHNOLOGY</a></p>
+<p>See more from <a href="#">TECHNOLOGY</a> →</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
