@@ -10,8 +10,8 @@ if (! defined('ABSPATH') ) {
  * Block Types: core/template-part/header
  */
 ?>
-<!-- wp:group {"gradient":"primary-to-transparent-linear-gradual","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-primary-to-transparent-linear-gradual-gradient-background has-background"><!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:group {"align":"full","gradient":"primary-to-transparent-linear-gradual","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-primary-to-transparent-linear-gradual-gradient-background has-background"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
 
