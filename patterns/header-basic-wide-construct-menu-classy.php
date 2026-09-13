@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Header: Spread elements: Logo - nav (Default for most templates).
+ * Title: Header inner: Spread elements: Logo - nav (Classy menu color).
  * Slug: icecubo/header-basic-wide-construct-menu-classy
  * Categories: hidden
  */
