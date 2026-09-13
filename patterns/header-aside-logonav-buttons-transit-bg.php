@@ -11,13 +11,9 @@ if (! defined('ABSPATH') ) {
  */
 ?>
 <!-- wp:group {"align":"full","className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|white-ice"}}},"spacing":{"padding":{"top":"var:preset|spacing|xxx-small","bottom":"var:preset|spacing|xxx-small"}}},"textColor":"white-ice","gradient":"darko-to-primary-linear-gradual-aside","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull is-style-default has-white-ice-color has-darko-to-primary-linear-gradual-aside-gradient-background has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--xxx-small)"><!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"layout":{"type":"flex","justifyContent":"left"}} -->
-<div class="wp-block-group"><!-- wp:site-logo {"width":60,"shouldSyncIcon":false} /-->
-
-<!-- wp:navigation {"overlayBackgroundColor":"primary-dark","overlayTextColor":"white","className":"is-style-icecubo-nav-hovers-standard ice-hover-transit-from-left ice-submenu-shade-mild ice-submenu-anim-pushUp ice-modal-button-round","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","justifyContent":"center","orientation":"horizontal","flexWrap":"nowrap"}} /--></div>
-<!-- /wp:group -->
+<div class="wp-block-group alignfull is-style-default has-white-ice-color has-darko-to-primary-linear-gradual-aside-gradient-background has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--xxx-small);padding-bottom:var(--wp--preset--spacing--xxx-small)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|xxx-small"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group alignwide">
+<!-- wp:pattern {"slug":"icecubo/header-basic-wide-construct-menu-dark"} /-->
 
 <!-- wp:buttons {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|small"}}},"layout":{"type":"flex","orientation":"horizontal"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"left":"18px","right":"18px","top":"4px","bottom":"4px"}}}} -->
@@ -28,6 +24,5 @@ if (! defined('ABSPATH') ) {
 <div class="wp-block-button"><a class="wp-block-button__link wp-element-button" style="padding-top:4px;padding-right:18px;padding-bottom:4px;padding-left:18px">Login</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
