@@ -5,7 +5,7 @@ if (! defined('ABSPATH') ) {
 }
 /**
  * Title: Header: Spread elements: Logo - nav (Default for most templates).
- * Slug: icecubo/header-basic-wide-construct-primarydark
+ * Slug: icecubo/header-basic-wide-construct-menu-primarydark
  * Categories: hidden
  */
 ?>
