@@ -1,3 +1,6 @@
+/* When a navigation has a background color, make it tighter than the WordPress does initially. They put padding: .5em 1em */
+:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)), :where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)) {padding: .35em .5em;}
+
 /* Menu item - Since '--wp--style--global--wide-size' is declared in %, it breaks the menu item with multiple words (also in the mega-menu). This resolves it */
 .wp-block-navigation-item__content { width: max-content; }
 
@@ -7,7 +10,7 @@
     gap: .3em;
 }
 
-/* Submenu icon ˘ make sure it's centered */
+/* Icon for the submenu indicator (˘) make sure it's centered */
 .wp-block-navigation__submenu-icon.wp-block-navigation__submenu-icon {margin-top: 0; margin-bottom: 0;}
 
 /* Mobile menu modal overlay - make the submenu on vertical ends tighten */
