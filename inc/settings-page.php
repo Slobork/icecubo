@@ -445,9 +445,9 @@ function icecubo_settings_start_info_boxes_callback() {
 
         if (! class_exists('IceCubo_Pro') ) {
             echo '<div style="background: rgb(6 9 34 / 88%); color: white; padding: 20px; border-radius:4px; max-width:400px; min-width:380px; border: 10px solid #a3a3ff;">';
-            echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Get Pro', 'icecubo' ) . '</h3>';
+            echo '<h3 style="margin:0 0 10px; color: white;">' . esc_html__( 'Upgrade', 'icecubo' ) . '</h3>';
             echo '<p style="line-height: 1.75">' . esc_html__( 'With Pro addon get additional features and templates.', 'icecubo' ) . '</p>';
-            echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
+            echo '<a style="font-size: 16px; line-height: 1.7; color: #a3a3ff;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Pro →</a>';
             echo '</div>';
         } else {
             if(icecubo_check_license() == false) {
@@ -488,7 +488,7 @@ function icecubo_settings_section_additional_settings_callback() {
         if (! class_exists('IceCubo_Pro') ) {
         echo '<div style="margin-bottom: 2em; padding-bottom: 2em;">';
         echo '<p style="font-size: 18px;">' . esc_html__( 'With Pro addon get additional features and templates.', 'icecubo' ) . '</p>';
-        echo '<a style="font-size: 18px; border: 2px solid #a3a3ff; border-radius: 4px; padding: 10px 20px;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Companion →</a>';
+        echo '<a style="font-size: 18px; border: 2px solid #a3a3ff; border-radius: 4px; padding: 10px 20px;" href="https://maxpressy.com/icecubo/" target="_blank">Get IceCubo Pro →</a>';
         echo '</div>';
 
         } else {
