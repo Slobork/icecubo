@@ -5,7 +5,7 @@ if (! defined('ABSPATH') ) {
 }
 /**
  * Title: Basic Layout front page (1). Header-Hero plus project sections with a call to action at the end.
- * Slug: icecubo/page-modal-front-1
+ * Slug: icecubo/page-front-1-modal
  * Categories: hidden
  * Inserter: false
  * Template Types: front-page
