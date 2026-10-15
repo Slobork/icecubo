@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 3,
 	"title": "Subtitle",
-	"slug": "text-subtitle",
+	"slug": "icecubo-text-subtitle",
 	"blockTypes": ["core/paragraph"],
 	"styles": {
 		"typography": {

@@ -2,7 +2,7 @@
 	"version": 3,
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"title": "Outline",
-	"slug": "iicecubo-comment-reply-button-outline",
+	"slug": "icecubo-comment-reply-button-outline",
 	"blockTypes": ["core/comment-reply-link" ],
 	"styles": {
 		"spacing": {
