@@ -327,8 +327,7 @@ function icecubo_get_templates() {
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
     function icecubo_ability_callback_template_parts_list( $input ) {
-        //return icecubo_get_template_parts();
-        return array('result' => icecubo_get_template_parts()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "header", "footer", "nav", or "all".']);
+        return array('result' => icecubo_get_template_parts()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "header", "footer", "nav", "uncategorized", or "all".']);
     }
 }
 
@@ -348,15 +347,21 @@ function icecubo_get_template_parts() {
         'area' => 'navigation-overlay' // Get only navigation-overlay parts
     );
 
+    $query_uncategorized = array(
+        'area' => 'uncategorized' // Get only uncategorized parts
+    );
+
     $header_parts = get_block_templates( $query_headers, 'wp_template_part' );
     $footer_parts = get_block_templates( $query_footers, 'wp_template_part' );
     $navigation_overlay_parts = get_block_templates( $query_navigation_overlays, 'wp_template_part' );
+    $uncategorized_parts = get_block_templates( $query_uncategorized, 'wp_template_part' );
 
     return array(
         'header' => $header_parts,
         'footer' => $footer_parts,
         'nav' => $navigation_overlay_parts,
-        //'all'    => array_merge( $header_parts, $footer_parts, $navigation_overlay_parts ),
+        'uncategorized' => $uncategorized_parts,
+        //'all'    => array_merge( $header_parts, $footer_parts, $navigation_overlay_parts, $uncategorized_parts ),
         'all'    => $template_parts,
     );
 }
