@@ -363,7 +363,6 @@ function icecubo_get_template_parts() {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_get_all_registered_blocks') ) {
-    //function icecubo_ability_callback_get_all_registered_blocks( $input ) {
     function icecubo_ability_callback_get_all_registered_blocks() {
         return array('result' => icecubo_get_all_registered_blocks());
     }
@@ -433,6 +432,6 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
         // Flatten the array keys before returning the JSON payload
         $all_individual_styles = array_values( $get_styles );
-        return !empty($all_individual_styles) ? array( 'result' => $all_individual_styles ) : array('result' => 'Invalid prompt. Please use block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block.'  );
+        return !empty($all_individual_styles) ? array( 'result' => $all_individual_styles ) : array('result' => 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.'  );
     }
 }
