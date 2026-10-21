@@ -44,87 +44,169 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all block patterns.
         wp_register_ability( 'icecubo/list-patterns', array(
             'label' => __( 'IceCubo - List Patterns', 'icecubo' ),
-            'description' => __( 'Lists all patterns provided by the IceCubo theme.', 'icecubo' ),
+            'description' => __( 'Lists all patterns provided by the IceCubo (both, provided by the theme and Pro plugin).', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_patterns_list',
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
-            
-            //'input_schema' => array(
-            //    'type' => 'object',
-            //    'properties' => array(
-            //        'prompt' => array( 'type' => 'string' )
-            //    ),
-            //),
-        ) );
-
-        // Register the ability to list all block styles.
-        wp_register_ability( 'icecubo/list-block-styles', array(
-            'label' => __( 'IceCubo - List Block Styles', 'icecubo' ),
-            'description' => __( 'Lists all block styles. Use "ice", "other" or "all" as the prompt.', 'icecubo' ),
-            'category' => 'icecubo-ai-tools',
-            'execute_callback' => 'icecubo_ability_callback_block_styles_list',
-            'permission_callback' => function() {
-                return current_user_can( 'edit_posts' );
-            },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
-            'input_schema' => array(
-                'type' => 'object',
-                'properties' => array(
-                    'prompt' => array( 'type' => 'string' )
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
-        ) );
+            'output_schema' => [
+                'type'  => 'array',
+                'items' => [
+                    'type'       => 'object',
+                    'properties' => [
+                        'name'       => [ 'type' => 'string' ],
+                        'title'      => [ 'type' => 'string' ],
+                        'categories' => [
+                            'type'  => 'array',
+                            'items' => [ 'type' => 'string' ],
+                        ],
+                    ],
+                    'required' => [ 'name', 'title', 'categories' ],
+                ],
+            ],
+        ));
 
         // Register the ability to list all templates.
         wp_register_ability( 'icecubo/list-templates', array(
             'label' => __( 'IceCubo - List Templates', 'icecubo' ),
-            'description' => __( 'Lists all templates provided by the IceCubo theme.', 'icecubo' ),
+            'description' => __( 'Lists all templates, either provided by the IceCubo (both, provided by the theme and Pro plugin), or some other plugin.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_templates_list',
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
-
-            //'input_schema' => array(
-            //    'type' => 'object',
-            //    'properties' => array(
-            //        'prompt' => array( 'type' => 'string' )
-            //    ),
-            //),
-        ) );
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
+                ),
+            ),
+            'output_schema' => [
+                'type'  => 'array',
+                'items' => [
+                    'type'       => 'object',
+                    'properties' => [
+                        'slug'        => [ 'type' => 'string' ],
+                        'title'       => [ 'type' => 'string' ],
+                        'type'        => [ 'type' => 'string' ],
+                        'description' => [ 'type' => 'string' ],
+                        'theme'       => [ 'type' => 'string' ],
+                        'source'      => [ 'type' => 'string' ],
+                        'content'     => [ 'type' => 'string' ],
+                    ],
+                    'required' => [
+                        'slug',
+                        'title',
+                        'type',
+                        'description',
+                        'theme',
+                        'source',
+                        'content',
+                    ],
+                ],
+            ],
+        ));
 
         // Register the ability to list all template parts.
         wp_register_ability( 'icecubo/list-template-parts', array(
             'label' => __( 'IceCubo - List Template Parts', 'icecubo' ),
-            'description' => __( 'Lists all template parts. Use "header", "footer", "nav", or "all" as the prompt.', 'icecubo' ),
+            'description' => __( 'Lists all template parts. Use "header", "footer", "nav", "uncategorized", or "all" as the prompt.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_template_parts_list',
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
-            'input_schema' => array(
-                'type' => 'object',
-                'properties' => array(
-                    'prompt' => array( 'type' => 'string' )
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            /**
+             * JSON Schema describing the data the ability expects when it runs.
+             * WordPress uses it to validate the input and to tell clients,
+             * including AI tools, which arguments they can provide
+             */
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'prompt' => [
+                        'type'        => 'string',
+                        'description' => __('Template part type to query', 'icecubo'),
+                        'enum'        => ['header', 'footer', 'nav', 'uncategorized', 'all'],
+                    ],
+                ],
+                'required'             => [ 'prompt' ],
+                'additionalProperties' => false,
+            ],
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'  => 'array',
+                        'items' => [
+                            'type'       => 'object',
+                            'properties' => [
+                                'type'   => [ 'type' => 'string' ],
+                                'theme'  => [ 'type' => 'string' ],
+                                'slug'   => [ 'type' => 'string' ],
+                                'id'     => [ 'type' => 'string' ],
+                                'title'  => [ 'type' => 'string' ],
+                                'content'=> [ 'type' => 'string' ],
+                                'description' => [ 'type' => 'string' ],
+                                'source' => [ 'type' => 'string' ],
+                                'origin' => [ 'type' => [ 'string', 'null' ] ],
+                                'wp_id'  => [ 'type' => [ 'integer', 'null' ] ],
+                                'status' => [ 'type' => 'string' ],
+                                'has_theme_file' => [ 'type' => 'boolean' ],
+                                'is_custom' => [ 'type' => 'boolean' ],
+                                'author' => [ 'type' => [ 'integer', 'null' ] ],
+                                'plugin' => [ 'type' => [ 'string', 'null' ] ],
+                                'post_types' => [
+                                    'type'  => ['array', 'null'],
+                                    'items' => [ 'type' => 'string' ],
+                                ],
+                                'area' => [ 'type' => 'string' ],
+                                'modified' => [ 'type' =>  ['integer', 'string', 'null'] ],
+                                'date' => [ 'type' => ['integer', 'string', 'null'] ],
+                            ],
+                            'required' => [ 'type', 'slug', 'id', 'wp_id' ],
+                        ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
         ) );
 
         // Register the ability to list all blocks.
@@ -136,38 +218,173 @@ if (! function_exists('icecubo_register_abilities') ) {
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
+                ),
+            ),
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'  => 'array',
+                        'items' => [ 'type' => 'string' ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
+        ) );
 
+        // Register the ability to list all block styles.
+        wp_register_ability( 'icecubo/list-block-styles', array(
+            'label' => __( 'IceCubo - List Block Styles', 'icecubo' ),
+            'description' => __( 'Lists all block styles. Use "ice", "other" or "all" as the prompt.', 'icecubo' ),
+            'category' => 'icecubo-ai-tools',
+            'execute_callback' => 'icecubo_ability_callback_block_styles_list',
+            'permission_callback' => function() {
+                return current_user_can( 'edit_posts' );
+            },
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
+                ),
+            ),
+            /**
+             * JSON Schema describing the data the ability expects when it runs.
+             * WordPress uses it to validate the input and to tell clients,
+             * including AI tools, which arguments they can provide
+             */
             //'input_schema' => array(
             //    'type' => 'object',
             //    'properties' => array(
             //        'prompt' => array( 'type' => 'string' )
             //    ),
             //),
-        ) );
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'prompt' => [
+                        'type'        => 'string',
+                        'description' => __( 'Lists all vailable block styles. Sift it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
+                        'enum'        => [ 'ice', 'other', 'all' ],
+                    ],
+                ],
+                //'required'             => [ 'prompt' ],
+                'additionalProperties' => false,
+            ],
+            //'output_schema' => [
+            //    'type' => 'object',
+            //    'additionalProperties' => [
+            //        'type' => 'object',
+            //        'additionalProperties' => [
+            //            'type'       => 'object',
+            //            'properties' => [
+            //                'name'   => [ 'type' => 'string' ],
+            //                'label'  => [ 'type' => 'string' ],
+            //                'source' => [ 'type' => 'string' ],
+            //            ],
+            //            'required' => [ 'name', 'label', 'source' ],
+            //        ],
+            //    ],
+            //],
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'                 => 'object',
+                        'additionalProperties' => [
+                            'type'                 => 'object',
+                            'additionalProperties' => [
+                                'type'       => 'object',
+                                'properties' => [
+                                    'name'   => [ 'type' => 'string' ],
+                                    'label'  => [ 'type' => 'string' ],
+                                    'source' => [ 'type' => 'string' ],
+                                ],
+                                'required' => [ 'name', 'label', 'source' ],
+                            ],
+                        ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
+        ));
 
         // Register the ability to get the individual block styles.
         wp_register_ability( 'icecubo/get-individual-block-styles', array(
             'label' => __( 'IceCubo - Get Individual Block Styles', 'icecubo' ),
-            'description' => __( 'Gets the styles for a specific block.', 'icecubo' ),
+            'description' => __( 'Gets the styles for a specific block. The prompt should be a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_individual_block_styles',
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
-            //'meta' => array(
-            //    'public'       => false,
-            //    'show_in_rest' => true,
-            //),
-            'input_schema' => array(
-                'type' => 'object',
-                'properties' => array(
-                    'prompt' => array( 'type' => 'string' )
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            /**
+             * JSON Schema describing the data the ability expects when it runs.
+             * WordPress uses it to validate the input and to tell clients,
+             * including AI tools, which arguments they can provide
+             */
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'prompt' => [
+                        'type'        => 'string',
+                        'description' => __( 'Block slug, e.g. core/heading', 'icecubo' ),
+                    ],
+                ],
+                'required' => [ 'prompt' ],
+                'additionalProperties' => false,
+            ],
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'  => 'array',
+                        'items' => [
+                            'type'       => 'object',
+                            'properties' => [
+                                'name'   => [ 'type' => 'string' ],
+                                'label'  => [ 'type' => 'string' ],
+                                'source' => [ 'type' => 'string' ],
+                            ],
+                            'required' => [ 'name', 'label', 'source' ],
+                        ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
         ) );
 
     } // function icecubo_register_abilities end
@@ -212,10 +429,88 @@ if (! function_exists('icecubo_get_block_patterns') ) {
     }
 }
 
+// This is the callback that runs when the ability is executed.
+if (! function_exists('icecubo_ability_callback_templates_list') ) {
+    function icecubo_ability_callback_templates_list() {
+        return icecubo_get_templates();
+    }
+}
+
+function icecubo_get_templates() {
+    $templates = get_block_templates(array(), 'wp_template');
+
+    return array_map( function( $template ) {
+        return array(
+            'slug' => $template->slug,
+            'title' => $template->title,
+            'type' => $template->type,
+            'description' => $template->description,
+            'theme' => $template->theme,
+            'source' => $template->source,
+            'content' => $template->content,
+        );
+    }, $templates );
+}
+
+// This is the callback that runs when the ability is executed.
+if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
+    function icecubo_ability_callback_template_parts_list( $input ) {
+        $parts = icecubo_get_template_parts()[$input['prompt']] ?? null;
+
+        if ( null === $parts ) {
+            return array( 'result' => array() );
+        }
+
+        return array(
+            'result' => array_map(
+                static function( $part ) {
+                    return is_object( $part ) ? get_object_vars( $part ) : $part;
+                },
+                $parts
+            ),
+        );
+    }
+}
+
+function icecubo_get_template_parts() {
+
+    $template_parts = get_block_templates( array(), 'wp_template_part' );
+
+    $query_headers = array(
+        'area' => 'header' // Get only header parts
+    );
+
+    $query_footers = array(
+        'area' => 'footer' // Get only footer parts
+    );
+
+    $query_navigation_overlays = array(
+        'area' => 'navigation-overlay' // Get only navigation-overlay parts
+    );
+
+    $query_uncategorized = array(
+        'area' => 'uncategorized' // Get only uncategorized parts
+    );
+
+    $header_parts = get_block_templates( $query_headers, 'wp_template_part' );
+    $footer_parts = get_block_templates( $query_footers, 'wp_template_part' );
+    $navigation_overlay_parts = get_block_templates( $query_navigation_overlays, 'wp_template_part' );
+    $uncategorized_parts = get_block_templates( $query_uncategorized, 'wp_template_part' );
+
+    return array(
+        'header' => $header_parts,
+        'footer' => $footer_parts,
+        'nav' => $navigation_overlay_parts,
+        'uncategorized' => $uncategorized_parts,
+        //'all'    => array_merge( $header_parts, $footer_parts, $navigation_overlay_parts, $uncategorized_parts ),
+        'all'    => $template_parts,
+    );
+}
 
 // This is the callback that runs when the ability is executed.
 function icecubo_ability_callback_block_styles_list( $input ) {
     return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "ice", "other", or "all".']);
+    //return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? $input['all']);
     
     /* 
     * Alternative approach to handle the prompt input and return the corresponding block styles:
@@ -293,76 +588,11 @@ function icecubo_get_registered_block_styles() {
         }
     }
 
+    //var_dump($icecubo_styles);
     return array(
         'ice'   => $icecubo_styles,
         'other' => $other_styles,
         'all'   => $all_styles,
-    );
-}
-
-
-// This is the callback that runs when the ability is executed.
-if (! function_exists('icecubo_ability_callback_templates_list') ) {
-    function icecubo_ability_callback_templates_list() {
-        return icecubo_get_templates();
-    }
-}
-
-function icecubo_get_templates() {
-    $templates = get_block_templates(array(), 'wp_template');
-
-    return array_map( function( $template ) {
-        return array(
-            'slug' => $template->slug,
-            'title' => $template->title,
-            'type' => $template->type,
-            'description' => $template->description,
-            'theme' => $template->theme,
-            'source' => $template->source,
-            'content' => $template->content,
-        );
-    }, $templates );
-}
-
-// This is the callback that runs when the ability is executed.
-if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
-    function icecubo_ability_callback_template_parts_list( $input ) {
-        return array('result' => icecubo_get_template_parts()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "header", "footer", "nav", "uncategorized", or "all".']);
-    }
-}
-
-function icecubo_get_template_parts() {
-
-    $template_parts = get_block_templates( array(), 'wp_template_part' );
-
-    $query_headers = array(
-        'area' => 'header' // Get only header parts
-    );
-
-    $query_footers = array(
-        'area' => 'footer' // Get only footer parts
-    );
-
-    $query_navigation_overlays = array(
-        'area' => 'navigation-overlay' // Get only navigation-overlay parts
-    );
-
-    $query_uncategorized = array(
-        'area' => 'uncategorized' // Get only uncategorized parts
-    );
-
-    $header_parts = get_block_templates( $query_headers, 'wp_template_part' );
-    $footer_parts = get_block_templates( $query_footers, 'wp_template_part' );
-    $navigation_overlay_parts = get_block_templates( $query_navigation_overlays, 'wp_template_part' );
-    $uncategorized_parts = get_block_templates( $query_uncategorized, 'wp_template_part' );
-
-    return array(
-        'header' => $header_parts,
-        'footer' => $footer_parts,
-        'nav' => $navigation_overlay_parts,
-        'uncategorized' => $uncategorized_parts,
-        //'all'    => array_merge( $header_parts, $footer_parts, $navigation_overlay_parts, $uncategorized_parts ),
-        'all'    => $template_parts,
     );
 }
 
@@ -437,6 +667,13 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
         // Flatten the array keys before returning the JSON payload
         $all_individual_styles = array_values( $get_styles );
-        return !empty($all_individual_styles) ? array( 'result' => $all_individual_styles ) : array('result' => 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.'  );
+        //return !empty($all_individual_styles) ? array( 'result' => $all_individual_styles ) : array( 'result' => [array('No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.') ] );
+        //return array('result' => $all_individual_styles ) ?? array(['result' => 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.']);
+        return array('result' => $all_individual_styles );
+
     }
 }
+
+//var_dump(icecubo_ability_callback_patterns_list());
+//add_action( 'init', 'icecubo_ability_callback_patterns_list' );
+//add_action( 'init', 'icecubo_get_registered_block_styles' );
