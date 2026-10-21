@@ -4,7 +4,8 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Activate IceCubo Pro license.
+ * Title: Placeholder for the IceCubo Pro license activation.
+ * Description: This pattern is shown when the Pro plugin is activated but the license is not yet activated. Encourages users to activate their IceCubo Pro license.
  * Slug: icecubo/get-pro-activate-license
  * Categories: hidden
  * Inserter: false

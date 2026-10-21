@@ -4,7 +4,8 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Get IceCubo Pro version.
+ * Title: Placeholder for the IceCubo Pro version upgrade. 
+ * Description: This pattern is used in the free version of the theme to encourage users to upgrade to the Pro version for additional patterns and features.
  * Slug: icecubo/get-pro-patterns
  * Categories: hidden
  * Inserter: false
@@ -15,4 +16,3 @@ if (! defined('ABSPATH') ) {
 <p class="has-text-align-center has-white-ice-color has-text-color has-link-color has-large-font-size">Get <a href="https://maxpressy.com/icecubo/" target="_blank" rel="noreferrer noopener">IceCubo Pro version</a> to get more patterns!</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
- 
