@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Columns - Grid by alternating images, middle one lagre.
+ * Title: Columns - Grid by alternating images, middle one large.
  * Slug: icecubo/section-columns-features-img-grid-middle-big
  * Categories: icecubo-section
  */

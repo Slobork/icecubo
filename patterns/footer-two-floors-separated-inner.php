@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Two floors (spearated) - inner content.
+ * Title: Two floors (separated) - inner content.
  * Slug: icecubo/footer-two-floors-separated-inner
  * Inserter: false
  * Categories: hidden

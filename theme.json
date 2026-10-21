@@ -1372,7 +1372,7 @@
 		{
 			"area": "footer",
 			"name": "footer-2floors-gradual-glowing-bg",
-			"title": "Footer: Two floors - Gradual glowing backgroud and horizontal lines at the top."
+			"title": "Footer: Two floors - Gradual glowing background and horizontal lines at the top."
 		},
 		{
 			"area": "footer",
@@ -1382,7 +1382,7 @@
 		{
 			"area": "footer",
 			"name": "footer-2floors-large-searchbox",
-			"title": "Footer: Two floors - large searchbox and links on side."
+			"title": "Footer: Two floors - large search-box and links on side."
 		},
 		{
 			"area": "footer",
@@ -1532,12 +1532,12 @@
 		{
 		    "area": "navigation-overlay",
             "name": "navigation-overlay-1",
-            "title": "Light with Submenus Hidden. Aligned Left."
+            "title": "Light with Sub-menus Hidden. Aligned Left."
 		},
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-2",
-			"title": "Dark with Submenus Hidden. Border on the Left and Bottom. Aligned Right."
+			"title": "Dark with Sub-menus Hidden. Border on the Left and Bottom. Aligned Right."
 		},
 		{
 			"area": "navigation-overlay",
@@ -1547,7 +1547,7 @@
 		{
 			"area": "navigation-overlay",
             "name": "navigation-overlay-4",
-            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Alighned Center."
+            "title": "Mix Matching and Primary Colors with Scaling Horizontal Animation. Aligned Center."
 		},
 		{
 			"area": "navigation-overlay",
@@ -1602,7 +1602,7 @@
 		{
 			"area": "navigation-overlay",
 			"name": "navigation-overlay-15",
-			"title": "Generic Background Color with Submenus Hidden. Curved at the Bottom Left. Aligned Right."
+			"title": "Generic Background Color with Sub-menus Hidden. Curved at the Bottom Left. Aligned Right."
 		},
 		{
 			"area": "navigation-overlay",

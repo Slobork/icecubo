@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Cover - Overlapping section with opacity and backgroud image applied.
+ * Title: Cover - Overlapping section with opacity and background image applied.
  * Slug: icecubo/section-cover-overlap-bg-img
  * Categories: icecubo-section
  */

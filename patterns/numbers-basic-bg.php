@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Numbers in columns (with backgroud applied).
+ * Title: Numbers in columns (with background applied).
  * Slug: icecubo/numbers-basic-bg
  * Categories: icecubo-numbers
  */

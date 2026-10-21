@@ -4,12 +4,12 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Testimonials in columns with image at bottom and large qoute.
- * Slug: icecubo/testimonials-bottom-image-large-qoute
+ * Title: Testimonials in columns with image at bottom and large quote.
+ * Slug: icecubo/testimonials-bottom-image-large-quote
  * Categories: icecubo-testimonials
  */
 ?>
-<!-- wp:columns {"metadata":{"categories":["icecubo-testimonials"],"patternName":"icecubo/testimonials-bottom-image-large-qoute","name":"Testimonials in columns with image at bottom and large qoute."}} -->
+<!-- wp:columns {"metadata":{"categories":["icecubo-testimonials"],"patternName":"icecubo/testimonials-bottom-image-large-quote","name":"Testimonials in columns with image at bottom and large quote."}} -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"30px"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"bottom"}} -->

@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Title: Columns - Awesome feature cover mesage on the left.
+ * Title: Columns - Awesome feature cover message on the left.
  * Slug: icecubo/features-columns-awesome-feature-left
  * Categories: icecubo-features
  */
