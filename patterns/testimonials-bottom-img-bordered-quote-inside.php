@@ -5,11 +5,11 @@ if (! defined('ABSPATH') ) {
 }
 /**
  * Title: Testimonials in columns with image at bottom and quote inside (Minimal bordered).
- * Slug: icecubo/testimonials-bottom-image-bordered-qoute-inside
+ * Slug: icecubo/testimonials-bottom-image-bordered-quote-inside
  * Categories: icecubo-testimonials
  */
 ?>
-<!-- wp:columns {"metadata":{"categories":["icecubo-testimonials"],"patternName":"icecubo/testimonials-bottom-image-bordered-qoute-inside","name":"Testimonials in columns with image at bottom and quote inside (Minimal bordered)."}} -->
+<!-- wp:columns {"metadata":{"categories":["icecubo-testimonials"],"patternName":"icecubo/testimonials-bottom-image-bordered-quote-inside","name":"Testimonials in columns with image at bottom and quote inside (Minimal bordered)."}} -->
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"border":{"width":"1px"},"spacing":{"padding":{"top":"var:preset|spacing|x-small","bottom":"var:preset|spacing|x-small","left":"var:preset|spacing|small","right":"var:preset|spacing|small"}}},"borderColor":"tint-3","layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group has-border-color has-tint-3-border-color" style="border-width:1px;padding-top:var(--wp--preset--spacing--x-small);padding-right:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--x-small);padding-left:var(--wp--preset--spacing--small)"><!-- wp:paragraph {"align":"left","style":{"elements":{"link":{"color":{"text":"#ffce3a"}}},"color":{"text":"#ffce3a"},"layout":{"selfStretch":"fit","flexSize":null}}} -->
