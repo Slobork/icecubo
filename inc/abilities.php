@@ -178,30 +178,51 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'items' => [
                             'type'       => 'object',
                             'properties' => [
-                                'type'   => [ 'type' => 'string' ],
-                                'theme'  => [ 'type' => 'string' ],
-                                'slug'   => [ 'type' => 'string' ],
-                                'id'     => [ 'type' => 'string' ],
-                                'title'  => [ 'type' => 'string' ],
-                                'content'=> [ 'type' => 'string' ],
-                                'description' => [ 'type' => 'string' ],
-                                'source' => [ 'type' => 'string' ],
-                                'origin' => [ 'type' => [ 'string', 'null' ] ],
-                                'wp_id'  => [ 'type' => [ 'integer', 'null' ] ],
-                                'status' => [ 'type' => 'string' ],
-                                'has_theme_file' => [ 'type' => 'boolean' ],
-                                'is_custom' => [ 'type' => 'boolean' ],
-                                'author' => [ 'type' => [ 'integer', 'null' ] ],
-                                'plugin' => [ 'type' => [ 'string', 'null' ] ],
-                                'post_types' => [
-                                    'type'  => ['array', 'null'],
+                                'type'           => [ 'type' => 'string' ],
+                                'theme'          => [ 'type' => 'string' ],
+                                'slug'           => [ 'type' => 'string' ],
+                                'id'             => [ 'type' => 'string' ],
+                                'title'          => [ 'type' => 'string' ],
+                                'content'        => [ 'type' => 'string' ],
+                                'description'    => [ 'type' => 'string' ],
+                                'source'         => [ 'type' => 'string' ],
+                                'origin'          => [ 'type' => [ 'string', 'null' ] ],
+                                'wp_id'           => [ 'type' => [ 'integer', 'null' ] ],
+                                'status'          => [ 'type' => 'string' ],
+                                'has_theme_file'  => [ 'type' => 'boolean' ],
+                                'is_custom'       => [ 'type' => 'boolean' ],
+                                'author'          => [ 'type' => [ 'integer', 'string', 'null' ] ],
+                                'plugin'          => [ 'type' => [ 'string', 'null' ] ],
+                                'post_types'      => [
+                                    'type'  => [ 'array', 'null' ],
                                     'items' => [ 'type' => 'string' ],
                                 ],
-                                'area' => [ 'type' => 'string' ],
-                                'modified' => [ 'type' =>  ['integer', 'string', 'null'] ],
-                                'date' => [ 'type' => ['integer', 'string', 'null'] ],
+                                'area'            => [ 'type' => 'string' ],
+                                'modified'        => [ 'type' => [ 'string', 'null' ] ],
+                                'date'            => [ 'type' => [ 'string', 'null' ] ],
                             ],
-                            'required' => [ 'type', 'slug', 'id', 'wp_id' ],
+                            //'required' => [ 'type', 'slug', 'id', 'wp_id' ],
+                            'required' => [
+                                'type',
+                                'theme',
+                                'slug',
+                                'id',
+                                'title',
+                                'content',
+                                'description',
+                                'source',
+                                'origin',
+                                'wp_id',
+                                'status',
+                                'has_theme_file',
+                                'is_custom',
+                                'author',
+                                'plugin',
+                                'post_types',
+                                'area',
+                                'modified',
+                                'date',
+                            ],
                         ],
                     ],
                 ],
@@ -283,7 +304,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __( 'Lists all vailable block styles. Sift it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
+                        'description' => __( 'Lists all vailable block styles. Sort it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
                         'enum'        => [ 'ice', 'other', 'all' ],
                     ],
                 ],
@@ -509,17 +530,8 @@ function icecubo_get_template_parts() {
 
 // This is the callback that runs when the ability is executed.
 function icecubo_ability_callback_block_styles_list( $input ) {
-    return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "ice", "other", or "all".']);
-    //return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? $input['all']);
-    
-    /* 
-    * Alternative approach to handle the prompt input and return the corresponding block styles:
-    
-    return array('result' => !empty($input['prompt']) ? icecubo_get_registered_block_styles()[$input['prompt']] : icecubo_get_registered_block_styles()['all']);
-    return array('result' => icecubo_get_registered_block_styles()['all']);
-    return array('result' => icecubo_get_registered_block_styles()['ice']);
-    return array('result' => icecubo_get_registered_block_styles()['other']);
-     */
+    return array('result' => icecubo_get_registered_block_styles()[$input['prompt']]) ?? array('result' => icecubo_get_registered_block_styles('all'));
+    //return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "ice", "other", or "all".']);
 }
 
 function icecubo_get_registered_block_styles() {
@@ -588,7 +600,6 @@ function icecubo_get_registered_block_styles() {
         }
     }
 
-    //var_dump($icecubo_styles);
     return array(
         'ice'   => $icecubo_styles,
         'other' => $other_styles,
@@ -676,4 +687,4 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
 //var_dump(icecubo_ability_callback_patterns_list());
 //add_action( 'init', 'icecubo_ability_callback_patterns_list' );
-//add_action( 'init', 'icecubo_get_registered_block_styles' );
+//add_action( 'init', 'icecubo_ability_callback_block_styles_list' );
