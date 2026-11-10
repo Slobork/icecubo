@@ -4,7 +4,7 @@ if (! defined('ABSPATH') ) {
     exit;
 }
 /**
- * Register new abilities and categories beneath.
+ * Register new abilities and their categories beneath.
  *
  * @package IceCubo
  */
@@ -71,12 +71,13 @@ if (! function_exists('icecubo_register_abilities') ) {
                     'properties' => [
                         'name'       => [ 'type' => 'string' ],
                         'title'      => [ 'type' => 'string' ],
+                        'description' => [ 'type' => 'string' ],
                         'categories' => [
                             'type'  => 'array',
                             'items' => [ 'type' => 'string' ],
                         ],
                     ],
-                    'required' => [ 'name', 'title', 'categories' ],
+                    'required' => [ 'name', 'title', 'description', 'categories' ],
                 ],
             ],
         ));
@@ -413,16 +414,8 @@ if (! function_exists('icecubo_register_abilities') ) {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_patterns_list') ) {
-    //function icecubo_ability_callback_patterns_list( $input ) {
     function icecubo_ability_callback_patterns_list() {
-        return icecubo_get_block_patterns();
-    }
-}
-
-if (! function_exists('icecubo_get_block_patterns') ) {
-
-    function icecubo_get_block_patterns() {
-
+        
         $registry = WP_Block_Patterns_Registry::get_instance();
         $all_patterns = $registry->get_all_registered();
 
@@ -436,6 +429,7 @@ if (! function_exists('icecubo_get_block_patterns') ) {
             $output[] = [
                 'name'       => $pattern['name'],
                 'title'      => $pattern['title'],
+                'description' => isset( $pattern['description'] ) ? $pattern['description'] : '',
                 'categories' => isset( $pattern['categories'] ) ? $pattern['categories'] : [],
             ];
         }
@@ -444,7 +438,6 @@ if (! function_exists('icecubo_get_block_patterns') ) {
             return strcmp( $a['name'], $b['name'] );
         } );
 
-        //return json_encode( $output, JSON_PRETTY_PRINT );
         return $output;
 
     }
