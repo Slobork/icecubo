@@ -294,12 +294,6 @@ if (! function_exists('icecubo_register_abilities') ) {
              * WordPress uses it to validate the input and to tell clients,
              * including AI tools, which arguments they can provide
              */
-            //'input_schema' => array(
-            //    'type' => 'object',
-            //    'properties' => array(
-            //        'prompt' => array( 'type' => 'string' )
-            //    ),
-            //),
             'input_schema' => [
                 'type'       => 'object',
                 'properties' => [
@@ -309,24 +303,9 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'enum'        => [ 'ice', 'other', 'all' ],
                     ],
                 ],
-                //'required'             => [ 'prompt' ],
+                'required'             => [ 'prompt' ],
                 'additionalProperties' => false,
             ],
-            //'output_schema' => [
-            //    'type' => 'object',
-            //    'additionalProperties' => [
-            //        'type' => 'object',
-            //        'additionalProperties' => [
-            //            'type'       => 'object',
-            //            'properties' => [
-            //                'name'   => [ 'type' => 'string' ],
-            //                'label'  => [ 'type' => 'string' ],
-            //                'source' => [ 'type' => 'string' ],
-            //            ],
-            //            'required' => [ 'name', 'label', 'source' ],
-            //        ],
-            //    ],
-            //],
             'output_schema' => [
                 'type'       => 'object',
                 'properties' => [
@@ -533,10 +512,10 @@ if (! function_exists('icecubo_ability_callback_patterns_list') ) {
             }
 
             $output[] = [
-                'name'       => $pattern['name'],
-                'title'      => $pattern['title'],
+                'name'        => $pattern['name'],
+                'title'       => $pattern['title'],
                 'description' => isset( $pattern['description'] ) ? $pattern['description'] : '',
-                'categories' => isset( $pattern['categories'] ) ? $pattern['categories'] : [],
+                'categories'  => isset( $pattern['categories'] ) ? $pattern['categories'] : [],
             ];
         }
 
@@ -629,8 +608,7 @@ function icecubo_get_template_parts() {
 
 // This is the callback that runs when the ability is executed.
 function icecubo_ability_callback_block_styles_list( $input ) {
-    return array('result' => icecubo_get_registered_block_styles()[$input['prompt']]) ?? array('result' => icecubo_get_registered_block_styles('all'));
-    //return array('result' => icecubo_get_registered_block_styles()[$input['prompt']] ?? ['result' => 'Invalid prompt. Please use "ice", "other", or "all".']);
+    return array('result' => icecubo_get_registered_block_styles()[$input['prompt']]);
 }
 
 function icecubo_get_registered_block_styles() {
@@ -773,8 +751,14 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
         // Flatten the array keys before returning the JSON payload
         $all_individual_styles = array_values( $get_styles );
-        //return !empty($all_individual_styles) ? array( 'result' => $all_individual_styles ) : array( 'result' => [array('No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.') ] );
-        //return array('result' => $all_individual_styles ) ?? array(['result' => 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.']);
+        $all_individual_styles = !empty($all_individual_styles) ? $all_individual_styles : [
+            [
+                'name' => __( 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.', 'icecubo' ),
+                'label' => __( 'No value.', 'icecubo' ),
+                'source' => __( 'none', 'icecubo' )
+            ]
+        ];
+
         return array('result' => $all_individual_styles );
 
     }
@@ -899,8 +883,3 @@ if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
         
     }
 }
-
-
-//var_dump(icecubo_ability_callback_patterns_list());
-//add_action( 'init', 'icecubo_ability_callback_patterns_list' );
-//add_action( 'init', 'icecubo_ability_callback_block_styles_list' );
