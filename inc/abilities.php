@@ -409,6 +409,112 @@ if (! function_exists('icecubo_register_abilities') ) {
             ],
         ) );
 
+        // Register the ability to get theme's global options.
+        wp_register_ability( 'icecubo/get-global-options', array(
+            'label' => __( 'IceCubo - Get Theme\'s Global Options', 'icecubo' ),
+            'description' => __( 'Retrieve IceCubo theme global options. Use "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows" or "all" as the prompt.', 'icecubo' ),
+            'category' => 'icecubo-ai-tools',
+            'execute_callback' => 'icecubo_ability_callback_get_theme_global_options',
+            'permission_callback' => function() {
+                return current_user_can( 'edit_posts' );
+            },
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
+                ),
+            ),
+            /**
+             * JSON Schema describing the data the ability expects when it runs.
+             * WordPress uses it to validate the input and to tell clients,
+             * including AI tools, which arguments they can provide
+             */
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'prompt' => [
+                        'type'        => 'string',
+                        'description' => __('Global options to query', 'icecubo'),
+                        'enum'        => ['colors', 'gradients', 'spacing_theme', 'typography', 'font_sizes_theme', 'font_families_theme', 'custom', 'shadows', 'all'],
+                    ],
+                ],
+                'required'             => [ 'prompt' ],
+                'additionalProperties' => false,
+            ],
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'  => 'object',
+                        'items' => [
+                            'type'       => 'object',
+                            'properties' => [],
+                        ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
+        ) );
+
+        // Register the ability to list all animations.
+        wp_register_ability( 'icecubo/list-animations', array(
+            'label' => __( 'IceCubo - List Animations And Related Options', 'icecubo' ),
+            'description' => __( 'Lists all available IceCubo animations. Add animation as additional classes to any block, usage example: "anim-bounce fast del1 animrep"', 'icecubo' ),
+            'category' => 'icecubo-ai-tools',
+            'execute_callback' => 'icecubo_ability_callback_get_all_animations',
+            'permission_callback' => function() {
+                return current_user_can( 'edit_posts' );
+            },
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
+                                           // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
+                                           // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
+                ),
+            ),
+            'output_schema' => [
+                'type'       => 'object',
+                'properties' => [
+                    'result' => [
+                        'type'       => 'object',
+                        'properties' => [
+                            'globally_active' => [ 'type' => 'string', 'default' => 'false' ],
+                            'animations'      => [
+                                'type'  => 'array',
+                                'items' => [ 'type' => 'string' ],
+                            ],
+                            'speed' => [
+                                'type'                 => 'object',
+                                'additionalProperties' => [ 'type' => 'string' ],
+                            ],
+                            'delay' => [
+                                'type'                 => 'object',
+                                'additionalProperties' => [ 'type' => 'string' ],
+                            ],
+                            'animrep' => [ 'type' => 'string' ],
+                        ],
+                        'required' => [ 'globally_active', 'animations', 'speed', 'delay', 'animrep' ],
+                    ],
+                ],
+                'required' => [ 'result' ],
+            ],
+        ) );
+
     } // function icecubo_register_abilities end
 } // function_exists check end
 
@@ -603,23 +709,19 @@ function icecubo_get_registered_block_styles() {
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_get_all_registered_blocks') ) {
     function icecubo_ability_callback_get_all_registered_blocks() {
-        return array('result' => icecubo_get_all_registered_blocks());
+
+        // Get the instance of the block registry
+        $registry = WP_Block_Type_Registry::get_instance();
+        
+        // Get all block objects as an associative array
+        $all_blocks = $registry->get_all_registered();
+        
+        // Get just the block slugs (e.g., 'core/paragraph')
+        $block_slugs = array_keys( $all_blocks );
+
+        return array('result' => $block_slugs);
+        
     }
-}
-
-//add_action( 'init', 'icecubo_get_all_registered_blocks' );
-function icecubo_get_all_registered_blocks() {
-    // Get the instance of the block registry
-    $registry = WP_Block_Type_Registry::get_instance();
-    
-    // Get all block objects as an associative array
-    $all_blocks = $registry->get_all_registered();
-    
-    // Get just the block slugs (e.g., 'core/paragraph')
-    $block_slugs = array_keys( $all_blocks );
-
-    return $block_slugs;
-    
 }
 
 // This is the callback that runs when the ability is executed.
@@ -677,6 +779,127 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
     }
 }
+
+// This is the callback that runs when the ability is executed.
+if (! function_exists('icecubo_ability_callback_get_theme_global_options') ) {
+    function icecubo_ability_callback_get_theme_global_options( $input ) {
+        $parts = icecubo_get_theme_global_settings()[$input['prompt']] ?? null;
+
+        if ( null === $parts ) {
+            return array( 'result' => array() );
+        }
+
+        return array(
+            'result' => array_map(
+                static function( $part ) {
+                    return is_object( $part ) ? get_object_vars( $part ) : $part;
+                },
+                $parts
+            ),
+        );
+    }
+}
+
+function icecubo_get_theme_global_settings() {
+
+    // $global_settings = wp_get_global_settings();
+    $global_settings = WP_Theme_JSON_Resolver::get_merged_data()->get_settings();
+
+    $colors        = $global_settings["color"]["palette"];
+    $gradients     = $global_settings["color"]["gradients"];
+    $spacing_theme = $global_settings["spacing"]["spacingSizes"]["theme"];
+    $typography    = $global_settings["typography"];
+    $typography_font_sizes_theme    = $global_settings["typography"]["fontSizes"]["theme"];
+    $typography_font_families_theme = $global_settings["typography"]["fontFamilies"]["theme"];
+    $custom  = $global_settings["custom"];
+    $shadows = $global_settings["shadow"]["presets"];
+
+    return array(
+        'colors' => $colors,
+        'gradients' => $gradients,
+        'spacing_theme' => $spacing_theme,
+        'typography' => $typography,
+        'font_sizes_theme' => $typography_font_sizes_theme,
+        'font_families_theme' => $typography_font_families_theme,
+        'custom' => $custom,
+        'shadows' => $shadows,
+        'all'    => $global_settings,
+    );
+}
+
+
+// This is the callback that runs when the ability is executed.
+if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
+    function icecubo_ability_callback_get_all_animations() {
+
+        $anim_load = get_option('icecubo_animations_load');
+
+        return array(
+            'result' => array(
+                'globally_active' => $anim_load,
+                'animations' => array(
+                    'anim-bounce',
+                    'anim-fadeIn',
+                    'anim-fadeInUp',
+                    'anim-blurOut',
+                    'anim-pushUp',
+                    'anim-pushDown',
+                    'anim-pushLeft',
+                    'anim-pushRight',
+                    'anim-yankUp',
+                    'anim-yankDown',
+                    'anim-yankLeft',
+                    'anim-yankRight',
+                    'anim-flipX',
+                    'anim-flipY',
+                    'anim-flipXspin',
+                    'anim-flipYspin',
+                    'anim-rotateIn-left',
+                    'anim-rotateIn-right',
+                    'anim-to-transform',
+                    'anim-to-blob',
+                    'anim-scale-in-center',
+                    'anim-scale-in-hor-center',
+                    'anim-scale-in-ver-center',
+                    'anim-scale-in-top',
+                    'anim-scale-in-tr',
+                    'anim-scale-in-right',
+                    'anim-scale-in-br',
+                    'anim-scale-in-bottom',
+                    'anim-scale-in-bl',
+                    'anim-scale-in-left',
+                    'anim-scale-in-tl',
+                    'anim-slide-bg',
+                    'anim-slide-ch',
+                    'anim-text-accordion',
+                    'anim-text-accordion-minus',
+                    'anim-text-glow',
+                    'anim-text-glowOff',
+                    'anim-text-glowMatch',
+                    'anim-text-glowMatchOff',
+                ),
+                'speed' => array(
+                    'fastest' => 'Fastest',
+                    'fast' => 'Fast',
+                    '' => 'Normal',
+                    'slow' => 'Slow',
+                    'slowest' => 'Slowest',
+                ),
+                'delay' => array(
+                    'del025' => 'Delay 250 ms',
+                    'del05' => 'Delay 500 ms',
+                    'del075' => 'Delay 750 ms',
+                    'del1' => 'Delay 1s',
+                    'del2' => 'Delay 2s',
+                    'del3' => 'Delay 3s',
+                ),
+                'animrep' => 'animation repeats in a repeated viewport',
+            )
+        );
+        
+    }
+}
+
 
 //var_dump(icecubo_ability_callback_patterns_list());
 //add_action( 'init', 'icecubo_ability_callback_patterns_list' );
