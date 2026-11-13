@@ -299,7 +299,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __( 'Lists all vailable block styles. Sort it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
+                        'description' => __( 'Lists all available block styles. Sort it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
                         'enum'        => [ 'ice', 'other', 'all' ],
                     ],
                 ],
