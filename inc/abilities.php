@@ -41,10 +41,12 @@ if (! function_exists('icecubo_register_abilities') ) {
             return;
         }
 
+        $desc =  __( 'Lists all patterns provided by the IceCubo (both, provided by the theme and Pro plugin).', 'icecubo' );
+
         // Register the ability to list all block patterns.
         wp_register_ability( 'icecubo/list-patterns', array(
             'label' => __( 'IceCubo - List Patterns', 'icecubo' ),
-            'description' => __( 'Lists all patterns provided by the IceCubo (both, provided by the theme and Pro plugin).', 'icecubo' ),
+            'description' => $desc,
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_patterns_list',
             'permission_callback' => function() {
@@ -64,6 +66,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                            // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [],
+                'additionalProperties' => false,
+                'description' => __( 'No input is required.', 'icecubo' ),
+            ],
             'output_schema' => [
                 'type'  => 'array',
                 'items' => [
@@ -79,6 +87,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                     'required' => [ 'name', 'title', 'description', 'categories' ],
                 ],
+                'description' => $desc,
             ],
         ));
 
@@ -105,6 +114,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                            // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [],
+                'additionalProperties' => false,
+                'description' => __( 'No input is required.', 'icecubo' ),
+            ],
             'output_schema' => [
                 'type'  => 'array',
                 'items' => [
@@ -166,6 +181,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'type'        => 'string',
                         'description' => __('Template part type to query', 'icecubo'),
                         'enum'        => ['header', 'footer', 'nav', 'uncategorized', 'all'],
+                        'description' => __('The type of template part to query. Besides other options which are "header", "footer", "nav", and "all" (self explanatory), "uncategorized" will return sidebars as "sidebar" is not a supported wp_template_part area value, and as well other template parts that are not assigned to any specific area if created by users.', 'icecubo')
                     ],
                 ],
                 'required'             => [ 'prompt' ],
@@ -254,6 +270,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                            // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [],
+                'additionalProperties' => false,
+                'description' => __( 'No input is required.', 'icecubo' ),
+            ],
             'output_schema' => [
                 'type'       => 'object',
                 'properties' => [
@@ -299,7 +321,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __( 'Lists all available block styles. Sort it by using the "ice", "other" or "all" as the prompt', 'icecubo' ),
+                        'description' => __( 'Lists all available block styles. Sort it with a prompt by using the "ice" (will return block styles provided by the icecubo theme and its plugins), "other" (will return block styles provided by other plugins) or "all" (will return all block styles currently available on the site).', 'icecubo' ),
                         'enum'        => [ 'ice', 'other', 'all' ],
                     ],
                 ],
@@ -332,7 +354,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to get the individual block styles.
         wp_register_ability( 'icecubo/get-individual-block-styles', array(
             'label' => __( 'IceCubo - Get Individual Block Styles', 'icecubo' ),
-            'description' => __( 'Gets the styles for a specific block. The prompt should be a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block.', 'icecubo' ),
+            'description' => __( 'Gets the styles for a specific block. The prompt should be a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. You can utilize the "icecubo/list-blocks" ability to list all available blocks.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_individual_block_styles',
             'permission_callback' => function() {
@@ -362,7 +384,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __( 'Block slug, e.g. core/heading', 'icecubo' ),
+                        'description' => __( 'Block slug, e.g. "core/heading". You can utilize the "icecubo/list-blocks" ability to list all available blocks. Blocks provided by the WordPress core start with "core/".', 'icecubo' ),
                     ],
                 ],
                 'required' => [ 'prompt' ],
@@ -421,7 +443,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __('Global options to query', 'icecubo'),
+                        'description' => __('IceCubo theme global options to query. You can sift through specific options like "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows", or use "all" to query all available options even those that are not available through the specific sort filter.', 'icecubo'),
                         'enum'        => ['colors', 'gradients', 'spacing_theme', 'typography', 'font_sizes_theme', 'font_families_theme', 'custom', 'shadows', 'all'],
                     ],
                 ],
@@ -466,6 +488,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                            // Esencially, check is it the same result (effect) each time? Idempotent does not check if the returned data is identical each time. Idempotence describes repeated calls’ effects, not whether the returned data is permanently identical.
                 ),
             ),
+            'input_schema' => [
+                'type'       => 'object',
+                'properties' => [],
+                'additionalProperties' => false,
+                'description' => __( 'No input is required.', 'icecubo' ),
+            ],
             'output_schema' => [
                 'type'       => 'object',
                 'properties' => [
@@ -491,6 +519,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __( 'You can use this result to construct the animation. Add animation as additional classes to any block, usage example: "anim-bounce fast del1 animrep". Option "globally_active" checks if the animation is enabled over the site (means CSS files are loaded).', 'icecubo' ),
             ],
         ) );
 
