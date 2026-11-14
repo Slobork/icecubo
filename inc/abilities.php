@@ -41,12 +41,10 @@ if (! function_exists('icecubo_register_abilities') ) {
             return;
         }
 
-        $desc =  __( 'Lists all patterns provided by the IceCubo (both, provided by the theme and Pro plugin).', 'icecubo' );
-
         // Register the ability to list all block patterns.
         wp_register_ability( 'icecubo/list-patterns', array(
             'label' => __( 'IceCubo - List Patterns', 'icecubo' ),
-            'description' => $desc,
+            'description' => __( 'Lists all patterns provided by the IceCubo (both, provided by the theme and Pro plugin).', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_patterns_list',
             'permission_callback' => function() {
@@ -87,14 +85,14 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                     'required' => [ 'name', 'title', 'description', 'categories' ],
                 ],
-                'description' => $desc,
+                'description' => __( 'The result is an array of all registered block patterns provided by the IceCubo theme and its plugins. Each pattern object contains the pattern name, title, description, and categories.', 'icecubo' )
             ],
         ));
 
         // Register the ability to list all templates.
         wp_register_ability( 'icecubo/list-templates', array(
             'label' => __( 'IceCubo - List Templates', 'icecubo' ),
-            'description' => __( 'Lists all templates, either provided by the IceCubo (both, provided by the theme and Pro plugin), or some other plugin.', 'icecubo' ),
+            'description' => __( 'The result is an array of all registered templates, either provided by the IceCubo theme and its plugins or other plugins.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_templates_list',
             'permission_callback' => function() {
@@ -143,6 +141,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'content',
                     ],
                 ],
+                'description' => __( 'The result is an array of all registered templates, either provided by the IceCubo theme and its plugins or other plugins. Each template object contains the template slug, title, type, description, theme, source, and content.', 'icecubo' )
             ],
         ));
 
@@ -181,7 +180,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'type'        => 'string',
                         'description' => __('Template part type to query', 'icecubo'),
                         'enum'        => ['header', 'footer', 'nav', 'uncategorized', 'all'],
-                        'description' => __('The type of template part to query. Besides other options which are "header", "footer", "nav", and "all" (self explanatory), "uncategorized" will return sidebars as "sidebar" is not a supported wp_template_part area value, and as well other template parts that are not assigned to any specific area if created by users.', 'icecubo')
+                        'description' => __('The type of template part to query. Besides other options which are "header", "footer", "nav", and "all" (self explanatory), "uncategorized" will return sidebars since "sidebar" is not a supported wp_template_part area value, and as well other template parts that are not assigned to any specific area if created by users.', 'icecubo')
                     ],
                 ],
                 'required'             => [ 'prompt' ],
@@ -244,6 +243,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __('The result is an array of template parts matching the requested type, e.g. "header", "footer", etc. Each template part object contains details such as its type, theme, slug, title, content, description, source, and other relevant metadata.', 'icecubo'),
             ],
         ) );
 
@@ -285,6 +285,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __( 'The result is an array of all registered block names (slugs) available in the current WordPress installation.', 'icecubo' ),
             ],
         ) );
 
@@ -348,6 +349,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __( 'The result is an object where each key is a block name (slug) and its value is another object containing the available styles for that block. Each style object contains the style name, label, and source.', 'icecubo' ),
             ],
         ));
 
@@ -407,6 +409,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __( 'The result is an array of styles for the specified block. Each style object contains the style name, label, and source.', 'icecubo' ),
             ],
         ) );
 
@@ -462,6 +465,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
+                'description' => __('The result is an object containing the requested global options from the IceCubo theme. The structure of the result will vary based on the prompt provided or even the theme updates.', 'icecubo')
             ],
         ) );
 
@@ -500,7 +504,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     'result' => [
                         'type'       => 'object',
                         'properties' => [
-                            'globally_active' => [ 'type' => 'string', 'default' => 'false' ],
+                            'globally_active' => [ 'type' => [ 'string', 'boolean', 'null' ] ],
                             'animations'      => [
                                 'type'  => 'array',
                                 'items' => [ 'type' => 'string' ],
@@ -519,7 +523,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
-                'description' => __( 'You can use this result to construct the animation. Add animation as additional classes to any block, usage example: "anim-bounce fast del1 animrep". Option "globally_active" checks if the animation is enabled over the site (means CSS files are loaded).', 'icecubo' ),
+                'description' => __( 'The result is an object containing the animation values. These values can be used to construct the animation. Animation can be added as additional classes to any block, usage example: "anim-bounce fast del1 animrep". Property "globally_active" checks if the animation is enabled over the site (means CSS files are loaded), other properties can be used to construct the animation.', 'icecubo' ),
             ],
         ) );
 
