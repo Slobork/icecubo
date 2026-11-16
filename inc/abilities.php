@@ -92,7 +92,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all templates.
         wp_register_ability( 'icecubo/list-templates', array(
             'label' => __( 'IceCubo - List Templates', 'icecubo' ),
-            'description' => __( 'The result is an array of all registered templates, either provided by the IceCubo theme and its plugins or other plugins.', 'icecubo' ),
+            'description' => __( 'The result is an array of all registered templates, either provided by the IceCubo theme and its plugins or other plugins. Use true/false for include_content to include/exclude template content.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_templates_list',
             'permission_callback' => function() {
@@ -114,9 +114,18 @@ if (! function_exists('icecubo_register_abilities') ) {
             ),
             'input_schema' => [
                 'type'       => 'object',
-                'properties' => [],
+                'properties'           => array(
+                    'include_content' => array(
+                        'type'        => 'boolean',
+                        'description' => __(
+                            'Whether to include each template’s full block markup. Defaults to false. If true, the content property will be included in each template object along with the other template properties.',
+                            'icecubo'
+                        ),
+                        'default'     => false,
+                    ),
+                ),
                 'additionalProperties' => false,
-                'description' => __( 'No input is required.', 'icecubo' ),
+                'default'              => array(),
             ],
             'output_schema' => [
                 'type'  => 'array',
@@ -138,7 +147,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                         'description',
                         'theme',
                         'source',
-                        'content',
+                        //'content',
                     ],
                 ],
                 'description' => __( 'The result is an array of all registered templates, either provided by the IceCubo theme and its plugins or other plugins. Each template object contains the template slug, title, type, description, theme, source, and content.', 'icecubo' )
@@ -148,7 +157,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all template parts.
         wp_register_ability( 'icecubo/list-template-parts', array(
             'label' => __( 'IceCubo - List Template Parts', 'icecubo' ),
-            'description' => __( 'Lists all template parts. Use "header", "footer", "nav", "uncategorized", or "all" as the prompt.', 'icecubo' ),
+            'description' => __( 'Lists template parts by type. Use "header", "footer", "nav", "uncategorized", or "all" as the area. Set include_content to true to include full template markup; it defaults to false.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_template_parts_list',
             'permission_callback' => function() {
@@ -176,14 +185,22 @@ if (! function_exists('icecubo_register_abilities') ) {
             'input_schema' => [
                 'type'       => 'object',
                 'properties' => [
-                    'prompt' => [
+                    'area' => [
                         'type'        => 'string',
                         'description' => __('Template part type to query', 'icecubo'),
                         'enum'        => ['header', 'footer', 'nav', 'uncategorized', 'all'],
                         'description' => __('The type of template part to query. Besides other options which are "header", "footer", "nav", and "all" (self explanatory), "uncategorized" will return sidebars since "sidebar" is not a supported wp_template_part area value, and as well other template parts that are not assigned to any specific area if created by users.', 'icecubo')
                     ],
+                    'include_content' => [
+                        'type'        => 'boolean',
+                        'description' => __(
+                            'Whether to include each template\'s full block markup. Defaults to false. If true, the content property will be included in each template object along with the other template properties.',
+                            'icecubo'
+                        ),
+                        'default'     => false,
+                    ],
                 ],
-                'required'             => [ 'prompt' ],
+                'required'             => [ 'area' ],
                 'additionalProperties' => false,
             ],
             'output_schema' => [
@@ -217,14 +234,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                 'modified'        => [ 'type' => [ 'string', 'null' ] ],
                                 'date'            => [ 'type' => [ 'string', 'null' ] ],
                             ],
-                            //'required' => [ 'type', 'slug', 'id', 'wp_id' ],
                             'required' => [
                                 'type',
                                 'theme',
                                 'slug',
                                 'id',
                                 'title',
-                                'content',
                                 'description',
                                 'source',
                                 'origin',
@@ -243,7 +258,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
-                'description' => __('The result is an array of template parts matching the requested type, e.g. "header", "footer", etc. Each template part object contains details such as its type, theme, slug, title, content, description, source, and other relevant metadata.', 'icecubo'),
+                'description' => __('The result is an array of template parts matching the requested area, e.g. "header", "footer", etc. Each template part object contains details such as its type, theme, slug, title, content (must be specified with include_content set to true), description, source, and other relevant metadata.', 'icecubo'),
             ],
         ) );
 
@@ -292,7 +307,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all block styles.
         wp_register_ability( 'icecubo/list-block-styles', array(
             'label' => __( 'IceCubo - List Block Styles', 'icecubo' ),
-            'description' => __( 'Lists all block styles. Use "ice", "other" or "all" as the prompt.', 'icecubo' ),
+            'description' => __( 'Lists all block styles. Use "ice", "other" or "all" as the prompt to sift through them.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_block_styles_list',
             'permission_callback' => function() {
@@ -356,7 +371,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to get the individual block styles.
         wp_register_ability( 'icecubo/get-individual-block-styles', array(
             'label' => __( 'IceCubo - Get Individual Block Styles', 'icecubo' ),
-            'description' => __( 'Gets the styles for a specific block. The prompt should be a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. You can utilize the "icecubo/list-blocks" ability to list all available blocks.', 'icecubo' ),
+            'description' => __( 'Gets the styles for a specific block. The request should be a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. You can utilize the "icecubo/list-blocks" ability to list all available blocks.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_individual_block_styles',
             'permission_callback' => function() {
@@ -384,12 +399,12 @@ if (! function_exists('icecubo_register_abilities') ) {
             'input_schema' => [
                 'type'       => 'object',
                 'properties' => [
-                    'prompt' => [
+                    'block_slug' => [
                         'type'        => 'string',
                         'description' => __( 'Block slug, e.g. "core/heading". You can utilize the "icecubo/list-blocks" ability to list all available blocks. Blocks provided by the WordPress core start with "core/".', 'icecubo' ),
                     ],
                 ],
-                'required' => [ 'prompt' ],
+                'required' => [ 'block_slug' ],
                 'additionalProperties' => false,
             ],
             'output_schema' => [
@@ -504,7 +519,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     'result' => [
                         'type'       => 'object',
                         'properties' => [
-                            'globally_active' => [ 'type' => [ 'string', 'boolean', 'null' ] ],
+                            'globally_active' => [ 'type' =>'boolean' ],
                             'animations'      => [
                                 'type'  => 'array',
                                 'items' => [ 'type' => 'string' ],
@@ -517,9 +532,12 @@ if (! function_exists('icecubo_register_abilities') ) {
                                 'type'                 => 'object',
                                 'additionalProperties' => [ 'type' => 'string' ],
                             ],
-                            'animrep' => [ 'type' => 'string' ],
+                            'animation_repeat' => [
+                                'type'                 => 'object',
+                                'additionalProperties' => [ 'type' => 'string' ],
+                            ],
                         ],
-                        'required' => [ 'globally_active', 'animations', 'speed', 'delay', 'animrep' ],
+                        'required' => [ 'globally_active', 'animations', 'speed', 'delay', 'animation_repeat' ],
                     ],
                 ],
                 'required' => [ 'result' ],
@@ -563,12 +581,25 @@ if (! function_exists('icecubo_ability_callback_patterns_list') ) {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_templates_list') ) {
-    function icecubo_ability_callback_templates_list() {
-        return icecubo_get_templates();
+    function icecubo_ability_callback_templates_list( $input = array() ): array {
+        $include_content = ! empty( $input['include_content'] );
+
+        // Keep the ability's existing code for fetching and shaping templates.
+        $templates = icecubo_get_templates_for_ability();
+
+        // unset the 'content' property from each template if $include_content is false
+        if ( ! $include_content ) {
+            foreach ( $templates as &$template ) {
+                unset( $template['content'] );
+            }
+            unset( $template ); // Clear the reference used by foreach.
+        }
+
+        return $templates;
     }
 }
 
-function icecubo_get_templates() {
+function icecubo_get_templates_for_ability() {
     $templates = get_block_templates(array(), 'wp_template');
 
     return array_map( function( $template ) {
@@ -586,8 +617,11 @@ function icecubo_get_templates() {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
-    function icecubo_ability_callback_template_parts_list( $input ) {
-        $parts = icecubo_get_template_parts()[$input['prompt']] ?? null;
+    function icecubo_ability_callback_template_parts_list( $input = array() ): array {
+        $input = is_array( $input ) ? $input : array();
+        $area = $input['area'] ?? '';
+        $include_content = ! empty( $input['include_content'] );
+        $parts = icecubo_get_template_parts_for_ability()[$area] ?? null;
 
         if ( null === $parts ) {
             return array( 'result' => array() );
@@ -595,8 +629,14 @@ if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
 
         return array(
             'result' => array_map(
-                static function( $part ) {
-                    return is_object( $part ) ? get_object_vars( $part ) : $part;
+                static function( $part ) use ( $include_content ) {
+                    $part = is_object( $part ) ? get_object_vars( $part ) : (array) $part;
+
+                    if ( ! $include_content ) {
+                        unset( $part['content'] );
+                    }
+
+                    return $part;
                 },
                 $parts
             ),
@@ -604,7 +644,7 @@ if (! function_exists('icecubo_ability_callback_template_parts_list') ) {
     }
 }
 
-function icecubo_get_template_parts() {
+function icecubo_get_template_parts_for_ability() {
 
     $template_parts = get_block_templates( array(), 'wp_template_part' );
 
@@ -739,7 +779,7 @@ if (! function_exists('icecubo_ability_callback_get_all_registered_blocks') ) {
 if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) {
     function icecubo_ability_callback_get_individual_block_styles($input) {
         
-        $block_name = $input['prompt']; // Your target block
+        $block_name = $input['block_slug']; // Your target block
         $get_styles = array();
 
         // 1. Fetch styles registered via PHP / Plugins
@@ -786,9 +826,11 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
         $all_individual_styles = array_values( $get_styles );
         $all_individual_styles = !empty($all_individual_styles) ? $all_individual_styles : [
             [
-                'name' => __( 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.', 'icecubo' ),
+                'name' => __( 'No value.', 'icecubo' ),
                 'label' => __( 'No value.', 'icecubo' ),
-                'source' => __( 'none', 'icecubo' )
+                'source' => __( 'none', 'icecubo' ),
+                'error' => __( 'No value. Either the block does not exist or has no styles registered. Please use a valid block slug i.e. "core/paragraph", "core/heading", "core/query", etc. to get the styles for that specific block. If the block exists but has no styles, it returns as empty here.', 'icecubo' ),
+
             ]
         ];
 
@@ -850,10 +892,11 @@ if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
     function icecubo_ability_callback_get_all_animations() {
 
         $anim_load = get_option('icecubo_animations_load');
+        $is_anim_load = !empty($anim_load) ? true : false;
 
         return array(
             'result' => array(
-                'globally_active' => $anim_load,
+                'globally_active' => $is_anim_load,
                 'animations' => array(
                     'anim-bounce',
                     'anim-fadeIn',
@@ -896,21 +939,23 @@ if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
                     'anim-text-glowMatchOff',
                 ),
                 'speed' => array(
-                    'fastest' => 'Fastest',
-                    'fast' => 'Fast',
-                    '' => 'Normal',
-                    'slow' => 'Slow',
-                    'slowest' => 'Slowest',
+                    'fastest' => __( 'Fastest', 'icecubo' ),
+                    'fast' => __( 'Fast', 'icecubo' ),
+                    '' => __( 'Normal', 'icecubo' ),
+                    'slow' => __( 'Slow', 'icecubo' ),
+                    'slowest' => __( 'Slowest', 'icecubo' ),
                 ),
                 'delay' => array(
-                    'del025' => 'Delay 250 ms',
-                    'del05' => 'Delay 500 ms',
-                    'del075' => 'Delay 750 ms',
-                    'del1' => 'Delay 1s',
-                    'del2' => 'Delay 2s',
-                    'del3' => 'Delay 3s',
+                    'del025' => __( 'Delay 250 ms', 'icecubo' ),
+                    'del05' => __( 'Delay 500 ms', 'icecubo' ),
+                    'del075' => __( 'Delay 750 ms', 'icecubo' ),
+                    'del1' => __( 'Delay 1s', 'icecubo' ),
+                    'del2' => __( 'Delay 2s', 'icecubo' ),
+                    'del3' => __( 'Delay 3s', 'icecubo' ),
                 ),
-                'animrep' => 'animation repeats in a repeated viewport',
+                'animation_repeat' => array(
+                    'animrep' => __( 'Animation Repeat - makes the animation play again when the block re-enters the viewport', 'icecubo' ),
+                ),
             )
         );
         
