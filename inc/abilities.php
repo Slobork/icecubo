@@ -322,7 +322,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all block styles.
         wp_register_ability( 'icecubo/list-block-styles', array(
             'label' => __( 'IceCubo - List Block Styles', 'icecubo' ),
-            'description' => __( 'Lists all block styles. Use "ice", "other" or "all" as the prompt to sift through them.', 'icecubo' ),
+            'description' => __( 'Lists all block styles by a certain prefix. Use "ice" (default) for IceCubo styles, "other" for non-IceCubo styles, "all" for every style, or "custom" with custom_prefix to match a chosen prefix.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_block_styles_list',
             'permission_callback' => function() {
@@ -352,8 +352,13 @@ if (! function_exists('icecubo_register_abilities') ) {
                 'properties' => [
                     'prompt' => [
                         'type'        => 'string',
-                        'description' => __( 'Lists all available block styles. Sort it with a prompt by using the "ice" (will return block styles provided by the icecubo theme and its plugins), "other" (will return block styles provided by other plugins) or "all" (will return all block styles currently available on the site).', 'icecubo' ),
-                        'enum'        => [ 'ice', 'other', 'all' ],
+                        'description' => __( 'Choose "ice" (default) for styles with the IceCubo prefix, "other" for styles without it, "all" for every style, or "custom" to filter by custom_prefix.', 'icecubo' ),
+                        'enum'        => [ 'ice', 'other', 'all', 'custom' ],
+                        'default'     => 'ice',
+                    ],
+                    'custom_prefix' => [
+                        'type'        => 'string',
+                        'description' => __( 'Required when prompt is "custom". Return styles whose style slug begins with this prefix, for example "some-plugin-".', 'icecubo' ),
                     ],
                 ],
                 'required'             => [ 'prompt' ],
@@ -379,7 +384,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                 ],
                 'required' => [ 'result' ],
-                'description' => __( 'The result is an object where each key is a block name (slug) and its value is another object containing the available styles for that block. Each style object contains the style name, label, and source.', 'icecubo' ),
+                'description' => __( 'The result is an object where each key is a block name (slug) and its value is another object containing matching styles for that block. Each style object contains the style name, label, and source.', 'icecubo' ),
             ],
         ));
 
@@ -780,13 +785,41 @@ function icecubo_get_template_parts_for_ability() {
 
 // This is the callback that runs when the ability is executed.
 function icecubo_ability_callback_block_styles_list( $input ) {
-    return array('result' => icecubo_get_registered_block_styles()[$input['prompt']]);
+    $input = is_array( $input ) ? $input : array();
+    $prompt = isset( $input['prompt'] ) && is_string( $input['prompt'] ) ? $input['prompt'] : '';
+    $allowed_prompts = array( 'ice', 'other', 'all', 'custom' );
+
+    if ( ! in_array( $prompt, $allowed_prompts, true ) ) {
+        return new WP_Error(
+            'icecubo_invalid_block_style_filter',
+            __( 'Choose a valid block style filter: "ice", "other", "all", or "custom".', 'icecubo' )
+        );
+    }
+
+    $custom_prefix = '';
+    if ( 'custom' === $prompt ) {
+        $custom_prefix = isset( $input['custom_prefix'] ) && is_string( $input['custom_prefix'] )
+            ? trim( $input['custom_prefix'] )
+            : '';
+
+        if ( '' === $custom_prefix ) {
+            return new WP_Error(
+                'icecubo_custom_prefix_required',
+                __( 'Provide a non-empty custom_prefix when prompt is "custom".', 'icecubo' )
+            );
+        }
+    }
+
+    $styles = icecubo_get_registered_block_styles( $custom_prefix );
+
+    return array( 'result' => isset( $styles[ $prompt ] ) ? $styles[ $prompt ] : array() );
 }
 
-function icecubo_get_registered_block_styles() {
+function icecubo_get_registered_block_styles( $custom_prefix = '' ) {
 
     $icecubo_styles = array();
     $other_styles   = array();
+    $custom_styles  = array();
     $all_styles     = array();
     $prefix = 'icecubo-';
 
@@ -808,6 +841,10 @@ function icecubo_get_registered_block_styles() {
                 $icecubo_styles[ $block_name ][ $style_slug ] = $style;
             } else {
                 $other_styles[ $block_name ][ $style_slug ] = $style;
+            }
+
+            if ( '' !== $custom_prefix && str_starts_with( $style_slug, $custom_prefix ) ) {
+                $custom_styles[ $block_name ][ $style_slug ] = $style;
             }
         }
     }
@@ -843,15 +880,33 @@ function icecubo_get_registered_block_styles() {
                         } elseif ( ! isset( $other_styles[ $block_name ][ $variation_slug ] ) ) {
                             $other_styles[ $block_name ][ $variation_slug ] = $style;
                         }
+
+                        if ( '' !== $custom_prefix && str_starts_with( $variation_slug, $custom_prefix ) && ! isset( $custom_styles[ $block_name ][ $variation_slug ] ) ) {
+                            $custom_styles[ $block_name ][ $variation_slug ] = $style;
+                        }
                     }
                 }
             }
         }
     }
 
+    $sort_styles = static function ( &$styles ) {
+        ksort( $styles, SORT_STRING );
+        foreach ( $styles as &$block_styles ) {
+            ksort( $block_styles, SORT_STRING );
+        }
+        unset( $block_styles );
+    };
+
+    $sort_styles( $icecubo_styles );
+    $sort_styles( $other_styles );
+    $sort_styles( $custom_styles );
+    $sort_styles( $all_styles );
+
     return array(
         'ice'   => $icecubo_styles,
         'other' => $other_styles,
+        'custom' => $custom_styles,
         'all'   => $all_styles,
     );
 }
