@@ -280,7 +280,7 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all blocks.
         wp_register_ability( 'icecubo/list-blocks', array(
             'label' => __( 'IceCubo - List Blocks', 'icecubo' ),
-            'description' => __( 'Lists all available blocks.', 'icecubo' ),
+            'description' => __( 'Lists the names (slugs) of all registered blocks, such as "core/paragraph", "core/heading", etc. Blocks provided by the WordPress core start with "core/"', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_all_registered_blocks',
             'permission_callback' => function() {
@@ -858,7 +858,7 @@ function icecubo_get_registered_block_styles() {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_get_all_registered_blocks') ) {
-    function icecubo_ability_callback_get_all_registered_blocks() {
+    function icecubo_ability_callback_get_all_registered_blocks(): array {
 
         // Get the instance of the block registry
         $registry = WP_Block_Type_Registry::get_instance();
@@ -868,6 +868,7 @@ if (! function_exists('icecubo_ability_callback_get_all_registered_blocks') ) {
         
         // Get just the block slugs (e.g., 'core/paragraph')
         $block_slugs = array_keys( $all_blocks );
+        sort( $block_slugs, SORT_STRING );
 
         return array('result' => $block_slugs);
         
