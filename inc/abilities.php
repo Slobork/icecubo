@@ -585,7 +585,7 @@ if (! function_exists('icecubo_ability_callback_patterns_list') ) {
         foreach ( $all_patterns as $pattern ) {
             $name = isset( $pattern['name'] ) && is_string( $pattern['name'] ) ? $pattern['name'] : '';
 
-            if ( 0 !== strpos( $name, 'icecubo/' ) ) {
+            if ( ! str_starts_with( $name, 'icecubo/' ) ) {
                 continue;
             }
 
