@@ -430,10 +430,10 @@ if (! function_exists('icecubo_register_abilities') ) {
 
         // Register the ability to get theme's global options.
         wp_register_ability( 'icecubo/get-global-options', array(
-            'label' => __( 'IceCubo - Get Theme\'s Global Options', 'icecubo' ),
-            'description' => __( 'Retrieve IceCubo theme global options. Use "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows" or "all" as the prompt.', 'icecubo' ),
+            'label' => __( 'IceCubo - Get Theme\'s Global Settings', 'icecubo' ),
+            'description' => __( 'Retrieve IceCubo theme global settings. Use "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows" or "all" as the request.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
-            'execute_callback' => 'icecubo_ability_callback_get_theme_global_options',
+            'execute_callback' => 'icecubo_ability_callback_get_theme_global_settings',
             'permission_callback' => function() {
                 return current_user_can( 'edit_posts' );
             },
@@ -459,28 +459,30 @@ if (! function_exists('icecubo_register_abilities') ) {
             'input_schema' => [
                 'type'       => 'object',
                 'properties' => [
-                    'prompt' => [
+                    'group' => [
                         'type'        => 'string',
-                        'description' => __('IceCubo theme global options to query. You can sift through specific options like "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows", or use "all" to query all available options even those that are not available through the specific sort filter.', 'icecubo'),
+                        'description' => __('IceCubo theme global settings to query. You can sift through specific group options like "colors", "gradients", "spacing_theme", "typography", "font_sizes_theme", "font_families_theme", "custom", "shadows", or use "all" to query all available options even those that are not available through the specific sort filter.', 'icecubo'),
                         'enum'        => ['colors', 'gradients', 'spacing_theme', 'typography', 'font_sizes_theme', 'font_families_theme', 'custom', 'shadows', 'all'],
                     ],
                 ],
-                'required'             => [ 'prompt' ],
+                'required'             => [ 'group' ],
                 'additionalProperties' => false,
             ],
             'output_schema' => [
                 'type'       => 'object',
                 'properties' => [
                     'result' => [
-                        'type'  => 'object',
+                        // Different options return lists or keyed objects, and
+                        // their properties can change with the active theme.
+                        'type'                 => [ 'object', 'array' ],
+                        'additionalProperties' => true,
                         'items' => [
-                            'type'       => 'object',
-                            'properties' => [],
+                            'type' => [ 'object', 'array', 'string', 'number', 'integer', 'boolean', 'null' ],
                         ],
                     ],
                 ],
                 'required' => [ 'result' ],
-                'description' => __('The result is an object containing the requested global options from the IceCubo theme. The structure of the result will vary based on the prompt provided or even the theme updates.', 'icecubo')
+                'description' => __('The result contains the requested global settings from the IceCubo theme. It may be an array or object depending on the group filter and the active theme settings.', 'icecubo')
             ],
         ) );
 
@@ -840,22 +842,19 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 }
 
 // This is the callback that runs when the ability is executed.
-if (! function_exists('icecubo_ability_callback_get_theme_global_options') ) {
-    function icecubo_ability_callback_get_theme_global_options( $input ) {
-        $parts = icecubo_get_theme_global_settings()[$input['prompt']] ?? null;
+if (! function_exists('icecubo_ability_callback_get_theme_global_settings') ) {
+    function icecubo_ability_callback_get_theme_global_settings( $input = array() ): array {
+        $input = is_array( $input ) ? $input : array();
+        $group = $input['group'] ?? '';
+        $get_settings = icecubo_get_theme_global_settings();
 
-        if ( null === $parts ) {
+        if ( ! array_key_exists( $group, $get_settings ) ) {
             return array( 'result' => array() );
         }
 
-        return array(
-            'result' => array_map(
-                static function( $part ) {
-                    return is_object( $part ) ? get_object_vars( $part ) : $part;
-                },
-                $parts
-            ),
-        );
+        $parts = $get_settings[ $group ];
+
+        return array( 'result' => is_object( $parts ) ? get_object_vars( $parts ) : $parts );
     }
 }
 
@@ -864,14 +863,14 @@ function icecubo_get_theme_global_settings() {
     // $global_settings = wp_get_global_settings();
     $global_settings = WP_Theme_JSON_Resolver::get_merged_data()->get_settings();
 
-    $colors        = $global_settings["color"]["palette"];
-    $gradients     = $global_settings["color"]["gradients"];
-    $spacing_theme = $global_settings["spacing"]["spacingSizes"]["theme"];
-    $typography    = $global_settings["typography"];
-    $typography_font_sizes_theme    = $global_settings["typography"]["fontSizes"]["theme"];
-    $typography_font_families_theme = $global_settings["typography"]["fontFamilies"]["theme"];
-    $custom  = $global_settings["custom"];
-    $shadows = $global_settings["shadow"]["presets"];
+    $colors        = $global_settings['color']['palette'] ?? array();
+    $gradients     = $global_settings['color']['gradients'] ?? array();
+    $spacing_theme = $global_settings['spacing']['spacingSizes']['theme'] ?? array();
+    $typography    = $global_settings['typography'] ?? array();
+    $typography_font_sizes_theme    = $typography['fontSizes']['theme'] ?? array();
+    $typography_font_families_theme = $typography['fontFamilies']['theme'] ?? array();
+    $custom        = $global_settings['custom'] ?? array();
+    $shadows       = $global_settings['shadow']['presets'] ?? array();
 
     return array(
         'colors' => $colors,
