@@ -7,7 +7,7 @@ if (! defined('ABSPATH') ) {
  * Theme Name:         IceCubo
  * Description:        IceCubo is a block-based theme for WordPress.
  *
- * PHP version  7.4
+ * PHP version  8.0
  *
  * @category Theme
  * @package  IceCubo
