@@ -308,7 +308,7 @@ if (! function_exists('icecubo_register_abilities') ) {
             'input_schema' => [
                 'type'       => 'object',
                 'properties' => [
-                    'prompt' => [
+                    'prefix' => [
                         'type'        => 'string',
                         'description' => __( 'Choose "ice" (default) for styles with the IceCubo prefix, "other" for styles without it, "all" for every style, or "custom" to filter by custom_prefix.', 'icecubo' ),
                         'enum'        => [ 'ice', 'other', 'all', 'custom' ],
@@ -316,10 +316,10 @@ if (! function_exists('icecubo_register_abilities') ) {
                     ],
                     'custom_prefix' => [
                         'type'        => 'string',
-                        'description' => __( 'Required when prompt is "custom". Return styles whose style slug begins with this prefix, for example "some-plugin-".', 'icecubo' ),
+                        'description' => __( 'Required when prefix is "custom". Return styles whose style slug begins with this prefix, for example "some-plugin-".', 'icecubo' ),
                     ],
                 ],
-                'required'             => [ 'prompt' ],
+                'required'             => [ 'prefix' ],
                 'additionalProperties' => false,
             ],
             'output_schema' => [
@@ -786,10 +786,10 @@ function icecubo_get_template_parts_for_ability() {
 // This is the callback that runs when the ability is executed.
 function icecubo_ability_callback_block_styles_list( $input ) {
     $input = is_array( $input ) ? $input : array();
-    $prompt = isset( $input['prompt'] ) && is_string( $input['prompt'] ) ? $input['prompt'] : '';
-    $allowed_prompts = array( 'ice', 'other', 'all', 'custom' );
+    $prefix = isset( $input['prefix'] ) && is_string( $input['prefix'] ) ? $input['prefix'] : '';
+    $allowed_prefixs = array( 'ice', 'other', 'all', 'custom' );
 
-    if ( ! in_array( $prompt, $allowed_prompts, true ) ) {
+    if ( ! in_array( $prefix, $allowed_prefixs, true ) ) {
         return new WP_Error(
             'icecubo_invalid_block_style_filter',
             __( 'Choose a valid block style filter: "ice", "other", "all", or "custom".', 'icecubo' )
@@ -797,7 +797,7 @@ function icecubo_ability_callback_block_styles_list( $input ) {
     }
 
     $custom_prefix = '';
-    if ( 'custom' === $prompt ) {
+    if ( 'custom' === $prefix ) {
         $custom_prefix = isset( $input['custom_prefix'] ) && is_string( $input['custom_prefix'] )
             ? trim( $input['custom_prefix'] )
             : '';
@@ -805,14 +805,14 @@ function icecubo_ability_callback_block_styles_list( $input ) {
         if ( '' === $custom_prefix ) {
             return new WP_Error(
                 'icecubo_custom_prefix_required',
-                __( 'Provide a non-empty custom_prefix when prompt is "custom".', 'icecubo' )
+                __( 'Provide a non-empty custom_prefix when prefix is "custom".', 'icecubo' )
             );
         }
     }
 
     $styles = icecubo_get_registered_block_styles( $custom_prefix );
 
-    return array( 'result' => isset( $styles[ $prompt ] ) ? $styles[ $prompt ] : array() );
+    return array( 'result' => isset( $styles[ $prefix ] ) ? $styles[ $prefix ] : array() );
 }
 
 function icecubo_get_registered_block_styles( $custom_prefix = '' ) {
