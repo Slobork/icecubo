@@ -448,6 +448,89 @@ if (! function_exists('icecubo_register_abilities') ) {
             ],
         ) );
 
+/*
+        // Register a combined ability for block names and block styles.
+        wp_register_ability( 'icecubo/block-styles', array(
+            'label' => __( 'IceCubo - Block Styles', 'icecubo' ),
+            'description' => __( 'Lists block names by default, lists styles by prefix when prompt is "prefix", or lists styles for one block when prompt is "one".', 'icecubo' ),
+            'category' => 'icecubo-ai-tools',
+            'execute_callback' => 'icecubo_ability_callback_block_styles',
+            'permission_callback' => function() {
+                return current_user_can( 'edit_posts' );
+            },
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => true,
+                    'destructive' => false,
+                    'idempotent'  => true,
+                ),
+            ),
+            'input_schema' => array(
+                'type'       => 'object',
+                'properties' => array(
+                    'prompt' => array(
+                        'type'        => 'string',
+                        'enum'        => array( 'blocks', 'prefix', 'one' ),
+                        'default'     => 'blocks',
+                        'description' => __( 'Choose "blocks" (default) to list block slugs, "prefix" to list styles using a prefix filter, or "one" to list styles for one block.', 'icecubo' ),
+                    ),
+                    'prefix' => array(
+                        'type'        => 'string',
+                        'enum'        => array( 'ice', 'other', 'all', 'custom' ),
+                        'description' => __( 'Required when prompt is "prefix". Choose a style prefix group.', 'icecubo' ),
+                        'default'     => 'ice',
+                    ),
+                    'custom_prefix' => array(
+                        'type'        => 'string',
+                        'description' => __( 'Required when prompt is "prefix" and prefix is "custom".', 'icecubo' ),
+                    ),
+                    'block_slug' => array(
+                        'type'        => 'string',
+                        'description' => __( 'Required when prompt is "one". For example, "core/paragraph".', 'icecubo' ),
+                    ),
+                ),
+                'additionalProperties' => false,
+            ),
+            'output_schema' => array(
+                'type'       => 'object',
+                'properties' => array(
+                    'result' => array(
+                        'type'   => array( 'array', 'object' ),
+                        'items'  => array(
+                            'type'       => array( 'string', 'object' ),
+                            'properties' => array(
+                                'name'   => array( 'type' => 'string' ),
+                                'label'  => array( 'type' => 'string' ),
+                                'source' => array( 'type' => 'string' ),
+                                'error'  => array( 'type' => 'string' ),
+                            ),
+                            'required' => array( 'name', 'label', 'source' ),
+                        ),
+                        'additionalProperties' => array(
+                            'type'                 => 'object',
+                            'additionalProperties' => array(
+                                'type'       => 'object',
+                                'properties' => array(
+                                    'name'   => array( 'type' => 'string' ),
+                                    'label'  => array( 'type' => 'string' ),
+                                    'source' => array( 'type' => 'string' ),
+                                ),
+                                'required' => array( 'name', 'label', 'source' ),
+                            ),
+                        ),
+                    ),
+                ),
+                'required'    => array( 'result' ),
+                'description' => __( 'The result contains block slugs, a block-to-style map, or a list of styles for one block, depending on prompt.', 'icecubo' ),
+            ),
+        ) );
+*/
+
         // Register the ability to get theme's global options.
         wp_register_ability( 'icecubo/get-global-options', array(
             'label' => __( 'IceCubo - Get Theme\'s Global Settings', 'icecubo' ),
@@ -993,6 +1076,60 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
     }
 }
+
+/*
+// This callback combines the existing block and block-style abilities.
+if ( ! function_exists( 'icecubo_ability_callback_block_styles' ) ) {
+    function icecubo_ability_callback_block_styles( $input = array() ) {
+        $input = is_array( $input ) ? $input : array();
+        $prompt = isset( $input['prompt'] ) && is_string( $input['prompt'] )
+            ? $input['prompt']
+            : 'blocks';
+
+        if ( 'blocks' === $prompt ) {
+            return icecubo_ability_callback_get_all_registered_blocks();
+        }
+
+        if ( 'prefix' === $prompt ) {
+            if ( ! isset( $input['prefix'] ) || ! is_string( $input['prefix'] ) || '' === $input['prefix'] ) {
+                return new WP_Error(
+                    'icecubo_block_styles_prefix_required',
+                    __( 'Specify prefix when prompt is "prefix". Use "ice", "other", "all", or "custom".', 'icecubo' )
+                );
+            }
+
+            return icecubo_ability_callback_block_styles_list(
+                array(
+                    'prefix'        => $input['prefix'],
+                    'custom_prefix' => isset( $input['custom_prefix'] ) ? $input['custom_prefix'] : '',
+                )
+            );
+        }
+
+        if ( 'one' === $prompt ) {
+            $block_slug = isset( $input['block_slug'] ) && is_string( $input['block_slug'] )
+                ? trim( $input['block_slug'] )
+                : '';
+
+            if ( '' === $block_slug ) {
+                return new WP_Error(
+                    'icecubo_block_slug_required',
+                    __( 'Specify block_slug when prompt is "one", for example "core/paragraph".', 'icecubo' )
+                );
+            }
+
+            return icecubo_ability_callback_get_individual_block_styles(
+                array( 'block_slug' => $block_slug )
+            );
+        }
+
+        return new WP_Error(
+            'icecubo_invalid_block_styles_prompt',
+            __( 'Choose a valid prompt: "blocks", "prefix", or "one".', 'icecubo' )
+        );
+    }
+}
+*/
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_get_theme_global_settings') ) {
