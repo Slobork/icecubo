@@ -470,7 +470,7 @@ function icecubo_settings_section_one_callback() {
 }
 
 function icecubo_settings_section_breadcrumbs_callback() {
-    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    // alternative border-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     echo '<p style="font-size: 18px; max-width: 800px;">' .esc_html__('You can enable or disable breadcrumbs navigation on pages throughout the site. However, note that it is applied to templates, and once you edit a template, this option won\'t affect that template anymore. So, it\'s the best practice to decide about this option before editing templates.', 'icecubo') . '</p>';
     echo '<p style="font-size: 18px; max-width: 800px;">' .esc_html__('Further, this option doesn\'t affect the templates that are oriented towards the custom design, i.e. Front page, notitle-alike-page, notitle-noheader-alike-page. If necessary, you can either edit these templates and add the breadcrumbs block to the template, or add the breadcrumbs block to each page individually.', 'icecubo') . '</p>';
@@ -482,7 +482,7 @@ function icecubo_settings_breadcrumbs_enable_checkbox_callback() {
 }
 
 function icecubo_settings_section_additional_settings_callback() {
-    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    // alternative border-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     
         if (! class_exists('IceCubo_Pro') ) {
@@ -502,7 +502,7 @@ function icecubo_settings_section_additional_settings_callback() {
 }
 
 function icecubo_settings_section_animations_callback() {
-    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    // alternative border-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     echo '<p style="font-size: 18px;">' .esc_html__('You can enable or disable animations that come with the theme for the entire site.', 'icecubo') . '</p>';
 }
@@ -519,7 +519,7 @@ function icecubo_settings_animations_classes_generator_description_callback() {
 
 function icecubo_settings_animations_select_callback() {
 
-    /*
+    /**
      * This isn't saving to the database since it's only used for the on-screen classes generation.
      * That's why it's not getting the option value from the database. In that case it would be:
      * $animations_select = get_option('icecubo_animations_select');
@@ -630,7 +630,7 @@ function icecubo_settings_animation_preview() {
 }
 
 function icecubo_settings_section_navigation_callback() {
-    // alternative bordr-color may be: #0e0ed7, for now keep the current:
+    // alternative border-color may be: #0e0ed7, for now keep the current:
     echo '<hr id="icecubo-animations-settings-sep" style="margin-bottom: 20px; border-color: #40248e; border-width: 2px;">';
     echo '<p style="font-size: 18px; margin-bottom: 3px;">' .esc_html__('You can generate navigation classes here, copy them and add them to each navigation block separately on the site.', 'icecubo') . '</p>';
     echo '<p style="font-size: 18px; margin-top: 3px;">' .esc_html__('Alternatively, from here, you can apply the classes globally to all navigation blocks at once.', 'icecubo') . '</p>';
