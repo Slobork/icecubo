@@ -450,6 +450,9 @@ if (! function_exists('icecubo_register_abilities') ) {
 
 /*
         // Register a combined ability for block names and block styles.
+
+        // ****************** I'll decide later for its inclusion ******************
+
         wp_register_ability( 'icecubo/block-styles', array(
             'label' => __( 'IceCubo - Block Styles', 'icecubo' ),
             'description' => __( 'Lists block names by default, lists styles by prefix when prompt is "prefix", or lists styles for one block when prompt is "one".', 'icecubo' ),
@@ -1079,6 +1082,9 @@ if (! function_exists('icecubo_ability_callback_get_individual_block_styles') ) 
 
 /*
 // This callback combines the existing block and block-style abilities.
+
+    // ****************** I'll decide later for its inclusion ******************
+
 if ( ! function_exists( 'icecubo_ability_callback_block_styles' ) ) {
     function icecubo_ability_callback_block_styles( $input = array() ) {
         $input = is_array( $input ) ? $input : array();
