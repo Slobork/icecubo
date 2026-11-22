@@ -595,10 +595,14 @@ if (! function_exists('icecubo_register_abilities') ) {
         // Register the ability to list all animations.
         wp_register_ability( 'icecubo/list-animations', array(
             'label' => __( 'IceCubo - List Animations And Related Options', 'icecubo' ),
-            'description' => __( 'Lists all available IceCubo animations. Add animation as additional classes to any block, usage example: "anim-bounce fast del1 animrep"', 'icecubo' ),
+            'description' => __( 'Lists available IceCubo animations and related options. Administrators can optionally set whether animation styles load globally.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_all_animations',
-            'permission_callback' => function() {
+            'permission_callback' => function( $input = array() ) {
+                if ( is_array( $input ) && isset( $input['globally_active'] ) && '' !== $input['globally_active'] ) {
+                    return current_user_can( 'manage_options' ); // manage_options because this ability requires updating 'icecubo_animations_load', i.e. it allows managing site settings, including theme options.
+                }
+
                 return current_user_can( 'edit_posts' );
             },
             'meta' => array(
@@ -608,7 +612,7 @@ if (! function_exists('icecubo_register_abilities') ) {
                     'public' => true,
                 ),
                 'annotations'  => array(
-                    'readonly'    => true,
+                    'readonly'    => false, // requires updating 'icecubo_animations_load', so set to 'false' - it has write capability, now
                     'destructive' => false,
                     'idempotent'  => true, // Idempotent describes what happens if the same ability runs more than once with the same input:
                                            // true — means repeating it has no additional effect after the first run. For example, “set the page title to About” is idempotent: running it again leaves the title as About. 
@@ -617,9 +621,16 @@ if (! function_exists('icecubo_register_abilities') ) {
             ),
             'input_schema' => [
                 'type'       => 'object',
-                'properties' => [],
+                'properties' => [
+                    'globally_active' => [
+                        'type'        => [ 'boolean', 'string' ],
+                        'enum'        => [ true, false, '', 'true', 'false' ],
+                        'default'     => '',
+                        'description' => __( 'Set to true to load animation styles globally or false to stop loading them. The default empty string leaves the current setting unchanged. Changing the setting requires site settings permission.', 'icecubo' ),
+                    ],
+                ],
                 'additionalProperties' => false,
-                'description' => __( 'No input is required.', 'icecubo' ),
+                'description' => __( 'Omit globally_active to list animation options without changing settings.', 'icecubo' ),
             ],
             'output_schema' => [
                 'type'       => 'object',
@@ -1184,10 +1195,26 @@ function icecubo_get_theme_global_settings() {
 
 // This is the callback that runs when the ability is executed.
 if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
-    function icecubo_ability_callback_get_all_animations() {
+    function icecubo_ability_callback_get_all_animations( $input = array() ) {
+        $input = is_array( $input ) ? $input : array();
 
-        $anim_load = get_option('icecubo_animations_load');
-        $is_anim_load = !empty($anim_load) ? true : false;
+        if ( array_key_exists( 'globally_active', $input ) ) {
+            $requested_global_state = $input['globally_active'];
+
+            if ( true === $requested_global_state || 'true' === $requested_global_state ) {
+                update_option( 'icecubo_animations_load', '1' );
+            } elseif ( false === $requested_global_state || 'false' === $requested_global_state ) {
+                update_option( 'icecubo_animations_load', '0' );
+            } elseif ( '' !== $requested_global_state ) {
+                return new WP_Error(
+                    'icecubo_invalid_global_animation_setting',
+                    __( 'globally_active must be true, false, "true", "false", or an empty string.', 'icecubo' )
+                );
+            }
+        }
+
+        $anim_load = get_option( 'icecubo_animations_load', '0' );
+        $is_anim_load = in_array( $anim_load, array( '1', 1, true ), true );
 
         return array(
             'result' => array(
