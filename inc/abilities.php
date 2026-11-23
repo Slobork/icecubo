@@ -1430,6 +1430,18 @@ if (icecubo_check_license() != false) {
     // This is the callback that runs when the design-templates ability is executed.
     if ( ! function_exists( 'icecubo_ability_callback_design_templates' ) ) {
         function icecubo_ability_callback_design_templates( $input = array() ) {
+
+            /** 
+             * This check is an additional guard if the callback is invoked after the theme load state changes, 
+             * i.e. the license becoming inactive before the callback runs.
+             */
+            if ( icecubo_check_license() == false ) {
+                return new WP_Error(
+                    'icecubo_design_templates_license_required',
+                    __( 'An active IceCubo Pro license is required to access design-template settings.', 'icecubo' )
+                );
+            }
+
             $input = is_array( $input ) ? $input : array();
             $template_options = array(
                 'template_agency'        => 'icecubo_template_agency_checkbox_one',
