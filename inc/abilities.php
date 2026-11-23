@@ -592,6 +592,64 @@ if (! function_exists('icecubo_register_abilities') ) {
             ],
         ) );
 
+        // Register the ability to read and update breadcrumb availability.
+        wp_register_ability( 'icecubo/breadcrumbs', array(
+            'label' => __( 'IceCubo - Breadcrumbs', 'icecubo' ),
+            'description' => __( 'Reads whether IceCubo breadcrumbs are enabled. Optionally set breadcrumbs_active to true or false to change the setting.', 'icecubo' ),
+            'category' => 'icecubo-ai-tools',
+            'execute_callback' => 'icecubo_ability_callback_breadcrumbs',
+            'permission_callback' => function( $input = array() ) {
+                if (
+                    is_array( $input )
+                    && isset( $input['breadcrumbs_active'] )
+                    && '' !== $input['breadcrumbs_active']
+                ) {
+                    return current_user_can( 'manage_options' );
+                }
+
+                return current_user_can( 'edit_posts' );
+            },
+            'meta' => array(
+                'public'       => true,
+                'show_in_rest' => true,
+                'mcp'          => array(
+                    'public' => true,
+                ),
+                'annotations'  => array(
+                    'readonly'    => false,
+                    'destructive' => false,
+                    'idempotent'  => true,
+                ),
+            ),
+            'input_schema' => array(
+                'type'       => 'object',
+                'properties' => array(
+                    'breadcrumbs_active' => array(
+                        'type'        => array( 'boolean', 'string' ),
+                        'enum'        => array( true, false, '', 'true', 'false' ),
+                        'default'     => '',
+                        'description' => __( 'Set to true or false to enable or disable breadcrumbs. Empty or omitted leaves the current setting unchanged.', 'icecubo' ),
+                    ),
+                ),
+                'additionalProperties' => false,
+                'description' => __( 'Omit breadcrumbs_active to read its current state.', 'icecubo' ),
+            ),
+            'output_schema' => array(
+                'type'       => 'object',
+                'properties' => array(
+                    'result' => array(
+                        'type'       => 'object',
+                        'properties' => array(
+                            'breadcrumbs_active' => array( 'type' => 'boolean' ),
+                        ),
+                        'required' => array( 'breadcrumbs_active' ),
+                    ),
+                ),
+                'required' => array( 'result' ),
+                'description' => __( 'The current breadcrumb availability.', 'icecubo' ),
+            ),
+        ) );
+
         // Register the ability to list all animations.
         wp_register_ability( 'icecubo/list-animations', array(
             'label' => __( 'IceCubo - List Animations And Related Options', 'icecubo' ),
@@ -1329,6 +1387,44 @@ function icecubo_get_theme_global_settings() {
         'shadows' => $shadows,
         'all'    => $global_settings,
     );
+}
+
+
+// This is the callback that runs when the breadcrumbs ability is executed.
+if ( ! function_exists( 'icecubo_ability_callback_breadcrumbs' ) ) {
+    function icecubo_ability_callback_breadcrumbs( $input = array() ) {
+        $input = is_array( $input ) ? $input : array();
+
+        if (
+            array_key_exists( 'breadcrumbs_active', $input )
+            && '' !== $input['breadcrumbs_active']
+        ) {
+            $value = $input['breadcrumbs_active'];
+
+            if ( true === $value || 'true' === $value ) {
+                update_option( 'icecubo_breadcrumbs_enable', '1' );
+            } elseif ( false === $value || 'false' === $value ) {
+                update_option( 'icecubo_breadcrumbs_enable', '0' );
+            } else {
+                return new WP_Error(
+                    'icecubo_invalid_breadcrumbs_setting',
+                    __( 'breadcrumbs_active must be true, false, "true", "false", or an empty string.', 'icecubo' )
+                );
+            }
+        }
+
+        $stored_value = get_option( 'icecubo_breadcrumbs_enable', '0' );
+
+        return array(
+            'result' => array(
+                'breadcrumbs_active' => in_array(
+                    $stored_value,
+                    array( '1', 1, true, 'true' ),
+                    true
+                ),
+            ),
+        );
+    }
 }
 
 
