@@ -75,3 +75,10 @@ if (! function_exists('icecubo_scripts_and_styles') ) {
 
     add_action('wp_enqueue_scripts', 'icecubo_scripts_and_styles');
 }
+
+
+// Check license key from the database
+function icecubo_check_license() {
+    $is_licensed = class_exists('IceCubo_Pro') ? IceCubo_Pro::getLicense() : false;
+    return $is_licensed;
+}

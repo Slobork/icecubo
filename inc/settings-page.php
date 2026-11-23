@@ -65,13 +65,6 @@ if ( ! function_exists( 'icecubo_theme_options' ) ) {
     }
     add_action('admin_menu', 'icecubo_theme_options');
 }
-    
-// Check license key from the database
-function icecubo_check_license() {
-    
-    $is_licensed = class_exists('IceCubo_Pro') ? IceCubo_Pro::getLicense() : false;
-    return $is_licensed;
-}
 
 /**
  * Register settings, sections and fields for the theme options page.
