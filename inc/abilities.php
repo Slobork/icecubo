@@ -664,6 +664,145 @@ if (! function_exists('icecubo_register_abilities') ) {
             ],
         ) );
 
+        // If Pro version is active
+        if (icecubo_check_license() != false) {
+        
+            // Register the ability to read and update design-template availability.
+            wp_register_ability( 'icecubo/design-templates', array(
+                'label' => __( 'IceCubo - Design Templates', 'icecubo' ),
+                'description' => __( 'Reads the availability of the ten IceCubo design templates. Optionally set individual templates to true or false to enable or disable them. When enabled, full-page patterns and section patterns assosiated with each design template become available through the Site Editor and Post/Page Editor.', 'icecubo' ),
+                'category' => 'icecubo-ai-tools',
+                'execute_callback' => 'icecubo_ability_callback_design_templates',
+                
+                // Updating settings requires manage_options; reading requires edit_posts
+                'permission_callback' => function( $input = array() ) {
+                    if ( is_array( $input ) ) {
+                        foreach ( $input as $value ) {
+                            if ( '' !== $value ) {
+                                return current_user_can( 'manage_options' );
+                            }
+                        }
+                    }
+
+                    return current_user_can( 'edit_posts' );
+                },
+                'meta' => array(
+                    'public'       => true,
+                    'show_in_rest' => true,
+                    'mcp'          => array(
+                        'public' => true,
+                    ),
+                    'annotations'  => array(
+                        'readonly'    => false,
+                        'destructive' => false,
+                        'idempotent'  => true,
+                    ),
+                ),
+                'input_schema' => array(
+                    'type'       => 'object',
+                    'properties' => array(
+                        'template_agency' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Agency template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_attorney' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Attorney template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_barber' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Barber template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_dentist' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Dentist template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_gym' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Gym template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_marketer' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Marketer template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_marketing' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Marketing template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_marketing_suit' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Marketing Suit template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_seo' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change SEO template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                        'template_yoga' => array(
+                            'type' => array( 'boolean', 'string' ),
+                            'enum' => array( true, false, '', 'true', 'false' ),
+                            'default' => '',
+                            'description' => __( 'Set to true or false to change Yoga template availability. Empty or omitted leaves it unchanged.', 'icecubo' ),
+                        ),
+                    ),
+                    'additionalProperties' => false,
+                    'description' => __( 'Omit all properties to read current template availability. Set only the templates to change.', 'icecubo' ),
+                ),
+                'output_schema' => array(
+                    'type'       => 'object',
+                    'properties' => array(
+                        'result' => array(
+                            'type' => 'object',
+                            'properties' => array(
+                                'template_agency' => array( 'type' => 'boolean' ),
+                                'template_attorney' => array( 'type' => 'boolean' ),
+                                'template_barber' => array( 'type' => 'boolean' ),
+                                'template_dentist' => array( 'type' => 'boolean' ),
+                                'template_gym' => array( 'type' => 'boolean' ),
+                                'template_marketer' => array( 'type' => 'boolean' ),
+                                'template_marketing' => array( 'type' => 'boolean' ),
+                                'template_marketing_suit' => array( 'type' => 'boolean' ),
+                                'template_seo' => array( 'type' => 'boolean' ),
+                                'template_yoga' => array( 'type' => 'boolean' ),
+                            ),
+                            'required' => array(
+                                'template_agency',
+                                'template_attorney',
+                                'template_barber',
+                                'template_dentist',
+                                'template_gym',
+                                'template_marketer',
+                                'template_marketing',
+                                'template_marketing_suit',
+                                'template_seo',
+                                'template_yoga',
+                            ),
+                        ),
+                    ),
+                    'required' => array( 'result' ),
+                    'description' => __( 'The current availability of each IceCubo design template.', 'icecubo' ),
+                ),
+            ) );
+
+        }
+
     } // function icecubo_register_abilities end
 } // function_exists check end
 
@@ -1282,4 +1421,63 @@ if (! function_exists('icecubo_ability_callback_get_all_animations') ) {
         );
         
     }
+}
+
+
+// If Pro version is active
+if (icecubo_check_license() != false) {
+
+    // This is the callback that runs when the design-templates ability is executed.
+    if ( ! function_exists( 'icecubo_ability_callback_design_templates' ) ) {
+        function icecubo_ability_callback_design_templates( $input = array() ) {
+            $input = is_array( $input ) ? $input : array();
+            $template_options = array(
+                'template_agency'        => 'icecubo_template_agency_checkbox_one',
+                'template_attorney'      => 'icecubo_template_attorney_checkbox_two',
+                'template_barber'        => 'icecubo_template_barber_checkbox_three',
+                'template_dentist'       => 'icecubo_template_dentist_checkbox_four',
+                'template_gym'           => 'icecubo_template_gym_checkbox_five',
+                'template_marketer'      => 'icecubo_template_marketer_checkbox_six',
+                'template_marketing'     => 'icecubo_template_marketing_checkbox_seven',
+                'template_marketing_suit' => 'icecubo_template_marketing_suit_checkbox_eight',
+                'template_seo'           => 'icecubo_template_seo_checkbox_nine',
+                'template_yoga'          => 'icecubo_template_yoga_checkbox_ten',
+            );
+
+            $updates = array();
+            foreach ( $template_options as $input_key => $option_name ) {
+                if ( ! array_key_exists( $input_key, $input ) || '' === $input[ $input_key ] ) {
+                    continue;
+                }
+
+                $value = $input[ $input_key ];
+                if ( true === $value || 'true' === $value ) {
+                    $updates[ $option_name ] = '1';
+                } elseif ( false === $value || 'false' === $value ) {
+                    $updates[ $option_name ] = '0';
+                } else {
+                    return new WP_Error(
+                        'icecubo_invalid_design_template_setting',
+                        sprintf(
+                            __( 'The value for %s must be true, false, "true", "false", or an empty string.', 'icecubo' ),
+                            $input_key
+                        )
+                    );
+                }
+            }
+
+            foreach ( $updates as $option_name => $value ) {
+                update_option( $option_name, $value );
+            }
+
+            $result = array();
+            foreach ( $template_options as $input_key => $option_name ) {
+                $stored_value = get_option( $option_name, '0' );
+                $result[ $input_key ] = in_array( $stored_value, array( '1', 1, true, 'true' ), true );
+            }
+
+            return array( 'result' => $result );
+        }
+    }
+    
 }
