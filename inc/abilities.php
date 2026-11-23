@@ -597,6 +597,8 @@ if (! function_exists('icecubo_register_abilities') ) {
             'label' => __( 'IceCubo - Breadcrumbs', 'icecubo' ),
             'description' => __( 'Reads whether IceCubo breadcrumbs are enabled. Optionally set breadcrumbs_active to true or false to change the setting.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
+
+            // Updating settings requires manage_options; reading requires edit_posts
             'execute_callback' => 'icecubo_ability_callback_breadcrumbs',
             'permission_callback' => function( $input = array() ) {
                 if (
@@ -656,6 +658,8 @@ if (! function_exists('icecubo_register_abilities') ) {
             'description' => __( 'Lists available IceCubo animations and related options. Administrators can optionally set whether animation styles load globally.', 'icecubo' ),
             'category' => 'icecubo-ai-tools',
             'execute_callback' => 'icecubo_ability_callback_get_all_animations',
+
+            // Updating settings requires manage_options; reading requires edit_posts
             'permission_callback' => function( $input = array() ) {
                 if ( is_array( $input ) && isset( $input['globally_active'] ) && '' !== $input['globally_active'] ) {
                     return current_user_can( 'manage_options' ); // manage_options because this ability requires updating 'icecubo_animations_load', i.e. it allows managing site settings, including theme options.
