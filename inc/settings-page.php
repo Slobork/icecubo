@@ -187,7 +187,7 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
             // Section Navigation settings
             add_settings_section(
                 'section_navigation',
-                esc_html__('Menu Navigation Settings', 'icecubo'),
+                esc_html__('Menu (Navigation) Settings', 'icecubo'),
                 'icecubo_settings_section_navigation_callback',
                 $tab_settings
             );
