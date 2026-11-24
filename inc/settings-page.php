@@ -366,7 +366,6 @@ if ( ! function_exists( 'icecubo_register_settings' ) ) {
              * except the following two options, which are needed to save the global classes for the navigation block.
              */
 
-            register_setting('icecubo-theme-options', 'icecubo_navigation_apply_globally', 'icecubo_sanitize_checkbox');
             register_setting('icecubo-theme-options', 'icecubo_navigation_global_classes', 'sanitize_text_field');
 
             register_setting('icecubo-theme-options', 'icecubo_template_agency_checkbox_one', 'icecubo_sanitize_checkbox');
@@ -721,10 +720,7 @@ function icecubo_settings_navigation_copy_button_callback() {
 
 function icecubo_settings_navigation_apply_globally_callback() {
         
-    //$option = get_option('icecubo_navigation_apply_globally');
-    //echo '<input type="checkbox" name="icecubo_navigation_apply_globally" value="1" ' . checked($option, 1, false) . '/>';
-        
-    echo '<button type="button" id="icecubo-navigation-apply-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px; margin-right: 15px;">' . esc_html__('Apply Globally', 'icecubo') . '</button>';
+    echo '<button type="button" id="icecubo-navigation-apply-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px; margin-right: 15px;">' . esc_html__('Add Globally', 'icecubo') . '</button>';
     echo '<button type="button" id="icecubo-navigation-reset-button" class="button button-primary" style="margin-top: 10px; border-radius: 10px;">' . esc_html__('Reset Global', 'icecubo') . '</button>';
 
 }
@@ -733,7 +729,7 @@ function icecubo_settings_navigation_global_classes_callback() {
         
     $option = get_option('icecubo_navigation_global_classes');
     echo '<input type="text" name="icecubo_navigation_global_classes" value="' . esc_attr($option) . '" readonly />';
-    echo '<p id="icecubo-navigation-global-apply-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Apply Globally", the current selections will be copied to this field. Those classes will be applied to all navigation blocks on the site. Just do not forget to save your changes at the end of the page! Be aware that it isn\'t replacing the existing classes, it is adding to them, so you can additionaly style each block individually after applying the global classes.', 'icecubo') . '</p>';
+    echo '<p id="icecubo-navigation-global-apply-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Add Globally", the current selections will be copied to this field. Those classes will be applied to all navigation blocks on the site. Just do not forget to save your changes at the end of the page! Be aware that it isn\'t replacing the existing classes, it is adding to them, so you can additionaly style each block individually after applying the global classes.', 'icecubo') . '</p>';
     echo '<p id="icecubo-navigation-copy-classes-message" style="font-size: 16px; margin-top: 10px; max-width: 600px;">' . esc_html__('If you click on the button "Copy Navigation Classes", the current selections will be copied to your clipboard and you can paste those generated classes to any navigation block individually. This can be done from the navigation block\'s settings → Advanced tab → Additional CSS Classes.', 'icecubo') . '</p>';
 
 }
